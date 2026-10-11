@@ -1,0 +1,853 @@
+{
+  "demo": "misleading-chart",
+  "provider": "openai",
+  "model": "gpt-6-luna",
+  "recordedAt": "2026-10-11",
+  "source": "scripts/record-demo.js",
+  "usage": {
+    "input_tokens": 24180,
+    "output_tokens": 0
+  },
+  "answers": {
+    "MC-001": {
+      "real_change": {
+        "type": "choice",
+        "choice": "SMALL",
+        "confidence": 0.97,
+        "probabilities": {
+          "SMALL": 0.98,
+          "MEDIUM": 0.02,
+          "LARGE": 0
+        }
+      },
+      "axis_from_zero": {
+        "type": "noul",
+        "noul": 1
+      },
+      "misleading": {
+        "type": "score",
+        "score": 1.44,
+        "confidence": 0,
+        "probabilities": {
+          "0": 0.5,
+          "1": 0.1,
+          "2": 0.09,
+          "3": 0.08,
+          "4": 0.23
+        }
+      }
+    },
+    "MC-002": {
+      "real_change": {
+        "type": "choice",
+        "choice": "SMALL",
+        "confidence": 0.89,
+        "probabilities": {
+          "SMALL": 0.93,
+          "MEDIUM": 0.07,
+          "LARGE": 0
+        }
+      },
+      "axis_from_zero": {
+        "type": "noul",
+        "noul": 1
+      },
+      "misleading": {
+        "type": "score",
+        "score": 0.64,
+        "confidence": 0.47,
+        "probabilities": {
+          "0": 0.65,
+          "1": 0.17,
+          "2": 0.1,
+          "3": 0.05,
+          "4": 0.03
+        }
+      }
+    },
+    "MC-003": {
+      "real_change": {
+        "type": "choice",
+        "choice": "SMALL",
+        "confidence": 0.97,
+        "probabilities": {
+          "SMALL": 0.98,
+          "MEDIUM": 0.02,
+          "LARGE": 0
+        }
+      },
+      "axis_from_zero": {
+        "type": "noul",
+        "noul": 1
+      },
+      "misleading": {
+        "type": "score",
+        "score": 0.32,
+        "confidence": 0.73,
+        "probabilities": {
+          "0": 0.8,
+          "1": 0.12,
+          "2": 0.05,
+          "3": 0.02,
+          "4": 0.01
+        }
+      }
+    },
+    "MC-004": {
+      "real_change": {
+        "type": "choice",
+        "choice": "SMALL",
+        "confidence": 0.89,
+        "probabilities": {
+          "SMALL": 0.93,
+          "MEDIUM": 0.06,
+          "LARGE": 0.01
+        }
+      },
+      "axis_from_zero": {
+        "type": "noul",
+        "noul": 0
+      },
+      "misleading": {
+        "type": "score",
+        "score": 3.52,
+        "confidence": 0.6,
+        "probabilities": {
+          "0": 0,
+          "1": 0.01,
+          "2": 0.09,
+          "3": 0.27,
+          "4": 0.63
+        }
+      }
+    },
+    "MC-005": {
+      "real_change": {
+        "type": "choice",
+        "choice": "LARGE",
+        "confidence": 0.24,
+        "probabilities": {
+          "SMALL": 0.15,
+          "MEDIUM": 0.36,
+          "LARGE": 0.49
+        }
+      },
+      "axis_from_zero": {
+        "type": "noul",
+        "noul": 1
+      },
+      "misleading": {
+        "type": "score",
+        "score": 0.09,
+        "confidence": 0.93,
+        "probabilities": {
+          "0": 0.93,
+          "1": 0.05,
+          "2": 0.02,
+          "3": 0,
+          "4": 0
+        }
+      }
+    },
+    "MC-006": {
+      "real_change": {
+        "type": "choice",
+        "choice": "SMALL",
+        "confidence": 0.99,
+        "probabilities": {
+          "SMALL": 0.99,
+          "MEDIUM": 0.01,
+          "LARGE": 0
+        }
+      },
+      "axis_from_zero": {
+        "type": "noul",
+        "noul": 1
+      },
+      "misleading": {
+        "type": "score",
+        "score": 0.78,
+        "confidence": 0.35,
+        "probabilities": {
+          "0": 0.57,
+          "1": 0.22,
+          "2": 0.11,
+          "3": 0.06,
+          "4": 0.04
+        }
+      }
+    },
+    "MC-007": {
+      "real_change": {
+        "type": "choice",
+        "choice": "SMALL",
+        "confidence": 0.13,
+        "probabilities": {
+          "SMALL": 0.42,
+          "MEDIUM": 0.39,
+          "LARGE": 0.19
+        }
+      },
+      "axis_from_zero": {
+        "type": "noul",
+        "noul": 0
+      },
+      "misleading": {
+        "type": "score",
+        "score": 3.53,
+        "confidence": 0.61,
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.01,
+          "2": 0.06,
+          "3": 0.28,
+          "4": 0.64
+        }
+      }
+    },
+    "MC-008": {
+      "real_change": {
+        "type": "choice",
+        "choice": "LARGE",
+        "confidence": 0.2,
+        "probabilities": {
+          "SMALL": 0.17,
+          "MEDIUM": 0.36,
+          "LARGE": 0.47
+        }
+      },
+      "axis_from_zero": {
+        "type": "noul",
+        "noul": 0
+      },
+      "misleading": {
+        "type": "score",
+        "score": 3.49,
+        "confidence": 0.57,
+        "probabilities": {
+          "0": 0.02,
+          "1": 0.03,
+          "2": 0.07,
+          "3": 0.2,
+          "4": 0.68
+        }
+      }
+    },
+    "MC-009": {
+      "real_change": {
+        "type": "choice",
+        "choice": "SMALL",
+        "confidence": 0.45,
+        "probabilities": {
+          "SMALL": 0.63,
+          "MEDIUM": 0.35,
+          "LARGE": 0.02
+        }
+      },
+      "axis_from_zero": {
+        "type": "noul",
+        "noul": 1
+      },
+      "misleading": {
+        "type": "score",
+        "score": 0.37,
+        "confidence": 0.69,
+        "probabilities": {
+          "0": 0.75,
+          "1": 0.15,
+          "2": 0.08,
+          "3": 0.02,
+          "4": 0
+        }
+      }
+    },
+    "MC-010": {
+      "real_change": {
+        "type": "choice",
+        "choice": "LARGE",
+        "confidence": 0.51,
+        "probabilities": {
+          "SMALL": 0.06,
+          "MEDIUM": 0.27,
+          "LARGE": 0.67
+        }
+      },
+      "axis_from_zero": {
+        "type": "noul",
+        "noul": 0
+      },
+      "misleading": {
+        "type": "score",
+        "score": 3.45,
+        "confidence": 0.54,
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.03,
+          "2": 0.09,
+          "3": 0.24,
+          "4": 0.63
+        }
+      }
+    },
+    "MC-011": {
+      "real_change": {
+        "type": "choice",
+        "choice": "SMALL",
+        "confidence": 0.42,
+        "probabilities": {
+          "SMALL": 0.61,
+          "MEDIUM": 0.37,
+          "LARGE": 0.02
+        }
+      },
+      "axis_from_zero": {
+        "type": "noul",
+        "noul": 1
+      },
+      "misleading": {
+        "type": "score",
+        "score": 0.98,
+        "confidence": 0.18,
+        "probabilities": {
+          "0": 0.5,
+          "1": 0.21,
+          "2": 0.15,
+          "3": 0.09,
+          "4": 0.05
+        }
+      }
+    },
+    "MC-012": {
+      "real_change": {
+        "type": "choice",
+        "choice": "LARGE",
+        "confidence": 0.89,
+        "probabilities": {
+          "SMALL": 0.02,
+          "MEDIUM": 0.05,
+          "LARGE": 0.93
+        }
+      },
+      "axis_from_zero": {
+        "type": "noul",
+        "noul": 0
+      },
+      "misleading": {
+        "type": "score",
+        "score": 3.76,
+        "confidence": 0.8,
+        "probabilities": {
+          "0": 0.02,
+          "1": 0.01,
+          "2": 0.02,
+          "3": 0.09,
+          "4": 0.86
+        }
+      }
+    },
+    "MC-013": {
+      "real_change": {
+        "type": "choice",
+        "choice": "MEDIUM",
+        "confidence": 0.24,
+        "probabilities": {
+          "SMALL": 0.28,
+          "MEDIUM": 0.49,
+          "LARGE": 0.23
+        }
+      },
+      "axis_from_zero": {
+        "type": "noul",
+        "noul": 1
+      },
+      "misleading": {
+        "type": "score",
+        "score": 3.16,
+        "confidence": 0.45,
+        "probabilities": {
+          "0": 0.02,
+          "1": 0.03,
+          "2": 0.13,
+          "3": 0.41,
+          "4": 0.41
+        }
+      }
+    },
+    "MC-014": {
+      "real_change": {
+        "type": "choice",
+        "choice": "SMALL",
+        "confidence": 0.34,
+        "probabilities": {
+          "SMALL": 0.56,
+          "MEDIUM": 0.41,
+          "LARGE": 0.03
+        }
+      },
+      "axis_from_zero": {
+        "type": "noul",
+        "noul": 0
+      },
+      "misleading": {
+        "type": "score",
+        "score": 3.45,
+        "confidence": 0.54,
+        "probabilities": {
+          "0": 0,
+          "1": 0.01,
+          "2": 0.1,
+          "3": 0.32,
+          "4": 0.57
+        }
+      }
+    },
+    "MC-015": {
+      "real_change": {
+        "type": "choice",
+        "choice": "LARGE",
+        "confidence": 0.82,
+        "probabilities": {
+          "SMALL": 0.05,
+          "MEDIUM": 0.07,
+          "LARGE": 0.88
+        }
+      },
+      "axis_from_zero": {
+        "type": "noul",
+        "noul": 0
+      },
+      "misleading": {
+        "type": "score",
+        "score": 3.73,
+        "confidence": 0.77,
+        "probabilities": {
+          "0": 0,
+          "1": 0.02,
+          "2": 0.04,
+          "3": 0.13,
+          "4": 0.81
+        }
+      }
+    },
+    "MC-016": {
+      "real_change": {
+        "type": "choice",
+        "choice": "SMALL",
+        "confidence": 0.99,
+        "probabilities": {
+          "SMALL": 0.99,
+          "MEDIUM": 0.01,
+          "LARGE": 0
+        }
+      },
+      "axis_from_zero": {
+        "type": "noul",
+        "noul": 1
+      },
+      "misleading": {
+        "type": "score",
+        "score": 0.69,
+        "confidence": 0.42,
+        "probabilities": {
+          "0": 0.61,
+          "1": 0.2,
+          "2": 0.11,
+          "3": 0.05,
+          "4": 0.03
+        }
+      }
+    },
+    "MC-017": {
+      "real_change": {
+        "type": "choice",
+        "choice": "LARGE",
+        "confidence": 0.16,
+        "probabilities": {
+          "SMALL": 0.2,
+          "MEDIUM": 0.36,
+          "LARGE": 0.44
+        }
+      },
+      "axis_from_zero": {
+        "type": "noul",
+        "noul": 0
+      },
+      "misleading": {
+        "type": "score",
+        "score": 3.29,
+        "confidence": 0.41,
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.03,
+          "2": 0.13,
+          "3": 0.32,
+          "4": 0.51
+        }
+      }
+    },
+    "MC-018": {
+      "real_change": {
+        "type": "choice",
+        "choice": "MEDIUM",
+        "confidence": 0.3,
+        "probabilities": {
+          "SMALL": 0.09,
+          "MEDIUM": 0.53,
+          "LARGE": 0.38
+        }
+      },
+      "axis_from_zero": {
+        "type": "noul",
+        "noul": 1
+      },
+      "misleading": {
+        "type": "score",
+        "score": 1,
+        "confidence": 0.17,
+        "probabilities": {
+          "0": 0.44,
+          "1": 0.24,
+          "2": 0.22,
+          "3": 0.08,
+          "4": 0.02
+        }
+      }
+    },
+    "MC-019": {
+      "real_change": {
+        "type": "choice",
+        "choice": "LARGE",
+        "confidence": 0.4,
+        "probabilities": {
+          "SMALL": 0.14,
+          "MEDIUM": 0.26,
+          "LARGE": 0.6
+        }
+      },
+      "axis_from_zero": {
+        "type": "noul",
+        "noul": 1
+      },
+      "misleading": {
+        "type": "score",
+        "score": 2.74,
+        "confidence": 0,
+        "probabilities": {
+          "0": 0.13,
+          "1": 0.07,
+          "2": 0.13,
+          "3": 0.27,
+          "4": 0.4
+        }
+      }
+    },
+    "MC-020": {
+      "real_change": {
+        "type": "choice",
+        "choice": "LARGE",
+        "confidence": 0.7,
+        "probabilities": {
+          "SMALL": 0.05,
+          "MEDIUM": 0.15,
+          "LARGE": 0.8
+        }
+      },
+      "axis_from_zero": {
+        "type": "noul",
+        "noul": 0
+      },
+      "misleading": {
+        "type": "score",
+        "score": 3.53,
+        "confidence": 0.61,
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.02,
+          "2": 0.07,
+          "3": 0.23,
+          "4": 0.67
+        }
+      }
+    },
+    "MC-021": {
+      "real_change": {
+        "type": "choice",
+        "choice": "SMALL",
+        "confidence": 0.28,
+        "probabilities": {
+          "SMALL": 0.52,
+          "MEDIUM": 0.42,
+          "LARGE": 0.06
+        }
+      },
+      "axis_from_zero": {
+        "type": "noul",
+        "noul": 0
+      },
+      "misleading": {
+        "type": "score",
+        "score": 3.39,
+        "confidence": 0.49,
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.02,
+          "2": 0.09,
+          "3": 0.33,
+          "4": 0.55
+        }
+      }
+    },
+    "MC-022": {
+      "real_change": {
+        "type": "choice",
+        "choice": "LARGE",
+        "confidence": 0.28,
+        "probabilities": {
+          "SMALL": 0.12,
+          "MEDIUM": 0.36,
+          "LARGE": 0.52
+        }
+      },
+      "axis_from_zero": {
+        "type": "noul",
+        "noul": 0
+      },
+      "misleading": {
+        "type": "score",
+        "score": 2.93,
+        "confidence": 0.11,
+        "probabilities": {
+          "0": 0.07,
+          "1": 0.1,
+          "2": 0.14,
+          "3": 0.21,
+          "4": 0.48
+        }
+      }
+    },
+    "MC-023": {
+      "real_change": {
+        "type": "choice",
+        "choice": "SMALL",
+        "confidence": 0.82,
+        "probabilities": {
+          "SMALL": 0.88,
+          "MEDIUM": 0.11,
+          "LARGE": 0.01
+        }
+      },
+      "axis_from_zero": {
+        "type": "noul",
+        "noul": 1
+      },
+      "misleading": {
+        "type": "score",
+        "score": 0.9,
+        "confidence": 0.25,
+        "probabilities": {
+          "0": 0.55,
+          "1": 0.19,
+          "2": 0.13,
+          "3": 0.07,
+          "4": 0.06
+        }
+      }
+    },
+    "MC-024": {
+      "real_change": {
+        "type": "choice",
+        "choice": "SMALL",
+        "confidence": 0.45,
+        "probabilities": {
+          "SMALL": 0.63,
+          "MEDIUM": 0.34,
+          "LARGE": 0.03
+        }
+      },
+      "axis_from_zero": {
+        "type": "noul",
+        "noul": 1
+      },
+      "misleading": {
+        "type": "score",
+        "score": 1.5,
+        "confidence": 0,
+        "probabilities": {
+          "0": 0.42,
+          "1": 0.16,
+          "2": 0.12,
+          "3": 0.1,
+          "4": 0.2
+        }
+      }
+    },
+    "MC-025": {
+      "real_change": {
+        "type": "choice",
+        "choice": "LARGE",
+        "confidence": 0.16,
+        "probabilities": {
+          "SMALL": 0.16,
+          "MEDIUM": 0.4,
+          "LARGE": 0.44
+        }
+      },
+      "axis_from_zero": {
+        "type": "noul",
+        "noul": 0
+      },
+      "misleading": {
+        "type": "score",
+        "score": 3.4,
+        "confidence": 0.5,
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.01,
+          "2": 0.09,
+          "3": 0.35,
+          "4": 0.54
+        }
+      }
+    },
+    "MC-026": {
+      "real_change": {
+        "type": "choice",
+        "choice": "LARGE",
+        "confidence": 0.27,
+        "probabilities": {
+          "SMALL": 0.1,
+          "MEDIUM": 0.39,
+          "LARGE": 0.51
+        }
+      },
+      "axis_from_zero": {
+        "type": "noul",
+        "noul": 0
+      },
+      "misleading": {
+        "type": "score",
+        "score": 3.13,
+        "confidence": 0.28,
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.04,
+          "2": 0.18,
+          "3": 0.35,
+          "4": 0.42
+        }
+      }
+    },
+    "MC-027": {
+      "real_change": {
+        "type": "choice",
+        "choice": "SMALL",
+        "confidence": 0.37,
+        "probabilities": {
+          "SMALL": 0.58,
+          "MEDIUM": 0.41,
+          "LARGE": 0.01
+        }
+      },
+      "axis_from_zero": {
+        "type": "noul",
+        "noul": 1
+      },
+      "misleading": {
+        "type": "score",
+        "score": 1.51,
+        "confidence": 0,
+        "probabilities": {
+          "0": 0.37,
+          "1": 0.17,
+          "2": 0.17,
+          "3": 0.16,
+          "4": 0.13
+        }
+      }
+    },
+    "MC-028": {
+      "real_change": {
+        "type": "choice",
+        "choice": "LARGE",
+        "confidence": 0.55,
+        "probabilities": {
+          "SMALL": 0.08,
+          "MEDIUM": 0.22,
+          "LARGE": 0.7
+        }
+      },
+      "axis_from_zero": {
+        "type": "noul",
+        "noul": 0
+      },
+      "misleading": {
+        "type": "score",
+        "score": 3.03,
+        "confidence": 0.43,
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.06,
+          "2": 0.18,
+          "3": 0.39,
+          "4": 0.36
+        }
+      }
+    },
+    "MC-029": {
+      "real_change": {
+        "type": "choice",
+        "choice": "MEDIUM",
+        "confidence": 0.25,
+        "probabilities": {
+          "SMALL": 0.19,
+          "MEDIUM": 0.5,
+          "LARGE": 0.31
+        }
+      },
+      "axis_from_zero": {
+        "type": "noul",
+        "noul": 1
+      },
+      "misleading": {
+        "type": "score",
+        "score": 1.42,
+        "confidence": 0,
+        "probabilities": {
+          "0": 0.36,
+          "1": 0.18,
+          "2": 0.22,
+          "3": 0.16,
+          "4": 0.08
+        }
+      }
+    },
+    "MC-030": {
+      "real_change": {
+        "type": "choice",
+        "choice": "LARGE",
+        "confidence": 0.66,
+        "probabilities": {
+          "SMALL": 0.06,
+          "MEDIUM": 0.17,
+          "LARGE": 0.77
+        }
+      },
+      "axis_from_zero": {
+        "type": "noul",
+        "noul": 0
+      },
+      "misleading": {
+        "type": "score",
+        "score": 3.22,
+        "confidence": 0.35,
+        "probabilities": {
+          "0": 0.06,
+          "1": 0.08,
+          "2": 0.08,
+          "3": 0.14,
+          "4": 0.64
+        }
+      }
+    }
+  }
+}

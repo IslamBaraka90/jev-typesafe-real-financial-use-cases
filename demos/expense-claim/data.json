@@ -1,0 +1,618 @@
+{
+  "id": "expense-claim",
+  "class": "synthetic",
+  "generatedAt": "2026-10-11",
+  "seed": 4102,
+  "source": "scripts/generate/expense-claim.js",
+  "context": {
+    "company": "Copperline Group",
+    "policy": [
+      "The claimed amount must equal the receipt total.",
+      "The claim date must be the date printed on the receipt.",
+      "The merchant on the claim must be the merchant on the receipt.",
+      "Alcohol is never reimbursed; a receipt with any alcoholic drink on it is returned to the employee."
+    ]
+  },
+  "items": [
+    {
+      "id": "EC-001",
+      "image": "images/expense-claim/EC-001.png",
+      "claim": {
+        "employee": "Rania Barakat",
+        "category": "Client meal",
+        "merchant": "Northwind Catering",
+        "date": "2026-07-16",
+        "amount": 83.7,
+        "currency": "USD",
+        "description": "Client meal on 2026-07-16"
+      },
+      "receiptMerchant": "Cedar Grill",
+      "receiptTotal": 83.7
+    },
+    {
+      "id": "EC-002",
+      "image": "images/expense-claim/EC-002.png",
+      "claim": {
+        "employee": "Adel Mansour",
+        "category": "Client meal",
+        "merchant": "Cedar Grill",
+        "date": "2026-08-12",
+        "amount": 17.82,
+        "currency": "USD",
+        "description": "Client meal on 2026-08-12"
+      },
+      "receiptMerchant": "Cedar Grill",
+      "receiptTotal": 17.82
+    },
+    {
+      "id": "EC-003",
+      "image": "images/expense-claim/EC-003.png",
+      "claim": {
+        "employee": "Lina Nasser",
+        "category": "Office supplies",
+        "merchant": "Kestrel Office Supply",
+        "date": "2026-07-15",
+        "amount": 212.01,
+        "currency": "USD",
+        "description": "Office supplies on 2026-07-15"
+      },
+      "receiptMerchant": "Kestrel Office Supply",
+      "receiptTotal": 163.51
+    },
+    {
+      "id": "EC-004",
+      "image": "images/expense-claim/EC-004.png",
+      "claim": {
+        "employee": "Lina Fahmy",
+        "category": "Office supplies",
+        "merchant": "Lantern Restaurant",
+        "date": "2026-07-31",
+        "amount": 92.12,
+        "currency": "USD",
+        "description": "Office supplies on 2026-07-31"
+      },
+      "receiptMerchant": "Kestrel Office Supply",
+      "receiptTotal": 92.12
+    },
+    {
+      "id": "EC-005",
+      "image": "images/expense-claim/EC-005.png",
+      "claim": {
+        "employee": "Tarek Fahmy",
+        "category": "Client meal",
+        "merchant": "Harbour Bistro",
+        "date": "2026-08-13",
+        "amount": 79.92,
+        "currency": "USD",
+        "description": "Client meal on 2026-08-13"
+      },
+      "receiptMerchant": "Cedar Grill",
+      "receiptTotal": 79.92
+    },
+    {
+      "id": "EC-006",
+      "image": "images/expense-claim/EC-006.png",
+      "claim": {
+        "employee": "Noor Tawfik",
+        "category": "Local transport",
+        "merchant": "Northwind Catering",
+        "date": "2026-07-09",
+        "amount": 8.32,
+        "currency": "USD",
+        "description": "Local transport on 2026-07-09"
+      },
+      "receiptMerchant": "Meridian Taxi Co",
+      "receiptTotal": 8.32
+    },
+    {
+      "id": "EC-007",
+      "image": "images/expense-claim/EC-007.png",
+      "claim": {
+        "employee": "Yusuf Barakat",
+        "category": "Client meal",
+        "merchant": "Harbour Bistro",
+        "date": "2026-07-11",
+        "amount": 33.48,
+        "currency": "USD",
+        "description": "Client meal on 2026-07-11"
+      },
+      "receiptMerchant": "Harbour Bistro",
+      "receiptTotal": 33.48
+    },
+    {
+      "id": "EC-008",
+      "image": "images/expense-claim/EC-008.png",
+      "claim": {
+        "employee": "Maya Ghanem",
+        "category": "Travel meal",
+        "merchant": "Station Cafe",
+        "date": "2026-06-24",
+        "amount": 23.33,
+        "currency": "USD",
+        "description": "Travel meal on 2026-06-24"
+      },
+      "receiptMerchant": "Station Cafe",
+      "receiptTotal": 23.33
+    },
+    {
+      "id": "EC-009",
+      "image": "images/expense-claim/EC-009.png",
+      "claim": {
+        "employee": "Noor Farouk",
+        "category": "Local transport",
+        "merchant": "Meridian Taxi Co",
+        "date": "2026-08-19",
+        "amount": 16.96,
+        "currency": "USD",
+        "description": "Local transport on 2026-08-19"
+      },
+      "receiptMerchant": "Meridian Taxi Co",
+      "receiptTotal": 16.96
+    },
+    {
+      "id": "EC-010",
+      "image": "images/expense-claim/EC-010.png",
+      "claim": {
+        "employee": "Dina Barakat",
+        "category": "Client meal",
+        "merchant": "Harbour Bistro",
+        "date": "2026-08-25",
+        "amount": 105.84,
+        "currency": "USD",
+        "description": "Client meal on 2026-08-25"
+      },
+      "receiptMerchant": "Cedar Grill",
+      "receiptTotal": 105.84
+    },
+    {
+      "id": "EC-011",
+      "image": "images/expense-claim/EC-011.png",
+      "claim": {
+        "employee": "Fadi Ghanem",
+        "category": "Client meal",
+        "merchant": "Harbour Bistro",
+        "date": "2026-07-17",
+        "amount": 78.3,
+        "currency": "USD",
+        "description": "Client meal on 2026-07-17"
+      },
+      "receiptMerchant": "Harbour Bistro",
+      "receiptTotal": 78.3
+    },
+    {
+      "id": "EC-012",
+      "image": "images/expense-claim/EC-012.png",
+      "claim": {
+        "employee": "Sami Darwish",
+        "category": "Local transport",
+        "merchant": "Meridian Taxi Co",
+        "date": "2026-07-30",
+        "amount": 16.96,
+        "currency": "USD",
+        "description": "Local transport on 2026-07-30"
+      },
+      "receiptMerchant": "Meridian Taxi Co",
+      "receiptTotal": 16.96
+    },
+    {
+      "id": "EC-013",
+      "image": "images/expense-claim/EC-013.png",
+      "claim": {
+        "employee": "Omar Barakat",
+        "category": "Local transport",
+        "merchant": "Meridian Taxi Co",
+        "date": "2026-07-11",
+        "amount": 85.11,
+        "currency": "USD",
+        "description": "Local transport on 2026-07-11"
+      },
+      "receiptMerchant": "Meridian Taxi Co",
+      "receiptTotal": 36.61
+    },
+    {
+      "id": "EC-014",
+      "image": "images/expense-claim/EC-014.png",
+      "claim": {
+        "employee": "Lina Farouk",
+        "category": "Client meal",
+        "merchant": "Cedar Grill",
+        "date": "2026-07-03",
+        "amount": 90.18,
+        "currency": "USD",
+        "description": "Client meal on 2026-07-03"
+      },
+      "receiptMerchant": "Cedar Grill",
+      "receiptTotal": 90.18
+    },
+    {
+      "id": "EC-015",
+      "image": "images/expense-claim/EC-015.png",
+      "claim": {
+        "employee": "Noor Barakat",
+        "category": "Client meal",
+        "merchant": "Harbour Bistro",
+        "date": "2026-08-26",
+        "amount": 118.38,
+        "currency": "USD",
+        "description": "Client meal on 2026-08-26"
+      },
+      "receiptMerchant": "Harbour Bistro",
+      "receiptTotal": 106.38
+    },
+    {
+      "id": "EC-016",
+      "image": "images/expense-claim/EC-016.png",
+      "claim": {
+        "employee": "Yusuf Farouk",
+        "category": "Client meal",
+        "merchant": "Harbour Bistro",
+        "date": "2026-07-29",
+        "amount": 74.52,
+        "currency": "USD",
+        "description": "Client meal on 2026-07-29"
+      },
+      "receiptMerchant": "Harbour Bistro",
+      "receiptTotal": 74.52
+    },
+    {
+      "id": "EC-017",
+      "image": "images/expense-claim/EC-017.png",
+      "claim": {
+        "employee": "Zeina Haddad",
+        "category": "Client meal",
+        "merchant": "Cedar Grill",
+        "date": "2026-08-25",
+        "amount": 53.19,
+        "currency": "USD",
+        "description": "Client meal on 2026-08-25"
+      },
+      "receiptMerchant": "Cedar Grill",
+      "receiptTotal": 53.19
+    },
+    {
+      "id": "EC-018",
+      "image": "images/expense-claim/EC-018.png",
+      "claim": {
+        "employee": "Karim Fahmy",
+        "category": "Office supplies",
+        "merchant": "Kestrel Office Supply",
+        "date": "2026-07-02",
+        "amount": 136.74,
+        "currency": "USD",
+        "description": "Office supplies on 2026-07-02"
+      },
+      "receiptMerchant": "Kestrel Office Supply",
+      "receiptTotal": 101.74
+    },
+    {
+      "id": "EC-019",
+      "image": "images/expense-claim/EC-019.png",
+      "claim": {
+        "employee": "Sami Tawfik",
+        "category": "Client meal",
+        "merchant": "Cedar Grill",
+        "date": "2026-08-21",
+        "amount": 129.6,
+        "currency": "USD",
+        "description": "Client meal on 2026-08-21"
+      },
+      "receiptMerchant": "Cedar Grill",
+      "receiptTotal": 129.6
+    },
+    {
+      "id": "EC-020",
+      "image": "images/expense-claim/EC-020.png",
+      "claim": {
+        "employee": "Tarek Ghanem",
+        "category": "Client meal",
+        "merchant": "Cedar Grill",
+        "date": "2026-07-26",
+        "amount": 94.23,
+        "currency": "USD",
+        "description": "Client meal on 2026-07-26"
+      },
+      "receiptMerchant": "Cedar Grill",
+      "receiptTotal": 94.23
+    },
+    {
+      "id": "EC-021",
+      "image": "images/expense-claim/EC-021.png",
+      "claim": {
+        "employee": "Salma Moussa",
+        "category": "Client meal",
+        "merchant": "Harbour Bistro",
+        "date": "2026-08-24",
+        "amount": 44.28,
+        "currency": "USD",
+        "description": "Client meal on 2026-08-24"
+      },
+      "receiptMerchant": "Harbour Bistro",
+      "receiptTotal": 44.28
+    },
+    {
+      "id": "EC-022",
+      "image": "images/expense-claim/EC-022.png",
+      "claim": {
+        "employee": "Yusuf Shadid",
+        "category": "Office supplies",
+        "merchant": "Kestrel Office Supply",
+        "date": "2026-08-23",
+        "amount": 25.27,
+        "currency": "USD",
+        "description": "Office supplies on 2026-08-23"
+      },
+      "receiptMerchant": "Kestrel Office Supply",
+      "receiptTotal": 25.27
+    },
+    {
+      "id": "EC-023",
+      "image": "images/expense-claim/EC-023.png",
+      "claim": {
+        "employee": "Sami Khoury",
+        "category": "Client meal",
+        "merchant": "Harbour Bistro",
+        "date": "2026-07-20",
+        "amount": 41.58,
+        "currency": "USD",
+        "description": "Client meal on 2026-07-20"
+      },
+      "receiptMerchant": "Harbour Bistro",
+      "receiptTotal": 41.58
+    },
+    {
+      "id": "EC-024",
+      "image": "images/expense-claim/EC-024.png",
+      "claim": {
+        "employee": "Dina Moussa",
+        "category": "Client meal",
+        "merchant": "Harbour Bistro",
+        "date": "2026-07-23",
+        "amount": 127.46,
+        "currency": "USD",
+        "description": "Client meal on 2026-07-23"
+      },
+      "receiptMerchant": "Harbour Bistro",
+      "receiptTotal": 107.46
+    },
+    {
+      "id": "EC-025",
+      "image": "images/expense-claim/EC-025.png",
+      "claim": {
+        "employee": "Nabil Fahmy",
+        "category": "Travel meal",
+        "merchant": "Station Cafe",
+        "date": "2026-08-10",
+        "amount": 22.52,
+        "currency": "USD",
+        "description": "Travel meal on 2026-08-10"
+      },
+      "receiptMerchant": "Station Cafe",
+      "receiptTotal": 22.52
+    },
+    {
+      "id": "EC-026",
+      "image": "images/expense-claim/EC-026.png",
+      "claim": {
+        "employee": "Maya Shadid",
+        "category": "Client meal",
+        "merchant": "Northwind Catering",
+        "date": "2026-08-29",
+        "amount": 55.35,
+        "currency": "USD",
+        "description": "Client meal on 2026-08-29"
+      },
+      "receiptMerchant": "Cedar Grill",
+      "receiptTotal": 55.35
+    },
+    {
+      "id": "EC-027",
+      "image": "images/expense-claim/EC-027.png",
+      "claim": {
+        "employee": "Tarek Selim",
+        "category": "Client meal",
+        "merchant": "Cedar Grill",
+        "date": "2026-08-16",
+        "amount": 34.56,
+        "currency": "USD",
+        "description": "Client meal on 2026-08-16"
+      },
+      "receiptMerchant": "Cedar Grill",
+      "receiptTotal": 34.56
+    },
+    {
+      "id": "EC-028",
+      "image": "images/expense-claim/EC-028.png",
+      "claim": {
+        "employee": "Fadi Haddad",
+        "category": "Client meal",
+        "merchant": "Harbour Bistro",
+        "date": "2026-07-30",
+        "amount": 69.78,
+        "currency": "USD",
+        "description": "Client meal on 2026-07-30"
+      },
+      "receiptMerchant": "Harbour Bistro",
+      "receiptTotal": 57.78
+    },
+    {
+      "id": "EC-029",
+      "image": "images/expense-claim/EC-029.png",
+      "claim": {
+        "employee": "Nabil Selim",
+        "category": "Travel meal",
+        "merchant": "Station Cafe",
+        "date": "2026-08-23",
+        "amount": 27.86,
+        "currency": "USD",
+        "description": "Travel meal on 2026-08-23"
+      },
+      "receiptMerchant": "Station Cafe",
+      "receiptTotal": 27.86
+    },
+    {
+      "id": "EC-030",
+      "image": "images/expense-claim/EC-030.png",
+      "claim": {
+        "employee": "Amina Kassem",
+        "category": "Client meal",
+        "merchant": "Cedar Grill",
+        "date": "2026-07-31",
+        "amount": 54.54,
+        "currency": "USD",
+        "description": "Client meal on 2026-07-31"
+      },
+      "receiptMerchant": "Cedar Grill",
+      "receiptTotal": 54.54
+    },
+    {
+      "id": "EC-031",
+      "image": "images/expense-claim/EC-031.png",
+      "claim": {
+        "employee": "Noor Darwish",
+        "category": "Client meal",
+        "merchant": "Harbour Bistro",
+        "date": "2026-07-01",
+        "amount": 66.42,
+        "currency": "USD",
+        "description": "Client meal on 2026-07-01"
+      },
+      "receiptMerchant": "Harbour Bistro",
+      "receiptTotal": 66.42
+    },
+    {
+      "id": "EC-032",
+      "image": "images/expense-claim/EC-032.png",
+      "claim": {
+        "employee": "Omar Aziz",
+        "category": "Travel meal",
+        "merchant": "Station Cafe",
+        "date": "2026-08-11",
+        "amount": 18.79,
+        "currency": "USD",
+        "description": "Travel meal on 2026-08-11"
+      },
+      "receiptMerchant": "Station Cafe",
+      "receiptTotal": 18.79
+    },
+    {
+      "id": "EC-033",
+      "image": "images/expense-claim/EC-033.png",
+      "claim": {
+        "employee": "Salma Darwish",
+        "category": "Client meal",
+        "merchant": "Harbour Bistro",
+        "date": "2026-07-28",
+        "amount": 72.38,
+        "currency": "USD",
+        "description": "Client meal on 2026-07-28"
+      },
+      "receiptMerchant": "Harbour Bistro",
+      "receiptTotal": 52.38
+    },
+    {
+      "id": "EC-034",
+      "image": "images/expense-claim/EC-034.png",
+      "claim": {
+        "employee": "Yusuf Halabi",
+        "category": "Client meal",
+        "merchant": "Cedar Grill",
+        "date": "2026-07-31",
+        "amount": 64.8,
+        "currency": "USD",
+        "description": "Client meal on 2026-07-31"
+      },
+      "receiptMerchant": "Harbour Bistro",
+      "receiptTotal": 64.8
+    },
+    {
+      "id": "EC-035",
+      "image": "images/expense-claim/EC-035.png",
+      "claim": {
+        "employee": "Yusuf Shadid",
+        "category": "Client meal",
+        "merchant": "Harbour Bistro",
+        "date": "2026-08-06",
+        "amount": 84.68,
+        "currency": "USD",
+        "description": "Client meal on 2026-08-06"
+      },
+      "receiptMerchant": "Harbour Bistro",
+      "receiptTotal": 49.68
+    },
+    {
+      "id": "EC-036",
+      "image": "images/expense-claim/EC-036.png",
+      "claim": {
+        "employee": "Omar Ghanem",
+        "category": "Travel meal",
+        "merchant": "Northwind Catering",
+        "date": "2026-07-10",
+        "amount": 40.55,
+        "currency": "USD",
+        "description": "Travel meal on 2026-07-10"
+      },
+      "receiptMerchant": "Station Cafe",
+      "receiptTotal": 40.55
+    },
+    {
+      "id": "EC-037",
+      "image": "images/expense-claim/EC-037.png",
+      "claim": {
+        "employee": "Dina Ghanem",
+        "category": "Client meal",
+        "merchant": "Cedar Grill",
+        "date": "2026-07-07",
+        "amount": 85.86,
+        "currency": "USD",
+        "description": "Client meal on 2026-07-07"
+      },
+      "receiptMerchant": "Cedar Grill",
+      "receiptTotal": 85.86
+    },
+    {
+      "id": "EC-038",
+      "image": "images/expense-claim/EC-038.png",
+      "claim": {
+        "employee": "Salma Mansour",
+        "category": "Travel meal",
+        "merchant": "Station Cafe",
+        "date": "2026-07-02",
+        "amount": 12.91,
+        "currency": "USD",
+        "description": "Travel meal on 2026-07-02"
+      },
+      "receiptMerchant": "Station Cafe",
+      "receiptTotal": 12.91
+    },
+    {
+      "id": "EC-039",
+      "image": "images/expense-claim/EC-039.png",
+      "claim": {
+        "employee": "Salma Tawfik",
+        "category": "Client meal",
+        "merchant": "Cedar Grill",
+        "date": "2026-08-25",
+        "amount": 116.64,
+        "currency": "USD",
+        "description": "Client meal on 2026-08-25"
+      },
+      "receiptMerchant": "Cedar Grill",
+      "receiptTotal": 116.64
+    },
+    {
+      "id": "EC-040",
+      "image": "images/expense-claim/EC-040.png",
+      "claim": {
+        "employee": "Rania Aziz",
+        "category": "Travel meal",
+        "merchant": "Station Cafe",
+        "date": "2026-08-28",
+        "amount": 27.05,
+        "currency": "USD",
+        "description": "Travel meal on 2026-08-28"
+      },
+      "receiptMerchant": "Station Cafe",
+      "receiptTotal": 27.05
+    }
+  ]
+}

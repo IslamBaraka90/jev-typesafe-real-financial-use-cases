@@ -831,3 +831,9 @@
   overflow-wrap: normal;
   white-space: nowrap;
 }
+
+/* Image demos: the picture the model read, beside the item's other fields. */
+.image-view { display: grid; grid-template-columns: minmax(0, 3fr) minmax(0, 2fr); gap: 16px; align-items: start; }
+.image-view-figure { margin: 0; display: grid; gap: 6px; }
+.image-view-figure img { width: 100%; height: auto; max-height: 560px; object-fit: contain; border: 1px solid var(--border, #ddd); border-radius: 8px; background: #fff; }
+@media (max-width: 760px) { .image-view { grid-template-columns: minmax(0, 1fr); } }

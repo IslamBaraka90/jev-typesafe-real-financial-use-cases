@@ -13,7 +13,7 @@ import { config } from '../src/config.js';
 import { findDemo } from '../demos/index.js';
 import { loadDataset, repoRoot } from '../src/services/dataset.js';
 import { compactAnswers } from '../demos/lib/answers.js';
-import { askModel, askOpenAI, fixturesFile, loadFixtures, PROVIDERS, runDemo } from '../src/services/demo-runner.js';
+import { askModel, askOpenAI, defaultProvider, fixturesFile, loadFixtures, PROVIDERS, runDemo } from '../src/services/demo-runner.js';
 
 const [slug, ...flags] = process.argv.slice(2);
 const has = (flag) => flags.includes(flag);
@@ -27,15 +27,15 @@ if (!slug) {
   process.exit(1);
 }
 
-const provider = value('--provider') ?? 'jev';
-if (!PROVIDERS.includes(provider)) {
-  console.error(`Unknown provider "${provider}". Use one of: ${PROVIDERS.join(', ')}.`);
-  process.exit(1);
-}
-
 const demo = findDemo(slug);
 if (!demo) {
   console.error(`No demo called "${slug}".`);
+  process.exit(1);
+}
+
+const provider = value('--provider') ?? defaultProvider(demo);
+if (!PROVIDERS.includes(provider)) {
+  console.error(`Unknown provider "${provider}". Use one of: ${PROVIDERS.join(', ')}.`);
   process.exit(1);
 }
 if (demo.providers && !demo.providers.includes(provider)) {

@@ -11,6 +11,9 @@ import { loadDataset, repoRoot } from './dataset.js';
 /** The decision models a demo can be recorded against. Jev's file keeps its original name. */
 export const PROVIDERS = ['jev', 'openai'];
 
+/** The model a demo is recorded on when none is named: Jev, unless the demo only runs elsewhere. */
+export const defaultProvider = (demo) => demo?.providers?.[0] ?? 'jev';
+
 export const fixturesFile = (slug, provider = 'jev') =>
   path.join(repoRoot, 'demos', slug, provider === 'jev' ? 'fixtures.json' : `fixtures.${provider}.json`);
 

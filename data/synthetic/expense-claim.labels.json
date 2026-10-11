@@ -1,0 +1,162 @@
+[
+  {
+    "claimId": "EC-001",
+    "problem": "MERCHANT_MISMATCH"
+  },
+  {
+    "claimId": "EC-002",
+    "problem": "DATE_MISMATCH"
+  },
+  {
+    "claimId": "EC-003",
+    "problem": "AMOUNT_INFLATED"
+  },
+  {
+    "claimId": "EC-004",
+    "problem": "MERCHANT_MISMATCH"
+  },
+  {
+    "claimId": "EC-005",
+    "problem": "MERCHANT_MISMATCH"
+  },
+  {
+    "claimId": "EC-006",
+    "problem": "MERCHANT_MISMATCH"
+  },
+  {
+    "claimId": "EC-007",
+    "problem": "DATE_MISMATCH"
+  },
+  {
+    "claimId": "EC-008",
+    "problem": "DATE_MISMATCH"
+  },
+  {
+    "claimId": "EC-009",
+    "problem": "NONE"
+  },
+  {
+    "claimId": "EC-010",
+    "problem": "MERCHANT_MISMATCH"
+  },
+  {
+    "claimId": "EC-011",
+    "problem": "ALCOHOL"
+  },
+  {
+    "claimId": "EC-012",
+    "problem": "NONE"
+  },
+  {
+    "claimId": "EC-013",
+    "problem": "AMOUNT_INFLATED"
+  },
+  {
+    "claimId": "EC-014",
+    "problem": "ALCOHOL"
+  },
+  {
+    "claimId": "EC-015",
+    "problem": "AMOUNT_INFLATED"
+  },
+  {
+    "claimId": "EC-016",
+    "problem": "DATE_MISMATCH"
+  },
+  {
+    "claimId": "EC-017",
+    "problem": "NONE"
+  },
+  {
+    "claimId": "EC-018",
+    "problem": "AMOUNT_INFLATED"
+  },
+  {
+    "claimId": "EC-019",
+    "problem": "ALCOHOL"
+  },
+  {
+    "claimId": "EC-020",
+    "problem": "ALCOHOL"
+  },
+  {
+    "claimId": "EC-021",
+    "problem": "ALCOHOL"
+  },
+  {
+    "claimId": "EC-022",
+    "problem": "DATE_MISMATCH"
+  },
+  {
+    "claimId": "EC-023",
+    "problem": "ALCOHOL"
+  },
+  {
+    "claimId": "EC-024",
+    "problem": "AMOUNT_INFLATED"
+  },
+  {
+    "claimId": "EC-025",
+    "problem": "NONE"
+  },
+  {
+    "claimId": "EC-026",
+    "problem": "MERCHANT_MISMATCH"
+  },
+  {
+    "claimId": "EC-027",
+    "problem": "ALCOHOL"
+  },
+  {
+    "claimId": "EC-028",
+    "problem": "AMOUNT_INFLATED"
+  },
+  {
+    "claimId": "EC-029",
+    "problem": "DATE_MISMATCH"
+  },
+  {
+    "claimId": "EC-030",
+    "problem": "NONE"
+  },
+  {
+    "claimId": "EC-031",
+    "problem": "NONE"
+  },
+  {
+    "claimId": "EC-032",
+    "problem": "DATE_MISMATCH"
+  },
+  {
+    "claimId": "EC-033",
+    "problem": "AMOUNT_INFLATED"
+  },
+  {
+    "claimId": "EC-034",
+    "problem": "MERCHANT_MISMATCH"
+  },
+  {
+    "claimId": "EC-035",
+    "problem": "AMOUNT_INFLATED"
+  },
+  {
+    "claimId": "EC-036",
+    "problem": "MERCHANT_MISMATCH"
+  },
+  {
+    "claimId": "EC-037",
+    "problem": "NONE"
+  },
+  {
+    "claimId": "EC-038",
+    "problem": "NONE"
+  },
+  {
+    "claimId": "EC-039",
+    "problem": "ALCOHOL"
+  },
+  {
+    "claimId": "EC-040",
+    "problem": "DATE_MISMATCH"
+  }
+]

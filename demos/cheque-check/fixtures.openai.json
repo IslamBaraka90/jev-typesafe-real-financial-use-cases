@@ -1,0 +1,913 @@
+{
+  "demo": "cheque-check",
+  "provider": "openai",
+  "model": "gpt-6-luna",
+  "recordedAt": "2026-10-11",
+  "source": "scripts/record-demo.js",
+  "usage": {
+    "input_tokens": 25830,
+    "output_tokens": 0
+  },
+  "answers": {
+    "CQ-001": {
+      "defect": {
+        "type": "choice",
+        "choice": "UNSIGNED",
+        "confidence": 0.8,
+        "probabilities": {
+          "WORDS_FIGURES": 0.03,
+          "UNSIGNED": 0.84,
+          "STALE": 0.02,
+          "POSTDATED": 0.01,
+          "NONE": 0.1
+        }
+      },
+      "accept": {
+        "type": "noul",
+        "noul": 0
+      },
+      "risk": {
+        "type": "score",
+        "score": 2.03,
+        "confidence": 0,
+        "probabilities": {
+          "0": 0.21,
+          "1": 0.16,
+          "2": 0.17,
+          "3": 0.31,
+          "4": 0.15
+        }
+      }
+    },
+    "CQ-002": {
+      "defect": {
+        "type": "choice",
+        "choice": "UNSIGNED",
+        "confidence": 0.76,
+        "probabilities": {
+          "WORDS_FIGURES": 0.03,
+          "UNSIGNED": 0.81,
+          "STALE": 0.11,
+          "POSTDATED": 0.02,
+          "NONE": 0.03
+        }
+      },
+      "accept": {
+        "type": "noul",
+        "noul": 0
+      },
+      "risk": {
+        "type": "score",
+        "score": 2.77,
+        "confidence": 0.31,
+        "probabilities": {
+          "0": 0.08,
+          "1": 0.07,
+          "2": 0.15,
+          "3": 0.4,
+          "4": 0.3
+        }
+      }
+    },
+    "CQ-003": {
+      "defect": {
+        "type": "choice",
+        "choice": "UNSIGNED",
+        "confidence": 0.87,
+        "probabilities": {
+          "WORDS_FIGURES": 0.02,
+          "UNSIGNED": 0.9,
+          "STALE": 0.02,
+          "POSTDATED": 0.01,
+          "NONE": 0.05
+        }
+      },
+      "accept": {
+        "type": "noul",
+        "noul": 0
+      },
+      "risk": {
+        "type": "score",
+        "score": 3.26,
+        "confidence": 0.38,
+        "probabilities": {
+          "0": 0.03,
+          "1": 0.04,
+          "2": 0.07,
+          "3": 0.36,
+          "4": 0.5
+        }
+      }
+    },
+    "CQ-004": {
+      "defect": {
+        "type": "choice",
+        "choice": "WORDS_FIGURES",
+        "confidence": 0.64,
+        "probabilities": {
+          "WORDS_FIGURES": 0.71,
+          "UNSIGNED": 0.01,
+          "STALE": 0.03,
+          "POSTDATED": 0.03,
+          "NONE": 0.22
+        }
+      },
+      "accept": {
+        "type": "noul",
+        "noul": 0
+      },
+      "risk": {
+        "type": "score",
+        "score": 3,
+        "confidence": 0.42,
+        "probabilities": {
+          "0": 0.05,
+          "1": 0.03,
+          "2": 0.14,
+          "3": 0.43,
+          "4": 0.35
+        }
+      }
+    },
+    "CQ-005": {
+      "defect": {
+        "type": "choice",
+        "choice": "WORDS_FIGURES",
+        "confidence": 0.99,
+        "probabilities": {
+          "WORDS_FIGURES": 0.99,
+          "UNSIGNED": 0,
+          "STALE": 0,
+          "POSTDATED": 0,
+          "NONE": 0.01
+        }
+      },
+      "accept": {
+        "type": "noul",
+        "noul": 0
+      },
+      "risk": {
+        "type": "score",
+        "score": 3.4,
+        "confidence": 0.5,
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.01,
+          "2": 0.04,
+          "3": 0.45,
+          "4": 0.49
+        }
+      }
+    },
+    "CQ-006": {
+      "defect": {
+        "type": "choice",
+        "choice": "NONE",
+        "confidence": 0.39,
+        "probabilities": {
+          "WORDS_FIGURES": 0.4,
+          "UNSIGNED": 0.05,
+          "STALE": 0.03,
+          "POSTDATED": 0.01,
+          "NONE": 0.51
+        }
+      },
+      "accept": {
+        "type": "noul",
+        "noul": 0.08
+      },
+      "risk": {
+        "type": "score",
+        "score": 2.25,
+        "confidence": 0.03,
+        "probabilities": {
+          "0": 0.18,
+          "1": 0.11,
+          "2": 0.2,
+          "3": 0.3,
+          "4": 0.21
+        }
+      }
+    },
+    "CQ-007": {
+      "defect": {
+        "type": "choice",
+        "choice": "POSTDATED",
+        "confidence": 0.99,
+        "probabilities": {
+          "WORDS_FIGURES": 0,
+          "UNSIGNED": 0,
+          "STALE": 0.01,
+          "POSTDATED": 0.99,
+          "NONE": 0
+        }
+      },
+      "accept": {
+        "type": "noul",
+        "noul": 0
+      },
+      "risk": {
+        "type": "score",
+        "score": 3.38,
+        "confidence": 0.63,
+        "probabilities": {
+          "0": 0,
+          "1": 0.01,
+          "2": 0.01,
+          "3": 0.57,
+          "4": 0.41
+        }
+      }
+    },
+    "CQ-008": {
+      "defect": {
+        "type": "choice",
+        "choice": "NONE",
+        "confidence": 0.76,
+        "probabilities": {
+          "WORDS_FIGURES": 0.01,
+          "UNSIGNED": 0.05,
+          "STALE": 0.1,
+          "POSTDATED": 0.03,
+          "NONE": 0.81
+        }
+      },
+      "accept": {
+        "type": "noul",
+        "noul": 0.88
+      },
+      "risk": {
+        "type": "score",
+        "score": 1.6,
+        "confidence": 0,
+        "probabilities": {
+          "0": 0.3,
+          "1": 0.18,
+          "2": 0.23,
+          "3": 0.2,
+          "4": 0.09
+        }
+      }
+    },
+    "CQ-009": {
+      "defect": {
+        "type": "choice",
+        "choice": "NONE",
+        "confidence": 0.9,
+        "probabilities": {
+          "WORDS_FIGURES": 0.01,
+          "UNSIGNED": 0.03,
+          "STALE": 0.03,
+          "POSTDATED": 0.01,
+          "NONE": 0.92
+        }
+      },
+      "accept": {
+        "type": "noul",
+        "noul": 0.73
+      },
+      "risk": {
+        "type": "score",
+        "score": 2.81,
+        "confidence": 0.51,
+        "probabilities": {
+          "0": 0.04,
+          "1": 0.06,
+          "2": 0.15,
+          "3": 0.55,
+          "4": 0.2
+        }
+      }
+    },
+    "CQ-010": {
+      "defect": {
+        "type": "choice",
+        "choice": "NONE",
+        "confidence": 0.54,
+        "probabilities": {
+          "WORDS_FIGURES": 0.16,
+          "UNSIGNED": 0.09,
+          "STALE": 0.08,
+          "POSTDATED": 0.04,
+          "NONE": 0.63
+        }
+      },
+      "accept": {
+        "type": "noul",
+        "noul": 0.54
+      },
+      "risk": {
+        "type": "score",
+        "score": 2.45,
+        "confidence": 0.17,
+        "probabilities": {
+          "0": 0.13,
+          "1": 0.1,
+          "2": 0.18,
+          "3": 0.37,
+          "4": 0.22
+        }
+      }
+    },
+    "CQ-011": {
+      "defect": {
+        "type": "choice",
+        "choice": "NONE",
+        "confidence": 0.86,
+        "probabilities": {
+          "WORDS_FIGURES": 0.02,
+          "UNSIGNED": 0.04,
+          "STALE": 0.03,
+          "POSTDATED": 0.02,
+          "NONE": 0.89
+        }
+      },
+      "accept": {
+        "type": "noul",
+        "noul": 0.98
+      },
+      "risk": {
+        "type": "score",
+        "score": 1.03,
+        "confidence": 0.14,
+        "probabilities": {
+          "0": 0.48,
+          "1": 0.21,
+          "2": 0.16,
+          "3": 0.1,
+          "4": 0.05
+        }
+      }
+    },
+    "CQ-012": {
+      "defect": {
+        "type": "choice",
+        "choice": "POSTDATED",
+        "confidence": 1,
+        "probabilities": {
+          "WORDS_FIGURES": 0,
+          "UNSIGNED": 0,
+          "STALE": 0,
+          "POSTDATED": 1,
+          "NONE": 0
+        }
+      },
+      "accept": {
+        "type": "noul",
+        "noul": 0
+      },
+      "risk": {
+        "type": "score",
+        "score": 3.16,
+        "confidence": 0.68,
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.02,
+          "2": 0.04,
+          "3": 0.66,
+          "4": 0.27
+        }
+      }
+    },
+    "CQ-013": {
+      "defect": {
+        "type": "choice",
+        "choice": "POSTDATED",
+        "confidence": 0.99,
+        "probabilities": {
+          "WORDS_FIGURES": 0,
+          "UNSIGNED": 0,
+          "STALE": 0.01,
+          "POSTDATED": 0.99,
+          "NONE": 0
+        }
+      },
+      "accept": {
+        "type": "noul",
+        "noul": 0
+      },
+      "risk": {
+        "type": "score",
+        "score": 3.43,
+        "confidence": 0.57,
+        "probabilities": {
+          "0": 0,
+          "1": 0.01,
+          "2": 0.02,
+          "3": 0.5,
+          "4": 0.47
+        }
+      }
+    },
+    "CQ-014": {
+      "defect": {
+        "type": "choice",
+        "choice": "UNSIGNED",
+        "confidence": 0.76,
+        "probabilities": {
+          "WORDS_FIGURES": 0.02,
+          "UNSIGNED": 0.81,
+          "STALE": 0.02,
+          "POSTDATED": 0.02,
+          "NONE": 0.13
+        }
+      },
+      "accept": {
+        "type": "noul",
+        "noul": 0
+      },
+      "risk": {
+        "type": "score",
+        "score": 1.25,
+        "confidence": 0,
+        "probabilities": {
+          "0": 0.33,
+          "1": 0.31,
+          "2": 0.2,
+          "3": 0.1,
+          "4": 0.06
+        }
+      }
+    },
+    "CQ-015": {
+      "defect": {
+        "type": "choice",
+        "choice": "POSTDATED",
+        "confidence": 1,
+        "probabilities": {
+          "WORDS_FIGURES": 0,
+          "UNSIGNED": 0,
+          "STALE": 0,
+          "POSTDATED": 1,
+          "NONE": 0
+        }
+      },
+      "accept": {
+        "type": "noul",
+        "noul": 0
+      },
+      "risk": {
+        "type": "score",
+        "score": 3.48,
+        "confidence": 0.57,
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.01,
+          "2": 0.02,
+          "3": 0.41,
+          "4": 0.55
+        }
+      }
+    },
+    "CQ-016": {
+      "defect": {
+        "type": "choice",
+        "choice": "NONE",
+        "confidence": 0.98,
+        "probabilities": {
+          "WORDS_FIGURES": 0.01,
+          "UNSIGNED": 0.01,
+          "STALE": 0,
+          "POSTDATED": 0,
+          "NONE": 0.98
+        }
+      },
+      "accept": {
+        "type": "noul",
+        "noul": 1
+      },
+      "risk": {
+        "type": "score",
+        "score": 0.9,
+        "confidence": 0.25,
+        "probabilities": {
+          "0": 0.43,
+          "1": 0.38,
+          "2": 0.09,
+          "3": 0.06,
+          "4": 0.04
+        }
+      }
+    },
+    "CQ-017": {
+      "defect": {
+        "type": "choice",
+        "choice": "STALE",
+        "confidence": 0.94,
+        "probabilities": {
+          "WORDS_FIGURES": 0.01,
+          "UNSIGNED": 0.01,
+          "STALE": 0.95,
+          "POSTDATED": 0.01,
+          "NONE": 0.02
+        }
+      },
+      "accept": {
+        "type": "noul",
+        "noul": 0
+      },
+      "risk": {
+        "type": "score",
+        "score": 3.43,
+        "confidence": 0.52,
+        "probabilities": {
+          "0": 0.02,
+          "1": 0.01,
+          "2": 0.04,
+          "3": 0.38,
+          "4": 0.55
+        }
+      }
+    },
+    "CQ-018": {
+      "defect": {
+        "type": "choice",
+        "choice": "STALE",
+        "confidence": 0.49,
+        "probabilities": {
+          "WORDS_FIGURES": 0.1,
+          "UNSIGNED": 0.02,
+          "STALE": 0.59,
+          "POSTDATED": 0.03,
+          "NONE": 0.26
+        }
+      },
+      "accept": {
+        "type": "noul",
+        "noul": 0
+      },
+      "risk": {
+        "type": "score",
+        "score": 2.95,
+        "confidence": 0.36,
+        "probabilities": {
+          "0": 0.06,
+          "1": 0.05,
+          "2": 0.13,
+          "3": 0.4,
+          "4": 0.36
+        }
+      }
+    },
+    "CQ-019": {
+      "defect": {
+        "type": "choice",
+        "choice": "STALE",
+        "confidence": 0.6,
+        "probabilities": {
+          "WORDS_FIGURES": 0.12,
+          "UNSIGNED": 0.03,
+          "STALE": 0.68,
+          "POSTDATED": 0.01,
+          "NONE": 0.16
+        }
+      },
+      "accept": {
+        "type": "noul",
+        "noul": 0
+      },
+      "risk": {
+        "type": "score",
+        "score": 3.06,
+        "confidence": 0.22,
+        "probabilities": {
+          "0": 0.07,
+          "1": 0.05,
+          "2": 0.05,
+          "3": 0.41,
+          "4": 0.42
+        }
+      }
+    },
+    "CQ-020": {
+      "defect": {
+        "type": "choice",
+        "choice": "WORDS_FIGURES",
+        "confidence": 0.68,
+        "probabilities": {
+          "WORDS_FIGURES": 0.74,
+          "UNSIGNED": 0.02,
+          "STALE": 0.02,
+          "POSTDATED": 0.02,
+          "NONE": 0.2
+        }
+      },
+      "accept": {
+        "type": "noul",
+        "noul": 0
+      },
+      "risk": {
+        "type": "score",
+        "score": 3.38,
+        "confidence": 0.48,
+        "probabilities": {
+          "0": 0,
+          "1": 0.01,
+          "2": 0.07,
+          "3": 0.45,
+          "4": 0.47
+        }
+      }
+    },
+    "CQ-021": {
+      "defect": {
+        "type": "choice",
+        "choice": "STALE",
+        "confidence": 0.41,
+        "probabilities": {
+          "WORDS_FIGURES": 0.34,
+          "UNSIGNED": 0.06,
+          "STALE": 0.53,
+          "POSTDATED": 0.03,
+          "NONE": 0.04
+        }
+      },
+      "accept": {
+        "type": "noul",
+        "noul": 0
+      },
+      "risk": {
+        "type": "score",
+        "score": 3.48,
+        "confidence": 0.57,
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.01,
+          "2": 0.02,
+          "3": 0.41,
+          "4": 0.55
+        }
+      }
+    },
+    "CQ-022": {
+      "defect": {
+        "type": "choice",
+        "choice": "STALE",
+        "confidence": 0.74,
+        "probabilities": {
+          "WORDS_FIGURES": 0.05,
+          "UNSIGNED": 0.03,
+          "STALE": 0.79,
+          "POSTDATED": 0.03,
+          "NONE": 0.1
+        }
+      },
+      "accept": {
+        "type": "noul",
+        "noul": 0
+      },
+      "risk": {
+        "type": "score",
+        "score": 3.48,
+        "confidence": 0.57,
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.01,
+          "2": 0.03,
+          "3": 0.39,
+          "4": 0.56
+        }
+      }
+    },
+    "CQ-023": {
+      "defect": {
+        "type": "choice",
+        "choice": "WORDS_FIGURES",
+        "confidence": 0.94,
+        "probabilities": {
+          "WORDS_FIGURES": 0.95,
+          "UNSIGNED": 0.01,
+          "STALE": 0.01,
+          "POSTDATED": 0.01,
+          "NONE": 0.02
+        }
+      },
+      "accept": {
+        "type": "noul",
+        "noul": 0
+      },
+      "risk": {
+        "type": "score",
+        "score": 3.4,
+        "confidence": 0.57,
+        "probabilities": {
+          "0": 0.01,
+          "1": 0,
+          "2": 0.03,
+          "3": 0.5,
+          "4": 0.46
+        }
+      }
+    },
+    "CQ-024": {
+      "defect": {
+        "type": "choice",
+        "choice": "WORDS_FIGURES",
+        "confidence": 0.4,
+        "probabilities": {
+          "WORDS_FIGURES": 0.52,
+          "UNSIGNED": 0.05,
+          "STALE": 0.12,
+          "POSTDATED": 0.04,
+          "NONE": 0.27
+        }
+      },
+      "accept": {
+        "type": "noul",
+        "noul": 0.14
+      },
+      "risk": {
+        "type": "score",
+        "score": 2,
+        "confidence": 0,
+        "probabilities": {
+          "0": 0.21,
+          "1": 0.14,
+          "2": 0.23,
+          "3": 0.28,
+          "4": 0.14
+        }
+      }
+    },
+    "CQ-025": {
+      "defect": {
+        "type": "choice",
+        "choice": "WORDS_FIGURES",
+        "confidence": 0.91,
+        "probabilities": {
+          "WORDS_FIGURES": 0.93,
+          "UNSIGNED": 0.01,
+          "STALE": 0.01,
+          "POSTDATED": 0.01,
+          "NONE": 0.04
+        }
+      },
+      "accept": {
+        "type": "noul",
+        "noul": 0
+      },
+      "risk": {
+        "type": "score",
+        "score": 3.39,
+        "confidence": 0.63,
+        "probabilities": {
+          "0": 0,
+          "1": 0,
+          "2": 0.03,
+          "3": 0.55,
+          "4": 0.42
+        }
+      }
+    },
+    "CQ-026": {
+      "defect": {
+        "type": "choice",
+        "choice": "POSTDATED",
+        "confidence": 0.99,
+        "probabilities": {
+          "WORDS_FIGURES": 0.01,
+          "UNSIGNED": 0,
+          "STALE": 0,
+          "POSTDATED": 0.99,
+          "NONE": 0
+        }
+      },
+      "accept": {
+        "type": "noul",
+        "noul": 0
+      },
+      "risk": {
+        "type": "score",
+        "score": 3.38,
+        "confidence": 0.6,
+        "probabilities": {
+          "0": 0,
+          "1": 0.01,
+          "2": 0.03,
+          "3": 0.53,
+          "4": 0.43
+        }
+      }
+    },
+    "CQ-027": {
+      "defect": {
+        "type": "choice",
+        "choice": "POSTDATED",
+        "confidence": 0.98,
+        "probabilities": {
+          "WORDS_FIGURES": 0.01,
+          "UNSIGNED": 0,
+          "STALE": 0.01,
+          "POSTDATED": 0.98,
+          "NONE": 0
+        }
+      },
+      "accept": {
+        "type": "noul",
+        "noul": 0
+      },
+      "risk": {
+        "type": "score",
+        "score": 3.56,
+        "confidence": 0.63,
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.01,
+          "2": 0.02,
+          "3": 0.33,
+          "4": 0.63
+        }
+      }
+    },
+    "CQ-028": {
+      "defect": {
+        "type": "choice",
+        "choice": "UNSIGNED",
+        "confidence": 0.69,
+        "probabilities": {
+          "WORDS_FIGURES": 0.03,
+          "UNSIGNED": 0.75,
+          "STALE": 0.06,
+          "POSTDATED": 0.02,
+          "NONE": 0.14
+        }
+      },
+      "accept": {
+        "type": "noul",
+        "noul": 0
+      },
+      "risk": {
+        "type": "score",
+        "score": 2.66,
+        "confidence": 0.27,
+        "probabilities": {
+          "0": 0.08,
+          "1": 0.11,
+          "2": 0.15,
+          "3": 0.39,
+          "4": 0.27
+        }
+      }
+    },
+    "CQ-029": {
+      "defect": {
+        "type": "choice",
+        "choice": "UNSIGNED",
+        "confidence": 0.73,
+        "probabilities": {
+          "WORDS_FIGURES": 0.07,
+          "UNSIGNED": 0.78,
+          "STALE": 0.09,
+          "POSTDATED": 0.02,
+          "NONE": 0.04
+        }
+      },
+      "accept": {
+        "type": "noul",
+        "noul": 0
+      },
+      "risk": {
+        "type": "score",
+        "score": 2.83,
+        "confidence": 0.31,
+        "probabilities": {
+          "0": 0.06,
+          "1": 0.08,
+          "2": 0.16,
+          "3": 0.37,
+          "4": 0.33
+        }
+      }
+    },
+    "CQ-030": {
+      "defect": {
+        "type": "choice",
+        "choice": "STALE",
+        "confidence": 0.93,
+        "probabilities": {
+          "WORDS_FIGURES": 0.04,
+          "UNSIGNED": 0.01,
+          "STALE": 0.94,
+          "POSTDATED": 0,
+          "NONE": 0.01
+        }
+      },
+      "accept": {
+        "type": "noul",
+        "noul": 0
+      },
+      "risk": {
+        "type": "score",
+        "score": 3.33,
+        "confidence": 0.51,
+        "probabilities": {
+          "0": 0.02,
+          "1": 0.02,
+          "2": 0.03,
+          "3": 0.47,
+          "4": 0.46
+        }
+      }
+    }
+  }
+}

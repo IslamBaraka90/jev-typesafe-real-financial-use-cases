@@ -52,6 +52,16 @@ import goldenCrossReview from './golden-cross-review/demo.js';
 import setupTiming from './setup-timing/demo.js';
 import strategyCorrelation from './strategy-correlation/demo.js';
 import overfitReview from './overfit-review/demo.js';
+import receiptCheck from './receipt-check/demo.js';
+import expenseClaim from './expense-claim/demo.js';
+import chequeCheck from './cheque-check/demo.js';
+import invoiceBankChange from './invoice-bank-change/demo.js';
+import chartTrend from './chart-trend/demo.js';
+import buyTiming from './buy-timing/demo.js';
+import misleadingChart from './misleading-chart/demo.js';
+import produceCheck from './produce-check/demo.js';
+import packageCheck from './package-check/demo.js';
+import leafCheck from './leaf-check/demo.js';
 import { DOMAIN_BY_ID } from './domains.js';
 
 export { DOMAINS, DOMAIN_BY_ID } from './domains.js';
@@ -108,6 +118,16 @@ export const DEMOS = [
   regimeClassification,
   strategyCorrelation,
   overfitReview,
+  receiptCheck,
+  expenseClaim,
+  chequeCheck,
+  invoiceBankChange,
+  chartTrend,
+  buyTiming,
+  misleadingChart,
+  produceCheck,
+  packageCheck,
+  leafCheck,
 ];
 
 /** Everything the runtime can load, including the hidden example used by the tests. */

@@ -1,15 +1,16 @@
 {
  "summary": {
-  "demos": 50,
-  "items": 9347,
-  "answers": 44909,
-  "gradedDemos": 49,
-  "gradedItems": 8911,
-  "rightItems": 7436,
+  "demos": 60,
+  "items": 9629,
+  "answers": 45755,
+  "gradedDemos": 59,
+  "gradedItems": 9193,
+  "rightItems": 7626,
   "models": [
-   "jev-1.13.0"
+   "jev-1.13.0",
+   "gpt-6-luna"
   ],
-  "latest": "2026-09-19",
+  "latest": "2026-10-11",
   "gates": {
    "total": 0,
    "failed": 0
@@ -4592,6 +4593,816 @@
      }
     ],
     "verdict": "Look ahead · trust 1.7 of 6",
+    "agree": true
+   },
+   "previous": null,
+   "delta": null,
+   "runs": 1
+  },
+  {
+   "id": "receipt-check",
+   "title": "Receipt arithmetic, read from the photo",
+   "domain": "vision",
+   "number": null,
+   "dataClass": "synthetic",
+   "run": {
+    "model": "gpt-6-luna",
+    "recordedAt": "2026-10-11",
+    "dataset": "7dc3e2208165",
+    "questions": "bdc532be8efc"
+   },
+   "items": 36,
+   "answered": 36,
+   "graded": 36,
+   "right": 12,
+   "interval": {
+    "low": 0.2021,
+    "high": 0.4967
+   },
+   "headline": {
+    "label": "Named correctly",
+    "value": 0.3333,
+    "display": "33.3%",
+    "context": "12 of 36 receipts"
+   },
+   "baselines": [
+    {
+     "label": "The model",
+     "value": 0.3333,
+     "model": true
+    },
+    {
+     "label": "Always name the commonest answer",
+     "value": 0.25,
+     "model": false
+    }
+   ],
+   "metrics": {
+    "agreement": 0.3333,
+    "accuracy": 0.3333,
+    "macroF1": 0.2727,
+    "majorityBaseline": 0.25,
+    "calibrationError": 0.0889,
+    "actionAccuracy": 0.6944
+   },
+   "gates": [],
+   "passed": true,
+   "finding": null,
+   "caveat": null,
+   "showcase": {
+    "item": "RC-003",
+    "label": "RC-003 · Tinbridge Travel",
+    "caption": null,
+    "answers": [
+     {
+      "title": "Issue",
+      "type": "choice",
+      "text": "NONE",
+      "share": 0.49
+     },
+     {
+      "title": "Adds up",
+      "type": "yes / no",
+      "text": "Yes",
+      "share": 0.51
+     },
+     {
+      "title": "Severity",
+      "type": "score",
+      "text": "Pennies · 1.0 of 4",
+      "share": 0.242
+     }
+    ],
+    "verdict": "RC-003: filed · none",
+    "agree": true
+   },
+   "previous": null,
+   "delta": null,
+   "runs": 1
+  },
+  {
+   "id": "expense-claim",
+   "title": "Expense claim against its receipt photo",
+   "domain": "vision",
+   "number": null,
+   "dataClass": "synthetic",
+   "run": {
+    "model": "gpt-6-luna",
+    "recordedAt": "2026-10-11",
+    "dataset": "1cfb06f113ab",
+    "questions": "f939b68a34f4"
+   },
+   "items": 40,
+   "answered": 40,
+   "graded": 40,
+   "right": 40,
+   "interval": {
+    "low": 0.9124,
+    "high": 1
+   },
+   "headline": {
+    "label": "Named correctly",
+    "value": 1,
+    "display": "100%",
+    "context": "40 of 40 claims"
+   },
+   "baselines": [
+    {
+     "label": "The model",
+     "value": 1,
+     "model": true
+    },
+    {
+     "label": "Always name the commonest answer",
+     "value": 0.2,
+     "model": false
+    }
+   ],
+   "metrics": {
+    "agreement": 1,
+    "accuracy": 1,
+    "macroF1": 1,
+    "majorityBaseline": 0.2,
+    "calibrationError": 0.0638,
+    "actionAccuracy": 0.95
+   },
+   "gates": [],
+   "passed": true,
+   "finding": null,
+   "caveat": null,
+   "showcase": {
+    "item": "EC-001",
+    "label": "EC-001 · Rania Barakat",
+    "caption": null,
+    "answers": [
+     {
+      "title": "Problem",
+      "type": "choice",
+      "text": "Merchant mismatch",
+      "share": 0.94
+     },
+     {
+      "title": "Approve",
+      "type": "yes / no",
+      "text": "No",
+      "share": 0
+     },
+     {
+      "title": "Concern",
+      "type": "score",
+      "text": "Policy breach · 3.0 of 4",
+      "share": 0.743
+     }
+    ],
+    "verdict": "EC-001: returned · merchant mismatch",
+    "agree": true
+   },
+   "previous": null,
+   "delta": null,
+   "runs": 1
+  },
+  {
+   "id": "cheque-check",
+   "title": "Cheque deposit check",
+   "domain": "vision",
+   "number": null,
+   "dataClass": "synthetic",
+   "run": {
+    "model": "gpt-6-luna",
+    "recordedAt": "2026-10-11",
+    "dataset": "fbca9198eb23",
+    "questions": "202fe0292345"
+   },
+   "items": 30,
+   "answered": 30,
+   "graded": 30,
+   "right": 28,
+   "interval": {
+    "low": 0.7868,
+    "high": 0.9815
+   },
+   "headline": {
+    "label": "Named correctly",
+    "value": 0.9333,
+    "display": "93.3%",
+    "context": "28 of 30 cheques"
+   },
+   "baselines": [
+    {
+     "label": "The model",
+     "value": 0.9333,
+     "model": true
+    },
+    {
+     "label": "Always name the commonest answer",
+     "value": 0.2,
+     "model": false
+    }
+   ],
+   "metrics": {
+    "agreement": 0.9333,
+    "accuracy": 0.9333,
+    "macroF1": 0.9333,
+    "majorityBaseline": 0.2,
+    "calibrationError": 0.1707,
+    "actionAccuracy": 0.9667
+   },
+   "gates": [],
+   "passed": true,
+   "finding": null,
+   "caveat": null,
+   "showcase": {
+    "item": "CQ-001",
+    "label": "CQ-001 · Copperline Corporation",
+    "caption": null,
+    "answers": [
+     {
+      "title": "Defect",
+      "type": "choice",
+      "text": "Unsigned",
+      "share": 0.84
+     },
+     {
+      "title": "Accept",
+      "type": "yes / no",
+      "text": "No",
+      "share": 0
+     },
+     {
+      "title": "Risk",
+      "type": "score",
+      "text": "Moderate · 2.0 of 4",
+      "share": 0.507
+     }
+    ],
+    "verdict": "CQ-001: refused · unsigned",
+    "agree": true
+   },
+   "previous": null,
+   "delta": null,
+   "runs": 1
+  },
+  {
+   "id": "invoice-bank-change",
+   "title": "Invoice with changed bank details",
+   "domain": "vision",
+   "number": null,
+   "dataClass": "synthetic",
+   "run": {
+    "model": "gpt-6-luna",
+    "recordedAt": "2026-10-11",
+    "dataset": "e1a7763fe7ed",
+    "questions": "b91bd426a9f8"
+   },
+   "items": 32,
+   "answered": 32,
+   "graded": 32,
+   "right": 16,
+   "interval": {
+    "low": 0.3363,
+    "high": 0.6637
+   },
+   "headline": {
+    "label": "Named correctly",
+    "value": 0.5,
+    "display": "50.0%",
+    "context": "16 of 32 invoices"
+   },
+   "baselines": [
+    {
+     "label": "The model",
+     "value": 0.5,
+     "model": true
+    },
+    {
+     "label": "Always name the commonest answer",
+     "value": 0.25,
+     "model": false
+    }
+   ],
+   "metrics": {
+    "agreement": 0.5,
+    "accuracy": 0.5,
+    "macroF1": 0.4661,
+    "majorityBaseline": 0.25,
+    "calibrationError": 0.1053,
+    "actionAccuracy": 0.7188
+   },
+   "gates": [],
+   "passed": true,
+   "finding": null,
+   "caveat": null,
+   "showcase": {
+    "item": "IV-001",
+    "label": "IV-001 · Orchard Media",
+    "caption": null,
+    "answers": [
+     {
+      "title": "Problem",
+      "type": "choice",
+      "text": "Bank changed",
+      "share": 0.9
+     },
+     {
+      "title": "Pay",
+      "type": "yes / no",
+      "text": "No",
+      "share": 0
+     },
+     {
+      "title": "Fraud risk",
+      "type": "score",
+      "text": "Likely · 3.3 of 4",
+      "share": 0.828
+     }
+    ],
+    "verdict": "IV-001: held · bank changed",
+    "agree": true
+   },
+   "previous": null,
+   "delta": null,
+   "runs": 1
+  },
+  {
+   "id": "chart-trend",
+   "title": "Chart trend: up, down or sideways",
+   "domain": "vision",
+   "number": null,
+   "dataClass": "cached-real",
+   "run": {
+    "model": "gpt-6-luna",
+    "recordedAt": "2026-10-11",
+    "dataset": "e41a6b6cdb72",
+    "questions": "4806475b4c71"
+   },
+   "items": 48,
+   "answered": 48,
+   "graded": 48,
+   "right": 37,
+   "interval": {
+    "low": 0.6346,
+    "high": 0.8669
+   },
+   "headline": {
+    "label": "Named correctly",
+    "value": 0.7708,
+    "display": "77.1%",
+    "context": "37 of 48 charts"
+   },
+   "baselines": [
+    {
+     "label": "The model",
+     "value": 0.7708,
+     "model": true
+    },
+    {
+     "label": "Always name the commonest answer",
+     "value": 0.3333,
+     "model": false
+    }
+   ],
+   "metrics": {
+    "agreement": 0.7708,
+    "accuracy": 0.7708,
+    "macroF1": 0.7326,
+    "majorityBaseline": 0.3333,
+    "calibrationError": 0.0944,
+    "actionAccuracy": 0.9375
+   },
+   "gates": [],
+   "passed": true,
+   "finding": null,
+   "caveat": null,
+   "showcase": {
+    "item": "CT-001",
+    "label": "CT-001 · AAPL",
+    "caption": null,
+    "answers": [
+     {
+      "title": "Trend",
+      "type": "choice",
+      "text": "UP",
+      "share": 1
+     },
+     {
+      "title": "Ended higher",
+      "type": "yes / no",
+      "text": "Yes",
+      "share": 1
+     },
+     {
+      "title": "Strength",
+      "type": "score",
+      "text": "Strong · 2.7 of 4",
+      "share": 0.667
+     }
+    ],
+    "verdict": "CT-001: up",
+    "agree": true
+   },
+   "previous": null,
+   "delta": null,
+   "runs": 1
+  },
+  {
+   "id": "buy-timing",
+   "title": "Is this a good time to buy?",
+   "domain": "vision",
+   "number": null,
+   "dataClass": "cached-real",
+   "run": {
+    "model": "gpt-6-luna",
+    "recordedAt": "2026-10-11",
+    "dataset": "ee333b904a04",
+    "questions": "bac6e5c0c557"
+   },
+   "items": 48,
+   "answered": 48,
+   "graded": 48,
+   "right": 24,
+   "interval": {
+    "low": 0.3639,
+    "high": 0.6361
+   },
+   "headline": {
+    "label": "Named correctly",
+    "value": 0.5,
+    "display": "50.0%",
+    "context": "24 of 48 charts"
+   },
+   "baselines": [
+    {
+     "label": "The model",
+     "value": 0.5,
+     "model": true
+    },
+    {
+     "label": "Always name the commonest answer",
+     "value": 0.5,
+     "model": false
+    }
+   ],
+   "metrics": {
+    "agreement": 0.5,
+    "accuracy": 0.5,
+    "macroF1": 0.4667,
+    "majorityBaseline": 0.5,
+    "calibrationError": 0.4083,
+    "actionAccuracy": 0.4792
+   },
+   "gates": [],
+   "passed": true,
+   "finding": null,
+   "caveat": "Not investment advice. Half the charts rose afterwards, so 50% is what guessing scores.",
+   "showcase": {
+    "item": "BT-001",
+    "label": "BT-001 · KO",
+    "caption": null,
+    "answers": [
+     {
+      "title": "Next move",
+      "type": "choice",
+      "text": "ROSE",
+      "share": 0.64
+     },
+     {
+      "title": "Buy now",
+      "type": "yes / no",
+      "text": "No",
+      "share": 0.44
+     },
+     {
+      "title": "Conviction",
+      "type": "score",
+      "text": "Slight · 1.0 of 4",
+      "share": 0.245
+     }
+    ],
+    "verdict": "BT-001: wait · expects rose",
+    "agree": true
+   },
+   "previous": null,
+   "delta": null,
+   "runs": 1
+  },
+  {
+   "id": "misleading-chart",
+   "title": "Misleading chart: the cut axis",
+   "domain": "vision",
+   "number": null,
+   "dataClass": "synthetic",
+   "run": {
+    "model": "gpt-6-luna",
+    "recordedAt": "2026-10-11",
+    "dataset": "a135f6fa9523",
+    "questions": "304942dcd149"
+   },
+   "items": 30,
+   "answered": 30,
+   "graded": 30,
+   "right": 16,
+   "interval": {
+    "low": 0.3614,
+    "high": 0.6977
+   },
+   "headline": {
+    "label": "Named correctly",
+    "value": 0.5333,
+    "display": "53.3%",
+    "context": "16 of 30 charts"
+   },
+   "baselines": [
+    {
+     "label": "The model",
+     "value": 0.5333,
+     "model": true
+    },
+    {
+     "label": "Always name the commonest answer",
+     "value": 0.3333,
+     "model": false
+    }
+   ],
+   "metrics": {
+    "agreement": 0.5333,
+    "accuracy": 0.5333,
+    "macroF1": 0.4529,
+    "majorityBaseline": 0.3333,
+    "calibrationError": 0.1477,
+    "actionAccuracy": 1
+   },
+   "gates": [],
+   "passed": true,
+   "finding": null,
+   "caveat": null,
+   "showcase": {
+    "item": "MC-001",
+    "label": "MC-001 · Ironbark Industries",
+    "caption": null,
+    "answers": [
+     {
+      "title": "Real change",
+      "type": "choice",
+      "text": "SMALL",
+      "share": 0.98
+     },
+     {
+      "title": "Axis from zero",
+      "type": "yes / no",
+      "text": "Yes",
+      "share": 1
+     },
+     {
+      "title": "Misleading",
+      "type": "score",
+      "text": "Slightly · 1.4 of 4",
+      "share": 0.36
+     }
+    ],
+    "verdict": "MC-001: small change · axis from zero",
+    "agree": true
+   },
+   "previous": null,
+   "delta": null,
+   "runs": 1
+  },
+  {
+   "id": "produce-check",
+   "title": "Fresh or spoiled: produce at goods-in",
+   "domain": "vision",
+   "number": null,
+   "dataClass": "cached-real",
+   "run": {
+    "model": "gpt-6-luna",
+    "recordedAt": "2026-10-11",
+    "dataset": "a1b7d6746743",
+    "questions": "41f4fba1a10a"
+   },
+   "items": 11,
+   "answered": 11,
+   "graded": 11,
+   "right": 11,
+   "interval": {
+    "low": 0.7412,
+    "high": 1
+   },
+   "headline": {
+    "label": "Named correctly",
+    "value": 1,
+    "display": "100%",
+    "context": "11 of 11 photos"
+   },
+   "baselines": [
+    {
+     "label": "The model",
+     "value": 1,
+     "model": true
+    },
+    {
+     "label": "Always name the commonest answer",
+     "value": 0.4545,
+     "model": false
+    }
+   ],
+   "metrics": {
+    "agreement": 1,
+    "accuracy": 1,
+    "macroF1": 1,
+    "majorityBaseline": 0.4545,
+    "calibrationError": 0.0564,
+    "actionAccuracy": 1
+   },
+   "gates": [],
+   "passed": true,
+   "finding": null,
+   "caveat": null,
+   "showcase": {
+    "item": "PR-01",
+    "label": "PR-01 · Apple",
+    "caption": null,
+    "answers": [
+     {
+      "title": "Condition",
+      "type": "choice",
+      "text": "Rotten",
+      "share": 0.99
+     },
+     {
+      "title": "Reject",
+      "type": "yes / no",
+      "text": "Yes",
+      "share": 1
+     },
+     {
+      "title": "Spoilage",
+      "type": "score",
+      "text": "Inedible · 3.5 of 4",
+      "share": 0.875
+     }
+    ],
+    "verdict": "PR-01: rejected · rotten",
+    "agree": true
+   },
+   "previous": null,
+   "delta": null,
+   "runs": 1
+  },
+  {
+   "id": "package-check",
+   "title": "Damaged-parcel claim photo",
+   "domain": "vision",
+   "number": null,
+   "dataClass": "cached-real",
+   "run": {
+    "model": "gpt-6-luna",
+    "recordedAt": "2026-10-11",
+    "dataset": "3d106331ba26",
+    "questions": "a5d973ec910c"
+   },
+   "items": 3,
+   "answered": 3,
+   "graded": 3,
+   "right": 2,
+   "interval": {
+    "low": 0.2077,
+    "high": 0.9385
+   },
+   "headline": {
+    "label": "Named correctly",
+    "value": 0.6667,
+    "display": "66.7%",
+    "context": "2 of 3 photos"
+   },
+   "baselines": [
+    {
+     "label": "The model",
+     "value": 0.6667,
+     "model": true
+    },
+    {
+     "label": "Always name the commonest answer",
+     "value": 0.3333,
+     "model": false
+    }
+   ],
+   "metrics": {
+    "agreement": 0.6667,
+    "accuracy": 0.6667,
+    "macroF1": 0.5556,
+    "majorityBaseline": 0.3333,
+    "calibrationError": null,
+    "actionAccuracy": 0.3333
+   },
+   "gates": [],
+   "passed": true,
+   "finding": null,
+   "caveat": null,
+   "showcase": {
+    "item": "PK-01",
+    "label": "PK-01 · Parcel",
+    "caption": null,
+    "answers": [
+     {
+      "title": "Condition",
+      "type": "choice",
+      "text": "Crushed",
+      "share": 0.89
+     },
+     {
+      "title": "Supports claim",
+      "type": "yes / no",
+      "text": "Yes",
+      "share": 0.98
+     },
+     {
+      "title": "Damage",
+      "type": "score",
+      "text": "Severe · 2.7 of 4",
+      "share": 0.667
+     }
+    ],
+    "verdict": "PK-01: claim supported · crushed",
+    "agree": true
+   },
+   "previous": null,
+   "delta": null,
+   "runs": 1
+  },
+  {
+   "id": "leaf-check",
+   "title": "Leaf disease from a field photo",
+   "domain": "vision",
+   "number": null,
+   "dataClass": "cached-real",
+   "run": {
+    "model": "gpt-6-luna",
+    "recordedAt": "2026-10-11",
+    "dataset": "1bf94131e074",
+    "questions": "1022e6cad0ad"
+   },
+   "items": 4,
+   "answered": 4,
+   "graded": 4,
+   "right": 4,
+   "interval": {
+    "low": 0.5101,
+    "high": 1
+   },
+   "headline": {
+    "label": "Named correctly",
+    "value": 1,
+    "display": "100%",
+    "context": "4 of 4 photos"
+   },
+   "baselines": [
+    {
+     "label": "The model",
+     "value": 1,
+     "model": true
+    },
+    {
+     "label": "Always name the commonest answer",
+     "value": 0.5,
+     "model": false
+    }
+   ],
+   "metrics": {
+    "agreement": 1,
+    "accuracy": 1,
+    "macroF1": 1,
+    "majorityBaseline": 0.5,
+    "calibrationError": null,
+    "actionAccuracy": 1
+   },
+   "gates": [],
+   "passed": true,
+   "finding": null,
+   "caveat": null,
+   "showcase": {
+    "item": "LF-01",
+    "label": "LF-01 · Mango leaf",
+    "caption": null,
+    "answers": [
+     {
+      "title": "Condition",
+      "type": "choice",
+      "text": "Mildew",
+      "share": 0.74
+     },
+     {
+      "title": "Diseased",
+      "type": "yes / no",
+      "text": "Yes",
+      "share": 1
+     },
+     {
+      "title": "Severity",
+      "type": "score",
+      "text": "Severe · 3.0 of 4",
+      "share": 0.745
+     }
+    ],
+    "verdict": "LF-01: mildew",
     "agree": true
    },
    "previous": null,

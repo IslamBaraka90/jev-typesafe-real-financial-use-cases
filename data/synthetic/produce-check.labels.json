@@ -1,0 +1,46 @@
+[
+  {
+    "photoId": "PR-01",
+    "condition": "ROTTEN"
+  },
+  {
+    "photoId": "PR-02",
+    "condition": "FRESH"
+  },
+  {
+    "photoId": "PR-03",
+    "condition": "ROTTEN"
+  },
+  {
+    "photoId": "PR-04",
+    "condition": "FRESH"
+  },
+  {
+    "photoId": "PR-05",
+    "condition": "MOULDY"
+  },
+  {
+    "photoId": "PR-06",
+    "condition": "FRESH"
+  },
+  {
+    "photoId": "PR-07",
+    "condition": "MOULDY"
+  },
+  {
+    "photoId": "PR-08",
+    "condition": "FRESH"
+  },
+  {
+    "photoId": "PR-09",
+    "condition": "ROTTEN"
+  },
+  {
+    "photoId": "PR-10",
+    "condition": "MOULDY"
+  },
+  {
+    "photoId": "PR-11",
+    "condition": "FRESH"
+  }
+]

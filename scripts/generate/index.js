@@ -62,9 +62,25 @@ export const GENERATORS = {
   'regime-classification': () => import('./regime-classification.js'),
   'strategy-correlation': () => import('./strategy-correlation.js'),
   'overfit-review': () => import('./overfit-review.js'),
+  'receipt-check': () => import('./receipt-check.js'),
+  'expense-claim': () => import('./expense-claim.js'),
+  'cheque-check': () => import('./cheque-check.js'),
+  'invoice-bank-change': () => import('./invoice-bank-change.js'),
+  'chart-trend': () => import('./chart-trend.js'),
+  'buy-timing': () => import('./buy-timing.js'),
+  'misleading-chart': () => import('./misleading-chart.js'),
+  'produce-check': () => import('./produce-check.js'),
+  'package-check': () => import('./package-check.js'),
+  'leaf-check': () => import('./leaf-check.js'),
 };
 
 const asJson = (value) => `${JSON.stringify(value, null, 2)}\n`;
+
+/** An SVG drawn by a generator, as PNG bytes. Loaded only when a generator draws something. */
+async function renderPng(svg) {
+  const { Resvg } = await import('@resvg/resvg-js');
+  return new Resvg(svg, { font: { loadSystemFonts: true, defaultFontFamily: 'Arial' } }).render().asPng();
+}
 
 export async function generate(slug) {
   const generator = GENERATORS[slug];
@@ -92,7 +108,8 @@ export async function generate(slug) {
     const relative = path.relative(repoRoot, file);
     if (relative.startsWith('..') || path.isAbsolute(relative)) throw new Error(`${slug} artifact escapes the repository: ${artifact.path}`);
     await mkdir(path.dirname(file), { recursive: true });
-    await writeFile(file, asJson(artifact.data));
+    // An image demo's pictures come back as SVG and are written as the PNG the decisions API reads.
+    await writeFile(file, artifact.svg ? await renderPng(artifact.svg) : asJson(artifact.data));
   }
 
   return { slug, items: dataset.items.length, labels: labelCount, dataFile: path.relative(repoRoot, dataFile) };

@@ -111,6 +111,34 @@
     "code": "/** Grades matching and break reasons, then turns the quality bar into automation and workload. */\nfunction report(results, context = {}) {\n  const labels = context.labels ?? [];\n  const labelByItem = new Map(labels.map((label) => [label.statementLineId, label]));\n  const problems = groupProblems(labels);\n  const correct = results.filter((result) => agrees(result, labelByItem.get(result.item.id)));\n  const cleared = results.filter((result) => result.evaluation.autoCleared);\n  const gradedClears = cleared.filter((result) => labelByItem.has(result.item.id));\n  const preciseClears = gradedClears.filter((result) => agrees(result, labelByItem.get(result.item.id)));\n  const remaining = context.items.filter((item) => !cleared.some((result) => result.item.id === item.id));\n  const reconciliation = reconcile(context, cleared, remaining);\n  const graded = results.filter((result) => labelByItem.has(result.item.id));\n  const matrix = confusion(results, labelByItem);\n  const comparison = alternatives(graded, correct, labelByItem);\n\n  return {\n    note: `Graded against ${problems.size} planted reconciliation problems. Labels never enter the model state.`,\n    findings: [...clusterDisagreements(results, labelByItem), ...comparison.findings],\n    kpis: kpis({ results, graded, correct, cleared, gradedClears, preciseClears, remaining, context }),\n    baselines: comparison.baselines,\n    metrics: metrics({ results, graded, correct, cleared, gradedClears, preciseClears, matrix }),\n    distribution: distribution(results),\n    distributionTitle: 'Break reasons named',\n    matrix,\n    curve: coverage(results, labelByItem, labels),\n    checks: checks(results, labels, problems, labelByItem),\n    topItemsTitle: 'Largest lines left for a person',\n    topItems: topItems(results, labelByItem, context.currency),\n    reconciliation,\n    resolvedProblems: resolvedProblemCount(correct, problems),\n  };\n}",
     "language": "javascript"
   },
+  "demos/buy-timing/demo.js#demo:state": {
+    "path": "demos/buy-timing/demo.js",
+    "startLine": 12,
+    "endLine": 20,
+    "code": "/** The holding period and the chart. Nothing about what happened next. */\nfunction buildState(item, context) {\n  return {\n    task: 'Judge, from the attached daily candlestick chart alone, whether today is a good time to buy for a short hold.',\n    holding_period_trading_days: context.holdDays,\n    chart_window_trading_days: context.window,\n    chart_image: 'Attached. Unnamed and undated; the last candle is today.',\n  };\n}",
+    "language": "javascript"
+  },
+  "demos/buy-timing/demo.js#demo:questions": {
+    "path": "demos/buy-timing/demo.js",
+    "startLine": 24,
+    "endLine": 31,
+    "code": "const questions = {\n  next_move: choice(`Over the next 20 trading days, which is more likely for the price?`, {\n    ROSE: 'It will close higher than today.',\n    FELL: 'It will close lower than today.',\n  }),\n  buy_now: noul('Is today a good time to buy for a 20-trading-day hold?', { yes: 'Buy now.', no: 'Wait or stay out.' }),\n  conviction: score('How much does the chart support the call?', ['No edge', 'Slight', 'Some', 'Clear', 'Strong']),\n};",
+    "language": "javascript"
+  },
+  "demos/buy-timing/demo.js#demo:evaluate": {
+    "path": "demos/buy-timing/demo.js",
+    "startLine": 35,
+    "endLine": 39,
+    "code": "function evaluate(answers, item) {\n  const named = answers.next_move.choice;\n  const act = answers.buy_now.noul >= 0.5;\n  return { named, act, flagged: act, buyProbability: answers.buy_now.noul, conviction: answers.conviction.score, label: `${item.id}: ${act ? 'buy' : 'wait'} · expects ${readable(named)}` };\n}",
+    "language": "javascript"
+  },
+  "demos/buy-timing/demo.js#demo:report": {
+    "path": "demos/buy-timing/demo.js",
+    "startLine": 43,
+    "endLine": 53,
+    "code": "function report(results, context = {}) {\n  return classReport(results, {\n    labels: context.labels,\n    labelKey: 'chartId',\n    classes: OUTCOMES,\n    truth: (label) => label.outcome,\n    act: { label: 'Bought or waited', noun: 'call', target: 'Rises bought', should: (label) => label.outcome === 'ROSE' },\n    noun: 'charts',\n    title: 'What happened against what was expected',\n  });\n}",
+    "language": "javascript"
+  },
   "demos/card-fraud-triage/demo.js#demo:state": {
     "path": "demos/card-fraud-triage/demo.js",
     "startLine": 24,
@@ -165,6 +193,62 @@
     "startLine": 87,
     "endLine": 115,
     "code": "/** Separately grades outcome, missing evidence and action, then calibrates score bins against wins. */\nfunction report(results, context = {}) {\n  const labels = context.labels ?? [];\n  const intended = new Map(labels.map((label) => [label.packetId, label]));\n  const graded = results.filter((result) => intended.has(result.item.id));\n  const outcomeRight = graded.filter((result) => result.evaluation.predictedOutcome === intended.get(result.item.id).outcome);\n  const missingRight = graded.filter((result) => result.evaluation.missingDocument === intended.get(result.item.id).missingDocument);\n  const stepRight = graded.filter((result) => result.evaluation.nextStep === intended.get(result.item.id).nextStep);\n  const gatherMore = graded.filter((result) => result.evaluation.nextStep === 'GATHER_MORE');\n\n  return {\n    note: `Illustrative requirements only. ${graded.length} packets graded; labels never enter the model state.`,\n    findings: [...repeatedMistake(graded, intended), ...honestFindings(graded, intended, context)],\n    kpis: headline(graded, { outcomeRight, missingRight, stepRight, gatherMore }, intended, context.currency),\n    distributionTitle: 'Documents named as the one to fetch',\n    distribution: documentDistribution(graded),\n    baselines: baselines(graded, outcomeRight, intended, context),\n    matrix: documentMatrix(graded, intended),\n    curve: winCutCurve(graded, intended),\n    winRateByScore: winRateByScore(graded, intended),\n    checks: cohortChecks(graded, intended),\n    topItemsTitle: 'Largest disputes sent to gather more',\n    topItems: topGatherMore(gatherMore, context.currency),\n    flips: flipOutcomes(graded, intended),\n    money: gatherMoney(graded, gatherMore, intended),\n    deadlineAccuracy: share(graded.filter((result) => result.evaluation.deadlineRisk === intended.get(result.item.id).deadlineRisk).length, graded.length),\n    metrics: metrics(graded, outcomeRight, stepRight, intended),\n  };\n}",
+    "language": "javascript"
+  },
+  "demos/chart-trend/demo.js#demo:state": {
+    "path": "demos/chart-trend/demo.js",
+    "startLine": 10,
+    "endLine": 18,
+    "code": "/** Only the task and the window length. The chart is the attached image, unnamed and undated. */\nfunction buildState(item, context) {\n  return {\n    task: 'Describe the trend of the attached price chart from its first close to its last.',\n    window_trading_days: context.window,\n    definitions: ['up: the last close is more than 8% above the first', 'down: the last close is more than 8% below the first', 'sideways: the last close is within 3% of the first'],\n    chart_image: 'Attached. A daily closing-price line with a price scale on the right.',\n  };\n}",
+    "language": "javascript"
+  },
+  "demos/chart-trend/demo.js#demo:questions": {
+    "path": "demos/chart-trend/demo.js",
+    "startLine": 22,
+    "endLine": 30,
+    "code": "const questions = {\n  trend: choice('Over the whole chart, which way did the price go?', {\n    UP: 'The last close is clearly above the first: an uptrend.',\n    DOWN: 'The last close is clearly below the first: a downtrend.',\n    SIDEWAYS: 'The last close is close to the first: a range, whatever happened in between.',\n  }),\n  ended_higher: noul('Is the last close higher than the first close?', { yes: 'It ended higher.', no: 'It ended at or below where it started.' }),\n  strength: score('How strong is the move from first close to last?', ['Flat', 'Slight', 'Clear', 'Strong', 'Extreme']),\n};",
+    "language": "javascript"
+  },
+  "demos/chart-trend/demo.js#demo:evaluate": {
+    "path": "demos/chart-trend/demo.js",
+    "startLine": 34,
+    "endLine": 37,
+    "code": "function evaluate(answers, item) {\n  const named = answers.trend.choice;\n  return { named, act: answers.ended_higher.noul >= 0.5, flagged: named !== 'SIDEWAYS', strength: answers.strength.score, label: `${item.id}: ${readable(named)}` };\n}",
+    "language": "javascript"
+  },
+  "demos/chart-trend/demo.js#demo:report": {
+    "path": "demos/chart-trend/demo.js",
+    "startLine": 41,
+    "endLine": 51,
+    "code": "function report(results, context = {}) {\n  return classReport(results, {\n    labels: context.labels,\n    labelKey: 'chartId',\n    classes: TRENDS,\n    truth: (label) => label.trend,\n    act: { label: 'Ended higher or lower', noun: 'direction', target: 'Higher endings', should: (label) => label.changePercent > 0 },\n    noun: 'charts',\n    title: 'Real trend against the one named',\n  });\n}",
+    "language": "javascript"
+  },
+  "demos/cheque-check/demo.js#demo:state": {
+    "path": "demos/cheque-check/demo.js",
+    "startLine": 10,
+    "endLine": 18,
+    "code": "/** The day the cheque is presented and the bank's rules. The cheque is the attached image. */\nfunction buildState(item, context) {\n  return {\n    task: 'A customer is depositing the attached cheque. Decide whether the bank can accept it today.',\n    presented_on: context.presentedOn,\n    rules: context.rules,\n    cheque_image: 'Attached. Read the date, payee, amounts and signature from the picture.',\n  };\n}",
+    "language": "javascript"
+  },
+  "demos/cheque-check/demo.js#demo:questions": {
+    "path": "demos/cheque-check/demo.js",
+    "startLine": 22,
+    "endLine": 35,
+    "code": "const questions = {\n  defect: choice('What defect, if any, stops this cheque being accepted today?', {\n    WORDS_FIGURES: 'The amount in words does not agree with the amount in figures.',\n    UNSIGNED: 'The signature line is empty.',\n    STALE: 'It is dated more than six months before the day it is presented.',\n    POSTDATED: 'It is dated after the day it is presented.',\n    NONE: 'The cheque is in order.',\n  }),\n  accept: noul('Can the bank accept this cheque for deposit today?', {\n    yes: 'The cheque is in order.',\n    no: 'The cheque must be refused or returned.',\n  }),\n  risk: score('How risky would paying this cheque as it stands be?', ['None', 'Low', 'Moderate', 'High', 'Unacceptable']),\n};",
+    "language": "javascript"
+  },
+  "demos/cheque-check/demo.js#demo:evaluate": {
+    "path": "demos/cheque-check/demo.js",
+    "startLine": 39,
+    "endLine": 43,
+    "code": "function evaluate(answers, item) {\n  const named = answers.defect.choice;\n  const act = answers.accept.noul < 0.5;\n  return { named, act, flagged: act, acceptProbability: answers.accept.noul, risk: answers.risk.score, label: `${item.id}: ${act ? 'refused' : 'accepted'} · ${readable(named)}` };\n}",
+    "language": "javascript"
+  },
+  "demos/cheque-check/demo.js#demo:report": {
+    "path": "demos/cheque-check/demo.js",
+    "startLine": 47,
+    "endLine": 57,
+    "code": "function report(results, context = {}) {\n  return classReport(results, {\n    labels: context.labels,\n    labelKey: 'chequeId',\n    classes: DEFECTS,\n    truth: (label) => label.defect,\n    act: { label: 'Accepted or refused', target: 'Defective cheques', should: (label) => label.defect !== 'NONE' },\n    noun: 'cheques',\n    title: 'Planted defect against the one named',\n  });\n}",
     "language": "javascript"
   },
   "demos/close-blockers/demo.js#demo:state": {
@@ -398,6 +482,34 @@
     "code": "/** Right means the cause named is the cause the fill was built to carry. */\nconst grade = {\n  labelId: (label) => label.fillId,\n  judge: (result, label) => {\n    if (!label) return null;\n    return {\n      agree: result.evaluation.cause === label.cause,\n      expected: label.cause,\n      got: result.evaluation.cause,\n      note: label.cause === 'CLEAN' ? `Built as a clean fill, ${bps(label.costBps)} from the intended price.` : `Built as a ${readable(label.cause)} fill costing ${bps(label.costBps)}.`,\n      confidence: result.answers.cause.confidence,\n    };\n  },\n};",
     "language": "javascript"
   },
+  "demos/expense-claim/demo.js#demo:state": {
+    "path": "demos/expense-claim/demo.js",
+    "startLine": 11,
+    "endLine": 20,
+    "code": "/** The claim as the employee filed it and the policy; the receipt is the attached image. */\nfunction buildState(item, context) {\n  return {\n    task: 'Approve or return this expense claim. Compare it with the attached receipt image.',\n    company: context.company,\n    expense_policy: context.policy,\n    claim: item.claim,\n    receipt_image: 'Attached. Read the merchant, date, lines and total from the picture.',\n  };\n}",
+    "language": "javascript"
+  },
+  "demos/expense-claim/demo.js#demo:questions": {
+    "path": "demos/expense-claim/demo.js",
+    "startLine": 24,
+    "endLine": 37,
+    "code": "const questions = {\n  problem: choice('What is the main problem with this claim when it is compared with its receipt?', {\n    AMOUNT_INFLATED: 'The claimed amount is higher than the receipt total.',\n    DATE_MISMATCH: 'The claim date is not the date on the receipt.',\n    MERCHANT_MISMATCH: 'The merchant on the claim is not the merchant on the receipt.',\n    ALCOHOL: 'The receipt includes alcohol, which the policy does not reimburse.',\n    NONE: 'The claim matches the receipt and the policy.',\n  }),\n  approve: noul('Should this claim be approved as filed?', {\n    yes: 'The claim matches its receipt and the policy.',\n    no: 'The claim goes back to the employee.',\n  }),\n  concern: score('How concerning is this claim?', ['None', 'Clerical', 'Needs a word', 'Policy breach', 'Looks deliberate']),\n};",
+    "language": "javascript"
+  },
+  "demos/expense-claim/demo.js#demo:evaluate": {
+    "path": "demos/expense-claim/demo.js",
+    "startLine": 41,
+    "endLine": 46,
+    "code": "/** The problem named, and whether the claim is returned. */\nfunction evaluate(answers, item) {\n  const named = answers.problem.choice;\n  const act = answers.approve.noul < 0.5;\n  return { named, act, flagged: act, approveProbability: answers.approve.noul, concern: answers.concern.score, label: `${item.id}: ${act ? 'returned' : 'approved'} · ${readable(named)}` };\n}",
+    "language": "javascript"
+  },
+  "demos/expense-claim/demo.js#demo:report": {
+    "path": "demos/expense-claim/demo.js",
+    "startLine": 50,
+    "endLine": 60,
+    "code": "function report(results, context = {}) {\n  return classReport(results, {\n    labels: context.labels,\n    labelKey: 'claimId',\n    classes: PROBLEMS,\n    truth: (label) => label.problem,\n    act: { label: 'Approved or returned', target: 'Bad claims', should: (label) => label.problem !== 'NONE' },\n    noun: 'claims',\n    title: 'Planted problem against the one named',\n  });\n}",
+    "language": "javascript"
+  },
   "demos/expense-posting/demo.js#demo:state": {
     "path": "demos/expense-posting/demo.js",
     "startLine": 11,
@@ -622,6 +734,34 @@
     "code": "/** Opens cases against the planted nine, then reveals the real outcome window for review. */\nfunction report(results, context = {}) {\n  const labels = context.labels ?? [];\n  const intended = new Map(labels.map((label) => [label.tradeId, label]));\n  const graded = results.filter((result) => intended.has(result.item.id));\n  const suspicious = graded.filter((result) => intended.get(result.item.id).suspicious);\n  const benign = graded.filter((result) => !intended.get(result.item.id).suspicious);\n  const opened = graded.filter((result) => result.evaluation.caseOpened);\n  const caught = suspicious.filter((result) => result.evaluation.caseOpened);\n  const falseCases = benign.filter((result) => result.evaluation.caseOpened);\n  const dispositionRight = graded.filter((result) => result.evaluation.disposition === intended.get(result.item.id).expectedDisposition);\n  const blackoutRight = graded.filter((result) => result.evaluation.blackoutBreach === intended.get(result.item.id).blackoutBreach);\n  const patternRight = graded.filter((result) => result.evaluation.pattern === intended.get(result.item.id).pattern);\n\n  const groups = { graded, suspicious, benign, opened, caught, falseCases, dispositionRight, blackoutRight, patternRight };\n\n  return {\n    note: 'Prices are cached-real Yahoo Finance bars. Employees, trades, access and calendar events are fictional. Outcome bars were never in Jev’s state.',\n    findings: [...findings(suspicious, falseCases, intended), ...shortcutFindings(groups, intended)],\n    kpis: kpis(groups, intended),\n    baselines: baselines(graded, intended),\n    metrics: metrics(groups, intended),\n    distribution: PATTERNS.map((pattern) => ({ label: sentence(pattern), count: graded.filter((result) => result.evaluation.pattern === pattern).length, tone: pattern === 'ROUTINE' ? 'good' : 'warn' })).filter((entry) => entry.count),\n    distributionTitle: 'Pattern named',\n    matrix: caseMatrix(graded, intended),\n    curve: suspicionCurve(graded, intended, suspicious.length),\n    checks: checks(graded, intended),\n    topItems: mostSuspicious(graded),\n    topItemsTitle: 'Most suspicious trades',\n  };\n}",
     "language": "javascript"
   },
+  "demos/invoice-bank-change/demo.js#demo:state": {
+    "path": "demos/invoice-bank-change/demo.js",
+    "startLine": 11,
+    "endLine": 22,
+    "code": "/** What accounts payable already knows about the vendor and the order; the invoice is the image. */\nfunction buildState(item, context) {\n  return {\n    task: 'Decide whether the attached supplier invoice can go into the next payment run.',\n    company: context.company,\n    payment_rule: context.rule,\n    vat_rate_percent: context.vatRatePercent,\n    vendor_master_record: item.vendorMaster,\n    purchase_order: item.purchaseOrder,\n    invoice_image: 'Attached. Read the lines, totals and remittance details from the picture.',\n  };\n}",
+    "language": "javascript"
+  },
+  "demos/invoice-bank-change/demo.js#demo:questions": {
+    "path": "demos/invoice-bank-change/demo.js",
+    "startLine": 26,
+    "endLine": 38,
+    "code": "const questions = {\n  problem: choice('What is the main problem with paying this invoice, if any?', {\n    BANK_CHANGED: 'The invoice asks for payment to a bank account that is not the one in the vendor master.',\n    TOTAL_WRONG: 'The total due is not the sum of the lines plus VAT.',\n    OVER_PO: 'The total due is above the approved purchase order amount.',\n    NONE: 'The invoice can be paid as it stands.',\n  }),\n  pay: noul('Should this invoice be released for payment as it stands?', {\n    yes: 'Pay it to the account on file.',\n    no: 'Hold it for review.',\n  }),\n  fraud_risk: score('How likely is it that this invoice is an attempt to redirect payment?', ['None', 'Low', 'Possible', 'Likely', 'Almost certain']),\n};",
+    "language": "javascript"
+  },
+  "demos/invoice-bank-change/demo.js#demo:evaluate": {
+    "path": "demos/invoice-bank-change/demo.js",
+    "startLine": 42,
+    "endLine": 46,
+    "code": "function evaluate(answers, item) {\n  const named = answers.problem.choice;\n  const act = answers.pay.noul < 0.5;\n  return { named, act, flagged: act, payProbability: answers.pay.noul, fraudRisk: answers.fraud_risk.score, label: `${item.id}: ${act ? 'held' : 'paid'} · ${readable(named)}` };\n}",
+    "language": "javascript"
+  },
+  "demos/invoice-bank-change/demo.js#demo:report": {
+    "path": "demos/invoice-bank-change/demo.js",
+    "startLine": 50,
+    "endLine": 60,
+    "code": "function report(results, context = {}) {\n  return classReport(results, {\n    labels: context.labels,\n    labelKey: 'invoiceId',\n    classes: PROBLEMS,\n    truth: (label) => label.problem,\n    act: { label: 'Paid or held', target: 'Bad invoices', should: (label) => label.problem !== 'NONE' },\n    noun: 'invoices',\n    title: 'Planted problem against the one named',\n  });\n}",
+    "language": "javascript"
+  },
   "demos/journal-vs-reality/demo.js#demo:state": {
     "path": "demos/journal-vs-reality/demo.js",
     "startLine": 20,
@@ -655,6 +795,34 @@
     "startLine": 289,
     "endLine": 304,
     "code": "/** Right means the yes-or-no on the note agrees with whether the note was written with a drift. */\nconst grade = {\n  labelId: (label) => label.entryId,\n  judge: (result, label) => {\n    if (!label) return null;\n    const drifts = label.drift !== 'NONE';\n    const certainty = result.answers.note_matches_trade.noul;\n    return {\n      agree: result.evaluation.matches !== drifts,\n      expected: drifts ? 'NOTE_DRIFTS' : 'NOTE_MATCHES',\n      got: result.evaluation.matches ? 'NOTE_MATCHES' : 'NOTE_DRIFTS',\n      note: drifts ? `Written with a drift on ${readable(label.drift)}; the model named ${readable(result.evaluation.drift)}.` : 'Written as an honest note: it says what the record says.',\n      confidence: Math.max(certainty, 1 - certainty),\n    };\n  },\n};",
+    "language": "javascript"
+  },
+  "demos/leaf-check/demo.js#demo:state": {
+    "path": "demos/leaf-check/demo.js",
+    "startLine": 9,
+    "endLine": 16,
+    "code": "function buildState(item, context) {\n  return {\n    task: 'Record what the attached field photo shows about the plant’s health.',\n    setting: context.setting,\n    plant: item.subject,\n    photo: 'Attached.',\n  };\n}",
+    "language": "javascript"
+  },
+  "demos/leaf-check/demo.js#demo:questions": {
+    "path": "demos/leaf-check/demo.js",
+    "startLine": 20,
+    "endLine": 28,
+    "code": "const questions = {\n  condition: choice('What does the leaf in the photo show?', {\n    HEALTHY: 'A healthy leaf with no sign of disease.',\n    MILDEW: 'Mildew: a white or grey powdery or downy growth, or the yellow patches it causes.',\n    LEAF_SPOT: 'Leaf spot: distinct round or angular dead spots, often with a darker margin.',\n  }),\n  diseased: noul('Is the plant diseased?', { yes: 'Disease is visible.', no: 'The leaf is healthy.' }),\n  severity: score('How severe is the disease on this leaf?', ['None', 'Trace', 'Moderate', 'Severe', 'Leaf lost']),\n};",
+    "language": "javascript"
+  },
+  "demos/leaf-check/demo.js#demo:evaluate": {
+    "path": "demos/leaf-check/demo.js",
+    "startLine": 32,
+    "endLine": 36,
+    "code": "function evaluate(answers, item) {\n  const named = answers.condition.choice;\n  const act = answers.diseased.noul >= 0.5;\n  return { named, act, flagged: act, severity: answers.severity.score, label: `${item.id}: ${readable(named)}` };\n}",
+    "language": "javascript"
+  },
+  "demos/leaf-check/demo.js#demo:report": {
+    "path": "demos/leaf-check/demo.js",
+    "startLine": 40,
+    "endLine": 50,
+    "code": "function report(results, context = {}) {\n  return classReport(results, {\n    labels: context.labels,\n    labelKey: 'photoId',\n    classes: CONDITIONS,\n    truth: (label) => label.condition,\n    act: { label: 'Disease called', noun: 'call', target: 'Diseased leaves', should: (label) => label.condition !== 'HEALTHY' },\n    noun: 'photos',\n    title: 'Condition against the one named',\n  });\n}",
     "language": "javascript"
   },
   "demos/ledger-integrity/demo.js#demo:state": {
@@ -739,6 +907,34 @@
     "startLine": 119,
     "endLine": 144,
     "code": "/** Both sides, always together: the bad merchants that got through, and the good ones turned away. */\nfunction report(results, context = {}) {\n  const labels = context.labels ?? [];\n  const byItem = new Map(labels.map((label) => [label.applicationId, label]));\n  const graded = results.filter((result) => byItem.has(result.item.id));\n  const bad = graded.filter((result) => byItem.get(result.item.id).outcome !== 'GOOD');\n  const good = graded.filter((result) => byItem.get(result.item.id).outcome === 'GOOD');\n  const stopped = bad.filter((result) => !result.evaluation.boarded);\n  const goodDeclined = good.filter((result) => !result.evaluation.boarded);\n\n  return {\n    note: `${results.length} applications. ${bad.length} of these merchants were a problem — ${labels.filter((label) => label.outcome === 'CHARGEBACK_HEAVY').length} went on to heavy chargebacks, ${labels.filter((label) => label.outcome === 'PROHIBITED').length} were never acceptable, ${labels.filter((label) => label.outcome === 'FRAUD').length} sent documents that do not hold up. ${context.note ?? ''}`,\n    findings: [...findings(graded, byItem, good), ...honestFindings(graded, byItem, good)],\n    kpis: kpis({ good, goodDeclined, graded, byItem }),\n    distributionTitle: 'Risk tiers given',\n    distribution: distribution(results),\n    baselines: baselines(graded, byItem),\n    matrix: confusion(graded, byItem),\n    curve: coverage(graded, byItem),\n    reserveAgainstLoss: reserveAgainstLoss(graded, byItem),\n    checks: checks(graded, byItem, labels),\n    topItemsTitle: 'Largest reserves held',\n    topItems: topItems(results, byItem),\n    metrics: metrics(graded, byItem),\n  };\n}",
+    "language": "javascript"
+  },
+  "demos/misleading-chart/demo.js#demo:state": {
+    "path": "demos/misleading-chart/demo.js",
+    "startLine": 10,
+    "endLine": 17,
+    "code": "/** The bands the change is sorted into. The chart is the attached image. */\nfunction buildState(item, context) {\n  return {\n    task: 'Read the attached column chart from a company presentation and say what it really shows.',\n    change_bands: context.bands,\n    chart_image: 'Attached. Read the value axis as well as the bars.',\n  };\n}",
+    "language": "javascript"
+  },
+  "demos/misleading-chart/demo.js#demo:questions": {
+    "path": "demos/misleading-chart/demo.js",
+    "startLine": 21,
+    "endLine": 29,
+    "code": "const questions = {\n  real_change: choice('From the first column to the last, how large is the real change in the value, read off the axis?', {\n    SMALL: 'Under 10%.',\n    MEDIUM: 'Between 10% and 25%.',\n    LARGE: 'Over 25%.',\n  }),\n  axis_from_zero: noul('Does the value axis start at zero?', { yes: 'The bars are drawn from zero.', no: 'The axis is cut above zero.' }),\n  misleading: score('How much does the way it is drawn exaggerate the change?', ['Not at all', 'Slightly', 'Noticeably', 'Heavily', 'Grossly']),\n};",
+    "language": "javascript"
+  },
+  "demos/misleading-chart/demo.js#demo:evaluate": {
+    "path": "demos/misleading-chart/demo.js",
+    "startLine": 33,
+    "endLine": 37,
+    "code": "function evaluate(answers, item) {\n  const named = answers.real_change.choice;\n  const act = answers.axis_from_zero.noul < 0.5;\n  return { named, act, flagged: act, exaggeration: answers.misleading.score, label: `${item.id}: ${readable(named)} change · ${act ? 'cut axis' : 'axis from zero'}` };\n}",
+    "language": "javascript"
+  },
+  "demos/misleading-chart/demo.js#demo:report": {
+    "path": "demos/misleading-chart/demo.js",
+    "startLine": 41,
+    "endLine": 51,
+    "code": "function report(results, context = {}) {\n  return classReport(results, {\n    labels: context.labels,\n    labelKey: 'chartId',\n    classes: SIZES,\n    truth: (label) => label.size,\n    act: { label: 'Axis read', noun: 'axis reading', target: 'Cut axes', should: (label) => label.truncated },\n    noun: 'charts',\n    title: 'Real change against the change read',\n  });\n}",
     "language": "javascript"
   },
   "demos/missed-trades/demo.js#demo:state": {
@@ -937,6 +1133,34 @@
     "code": "function report(results, context = {}) {\n  const byItem = new Map((context.labels ?? []).map((label) => [label.backtestId, label.kind]));\n  const graded = results.filter((result) => result.evaluation && byItem.has(result.item.id));\n  const honest = graded.filter((result) => byItem.get(result.item.id) === 'NONE');\n  const problems = graded.filter((result) => byItem.get(result.item.id) !== 'NONE');\n  const correct = graded.filter((result) => result.evaluation.symptom === byItem.get(result.item.id));\n  const falseDoubt = honest.filter((result) => result.evaluation.symptom !== 'NONE' || result.evaluation.trust < 2 || result.evaluation.risk >= 5);\n  const overTrusted = problems.filter((result) => result.evaluation.trust >= 4);\n  const tally = { graded, honest, problems, correct, falseDoubt, overTrusted };\n  const gallery = [...graded].sort((left, right) => left.evaluation.trust - right.evaluation.trust || right.evaluation.risk - left.evaluation.risk || left.item.id.localeCompare(right.item.id));\n  return {\n    note: `${graded.length} synthetic reports generated with seed 1184. The answer key stays outside the demo folder; it is joined only after all recorded answers are complete. ${context.note ?? ''}`,\n    findings: findings(tally, byItem),\n    kpis: kpis(tally),\n    baselines: baselines(graded, byItem),\n    metrics: metrics(tally, symptomMatrix(graded, byItem)),\n    distributionTitle: 'Main symptom named',\n    distribution: SYMPTOMS.map((symptom) => ({ label: sentence(symptom), count: graded.filter((result) => result.evaluation.symptom === symptom).length, tone: symptom === 'NONE' ? 'good' : 'warn' })).filter((entry) => entry.count),\n    matrix: symptomMatrix(graded, byItem),\n    overfitGallery: { title: 'All curves, worst trust first', rows: gallery.map((result) => ({ id: result.item.id, trust: result.evaluation.trust, risk: result.evaluation.risk, symptom: result.evaluation.symptom, planted: byItem.get(result.item.id), curve: result.item.equityCurve })) },\n    checks: [\n      { id: 'wrong-symptom', label: 'Main symptom misidentified', detail: 'Exact planted class against the single symptom named.', count: graded.length - correct.length, of: graded.length, items: graded.filter((result) => result.evaluation.symptom !== byItem.get(result.item.id)).map((result) => result.item.id) },\n      { id: 'false-doubt', label: 'Honest backtest wrongly doubted', detail: 'Honest report assigned a flaw, risk of five or more, or trust below two.', count: falseDoubt.length, of: honest.length, items: falseDoubt.map((result) => result.item.id) },\n      { id: 'over-trusted', label: 'Flawed backtest trusted', detail: 'A planted failure still received trust of four or more.', count: overTrusted.length, of: problems.length, items: overTrusted.map((result) => result.item.id) },\n    ],\n    topItemsTitle: 'Misread reports first, then the least trusted',\n    topItems: worthOpening(graded, byItem, gallery),\n  };\n}",
     "language": "javascript"
   },
+  "demos/package-check/demo.js#demo:state": {
+    "path": "demos/package-check/demo.js",
+    "startLine": 10,
+    "endLine": 16,
+    "code": "function buildState(item, context) {\n  return {\n    task: 'A customer has filed a damaged-in-transit claim with the attached delivery photo. Assess the parcel.',\n    setting: context.setting,\n    photo: 'Attached.',\n  };\n}",
+    "language": "javascript"
+  },
+  "demos/package-check/demo.js#demo:questions": {
+    "path": "demos/package-check/demo.js",
+    "startLine": 20,
+    "endLine": 29,
+    "code": "const questions = {\n  condition: choice('What condition is the parcel or box in?', {\n    INTACT: 'Closed and undamaged.',\n    WORN: 'Closed, scuffed or aged, but not broken.',\n    CRUSHED: 'Crushed, dented or caved in.',\n    OPENED: 'Open, torn open or with its flaps up.',\n  }),\n  supports_claim: noul('Does the photo support a damaged-in-transit claim?', { yes: 'Pay the claim.', no: 'Ask for more evidence.' }),\n  damage: score('How badly is it damaged?', ['None', 'Cosmetic', 'Moderate', 'Severe', 'Destroyed']),\n};",
+    "language": "javascript"
+  },
+  "demos/package-check/demo.js#demo:evaluate": {
+    "path": "demos/package-check/demo.js",
+    "startLine": 33,
+    "endLine": 37,
+    "code": "function evaluate(answers, item) {\n  const named = answers.condition.choice;\n  const act = answers.supports_claim.noul >= 0.5;\n  return { named, act, flagged: act, damage: answers.damage.score, label: `${item.id}: ${act ? 'claim supported' : 'more evidence'} · ${readable(named)}` };\n}",
+    "language": "javascript"
+  },
+  "demos/package-check/demo.js#demo:report": {
+    "path": "demos/package-check/demo.js",
+    "startLine": 41,
+    "endLine": 51,
+    "code": "function report(results, context = {}) {\n  return classReport(results, {\n    labels: context.labels,\n    labelKey: 'photoId',\n    classes: CONDITIONS,\n    truth: (label) => label.condition,\n    act: { label: 'Claim decided', noun: 'decision', target: 'Damaged parcels', should: (label) => ['CRUSHED', 'OPENED'].includes(label.condition) },\n    noun: 'photos',\n    title: 'Condition against the one named',\n  });\n}",
+    "language": "javascript"
+  },
   "demos/peer-valuation/demo.js#demo:state": {
     "path": "demos/peer-valuation/demo.js",
     "startLine": 10,
@@ -1056,6 +1280,34 @@
     "code": "/** Right means the lesson named is the fault the trade was built to carry. */\nconst grade = {\n  labelId: (label) => label.tradeId,\n  judge: (result, label) => {\n    if (!label) return null;\n    return {\n      agree: result.evaluation.lesson === label.lesson,\n      expected: label.lesson,\n      got: result.evaluation.lesson,\n      note: label.lesson === 'PLAN_FOLLOWED' ? 'Built as a well-run trade: a complete plan that was followed.' : `Built to carry one fault: ${readable(label.lesson)}.`,\n      confidence: result.answers.lesson.confidence,\n    };\n  },\n};",
     "language": "javascript"
   },
+  "demos/produce-check/demo.js#demo:state": {
+    "path": "demos/produce-check/demo.js",
+    "startLine": 10,
+    "endLine": 18,
+    "code": "/** The inspection rule and what the photo is of. */\nfunction buildState(item, context) {\n  return {\n    task: 'Inspect the attached photo of incoming stock and record its condition.',\n    setting: context.setting,\n    product: item.subject,\n    photo: 'Attached.',\n  };\n}",
+    "language": "javascript"
+  },
+  "demos/produce-check/demo.js#demo:questions": {
+    "path": "demos/produce-check/demo.js",
+    "startLine": 22,
+    "endLine": 30,
+    "code": "const questions = {\n  condition: choice('What condition is the produce in the photo in?', {\n    FRESH: 'Fresh or ripe, fit to sell.',\n    ROTTEN: 'Rotten, bruised through, or blackened.',\n    MOULDY: 'Visible mould on the surface.',\n  }),\n  reject: noul('Should this stock be rejected at goods-in?', { yes: 'Reject it.', no: 'Accept it.' }),\n  spoilage: score('How far gone is it?', ['Perfect', 'Ripe', 'Past its best', 'Spoiled', 'Inedible']),\n};",
+    "language": "javascript"
+  },
+  "demos/produce-check/demo.js#demo:evaluate": {
+    "path": "demos/produce-check/demo.js",
+    "startLine": 34,
+    "endLine": 38,
+    "code": "function evaluate(answers, item) {\n  const named = answers.condition.choice;\n  const act = answers.reject.noul >= 0.5;\n  return { named, act, flagged: act, rejectProbability: answers.reject.noul, spoilage: answers.spoilage.score, label: `${item.id}: ${act ? 'rejected' : 'accepted'} · ${readable(named)}` };\n}",
+    "language": "javascript"
+  },
+  "demos/produce-check/demo.js#demo:report": {
+    "path": "demos/produce-check/demo.js",
+    "startLine": 42,
+    "endLine": 52,
+    "code": "function report(results, context = {}) {\n  return classReport(results, {\n    labels: context.labels,\n    labelKey: 'photoId',\n    classes: CONDITIONS,\n    truth: (label) => label.condition,\n    act: { label: 'Accepted or rejected', target: 'Spoiled stock', should: (label) => label.condition !== 'FRESH' },\n    noun: 'photos',\n    title: 'Condition against the one named',\n  });\n}",
+    "language": "javascript"
+  },
   "demos/rebalance-review/demo.js#demo:state": {
     "path": "demos/rebalance-review/demo.js",
     "startLine": 27,
@@ -1082,6 +1334,34 @@
     "startLine": 112,
     "endLine": 137,
     "code": "/** What survived the review, and whether the things that should not have survived did. */\nfunction report(results, context = {}) {\n  const labels = context.labels ?? [];\n  const byItem = new Map(labels.map((label) => [label.tradeId, label]));\n  const graded = results.filter((result) => byItem.has(result.item.id));\n  const problems = graded.filter((result) => byItem.get(result.item.id).issue !== 'NONE');\n  const clean = graded.filter((result) => byItem.get(result.item.id).issue === 'NONE');\n  const caught = problems.filter((result) => result.evaluation.verdict !== 'APPROVE');\n  const matrix = confusion(graded, byItem);\n  const stats = matrixStats(matrix);\n\n  return {\n    note: `Two hundred proposed trades across six accounts, ${problems.length} of them carrying something the rebalancer could not see. ${context.note ?? ''}`,\n    findings: findings(graded, byItem, clean, stats),\n    kpis: kpis({ graded, problems, clean, caught, byItem }),\n    distribution: distribution(results),\n    distributionTitle: 'Verdicts given',\n    baselines: baselines(graded, byItem, stats),\n    metrics: metrics(graded, problems, caught, stats),\n    matrix,\n    curve: coverage(graded, byItem, problems),\n    checks: checks(graded, byItem, labels),\n    topItems: topItems(results, byItem),\n    topItemsTitle: 'Largest trades kept out of the order list',\n  };\n}",
+    "language": "javascript"
+  },
+  "demos/receipt-check/demo.js#demo:state": {
+    "path": "demos/receipt-check/demo.js",
+    "startLine": 10,
+    "endLine": 18,
+    "code": "/** The task and the tax rate. The receipt itself is attached as an image, not written out. */\nfunction buildState(item, context) {\n  return {\n    task: 'Check the arithmetic of the attached till receipt before it is filed as an expense.',\n    receipt_image: 'Attached. Read every number from the picture.',\n    expected_sales_tax_percent: context.taxRatePercent,\n    currency: context.currency,\n  };\n}",
+    "language": "javascript"
+  },
+  "demos/receipt-check/demo.js#demo:questions": {
+    "path": "demos/receipt-check/demo.js",
+    "startLine": 22,
+    "endLine": 34,
+    "code": "const questions = {\n  issue: choice('Which arithmetic problem, if any, does the receipt in the image have?', {\n    LINE_TOTAL: 'A line amount is not its quantity times its unit price.',\n    SUBTOTAL: 'The subtotal is not the sum of the line amounts.',\n    TAX: 'The tax is not the expected rate applied to the subtotal.',\n    NONE: 'Every line, the subtotal, the tax and the total agree.',\n  }),\n  adds_up: noul('Does every number on the receipt follow arithmetically from the ones above it?', {\n    yes: 'The receipt is internally consistent.',\n    no: 'At least one printed number is wrong.',\n  }),\n  severity: score('How much would filing this receipt as printed misstate the expense?', ['Not at all', 'Pennies', 'A few dollars', 'Noticeably', 'Badly']),\n};",
+    "language": "javascript"
+  },
+  "demos/receipt-check/demo.js#demo:evaluate": {
+    "path": "demos/receipt-check/demo.js",
+    "startLine": 38,
+    "endLine": 43,
+    "code": "/** The problem named, and whether the receipt goes back to the employee. */\nfunction evaluate(answers, item) {\n  const named = answers.issue.choice;\n  const act = named !== 'NONE' || answers.adds_up.noul < 0.5;\n  return { named, act, flagged: act, addsUp: answers.adds_up.noul, severity: answers.severity.score, label: `${item.id}: ${act ? 'returned' : 'filed'} · ${readable(named)}` };\n}",
+    "language": "javascript"
+  },
+  "demos/receipt-check/demo.js#demo:report": {
+    "path": "demos/receipt-check/demo.js",
+    "startLine": 47,
+    "endLine": 57,
+    "code": "function report(results, context = {}) {\n  return classReport(results, {\n    labels: context.labels,\n    labelKey: 'receiptId',\n    classes: ISSUES,\n    truth: (label) => label.issue,\n    act: { label: 'Returned or filed', target: 'Wrong receipts', should: (label) => label.issue !== 'NONE' },\n    noun: 'receipts',\n    title: 'Planted error against the one named',\n  });\n}",
     "language": "javascript"
   },
   "demos/regime-classification/demo.js#demo:state": {
@@ -1856,6 +2136,62 @@
   },
   "scripts/generate/overfit-review.js": {
     "path": "scripts/generate/overfit-review.js",
+    "startLine": null,
+    "endLine": null,
+    "code": null,
+    "language": "javascript"
+  },
+  "scripts/generate/receipt-check.js": {
+    "path": "scripts/generate/receipt-check.js",
+    "startLine": null,
+    "endLine": null,
+    "code": null,
+    "language": "javascript"
+  },
+  "scripts/generate/expense-claim.js": {
+    "path": "scripts/generate/expense-claim.js",
+    "startLine": null,
+    "endLine": null,
+    "code": null,
+    "language": "javascript"
+  },
+  "scripts/generate/cheque-check.js": {
+    "path": "scripts/generate/cheque-check.js",
+    "startLine": null,
+    "endLine": null,
+    "code": null,
+    "language": "javascript"
+  },
+  "scripts/generate/invoice-bank-change.js": {
+    "path": "scripts/generate/invoice-bank-change.js",
+    "startLine": null,
+    "endLine": null,
+    "code": null,
+    "language": "javascript"
+  },
+  "scripts/generate/chart-trend.js": {
+    "path": "scripts/generate/chart-trend.js",
+    "startLine": null,
+    "endLine": null,
+    "code": null,
+    "language": "javascript"
+  },
+  "scripts/generate/buy-timing.js": {
+    "path": "scripts/generate/buy-timing.js",
+    "startLine": null,
+    "endLine": null,
+    "code": null,
+    "language": "javascript"
+  },
+  "scripts/generate/misleading-chart.js": {
+    "path": "scripts/generate/misleading-chart.js",
+    "startLine": null,
+    "endLine": null,
+    "code": null,
+    "language": "javascript"
+  },
+  "scripts/generate/lib/photos.js": {
+    "path": "scripts/generate/lib/photos.js",
     "startLine": null,
     "endLine": null,
     "code": null,

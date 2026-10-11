@@ -1,0 +1,14 @@
+[
+  {
+    "photoId": "PK-01",
+    "condition": "CRUSHED"
+  },
+  {
+    "photoId": "PK-02",
+    "condition": "WORN"
+  },
+  {
+    "photoId": "PK-03",
+    "condition": "OPENED"
+  }
+]

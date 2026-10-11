@@ -2,7 +2,7 @@ import assert from 'node:assert/strict';
 import { test } from 'node:test';
 import { DEMOS } from '../demos/index.js';
 import { loadDataset, loadLabels } from '../src/services/dataset.js';
-import { demoContext, fixtureAnswers, loadFixtures } from '../src/services/demo-runner.js';
+import { defaultProvider, demoContext, fixtureAnswers, loadFixtures } from '../src/services/demo-runner.js';
 
 // The optional parts of the demo contract (docs/demo-contract-additions.md). A demo may leave any of
 // them out; one that supplies them has to supply them properly, because the page trusts them.
@@ -14,7 +14,7 @@ async function runOf(demo) {
   const dataset = await loadDataset(demo.id);
   const context = demoContext(dataset);
   const labels = await loadLabels(demo.id).catch(() => []);
-  const fixtures = await loadFixtures(demo.id);
+  const fixtures = await loadFixtures(demo.id, defaultProvider(demo));
   const results = [];
   for (const item of dataset.items) {
     const answers = fixtureAnswers(fixtures, demo.questions, item.id);

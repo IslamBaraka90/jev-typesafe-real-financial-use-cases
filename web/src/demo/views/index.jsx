@@ -13,6 +13,7 @@ import { StatementsView } from './StatementsView.jsx';
 import { PeerGridView } from './PeerGridView.jsx';
 import { TimingGridView } from './TimingGridView.jsx';
 import { BacktestCurveView } from './BacktestCurveView.jsx';
+import { ImageView } from './ImageView.jsx';
 
 // How an item is drawn on the stage. A demo names one in its definition; anything unknown falls back
 // to the plain field table, so a new demo always renders something.
@@ -33,6 +34,7 @@ export const VIEWS = {
   document: DocumentView,
   pairCurves: PairCurvesView,
   curve: BacktestCurveView,
+  image: ImageView,
 };
 
 export function ItemView({ view, ...props }) {

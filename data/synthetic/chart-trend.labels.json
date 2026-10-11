@@ -1,0 +1,242 @@
+[
+  {
+    "chartId": "CT-001",
+    "trend": "UP",
+    "changePercent": 27.14
+  },
+  {
+    "chartId": "CT-002",
+    "trend": "UP",
+    "changePercent": 18
+  },
+  {
+    "chartId": "CT-003",
+    "trend": "UP",
+    "changePercent": 8.83
+  },
+  {
+    "chartId": "CT-004",
+    "trend": "UP",
+    "changePercent": 11.52
+  },
+  {
+    "chartId": "CT-005",
+    "trend": "DOWN",
+    "changePercent": -21.87
+  },
+  {
+    "chartId": "CT-006",
+    "trend": "UP",
+    "changePercent": 13.47
+  },
+  {
+    "chartId": "CT-007",
+    "trend": "DOWN",
+    "changePercent": -11.38
+  },
+  {
+    "chartId": "CT-008",
+    "trend": "DOWN",
+    "changePercent": -21.08
+  },
+  {
+    "chartId": "CT-009",
+    "trend": "SIDEWAYS",
+    "changePercent": 2.85
+  },
+  {
+    "chartId": "CT-010",
+    "trend": "SIDEWAYS",
+    "changePercent": 2.84
+  },
+  {
+    "chartId": "CT-011",
+    "trend": "DOWN",
+    "changePercent": -12.21
+  },
+  {
+    "chartId": "CT-012",
+    "trend": "DOWN",
+    "changePercent": -12.95
+  },
+  {
+    "chartId": "CT-013",
+    "trend": "UP",
+    "changePercent": 9.11
+  },
+  {
+    "chartId": "CT-014",
+    "trend": "UP",
+    "changePercent": 21.1
+  },
+  {
+    "chartId": "CT-015",
+    "trend": "DOWN",
+    "changePercent": -10.33
+  },
+  {
+    "chartId": "CT-016",
+    "trend": "UP",
+    "changePercent": 13.27
+  },
+  {
+    "chartId": "CT-017",
+    "trend": "UP",
+    "changePercent": 36.64
+  },
+  {
+    "chartId": "CT-018",
+    "trend": "SIDEWAYS",
+    "changePercent": -0.35
+  },
+  {
+    "chartId": "CT-019",
+    "trend": "SIDEWAYS",
+    "changePercent": -0.74
+  },
+  {
+    "chartId": "CT-020",
+    "trend": "DOWN",
+    "changePercent": -11.6
+  },
+  {
+    "chartId": "CT-021",
+    "trend": "UP",
+    "changePercent": 19.01
+  },
+  {
+    "chartId": "CT-022",
+    "trend": "DOWN",
+    "changePercent": -14.58
+  },
+  {
+    "chartId": "CT-023",
+    "trend": "UP",
+    "changePercent": 10.52
+  },
+  {
+    "chartId": "CT-024",
+    "trend": "DOWN",
+    "changePercent": -24
+  },
+  {
+    "chartId": "CT-025",
+    "trend": "DOWN",
+    "changePercent": -13.82
+  },
+  {
+    "chartId": "CT-026",
+    "trend": "SIDEWAYS",
+    "changePercent": 0.3
+  },
+  {
+    "chartId": "CT-027",
+    "trend": "SIDEWAYS",
+    "changePercent": -2.3
+  },
+  {
+    "chartId": "CT-028",
+    "trend": "UP",
+    "changePercent": 19.53
+  },
+  {
+    "chartId": "CT-029",
+    "trend": "SIDEWAYS",
+    "changePercent": 1.82
+  },
+  {
+    "chartId": "CT-030",
+    "trend": "SIDEWAYS",
+    "changePercent": 1.04
+  },
+  {
+    "chartId": "CT-031",
+    "trend": "DOWN",
+    "changePercent": -20.8
+  },
+  {
+    "chartId": "CT-032",
+    "trend": "SIDEWAYS",
+    "changePercent": 2.33
+  },
+  {
+    "chartId": "CT-033",
+    "trend": "UP",
+    "changePercent": 8.1
+  },
+  {
+    "chartId": "CT-034",
+    "trend": "DOWN",
+    "changePercent": -11.6
+  },
+  {
+    "chartId": "CT-035",
+    "trend": "SIDEWAYS",
+    "changePercent": 1.34
+  },
+  {
+    "chartId": "CT-036",
+    "trend": "SIDEWAYS",
+    "changePercent": 1.01
+  },
+  {
+    "chartId": "CT-037",
+    "trend": "SIDEWAYS",
+    "changePercent": -0.19
+  },
+  {
+    "chartId": "CT-038",
+    "trend": "SIDEWAYS",
+    "changePercent": -1.68
+  },
+  {
+    "chartId": "CT-039",
+    "trend": "DOWN",
+    "changePercent": -31.18
+  },
+  {
+    "chartId": "CT-040",
+    "trend": "UP",
+    "changePercent": 15.43
+  },
+  {
+    "chartId": "CT-041",
+    "trend": "UP",
+    "changePercent": 9.87
+  },
+  {
+    "chartId": "CT-042",
+    "trend": "SIDEWAYS",
+    "changePercent": 2.35
+  },
+  {
+    "chartId": "CT-043",
+    "trend": "DOWN",
+    "changePercent": -8.5
+  },
+  {
+    "chartId": "CT-044",
+    "trend": "UP",
+    "changePercent": 8.77
+  },
+  {
+    "chartId": "CT-045",
+    "trend": "SIDEWAYS",
+    "changePercent": -2.61
+  },
+  {
+    "chartId": "CT-046",
+    "trend": "DOWN",
+    "changePercent": -17.39
+  },
+  {
+    "chartId": "CT-047",
+    "trend": "DOWN",
+    "changePercent": -23.54
+  },
+  {
+    "chartId": "CT-048",
+    "trend": "SIDEWAYS",
+    "changePercent": 1.61
+  }
+]

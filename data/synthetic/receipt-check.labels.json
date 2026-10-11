@@ -1,0 +1,182 @@
+[
+  {
+    "receiptId": "RC-001",
+    "issue": "NONE",
+    "planted": null
+  },
+  {
+    "receiptId": "RC-002",
+    "issue": "LINE_TOTAL",
+    "planted": "Paper cups 50pk: printed 8.20, should be 10.20"
+  },
+  {
+    "receiptId": "RC-003",
+    "issue": "NONE",
+    "planted": null
+  },
+  {
+    "receiptId": "RC-004",
+    "issue": "LINE_TOTAL",
+    "planted": "Paper cups 50pk: printed 4.80, should be 6.80"
+  },
+  {
+    "receiptId": "RC-005",
+    "issue": "SUBTOTAL",
+    "planted": "subtotal printed 50.52, lines sum to 45.52"
+  },
+  {
+    "receiptId": "RC-006",
+    "issue": "LINE_TOTAL",
+    "planted": "Sandwich: printed 23.00, should be 13.00"
+  },
+  {
+    "receiptId": "RC-007",
+    "issue": "TAX",
+    "planted": "tax charged at 15% instead of 8%"
+  },
+  {
+    "receiptId": "RC-008",
+    "issue": "TAX",
+    "planted": "tax charged at 10% instead of 8%"
+  },
+  {
+    "receiptId": "RC-009",
+    "issue": "TAX",
+    "planted": "tax charged at 12% instead of 8%"
+  },
+  {
+    "receiptId": "RC-010",
+    "issue": "LINE_TOTAL",
+    "planted": "Printer paper A4: printed 17.47, should be 19.47"
+  },
+  {
+    "receiptId": "RC-011",
+    "issue": "TAX",
+    "planted": "tax charged at 10% instead of 8%"
+  },
+  {
+    "receiptId": "RC-012",
+    "issue": "TAX",
+    "planted": "tax charged at 10% instead of 8%"
+  },
+  {
+    "receiptId": "RC-013",
+    "issue": "NONE",
+    "planted": null
+  },
+  {
+    "receiptId": "RC-014",
+    "issue": "SUBTOTAL",
+    "planted": "subtotal printed 40.04, lines sum to 30.04"
+  },
+  {
+    "receiptId": "RC-015",
+    "issue": "LINE_TOTAL",
+    "planted": "Milk 2L: printed 0.89, should be 2.89"
+  },
+  {
+    "receiptId": "RC-016",
+    "issue": "NONE",
+    "planted": null
+  },
+  {
+    "receiptId": "RC-017",
+    "issue": "NONE",
+    "planted": null
+  },
+  {
+    "receiptId": "RC-018",
+    "issue": "LINE_TOTAL",
+    "planted": "Envelopes 50pk: printed 27.40, should be 22.40"
+  },
+  {
+    "receiptId": "RC-019",
+    "issue": "NONE",
+    "planted": null
+  },
+  {
+    "receiptId": "RC-020",
+    "issue": "NONE",
+    "planted": null
+  },
+  {
+    "receiptId": "RC-021",
+    "issue": "LINE_TOTAL",
+    "planted": "Bottled water 6pk: printed 10.40, should be 8.40"
+  },
+  {
+    "receiptId": "RC-022",
+    "issue": "TAX",
+    "planted": "tax charged at 10% instead of 8%"
+  },
+  {
+    "receiptId": "RC-023",
+    "issue": "SUBTOTAL",
+    "planted": "subtotal printed 70.25, lines sum to 74.25"
+  },
+  {
+    "receiptId": "RC-024",
+    "issue": "LINE_TOTAL",
+    "planted": "Sticky notes: printed 11.00, should be 9.00"
+  },
+  {
+    "receiptId": "RC-025",
+    "issue": "SUBTOTAL",
+    "planted": "subtotal printed 38.44, lines sum to 42.44"
+  },
+  {
+    "receiptId": "RC-026",
+    "issue": "LINE_TOTAL",
+    "planted": "Desk lamp: printed 34.50, should be 24.50"
+  },
+  {
+    "receiptId": "RC-027",
+    "issue": "SUBTOTAL",
+    "planted": "subtotal printed 140.08, lines sum to 130.08"
+  },
+  {
+    "receiptId": "RC-028",
+    "issue": "NONE",
+    "planted": null
+  },
+  {
+    "receiptId": "RC-029",
+    "issue": "SUBTOTAL",
+    "planted": "subtotal printed 53.99, lines sum to 57.99"
+  },
+  {
+    "receiptId": "RC-030",
+    "issue": "TAX",
+    "planted": "tax charged at 10% instead of 8%"
+  },
+  {
+    "receiptId": "RC-031",
+    "issue": "SUBTOTAL",
+    "planted": "subtotal printed 50.71, lines sum to 40.71"
+  },
+  {
+    "receiptId": "RC-032",
+    "issue": "NONE",
+    "planted": null
+  },
+  {
+    "receiptId": "RC-033",
+    "issue": "TAX",
+    "planted": "tax charged at 15% instead of 8%"
+  },
+  {
+    "receiptId": "RC-034",
+    "issue": "TAX",
+    "planted": "tax charged at 15% instead of 8%"
+  },
+  {
+    "receiptId": "RC-035",
+    "issue": "SUBTOTAL",
+    "planted": "subtotal printed 73.86, lines sum to 77.86"
+  },
+  {
+    "receiptId": "RC-036",
+    "issue": "SUBTOTAL",
+    "planted": "subtotal printed 83.69, lines sum to 87.69"
+  }
+]

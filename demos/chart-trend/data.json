@@ -1,0 +1,445 @@
+{
+  "id": "chart-trend",
+  "class": "cached-real",
+  "generatedAt": "2026-10-11",
+  "seed": 4105,
+  "source": "Yahoo Finance daily candles, cached in data/market",
+  "context": {
+    "window": 60,
+    "note": "Prices, volumes and fundamentals are real, cached once from Yahoo Finance and committed. Nothing is fetched at build time or in the browser, and none of this is investment advice."
+  },
+  "items": [
+    {
+      "id": "CT-001",
+      "image": "images/chart-trend/CT-001.png",
+      "symbol": "AAPL",
+      "from": "2022-12-28",
+      "to": "2023-03-24",
+      "firstClose": 126.04,
+      "lastClose": 160.25
+    },
+    {
+      "id": "CT-002",
+      "image": "images/chart-trend/CT-002.png",
+      "symbol": "AAPL",
+      "from": "2021-10-19",
+      "to": "2022-01-12",
+      "firstClose": 148.76,
+      "lastClose": 175.53
+    },
+    {
+      "id": "CT-003",
+      "image": "images/chart-trend/CT-003.png",
+      "symbol": "GLD",
+      "from": "2024-06-07",
+      "to": "2024-09-03",
+      "firstClose": 211.6,
+      "lastClose": 230.29
+    },
+    {
+      "id": "CT-004",
+      "image": "images/chart-trend/CT-004.png",
+      "symbol": "XOM",
+      "from": "2021-04-05",
+      "to": "2021-06-28",
+      "firstClose": 56.5,
+      "lastClose": 63.01
+    },
+    {
+      "id": "CT-005",
+      "image": "images/chart-trend/CT-005.png",
+      "symbol": "NVDA",
+      "from": "2022-06-27",
+      "to": "2022-09-20",
+      "firstClose": 16.87,
+      "lastClose": 13.18
+    },
+    {
+      "id": "CT-006",
+      "image": "images/chart-trend/CT-006.png",
+      "symbol": "JNJ",
+      "from": "2024-12-18",
+      "to": "2025-03-18",
+      "firstClose": 144.75,
+      "lastClose": 164.25
+    },
+    {
+      "id": "CT-007",
+      "image": "images/chart-trend/CT-007.png",
+      "symbol": "NVDA",
+      "from": "2020-10-12",
+      "to": "2021-01-06",
+      "firstClose": 14.23,
+      "lastClose": 12.61
+    },
+    {
+      "id": "CT-008",
+      "image": "images/chart-trend/CT-008.png",
+      "symbol": "BTC-USD",
+      "from": "2022-11-04",
+      "to": "2023-01-02",
+      "firstClose": 21147.23,
+      "lastClose": 16688.47
+    },
+    {
+      "id": "CT-009",
+      "image": "images/chart-trend/CT-009.png",
+      "symbol": "SPY",
+      "from": "2024-06-10",
+      "to": "2024-09-04",
+      "firstClose": 535.66,
+      "lastClose": 550.95
+    },
+    {
+      "id": "CT-010",
+      "image": "images/chart-trend/CT-010.png",
+      "symbol": "SPY",
+      "from": "2025-09-26",
+      "to": "2025-12-19",
+      "firstClose": 661.82,
+      "lastClose": 680.59
+    },
+    {
+      "id": "CT-011",
+      "image": "images/chart-trend/CT-011.png",
+      "symbol": "MSFT",
+      "from": "2022-07-22",
+      "to": "2022-10-14",
+      "firstClose": 260.36,
+      "lastClose": 228.56
+    },
+    {
+      "id": "CT-012",
+      "image": "images/chart-trend/CT-012.png",
+      "symbol": "CVX",
+      "from": "2025-02-10",
+      "to": "2025-05-06",
+      "firstClose": 155.77,
+      "lastClose": 135.6
+    },
+    {
+      "id": "CT-013",
+      "image": "images/chart-trend/CT-013.png",
+      "symbol": "SPY",
+      "from": "2023-12-18",
+      "to": "2024-03-14",
+      "firstClose": 471.97,
+      "lastClose": 514.95
+    },
+    {
+      "id": "CT-014",
+      "image": "images/chart-trend/CT-014.png",
+      "symbol": "WMT",
+      "from": "2024-11-12",
+      "to": "2025-02-10",
+      "firstClose": 84.99,
+      "lastClose": 102.92
+    },
+    {
+      "id": "CT-015",
+      "image": "images/chart-trend/CT-015.png",
+      "symbol": "AAPL",
+      "from": "2022-02-01",
+      "to": "2022-04-27",
+      "firstClose": 174.61,
+      "lastClose": 156.57
+    },
+    {
+      "id": "CT-016",
+      "image": "images/chart-trend/CT-016.png",
+      "symbol": "BTC-USD",
+      "from": "2023-06-05",
+      "to": "2023-08-03",
+      "firstClose": 25760.1,
+      "lastClose": 29178.68
+    },
+    {
+      "id": "CT-017",
+      "image": "images/chart-trend/CT-017.png",
+      "symbol": "SLB",
+      "from": "2022-09-06",
+      "to": "2022-11-29",
+      "firstClose": 37.36,
+      "lastClose": 51.05
+    },
+    {
+      "id": "CT-018",
+      "image": "images/chart-trend/CT-018.png",
+      "symbol": "SPY",
+      "from": "2022-10-04",
+      "to": "2022-12-28",
+      "firstClose": 377.97,
+      "lastClose": 376.66
+    },
+    {
+      "id": "CT-019",
+      "image": "images/chart-trend/CT-019.png",
+      "symbol": "MSFT",
+      "from": "2022-10-17",
+      "to": "2023-01-11",
+      "firstClose": 237.53,
+      "lastClose": 235.77
+    },
+    {
+      "id": "CT-020",
+      "image": "images/chart-trend/CT-020.png",
+      "symbol": "SLB",
+      "from": "2023-09-22",
+      "to": "2023-12-15",
+      "firstClose": 59.04,
+      "lastClose": 52.19
+    },
+    {
+      "id": "CT-021",
+      "image": "images/chart-trend/CT-021.png",
+      "symbol": "CVX",
+      "from": "2020-09-30",
+      "to": "2020-12-23",
+      "firstClose": 72,
+      "lastClose": 85.69
+    },
+    {
+      "id": "CT-022",
+      "image": "images/chart-trend/CT-022.png",
+      "symbol": "MSFT",
+      "from": "2025-01-10",
+      "to": "2025-04-07",
+      "firstClose": 418.95,
+      "lastClose": 357.86
+    },
+    {
+      "id": "CT-023",
+      "image": "images/chart-trend/CT-023.png",
+      "symbol": "SLB",
+      "from": "2024-12-24",
+      "to": "2025-03-24",
+      "firstClose": 37.73,
+      "lastClose": 41.7
+    },
+    {
+      "id": "CT-024",
+      "image": "images/chart-trend/CT-024.png",
+      "symbol": "BTC-USD",
+      "from": "2021-11-05",
+      "to": "2022-01-03",
+      "firstClose": 61125.68,
+      "lastClose": 46458.12
+    },
+    {
+      "id": "CT-025",
+      "image": "images/chart-trend/CT-025.png",
+      "symbol": "BAC",
+      "from": "2021-12-09",
+      "to": "2022-03-07",
+      "firstClose": 44.49,
+      "lastClose": 38.34
+    },
+    {
+      "id": "CT-026",
+      "image": "images/chart-trend/CT-026.png",
+      "symbol": "CVX",
+      "from": "2026-05-13",
+      "to": "2026-08-07",
+      "firstClose": 186,
+      "lastClose": 186.56
+    },
+    {
+      "id": "CT-027",
+      "image": "images/chart-trend/CT-027.png",
+      "symbol": "WMT",
+      "from": "2025-02-28",
+      "to": "2025-05-23",
+      "firstClose": 98.61,
+      "lastClose": 96.34
+    },
+    {
+      "id": "CT-028",
+      "image": "images/chart-trend/CT-028.png",
+      "symbol": "SLB",
+      "from": "2023-07-03",
+      "to": "2023-09-26",
+      "firstClose": 49.47,
+      "lastClose": 59.13
+    },
+    {
+      "id": "CT-029",
+      "image": "images/chart-trend/CT-029.png",
+      "symbol": "KO",
+      "from": "2021-06-15",
+      "to": "2021-09-08",
+      "firstClose": 55.41,
+      "lastClose": 56.42
+    },
+    {
+      "id": "CT-030",
+      "image": "images/chart-trend/CT-030.png",
+      "symbol": "MSFT",
+      "from": "2024-02-13",
+      "to": "2024-05-08",
+      "firstClose": 406.32,
+      "lastClose": 410.54
+    },
+    {
+      "id": "CT-031",
+      "image": "images/chart-trend/CT-031.png",
+      "symbol": "NVDA",
+      "from": "2024-12-10",
+      "to": "2025-03-10",
+      "firstClose": 135.07,
+      "lastClose": 106.98
+    },
+    {
+      "id": "CT-032",
+      "image": "images/chart-trend/CT-032.png",
+      "symbol": "KO",
+      "from": "2025-03-06",
+      "to": "2025-05-30",
+      "firstClose": 70.46,
+      "lastClose": 72.1
+    },
+    {
+      "id": "CT-033",
+      "image": "images/chart-trend/CT-033.png",
+      "symbol": "GOOGL",
+      "from": "2024-09-04",
+      "to": "2024-11-26",
+      "firstClose": 156.45,
+      "lastClose": 169.12
+    },
+    {
+      "id": "CT-034",
+      "image": "images/chart-trend/CT-034.png",
+      "symbol": "JPM",
+      "from": "2025-12-15",
+      "to": "2026-03-12",
+      "firstClose": 320.02,
+      "lastClose": 282.89
+    },
+    {
+      "id": "CT-035",
+      "image": "images/chart-trend/CT-035.png",
+      "symbol": "PG",
+      "from": "2021-07-19",
+      "to": "2021-10-11",
+      "firstClose": 140.44,
+      "lastClose": 142.32
+    },
+    {
+      "id": "CT-036",
+      "image": "images/chart-trend/CT-036.png",
+      "symbol": "GLD",
+      "from": "2025-04-28",
+      "to": "2025-07-23",
+      "firstClose": 309.07,
+      "lastClose": 312.18
+    },
+    {
+      "id": "CT-037",
+      "image": "images/chart-trend/CT-037.png",
+      "symbol": "NVDA",
+      "from": "2023-06-30",
+      "to": "2023-09-25",
+      "firstClose": 42.3,
+      "lastClose": 42.22
+    },
+    {
+      "id": "CT-038",
+      "image": "images/chart-trend/CT-038.png",
+      "symbol": "SLB",
+      "from": "2024-04-23",
+      "to": "2024-07-18",
+      "firstClose": 49.55,
+      "lastClose": 48.72
+    },
+    {
+      "id": "CT-039",
+      "image": "images/chart-trend/CT-039.png",
+      "symbol": "BTC-USD",
+      "from": "2021-04-25",
+      "to": "2021-06-23",
+      "firstClose": 49004.25,
+      "lastClose": 33723.03
+    },
+    {
+      "id": "CT-040",
+      "image": "images/chart-trend/CT-040.png",
+      "symbol": "BAC",
+      "from": "2021-03-03",
+      "to": "2021-05-26",
+      "firstClose": 36.42,
+      "lastClose": 42.04
+    },
+    {
+      "id": "CT-041",
+      "image": "images/chart-trend/CT-041.png",
+      "symbol": "MSFT",
+      "from": "2024-01-17",
+      "to": "2024-04-11",
+      "firstClose": 389.47,
+      "lastClose": 427.93
+    },
+    {
+      "id": "CT-042",
+      "image": "images/chart-trend/CT-042.png",
+      "symbol": "BAC",
+      "from": "2025-11-21",
+      "to": "2026-02-19",
+      "firstClose": 51.56,
+      "lastClose": 52.77
+    },
+    {
+      "id": "CT-043",
+      "image": "images/chart-trend/CT-043.png",
+      "symbol": "CVX",
+      "from": "2024-05-31",
+      "to": "2024-08-26",
+      "firstClose": 162.3,
+      "lastClose": 148.5
+    },
+    {
+      "id": "CT-044",
+      "image": "images/chart-trend/CT-044.png",
+      "symbol": "SPY",
+      "from": "2021-01-14",
+      "to": "2021-04-12",
+      "firstClose": 378.46,
+      "lastClose": 411.64
+    },
+    {
+      "id": "CT-045",
+      "image": "images/chart-trend/CT-045.png",
+      "symbol": "XOM",
+      "from": "2025-03-21",
+      "to": "2025-06-16",
+      "firstClose": 115.5,
+      "lastClose": 112.48
+    },
+    {
+      "id": "CT-046",
+      "image": "images/chart-trend/CT-046.png",
+      "symbol": "MSFT",
+      "from": "2022-04-05",
+      "to": "2022-06-30",
+      "firstClose": 310.88,
+      "lastClose": 256.83
+    },
+    {
+      "id": "CT-047",
+      "image": "images/chart-trend/CT-047.png",
+      "symbol": "BTC-USD",
+      "from": "2026-01-02",
+      "to": "2026-03-02",
+      "firstClose": 89944.7,
+      "lastClose": 68775.85
+    },
+    {
+      "id": "CT-048",
+      "image": "images/chart-trend/CT-048.png",
+      "symbol": "JNJ",
+      "from": "2023-02-16",
+      "to": "2023-05-12",
+      "firstClose": 158.24,
+      "lastClose": 160.78
+    }
+  ]
+}

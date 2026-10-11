@@ -2,7 +2,7 @@ import assert from 'node:assert/strict';
 import { test } from 'node:test';
 import { ALL_DEMOS, DEMOS, DOMAIN_BY_ID, demoCard, findDemo } from '../demos/index.js';
 import { loadDataset, loadLabels } from '../src/services/dataset.js';
-import { demoContext, loadFixtures, runDemo } from '../src/services/demo-runner.js';
+import { defaultProvider, demoContext, loadFixtures, runDemo } from '../src/services/demo-runner.js';
 
 // Every demo answers to the same contract, so the runtime, the recorder and the report can treat them
 // all the same way. A new demo either passes this file or does not ship.
@@ -51,7 +51,7 @@ test('each demo has a dataset, and a recorded demo has an answer for every item'
     const dataset = await loadDataset(demo.id);
     assert.equal(dataset.id, demo.id);
 
-    const fixtures = await loadFixtures(demo.id);
+    const fixtures = await loadFixtures(demo.id, defaultProvider(demo));
     const missing = dataset.items.filter((item) => !fixtures.answers?.[item.id]).map((item) => item.id);
     if (demo.status === 'pending-recording') {
       assert.ok(missing.length > 0, `${demo.id} is fully recorded; drop its pending-recording status`);
@@ -91,7 +91,7 @@ test('a state never carries the ground truth, and never changes the item', async
 test('recorded answers run through evaluate and report', async () => {
   for (const demo of ALL_DEMOS.filter((entry) => entry.status !== 'pending-recording')) {
     const dataset = await loadDataset(demo.id);
-    const fixtures = await loadFixtures(demo.id);
+    const fixtures = await loadFixtures(demo.id, defaultProvider(demo));
     const labels = await loadLabels(demo.id).catch(() => []);
 
     const { results, context } = await runDemo(demo, {

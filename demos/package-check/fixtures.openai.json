@@ -1,0 +1,100 @@
+{
+  "demo": "package-check",
+  "provider": "openai",
+  "model": "gpt-6-luna",
+  "recordedAt": "2026-10-11",
+  "source": "scripts/record-demo.js",
+  "usage": {
+    "input_tokens": 3540,
+    "output_tokens": 0
+  },
+  "answers": {
+    "PK-01": {
+      "condition": {
+        "type": "choice",
+        "choice": "CRUSHED",
+        "confidence": 0.85,
+        "probabilities": {
+          "INTACT": 0.01,
+          "WORN": 0.01,
+          "CRUSHED": 0.89,
+          "OPENED": 0.09
+        }
+      },
+      "supports_claim": {
+        "type": "noul",
+        "noul": 0.98
+      },
+      "damage": {
+        "type": "score",
+        "score": 2.67,
+        "confidence": 0.71,
+        "probabilities": {
+          "0": 0,
+          "1": 0,
+          "2": 0.34,
+          "3": 0.65,
+          "4": 0.01
+        }
+      }
+    },
+    "PK-02": {
+      "condition": {
+        "type": "choice",
+        "choice": "CRUSHED",
+        "confidence": 0.99,
+        "probabilities": {
+          "INTACT": 0,
+          "WORN": 0.01,
+          "CRUSHED": 0.99,
+          "OPENED": 0
+        }
+      },
+      "supports_claim": {
+        "type": "noul",
+        "noul": 0.85
+      },
+      "damage": {
+        "type": "score",
+        "score": 2.18,
+        "confidence": 0.65,
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.1,
+          "2": 0.61,
+          "3": 0.26,
+          "4": 0.02
+        }
+      }
+    },
+    "PK-03": {
+      "condition": {
+        "type": "choice",
+        "choice": "OPENED",
+        "confidence": 1,
+        "probabilities": {
+          "INTACT": 0,
+          "WORN": 0,
+          "CRUSHED": 0,
+          "OPENED": 1
+        }
+      },
+      "supports_claim": {
+        "type": "noul",
+        "noul": 0.3
+      },
+      "damage": {
+        "type": "score",
+        "score": 2.99,
+        "confidence": 0.39,
+        "probabilities": {
+          "0": 0.08,
+          "1": 0.03,
+          "2": 0.07,
+          "3": 0.46,
+          "4": 0.36
+        }
+      }
+    }
+  }
+}

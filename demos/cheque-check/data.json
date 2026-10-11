@@ -1,0 +1,228 @@
+{
+  "id": "cheque-check",
+  "class": "synthetic",
+  "generatedAt": "2026-10-11",
+  "seed": 4103,
+  "source": "scripts/generate/cheque-check.js",
+  "context": {
+    "presentedOn": "2026-09-15",
+    "rules": [
+      "The amount in words must agree with the amount in figures.",
+      "The cheque must be signed by the drawer.",
+      "A cheque dated more than six months before the day it is presented is stale.",
+      "A cheque dated after the day it is presented is post-dated and cannot be paid yet."
+    ]
+  },
+  "items": [
+    {
+      "id": "CQ-001",
+      "image": "images/cheque-check/CQ-001.png",
+      "number": "3246",
+      "payee": "Copperline Corporation",
+      "amountInFigures": "859.00"
+    },
+    {
+      "id": "CQ-002",
+      "image": "images/cheque-check/CQ-002.png",
+      "number": "3861",
+      "payee": "Copperline Group",
+      "amountInFigures": "389.25"
+    },
+    {
+      "id": "CQ-003",
+      "image": "images/cheque-check/CQ-003.png",
+      "number": "5782",
+      "payee": "Copperline Holdings",
+      "amountInFigures": "266.99"
+    },
+    {
+      "id": "CQ-004",
+      "image": "images/cheque-check/CQ-004.png",
+      "number": "5778",
+      "payee": "Lina Khoury",
+      "amountInFigures": "9,351.10"
+    },
+    {
+      "id": "CQ-005",
+      "image": "images/cheque-check/CQ-005.png",
+      "number": "9359",
+      "payee": "Nabil Sabri",
+      "amountInFigures": "2,973.99"
+    },
+    {
+      "id": "CQ-006",
+      "image": "images/cheque-check/CQ-006.png",
+      "number": "6431",
+      "payee": "Maya Sabri",
+      "amountInFigures": "855.99"
+    },
+    {
+      "id": "CQ-007",
+      "image": "images/cheque-check/CQ-007.png",
+      "number": "5999",
+      "payee": "Rooftop Partners",
+      "amountInFigures": "5,084.99"
+    },
+    {
+      "id": "CQ-008",
+      "image": "images/cheque-check/CQ-008.png",
+      "number": "1797",
+      "payee": "Rania Fahmy",
+      "amountInFigures": "465.00"
+    },
+    {
+      "id": "CQ-009",
+      "image": "images/cheque-check/CQ-009.png",
+      "number": "6160",
+      "payee": "Bluewater Technologies",
+      "amountInFigures": "433.00"
+    },
+    {
+      "id": "CQ-010",
+      "image": "images/cheque-check/CQ-010.png",
+      "number": "5216",
+      "payee": "Quarry Technologies",
+      "amountInFigures": "7,671.50"
+    },
+    {
+      "id": "CQ-011",
+      "image": "images/cheque-check/CQ-011.png",
+      "number": "5087",
+      "payee": "Meridian Partners",
+      "amountInFigures": "648.50"
+    },
+    {
+      "id": "CQ-012",
+      "image": "images/cheque-check/CQ-012.png",
+      "number": "6962",
+      "payee": "Ironbark Resources",
+      "amountInFigures": "785.00"
+    },
+    {
+      "id": "CQ-013",
+      "image": "images/cheque-check/CQ-013.png",
+      "number": "5771",
+      "payee": "Yusuf Kassem",
+      "amountInFigures": "608.25"
+    },
+    {
+      "id": "CQ-014",
+      "image": "images/cheque-check/CQ-014.png",
+      "number": "2275",
+      "payee": "Noor Mansour",
+      "amountInFigures": "663.50"
+    },
+    {
+      "id": "CQ-015",
+      "image": "images/cheque-check/CQ-015.png",
+      "number": "8836",
+      "payee": "Ironbark Resources",
+      "amountInFigures": "409.00"
+    },
+    {
+      "id": "CQ-016",
+      "image": "images/cheque-check/CQ-016.png",
+      "number": "7779",
+      "payee": "Zeina Haddad",
+      "amountInFigures": "4,361.50"
+    },
+    {
+      "id": "CQ-017",
+      "image": "images/cheque-check/CQ-017.png",
+      "number": "3104",
+      "payee": "Quarry Technologies",
+      "amountInFigures": "4,413.00"
+    },
+    {
+      "id": "CQ-018",
+      "image": "images/cheque-check/CQ-018.png",
+      "number": "2210",
+      "payee": "Kestrel Group",
+      "amountInFigures": "804.50"
+    },
+    {
+      "id": "CQ-019",
+      "image": "images/cheque-check/CQ-019.png",
+      "number": "1712",
+      "payee": "Falcon Group",
+      "amountInFigures": "5,085.00"
+    },
+    {
+      "id": "CQ-020",
+      "image": "images/cheque-check/CQ-020.png",
+      "number": "8887",
+      "payee": "Fadi Halabi",
+      "amountInFigures": "831.10"
+    },
+    {
+      "id": "CQ-021",
+      "image": "images/cheque-check/CQ-021.png",
+      "number": "1281",
+      "payee": "Rooftop Holdings",
+      "amountInFigures": "870.10"
+    },
+    {
+      "id": "CQ-022",
+      "image": "images/cheque-check/CQ-022.png",
+      "number": "6923",
+      "payee": "Karim Mansour",
+      "amountInFigures": "582.10"
+    },
+    {
+      "id": "CQ-023",
+      "image": "images/cheque-check/CQ-023.png",
+      "number": "5203",
+      "payee": "Rania Rizk",
+      "amountInFigures": "89.00"
+    },
+    {
+      "id": "CQ-024",
+      "image": "images/cheque-check/CQ-024.png",
+      "number": "7416",
+      "payee": "Fadi Darwish",
+      "amountInFigures": "598.10"
+    },
+    {
+      "id": "CQ-025",
+      "image": "images/cheque-check/CQ-025.png",
+      "number": "6778",
+      "payee": "Fadi Aziz",
+      "amountInFigures": "4,088.00"
+    },
+    {
+      "id": "CQ-026",
+      "image": "images/cheque-check/CQ-026.png",
+      "number": "9412",
+      "payee": "Amina Moussa",
+      "amountInFigures": "6,170.10"
+    },
+    {
+      "id": "CQ-027",
+      "image": "images/cheque-check/CQ-027.png",
+      "number": "7178",
+      "payee": "Sami Fahmy",
+      "amountInFigures": "6,952.99"
+    },
+    {
+      "id": "CQ-028",
+      "image": "images/cheque-check/CQ-028.png",
+      "number": "5619",
+      "payee": "Northwind Corporation",
+      "amountInFigures": "817.00"
+    },
+    {
+      "id": "CQ-029",
+      "image": "images/cheque-check/CQ-029.png",
+      "number": "7234",
+      "payee": "Rania Kassem",
+      "amountInFigures": "825.10"
+    },
+    {
+      "id": "CQ-030",
+      "image": "images/cheque-check/CQ-030.png",
+      "number": "5224",
+      "payee": "Hadi Kassem",
+      "amountInFigures": "856.25"
+    }
+  ]
+}

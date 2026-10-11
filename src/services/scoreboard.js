@@ -5,18 +5,18 @@
 import { createHash } from 'node:crypto';
 import { agreement, matrixStats, reliability } from '../../demos/lib/metrics.js';
 import { loadDataset, loadLabels } from './dataset.js';
-import { demoContext, fixtureAnswers, loadFixtures } from './demo-runner.js';
+import { defaultProvider, demoContext, fixtureAnswers, loadFixtures } from './demo-runner.js';
 import { humaniseKey, humaniseValue } from '../../web/src/lib/humanise.js';
 
 const hash = (value) => createHash('sha256').update(typeof value === 'string' ? value : JSON.stringify(value)).digest('hex').slice(0, 12);
 const round = (value, digits = 4) => (Number.isFinite(value) ? Number(value.toFixed(digits)) : null);
 
 /** Everything a demo's recorded run evaluates to: results, grades and the report. */
-export async function evaluateRun(demo) {
+export async function evaluateRun(demo, provider = defaultProvider(demo)) {
   const dataset = await loadDataset(demo.id);
   const context = demoContext(dataset);
   const labels = await loadLabels(demo.id).catch(() => []);
-  const fixtures = await loadFixtures(demo.id);
+  const fixtures = await loadFixtures(demo.id, provider);
 
   const results = [];
   for (const item of dataset.items) {

@@ -851,6 +851,176 @@
    "readMinutes": 5,
    "questionCount": 5,
    "status": "ready"
+  },
+  {
+   "id": "receipt-check",
+   "title": "Receipt arithmetic, read from the photo",
+   "domain": "vision",
+   "domainTitle": "Images and photos",
+   "value": "Reads a till receipt from its picture and finds the line, subtotal or tax that does not add up.",
+   "tags": [
+    "image",
+    "receipts",
+    "expenses",
+    "ocr"
+   ],
+   "dataClass": "synthetic",
+   "readMinutes": 2,
+   "questionCount": 3,
+   "status": "ready"
+  },
+  {
+   "id": "expense-claim",
+   "title": "Expense claim against its receipt photo",
+   "domain": "vision",
+   "domainTitle": "Images and photos",
+   "value": "Reads the claim as text and the receipt as a picture, and returns the claims that do not match or break policy.",
+   "tags": [
+    "image",
+    "expenses",
+    "policy",
+    "receipts"
+   ],
+   "dataClass": "synthetic",
+   "readMinutes": 2,
+   "questionCount": 3,
+   "status": "ready"
+  },
+  {
+   "id": "cheque-check",
+   "title": "Cheque deposit check",
+   "domain": "vision",
+   "domainTitle": "Images and photos",
+   "value": "Reads a cheque from its image and refuses the ones with mismatched amounts, no signature, or a date that rules them out.",
+   "tags": [
+    "image",
+    "cheques",
+    "banking",
+    "deposits"
+   ],
+   "dataClass": "synthetic",
+   "readMinutes": 2,
+   "questionCount": 3,
+   "status": "ready"
+  },
+  {
+   "id": "invoice-bank-change",
+   "title": "Invoice with changed bank details",
+   "domain": "vision",
+   "domainTitle": "Images and photos",
+   "value": "Reads an invoice image against the vendor master and holds the one that quietly asks to be paid somewhere new.",
+   "tags": [
+    "image",
+    "invoices",
+    "payment fraud",
+    "accounts payable"
+   ],
+   "dataClass": "synthetic",
+   "readMinutes": 2,
+   "questionCount": 3,
+   "status": "ready"
+  },
+  {
+   "id": "chart-trend",
+   "title": "Chart trend: up, down or sideways",
+   "domain": "vision",
+   "domainTitle": "Images and photos",
+   "value": "Looks at an unnamed sixty-day price chart and says which way it went, graded against the real closes.",
+   "tags": [
+    "image",
+    "charts",
+    "trend",
+    "real prices"
+   ],
+   "dataClass": "cached-real",
+   "readMinutes": 2,
+   "questionCount": 3,
+   "status": "ready"
+  },
+  {
+   "id": "buy-timing",
+   "title": "Is this a good time to buy?",
+   "domain": "vision",
+   "domainTitle": "Images and photos",
+   "value": "Asks the buy-or-wait question of ninety days of real candles and grades it against the next twenty days.",
+   "tags": [
+    "image",
+    "charts",
+    "timing",
+    "real prices"
+   ],
+   "dataClass": "cached-real",
+   "readMinutes": 3,
+   "questionCount": 3,
+   "status": "ready"
+  },
+  {
+   "id": "misleading-chart",
+   "title": "Misleading chart: the cut axis",
+   "domain": "vision",
+   "domainTitle": "Images and photos",
+   "value": "Reads the axis of a presentation chart, gives the real size of the change and spots the axis cut to exaggerate it.",
+   "tags": [
+    "image",
+    "charts",
+    "disclosure",
+    "investor relations"
+   ],
+   "dataClass": "synthetic",
+   "readMinutes": 2,
+   "questionCount": 3,
+   "status": "ready"
+  },
+  {
+   "id": "produce-check",
+   "title": "Fresh or spoiled: produce at goods-in",
+   "domain": "vision",
+   "domainTitle": "Images and photos",
+   "value": "Looks at a real photo of fruit or bread and decides whether the stock is fresh, rotten or mouldy.",
+   "tags": [
+    "image",
+    "photos",
+    "quality control",
+    "inventory"
+   ],
+   "dataClass": "cached-real",
+   "readMinutes": 1,
+   "questionCount": 3,
+   "status": "ready"
+  },
+  {
+   "id": "package-check",
+   "title": "Damaged-parcel claim photo",
+   "domain": "vision",
+   "domainTitle": "Images and photos",
+   "value": "Looks at the delivery photo behind a damage claim and says whether the parcel is crushed, opened or just worn.",
+   "tags": [
+    "image",
+    "photos",
+    "claims",
+    "logistics"
+   ],
+   "dataClass": "cached-real",
+   "readMinutes": 1,
+   "questionCount": 3,
+   "status": "ready"
+  },
+  {
+   "id": "leaf-check",
+   "title": "Leaf disease from a field photo",
+   "domain": "vision",
+   "domainTitle": "Images and photos",
+   "value": "Looks at a real photo of a leaf and says whether it is healthy or shows mildew or leaf spot.",
+   "tags": [
+    "image",
+    "photos",
+    "agriculture",
+    "insurance"
+   ],
+   "dataClass": "cached-real",
+   "readMinutes": 1,
+   "questionCount": 3,
+   "status": "ready"
   }
  ]
 }

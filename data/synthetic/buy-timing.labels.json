@@ -1,0 +1,242 @@
+[
+  {
+    "chartId": "BT-001",
+    "outcome": "ROSE",
+    "forwardReturnPercent": 1.9
+  },
+  {
+    "chartId": "BT-002",
+    "outcome": "FELL",
+    "forwardReturnPercent": -8.49
+  },
+  {
+    "chartId": "BT-003",
+    "outcome": "ROSE",
+    "forwardReturnPercent": 2.83
+  },
+  {
+    "chartId": "BT-004",
+    "outcome": "FELL",
+    "forwardReturnPercent": -2.93
+  },
+  {
+    "chartId": "BT-005",
+    "outcome": "ROSE",
+    "forwardReturnPercent": 5.59
+  },
+  {
+    "chartId": "BT-006",
+    "outcome": "ROSE",
+    "forwardReturnPercent": 10.84
+  },
+  {
+    "chartId": "BT-007",
+    "outcome": "ROSE",
+    "forwardReturnPercent": 6.58
+  },
+  {
+    "chartId": "BT-008",
+    "outcome": "FELL",
+    "forwardReturnPercent": -1.83
+  },
+  {
+    "chartId": "BT-009",
+    "outcome": "FELL",
+    "forwardReturnPercent": -3.69
+  },
+  {
+    "chartId": "BT-010",
+    "outcome": "ROSE",
+    "forwardReturnPercent": 5.13
+  },
+  {
+    "chartId": "BT-011",
+    "outcome": "ROSE",
+    "forwardReturnPercent": 4.37
+  },
+  {
+    "chartId": "BT-012",
+    "outcome": "ROSE",
+    "forwardReturnPercent": 6.7
+  },
+  {
+    "chartId": "BT-013",
+    "outcome": "FELL",
+    "forwardReturnPercent": -3.05
+  },
+  {
+    "chartId": "BT-014",
+    "outcome": "ROSE",
+    "forwardReturnPercent": 14.59
+  },
+  {
+    "chartId": "BT-015",
+    "outcome": "FELL",
+    "forwardReturnPercent": -10.04
+  },
+  {
+    "chartId": "BT-016",
+    "outcome": "FELL",
+    "forwardReturnPercent": -7.15
+  },
+  {
+    "chartId": "BT-017",
+    "outcome": "FELL",
+    "forwardReturnPercent": -5.43
+  },
+  {
+    "chartId": "BT-018",
+    "outcome": "ROSE",
+    "forwardReturnPercent": 9.71
+  },
+  {
+    "chartId": "BT-019",
+    "outcome": "FELL",
+    "forwardReturnPercent": -6.19
+  },
+  {
+    "chartId": "BT-020",
+    "outcome": "ROSE",
+    "forwardReturnPercent": 2.22
+  },
+  {
+    "chartId": "BT-021",
+    "outcome": "FELL",
+    "forwardReturnPercent": -3.38
+  },
+  {
+    "chartId": "BT-022",
+    "outcome": "ROSE",
+    "forwardReturnPercent": 7.28
+  },
+  {
+    "chartId": "BT-023",
+    "outcome": "ROSE",
+    "forwardReturnPercent": 8.54
+  },
+  {
+    "chartId": "BT-024",
+    "outcome": "ROSE",
+    "forwardReturnPercent": 6.61
+  },
+  {
+    "chartId": "BT-025",
+    "outcome": "FELL",
+    "forwardReturnPercent": -6.97
+  },
+  {
+    "chartId": "BT-026",
+    "outcome": "FELL",
+    "forwardReturnPercent": -3.31
+  },
+  {
+    "chartId": "BT-027",
+    "outcome": "FELL",
+    "forwardReturnPercent": -10.37
+  },
+  {
+    "chartId": "BT-028",
+    "outcome": "FELL",
+    "forwardReturnPercent": -6.64
+  },
+  {
+    "chartId": "BT-029",
+    "outcome": "FELL",
+    "forwardReturnPercent": -8.46
+  },
+  {
+    "chartId": "BT-030",
+    "outcome": "ROSE",
+    "forwardReturnPercent": 7.53
+  },
+  {
+    "chartId": "BT-031",
+    "outcome": "ROSE",
+    "forwardReturnPercent": 3.59
+  },
+  {
+    "chartId": "BT-032",
+    "outcome": "FELL",
+    "forwardReturnPercent": -1.58
+  },
+  {
+    "chartId": "BT-033",
+    "outcome": "FELL",
+    "forwardReturnPercent": -1.16
+  },
+  {
+    "chartId": "BT-034",
+    "outcome": "ROSE",
+    "forwardReturnPercent": 5.54
+  },
+  {
+    "chartId": "BT-035",
+    "outcome": "ROSE",
+    "forwardReturnPercent": 6.36
+  },
+  {
+    "chartId": "BT-036",
+    "outcome": "FELL",
+    "forwardReturnPercent": -3.75
+  },
+  {
+    "chartId": "BT-037",
+    "outcome": "FELL",
+    "forwardReturnPercent": -2.54
+  },
+  {
+    "chartId": "BT-038",
+    "outcome": "ROSE",
+    "forwardReturnPercent": 3.27
+  },
+  {
+    "chartId": "BT-039",
+    "outcome": "FELL",
+    "forwardReturnPercent": -4.31
+  },
+  {
+    "chartId": "BT-040",
+    "outcome": "FELL",
+    "forwardReturnPercent": -4.24
+  },
+  {
+    "chartId": "BT-041",
+    "outcome": "ROSE",
+    "forwardReturnPercent": 1.55
+  },
+  {
+    "chartId": "BT-042",
+    "outcome": "FELL",
+    "forwardReturnPercent": -7.3
+  },
+  {
+    "chartId": "BT-043",
+    "outcome": "ROSE",
+    "forwardReturnPercent": 10.14
+  },
+  {
+    "chartId": "BT-044",
+    "outcome": "FELL",
+    "forwardReturnPercent": -10.15
+  },
+  {
+    "chartId": "BT-045",
+    "outcome": "FELL",
+    "forwardReturnPercent": -8.21
+  },
+  {
+    "chartId": "BT-046",
+    "outcome": "ROSE",
+    "forwardReturnPercent": 1.1
+  },
+  {
+    "chartId": "BT-047",
+    "outcome": "ROSE",
+    "forwardReturnPercent": 12.13
+  },
+  {
+    "chartId": "BT-048",
+    "outcome": "ROSE",
+    "forwardReturnPercent": 4.75
+  }
+]

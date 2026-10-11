@@ -1,0 +1,212 @@
+[
+  {
+    "chartId": "MC-001",
+    "size": "SMALL",
+    "truncated": false,
+    "misleading": false,
+    "changePercent": 6.7
+  },
+  {
+    "chartId": "MC-002",
+    "size": "SMALL",
+    "truncated": false,
+    "misleading": false,
+    "changePercent": 7
+  },
+  {
+    "chartId": "MC-003",
+    "size": "SMALL",
+    "truncated": false,
+    "misleading": false,
+    "changePercent": 5.5
+  },
+  {
+    "chartId": "MC-004",
+    "size": "SMALL",
+    "truncated": true,
+    "misleading": true,
+    "changePercent": 2.6
+  },
+  {
+    "chartId": "MC-005",
+    "size": "LARGE",
+    "truncated": false,
+    "misleading": false,
+    "changePercent": 42
+  },
+  {
+    "chartId": "MC-006",
+    "size": "SMALL",
+    "truncated": false,
+    "misleading": false,
+    "changePercent": 2.6
+  },
+  {
+    "chartId": "MC-007",
+    "size": "SMALL",
+    "truncated": true,
+    "misleading": true,
+    "changePercent": 6.8
+  },
+  {
+    "chartId": "MC-008",
+    "size": "MEDIUM",
+    "truncated": true,
+    "misleading": true,
+    "changePercent": 16.4
+  },
+  {
+    "chartId": "MC-009",
+    "size": "MEDIUM",
+    "truncated": false,
+    "misleading": false,
+    "changePercent": 20
+  },
+  {
+    "chartId": "MC-010",
+    "size": "MEDIUM",
+    "truncated": true,
+    "misleading": true,
+    "changePercent": 17.8
+  },
+  {
+    "chartId": "MC-011",
+    "size": "MEDIUM",
+    "truncated": false,
+    "misleading": false,
+    "changePercent": 16.5
+  },
+  {
+    "chartId": "MC-012",
+    "size": "LARGE",
+    "truncated": true,
+    "misleading": true,
+    "changePercent": 60.4
+  },
+  {
+    "chartId": "MC-013",
+    "size": "LARGE",
+    "truncated": false,
+    "misleading": false,
+    "changePercent": 38.3
+  },
+  {
+    "chartId": "MC-014",
+    "size": "SMALL",
+    "truncated": true,
+    "misleading": true,
+    "changePercent": 5.9
+  },
+  {
+    "chartId": "MC-015",
+    "size": "LARGE",
+    "truncated": true,
+    "misleading": true,
+    "changePercent": 67
+  },
+  {
+    "chartId": "MC-016",
+    "size": "SMALL",
+    "truncated": false,
+    "misleading": false,
+    "changePercent": 2.4
+  },
+  {
+    "chartId": "MC-017",
+    "size": "SMALL",
+    "truncated": true,
+    "misleading": true,
+    "changePercent": 7
+  },
+  {
+    "chartId": "MC-018",
+    "size": "LARGE",
+    "truncated": false,
+    "misleading": false,
+    "changePercent": 49.5
+  },
+  {
+    "chartId": "MC-019",
+    "size": "LARGE",
+    "truncated": false,
+    "misleading": false,
+    "changePercent": 66.5
+  },
+  {
+    "chartId": "MC-020",
+    "size": "LARGE",
+    "truncated": true,
+    "misleading": true,
+    "changePercent": 60.3
+  },
+  {
+    "chartId": "MC-021",
+    "size": "SMALL",
+    "truncated": true,
+    "misleading": true,
+    "changePercent": 2.8
+  },
+  {
+    "chartId": "MC-022",
+    "size": "LARGE",
+    "truncated": true,
+    "misleading": true,
+    "changePercent": 40.5
+  },
+  {
+    "chartId": "MC-023",
+    "size": "MEDIUM",
+    "truncated": false,
+    "misleading": false,
+    "changePercent": 12.4
+  },
+  {
+    "chartId": "MC-024",
+    "size": "MEDIUM",
+    "truncated": false,
+    "misleading": false,
+    "changePercent": 12.6
+  },
+  {
+    "chartId": "MC-025",
+    "size": "MEDIUM",
+    "truncated": true,
+    "misleading": true,
+    "changePercent": 21.3
+  },
+  {
+    "chartId": "MC-026",
+    "size": "MEDIUM",
+    "truncated": true,
+    "misleading": true,
+    "changePercent": 15.8
+  },
+  {
+    "chartId": "MC-027",
+    "size": "MEDIUM",
+    "truncated": false,
+    "misleading": false,
+    "changePercent": 19.7
+  },
+  {
+    "chartId": "MC-028",
+    "size": "MEDIUM",
+    "truncated": true,
+    "misleading": true,
+    "changePercent": 21.5
+  },
+  {
+    "chartId": "MC-029",
+    "size": "LARGE",
+    "truncated": false,
+    "misleading": false,
+    "changePercent": 45.5
+  },
+  {
+    "chartId": "MC-030",
+    "size": "LARGE",
+    "truncated": true,
+    "misleading": true,
+    "changePercent": 59.3
+  }
+]

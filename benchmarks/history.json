@@ -1082,6 +1082,206 @@
     "calibrationError": 0.4464,
     "contradictionRate": 0.0303
    }
+  },
+  {
+   "demo": "receipt-check",
+   "key": "gpt-6-luna|2026-10-11|7dc3e2208165|bdc532be8efc",
+   "model": "gpt-6-luna",
+   "recordedAt": "2026-10-11",
+   "dataset": "7dc3e2208165",
+   "questions": "bdc532be8efc",
+   "items": 36,
+   "graded": 36,
+   "right": 12,
+   "headline": 0.3333,
+   "metrics": {
+    "agreement": 0.3333,
+    "accuracy": 0.3333,
+    "macroF1": 0.2727,
+    "majorityBaseline": 0.25,
+    "calibrationError": 0.0889,
+    "actionAccuracy": 0.6944
+   }
+  },
+  {
+   "demo": "expense-claim",
+   "key": "gpt-6-luna|2026-10-11|1cfb06f113ab|f939b68a34f4",
+   "model": "gpt-6-luna",
+   "recordedAt": "2026-10-11",
+   "dataset": "1cfb06f113ab",
+   "questions": "f939b68a34f4",
+   "items": 40,
+   "graded": 40,
+   "right": 40,
+   "headline": 1,
+   "metrics": {
+    "agreement": 1,
+    "accuracy": 1,
+    "macroF1": 1,
+    "majorityBaseline": 0.2,
+    "calibrationError": 0.0638,
+    "actionAccuracy": 0.95
+   }
+  },
+  {
+   "demo": "cheque-check",
+   "key": "gpt-6-luna|2026-10-11|fbca9198eb23|202fe0292345",
+   "model": "gpt-6-luna",
+   "recordedAt": "2026-10-11",
+   "dataset": "fbca9198eb23",
+   "questions": "202fe0292345",
+   "items": 30,
+   "graded": 30,
+   "right": 28,
+   "headline": 0.9333,
+   "metrics": {
+    "agreement": 0.9333,
+    "accuracy": 0.9333,
+    "macroF1": 0.9333,
+    "majorityBaseline": 0.2,
+    "calibrationError": 0.1707,
+    "actionAccuracy": 0.9667
+   }
+  },
+  {
+   "demo": "invoice-bank-change",
+   "key": "gpt-6-luna|2026-10-11|e1a7763fe7ed|b91bd426a9f8",
+   "model": "gpt-6-luna",
+   "recordedAt": "2026-10-11",
+   "dataset": "e1a7763fe7ed",
+   "questions": "b91bd426a9f8",
+   "items": 32,
+   "graded": 32,
+   "right": 16,
+   "headline": 0.5,
+   "metrics": {
+    "agreement": 0.5,
+    "accuracy": 0.5,
+    "macroF1": 0.4661,
+    "majorityBaseline": 0.25,
+    "calibrationError": 0.1053,
+    "actionAccuracy": 0.7188
+   }
+  },
+  {
+   "demo": "chart-trend",
+   "key": "gpt-6-luna|2026-10-11|e41a6b6cdb72|4806475b4c71",
+   "model": "gpt-6-luna",
+   "recordedAt": "2026-10-11",
+   "dataset": "e41a6b6cdb72",
+   "questions": "4806475b4c71",
+   "items": 48,
+   "graded": 48,
+   "right": 37,
+   "headline": 0.7708,
+   "metrics": {
+    "agreement": 0.7708,
+    "accuracy": 0.7708,
+    "macroF1": 0.7326,
+    "majorityBaseline": 0.3333,
+    "calibrationError": 0.0944,
+    "actionAccuracy": 0.9375
+   }
+  },
+  {
+   "demo": "buy-timing",
+   "key": "gpt-6-luna|2026-10-11|ee333b904a04|bac6e5c0c557",
+   "model": "gpt-6-luna",
+   "recordedAt": "2026-10-11",
+   "dataset": "ee333b904a04",
+   "questions": "bac6e5c0c557",
+   "items": 48,
+   "graded": 48,
+   "right": 24,
+   "headline": 0.5,
+   "metrics": {
+    "agreement": 0.5,
+    "accuracy": 0.5,
+    "macroF1": 0.4667,
+    "majorityBaseline": 0.5,
+    "calibrationError": 0.4083,
+    "actionAccuracy": 0.4792
+   }
+  },
+  {
+   "demo": "misleading-chart",
+   "key": "gpt-6-luna|2026-10-11|a135f6fa9523|304942dcd149",
+   "model": "gpt-6-luna",
+   "recordedAt": "2026-10-11",
+   "dataset": "a135f6fa9523",
+   "questions": "304942dcd149",
+   "items": 30,
+   "graded": 30,
+   "right": 16,
+   "headline": 0.5333,
+   "metrics": {
+    "agreement": 0.5333,
+    "accuracy": 0.5333,
+    "macroF1": 0.4529,
+    "majorityBaseline": 0.3333,
+    "calibrationError": 0.1477,
+    "actionAccuracy": 1
+   }
+  },
+  {
+   "demo": "produce-check",
+   "key": "gpt-6-luna|2026-10-11|a1b7d6746743|41f4fba1a10a",
+   "model": "gpt-6-luna",
+   "recordedAt": "2026-10-11",
+   "dataset": "a1b7d6746743",
+   "questions": "41f4fba1a10a",
+   "items": 11,
+   "graded": 11,
+   "right": 11,
+   "headline": 1,
+   "metrics": {
+    "agreement": 1,
+    "accuracy": 1,
+    "macroF1": 1,
+    "majorityBaseline": 0.4545,
+    "calibrationError": 0.0564,
+    "actionAccuracy": 1
+   }
+  },
+  {
+   "demo": "package-check",
+   "key": "gpt-6-luna|2026-10-11|3d106331ba26|a5d973ec910c",
+   "model": "gpt-6-luna",
+   "recordedAt": "2026-10-11",
+   "dataset": "3d106331ba26",
+   "questions": "a5d973ec910c",
+   "items": 3,
+   "graded": 3,
+   "right": 2,
+   "headline": 0.6667,
+   "metrics": {
+    "agreement": 0.6667,
+    "accuracy": 0.6667,
+    "macroF1": 0.5556,
+    "majorityBaseline": 0.3333,
+    "calibrationError": null,
+    "actionAccuracy": 0.3333
+   }
+  },
+  {
+   "demo": "leaf-check",
+   "key": "gpt-6-luna|2026-10-11|1bf94131e074|1022e6cad0ad",
+   "model": "gpt-6-luna",
+   "recordedAt": "2026-10-11",
+   "dataset": "1bf94131e074",
+   "questions": "1022e6cad0ad",
+   "items": 4,
+   "graded": 4,
+   "right": 4,
+   "headline": 1,
+   "metrics": {
+    "agreement": 1,
+    "accuracy": 1,
+    "macroF1": 1,
+    "majorityBaseline": 0.5,
+    "calibrationError": null,
+    "actionAccuracy": 1
+   }
   }
  ]
 }

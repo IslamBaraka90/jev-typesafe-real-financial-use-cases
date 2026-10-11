@@ -1,0 +1,301 @@
+{
+  "id": "receipt-check",
+  "class": "synthetic",
+  "generatedAt": "2026-10-11",
+  "seed": 4101,
+  "source": "scripts/generate/receipt-check.js",
+  "context": {
+    "taxRatePercent": 8,
+    "currency": "USD"
+  },
+  "items": [
+    {
+      "id": "RC-001",
+      "image": "images/receipt-check/RC-001.png",
+      "merchant": "Lantern Trading",
+      "date": "2026-06-27",
+      "lineCount": 4,
+      "printedTotal": 90.83
+    },
+    {
+      "id": "RC-002",
+      "image": "images/receipt-check/RC-002.png",
+      "merchant": "Falcon Foods",
+      "date": "2026-08-16",
+      "lineCount": 3,
+      "printedTotal": 31.86
+    },
+    {
+      "id": "RC-003",
+      "image": "images/receipt-check/RC-003.png",
+      "merchant": "Tinbridge Travel",
+      "date": "2026-07-24",
+      "lineCount": 3,
+      "printedTotal": 53.33
+    },
+    {
+      "id": "RC-004",
+      "image": "images/receipt-check/RC-004.png",
+      "merchant": "Falcon Logistics",
+      "date": "2026-08-06",
+      "lineCount": 3,
+      "printedTotal": 48.12
+    },
+    {
+      "id": "RC-005",
+      "image": "images/receipt-check/RC-005.png",
+      "merchant": "Northwind Works",
+      "date": "2026-07-04",
+      "lineCount": 4,
+      "printedTotal": 54.56
+    },
+    {
+      "id": "RC-006",
+      "image": "images/receipt-check/RC-006.png",
+      "merchant": "Copperline Print",
+      "date": "2026-07-18",
+      "lineCount": 3,
+      "printedTotal": 55.61
+    },
+    {
+      "id": "RC-007",
+      "image": "images/receipt-check/RC-007.png",
+      "merchant": "Kestrel Supplies",
+      "date": "2026-07-30",
+      "lineCount": 5,
+      "printedTotal": 152.82
+    },
+    {
+      "id": "RC-008",
+      "image": "images/receipt-check/RC-008.png",
+      "merchant": "Falcon Trading",
+      "date": "2026-06-07",
+      "lineCount": 4,
+      "printedTotal": 64.25
+    },
+    {
+      "id": "RC-009",
+      "image": "images/receipt-check/RC-009.png",
+      "merchant": "Beacon Travel",
+      "date": "2026-07-16",
+      "lineCount": 5,
+      "printedTotal": 95.72
+    },
+    {
+      "id": "RC-010",
+      "image": "images/receipt-check/RC-010.png",
+      "merchant": "Kestrel Systems",
+      "date": "2026-08-27",
+      "lineCount": 5,
+      "printedTotal": 71.1
+    },
+    {
+      "id": "RC-011",
+      "image": "images/receipt-check/RC-011.png",
+      "merchant": "Quarry Media",
+      "date": "2026-08-23",
+      "lineCount": 4,
+      "printedTotal": 134.87
+    },
+    {
+      "id": "RC-012",
+      "image": "images/receipt-check/RC-012.png",
+      "merchant": "Tinbridge Studios",
+      "date": "2026-07-16",
+      "lineCount": 4,
+      "printedTotal": 40.67
+    },
+    {
+      "id": "RC-013",
+      "image": "images/receipt-check/RC-013.png",
+      "merchant": "Pinefield Studios",
+      "date": "2026-08-07",
+      "lineCount": 5,
+      "printedTotal": 147.91
+    },
+    {
+      "id": "RC-014",
+      "image": "images/receipt-check/RC-014.png",
+      "merchant": "Bluewater Studios",
+      "date": "2026-06-25",
+      "lineCount": 3,
+      "printedTotal": 43.24
+    },
+    {
+      "id": "RC-015",
+      "image": "images/receipt-check/RC-015.png",
+      "merchant": "Tinbridge Print",
+      "date": "2026-06-14",
+      "lineCount": 4,
+      "printedTotal": 78.13
+    },
+    {
+      "id": "RC-016",
+      "image": "images/receipt-check/RC-016.png",
+      "merchant": "Northwind Rentals",
+      "date": "2026-07-04",
+      "lineCount": 3,
+      "printedTotal": 46.55
+    },
+    {
+      "id": "RC-017",
+      "image": "images/receipt-check/RC-017.png",
+      "merchant": "Northwind Travel",
+      "date": "2026-07-10",
+      "lineCount": 3,
+      "printedTotal": 72.58
+    },
+    {
+      "id": "RC-018",
+      "image": "images/receipt-check/RC-018.png",
+      "merchant": "Copperline Rentals",
+      "date": "2026-06-02",
+      "lineCount": 5,
+      "printedTotal": 146.72
+    },
+    {
+      "id": "RC-019",
+      "image": "images/receipt-check/RC-019.png",
+      "merchant": "Tinbridge Logistics",
+      "date": "2026-07-11",
+      "lineCount": 3,
+      "printedTotal": 21.76
+    },
+    {
+      "id": "RC-020",
+      "image": "images/receipt-check/RC-020.png",
+      "merchant": "Copperline Foods",
+      "date": "2026-08-16",
+      "lineCount": 4,
+      "printedTotal": 42.94
+    },
+    {
+      "id": "RC-021",
+      "image": "images/receipt-check/RC-021.png",
+      "merchant": "Cedar Systems",
+      "date": "2026-07-14",
+      "lineCount": 3,
+      "printedTotal": 21.28
+    },
+    {
+      "id": "RC-022",
+      "image": "images/receipt-check/RC-022.png",
+      "merchant": "Tinbridge Logistics",
+      "date": "2026-08-22",
+      "lineCount": 4,
+      "printedTotal": 51.8
+    },
+    {
+      "id": "RC-023",
+      "image": "images/receipt-check/RC-023.png",
+      "merchant": "Pinefield Media",
+      "date": "2026-08-28",
+      "lineCount": 5,
+      "printedTotal": 75.87
+    },
+    {
+      "id": "RC-024",
+      "image": "images/receipt-check/RC-024.png",
+      "merchant": "Quarry Media",
+      "date": "2026-08-26",
+      "lineCount": 4,
+      "printedTotal": 59.62
+    },
+    {
+      "id": "RC-025",
+      "image": "images/receipt-check/RC-025.png",
+      "merchant": "Ironbark Foods",
+      "date": "2026-07-12",
+      "lineCount": 4,
+      "printedTotal": 41.52
+    },
+    {
+      "id": "RC-026",
+      "image": "images/receipt-check/RC-026.png",
+      "merchant": "Tinbridge Foods",
+      "date": "2026-08-11",
+      "lineCount": 5,
+      "printedTotal": 101.91
+    },
+    {
+      "id": "RC-027",
+      "image": "images/receipt-check/RC-027.png",
+      "merchant": "Northwind Rentals",
+      "date": "2026-06-18",
+      "lineCount": 4,
+      "printedTotal": 151.29
+    },
+    {
+      "id": "RC-028",
+      "image": "images/receipt-check/RC-028.png",
+      "merchant": "Copperline Works",
+      "date": "2026-06-06",
+      "lineCount": 4,
+      "printedTotal": 113.8
+    },
+    {
+      "id": "RC-029",
+      "image": "images/receipt-check/RC-029.png",
+      "merchant": "Cedar Trading",
+      "date": "2026-07-20",
+      "lineCount": 5,
+      "printedTotal": 58.31
+    },
+    {
+      "id": "RC-030",
+      "image": "images/receipt-check/RC-030.png",
+      "merchant": "Rooftop Studios",
+      "date": "2026-06-09",
+      "lineCount": 4,
+      "printedTotal": 80.83
+    },
+    {
+      "id": "RC-031",
+      "image": "images/receipt-check/RC-031.png",
+      "merchant": "Saltmarsh Trading",
+      "date": "2026-06-13",
+      "lineCount": 4,
+      "printedTotal": 54.77
+    },
+    {
+      "id": "RC-032",
+      "image": "images/receipt-check/RC-032.png",
+      "merchant": "Meridian Rentals",
+      "date": "2026-06-07",
+      "lineCount": 3,
+      "printedTotal": 148.82
+    },
+    {
+      "id": "RC-033",
+      "image": "images/receipt-check/RC-033.png",
+      "merchant": "Beacon Print",
+      "date": "2026-06-08",
+      "lineCount": 5,
+      "printedTotal": 68.15
+    },
+    {
+      "id": "RC-034",
+      "image": "images/receipt-check/RC-034.png",
+      "merchant": "Falcon Rentals",
+      "date": "2026-07-03",
+      "lineCount": 5,
+      "printedTotal": 53.15
+    },
+    {
+      "id": "RC-035",
+      "image": "images/receipt-check/RC-035.png",
+      "merchant": "Beacon Media",
+      "date": "2026-08-15",
+      "lineCount": 5,
+      "printedTotal": 79.77
+    },
+    {
+      "id": "RC-036",
+      "image": "images/receipt-check/RC-036.png",
+      "merchant": "Copperline Supplies",
+      "date": "2026-06-14",
+      "lineCount": 5,
+      "printedTotal": 90.39
+    }
+  ]
+}

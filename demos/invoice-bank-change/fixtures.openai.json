@@ -1,0 +1,941 @@
+{
+  "demo": "invoice-bank-change",
+  "provider": "openai",
+  "model": "gpt-6-luna",
+  "recordedAt": "2026-10-11",
+  "source": "scripts/record-demo.js",
+  "usage": {
+    "input_tokens": 34453,
+    "output_tokens": 0
+  },
+  "answers": {
+    "IV-001": {
+      "problem": {
+        "type": "choice",
+        "choice": "BANK_CHANGED",
+        "confidence": 0.87,
+        "probabilities": {
+          "BANK_CHANGED": 0.9,
+          "TOTAL_WRONG": 0.06,
+          "OVER_PO": 0.02,
+          "NONE": 0.02
+        }
+      },
+      "pay": {
+        "type": "noul",
+        "noul": 0
+      },
+      "fraud_risk": {
+        "type": "score",
+        "score": 3.31,
+        "confidence": 0.74,
+        "probabilities": {
+          "0": 0,
+          "1": 0,
+          "2": 0,
+          "3": 0.69,
+          "4": 0.31
+        }
+      }
+    },
+    "IV-002": {
+      "problem": {
+        "type": "choice",
+        "choice": "TOTAL_WRONG",
+        "confidence": 0.11,
+        "probabilities": {
+          "BANK_CHANGED": 0.17,
+          "TOTAL_WRONG": 0.33,
+          "OVER_PO": 0.24,
+          "NONE": 0.26
+        }
+      },
+      "pay": {
+        "type": "noul",
+        "noul": 0
+      },
+      "fraud_risk": {
+        "type": "score",
+        "score": 0.09,
+        "confidence": 0.93,
+        "probabilities": {
+          "0": 0.91,
+          "1": 0.09,
+          "2": 0,
+          "3": 0,
+          "4": 0
+        }
+      }
+    },
+    "IV-003": {
+      "problem": {
+        "type": "choice",
+        "choice": "TOTAL_WRONG",
+        "confidence": 0.23,
+        "probabilities": {
+          "BANK_CHANGED": 0.28,
+          "TOTAL_WRONG": 0.42,
+          "OVER_PO": 0.16,
+          "NONE": 0.14
+        }
+      },
+      "pay": {
+        "type": "noul",
+        "noul": 0
+      },
+      "fraud_risk": {
+        "type": "score",
+        "score": 0.22,
+        "confidence": 0.82,
+        "probabilities": {
+          "0": 0.87,
+          "1": 0.07,
+          "2": 0.04,
+          "3": 0.01,
+          "4": 0.01
+        }
+      }
+    },
+    "IV-004": {
+      "problem": {
+        "type": "choice",
+        "choice": "OVER_PO",
+        "confidence": 0.43,
+        "probabilities": {
+          "BANK_CHANGED": 0.14,
+          "TOTAL_WRONG": 0.28,
+          "OVER_PO": 0.57,
+          "NONE": 0.01
+        }
+      },
+      "pay": {
+        "type": "noul",
+        "noul": 0
+      },
+      "fraud_risk": {
+        "type": "score",
+        "score": 0.07,
+        "confidence": 0.94,
+        "probabilities": {
+          "0": 0.94,
+          "1": 0.05,
+          "2": 0.01,
+          "3": 0,
+          "4": 0
+        }
+      }
+    },
+    "IV-005": {
+      "problem": {
+        "type": "choice",
+        "choice": "BANK_CHANGED",
+        "confidence": 0.97,
+        "probabilities": {
+          "BANK_CHANGED": 0.98,
+          "TOTAL_WRONG": 0.01,
+          "OVER_PO": 0,
+          "NONE": 0.01
+        }
+      },
+      "pay": {
+        "type": "noul",
+        "noul": 0
+      },
+      "fraud_risk": {
+        "type": "score",
+        "score": 3.14,
+        "confidence": 0.82,
+        "probabilities": {
+          "0": 0,
+          "1": 0.01,
+          "2": 0.02,
+          "3": 0.79,
+          "4": 0.18
+        }
+      }
+    },
+    "IV-006": {
+      "problem": {
+        "type": "choice",
+        "choice": "BANK_CHANGED",
+        "confidence": 0.84,
+        "probabilities": {
+          "BANK_CHANGED": 0.88,
+          "TOTAL_WRONG": 0.06,
+          "OVER_PO": 0.04,
+          "NONE": 0.02
+        }
+      },
+      "pay": {
+        "type": "noul",
+        "noul": 0
+      },
+      "fraud_risk": {
+        "type": "score",
+        "score": 3.2,
+        "confidence": 0.82,
+        "probabilities": {
+          "0": 0,
+          "1": 0,
+          "2": 0.01,
+          "3": 0.78,
+          "4": 0.21
+        }
+      }
+    },
+    "IV-007": {
+      "problem": {
+        "type": "choice",
+        "choice": "BANK_CHANGED",
+        "confidence": 0.48,
+        "probabilities": {
+          "BANK_CHANGED": 0.61,
+          "TOTAL_WRONG": 0.15,
+          "OVER_PO": 0.22,
+          "NONE": 0.02
+        }
+      },
+      "pay": {
+        "type": "noul",
+        "noul": 0
+      },
+      "fraud_risk": {
+        "type": "score",
+        "score": 0.14,
+        "confidence": 0.88,
+        "probabilities": {
+          "0": 0.88,
+          "1": 0.1,
+          "2": 0.02,
+          "3": 0,
+          "4": 0
+        }
+      }
+    },
+    "IV-008": {
+      "problem": {
+        "type": "choice",
+        "choice": "NONE",
+        "confidence": 0.4,
+        "probabilities": {
+          "BANK_CHANGED": 0.07,
+          "TOTAL_WRONG": 0.2,
+          "OVER_PO": 0.18,
+          "NONE": 0.55
+        }
+      },
+      "pay": {
+        "type": "noul",
+        "noul": 0.3
+      },
+      "fraud_risk": {
+        "type": "score",
+        "score": 0.04,
+        "confidence": 0.97,
+        "probabilities": {
+          "0": 0.96,
+          "1": 0.04,
+          "2": 0,
+          "3": 0,
+          "4": 0
+        }
+      }
+    },
+    "IV-009": {
+      "problem": {
+        "type": "choice",
+        "choice": "BANK_CHANGED",
+        "confidence": 0.53,
+        "probabilities": {
+          "BANK_CHANGED": 0.65,
+          "TOTAL_WRONG": 0.15,
+          "OVER_PO": 0.18,
+          "NONE": 0.02
+        }
+      },
+      "pay": {
+        "type": "noul",
+        "noul": 0
+      },
+      "fraud_risk": {
+        "type": "score",
+        "score": 0.2,
+        "confidence": 0.83,
+        "probabilities": {
+          "0": 0.87,
+          "1": 0.09,
+          "2": 0.02,
+          "3": 0.01,
+          "4": 0.01
+        }
+      }
+    },
+    "IV-010": {
+      "problem": {
+        "type": "choice",
+        "choice": "BANK_CHANGED",
+        "confidence": 0.95,
+        "probabilities": {
+          "BANK_CHANGED": 0.96,
+          "TOTAL_WRONG": 0.02,
+          "OVER_PO": 0.01,
+          "NONE": 0.01
+        }
+      },
+      "pay": {
+        "type": "noul",
+        "noul": 0
+      },
+      "fraud_risk": {
+        "type": "score",
+        "score": 3.25,
+        "confidence": 0.74,
+        "probabilities": {
+          "0": 0,
+          "1": 0.01,
+          "2": 0.01,
+          "3": 0.7,
+          "4": 0.28
+        }
+      }
+    },
+    "IV-011": {
+      "problem": {
+        "type": "choice",
+        "choice": "TOTAL_WRONG",
+        "confidence": 0.31,
+        "probabilities": {
+          "BANK_CHANGED": 0.28,
+          "TOTAL_WRONG": 0.48,
+          "OVER_PO": 0.12,
+          "NONE": 0.12
+        }
+      },
+      "pay": {
+        "type": "noul",
+        "noul": 0
+      },
+      "fraud_risk": {
+        "type": "score",
+        "score": 0.64,
+        "confidence": 0.47,
+        "probabilities": {
+          "0": 0.68,
+          "1": 0.14,
+          "2": 0.08,
+          "3": 0.06,
+          "4": 0.04
+        }
+      }
+    },
+    "IV-012": {
+      "problem": {
+        "type": "choice",
+        "choice": "BANK_CHANGED",
+        "confidence": 0.12,
+        "probabilities": {
+          "BANK_CHANGED": 0.34,
+          "TOTAL_WRONG": 0.33,
+          "OVER_PO": 0.32,
+          "NONE": 0.01
+        }
+      },
+      "pay": {
+        "type": "noul",
+        "noul": 0
+      },
+      "fraud_risk": {
+        "type": "score",
+        "score": 0.12,
+        "confidence": 0.9,
+        "probabilities": {
+          "0": 0.89,
+          "1": 0.1,
+          "2": 0.01,
+          "3": 0,
+          "4": 0
+        }
+      }
+    },
+    "IV-013": {
+      "problem": {
+        "type": "choice",
+        "choice": "NONE",
+        "confidence": 0.2,
+        "probabilities": {
+          "BANK_CHANGED": 0.19,
+          "TOTAL_WRONG": 0.21,
+          "OVER_PO": 0.2,
+          "NONE": 0.4
+        }
+      },
+      "pay": {
+        "type": "noul",
+        "noul": 0
+      },
+      "fraud_risk": {
+        "type": "score",
+        "score": 0.12,
+        "confidence": 0.9,
+        "probabilities": {
+          "0": 0.89,
+          "1": 0.1,
+          "2": 0.01,
+          "3": 0,
+          "4": 0
+        }
+      }
+    },
+    "IV-014": {
+      "problem": {
+        "type": "choice",
+        "choice": "NONE",
+        "confidence": 0.29,
+        "probabilities": {
+          "BANK_CHANGED": 0.09,
+          "TOTAL_WRONG": 0.22,
+          "OVER_PO": 0.22,
+          "NONE": 0.47
+        }
+      },
+      "pay": {
+        "type": "noul",
+        "noul": 0.05
+      },
+      "fraud_risk": {
+        "type": "score",
+        "score": 0.07,
+        "confidence": 0.94,
+        "probabilities": {
+          "0": 0.94,
+          "1": 0.05,
+          "2": 0.01,
+          "3": 0,
+          "4": 0
+        }
+      }
+    },
+    "IV-015": {
+      "problem": {
+        "type": "choice",
+        "choice": "TOTAL_WRONG",
+        "confidence": 0.24,
+        "probabilities": {
+          "BANK_CHANGED": 0.29,
+          "TOTAL_WRONG": 0.43,
+          "OVER_PO": 0.28,
+          "NONE": 0
+        }
+      },
+      "pay": {
+        "type": "noul",
+        "noul": 0
+      },
+      "fraud_risk": {
+        "type": "score",
+        "score": 0.14,
+        "confidence": 0.88,
+        "probabilities": {
+          "0": 0.88,
+          "1": 0.1,
+          "2": 0.02,
+          "3": 0,
+          "4": 0
+        }
+      }
+    },
+    "IV-016": {
+      "problem": {
+        "type": "choice",
+        "choice": "NONE",
+        "confidence": 0.17,
+        "probabilities": {
+          "BANK_CHANGED": 0.23,
+          "TOTAL_WRONG": 0.19,
+          "OVER_PO": 0.2,
+          "NONE": 0.38
+        }
+      },
+      "pay": {
+        "type": "noul",
+        "noul": 0.01
+      },
+      "fraud_risk": {
+        "type": "score",
+        "score": 0.46,
+        "confidence": 0.62,
+        "probabilities": {
+          "0": 0.65,
+          "1": 0.27,
+          "2": 0.06,
+          "3": 0.01,
+          "4": 0.01
+        }
+      }
+    },
+    "IV-017": {
+      "problem": {
+        "type": "choice",
+        "choice": "NONE",
+        "confidence": 0.07,
+        "probabilities": {
+          "BANK_CHANGED": 0.25,
+          "TOTAL_WRONG": 0.24,
+          "OVER_PO": 0.21,
+          "NONE": 0.3
+        }
+      },
+      "pay": {
+        "type": "noul",
+        "noul": 0
+      },
+      "fraud_risk": {
+        "type": "score",
+        "score": 0.27,
+        "confidence": 0.78,
+        "probabilities": {
+          "0": 0.8,
+          "1": 0.15,
+          "2": 0.04,
+          "3": 0,
+          "4": 0.01
+        }
+      }
+    },
+    "IV-018": {
+      "problem": {
+        "type": "choice",
+        "choice": "TOTAL_WRONG",
+        "confidence": 0.2,
+        "probabilities": {
+          "BANK_CHANGED": 0.19,
+          "TOTAL_WRONG": 0.4,
+          "OVER_PO": 0.18,
+          "NONE": 0.23
+        }
+      },
+      "pay": {
+        "type": "noul",
+        "noul": 0
+      },
+      "fraud_risk": {
+        "type": "score",
+        "score": 0.09,
+        "confidence": 0.93,
+        "probabilities": {
+          "0": 0.92,
+          "1": 0.07,
+          "2": 0.01,
+          "3": 0,
+          "4": 0
+        }
+      }
+    },
+    "IV-019": {
+      "problem": {
+        "type": "choice",
+        "choice": "BANK_CHANGED",
+        "confidence": 0.75,
+        "probabilities": {
+          "BANK_CHANGED": 0.81,
+          "TOTAL_WRONG": 0.11,
+          "OVER_PO": 0.05,
+          "NONE": 0.03
+        }
+      },
+      "pay": {
+        "type": "noul",
+        "noul": 0
+      },
+      "fraud_risk": {
+        "type": "score",
+        "score": 3.12,
+        "confidence": 0.85,
+        "probabilities": {
+          "0": 0,
+          "1": 0,
+          "2": 0.03,
+          "3": 0.82,
+          "4": 0.15
+        }
+      }
+    },
+    "IV-020": {
+      "problem": {
+        "type": "choice",
+        "choice": "BANK_CHANGED",
+        "confidence": 0.07,
+        "probabilities": {
+          "BANK_CHANGED": 0.3,
+          "TOTAL_WRONG": 0.21,
+          "OVER_PO": 0.24,
+          "NONE": 0.25
+        }
+      },
+      "pay": {
+        "type": "noul",
+        "noul": 0.48
+      },
+      "fraud_risk": {
+        "type": "score",
+        "score": 0.05,
+        "confidence": 0.96,
+        "probabilities": {
+          "0": 0.96,
+          "1": 0.03,
+          "2": 0.01,
+          "3": 0,
+          "4": 0
+        }
+      }
+    },
+    "IV-021": {
+      "problem": {
+        "type": "choice",
+        "choice": "BANK_CHANGED",
+        "confidence": 0.51,
+        "probabilities": {
+          "BANK_CHANGED": 0.63,
+          "TOTAL_WRONG": 0.11,
+          "OVER_PO": 0.25,
+          "NONE": 0.01
+        }
+      },
+      "pay": {
+        "type": "noul",
+        "noul": 0
+      },
+      "fraud_risk": {
+        "type": "score",
+        "score": 0.41,
+        "confidence": 0.66,
+        "probabilities": {
+          "0": 0.7,
+          "1": 0.22,
+          "2": 0.06,
+          "3": 0.01,
+          "4": 0.01
+        }
+      }
+    },
+    "IV-022": {
+      "problem": {
+        "type": "choice",
+        "choice": "NONE",
+        "confidence": 0.68,
+        "probabilities": {
+          "BANK_CHANGED": 0.02,
+          "TOTAL_WRONG": 0.06,
+          "OVER_PO": 0.16,
+          "NONE": 0.76
+        }
+      },
+      "pay": {
+        "type": "noul",
+        "noul": 0.51
+      },
+      "fraud_risk": {
+        "type": "score",
+        "score": 0.16,
+        "confidence": 0.87,
+        "probabilities": {
+          "0": 0.89,
+          "1": 0.08,
+          "2": 0.02,
+          "3": 0,
+          "4": 0.01
+        }
+      }
+    },
+    "IV-023": {
+      "problem": {
+        "type": "choice",
+        "choice": "NONE",
+        "confidence": 0.25,
+        "probabilities": {
+          "BANK_CHANGED": 0.14,
+          "TOTAL_WRONG": 0.18,
+          "OVER_PO": 0.24,
+          "NONE": 0.44
+        }
+      },
+      "pay": {
+        "type": "noul",
+        "noul": 0
+      },
+      "fraud_risk": {
+        "type": "score",
+        "score": 0.03,
+        "confidence": 0.98,
+        "probabilities": {
+          "0": 0.97,
+          "1": 0.03,
+          "2": 0,
+          "3": 0,
+          "4": 0
+        }
+      }
+    },
+    "IV-024": {
+      "problem": {
+        "type": "choice",
+        "choice": "BANK_CHANGED",
+        "confidence": 0.91,
+        "probabilities": {
+          "BANK_CHANGED": 0.93,
+          "TOTAL_WRONG": 0.04,
+          "OVER_PO": 0.02,
+          "NONE": 0.01
+        }
+      },
+      "pay": {
+        "type": "noul",
+        "noul": 0
+      },
+      "fraud_risk": {
+        "type": "score",
+        "score": 3.26,
+        "confidence": 0.75,
+        "probabilities": {
+          "0": 0,
+          "1": 0,
+          "2": 0.02,
+          "3": 0.7,
+          "4": 0.28
+        }
+      }
+    },
+    "IV-025": {
+      "problem": {
+        "type": "choice",
+        "choice": "BANK_CHANGED",
+        "confidence": 0.36,
+        "probabilities": {
+          "BANK_CHANGED": 0.52,
+          "TOTAL_WRONG": 0.22,
+          "OVER_PO": 0.25,
+          "NONE": 0.01
+        }
+      },
+      "pay": {
+        "type": "noul",
+        "noul": 0
+      },
+      "fraud_risk": {
+        "type": "score",
+        "score": 0.02,
+        "confidence": 0.98,
+        "probabilities": {
+          "0": 0.98,
+          "1": 0.02,
+          "2": 0,
+          "3": 0,
+          "4": 0
+        }
+      }
+    },
+    "IV-026": {
+      "problem": {
+        "type": "choice",
+        "choice": "OVER_PO",
+        "confidence": 0.44,
+        "probabilities": {
+          "BANK_CHANGED": 0.17,
+          "TOTAL_WRONG": 0.25,
+          "OVER_PO": 0.58,
+          "NONE": 0
+        }
+      },
+      "pay": {
+        "type": "noul",
+        "noul": 0
+      },
+      "fraud_risk": {
+        "type": "score",
+        "score": 0.03,
+        "confidence": 0.98,
+        "probabilities": {
+          "0": 0.97,
+          "1": 0.03,
+          "2": 0,
+          "3": 0,
+          "4": 0
+        }
+      }
+    },
+    "IV-027": {
+      "problem": {
+        "type": "choice",
+        "choice": "TOTAL_WRONG",
+        "confidence": 0.08,
+        "probabilities": {
+          "BANK_CHANGED": 0.16,
+          "TOTAL_WRONG": 0.31,
+          "OVER_PO": 0.24,
+          "NONE": 0.29
+        }
+      },
+      "pay": {
+        "type": "noul",
+        "noul": 0.09
+      },
+      "fraud_risk": {
+        "type": "score",
+        "score": 0.03,
+        "confidence": 0.98,
+        "probabilities": {
+          "0": 0.97,
+          "1": 0.03,
+          "2": 0,
+          "3": 0,
+          "4": 0
+        }
+      }
+    },
+    "IV-028": {
+      "problem": {
+        "type": "choice",
+        "choice": "NONE",
+        "confidence": 0.19,
+        "probabilities": {
+          "BANK_CHANGED": 0.1,
+          "TOTAL_WRONG": 0.31,
+          "OVER_PO": 0.2,
+          "NONE": 0.39
+        }
+      },
+      "pay": {
+        "type": "noul",
+        "noul": 0.01
+      },
+      "fraud_risk": {
+        "type": "score",
+        "score": 0.08,
+        "confidence": 0.93,
+        "probabilities": {
+          "0": 0.93,
+          "1": 0.06,
+          "2": 0.01,
+          "3": 0,
+          "4": 0
+        }
+      }
+    },
+    "IV-029": {
+      "problem": {
+        "type": "choice",
+        "choice": "NONE",
+        "confidence": 0.13,
+        "probabilities": {
+          "BANK_CHANGED": 0.2,
+          "TOTAL_WRONG": 0.19,
+          "OVER_PO": 0.26,
+          "NONE": 0.35
+        }
+      },
+      "pay": {
+        "type": "noul",
+        "noul": 0
+      },
+      "fraud_risk": {
+        "type": "score",
+        "score": 0.03,
+        "confidence": 0.98,
+        "probabilities": {
+          "0": 0.97,
+          "1": 0.03,
+          "2": 0,
+          "3": 0,
+          "4": 0
+        }
+      }
+    },
+    "IV-030": {
+      "problem": {
+        "type": "choice",
+        "choice": "BANK_CHANGED",
+        "confidence": 0.93,
+        "probabilities": {
+          "BANK_CHANGED": 0.95,
+          "TOTAL_WRONG": 0.03,
+          "OVER_PO": 0.01,
+          "NONE": 0.01
+        }
+      },
+      "pay": {
+        "type": "noul",
+        "noul": 0
+      },
+      "fraud_risk": {
+        "type": "score",
+        "score": 3.13,
+        "confidence": 0.81,
+        "probabilities": {
+          "0": 0,
+          "1": 0.01,
+          "2": 0.03,
+          "3": 0.78,
+          "4": 0.18
+        }
+      }
+    },
+    "IV-031": {
+      "problem": {
+        "type": "choice",
+        "choice": "BANK_CHANGED",
+        "confidence": 0.97,
+        "probabilities": {
+          "BANK_CHANGED": 0.98,
+          "TOTAL_WRONG": 0.01,
+          "OVER_PO": 0.01,
+          "NONE": 0
+        }
+      },
+      "pay": {
+        "type": "noul",
+        "noul": 0
+      },
+      "fraud_risk": {
+        "type": "score",
+        "score": 3.15,
+        "confidence": 0.81,
+        "probabilities": {
+          "0": 0,
+          "1": 0.01,
+          "2": 0.02,
+          "3": 0.78,
+          "4": 0.19
+        }
+      }
+    },
+    "IV-032": {
+      "problem": {
+        "type": "choice",
+        "choice": "TOTAL_WRONG",
+        "confidence": 0.45,
+        "probabilities": {
+          "BANK_CHANGED": 0.15,
+          "TOTAL_WRONG": 0.59,
+          "OVER_PO": 0.13,
+          "NONE": 0.13
+        }
+      },
+      "pay": {
+        "type": "noul",
+        "noul": 0
+      },
+      "fraud_risk": {
+        "type": "score",
+        "score": 0.19,
+        "confidence": 0.84,
+        "probabilities": {
+          "0": 0.83,
+          "1": 0.15,
+          "2": 0.02,
+          "3": 0,
+          "4": 0
+        }
+      }
+    }
+  }
+}

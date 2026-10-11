@@ -1,0 +1,41 @@
+{
+  "id": "package-check",
+  "class": "cached-real",
+  "generatedAt": "2026-10-11",
+  "source": "Wikimedia Commons, openly licensed photographs",
+  "context": {
+    "setting": "A delivery photo attached to a damaged-in-transit claim. Crushed or opened parcels support the claim; a parcel that is only scuffed with age does not."
+  },
+  "items": [
+    {
+      "id": "PK-01",
+      "image": "images/photos/parcel-crushed.jpg",
+      "subject": "Parcel",
+      "credit": {
+        "author": "Meanwell Packaging",
+        "license": "CC BY 2.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Damaged_fragile_parcel_delivered_to_doorstep.jpg"
+      }
+    },
+    {
+      "id": "PK-02",
+      "image": "images/photos/parcel-worn.jpg",
+      "subject": "Parcel",
+      "credit": {
+        "author": "KingaNBM",
+        "license": "CC BY-SA 4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Package_send_to_member_of_RAF_from_'mother'.JPG"
+      }
+    },
+    {
+      "id": "PK-03",
+      "image": "images/photos/box-open.jpg",
+      "subject": "Box",
+      "credit": {
+        "author": "ArnoldReinhold",
+        "license": "CC BY-SA 3.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Box.agr.jpg"
+      }
+    }
+  ]
+}

@@ -1,0 +1,121 @@
+{
+  "id": "produce-check",
+  "class": "cached-real",
+  "generatedAt": "2026-10-11",
+  "source": "Wikimedia Commons, openly licensed photographs",
+  "context": {
+    "setting": "Goods-in inspection at a grocery distribution centre. Anything rotten or mouldy is rejected; fresh and ripe stock is accepted."
+  },
+  "items": [
+    {
+      "id": "PR-01",
+      "image": "images/photos/apple-rotten-1.jpg",
+      "subject": "Apple",
+      "credit": {
+        "author": "Shams948",
+        "license": "CC0",
+        "source": "https://commons.wikimedia.org/wiki/File:Rotten_Apple_02.jpg"
+      }
+    },
+    {
+      "id": "PR-02",
+      "image": "images/photos/apple-fresh-1.jpg",
+      "subject": "Apple",
+      "credit": {
+        "author": "آرمین",
+        "license": "CC0",
+        "source": "https://commons.wikimedia.org/wiki/File:Beautiful_red_apple_01.jpg"
+      }
+    },
+    {
+      "id": "PR-03",
+      "image": "images/photos/banana-black.jpg",
+      "subject": "Banana",
+      "credit": {
+        "author": "TwoWings",
+        "license": "Public domain",
+        "source": "https://commons.wikimedia.org/wiki/File:Black-banana.JPG"
+      }
+    },
+    {
+      "id": "PR-04",
+      "image": "images/photos/strawberries-fresh-1.jpg",
+      "subject": "Strawberries",
+      "credit": {
+        "author": "Artur Rutkowski",
+        "license": "CC0",
+        "source": "https://commons.wikimedia.org/wiki/File:Fresh_strawberries_(Unsplash).jpg"
+      }
+    },
+    {
+      "id": "PR-05",
+      "image": "images/photos/bread-mouldy.jpg",
+      "subject": "Bread",
+      "credit": {
+        "author": "Matt Wharton",
+        "license": "CC BY-SA 2.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Mouldy_bread.jpg"
+      }
+    },
+    {
+      "id": "PR-06",
+      "image": "images/photos/apple-fresh-2.jpg",
+      "subject": "Apple",
+      "credit": {
+        "author": "Abhijit Tembhekar",
+        "license": "CC BY 2.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Red_Apple.jpg"
+      }
+    },
+    {
+      "id": "PR-07",
+      "image": "images/photos/strawberries-mouldy.jpg",
+      "subject": "Strawberries",
+      "credit": {
+        "author": "Kevin Payravi",
+        "license": "CC BY-SA 4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Moldy_Strawberries.jpg"
+      }
+    },
+    {
+      "id": "PR-08",
+      "image": "images/photos/banana-ripe.jpg",
+      "subject": "Bananas",
+      "credit": {
+        "author": "MartinThoma",
+        "license": "CC0",
+        "source": "https://commons.wikimedia.org/wiki/File:Ripe-bananas.jpg"
+      }
+    },
+    {
+      "id": "PR-09",
+      "image": "images/photos/apple-rotten-2.jpg",
+      "subject": "Apple",
+      "credit": {
+        "author": "Shams948",
+        "license": "CC0",
+        "source": "https://commons.wikimedia.org/wiki/File:Rotten_Apple_04.jpg"
+      }
+    },
+    {
+      "id": "PR-10",
+      "image": "images/photos/strawberry-rotting.jpg",
+      "subject": "Strawberry",
+      "credit": {
+        "author": "Kevin Payravi",
+        "license": "CC BY-SA 4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Rotting_strawberry_on_white_background.jpg"
+      }
+    },
+    {
+      "id": "PR-11",
+      "image": "images/photos/strawberries-fresh-2.jpg",
+      "subject": "Strawberries",
+      "credit": {
+        "author": "Lablascovegmenu",
+        "license": "CC BY 2.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Fresh_Strawberries_(6888796933).jpg"
+      }
+    }
+  ]
+}

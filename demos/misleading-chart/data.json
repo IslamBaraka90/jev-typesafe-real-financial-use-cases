@@ -1,0 +1,376 @@
+{
+  "id": "misleading-chart",
+  "class": "synthetic",
+  "generatedAt": "2026-10-11",
+  "seed": 4107,
+  "source": "scripts/generate/misleading-chart.js",
+  "context": {
+    "bands": {
+      "SMALL": "under 10%",
+      "MEDIUM": "10% to 25%",
+      "LARGE": "over 25%"
+    }
+  },
+  "items": [
+    {
+      "id": "MC-001",
+      "image": "images/misleading-chart/MC-001.png",
+      "company": "Ironbark Industries",
+      "metric": "Monthly payments volume",
+      "values": [
+        28700000,
+        29219183,
+        29699908,
+        30622900
+      ]
+    },
+    {
+      "id": "MC-002",
+      "image": "images/misleading-chart/MC-002.png",
+      "company": "Cedar Corporation",
+      "metric": "Assets under management",
+      "values": [
+        349500000,
+        360509250,
+        363934350,
+        373965000
+      ]
+    },
+    {
+      "id": "MC-003",
+      "image": "images/misleading-chart/MC-003.png",
+      "company": "Harbour Technologies",
+      "metric": "Assets under management",
+      "values": [
+        165500000,
+        168321775,
+        172964050,
+        174602500
+      ]
+    },
+    {
+      "id": "MC-004",
+      "image": "images/misleading-chart/MC-004.png",
+      "company": "Harbour Holdings",
+      "metric": "Assets under management",
+      "values": [
+        145000000,
+        146696500,
+        148091400,
+        148770000
+      ]
+    },
+    {
+      "id": "MC-005",
+      "image": "images/misleading-chart/MC-005.png",
+      "company": "Rooftop Group",
+      "metric": "Monthly payments volume",
+      "values": [
+        13050000,
+        14858730,
+        16228980,
+        18531000
+      ]
+    },
+    {
+      "id": "MC-006",
+      "image": "images/misleading-chart/MC-006.png",
+      "company": "Pinefield Group",
+      "metric": "Revenue",
+      "values": [
+        7190000,
+        7270384,
+        7341421,
+        7376940
+      ]
+    },
+    {
+      "id": "MC-007",
+      "image": "images/misleading-chart/MC-007.png",
+      "company": "Quarry Partners",
+      "metric": "Monthly payments volume",
+      "values": [
+        38100000,
+        38877240,
+        40250364,
+        40690800
+      ]
+    },
+    {
+      "id": "MC-008",
+      "image": "images/misleading-chart/MC-008.png",
+      "company": "Falcon Holdings",
+      "metric": "Monthly payments volume",
+      "values": [
+        13350000,
+        14028714,
+        14838792,
+        15539400
+      ]
+    },
+    {
+      "id": "MC-009",
+      "image": "images/misleading-chart/MC-009.png",
+      "company": "Copperline Holdings",
+      "metric": "Assets under management",
+      "values": [
+        315500000,
+        339478000,
+        355253000,
+        378600000
+      ]
+    },
+    {
+      "id": "MC-010",
+      "image": "images/misleading-chart/MC-010.png",
+      "company": "Ironbark Technologies",
+      "metric": "Revenue",
+      "values": [
+        3200000,
+        3410752,
+        3507584,
+        3769600
+      ]
+    },
+    {
+      "id": "MC-011",
+      "image": "images/misleading-chart/MC-011.png",
+      "company": "Bluewater Industries",
+      "metric": "Assets under management",
+      "values": [
+        380000000,
+        396929000,
+        418247000,
+        442700000
+      ]
+    },
+    {
+      "id": "MC-012",
+      "image": "images/misleading-chart/MC-012.png",
+      "company": "Rooftop Technologies",
+      "metric": "Revenue",
+      "values": [
+        7650000,
+        9590652,
+        11438892,
+        12270600
+      ]
+    },
+    {
+      "id": "MC-013",
+      "image": "images/misleading-chart/MC-013.png",
+      "company": "Lantern Group",
+      "metric": "Monthly payments volume",
+      "values": [
+        18850000,
+        21954407,
+        23831490,
+        26069550
+      ]
+    },
+    {
+      "id": "MC-014",
+      "image": "images/misleading-chart/MC-014.png",
+      "company": "Beacon Resources",
+      "metric": "Revenue",
+      "values": [
+        6580000,
+        6739170,
+        6855636,
+        6968220
+      ]
+    },
+    {
+      "id": "MC-015",
+      "image": "images/misleading-chart/MC-015.png",
+      "company": "Bluewater Resources",
+      "metric": "Monthly payments volume",
+      "values": [
+        40100000,
+        48160100,
+        57294880,
+        66967000
+      ]
+    },
+    {
+      "id": "MC-016",
+      "image": "images/misleading-chart/MC-016.png",
+      "company": "Meridian Technologies",
+      "metric": "Monthly payments volume",
+      "values": [
+        36150000,
+        36427632,
+        36870108,
+        37017600
+      ]
+    },
+    {
+      "id": "MC-017",
+      "image": "images/misleading-chart/MC-017.png",
+      "company": "Lantern Corporation",
+      "metric": "Revenue",
+      "values": [
+        4670000,
+        4754994,
+        4885754,
+        4996900
+      ]
+    },
+    {
+      "id": "MC-018",
+      "image": "images/misleading-chart/MC-018.png",
+      "company": "Ironbark Technologies",
+      "metric": "Monthly payments volume",
+      "values": [
+        30500000,
+        34878275,
+        39558500,
+        45597500
+      ]
+    },
+    {
+      "id": "MC-019",
+      "image": "images/misleading-chart/MC-019.png",
+      "company": "Meridian Corporation",
+      "metric": "Monthly payments volume",
+      "values": [
+        31900000,
+        39324725,
+        49507205,
+        53113500
+      ]
+    },
+    {
+      "id": "MC-020",
+      "image": "images/misleading-chart/MC-020.png",
+      "company": "Quarry Group",
+      "metric": "Assets under management",
+      "values": [
+        264500000,
+        310753115,
+        377740385,
+        423993500
+      ]
+    },
+    {
+      "id": "MC-021",
+      "image": "images/misleading-chart/MC-021.png",
+      "company": "Tinbridge Partners",
+      "metric": "Active customers",
+      "values": [
+        75400,
+        75886,
+        76983,
+        77511
+      ]
+    },
+    {
+      "id": "MC-022",
+      "image": "images/misleading-chart/MC-022.png",
+      "company": "Meridian Industries",
+      "metric": "Revenue",
+      "values": [
+        3180000,
+        3437580,
+        3939861,
+        4467900
+      ]
+    },
+    {
+      "id": "MC-023",
+      "image": "images/misleading-chart/MC-023.png",
+      "company": "Copperline Group",
+      "metric": "Assets under management",
+      "values": [
+        377000000,
+        390556920,
+        402243920,
+        423748000
+      ]
+    },
+    {
+      "id": "MC-024",
+      "image": "images/misleading-chart/MC-024.png",
+      "company": "Ironbark Holdings",
+      "metric": "Revenue",
+      "values": [
+        8010000,
+        8383426,
+        8645834,
+        9019260
+      ]
+    },
+    {
+      "id": "MC-025",
+      "image": "images/misleading-chart/MC-025.png",
+      "company": "Northwind Corporation",
+      "metric": "Assets under management",
+      "values": [
+        301500000,
+        320765850,
+        337462920,
+        365719500
+      ]
+    },
+    {
+      "id": "MC-026",
+      "image": "images/misleading-chart/MC-026.png",
+      "company": "Cedar Industries",
+      "metric": "Assets under management",
+      "values": [
+        280000000,
+        290175200,
+        310525600,
+        324240000
+      ]
+    },
+    {
+      "id": "MC-027",
+      "image": "images/misleading-chart/MC-027.png",
+      "company": "Tinbridge Resources",
+      "metric": "Active customers",
+      "values": [
+        56500,
+        58726,
+        63624,
+        67631
+      ]
+    },
+    {
+      "id": "MC-028",
+      "image": "images/misleading-chart/MC-028.png",
+      "company": "Cedar Group",
+      "metric": "Active customers",
+      "values": [
+        51400,
+        54052,
+        60241,
+        62451
+      ]
+    },
+    {
+      "id": "MC-029",
+      "image": "images/misleading-chart/MC-029.png",
+      "company": "Ironbark Partners",
+      "metric": "Revenue",
+      "values": [
+        5720000,
+        6891170,
+        7697976,
+        8322600
+      ]
+    },
+    {
+      "id": "MC-030",
+      "image": "images/misleading-chart/MC-030.png",
+      "company": "Meridian Technologies",
+      "metric": "Revenue",
+      "values": [
+        7290000,
+        9235337,
+        10272849,
+        11612970
+      ]
+    }
+  ]
+}

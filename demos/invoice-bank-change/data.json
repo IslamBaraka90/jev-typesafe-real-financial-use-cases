@@ -1,0 +1,526 @@
+{
+  "id": "invoice-bank-change",
+  "class": "synthetic",
+  "generatedAt": "2026-10-11",
+  "seed": 4104,
+  "source": "scripts/generate/invoice-bank-change.js",
+  "context": {
+    "company": "Copperline Group",
+    "vatRatePercent": 5,
+    "rule": "Pay only to the bank account in the vendor master, only up to the approved purchase order, and only an invoice whose total is the sum of its lines plus VAT."
+  },
+  "items": [
+    {
+      "id": "IV-001",
+      "image": "images/invoice-bank-change/IV-001.png",
+      "vendor": "Orchard Media",
+      "invoiceNumber": "INV-30172",
+      "vendorMaster": {
+        "name": "Orchard Media",
+        "bankName": "Union Bank",
+        "iban": "DE94 4101 2031 8731 6490 59"
+      },
+      "purchaseOrder": {
+        "number": "PO-4655",
+        "approvedAmount": 11926.74,
+        "currency": "USD"
+      }
+    },
+    {
+      "id": "IV-002",
+      "image": "images/invoice-bank-change/IV-002.png",
+      "vendor": "Orchard Print",
+      "invoiceNumber": "INV-55617",
+      "vendorMaster": {
+        "name": "Orchard Print",
+        "bankName": "Union Bank",
+        "iban": "DE37 1805 6594 7038 5513 66"
+      },
+      "purchaseOrder": {
+        "number": "PO-4699",
+        "approvedAmount": 2406.35,
+        "currency": "USD"
+      }
+    },
+    {
+      "id": "IV-003",
+      "image": "images/invoice-bank-change/IV-003.png",
+      "vendor": "Meridian Supplies",
+      "invoiceNumber": "INV-89761",
+      "vendorMaster": {
+        "name": "Meridian Supplies",
+        "bankName": "Crescent Bank",
+        "iban": "DE54 4813 9588 3785 4340 38"
+      },
+      "purchaseOrder": {
+        "number": "PO-4236",
+        "approvedAmount": 1164.24,
+        "currency": "USD"
+      }
+    },
+    {
+      "id": "IV-004",
+      "image": "images/invoice-bank-change/IV-004.png",
+      "vendor": "Northwind Labs",
+      "invoiceNumber": "INV-24799",
+      "vendorMaster": {
+        "name": "Northwind Labs",
+        "bankName": "Crescent Bank",
+        "iban": "DE68 2858 1577 6556 2661 79"
+      },
+      "purchaseOrder": {
+        "number": "PO-4336",
+        "approvedAmount": 9733.21,
+        "currency": "USD"
+      }
+    },
+    {
+      "id": "IV-005",
+      "image": "images/invoice-bank-change/IV-005.png",
+      "vendor": "Quarry Trading",
+      "invoiceNumber": "INV-10303",
+      "vendorMaster": {
+        "name": "Quarry Trading",
+        "bankName": "Union Bank",
+        "iban": "DE59 7092 9355 7875 6108 84"
+      },
+      "purchaseOrder": {
+        "number": "PO-4775",
+        "approvedAmount": 3038.49,
+        "currency": "USD"
+      }
+    },
+    {
+      "id": "IV-006",
+      "image": "images/invoice-bank-change/IV-006.png",
+      "vendor": "Kestrel Print",
+      "invoiceNumber": "INV-53537",
+      "vendorMaster": {
+        "name": "Kestrel Print",
+        "bankName": "Crescent Bank",
+        "iban": "DE82 4701 1484 8791 3053 51"
+      },
+      "purchaseOrder": {
+        "number": "PO-4440",
+        "approvedAmount": 13529.57,
+        "currency": "USD"
+      }
+    },
+    {
+      "id": "IV-007",
+      "image": "images/invoice-bank-change/IV-007.png",
+      "vendor": "Harbour Rentals",
+      "invoiceNumber": "INV-46229",
+      "vendorMaster": {
+        "name": "Harbour Rentals",
+        "bankName": "Summit Bank",
+        "iban": "DE30 7336 4552 3830 6254 33"
+      },
+      "purchaseOrder": {
+        "number": "PO-4404",
+        "approvedAmount": 8353.8,
+        "currency": "USD"
+      }
+    },
+    {
+      "id": "IV-008",
+      "image": "images/invoice-bank-change/IV-008.png",
+      "vendor": "Northwind Rentals",
+      "invoiceNumber": "INV-83158",
+      "vendorMaster": {
+        "name": "Northwind Rentals",
+        "bankName": "Summit Bank",
+        "iban": "DE80 6328 4589 9576 9382 19"
+      },
+      "purchaseOrder": {
+        "number": "PO-4880",
+        "approvedAmount": 9757.75,
+        "currency": "USD"
+      }
+    },
+    {
+      "id": "IV-009",
+      "image": "images/invoice-bank-change/IV-009.png",
+      "vendor": "Saltmarsh Travel",
+      "invoiceNumber": "INV-16847",
+      "vendorMaster": {
+        "name": "Saltmarsh Travel",
+        "bankName": "Summit Bank",
+        "iban": "DE41 1643 9696 5219 2885 40"
+      },
+      "purchaseOrder": {
+        "number": "PO-4447",
+        "approvedAmount": 2457.4,
+        "currency": "USD"
+      }
+    },
+    {
+      "id": "IV-010",
+      "image": "images/invoice-bank-change/IV-010.png",
+      "vendor": "Northwind Print",
+      "invoiceNumber": "INV-23605",
+      "vendorMaster": {
+        "name": "Northwind Print",
+        "bankName": "Summit Bank",
+        "iban": "DE47 8041 8325 3070 8299 32"
+      },
+      "purchaseOrder": {
+        "number": "PO-4919",
+        "approvedAmount": 904.05,
+        "currency": "USD"
+      }
+    },
+    {
+      "id": "IV-011",
+      "image": "images/invoice-bank-change/IV-011.png",
+      "vendor": "Copperline Studios",
+      "invoiceNumber": "INV-10495",
+      "vendorMaster": {
+        "name": "Copperline Studios",
+        "bankName": "Crescent Bank",
+        "iban": "DE94 6919 4733 6953 7858 69"
+      },
+      "purchaseOrder": {
+        "number": "PO-4738",
+        "approvedAmount": 5886.04,
+        "currency": "USD"
+      }
+    },
+    {
+      "id": "IV-012",
+      "image": "images/invoice-bank-change/IV-012.png",
+      "vendor": "Cedar Studios",
+      "invoiceNumber": "INV-22250",
+      "vendorMaster": {
+        "name": "Cedar Studios",
+        "bankName": "Atlas Bank",
+        "iban": "DE51 2437 3007 4994 5922 74"
+      },
+      "purchaseOrder": {
+        "number": "PO-4938",
+        "approvedAmount": 2474.89,
+        "currency": "USD"
+      }
+    },
+    {
+      "id": "IV-013",
+      "image": "images/invoice-bank-change/IV-013.png",
+      "vendor": "Tinbridge Trading",
+      "invoiceNumber": "INV-35904",
+      "vendorMaster": {
+        "name": "Tinbridge Trading",
+        "bankName": "Atlas Bank",
+        "iban": "DE28 3516 3002 9100 1742 59"
+      },
+      "purchaseOrder": {
+        "number": "PO-4504",
+        "approvedAmount": 13999.65,
+        "currency": "USD"
+      }
+    },
+    {
+      "id": "IV-014",
+      "image": "images/invoice-bank-change/IV-014.png",
+      "vendor": "Cedar Trading",
+      "invoiceNumber": "INV-52319",
+      "vendorMaster": {
+        "name": "Cedar Trading",
+        "bankName": "Summit Bank",
+        "iban": "DE71 9102 4303 4351 5261 62"
+      },
+      "purchaseOrder": {
+        "number": "PO-4579",
+        "approvedAmount": 6221.88,
+        "currency": "USD"
+      }
+    },
+    {
+      "id": "IV-015",
+      "image": "images/invoice-bank-change/IV-015.png",
+      "vendor": "Marlow Labs",
+      "invoiceNumber": "INV-65098",
+      "vendorMaster": {
+        "name": "Marlow Labs",
+        "bankName": "Union Bank",
+        "iban": "DE86 7955 8957 7808 8254 37"
+      },
+      "purchaseOrder": {
+        "number": "PO-4974",
+        "approvedAmount": 16679.04,
+        "currency": "USD"
+      }
+    },
+    {
+      "id": "IV-016",
+      "image": "images/invoice-bank-change/IV-016.png",
+      "vendor": "Pinefield Systems",
+      "invoiceNumber": "INV-67612",
+      "vendorMaster": {
+        "name": "Pinefield Systems",
+        "bankName": "Crescent Bank",
+        "iban": "DE86 4615 3553 3166 6000 68"
+      },
+      "purchaseOrder": {
+        "number": "PO-4934",
+        "approvedAmount": 5677.77,
+        "currency": "USD"
+      }
+    },
+    {
+      "id": "IV-017",
+      "image": "images/invoice-bank-change/IV-017.png",
+      "vendor": "Kestrel Travel",
+      "invoiceNumber": "INV-63614",
+      "vendorMaster": {
+        "name": "Kestrel Travel",
+        "bankName": "Crescent Bank",
+        "iban": "DE95 3158 8461 2137 6129 19"
+      },
+      "purchaseOrder": {
+        "number": "PO-4435",
+        "approvedAmount": 6170.85,
+        "currency": "USD"
+      }
+    },
+    {
+      "id": "IV-018",
+      "image": "images/invoice-bank-change/IV-018.png",
+      "vendor": "Harbour Foods",
+      "invoiceNumber": "INV-47570",
+      "vendorMaster": {
+        "name": "Harbour Foods",
+        "bankName": "Union Bank",
+        "iban": "DE49 5707 5808 6906 9952 75"
+      },
+      "purchaseOrder": {
+        "number": "PO-4144",
+        "approvedAmount": 2549.59,
+        "currency": "USD"
+      }
+    },
+    {
+      "id": "IV-019",
+      "image": "images/invoice-bank-change/IV-019.png",
+      "vendor": "Bluewater Media",
+      "invoiceNumber": "INV-53804",
+      "vendorMaster": {
+        "name": "Bluewater Media",
+        "bankName": "Crescent Bank",
+        "iban": "DE88 2950 8891 1127 8151 33"
+      },
+      "purchaseOrder": {
+        "number": "PO-4685",
+        "approvedAmount": 1913.12,
+        "currency": "USD"
+      }
+    },
+    {
+      "id": "IV-020",
+      "image": "images/invoice-bank-change/IV-020.png",
+      "vendor": "Lantern Rentals",
+      "invoiceNumber": "INV-62854",
+      "vendorMaster": {
+        "name": "Lantern Rentals",
+        "bankName": "Union Bank",
+        "iban": "DE63 1654 2571 5802 1764 94"
+      },
+      "purchaseOrder": {
+        "number": "PO-4327",
+        "approvedAmount": 10215.91,
+        "currency": "USD"
+      }
+    },
+    {
+      "id": "IV-021",
+      "image": "images/invoice-bank-change/IV-021.png",
+      "vendor": "Marlow Supplies",
+      "invoiceNumber": "INV-95059",
+      "vendorMaster": {
+        "name": "Marlow Supplies",
+        "bankName": "Atlas Bank",
+        "iban": "DE57 3454 9928 5424 1544 33"
+      },
+      "purchaseOrder": {
+        "number": "PO-4014",
+        "approvedAmount": 4557.33,
+        "currency": "USD"
+      }
+    },
+    {
+      "id": "IV-022",
+      "image": "images/invoice-bank-change/IV-022.png",
+      "vendor": "Cedar Studios",
+      "invoiceNumber": "INV-52389",
+      "vendorMaster": {
+        "name": "Cedar Studios",
+        "bankName": "Crescent Bank",
+        "iban": "DE32 5561 2659 7726 2149 87"
+      },
+      "purchaseOrder": {
+        "number": "PO-4014",
+        "approvedAmount": 3640.45,
+        "currency": "USD"
+      }
+    },
+    {
+      "id": "IV-023",
+      "image": "images/invoice-bank-change/IV-023.png",
+      "vendor": "Cedar Rentals",
+      "invoiceNumber": "INV-77623",
+      "vendorMaster": {
+        "name": "Cedar Rentals",
+        "bankName": "Summit Bank",
+        "iban": "DE90 3379 8446 7995 3854 14"
+      },
+      "purchaseOrder": {
+        "number": "PO-4247",
+        "approvedAmount": 3796.51,
+        "currency": "USD"
+      }
+    },
+    {
+      "id": "IV-024",
+      "image": "images/invoice-bank-change/IV-024.png",
+      "vendor": "Tinbridge Works",
+      "invoiceNumber": "INV-68426",
+      "vendorMaster": {
+        "name": "Tinbridge Works",
+        "bankName": "Union Bank",
+        "iban": "DE90 6570 5812 4241 5250 31"
+      },
+      "purchaseOrder": {
+        "number": "PO-4983",
+        "approvedAmount": 1783.54,
+        "currency": "USD"
+      }
+    },
+    {
+      "id": "IV-025",
+      "image": "images/invoice-bank-change/IV-025.png",
+      "vendor": "Tinbridge Works",
+      "invoiceNumber": "INV-66514",
+      "vendorMaster": {
+        "name": "Tinbridge Works",
+        "bankName": "Atlas Bank",
+        "iban": "DE33 3355 4846 5580 3938 34"
+      },
+      "purchaseOrder": {
+        "number": "PO-4943",
+        "approvedAmount": 7059.68,
+        "currency": "USD"
+      }
+    },
+    {
+      "id": "IV-026",
+      "image": "images/invoice-bank-change/IV-026.png",
+      "vendor": "Kestrel Travel",
+      "invoiceNumber": "INV-86804",
+      "vendorMaster": {
+        "name": "Kestrel Travel",
+        "bankName": "Union Bank",
+        "iban": "DE38 1729 2633 7352 3396 20"
+      },
+      "purchaseOrder": {
+        "number": "PO-4433",
+        "approvedAmount": 8474.55,
+        "currency": "USD"
+      }
+    },
+    {
+      "id": "IV-027",
+      "image": "images/invoice-bank-change/IV-027.png",
+      "vendor": "Marlow Print",
+      "invoiceNumber": "INV-50870",
+      "vendorMaster": {
+        "name": "Marlow Print",
+        "bankName": "Union Bank",
+        "iban": "DE97 1642 1511 4288 9774 36"
+      },
+      "purchaseOrder": {
+        "number": "PO-4888",
+        "approvedAmount": 3437.06,
+        "currency": "USD"
+      }
+    },
+    {
+      "id": "IV-028",
+      "image": "images/invoice-bank-change/IV-028.png",
+      "vendor": "Northwind Labs",
+      "invoiceNumber": "INV-53868",
+      "vendorMaster": {
+        "name": "Northwind Labs",
+        "bankName": "Union Bank",
+        "iban": "DE23 2668 9315 3178 7063 48"
+      },
+      "purchaseOrder": {
+        "number": "PO-4007",
+        "approvedAmount": 5700.91,
+        "currency": "USD"
+      }
+    },
+    {
+      "id": "IV-029",
+      "image": "images/invoice-bank-change/IV-029.png",
+      "vendor": "Kestrel Supplies",
+      "invoiceNumber": "INV-85314",
+      "vendorMaster": {
+        "name": "Kestrel Supplies",
+        "bankName": "Union Bank",
+        "iban": "DE22 1887 2610 2650 2410 81"
+      },
+      "purchaseOrder": {
+        "number": "PO-4414",
+        "approvedAmount": 1394.82,
+        "currency": "USD"
+      }
+    },
+    {
+      "id": "IV-030",
+      "image": "images/invoice-bank-change/IV-030.png",
+      "vendor": "Bluewater Media",
+      "invoiceNumber": "INV-26092",
+      "vendorMaster": {
+        "name": "Bluewater Media",
+        "bankName": "Crescent Bank",
+        "iban": "DE90 5000 1911 4579 2220 84"
+      },
+      "purchaseOrder": {
+        "number": "PO-4272",
+        "approvedAmount": 7576.85,
+        "currency": "USD"
+      }
+    },
+    {
+      "id": "IV-031",
+      "image": "images/invoice-bank-change/IV-031.png",
+      "vendor": "Pinefield Trading",
+      "invoiceNumber": "INV-86428",
+      "vendorMaster": {
+        "name": "Pinefield Trading",
+        "bankName": "Crescent Bank",
+        "iban": "DE70 4094 7686 7717 7976 29"
+      },
+      "purchaseOrder": {
+        "number": "PO-4973",
+        "approvedAmount": 2604,
+        "currency": "USD"
+      }
+    },
+    {
+      "id": "IV-032",
+      "image": "images/invoice-bank-change/IV-032.png",
+      "vendor": "Saltmarsh Studios",
+      "invoiceNumber": "INV-46653",
+      "vendorMaster": {
+        "name": "Saltmarsh Studios",
+        "bankName": "Union Bank",
+        "iban": "DE88 4652 5749 6826 9112 47"
+      },
+      "purchaseOrder": {
+        "number": "PO-4798",
+        "approvedAmount": 13290.34,
+        "currency": "USD"
+      }
+    }
+  ]
+}

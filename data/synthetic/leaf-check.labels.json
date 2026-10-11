@@ -1,0 +1,18 @@
+[
+  {
+    "photoId": "LF-01",
+    "condition": "MILDEW"
+  },
+  {
+    "photoId": "LF-02",
+    "condition": "HEALTHY"
+  },
+  {
+    "photoId": "LF-03",
+    "condition": "LEAF_SPOT"
+  },
+  {
+    "photoId": "LF-04",
+    "condition": "MILDEW"
+  }
+]

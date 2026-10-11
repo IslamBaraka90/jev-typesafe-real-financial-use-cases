@@ -1,0 +1,1213 @@
+{
+  "demo": "expense-claim",
+  "provider": "openai",
+  "model": "gpt-6-luna",
+  "recordedAt": "2026-10-11",
+  "source": "scripts/record-demo.js",
+  "usage": {
+    "input_tokens": 34750,
+    "output_tokens": 0
+  },
+  "answers": {
+    "EC-001": {
+      "problem": {
+        "type": "choice",
+        "choice": "MERCHANT_MISMATCH",
+        "confidence": 0.93,
+        "probabilities": {
+          "AMOUNT_INFLATED": 0.01,
+          "DATE_MISMATCH": 0.01,
+          "MERCHANT_MISMATCH": 0.94,
+          "ALCOHOL": 0.03,
+          "NONE": 0.01
+        }
+      },
+      "approve": {
+        "type": "noul",
+        "noul": 0
+      },
+      "concern": {
+        "type": "score",
+        "score": 2.97,
+        "confidence": 0.98,
+        "probabilities": {
+          "0": 0,
+          "1": 0.01,
+          "2": 0.01,
+          "3": 0.98,
+          "4": 0
+        }
+      }
+    },
+    "EC-002": {
+      "problem": {
+        "type": "choice",
+        "choice": "DATE_MISMATCH",
+        "confidence": 0.98,
+        "probabilities": {
+          "AMOUNT_INFLATED": 0.01,
+          "DATE_MISMATCH": 0.98,
+          "MERCHANT_MISMATCH": 0,
+          "ALCOHOL": 0,
+          "NONE": 0.01
+        }
+      },
+      "approve": {
+        "type": "noul",
+        "noul": 0
+      },
+      "concern": {
+        "type": "score",
+        "score": 2.85,
+        "confidence": 0.86,
+        "probabilities": {
+          "0": 0,
+          "1": 0.06,
+          "2": 0.04,
+          "3": 0.89,
+          "4": 0.01
+        }
+      }
+    },
+    "EC-003": {
+      "problem": {
+        "type": "choice",
+        "choice": "AMOUNT_INFLATED",
+        "confidence": 0.91,
+        "probabilities": {
+          "AMOUNT_INFLATED": 0.93,
+          "DATE_MISMATCH": 0.01,
+          "MERCHANT_MISMATCH": 0.01,
+          "ALCOHOL": 0,
+          "NONE": 0.05
+        }
+      },
+      "approve": {
+        "type": "noul",
+        "noul": 0
+      },
+      "concern": {
+        "type": "score",
+        "score": 2.74,
+        "confidence": 0.78,
+        "probabilities": {
+          "0": 0,
+          "1": 0.12,
+          "2": 0.02,
+          "3": 0.86,
+          "4": 0
+        }
+      }
+    },
+    "EC-004": {
+      "problem": {
+        "type": "choice",
+        "choice": "MERCHANT_MISMATCH",
+        "confidence": 0.99,
+        "probabilities": {
+          "AMOUNT_INFLATED": 0.01,
+          "DATE_MISMATCH": 0,
+          "MERCHANT_MISMATCH": 0.99,
+          "ALCOHOL": 0,
+          "NONE": 0
+        }
+      },
+      "approve": {
+        "type": "noul",
+        "noul": 0
+      },
+      "concern": {
+        "type": "score",
+        "score": 3.21,
+        "confidence": 0.76,
+        "probabilities": {
+          "0": 0,
+          "1": 0.01,
+          "2": 0.02,
+          "3": 0.72,
+          "4": 0.25
+        }
+      }
+    },
+    "EC-005": {
+      "problem": {
+        "type": "choice",
+        "choice": "MERCHANT_MISMATCH",
+        "confidence": 0.91,
+        "probabilities": {
+          "AMOUNT_INFLATED": 0.01,
+          "DATE_MISMATCH": 0.01,
+          "MERCHANT_MISMATCH": 0.93,
+          "ALCOHOL": 0.05,
+          "NONE": 0
+        }
+      },
+      "approve": {
+        "type": "noul",
+        "noul": 0
+      },
+      "concern": {
+        "type": "score",
+        "score": 2.99,
+        "confidence": 0.96,
+        "probabilities": {
+          "0": 0,
+          "1": 0.01,
+          "2": 0.01,
+          "3": 0.96,
+          "4": 0.02
+        }
+      }
+    },
+    "EC-006": {
+      "problem": {
+        "type": "choice",
+        "choice": "MERCHANT_MISMATCH",
+        "confidence": 1,
+        "probabilities": {
+          "AMOUNT_INFLATED": 0,
+          "DATE_MISMATCH": 0,
+          "MERCHANT_MISMATCH": 1,
+          "ALCOHOL": 0,
+          "NONE": 0
+        }
+      },
+      "approve": {
+        "type": "noul",
+        "noul": 0
+      },
+      "concern": {
+        "type": "score",
+        "score": 2.97,
+        "confidence": 0.98,
+        "probabilities": {
+          "0": 0,
+          "1": 0.01,
+          "2": 0.01,
+          "3": 0.98,
+          "4": 0
+        }
+      }
+    },
+    "EC-007": {
+      "problem": {
+        "type": "choice",
+        "choice": "DATE_MISMATCH",
+        "confidence": 1,
+        "probabilities": {
+          "AMOUNT_INFLATED": 0,
+          "DATE_MISMATCH": 1,
+          "MERCHANT_MISMATCH": 0,
+          "ALCOHOL": 0,
+          "NONE": 0
+        }
+      },
+      "approve": {
+        "type": "noul",
+        "noul": 0
+      },
+      "concern": {
+        "type": "score",
+        "score": 2.85,
+        "confidence": 0.86,
+        "probabilities": {
+          "0": 0,
+          "1": 0.04,
+          "2": 0.08,
+          "3": 0.87,
+          "4": 0.01
+        }
+      }
+    },
+    "EC-008": {
+      "problem": {
+        "type": "choice",
+        "choice": "DATE_MISMATCH",
+        "confidence": 0.99,
+        "probabilities": {
+          "AMOUNT_INFLATED": 0.01,
+          "DATE_MISMATCH": 0.99,
+          "MERCHANT_MISMATCH": 0,
+          "ALCOHOL": 0,
+          "NONE": 0
+        }
+      },
+      "approve": {
+        "type": "noul",
+        "noul": 0
+      },
+      "concern": {
+        "type": "score",
+        "score": 3,
+        "confidence": 0.98,
+        "probabilities": {
+          "0": 0,
+          "1": 0,
+          "2": 0.01,
+          "3": 0.98,
+          "4": 0.01
+        }
+      }
+    },
+    "EC-009": {
+      "problem": {
+        "type": "choice",
+        "choice": "NONE",
+        "confidence": 0.94,
+        "probabilities": {
+          "AMOUNT_INFLATED": 0.01,
+          "DATE_MISMATCH": 0.01,
+          "MERCHANT_MISMATCH": 0.01,
+          "ALCOHOL": 0.02,
+          "NONE": 0.95
+        }
+      },
+      "approve": {
+        "type": "noul",
+        "noul": 0.97
+      },
+      "concern": {
+        "type": "score",
+        "score": 0.46,
+        "confidence": 0.62,
+        "probabilities": {
+          "0": 0.81,
+          "1": 0.05,
+          "2": 0.02,
+          "3": 0.11,
+          "4": 0.01
+        }
+      }
+    },
+    "EC-010": {
+      "problem": {
+        "type": "choice",
+        "choice": "MERCHANT_MISMATCH",
+        "confidence": 0.82,
+        "probabilities": {
+          "AMOUNT_INFLATED": 0.03,
+          "DATE_MISMATCH": 0.09,
+          "MERCHANT_MISMATCH": 0.86,
+          "ALCOHOL": 0.01,
+          "NONE": 0.01
+        }
+      },
+      "approve": {
+        "type": "noul",
+        "noul": 0
+      },
+      "concern": {
+        "type": "score",
+        "score": 3.03,
+        "confidence": 0.98,
+        "probabilities": {
+          "0": 0,
+          "1": 0,
+          "2": 0,
+          "3": 0.97,
+          "4": 0.03
+        }
+      }
+    },
+    "EC-011": {
+      "problem": {
+        "type": "choice",
+        "choice": "ALCOHOL",
+        "confidence": 1,
+        "probabilities": {
+          "AMOUNT_INFLATED": 0,
+          "DATE_MISMATCH": 0,
+          "MERCHANT_MISMATCH": 0,
+          "ALCOHOL": 1,
+          "NONE": 0
+        }
+      },
+      "approve": {
+        "type": "noul",
+        "noul": 0
+      },
+      "concern": {
+        "type": "score",
+        "score": 3.01,
+        "confidence": 0.99,
+        "probabilities": {
+          "0": 0,
+          "1": 0,
+          "2": 0,
+          "3": 0.99,
+          "4": 0.01
+        }
+      }
+    },
+    "EC-012": {
+      "problem": {
+        "type": "choice",
+        "choice": "NONE",
+        "confidence": 0.96,
+        "probabilities": {
+          "AMOUNT_INFLATED": 0.01,
+          "DATE_MISMATCH": 0.01,
+          "MERCHANT_MISMATCH": 0,
+          "ALCOHOL": 0.01,
+          "NONE": 0.97
+        }
+      },
+      "approve": {
+        "type": "noul",
+        "noul": 1
+      },
+      "concern": {
+        "type": "score",
+        "score": 0.12,
+        "confidence": 0.9,
+        "probabilities": {
+          "0": 0.93,
+          "1": 0.04,
+          "2": 0.01,
+          "3": 0.02,
+          "4": 0
+        }
+      }
+    },
+    "EC-013": {
+      "problem": {
+        "type": "choice",
+        "choice": "AMOUNT_INFLATED",
+        "confidence": 0.8,
+        "probabilities": {
+          "AMOUNT_INFLATED": 0.84,
+          "DATE_MISMATCH": 0.03,
+          "MERCHANT_MISMATCH": 0.02,
+          "ALCOHOL": 0.01,
+          "NONE": 0.1
+        }
+      },
+      "approve": {
+        "type": "noul",
+        "noul": 0
+      },
+      "concern": {
+        "type": "score",
+        "score": 2.9,
+        "confidence": 0.92,
+        "probabilities": {
+          "0": 0,
+          "1": 0.04,
+          "2": 0.02,
+          "3": 0.94,
+          "4": 0
+        }
+      }
+    },
+    "EC-014": {
+      "problem": {
+        "type": "choice",
+        "choice": "ALCOHOL",
+        "confidence": 1,
+        "probabilities": {
+          "AMOUNT_INFLATED": 0,
+          "DATE_MISMATCH": 0,
+          "MERCHANT_MISMATCH": 0,
+          "ALCOHOL": 1,
+          "NONE": 0
+        }
+      },
+      "approve": {
+        "type": "noul",
+        "noul": 0
+      },
+      "concern": {
+        "type": "score",
+        "score": 3.01,
+        "confidence": 0.99,
+        "probabilities": {
+          "0": 0,
+          "1": 0,
+          "2": 0,
+          "3": 0.99,
+          "4": 0.01
+        }
+      }
+    },
+    "EC-015": {
+      "problem": {
+        "type": "choice",
+        "choice": "AMOUNT_INFLATED",
+        "confidence": 0.71,
+        "probabilities": {
+          "AMOUNT_INFLATED": 0.77,
+          "DATE_MISMATCH": 0.06,
+          "MERCHANT_MISMATCH": 0.02,
+          "ALCOHOL": 0.01,
+          "NONE": 0.14
+        }
+      },
+      "approve": {
+        "type": "noul",
+        "noul": 0
+      },
+      "concern": {
+        "type": "score",
+        "score": 2.54,
+        "confidence": 0.58,
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.19,
+          "2": 0.07,
+          "3": 0.71,
+          "4": 0.02
+        }
+      }
+    },
+    "EC-016": {
+      "problem": {
+        "type": "choice",
+        "choice": "DATE_MISMATCH",
+        "confidence": 0.98,
+        "probabilities": {
+          "AMOUNT_INFLATED": 0.01,
+          "DATE_MISMATCH": 0.98,
+          "MERCHANT_MISMATCH": 0,
+          "ALCOHOL": 0,
+          "NONE": 0.01
+        }
+      },
+      "approve": {
+        "type": "noul",
+        "noul": 0
+      },
+      "concern": {
+        "type": "score",
+        "score": 2.96,
+        "confidence": 0.95,
+        "probabilities": {
+          "0": 0,
+          "1": 0.01,
+          "2": 0.03,
+          "3": 0.95,
+          "4": 0.01
+        }
+      }
+    },
+    "EC-017": {
+      "problem": {
+        "type": "choice",
+        "choice": "NONE",
+        "confidence": 0.95,
+        "probabilities": {
+          "AMOUNT_INFLATED": 0.01,
+          "DATE_MISMATCH": 0.01,
+          "MERCHANT_MISMATCH": 0.01,
+          "ALCOHOL": 0.01,
+          "NONE": 0.96
+        }
+      },
+      "approve": {
+        "type": "noul",
+        "noul": 0.99
+      },
+      "concern": {
+        "type": "score",
+        "score": 0.13,
+        "confidence": 0.89,
+        "probabilities": {
+          "0": 0.9,
+          "1": 0.08,
+          "2": 0.01,
+          "3": 0.01,
+          "4": 0
+        }
+      }
+    },
+    "EC-018": {
+      "problem": {
+        "type": "choice",
+        "choice": "AMOUNT_INFLATED",
+        "confidence": 0.85,
+        "probabilities": {
+          "AMOUNT_INFLATED": 0.88,
+          "DATE_MISMATCH": 0.03,
+          "MERCHANT_MISMATCH": 0.01,
+          "ALCOHOL": 0,
+          "NONE": 0.08
+        }
+      },
+      "approve": {
+        "type": "noul",
+        "noul": 0
+      },
+      "concern": {
+        "type": "score",
+        "score": 2.87,
+        "confidence": 0.89,
+        "probabilities": {
+          "0": 0,
+          "1": 0.04,
+          "2": 0.05,
+          "3": 0.91,
+          "4": 0
+        }
+      }
+    },
+    "EC-019": {
+      "problem": {
+        "type": "choice",
+        "choice": "ALCOHOL",
+        "confidence": 1,
+        "probabilities": {
+          "AMOUNT_INFLATED": 0,
+          "DATE_MISMATCH": 0,
+          "MERCHANT_MISMATCH": 0,
+          "ALCOHOL": 1,
+          "NONE": 0
+        }
+      },
+      "approve": {
+        "type": "noul",
+        "noul": 0
+      },
+      "concern": {
+        "type": "score",
+        "score": 3.01,
+        "confidence": 0.99,
+        "probabilities": {
+          "0": 0,
+          "1": 0,
+          "2": 0,
+          "3": 0.99,
+          "4": 0.01
+        }
+      }
+    },
+    "EC-020": {
+      "problem": {
+        "type": "choice",
+        "choice": "ALCOHOL",
+        "confidence": 0.99,
+        "probabilities": {
+          "AMOUNT_INFLATED": 0.01,
+          "DATE_MISMATCH": 0,
+          "MERCHANT_MISMATCH": 0,
+          "ALCOHOL": 0.99,
+          "NONE": 0
+        }
+      },
+      "approve": {
+        "type": "noul",
+        "noul": 0
+      },
+      "concern": {
+        "type": "score",
+        "score": 3,
+        "confidence": 1,
+        "probabilities": {
+          "0": 0,
+          "1": 0,
+          "2": 0,
+          "3": 1,
+          "4": 0
+        }
+      }
+    },
+    "EC-021": {
+      "problem": {
+        "type": "choice",
+        "choice": "ALCOHOL",
+        "confidence": 1,
+        "probabilities": {
+          "AMOUNT_INFLATED": 0,
+          "DATE_MISMATCH": 0,
+          "MERCHANT_MISMATCH": 0,
+          "ALCOHOL": 1,
+          "NONE": 0
+        }
+      },
+      "approve": {
+        "type": "noul",
+        "noul": 0
+      },
+      "concern": {
+        "type": "score",
+        "score": 3,
+        "confidence": 1,
+        "probabilities": {
+          "0": 0,
+          "1": 0,
+          "2": 0,
+          "3": 1,
+          "4": 0
+        }
+      }
+    },
+    "EC-022": {
+      "problem": {
+        "type": "choice",
+        "choice": "DATE_MISMATCH",
+        "confidence": 0.99,
+        "probabilities": {
+          "AMOUNT_INFLATED": 0.01,
+          "DATE_MISMATCH": 0.99,
+          "MERCHANT_MISMATCH": 0,
+          "ALCOHOL": 0,
+          "NONE": 0
+        }
+      },
+      "approve": {
+        "type": "noul",
+        "noul": 0
+      },
+      "concern": {
+        "type": "score",
+        "score": 2.62,
+        "confidence": 0.65,
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.11,
+          "2": 0.15,
+          "3": 0.71,
+          "4": 0.02
+        }
+      }
+    },
+    "EC-023": {
+      "problem": {
+        "type": "choice",
+        "choice": "ALCOHOL",
+        "confidence": 1,
+        "probabilities": {
+          "AMOUNT_INFLATED": 0,
+          "DATE_MISMATCH": 0,
+          "MERCHANT_MISMATCH": 0,
+          "ALCOHOL": 1,
+          "NONE": 0
+        }
+      },
+      "approve": {
+        "type": "noul",
+        "noul": 0
+      },
+      "concern": {
+        "type": "score",
+        "score": 3,
+        "confidence": 1,
+        "probabilities": {
+          "0": 0,
+          "1": 0,
+          "2": 0,
+          "3": 1,
+          "4": 0
+        }
+      }
+    },
+    "EC-024": {
+      "problem": {
+        "type": "choice",
+        "choice": "AMOUNT_INFLATED",
+        "confidence": 0.76,
+        "probabilities": {
+          "AMOUNT_INFLATED": 0.81,
+          "DATE_MISMATCH": 0.03,
+          "MERCHANT_MISMATCH": 0.03,
+          "ALCOHOL": 0.01,
+          "NONE": 0.12
+        }
+      },
+      "approve": {
+        "type": "noul",
+        "noul": 0
+      },
+      "concern": {
+        "type": "score",
+        "score": 2.96,
+        "confidence": 0.95,
+        "probabilities": {
+          "0": 0,
+          "1": 0.02,
+          "2": 0.01,
+          "3": 0.96,
+          "4": 0.01
+        }
+      }
+    },
+    "EC-025": {
+      "problem": {
+        "type": "choice",
+        "choice": "NONE",
+        "confidence": 0.96,
+        "probabilities": {
+          "AMOUNT_INFLATED": 0.01,
+          "DATE_MISMATCH": 0,
+          "MERCHANT_MISMATCH": 0,
+          "ALCOHOL": 0.02,
+          "NONE": 0.97
+        }
+      },
+      "approve": {
+        "type": "noul",
+        "noul": 0.99
+      },
+      "concern": {
+        "type": "score",
+        "score": 0.37,
+        "confidence": 0.69,
+        "probabilities": {
+          "0": 0.83,
+          "1": 0.06,
+          "2": 0.03,
+          "3": 0.07,
+          "4": 0.01
+        }
+      }
+    },
+    "EC-026": {
+      "problem": {
+        "type": "choice",
+        "choice": "MERCHANT_MISMATCH",
+        "confidence": 0.99,
+        "probabilities": {
+          "AMOUNT_INFLATED": 0,
+          "DATE_MISMATCH": 0.01,
+          "MERCHANT_MISMATCH": 0.99,
+          "ALCOHOL": 0,
+          "NONE": 0
+        }
+      },
+      "approve": {
+        "type": "noul",
+        "noul": 0
+      },
+      "concern": {
+        "type": "score",
+        "score": 2.97,
+        "confidence": 0.94,
+        "probabilities": {
+          "0": 0,
+          "1": 0.01,
+          "2": 0.03,
+          "3": 0.94,
+          "4": 0.02
+        }
+      }
+    },
+    "EC-027": {
+      "problem": {
+        "type": "choice",
+        "choice": "ALCOHOL",
+        "confidence": 1,
+        "probabilities": {
+          "AMOUNT_INFLATED": 0,
+          "DATE_MISMATCH": 0,
+          "MERCHANT_MISMATCH": 0,
+          "ALCOHOL": 1,
+          "NONE": 0
+        }
+      },
+      "approve": {
+        "type": "noul",
+        "noul": 0
+      },
+      "concern": {
+        "type": "score",
+        "score": 3.01,
+        "confidence": 0.99,
+        "probabilities": {
+          "0": 0,
+          "1": 0,
+          "2": 0,
+          "3": 0.99,
+          "4": 0.01
+        }
+      }
+    },
+    "EC-028": {
+      "problem": {
+        "type": "choice",
+        "choice": "AMOUNT_INFLATED",
+        "confidence": 0.76,
+        "probabilities": {
+          "AMOUNT_INFLATED": 0.81,
+          "DATE_MISMATCH": 0.01,
+          "MERCHANT_MISMATCH": 0.02,
+          "ALCOHOL": 0.01,
+          "NONE": 0.15
+        }
+      },
+      "approve": {
+        "type": "noul",
+        "noul": 0
+      },
+      "concern": {
+        "type": "score",
+        "score": 2.88,
+        "confidence": 0.9,
+        "probabilities": {
+          "0": 0,
+          "1": 0.04,
+          "2": 0.04,
+          "3": 0.92,
+          "4": 0
+        }
+      }
+    },
+    "EC-029": {
+      "problem": {
+        "type": "choice",
+        "choice": "DATE_MISMATCH",
+        "confidence": 0.99,
+        "probabilities": {
+          "AMOUNT_INFLATED": 0.01,
+          "DATE_MISMATCH": 0.99,
+          "MERCHANT_MISMATCH": 0,
+          "ALCOHOL": 0,
+          "NONE": 0
+        }
+      },
+      "approve": {
+        "type": "noul",
+        "noul": 0
+      },
+      "concern": {
+        "type": "score",
+        "score": 2.68,
+        "confidence": 0.73,
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.08,
+          "2": 0.13,
+          "3": 0.78,
+          "4": 0
+        }
+      }
+    },
+    "EC-030": {
+      "problem": {
+        "type": "choice",
+        "choice": "NONE",
+        "confidence": 0.96,
+        "probabilities": {
+          "AMOUNT_INFLATED": 0.01,
+          "DATE_MISMATCH": 0.01,
+          "MERCHANT_MISMATCH": 0,
+          "ALCOHOL": 0.01,
+          "NONE": 0.97
+        }
+      },
+      "approve": {
+        "type": "noul",
+        "noul": 1
+      },
+      "concern": {
+        "type": "score",
+        "score": 0.24,
+        "confidence": 0.8,
+        "probabilities": {
+          "0": 0.87,
+          "1": 0.07,
+          "2": 0.02,
+          "3": 0.03,
+          "4": 0.01
+        }
+      }
+    },
+    "EC-031": {
+      "problem": {
+        "type": "choice",
+        "choice": "NONE",
+        "confidence": 0.9,
+        "probabilities": {
+          "AMOUNT_INFLATED": 0.01,
+          "DATE_MISMATCH": 0.01,
+          "MERCHANT_MISMATCH": 0.01,
+          "ALCOHOL": 0.05,
+          "NONE": 0.92
+        }
+      },
+      "approve": {
+        "type": "noul",
+        "noul": 0.01
+      },
+      "concern": {
+        "type": "score",
+        "score": 0.12,
+        "confidence": 0.9,
+        "probabilities": {
+          "0": 0.93,
+          "1": 0.04,
+          "2": 0.01,
+          "3": 0.02,
+          "4": 0
+        }
+      }
+    },
+    "EC-032": {
+      "problem": {
+        "type": "choice",
+        "choice": "DATE_MISMATCH",
+        "confidence": 0.99,
+        "probabilities": {
+          "AMOUNT_INFLATED": 0.01,
+          "DATE_MISMATCH": 0.99,
+          "MERCHANT_MISMATCH": 0,
+          "ALCOHOL": 0,
+          "NONE": 0
+        }
+      },
+      "approve": {
+        "type": "noul",
+        "noul": 0
+      },
+      "concern": {
+        "type": "score",
+        "score": 2.98,
+        "confidence": 0.95,
+        "probabilities": {
+          "0": 0,
+          "1": 0.01,
+          "2": 0.02,
+          "3": 0.95,
+          "4": 0.02
+        }
+      }
+    },
+    "EC-033": {
+      "problem": {
+        "type": "choice",
+        "choice": "AMOUNT_INFLATED",
+        "confidence": 0.96,
+        "probabilities": {
+          "AMOUNT_INFLATED": 0.97,
+          "DATE_MISMATCH": 0.01,
+          "MERCHANT_MISMATCH": 0,
+          "ALCOHOL": 0,
+          "NONE": 0.02
+        }
+      },
+      "approve": {
+        "type": "noul",
+        "noul": 0
+      },
+      "concern": {
+        "type": "score",
+        "score": 2.97,
+        "confidence": 0.94,
+        "probabilities": {
+          "0": 0,
+          "1": 0.02,
+          "2": 0.01,
+          "3": 0.95,
+          "4": 0.02
+        }
+      }
+    },
+    "EC-034": {
+      "problem": {
+        "type": "choice",
+        "choice": "MERCHANT_MISMATCH",
+        "confidence": 1,
+        "probabilities": {
+          "AMOUNT_INFLATED": 0,
+          "DATE_MISMATCH": 0,
+          "MERCHANT_MISMATCH": 1,
+          "ALCOHOL": 0,
+          "NONE": 0
+        }
+      },
+      "approve": {
+        "type": "noul",
+        "noul": 0
+      },
+      "concern": {
+        "type": "score",
+        "score": 2.98,
+        "confidence": 0.98,
+        "probabilities": {
+          "0": 0,
+          "1": 0,
+          "2": 0.02,
+          "3": 0.98,
+          "4": 0
+        }
+      }
+    },
+    "EC-035": {
+      "problem": {
+        "type": "choice",
+        "choice": "AMOUNT_INFLATED",
+        "confidence": 0.66,
+        "probabilities": {
+          "AMOUNT_INFLATED": 0.73,
+          "DATE_MISMATCH": 0.02,
+          "MERCHANT_MISMATCH": 0.04,
+          "ALCOHOL": 0.01,
+          "NONE": 0.2
+        }
+      },
+      "approve": {
+        "type": "noul",
+        "noul": 0
+      },
+      "concern": {
+        "type": "score",
+        "score": 2.7,
+        "confidence": 0.68,
+        "probabilities": {
+          "0": 0.04,
+          "1": 0.08,
+          "2": 0.06,
+          "3": 0.78,
+          "4": 0.04
+        }
+      }
+    },
+    "EC-036": {
+      "problem": {
+        "type": "choice",
+        "choice": "MERCHANT_MISMATCH",
+        "confidence": 0.96,
+        "probabilities": {
+          "AMOUNT_INFLATED": 0.01,
+          "DATE_MISMATCH": 0.02,
+          "MERCHANT_MISMATCH": 0.97,
+          "ALCOHOL": 0,
+          "NONE": 0
+        }
+      },
+      "approve": {
+        "type": "noul",
+        "noul": 0
+      },
+      "concern": {
+        "type": "score",
+        "score": 2.99,
+        "confidence": 0.99,
+        "probabilities": {
+          "0": 0,
+          "1": 0,
+          "2": 0.01,
+          "3": 0.99,
+          "4": 0
+        }
+      }
+    },
+    "EC-037": {
+      "problem": {
+        "type": "choice",
+        "choice": "NONE",
+        "confidence": 0.96,
+        "probabilities": {
+          "AMOUNT_INFLATED": 0.01,
+          "DATE_MISMATCH": 0,
+          "MERCHANT_MISMATCH": 0.01,
+          "ALCOHOL": 0.01,
+          "NONE": 0.97
+        }
+      },
+      "approve": {
+        "type": "noul",
+        "noul": 0.17
+      },
+      "concern": {
+        "type": "score",
+        "score": 0.7,
+        "confidence": 0.42,
+        "probabilities": {
+          "0": 0.7,
+          "1": 0.1,
+          "2": 0.03,
+          "3": 0.14,
+          "4": 0.03
+        }
+      }
+    },
+    "EC-038": {
+      "problem": {
+        "type": "choice",
+        "choice": "NONE",
+        "confidence": 0.94,
+        "probabilities": {
+          "AMOUNT_INFLATED": 0.01,
+          "DATE_MISMATCH": 0.01,
+          "MERCHANT_MISMATCH": 0.01,
+          "ALCOHOL": 0.02,
+          "NONE": 0.95
+        }
+      },
+      "approve": {
+        "type": "noul",
+        "noul": 1
+      },
+      "concern": {
+        "type": "score",
+        "score": 0.27,
+        "confidence": 0.77,
+        "probabilities": {
+          "0": 0.83,
+          "1": 0.11,
+          "2": 0.02,
+          "3": 0.04,
+          "4": 0
+        }
+      }
+    },
+    "EC-039": {
+      "problem": {
+        "type": "choice",
+        "choice": "ALCOHOL",
+        "confidence": 1,
+        "probabilities": {
+          "AMOUNT_INFLATED": 0,
+          "DATE_MISMATCH": 0,
+          "MERCHANT_MISMATCH": 0,
+          "ALCOHOL": 1,
+          "NONE": 0
+        }
+      },
+      "approve": {
+        "type": "noul",
+        "noul": 0
+      },
+      "concern": {
+        "type": "score",
+        "score": 3,
+        "confidence": 1,
+        "probabilities": {
+          "0": 0,
+          "1": 0,
+          "2": 0,
+          "3": 1,
+          "4": 0
+        }
+      }
+    },
+    "EC-040": {
+      "problem": {
+        "type": "choice",
+        "choice": "DATE_MISMATCH",
+        "confidence": 0.96,
+        "probabilities": {
+          "AMOUNT_INFLATED": 0.01,
+          "DATE_MISMATCH": 0.97,
+          "MERCHANT_MISMATCH": 0.01,
+          "ALCOHOL": 0,
+          "NONE": 0.01
+        }
+      },
+      "approve": {
+        "type": "noul",
+        "noul": 0
+      },
+      "concern": {
+        "type": "score",
+        "score": 2.82,
+        "confidence": 0.83,
+        "probabilities": {
+          "0": 0,
+          "1": 0.04,
+          "2": 0.11,
+          "3": 0.84,
+          "4": 0.01
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,321 @@
+{
+  "demo": "produce-check",
+  "provider": "openai",
+  "model": "gpt-6-luna",
+  "recordedAt": "2026-10-11",
+  "source": "scripts/record-demo.js",
+  "usage": {
+    "input_tokens": 13619,
+    "output_tokens": 0
+  },
+  "answers": {
+    "PR-01": {
+      "condition": {
+        "type": "choice",
+        "choice": "ROTTEN",
+        "confidence": 0.99,
+        "probabilities": {
+          "FRESH": 0.01,
+          "ROTTEN": 0.99,
+          "MOULDY": 0
+        }
+      },
+      "reject": {
+        "type": "noul",
+        "noul": 1
+      },
+      "spoilage": {
+        "type": "score",
+        "score": 3.5,
+        "confidence": 0.58,
+        "probabilities": {
+          "0": 0,
+          "1": 0,
+          "2": 0,
+          "3": 0.5,
+          "4": 0.5
+        }
+      }
+    },
+    "PR-02": {
+      "condition": {
+        "type": "choice",
+        "choice": "FRESH",
+        "confidence": 0.97,
+        "probabilities": {
+          "FRESH": 0.98,
+          "ROTTEN": 0.01,
+          "MOULDY": 0.01
+        }
+      },
+      "reject": {
+        "type": "noul",
+        "noul": 0.05
+      },
+      "spoilage": {
+        "type": "score",
+        "score": 0.89,
+        "confidence": 0.91,
+        "probabilities": {
+          "0": 0.11,
+          "1": 0.89,
+          "2": 0,
+          "3": 0,
+          "4": 0
+        }
+      }
+    },
+    "PR-03": {
+      "condition": {
+        "type": "choice",
+        "choice": "ROTTEN",
+        "confidence": 0.93,
+        "probabilities": {
+          "FRESH": 0.03,
+          "ROTTEN": 0.95,
+          "MOULDY": 0.02
+        }
+      },
+      "reject": {
+        "type": "noul",
+        "noul": 1
+      },
+      "spoilage": {
+        "type": "score",
+        "score": 3.23,
+        "confidence": 0.77,
+        "probabilities": {
+          "0": 0,
+          "1": 0,
+          "2": 0.02,
+          "3": 0.73,
+          "4": 0.25
+        }
+      }
+    },
+    "PR-04": {
+      "condition": {
+        "type": "choice",
+        "choice": "FRESH",
+        "confidence": 0.86,
+        "probabilities": {
+          "FRESH": 0.91,
+          "ROTTEN": 0.08,
+          "MOULDY": 0.01
+        }
+      },
+      "reject": {
+        "type": "noul",
+        "noul": 0.09
+      },
+      "spoilage": {
+        "type": "score",
+        "score": 1.16,
+        "confidence": 0.78,
+        "probabilities": {
+          "0": 0.05,
+          "1": 0.77,
+          "2": 0.15,
+          "3": 0.03,
+          "4": 0
+        }
+      }
+    },
+    "PR-05": {
+      "condition": {
+        "type": "choice",
+        "choice": "MOULDY",
+        "confidence": 1,
+        "probabilities": {
+          "FRESH": 0,
+          "ROTTEN": 0,
+          "MOULDY": 1
+        }
+      },
+      "reject": {
+        "type": "noul",
+        "noul": 1
+      },
+      "spoilage": {
+        "type": "score",
+        "score": 3.7,
+        "confidence": 0.75,
+        "probabilities": {
+          "0": 0,
+          "1": 0,
+          "2": 0,
+          "3": 0.3,
+          "4": 0.7
+        }
+      }
+    },
+    "PR-06": {
+      "condition": {
+        "type": "choice",
+        "choice": "FRESH",
+        "confidence": 1,
+        "probabilities": {
+          "FRESH": 1,
+          "ROTTEN": 0,
+          "MOULDY": 0
+        }
+      },
+      "reject": {
+        "type": "noul",
+        "noul": 0
+      },
+      "spoilage": {
+        "type": "score",
+        "score": 0.66,
+        "confidence": 0.72,
+        "probabilities": {
+          "0": 0.34,
+          "1": 0.66,
+          "2": 0,
+          "3": 0,
+          "4": 0
+        }
+      }
+    },
+    "PR-07": {
+      "condition": {
+        "type": "choice",
+        "choice": "MOULDY",
+        "confidence": 1,
+        "probabilities": {
+          "FRESH": 0,
+          "ROTTEN": 0,
+          "MOULDY": 1
+        }
+      },
+      "reject": {
+        "type": "noul",
+        "noul": 1
+      },
+      "spoilage": {
+        "type": "score",
+        "score": 3.8,
+        "confidence": 0.83,
+        "probabilities": {
+          "0": 0,
+          "1": 0,
+          "2": 0,
+          "3": 0.2,
+          "4": 0.8
+        }
+      }
+    },
+    "PR-08": {
+      "condition": {
+        "type": "choice",
+        "choice": "FRESH",
+        "confidence": 0.64,
+        "probabilities": {
+          "FRESH": 0.76,
+          "ROTTEN": 0.24,
+          "MOULDY": 0
+        }
+      },
+      "reject": {
+        "type": "noul",
+        "noul": 0.14
+      },
+      "spoilage": {
+        "type": "score",
+        "score": 1.99,
+        "confidence": 0.99,
+        "probabilities": {
+          "0": 0,
+          "1": 0.01,
+          "2": 0.99,
+          "3": 0,
+          "4": 0
+        }
+      }
+    },
+    "PR-09": {
+      "condition": {
+        "type": "choice",
+        "choice": "ROTTEN",
+        "confidence": 0.99,
+        "probabilities": {
+          "FRESH": 0.01,
+          "ROTTEN": 0.99,
+          "MOULDY": 0
+        }
+      },
+      "reject": {
+        "type": "noul",
+        "noul": 1
+      },
+      "spoilage": {
+        "type": "score",
+        "score": 3.89,
+        "confidence": 0.91,
+        "probabilities": {
+          "0": 0,
+          "1": 0,
+          "2": 0,
+          "3": 0.11,
+          "4": 0.89
+        }
+      }
+    },
+    "PR-10": {
+      "condition": {
+        "type": "choice",
+        "choice": "MOULDY",
+        "confidence": 1,
+        "probabilities": {
+          "FRESH": 0,
+          "ROTTEN": 0,
+          "MOULDY": 1
+        }
+      },
+      "reject": {
+        "type": "noul",
+        "noul": 1
+      },
+      "spoilage": {
+        "type": "score",
+        "score": 3.35,
+        "confidence": 0.71,
+        "probabilities": {
+          "0": 0,
+          "1": 0,
+          "2": 0,
+          "3": 0.65,
+          "4": 0.35
+        }
+      }
+    },
+    "PR-11": {
+      "condition": {
+        "type": "choice",
+        "choice": "FRESH",
+        "confidence": 1,
+        "probabilities": {
+          "FRESH": 1,
+          "ROTTEN": 0,
+          "MOULDY": 0
+        }
+      },
+      "reject": {
+        "type": "noul",
+        "noul": 0.04
+      },
+      "spoilage": {
+        "type": "score",
+        "score": 0.95,
+        "confidence": 0.96,
+        "probabilities": {
+          "0": 0.05,
+          "1": 0.95,
+          "2": 0,
+          "3": 0,
+          "4": 0
+        }
+      }
+    }
+  }
+}

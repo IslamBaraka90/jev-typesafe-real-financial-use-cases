@@ -1,0 +1,51 @@
+{
+  "id": "leaf-check",
+  "class": "cached-real",
+  "generatedAt": "2026-10-11",
+  "source": "Wikimedia Commons, openly licensed photographs",
+  "context": {
+    "setting": "A crop-insurance field check. The adjuster photographs a leaf and records whether the plant shows disease, and which kind."
+  },
+  "items": [
+    {
+      "id": "LF-01",
+      "image": "images/photos/leaf-mango-mildew.jpg",
+      "subject": "Mango leaf",
+      "credit": {
+        "author": "Scot Nelson, Wayne Nishijima",
+        "license": "Public domain",
+        "source": "https://commons.wikimedia.org/wiki/File:Mango_powdery_mildew_severe_leaf_blight_with_mycelium_1.jpg"
+      }
+    },
+    {
+      "id": "LF-02",
+      "image": "images/photos/leaf-healthy.jpg",
+      "subject": "Calathea leaves",
+      "credit": {
+        "author": "Saimum nazifa",
+        "license": "CC BY-SA 4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Greenary_leaf.jpg"
+      }
+    },
+    {
+      "id": "LF-03",
+      "image": "images/photos/leaf-ascochyta.jpg",
+      "subject": "Leaf",
+      "credit": {
+        "author": "Clemson University",
+        "license": "CC BY-SA 3.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Ascochyta_leaf_spot_sympton.jpg"
+      }
+    },
+    {
+      "id": "LF-04",
+      "image": "images/photos/leaf-grape-mildew.jpg",
+      "subject": "Grape leaf",
+      "credit": {
+        "author": "David B. Langston, University of Georgia",
+        "license": "Public domain",
+        "source": "https://commons.wikimedia.org/wiki/File:Downy_and_Powdery_mildew_on_grape_leaf.JPG"
+      }
+    }
+  ]
+}
