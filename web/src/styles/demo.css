@@ -837,3 +837,6 @@
 .image-view-figure { margin: 0; display: grid; gap: 6px; }
 .image-view-figure img { width: 100%; height: auto; max-height: 560px; object-fit: contain; border: 1px solid var(--border, #ddd); border-radius: 8px; background: #fff; }
 @media (max-width: 760px) { .image-view { grid-template-columns: minmax(0, 1fr); } }
+
+/* The decision-model switch above a demo's run. */
+.provider-bar { gap: 12px; flex-wrap: wrap; margin-bottom: 8px; }

@@ -5,7 +5,7 @@
 import { createHash } from 'node:crypto';
 import { agreement, matrixStats, reliability } from '../../demos/lib/metrics.js';
 import { loadDataset, loadLabels } from './dataset.js';
-import { defaultProvider, demoContext, fixtureAnswers, loadFixtures } from './demo-runner.js';
+import { defaultProvider, demoContext, fixtureAnswers, loadFixtures, PROVIDERS } from './demo-runner.js';
 import { humaniseKey, humaniseValue } from '../../web/src/lib/humanise.js';
 
 const hash = (value) => createHash('sha256').update(typeof value === 'string' ? value : JSON.stringify(value)).digest('hex').slice(0, 12);
@@ -42,8 +42,8 @@ export async function evaluateRun(demo, provider = defaultProvider(demo)) {
  * One scoreboard row. `dataset` and `questions` are content hashes: two runs are only comparable when
  * both match, because a changed dataset or a reworded question is a different test.
  */
-export async function scoreDemo(demo) {
-  const run = await evaluateRun(demo);
+export async function scoreDemo(demo, provider = defaultProvider(demo)) {
+  const run = await evaluateRun(demo, provider);
   const { dataset, fixtures, results, grades, report } = run;
   const stats = report?.matrix ? matrixStats(report.matrix) : null;
   const graded = agreement(grades);
@@ -71,6 +71,7 @@ export async function scoreDemo(demo) {
     domain: demo.domain,
     number: demo.present?.number ?? null,
     dataClass: demo.dataClass,
+    provider,
     run: { model: fixtures.model ?? null, recordedAt: fixtures.recordedAt ?? null, dataset: hash(dataset.items), questions: hash(demo.questions) },
     items: dataset.items.length,
     answered: results.length,
@@ -126,4 +127,23 @@ function showcaseOf(demo, { context, results, grades }) {
     verdict: verdict?.headline ?? result.evaluation?.label ?? null,
     agree: grade ? grade.agree : null,
   };
+}
+
+/** The few numbers the benchmark puts side by side for each model a demo was recorded on. */
+export async function scoreModels(demo) {
+  const models = {};
+  for (const provider of demo.providers ?? PROVIDERS) {
+    const row = await scoreDemo(demo, provider);
+    if (!row.answered) continue;
+    models[provider] = {
+      model: row.run.model,
+      recordedAt: row.run.recordedAt,
+      answered: row.answered,
+      graded: row.graded,
+      right: row.right,
+      interval: row.interval,
+      headline: row.headline ? { value: row.headline.value, display: row.headline.display } : null,
+    };
+  }
+  return models;
 }

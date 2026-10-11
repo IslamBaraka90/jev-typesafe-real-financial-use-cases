@@ -32,19 +32,19 @@ function indexLabels(labels, labelId) {
   return new Map(labels.map((label) => [idOf(label), label]).filter(([id]) => id !== undefined));
 }
 
-export function useDemoRun(demo, { live = false } = {}) {
+export function useDemoRun(demo, { live = false, provider = 'jev' } = {}) {
   const [state, dispatch] = useReducer(reducer, initial);
 
   useEffect(() => {
     let cancelled = false;
     const labels = demo.labels ? demo.labels().then((module) => module.default ?? module).catch(() => []) : Promise.resolve([]);
-    Promise.all([loadDemoData(demo), labels, loadFixtures(demo)])
+    Promise.all([loadDemoData(demo), labels, loadFixtures(demo, provider)])
       .then(([dataset, labelList, fixtures]) => !cancelled && dispatch({ type: 'loaded', dataset, labels: labelList, fixtures }))
       .catch((error) => !cancelled && dispatch({ type: 'failed', error: error.message }));
     return () => {
       cancelled = true;
     };
-  }, [demo.id]);
+  }, [demo.id, provider]);
 
   const context = useMemo(
     () => (state.dataset ? { ...(state.dataset.context ?? {}), items: state.dataset.items } : null),

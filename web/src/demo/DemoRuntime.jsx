@@ -12,6 +12,7 @@ import { KpiRow } from './widgets.jsx';
 import { useDemoRun } from '../hooks/useDemoRun.js';
 import { agreement, percent } from '../../../demos/lib/metrics.js';
 import { estimateRun, liveAvailable } from '../lib/mode.js';
+import { PROVIDER_BY_ID, useProvider } from '../lib/provider.js';
 import { navigate, useLocation } from '../lib/router.jsx';
 
 // One page shape for every demo, result first: the run's headline numbers, then one item with its
@@ -33,7 +34,10 @@ export function DemoRuntime({ demo }) {
   const { pathname, searchParams } = useLocation();
   const [live, setLive] = useState(false);
   const [confirmingLive, setConfirmingLive] = useState(false);
-  const run = useDemoRun(demo, { live });
+  const { provider, available, setProvider } = useProvider(demo);
+  // Live runs go through the local server, which calls Jev; OpenAI is shown from its recording only.
+  const canGoLive = liveAvailable && provider === 'jev';
+  const run = useDemoRun(demo, { live: live && canGoLive, provider });
   const [phase, setPhase] = useState('scored');
   const [revealed, setRevealed] = useState(Infinity);
   const [speed, setSpeed] = useState(2);
@@ -171,7 +175,26 @@ export function DemoRuntime({ demo }) {
 
   return (
     <div className="demo-runtime">
-      <RunChip demo={demo} run={run.run} live={live} items={items.length} graded={graded} />
+      <div className="row between provider-bar">
+        {available.length > 1 ? (
+          <Segmented
+            label="Decision model"
+            size="small"
+            options={available.map((entry) => ({ value: entry.id, label: entry.label }))}
+            value={provider}
+            onChange={(id) => {
+              setLive(false);
+              setProvider(id);
+            }}
+          />
+        ) : (
+          <span className="meta">
+            Recorded on <strong>{PROVIDER_BY_ID[provider].label}</strong> only
+          </span>
+        )}
+        <span className="meta">{PROVIDER_BY_ID[provider].note}</span>
+      </div>
+      <RunChip demo={demo} run={run.run} live={live && canGoLive} items={items.length} graded={graded} />
 
       {demo.caveat && <p className="callout warning demo-caveat">{demo.caveat}</p>}
 
@@ -318,7 +341,7 @@ export function DemoRuntime({ demo }) {
 
       <footer className="demo-foot">
         {run.dataset && <DataChip dataset={run.dataset} file={`demos/${demo.id}/data.json`} />}
-        {liveAvailable && (
+        {canGoLive && (
           <button type="button" className={`button ${live ? 'danger' : 'ghost'}`} onClick={() => (live ? setLive(false) : setConfirmingLive(true))} title="Live runs call the TypeSafe API with your key">
             <Icon name="bolt" />
             {live ? 'Live: on — back to the recorded run' : 'Run live'}

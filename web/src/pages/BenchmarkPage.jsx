@@ -27,6 +27,7 @@ function bestBaseline(row) {
 const modelScore = (row) => row.baselines.find((entry) => entry.model)?.value ?? row.metrics.accuracy ?? row.metrics.agreement ?? null;
 
 function AgreementBar({ row }) {
+  if (!row) return <span className="meta">Not recorded</span>;
   if (!row.graded) return <span className="meta">Not graded per item</span>;
   const share = row.right / row.graded;
   return (
@@ -75,15 +76,20 @@ export function BenchmarkPage() {
   }, [rows, sort]);
 
   const caveats = rows.filter((row) => row.caveat).length;
+  // The two models compared only where both answered the same graded items.
+  const shared = rows.filter((row) => row.models?.jev?.graded && row.models?.openai?.graded);
+  const total = (provider) => shared.reduce((sum, row) => ({ right: sum.right + row.models[provider].right, graded: sum.graded + row.models[provider].graded }), { right: 0, graded: 0 });
+  const head = { jev: total('jev'), openai: total('openai') };
+  const better = (provider, other) => shared.filter((row) => row.models[provider].right / row.models[provider].graded > row.models[other].right / row.models[other].graded + 0.005).length;
 
   return (
     <div className="stack benchmark">
       <div className="page-heading">
         <span className="eyebrow">Benchmark</span>
-        <h1>One model, fifty jobs, every answer graded</h1>
+        <h1>Two decision models, {summary.demos} jobs, every answer graded</h1>
         <p>
-          Each row is a recorded run scored by <code>npm run score</code>: the same evaluate, grade and report code the demo pages run, over the committed answers. Record a new model
-          version and this page shows what moved.
+          Every text demo is recorded on Jev and on OpenAI’s decisions API with the same questions; the image demos only on OpenAI, the one that reads pictures. Each run is scored by{' '}
+          <code>npm run score</code>: the same evaluate, grade and report code the demo pages run, over the committed answers.
         </p>
       </div>
 
@@ -103,14 +109,32 @@ export function BenchmarkPage() {
           </span>
         </article>
         <article>
-          <strong className="mono bench-model">{summary.models.join(', ') || '–'}</strong>
+          <strong className="mono bench-model">{summary.models.join(' · ') || '–'}</strong>
           <span className="meta">latest recording {summary.latest ? formatDate(summary.latest) : '–'}</span>
         </article>
       </section>
 
+      {shared.length > 0 && (
+        <section className="bench-summary bench-versus" aria-label="Jev and OpenAI on the same items">
+          <article>
+            <strong className="num">{percent(head.jev.right / head.jev.graded)}</strong>
+            <span className="meta">
+              Jev: {head.jev.right.toLocaleString('en-US')} of {head.jev.graded.toLocaleString('en-US')} graded items, ahead on {better('jev', 'openai')} of {shared.length} demos
+            </span>
+          </article>
+          <article>
+            <strong className="num">{percent(head.openai.right / head.openai.graded)}</strong>
+            <span className="meta">
+              OpenAI: {head.openai.right.toLocaleString('en-US')} of {head.openai.graded.toLocaleString('en-US')} on the same demos, ahead on {better('openai', 'jev')}
+            </span>
+          </article>
+        </section>
+      )}
+
       <div className="row between bench-tools">
         <p className="meta">
-          The shaded band on each bar is the 95% interval: with a few dozen items it is wide, and the bar should be read that way.
+          The shaded band on each bar is the 95% interval: with a few dozen items it is wide, and the bar should be read that way. The headline, alternative and calibration columns
+          are for Jev, or for OpenAI on the image demos.
           {caveats > 0 && ` ${caveats} demos carry a caveat about their dataset; it is on the demo page.`}
         </p>
         <Segmented label="Order" size="small" options={SORTS} value={sort} onChange={setSort} />
@@ -130,7 +154,8 @@ export function BenchmarkPage() {
                 <tr>
                   <th scope="col">Demo</th>
                   <th scope="col">Headline</th>
-                  <th scope="col">Matches ground truth</th>
+                  <th scope="col">Jev: matches ground truth</th>
+                  <th scope="col">OpenAI: matches ground truth</th>
                   <th scope="col">Against the best alternative</th>
                   <th scope="col" className="num">Calibration error</th>
                   <th scope="col">Since last run</th>
@@ -161,7 +186,10 @@ export function BenchmarkPage() {
                       <span className="meta bench-meta">{row.headline?.label}</span>
                     </td>
                     <td>
-                      <AgreementBar row={row} />
+                      <AgreementBar row={row.models?.jev} />
+                    </td>
+                    <td>
+                      <AgreementBar row={row.models?.openai} />
                     </td>
                     <td>
                       <Lift row={row} />
@@ -192,10 +220,10 @@ export function BenchmarkPage() {
         <h2>Running it again</h2>
         <ol className="bench-steps">
           <li>
-            <code>npm run record &lt;demo&gt;</code> asks the model every item again and replaces the pinned run. The run it replaces is kept under <code>benchmarks/runs/</code>.
+            <code>npm run record &lt;demo&gt;</code> asks Jev every item again, and <code>npm run record &lt;demo&gt; -- --provider openai</code> asks OpenAI; each replaces that model’s pinned run. Git keeps the run it replaces, and the history below keeps its scores.
           </li>
           <li>
-            <code>npm run score</code> re-scores all fifty offline, rewrites this page's data and appends the run to <code>benchmarks/history.json</code>. Two runs are compared only when
+            <code>npm run score</code> re-scores every demo on both models offline, rewrites this page's data and appends the run to <code>benchmarks/history.json</code>. Two runs are compared only when
             their dataset and questions hash the same: a changed dataset is a different test.
           </li>
           <li>

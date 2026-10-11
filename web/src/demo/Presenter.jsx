@@ -8,6 +8,7 @@ import { AnswersPanel, VerdictCard } from './panels.jsx';
 import { BaselineBars } from './ReportPanel.jsx';
 import { ItemView } from './views/index.jsx';
 import { DOMAIN_BY_ID } from '../../../demos/domains.js';
+import { useProvider } from '../lib/provider.js';
 import { useDemoRun } from '../hooks/useDemoRun.js';
 import { navigate, useLocation } from '../lib/router.jsx';
 
@@ -48,7 +49,8 @@ function fallbackStory(demo, run) {
 
 export function Presenter({ demo }) {
   const { pathname, searchParams } = useLocation();
-  const run = useDemoRun(demo);
+  const { provider } = useProvider(demo);
+  const run = useDemoRun(demo, { provider });
   const [revealed, setRevealed] = useState(0);
   const [copied, setCopied] = useState(false);
 

@@ -11,6 +11,18 @@
    "gpt-6-luna"
   ],
   "latest": "2026-10-11",
+  "byModel": {
+   "jev": {
+    "demos": 49,
+    "graded": 8911,
+    "right": 7436
+   },
+   "openai": {
+    "demos": 59,
+    "graded": 9189,
+    "right": 7168
+   }
+  },
   "gates": {
    "total": 0,
    "failed": 0
@@ -23,6 +35,7 @@
    "domain": "books",
    "number": 101,
    "dataClass": "synthetic",
+   "provider": "jev",
    "run": {
     "model": "jev-1.13.0",
     "recordedAt": "2026-09-18",
@@ -100,6 +113,38 @@
     "verdict": "Duplicate posting · send to a reviewer",
     "agree": true
    },
+   "models": {
+    "jev": {
+     "model": "jev-1.13.0",
+     "recordedAt": "2026-09-18",
+     "answered": 502,
+     "graded": 502,
+     "right": 424,
+     "interval": {
+      "low": 0.8103,
+      "high": 0.8737
+     },
+     "headline": {
+      "value": 0.8182,
+      "display": "9 of 11"
+     }
+    },
+    "openai": {
+     "model": "gpt-6-luna",
+     "recordedAt": "2026-10-11",
+     "answered": 502,
+     "graded": 502,
+     "right": 377,
+     "interval": {
+      "low": 0.7114,
+      "high": 0.7868
+     },
+     "headline": {
+      "value": 1,
+      "display": "11 of 11"
+     }
+    }
+   },
    "previous": null,
    "delta": null,
    "runs": 1
@@ -110,6 +155,7 @@
    "domain": "books",
    "number": 102,
    "dataClass": "synthetic",
+   "provider": "jev",
    "run": {
     "model": "jev-1.13.0",
     "recordedAt": "2026-09-19",
@@ -193,6 +239,38 @@
     "verdict": "Auto-clear to B-0015",
     "agree": true
    },
+   "models": {
+    "jev": {
+     "model": "jev-1.13.0",
+     "recordedAt": "2026-09-19",
+     "answered": 60,
+     "graded": 60,
+     "right": 60,
+     "interval": {
+      "low": 0.9398,
+      "high": 1
+     },
+     "headline": {
+      "value": 1,
+      "display": "60 of 60"
+     }
+    },
+    "openai": {
+     "model": "gpt-6-luna",
+     "recordedAt": "2026-10-11",
+     "answered": 60,
+     "graded": 60,
+     "right": 52,
+     "interval": {
+      "low": 0.7583,
+      "high": 0.9309
+     },
+     "headline": {
+      "value": 0.8667,
+      "display": "52 of 60"
+     }
+    }
+   },
    "previous": null,
    "delta": null,
    "runs": 1
@@ -203,6 +281,7 @@
    "domain": "books",
    "number": 103,
    "dataClass": "synthetic",
+   "provider": "jev",
    "run": {
     "model": "jev-1.13.0",
     "recordedAt": "2026-09-19",
@@ -280,6 +359,38 @@
     "verdict": "Post · 1,776.53 AED → 5700 Marketing",
     "agree": true
    },
+   "models": {
+    "jev": {
+     "model": "jev-1.13.0",
+     "recordedAt": "2026-09-19",
+     "answered": 400,
+     "graded": 400,
+     "right": 399,
+     "interval": {
+      "low": 0.986,
+      "high": 0.9996
+     },
+     "headline": {
+      "value": 0.9975,
+      "display": "99.8%"
+     }
+    },
+    "openai": {
+     "model": "gpt-6-luna",
+     "recordedAt": "2026-10-11",
+     "answered": 400,
+     "graded": 400,
+     "right": 399,
+     "interval": {
+      "low": 0.986,
+      "high": 0.9996
+     },
+     "headline": {
+      "value": 0.9975,
+      "display": "99.8%"
+     }
+    }
+   },
    "previous": null,
    "delta": null,
    "runs": 1
@@ -290,6 +401,7 @@
    "domain": "books",
    "number": 104,
    "dataClass": "synthetic",
+   "provider": "jev",
    "run": {
     "model": "jev-1.13.0",
     "recordedAt": "2026-09-19",
@@ -368,6 +480,38 @@
     "verdict": "Hold · partial delivery · $2,598.94",
     "agree": true
    },
+   "models": {
+    "jev": {
+     "model": "jev-1.13.0",
+     "recordedAt": "2026-09-19",
+     "answered": 150,
+     "graded": 150,
+     "right": 134,
+     "interval": {
+      "low": 0.8338,
+      "high": 0.9333
+     },
+     "headline": {
+      "value": 0.8933,
+      "display": "89.3%"
+     }
+    },
+    "openai": {
+     "model": "gpt-6-luna",
+     "recordedAt": "2026-10-11",
+     "answered": 150,
+     "graded": 150,
+     "right": 114,
+     "interval": {
+      "low": 0.6857,
+      "high": 0.8213
+     },
+     "headline": {
+      "value": 0.76,
+      "display": "76%"
+     }
+    }
+   },
    "previous": null,
    "delta": null,
    "runs": 1
@@ -378,6 +522,7 @@
    "domain": "books",
    "number": 105,
    "dataClass": "synthetic",
+   "provider": "jev",
    "run": {
     "model": "jev-1.13.0",
     "recordedAt": "2026-09-19",
@@ -462,6 +607,38 @@
     "verdict": "Blocks the close · missing accrual · CONTROLLER",
     "agree": true
    },
+   "models": {
+    "jev": {
+     "model": "jev-1.13.0",
+     "recordedAt": "2026-09-19",
+     "answered": 60,
+     "graded": 60,
+     "right": 57,
+     "interval": {
+      "low": 0.863,
+      "high": 0.9829
+     },
+     "headline": {
+      "value": 1,
+      "display": "13 of 13"
+     }
+    },
+    "openai": {
+     "model": "gpt-6-luna",
+     "recordedAt": "2026-10-11",
+     "answered": 60,
+     "graded": 60,
+     "right": 57,
+     "interval": {
+      "low": 0.863,
+      "high": 0.9829
+     },
+     "headline": {
+      "value": 1,
+      "display": "13 of 13"
+     }
+    }
+   },
    "previous": null,
    "delta": null,
    "runs": 1
@@ -472,6 +649,7 @@
    "domain": "orders",
    "number": 111,
    "dataClass": "synthetic",
+   "provider": "jev",
    "run": {
     "model": "jev-1.13.0",
     "recordedAt": "2026-09-19",
@@ -557,6 +735,38 @@
     "verdict": "Decline · reshipper",
     "agree": true
    },
+   "models": {
+    "jev": {
+     "model": "jev-1.13.0",
+     "recordedAt": "2026-09-19",
+     "answered": 300,
+     "graded": 300,
+     "right": 221,
+     "interval": {
+      "low": 0.6841,
+      "high": 0.7833
+     },
+     "headline": {
+      "value": 1,
+      "display": "9 of 9"
+     }
+    },
+    "openai": {
+     "model": "gpt-6-luna",
+     "recordedAt": "2026-10-11",
+     "answered": 300,
+     "graded": 300,
+     "right": 222,
+     "interval": {
+      "low": 0.6876,
+      "high": 0.7864
+     },
+     "headline": {
+      "value": 1,
+      "display": "9 of 9"
+     }
+    }
+   },
    "previous": null,
    "delta": null,
    "runs": 1
@@ -567,6 +777,7 @@
    "domain": "orders",
    "number": 112,
    "dataClass": "synthetic",
+   "provider": "jev",
    "run": {
     "model": "jev-1.13.0",
     "recordedAt": "2026-09-19",
@@ -652,6 +863,38 @@
     "verdict": "Block cash on delivery · serial refuser",
     "agree": true
    },
+   "models": {
+    "jev": {
+     "model": "jev-1.13.0",
+     "recordedAt": "2026-09-19",
+     "answered": 180,
+     "graded": 180,
+     "right": 173,
+     "interval": {
+      "low": 0.9219,
+      "high": 0.981
+     },
+     "headline": {
+      "value": 0.9611,
+      "display": "96.1%"
+     }
+    },
+    "openai": {
+     "model": "gpt-6-luna",
+     "recordedAt": "2026-10-11",
+     "answered": 180,
+     "graded": 180,
+     "right": 168,
+     "interval": {
+      "low": 0.8871,
+      "high": 0.9615
+     },
+     "headline": {
+      "value": 0.9333,
+      "display": "93.3%"
+     }
+    }
+   },
    "previous": null,
    "delta": null,
    "runs": 1
@@ -662,6 +905,7 @@
    "domain": "orders",
    "number": 113,
    "dataClass": "synthetic",
+   "provider": "jev",
    "run": {
     "model": "jev-1.13.0",
     "recordedAt": "2026-09-19",
@@ -747,6 +991,38 @@
     "verdict": "Refund now · £134.50",
     "agree": true
    },
+   "models": {
+    "jev": {
+     "model": "jev-1.13.0",
+     "recordedAt": "2026-09-19",
+     "answered": 220,
+     "graded": 220,
+     "right": 198,
+     "interval": {
+      "low": 0.8532,
+      "high": 0.933
+     },
+     "headline": {
+      "value": 0.9,
+      "display": "90%"
+     }
+    },
+    "openai": {
+     "model": "gpt-6-luna",
+     "recordedAt": "2026-10-11",
+     "answered": 220,
+     "graded": 220,
+     "right": 173,
+     "interval": {
+      "low": 0.7275,
+      "high": 0.8354
+     },
+     "headline": {
+      "value": 0.7864,
+      "display": "78.6%"
+     }
+    }
+   },
    "previous": null,
    "delta": null,
    "runs": 1
@@ -757,6 +1033,7 @@
    "domain": "orders",
    "number": 114,
    "dataClass": "synthetic",
+   "provider": "jev",
    "run": {
     "model": "jev-1.13.0",
     "recordedAt": "2026-09-19",
@@ -843,6 +1120,38 @@
     "verdict": "Gather more · delivery proof",
     "agree": true
    },
+   "models": {
+    "jev": {
+     "model": "jev-1.13.0",
+     "recordedAt": "2026-09-19",
+     "answered": 120,
+     "graded": 120,
+     "right": 99,
+     "interval": {
+      "low": 0.7472,
+      "high": 0.8826
+     },
+     "headline": {
+      "value": 0.825,
+      "display": "82.5%"
+     }
+    },
+    "openai": {
+     "model": "gpt-6-luna",
+     "recordedAt": "2026-10-11",
+     "answered": 120,
+     "graded": 120,
+     "right": 76,
+     "interval": {
+      "low": 0.5442,
+      "high": 0.7142
+     },
+     "headline": {
+      "value": 0.6333,
+      "display": "63.3%"
+     }
+    }
+   },
    "previous": null,
    "delta": null,
    "runs": 1
@@ -853,6 +1162,7 @@
    "domain": "orders",
    "number": 115,
    "dataClass": "synthetic",
+   "provider": "jev",
    "run": {
     "model": "jev-1.13.0",
     "recordedAt": "2026-09-19",
@@ -939,6 +1249,38 @@
     "verdict": "Review · high risk · £30,616 held",
     "agree": true
    },
+   "models": {
+    "jev": {
+     "model": "jev-1.13.0",
+     "recordedAt": "2026-09-19",
+     "answered": 140,
+     "graded": 140,
+     "right": 132,
+     "interval": {
+      "low": 0.8913,
+      "high": 0.9708
+     },
+     "headline": {
+      "value": 0,
+      "display": "0 of 11"
+     }
+    },
+    "openai": {
+     "model": "gpt-6-luna",
+     "recordedAt": "2026-10-11",
+     "answered": 138,
+     "graded": 138,
+     "right": 131,
+     "interval": {
+      "low": 0.899,
+      "high": 0.9752
+     },
+     "headline": {
+      "value": 0,
+      "display": "0 of 9"
+     }
+    }
+   },
    "previous": null,
    "delta": null,
    "runs": 1
@@ -949,6 +1291,7 @@
    "domain": "orders",
    "number": 116,
    "dataClass": "synthetic",
+   "provider": "jev",
    "run": {
     "model": "jev-1.13.0",
     "recordedAt": "2026-09-19",
@@ -1033,6 +1376,38 @@
     "verdict": "Courier at fault · contact customer",
     "agree": true
    },
+   "models": {
+    "jev": {
+     "model": "jev-1.13.0",
+     "recordedAt": "2026-09-19",
+     "answered": 250,
+     "graded": 250,
+     "right": 250,
+     "interval": {
+      "low": 0.9849,
+      "high": 1
+     },
+     "headline": {
+      "value": 1,
+      "display": "100%"
+     }
+    },
+    "openai": {
+     "model": "gpt-6-luna",
+     "recordedAt": "2026-10-11",
+     "answered": 250,
+     "graded": 250,
+     "right": 236,
+     "interval": {
+      "low": 0.9082,
+      "high": 0.9664
+     },
+     "headline": {
+      "value": 0.944,
+      "display": "94.4%"
+     }
+    }
+   },
    "previous": null,
    "delta": null,
    "runs": 1
@@ -1043,6 +1418,7 @@
    "domain": "fraud",
    "number": 121,
    "dataClass": "synthetic",
+   "provider": "jev",
    "run": {
     "model": "jev-1.13.0",
     "recordedAt": "2026-09-19",
@@ -1131,6 +1507,38 @@
     "verdict": "Block · stolen card",
     "agree": true
    },
+   "models": {
+    "jev": {
+     "model": "jev-1.13.0",
+     "recordedAt": "2026-09-19",
+     "answered": 400,
+     "graded": 400,
+     "right": 295,
+     "interval": {
+      "low": 0.6923,
+      "high": 0.7782
+     },
+     "headline": {
+      "value": 0.8125,
+      "display": "13 of 16"
+     }
+    },
+    "openai": {
+     "model": "gpt-6-luna",
+     "recordedAt": "2026-10-11",
+     "answered": 400,
+     "graded": 400,
+     "right": 292,
+     "interval": {
+      "low": 0.6845,
+      "high": 0.7712
+     },
+     "headline": {
+      "value": 0.875,
+      "display": "14 of 16"
+     }
+    }
+   },
    "previous": null,
    "delta": null,
    "runs": 1
@@ -1141,6 +1549,7 @@
    "domain": "fraud",
    "number": 123,
    "dataClass": "synthetic",
+   "provider": "jev",
    "run": {
     "model": "jev-1.13.0",
     "recordedAt": "2026-09-19",
@@ -1230,6 +1639,38 @@
     "verdict": "Escalate · structuring",
     "agree": true
    },
+   "models": {
+    "jev": {
+     "model": "jev-1.13.0",
+     "recordedAt": "2026-09-19",
+     "answered": 300,
+     "graded": 300,
+     "right": 293,
+     "interval": {
+      "low": 0.9526,
+      "high": 0.9887
+     },
+     "headline": {
+      "value": 0.6316,
+      "display": "63.2%"
+     }
+    },
+    "openai": {
+     "model": "gpt-6-luna",
+     "recordedAt": "2026-10-11",
+     "answered": 300,
+     "graded": 300,
+     "right": 292,
+     "interval": {
+      "low": 0.9483,
+      "high": 0.9864
+     },
+     "headline": {
+      "value": 0.6,
+      "display": "60%"
+     }
+    }
+   },
    "previous": null,
    "delta": null,
    "runs": 1
@@ -1240,6 +1681,7 @@
    "domain": "fraud",
    "number": 122,
    "dataClass": "synthetic",
+   "provider": "jev",
    "run": {
     "model": "jev-1.13.0",
     "recordedAt": "2026-09-19",
@@ -1318,6 +1760,38 @@
     "verdict": "Freeze account",
     "agree": true
    },
+   "models": {
+    "jev": {
+     "model": "jev-1.13.0",
+     "recordedAt": "2026-09-19",
+     "answered": 260,
+     "graded": 260,
+     "right": 238,
+     "interval": {
+      "low": 0.8752,
+      "high": 0.9435
+     },
+     "headline": {
+      "value": 0.9154,
+      "display": "91.5%"
+     }
+    },
+    "openai": {
+     "model": "gpt-6-luna",
+     "recordedAt": "2026-10-11",
+     "answered": 260,
+     "graded": 260,
+     "right": 238,
+     "interval": {
+      "low": 0.8752,
+      "high": 0.9435
+     },
+     "headline": {
+      "value": 0.9154,
+      "display": "91.5%"
+     }
+    }
+   },
    "previous": null,
    "delta": null,
    "runs": 1
@@ -1328,6 +1802,7 @@
    "domain": "fraud",
    "number": 124,
    "dataClass": "synthetic",
+   "provider": "jev",
    "run": {
     "model": "jev-1.13.0",
     "recordedAt": "2026-09-19",
@@ -1408,6 +1883,38 @@
     "verdict": "Confirm · same person 0.95",
     "agree": true
    },
+   "models": {
+    "jev": {
+     "model": "jev-1.13.0",
+     "recordedAt": "2026-09-19",
+     "answered": 200,
+     "graded": 200,
+     "right": 59,
+     "interval": {
+      "low": 0.2361,
+      "high": 0.3616
+     },
+     "headline": {
+      "value": 0.295,
+      "display": "29.5%"
+     }
+    },
+    "openai": {
+     "model": "gpt-6-luna",
+     "recordedAt": "2026-10-11",
+     "answered": 200,
+     "graded": 200,
+     "right": 54,
+     "interval": {
+      "low": 0.2132,
+      "high": 0.3354
+     },
+     "headline": {
+      "value": 0.27,
+      "display": "27%"
+     }
+    }
+   },
    "previous": null,
    "delta": null,
    "runs": 1
@@ -1418,6 +1925,7 @@
    "domain": "fraud",
    "number": 126,
    "dataClass": "mixed",
+   "provider": "jev",
    "run": {
     "model": "jev-1.13.0",
     "recordedAt": "2026-09-19",
@@ -1501,6 +2009,38 @@
     "verdict": "Open case · pre announcement",
     "agree": true
    },
+   "models": {
+    "jev": {
+     "model": "jev-1.13.0",
+     "recordedAt": "2026-09-19",
+     "answered": 180,
+     "graded": 180,
+     "right": 180,
+     "interval": {
+      "low": 0.9791,
+      "high": 1
+     },
+     "headline": {
+      "value": 1,
+      "display": "9 of 9"
+     }
+    },
+    "openai": {
+     "model": "gpt-6-luna",
+     "recordedAt": "2026-10-11",
+     "answered": 180,
+     "graded": 180,
+     "right": 158,
+     "interval": {
+      "low": 0.8219,
+      "high": 0.9179
+     },
+     "headline": {
+      "value": 1,
+      "display": "9 of 9"
+     }
+    }
+   },
    "previous": null,
    "delta": null,
    "runs": 1
@@ -1511,6 +2051,7 @@
    "domain": "fraud",
    "number": 125,
    "dataClass": "synthetic",
+   "provider": "jev",
    "run": {
     "model": "jev-1.13.0",
     "recordedAt": "2026-09-19",
@@ -1596,6 +2137,38 @@
     "verdict": "Mule · freeze",
     "agree": true
    },
+   "models": {
+    "jev": {
+     "model": "jev-1.13.0",
+     "recordedAt": "2026-09-19",
+     "answered": 120,
+     "graded": 120,
+     "right": 75,
+     "interval": {
+      "low": 0.5358,
+      "high": 0.7065
+     },
+     "headline": {
+      "value": 0.3333,
+      "display": "1 of 3"
+     }
+    },
+    "openai": {
+     "model": "gpt-6-luna",
+     "recordedAt": "2026-10-11",
+     "answered": 120,
+     "graded": 120,
+     "right": 103,
+     "interval": {
+      "low": 0.7848,
+      "high": 0.9096
+     },
+     "headline": {
+      "value": 0,
+      "display": "0 of 3"
+     }
+    }
+   },
    "previous": null,
    "delta": null,
    "runs": 1
@@ -1606,6 +2179,7 @@
    "domain": "crypto",
    "number": 131,
    "dataClass": "synthetic",
+   "provider": "jev",
    "run": {
     "model": "jev-1.13.0",
     "recordedAt": "2026-09-19",
@@ -1683,6 +2257,38 @@
     "verdict": "Refuse · $218,926",
     "agree": true
    },
+   "models": {
+    "jev": {
+     "model": "jev-1.13.0",
+     "recordedAt": "2026-09-19",
+     "answered": 240,
+     "graded": 240,
+     "right": 169,
+     "interval": {
+      "low": 0.6436,
+      "high": 0.7583
+     },
+     "headline": {
+      "value": 0.7042,
+      "display": "169 of 240"
+     }
+    },
+    "openai": {
+     "model": "gpt-6-luna",
+     "recordedAt": "2026-10-11",
+     "answered": 240,
+     "graded": 240,
+     "right": 90,
+     "interval": {
+      "low": 0.3162,
+      "high": 0.4378
+     },
+     "headline": {
+      "value": 0.375,
+      "display": "90 of 240"
+     }
+    }
+   },
    "previous": null,
    "delta": null,
    "runs": 1
@@ -1693,6 +2299,7 @@
    "domain": "crypto",
    "number": 132,
    "dataClass": "synthetic",
+   "provider": "jev",
    "run": {
     "model": "jev-1.13.0",
     "recordedAt": "2026-09-19",
@@ -1769,6 +2376,38 @@
     "verdict": "Scam collector · 100%",
     "agree": true
    },
+   "models": {
+    "jev": {
+     "model": "jev-1.13.0",
+     "recordedAt": "2026-09-19",
+     "answered": 200,
+     "graded": 190,
+     "right": 173,
+     "interval": {
+      "low": 0.8614,
+      "high": 0.9434
+     },
+     "headline": {
+      "value": 0.9105,
+      "display": "91.1%"
+     }
+    },
+    "openai": {
+     "model": "gpt-6-luna",
+     "recordedAt": "2026-10-11",
+     "answered": 200,
+     "graded": 190,
+     "right": 168,
+     "interval": {
+      "low": 0.8309,
+      "high": 0.9223
+     },
+     "headline": {
+      "value": 0.8842,
+      "display": "88.4%"
+     }
+    }
+   },
    "previous": null,
    "delta": null,
    "runs": 1
@@ -1779,6 +2418,7 @@
    "domain": "crypto",
    "number": 133,
    "dataClass": "synthetic",
+   "provider": "jev",
    "run": {
     "model": "jev-1.13.0",
     "recordedAt": "2026-09-19",
@@ -1870,6 +2510,38 @@
     "verdict": "Freeze pending review · $828,837",
     "agree": true
    },
+   "models": {
+    "jev": {
+     "model": "jev-1.13.0",
+     "recordedAt": "2026-09-19",
+     "answered": 90,
+     "graded": 90,
+     "right": 66,
+     "interval": {
+      "low": 0.6338,
+      "high": 0.8138
+     },
+     "headline": {
+      "value": 0.7333,
+      "display": "66 of 90"
+     }
+    },
+    "openai": {
+     "model": "gpt-6-luna",
+     "recordedAt": "2026-10-11",
+     "answered": 90,
+     "graded": 90,
+     "right": 84,
+     "interval": {
+      "low": 0.8621,
+      "high": 0.9691
+     },
+     "headline": {
+      "value": 0.9333,
+      "display": "84 of 90"
+     }
+    }
+   },
    "previous": null,
    "delta": null,
    "runs": 1
@@ -1880,6 +2552,7 @@
    "domain": "crypto",
    "number": 134,
    "dataClass": "synthetic",
+   "provider": "jev",
    "run": {
     "model": "jev-1.13.0",
     "recordedAt": "2026-09-19",
@@ -1964,6 +2637,38 @@
     "verdict": "Avoid · DVEXE",
     "agree": true
    },
+   "models": {
+    "jev": {
+     "model": "jev-1.13.0",
+     "recordedAt": "2026-09-19",
+     "answered": 160,
+     "graded": 160,
+     "right": 151,
+     "interval": {
+      "low": 0.8966,
+      "high": 0.9701
+     },
+     "headline": {
+      "value": 0.9437,
+      "display": "94.4%"
+     }
+    },
+    "openai": {
+     "model": "gpt-6-luna",
+     "recordedAt": "2026-10-11",
+     "answered": 160,
+     "graded": 160,
+     "right": 142,
+     "interval": {
+      "low": 0.8292,
+      "high": 0.9276
+     },
+     "headline": {
+      "value": 0.8875,
+      "display": "88.8%"
+     }
+    }
+   },
    "previous": null,
    "delta": null,
    "runs": 1
@@ -1974,6 +2679,7 @@
    "domain": "crypto",
    "number": 135,
    "dataClass": "synthetic",
+   "provider": "jev",
    "run": {
     "model": "jev-1.13.0",
     "recordedAt": "2026-09-19",
@@ -2053,6 +2759,38 @@
     "verdict": "Allocate · $1,133",
     "agree": true
    },
+   "models": {
+    "jev": {
+     "model": "jev-1.13.0",
+     "recordedAt": "2026-09-19",
+     "answered": 150,
+     "graded": 150,
+     "right": 88,
+     "interval": {
+      "low": 0.5067,
+      "high": 0.6623
+     },
+     "headline": {
+      "value": 0.5867,
+      "display": "88 of 150"
+     }
+    },
+    "openai": {
+     "model": "gpt-6-luna",
+     "recordedAt": "2026-10-11",
+     "answered": 150,
+     "graded": 150,
+     "right": 88,
+     "interval": {
+      "low": 0.5067,
+      "high": 0.6623
+     },
+     "headline": {
+      "value": 0.5867,
+      "display": "88 of 150"
+     }
+    }
+   },
    "previous": null,
    "delta": null,
    "runs": 1
@@ -2063,6 +2801,7 @@
    "domain": "portfolio",
    "number": 141,
    "dataClass": "mixed",
+   "provider": "jev",
    "run": {
     "model": "jev-1.13.0",
     "recordedAt": "2026-09-19",
@@ -2140,6 +2879,38 @@
     "verdict": "Currency · hedge",
     "agree": true
    },
+   "models": {
+    "jev": {
+     "model": "jev-1.13.0",
+     "recordedAt": "2026-09-19",
+     "answered": 24,
+     "graded": 24,
+     "right": 16,
+     "interval": {
+      "low": 0.4671,
+      "high": 0.8203
+     },
+     "headline": {
+      "value": 0.6667,
+      "display": "16 of 24"
+     }
+    },
+    "openai": {
+     "model": "gpt-6-luna",
+     "recordedAt": "2026-10-11",
+     "answered": 24,
+     "graded": 24,
+     "right": 15,
+     "interval": {
+      "low": 0.4271,
+      "high": 0.7884
+     },
+     "headline": {
+      "value": 0.625,
+      "display": "15 of 24"
+     }
+    }
+   },
    "previous": null,
    "delta": null,
    "runs": 1
@@ -2150,6 +2921,7 @@
    "domain": "portfolio",
    "number": 143,
    "dataClass": "mixed",
+   "provider": "jev",
    "run": {
     "model": "jev-1.13.0",
     "recordedAt": "2026-09-19",
@@ -2227,6 +2999,38 @@
     "verdict": "Resize · split over days",
     "agree": true
    },
+   "models": {
+    "jev": {
+     "model": "jev-1.13.0",
+     "recordedAt": "2026-09-19",
+     "answered": 200,
+     "graded": 200,
+     "right": 138,
+     "interval": {
+      "low": 0.6228,
+      "high": 0.75
+     },
+     "headline": {
+      "value": 0.69,
+      "display": "69%"
+     }
+    },
+    "openai": {
+     "model": "gpt-6-luna",
+     "recordedAt": "2026-10-11",
+     "answered": 200,
+     "graded": 200,
+     "right": 41,
+     "interval": {
+      "low": 0.1549,
+      "high": 0.2663
+     },
+     "headline": {
+      "value": 0.205,
+      "display": "20.5%"
+     }
+    }
+   },
    "previous": null,
    "delta": null,
    "runs": 1
@@ -2237,6 +3041,7 @@
    "domain": "portfolio",
    "number": 145,
    "dataClass": "synthetic",
+   "provider": "jev",
    "run": {
     "model": "jev-1.13.0",
     "recordedAt": "2026-09-19",
@@ -2315,6 +3120,38 @@
     "verdict": "Breach · average rating",
     "agree": true
    },
+   "models": {
+    "jev": {
+     "model": "jev-1.13.0",
+     "recordedAt": "2026-09-19",
+     "answered": 240,
+     "graded": 232,
+     "right": 230,
+     "interval": {
+      "low": 0.9691,
+      "high": 0.9976
+     },
+     "headline": {
+      "value": 0.9914,
+      "display": "230 of 232"
+     }
+    },
+    "openai": {
+     "model": "gpt-6-luna",
+     "recordedAt": "2026-10-11",
+     "answered": 240,
+     "graded": 232,
+     "right": 227,
+     "interval": {
+      "low": 0.9505,
+      "high": 0.9908
+     },
+     "headline": {
+      "value": 0.9784,
+      "display": "227 of 232"
+     }
+    }
+   },
    "previous": null,
    "delta": null,
    "runs": 1
@@ -2325,6 +3162,7 @@
    "domain": "portfolio",
    "number": 142,
    "dataClass": "mixed",
+   "provider": "jev",
    "run": {
     "model": "jev-1.13.0",
     "recordedAt": "2026-09-19",
@@ -2405,6 +3243,38 @@
     "verdict": "Portfolio B fits the goal better",
     "agree": true
    },
+   "models": {
+    "jev": {
+     "model": "jev-1.13.0",
+     "recordedAt": "2026-09-19",
+     "answered": 18,
+     "graded": 18,
+     "right": 18,
+     "interval": {
+      "low": 0.8241,
+      "high": 1
+     },
+     "headline": {
+      "value": 1,
+      "display": "18 of 18"
+     }
+    },
+    "openai": {
+     "model": "gpt-6-luna",
+     "recordedAt": "2026-10-11",
+     "answered": 18,
+     "graded": 18,
+     "right": 16,
+     "interval": {
+      "low": 0.672,
+      "high": 0.969
+     },
+     "headline": {
+      "value": 0.8889,
+      "display": "16 of 18"
+     }
+    }
+   },
    "previous": null,
    "delta": null,
    "runs": 1
@@ -2415,6 +3285,7 @@
    "domain": "portfolio",
    "number": 144,
    "dataClass": "mixed",
+   "provider": "jev",
    "run": {
     "model": "jev-1.13.0",
     "recordedAt": "2026-09-19",
@@ -2490,6 +3361,38 @@
     "verdict": "Rates · the story does not match",
     "agree": true
    },
+   "models": {
+    "jev": {
+     "model": "jev-1.13.0",
+     "recordedAt": "2026-09-19",
+     "answered": 30,
+     "graded": 30,
+     "right": 24,
+     "interval": {
+      "low": 0.6269,
+      "high": 0.905
+     },
+     "headline": {
+      "value": 0.8,
+      "display": "24 of 30"
+     }
+    },
+    "openai": {
+     "model": "gpt-6-luna",
+     "recordedAt": "2026-10-11",
+     "answered": 30,
+     "graded": 30,
+     "right": 20,
+     "interval": {
+      "low": 0.4878,
+      "high": 0.8077
+     },
+     "headline": {
+      "value": 0.6667,
+      "display": "20 of 30"
+     }
+    }
+   },
    "previous": null,
    "delta": null,
    "runs": 1
@@ -2500,6 +3403,7 @@
    "domain": "portfolio",
    "number": 146,
    "dataClass": "synthetic",
+   "provider": "jev",
    "run": {
     "model": "jev-1.13.0",
     "recordedAt": "2026-09-19",
@@ -2575,6 +3479,38 @@
     "verdict": "Timing · worst month AUG",
     "agree": true
    },
+   "models": {
+    "jev": {
+     "model": "jev-1.13.0",
+     "recordedAt": "2026-09-19",
+     "answered": 40,
+     "graded": 40,
+     "right": 40,
+     "interval": {
+      "low": 0.9124,
+      "high": 1
+     },
+     "headline": {
+      "value": 1,
+      "display": "40 of 40"
+     }
+    },
+    "openai": {
+     "model": "gpt-6-luna",
+     "recordedAt": "2026-10-11",
+     "answered": 40,
+     "graded": 40,
+     "right": 39,
+     "interval": {
+      "low": 0.8712,
+      "high": 0.9956
+     },
+     "headline": {
+      "value": 0.975,
+      "display": "39 of 40"
+     }
+    }
+   },
    "previous": null,
    "delta": null,
    "runs": 1
@@ -2585,6 +3521,7 @@
    "domain": "trades",
    "number": 151,
    "dataClass": "mixed",
+   "provider": "jev",
    "run": {
     "model": "jev-1.13.0",
     "recordedAt": "2026-09-19",
@@ -2668,6 +3605,38 @@
     "verdict": "Moved stop",
     "agree": true
    },
+   "models": {
+    "jev": {
+     "model": "jev-1.13.0",
+     "recordedAt": "2026-09-19",
+     "answered": 220,
+     "graded": 220,
+     "right": 198,
+     "interval": {
+      "low": 0.8532,
+      "high": 0.933
+     },
+     "headline": {
+      "value": 0.9,
+      "display": "198 of 220"
+     }
+    },
+    "openai": {
+     "model": "gpt-6-luna",
+     "recordedAt": "2026-10-11",
+     "answered": 220,
+     "graded": 220,
+     "right": 192,
+     "interval": {
+      "low": 0.8222,
+      "high": 0.9105
+     },
+     "headline": {
+      "value": 0.8727,
+      "display": "192 of 220"
+     }
+    }
+   },
    "previous": null,
    "delta": null,
    "runs": 1
@@ -2678,6 +3647,7 @@
    "domain": "trades",
    "number": 152,
    "dataClass": "mixed",
+   "provider": "jev",
    "run": {
     "model": "jev-1.13.0",
     "recordedAt": "2026-09-19",
@@ -2755,6 +3725,38 @@
     "verdict": "Would take again · 65%",
     "agree": true
    },
+   "models": {
+    "jev": {
+     "model": "jev-1.13.0",
+     "recordedAt": "2026-09-19",
+     "answered": 300,
+     "graded": 300,
+     "right": 173,
+     "interval": {
+      "low": 0.5201,
+      "high": 0.6313
+     },
+     "headline": {
+      "value": 0.5556,
+      "display": "55.6%"
+     }
+    },
+    "openai": {
+     "model": "gpt-6-luna",
+     "recordedAt": "2026-10-11",
+     "answered": 300,
+     "graded": 300,
+     "right": 172,
+     "interval": {
+      "low": 0.5168,
+      "high": 0.628
+     },
+     "headline": {
+      "value": 0.7273,
+      "display": "72.7%"
+     }
+    }
+   },
    "previous": null,
    "delta": null,
    "runs": 1
@@ -2765,6 +3767,7 @@
    "domain": "trades",
    "number": 154,
    "dataClass": "synthetic",
+   "provider": "jev",
    "run": {
     "model": "jev-1.13.0",
     "recordedAt": "2026-09-19",
@@ -2848,6 +3851,38 @@
     "verdict": "Revenge · 71%",
     "agree": true
    },
+   "models": {
+    "jev": {
+     "model": "jev-1.13.0",
+     "recordedAt": "2026-09-19",
+     "answered": 120,
+     "graded": 120,
+     "right": 116,
+     "interval": {
+      "low": 0.9174,
+      "high": 0.987
+     },
+     "headline": {
+      "value": 0.9667,
+      "display": "116 of 120"
+     }
+    },
+    "openai": {
+     "model": "gpt-6-luna",
+     "recordedAt": "2026-10-11",
+     "answered": 120,
+     "graded": 120,
+     "right": 115,
+     "interval": {
+      "low": 0.9062,
+      "high": 0.9821
+     },
+     "headline": {
+      "value": 0.9583,
+      "display": "115 of 120"
+     }
+    }
+   },
    "previous": null,
    "delta": null,
    "runs": 1
@@ -2858,6 +3893,7 @@
    "domain": "trades",
    "number": 156,
    "dataClass": "mixed",
+   "provider": "jev",
    "run": {
     "model": "jev-1.13.0",
     "recordedAt": "2026-09-19",
@@ -2934,6 +3970,38 @@
     "verdict": "Skipped, and should have been taken",
     "agree": true
    },
+   "models": {
+    "jev": {
+     "model": "jev-1.13.0",
+     "recordedAt": "2026-09-19",
+     "answered": 240,
+     "graded": 130,
+     "right": 130,
+     "interval": {
+      "low": 0.9713,
+      "high": 1
+     },
+     "headline": {
+      "value": 1,
+      "display": "130 of 130"
+     }
+    },
+    "openai": {
+     "model": "gpt-6-luna",
+     "recordedAt": "2026-10-11",
+     "answered": 240,
+     "graded": 130,
+     "right": 125,
+     "interval": {
+      "low": 0.9131,
+      "high": 0.9835
+     },
+     "headline": {
+      "value": 0.9615,
+      "display": "125 of 130"
+     }
+    }
+   },
    "previous": null,
    "delta": null,
    "runs": 1
@@ -2944,6 +4012,7 @@
    "domain": "trades",
    "number": 153,
    "dataClass": "mixed",
+   "provider": "jev",
    "run": {
     "model": "jev-1.13.0",
     "recordedAt": "2026-09-19",
@@ -3020,6 +4089,38 @@
     "verdict": "Gap · 630 bps",
     "agree": true
    },
+   "models": {
+    "jev": {
+     "model": "jev-1.13.0",
+     "recordedAt": "2026-09-19",
+     "answered": 260,
+     "graded": 260,
+     "right": 217,
+     "interval": {
+      "low": 0.7846,
+      "high": 0.8748
+     },
+     "headline": {
+      "value": 0.8346,
+      "display": "217 of 260"
+     }
+    },
+    "openai": {
+     "model": "gpt-6-luna",
+     "recordedAt": "2026-10-11",
+     "answered": 259,
+     "graded": 259,
+     "right": 206,
+     "interval": {
+      "low": 0.7421,
+      "high": 0.84
+     },
+     "headline": {
+      "value": 0.7954,
+      "display": "206 of 259"
+     }
+    }
+   },
    "previous": null,
    "delta": null,
    "runs": 1
@@ -3030,6 +4131,7 @@
    "domain": "trades",
    "number": 155,
    "dataClass": "synthetic",
+   "provider": "jev",
    "run": {
     "model": "jev-1.13.0",
     "recordedAt": "2026-09-19",
@@ -3114,6 +4216,38 @@
     "verdict": "The note drifts on entry",
     "agree": true
    },
+   "models": {
+    "jev": {
+     "model": "jev-1.13.0",
+     "recordedAt": "2026-09-19",
+     "answered": 200,
+     "graded": 200,
+     "right": 187,
+     "interval": {
+      "low": 0.892,
+      "high": 0.9616
+     },
+     "headline": {
+      "value": 0.935,
+      "display": "187 of 200"
+     }
+    },
+    "openai": {
+     "model": "gpt-6-luna",
+     "recordedAt": "2026-10-11",
+     "answered": 200,
+     "graded": 200,
+     "right": 128,
+     "interval": {
+      "low": 0.5714,
+      "high": 0.7033
+     },
+     "headline": {
+      "value": 0.64,
+      "display": "128 of 200"
+     }
+    }
+   },
    "previous": null,
    "delta": null,
    "runs": 1
@@ -3124,6 +4258,7 @@
    "domain": "screening",
    "number": 161,
    "dataClass": "cached-real",
+   "provider": "jev",
    "run": {
     "model": "jev-1.13.0",
     "recordedAt": "2026-09-19",
@@ -3201,6 +4336,38 @@
     "verdict": "Not shortlisted · fit 1.4 of 6",
     "agree": true
    },
+   "models": {
+    "jev": {
+     "model": "jev-1.13.0",
+     "recordedAt": "2026-09-19",
+     "answered": 96,
+     "graded": 56,
+     "right": 26,
+     "interval": {
+      "low": 0.3402,
+      "high": 0.593
+     },
+     "headline": {
+      "value": 0.4643,
+      "display": "26 of 56"
+     }
+    },
+    "openai": {
+     "model": "gpt-6-luna",
+     "recordedAt": "2026-10-11",
+     "answered": 96,
+     "graded": 60,
+     "right": 28,
+     "interval": {
+      "low": 0.3463,
+      "high": 0.5911
+     },
+     "headline": {
+      "value": 0.4667,
+      "display": "28 of 60"
+     }
+    }
+   },
    "previous": null,
    "delta": null,
    "runs": 1
@@ -3211,6 +4378,7 @@
    "domain": "screening",
    "number": 163,
    "dataClass": "cached-real",
+   "provider": "jev",
    "run": {
     "model": "jev-1.13.0",
     "recordedAt": "2026-09-19",
@@ -3295,6 +4463,38 @@
     "verdict": "Fail · 57%",
     "agree": true
    },
+   "models": {
+    "jev": {
+     "model": "jev-1.13.0",
+     "recordedAt": "2026-09-19",
+     "answered": 48,
+     "graded": 36,
+     "right": 29,
+     "interval": {
+      "low": 0.6497,
+      "high": 0.9025
+     },
+     "headline": {
+      "value": 0.8056,
+      "display": "29 of 36"
+     }
+    },
+    "openai": {
+     "model": "gpt-6-luna",
+     "recordedAt": "2026-10-11",
+     "answered": 48,
+     "graded": 36,
+     "right": 13,
+     "interval": {
+      "low": 0.2248,
+      "high": 0.5243
+     },
+     "headline": {
+      "value": 0.3611,
+      "display": "13 of 36"
+     }
+    }
+   },
    "previous": null,
    "delta": null,
    "runs": 1
@@ -3305,6 +4505,7 @@
    "domain": "screening",
    "number": 165,
    "dataClass": "synthetic",
+   "provider": "jev",
    "run": {
     "model": "jev-1.13.0",
     "recordedAt": "2026-09-19",
@@ -3389,6 +4590,38 @@
     "verdict": "Held for review · inventory",
     "agree": true
    },
+   "models": {
+    "jev": {
+     "model": "jev-1.13.0",
+     "recordedAt": "2026-09-19",
+     "answered": 120,
+     "graded": 120,
+     "right": 48,
+     "interval": {
+      "low": 0.3168,
+      "high": 0.4894
+     },
+     "headline": {
+      "value": 0.4,
+      "display": "48 of 120"
+     }
+    },
+    "openai": {
+     "model": "gpt-6-luna",
+     "recordedAt": "2026-10-11",
+     "answered": 120,
+     "graded": 120,
+     "right": 66,
+     "interval": {
+      "low": 0.4608,
+      "high": 0.6361
+     },
+     "headline": {
+      "value": 0.55,
+      "display": "66 of 120"
+     }
+    }
+   },
    "previous": null,
    "delta": null,
    "runs": 1
@@ -3399,6 +4632,7 @@
    "domain": "screening",
    "number": 162,
    "dataClass": "cached-real",
+   "provider": "jev",
    "run": {
     "model": "jev-1.13.0",
     "recordedAt": "2026-09-19",
@@ -3476,6 +4710,38 @@
     "verdict": "Quality 3.6 of 6 · deteriorating",
     "agree": true
    },
+   "models": {
+    "jev": {
+     "model": "jev-1.13.0",
+     "recordedAt": "2026-09-19",
+     "answered": 16,
+     "graded": 9,
+     "right": 6,
+     "interval": {
+      "low": 0.3542,
+      "high": 0.8794
+     },
+     "headline": {
+      "value": 0.6667,
+      "display": "6 of 9"
+     }
+    },
+    "openai": {
+     "model": "gpt-6-luna",
+     "recordedAt": "2026-10-11",
+     "answered": 15,
+     "graded": 9,
+     "right": 8,
+     "interval": {
+      "low": 0.565,
+      "high": 0.9801
+     },
+     "headline": {
+      "value": 0.8889,
+      "display": "8 of 9"
+     }
+    }
+   },
    "previous": null,
    "delta": null,
    "runs": 1
@@ -3486,6 +4752,7 @@
    "domain": "screening",
    "number": 164,
    "dataClass": "cached-real",
+   "provider": "jev",
    "run": {
     "model": "jev-1.13.0",
     "recordedAt": "2026-09-19",
@@ -3568,6 +4835,38 @@
     "verdict": "Safety 2.3 of 6 · low cut risk",
     "agree": true
    },
+   "models": {
+    "jev": {
+     "model": "jev-1.13.0",
+     "recordedAt": "2026-09-19",
+     "answered": 16,
+     "graded": 10,
+     "right": 10,
+     "interval": {
+      "low": 0.7225,
+      "high": 1
+     },
+     "headline": {
+      "value": 1,
+      "display": "10 of 10"
+     }
+    },
+    "openai": {
+     "model": "gpt-6-luna",
+     "recordedAt": "2026-10-11",
+     "answered": 16,
+     "graded": 10,
+     "right": 10,
+     "interval": {
+      "low": 0.7225,
+      "high": 1
+     },
+     "headline": {
+      "value": 1,
+      "display": "10 of 10"
+     }
+    }
+   },
    "previous": null,
    "delta": null,
    "runs": 1
@@ -3578,6 +4877,7 @@
    "domain": "screening",
    "number": 166,
    "dataClass": "cached-real",
+   "provider": "jev",
    "run": {
     "model": "jev-1.13.0",
     "recordedAt": "2026-09-19",
@@ -3652,6 +4952,32 @@
     "verdict": "Best value: GOOGL · 39%",
     "agree": null
    },
+   "models": {
+    "jev": {
+     "model": "jev-1.13.0",
+     "recordedAt": "2026-09-19",
+     "answered": 4,
+     "graded": 0,
+     "right": 0,
+     "interval": null,
+     "headline": {
+      "value": 0.5,
+      "display": "1 of 2"
+     }
+    },
+    "openai": {
+     "model": "gpt-6-luna",
+     "recordedAt": "2026-10-11",
+     "answered": 4,
+     "graded": 0,
+     "right": 0,
+     "interval": null,
+     "headline": {
+      "value": 0.5,
+      "display": "1 of 2"
+     }
+    }
+   },
    "previous": null,
    "delta": null,
    "runs": 1
@@ -3662,6 +4988,7 @@
    "domain": "news",
    "number": 171,
    "dataClass": "mixed",
+   "provider": "jev",
    "run": {
     "model": "jev-1.13.0",
     "recordedAt": "2026-09-19",
@@ -3748,6 +5075,38 @@
     "verdict": "Material · 3.9 of 6 · negative",
     "agree": true
    },
+   "models": {
+    "jev": {
+     "model": "jev-1.13.0",
+     "recordedAt": "2026-09-19",
+     "answered": 300,
+     "graded": 300,
+     "right": 294,
+     "interval": {
+      "low": 0.9571,
+      "high": 0.9908
+     },
+     "headline": {
+      "value": 0.98,
+      "display": "294 of 300"
+     }
+    },
+    "openai": {
+     "model": "gpt-6-luna",
+     "recordedAt": "2026-10-11",
+     "answered": 300,
+     "graded": 300,
+     "right": 268,
+     "interval": {
+      "low": 0.8533,
+      "high": 0.9234
+     },
+     "headline": {
+      "value": 0.8933,
+      "display": "268 of 300"
+     }
+    }
+   },
    "previous": null,
    "delta": null,
    "runs": 1
@@ -3758,6 +5117,7 @@
    "domain": "news",
    "number": 173,
    "dataClass": "synthetic",
+   "provider": "jev",
    "run": {
     "model": "jev-1.13.0",
     "recordedAt": "2026-09-19",
@@ -3844,6 +5204,38 @@
     "verdict": "Guidance maintained · tone worse",
     "agree": true
    },
+   "models": {
+    "jev": {
+     "model": "jev-1.13.0",
+     "recordedAt": "2026-09-19",
+     "answered": 90,
+     "graded": 90,
+     "right": 90,
+     "interval": {
+      "low": 0.9591,
+      "high": 1
+     },
+     "headline": {
+      "value": 1,
+      "display": "90 of 90"
+     }
+    },
+    "openai": {
+     "model": "gpt-6-luna",
+     "recordedAt": "2026-10-11",
+     "answered": 89,
+     "graded": 89,
+     "right": 89,
+     "interval": {
+      "low": 0.9586,
+      "high": 1
+     },
+     "headline": {
+      "value": 1,
+      "display": "89 of 89"
+     }
+    }
+   },
    "previous": null,
    "delta": null,
    "runs": 1
@@ -3854,6 +5246,7 @@
    "domain": "news",
    "number": 175,
    "dataClass": "synthetic",
+   "provider": "jev",
    "run": {
     "model": "jev-1.13.0",
     "recordedAt": "2026-09-19",
@@ -3941,6 +5334,38 @@
     "verdict": "Verify · spread looks organised",
     "agree": true
    },
+   "models": {
+    "jev": {
+     "model": "jev-1.13.0",
+     "recordedAt": "2026-09-19",
+     "answered": 240,
+     "graded": 240,
+     "right": 239,
+     "interval": {
+      "low": 0.9768,
+      "high": 0.9993
+     },
+     "headline": {
+      "value": 0.9958,
+      "display": "239 of 240"
+     }
+    },
+    "openai": {
+     "model": "gpt-6-luna",
+     "recordedAt": "2026-10-11",
+     "answered": 240,
+     "graded": 240,
+     "right": 237,
+     "interval": {
+      "low": 0.9639,
+      "high": 0.9957
+     },
+     "headline": {
+      "value": 0.9875,
+      "display": "237 of 240"
+     }
+    }
+   },
    "previous": null,
    "delta": null,
    "runs": 1
@@ -3951,6 +5376,7 @@
    "domain": "news",
    "number": 172,
    "dataClass": "synthetic",
+   "provider": "jev",
    "run": {
     "model": "jev-1.13.0",
     "recordedAt": "2026-09-19",
@@ -4032,6 +5458,38 @@
     "verdict": "Joins the offered cluster (1 in it so far) · a repeat",
     "agree": true
    },
+   "models": {
+    "jev": {
+     "model": "jev-1.13.0",
+     "recordedAt": "2026-09-19",
+     "answered": 380,
+     "graded": 380,
+     "right": 375,
+     "interval": {
+      "low": 0.9696,
+      "high": 0.9944
+     },
+     "headline": {
+      "value": 0.9868,
+      "display": "375 of 380"
+     }
+    },
+    "openai": {
+     "model": "gpt-6-luna",
+     "recordedAt": "2026-10-11",
+     "answered": 380,
+     "graded": 380,
+     "right": 368,
+     "interval": {
+      "low": 0.9456,
+      "high": 0.9818
+     },
+     "headline": {
+      "value": 0.9684,
+      "display": "368 of 380"
+     }
+    }
+   },
    "previous": null,
    "delta": null,
    "runs": 1
@@ -4042,6 +5500,7 @@
    "domain": "news",
    "number": 174,
    "dataClass": "synthetic",
+   "provider": "jev",
    "run": {
     "model": "jev-1.13.0",
     "recordedAt": "2026-09-19",
@@ -4127,6 +5586,38 @@
     "verdict": "Supplier · active · strong",
     "agree": true
    },
+   "models": {
+    "jev": {
+     "model": "jev-1.13.0",
+     "recordedAt": "2026-09-19",
+     "answered": 400,
+     "graded": 400,
+     "right": 400,
+     "interval": {
+      "low": 0.9905,
+      "high": 1
+     },
+     "headline": {
+      "value": 1,
+      "display": "100.0%"
+     }
+    },
+    "openai": {
+     "model": "gpt-6-luna",
+     "recordedAt": "2026-10-11",
+     "answered": 400,
+     "graded": 400,
+     "right": 400,
+     "interval": {
+      "low": 0.9905,
+      "high": 1
+     },
+     "headline": {
+      "value": 1,
+      "display": "100.0%"
+     }
+    }
+   },
    "previous": null,
    "delta": null,
    "runs": 1
@@ -4137,6 +5628,7 @@
    "domain": "strategy",
    "number": 181,
    "dataClass": "cached-real",
+   "provider": "jev",
    "run": {
     "model": "jev-1.13.0",
     "recordedAt": "2026-09-19",
@@ -4220,6 +5712,38 @@
     "verdict": "Take · AAPL · 2024-06-13",
     "agree": true
    },
+   "models": {
+    "jev": {
+     "model": "jev-1.13.0",
+     "recordedAt": "2026-09-19",
+     "answered": 71,
+     "graded": 71,
+     "right": 30,
+     "interval": {
+      "low": 0.3145,
+      "high": 0.5385
+     },
+     "headline": {
+      "value": 0.4225,
+      "display": "30 of 71"
+     }
+    },
+    "openai": {
+     "model": "gpt-6-luna",
+     "recordedAt": "2026-10-11",
+     "answered": 71,
+     "graded": 71,
+     "right": 36,
+     "interval": {
+      "low": 0.3934,
+      "high": 0.62
+     },
+     "headline": {
+      "value": 0.507,
+      "display": "36 of 71"
+     }
+    }
+   },
    "previous": null,
    "delta": null,
    "runs": 1
@@ -4230,6 +5754,7 @@
    "domain": "strategy",
    "number": 182,
    "dataClass": "cached-real",
+   "provider": "jev",
    "run": {
     "model": "jev-1.13.0",
     "recordedAt": "2026-09-19",
@@ -4313,6 +5838,38 @@
     "verdict": "Favourable for the long · 64%",
     "agree": true
    },
+   "models": {
+    "jev": {
+     "model": "jev-1.13.0",
+     "recordedAt": "2026-09-19",
+     "answered": 480,
+     "graded": 480,
+     "right": 250,
+     "interval": {
+      "low": 0.4762,
+      "high": 0.5652
+     },
+     "headline": {
+      "value": 0.5208,
+      "display": "52.1%"
+     }
+    },
+    "openai": {
+     "model": "gpt-6-luna",
+     "recordedAt": "2026-10-11",
+     "answered": 480,
+     "graded": 480,
+     "right": 253,
+     "interval": {
+      "low": 0.4824,
+      "high": 0.5714
+     },
+     "headline": {
+      "value": 0.5271,
+      "display": "52.7%"
+     }
+    }
+   },
    "previous": null,
    "delta": null,
    "runs": 1
@@ -4323,6 +5880,7 @@
    "domain": "strategy",
    "number": 183,
    "dataClass": "cached-real",
+   "provider": "jev",
    "run": {
     "model": "jev-1.13.0",
     "recordedAt": "2026-09-19",
@@ -4409,6 +5967,38 @@
     "verdict": "Mean reversion only · 0.5× size",
     "agree": true
    },
+   "models": {
+    "jev": {
+     "model": "jev-1.13.0",
+     "recordedAt": "2026-09-19",
+     "answered": 312,
+     "graded": 73,
+     "right": 33,
+     "interval": {
+      "low": 0.3431,
+      "high": 0.5658
+     },
+     "headline": {
+      "value": 0.4521,
+      "display": "33 of 73"
+     }
+    },
+    "openai": {
+     "model": "gpt-6-luna",
+     "recordedAt": "2026-10-11",
+     "answered": 312,
+     "graded": 73,
+     "right": 33,
+     "interval": {
+      "low": 0.3431,
+      "high": 0.5658
+     },
+     "headline": {
+      "value": 0.4521,
+      "display": "33 of 73"
+     }
+    }
+   },
    "previous": null,
    "delta": null,
    "runs": 1
@@ -4419,6 +6009,7 @@
    "domain": "strategy",
    "number": 185,
    "dataClass": "synthetic",
+   "provider": "jev",
    "run": {
     "model": "jev-1.13.0",
     "recordedAt": "2026-09-19",
@@ -4503,6 +6094,38 @@
     "verdict": "One bet, held twice · Drop one",
     "agree": true
    },
+   "models": {
+    "jev": {
+     "model": "jev-1.13.0",
+     "recordedAt": "2026-09-19",
+     "answered": 60,
+     "graded": 60,
+     "right": 47,
+     "interval": {
+      "low": 0.6638,
+      "high": 0.8688
+     },
+     "headline": {
+      "value": 0.7833,
+      "display": "47 of 60"
+     }
+    },
+    "openai": {
+     "model": "gpt-6-luna",
+     "recordedAt": "2026-10-11",
+     "answered": 56,
+     "graded": 56,
+     "right": 44,
+     "interval": {
+      "low": 0.6618,
+      "high": 0.8729
+     },
+     "headline": {
+      "value": 0.7857,
+      "display": "44 of 56"
+     }
+    }
+   },
    "previous": null,
    "delta": null,
    "runs": 1
@@ -4513,6 +6136,7 @@
    "domain": "strategy",
    "number": 184,
    "dataClass": "synthetic",
+   "provider": "jev",
    "run": {
     "model": "jev-1.13.0",
     "recordedAt": "2026-09-19",
@@ -4595,6 +6219,38 @@
     "verdict": "Look ahead · trust 1.7 of 6",
     "agree": true
    },
+   "models": {
+    "jev": {
+     "model": "jev-1.13.0",
+     "recordedAt": "2026-09-19",
+     "answered": 140,
+     "graded": 140,
+     "right": 138,
+     "interval": {
+      "low": 0.9494,
+      "high": 0.9961
+     },
+     "headline": {
+      "value": 0.9857,
+      "display": "98.6%"
+     }
+    },
+    "openai": {
+     "model": "gpt-6-luna",
+     "recordedAt": "2026-10-11",
+     "answered": 140,
+     "graded": 140,
+     "right": 115,
+     "interval": {
+      "low": 0.7497,
+      "high": 0.876
+     },
+     "headline": {
+      "value": 0.8214,
+      "display": "82.1%"
+     }
+    }
+   },
    "previous": null,
    "delta": null,
    "runs": 1
@@ -4605,6 +6261,7 @@
    "domain": "vision",
    "number": null,
    "dataClass": "synthetic",
+   "provider": "openai",
    "run": {
     "model": "gpt-6-luna",
     "recordedAt": "2026-10-11",
@@ -4676,6 +6333,23 @@
     "verdict": "RC-003: filed · none",
     "agree": true
    },
+   "models": {
+    "openai": {
+     "model": "gpt-6-luna",
+     "recordedAt": "2026-10-11",
+     "answered": 36,
+     "graded": 36,
+     "right": 12,
+     "interval": {
+      "low": 0.2021,
+      "high": 0.4967
+     },
+     "headline": {
+      "value": 0.3333,
+      "display": "33.3%"
+     }
+    }
+   },
    "previous": null,
    "delta": null,
    "runs": 1
@@ -4686,6 +6360,7 @@
    "domain": "vision",
    "number": null,
    "dataClass": "synthetic",
+   "provider": "openai",
    "run": {
     "model": "gpt-6-luna",
     "recordedAt": "2026-10-11",
@@ -4757,6 +6432,23 @@
     "verdict": "EC-001: returned · merchant mismatch",
     "agree": true
    },
+   "models": {
+    "openai": {
+     "model": "gpt-6-luna",
+     "recordedAt": "2026-10-11",
+     "answered": 40,
+     "graded": 40,
+     "right": 40,
+     "interval": {
+      "low": 0.9124,
+      "high": 1
+     },
+     "headline": {
+      "value": 1,
+      "display": "100%"
+     }
+    }
+   },
    "previous": null,
    "delta": null,
    "runs": 1
@@ -4767,6 +6459,7 @@
    "domain": "vision",
    "number": null,
    "dataClass": "synthetic",
+   "provider": "openai",
    "run": {
     "model": "gpt-6-luna",
     "recordedAt": "2026-10-11",
@@ -4838,6 +6531,23 @@
     "verdict": "CQ-001: refused · unsigned",
     "agree": true
    },
+   "models": {
+    "openai": {
+     "model": "gpt-6-luna",
+     "recordedAt": "2026-10-11",
+     "answered": 30,
+     "graded": 30,
+     "right": 28,
+     "interval": {
+      "low": 0.7868,
+      "high": 0.9815
+     },
+     "headline": {
+      "value": 0.9333,
+      "display": "93.3%"
+     }
+    }
+   },
    "previous": null,
    "delta": null,
    "runs": 1
@@ -4848,6 +6558,7 @@
    "domain": "vision",
    "number": null,
    "dataClass": "synthetic",
+   "provider": "openai",
    "run": {
     "model": "gpt-6-luna",
     "recordedAt": "2026-10-11",
@@ -4919,6 +6630,23 @@
     "verdict": "IV-001: held · bank changed",
     "agree": true
    },
+   "models": {
+    "openai": {
+     "model": "gpt-6-luna",
+     "recordedAt": "2026-10-11",
+     "answered": 32,
+     "graded": 32,
+     "right": 16,
+     "interval": {
+      "low": 0.3363,
+      "high": 0.6637
+     },
+     "headline": {
+      "value": 0.5,
+      "display": "50.0%"
+     }
+    }
+   },
    "previous": null,
    "delta": null,
    "runs": 1
@@ -4929,6 +6657,7 @@
    "domain": "vision",
    "number": null,
    "dataClass": "cached-real",
+   "provider": "openai",
    "run": {
     "model": "gpt-6-luna",
     "recordedAt": "2026-10-11",
@@ -5000,6 +6729,23 @@
     "verdict": "CT-001: up",
     "agree": true
    },
+   "models": {
+    "openai": {
+     "model": "gpt-6-luna",
+     "recordedAt": "2026-10-11",
+     "answered": 48,
+     "graded": 48,
+     "right": 37,
+     "interval": {
+      "low": 0.6346,
+      "high": 0.8669
+     },
+     "headline": {
+      "value": 0.7708,
+      "display": "77.1%"
+     }
+    }
+   },
    "previous": null,
    "delta": null,
    "runs": 1
@@ -5010,6 +6756,7 @@
    "domain": "vision",
    "number": null,
    "dataClass": "cached-real",
+   "provider": "openai",
    "run": {
     "model": "gpt-6-luna",
     "recordedAt": "2026-10-11",
@@ -5081,6 +6828,23 @@
     "verdict": "BT-001: wait · expects rose",
     "agree": true
    },
+   "models": {
+    "openai": {
+     "model": "gpt-6-luna",
+     "recordedAt": "2026-10-11",
+     "answered": 48,
+     "graded": 48,
+     "right": 24,
+     "interval": {
+      "low": 0.3639,
+      "high": 0.6361
+     },
+     "headline": {
+      "value": 0.5,
+      "display": "50.0%"
+     }
+    }
+   },
    "previous": null,
    "delta": null,
    "runs": 1
@@ -5091,6 +6855,7 @@
    "domain": "vision",
    "number": null,
    "dataClass": "synthetic",
+   "provider": "openai",
    "run": {
     "model": "gpt-6-luna",
     "recordedAt": "2026-10-11",
@@ -5162,6 +6927,23 @@
     "verdict": "MC-001: small change · axis from zero",
     "agree": true
    },
+   "models": {
+    "openai": {
+     "model": "gpt-6-luna",
+     "recordedAt": "2026-10-11",
+     "answered": 30,
+     "graded": 30,
+     "right": 16,
+     "interval": {
+      "low": 0.3614,
+      "high": 0.6977
+     },
+     "headline": {
+      "value": 0.5333,
+      "display": "53.3%"
+     }
+    }
+   },
    "previous": null,
    "delta": null,
    "runs": 1
@@ -5172,6 +6954,7 @@
    "domain": "vision",
    "number": null,
    "dataClass": "cached-real",
+   "provider": "openai",
    "run": {
     "model": "gpt-6-luna",
     "recordedAt": "2026-10-11",
@@ -5243,6 +7026,23 @@
     "verdict": "PR-01: rejected · rotten",
     "agree": true
    },
+   "models": {
+    "openai": {
+     "model": "gpt-6-luna",
+     "recordedAt": "2026-10-11",
+     "answered": 11,
+     "graded": 11,
+     "right": 11,
+     "interval": {
+      "low": 0.7412,
+      "high": 1
+     },
+     "headline": {
+      "value": 1,
+      "display": "100%"
+     }
+    }
+   },
    "previous": null,
    "delta": null,
    "runs": 1
@@ -5253,6 +7053,7 @@
    "domain": "vision",
    "number": null,
    "dataClass": "cached-real",
+   "provider": "openai",
    "run": {
     "model": "gpt-6-luna",
     "recordedAt": "2026-10-11",
@@ -5324,6 +7125,23 @@
     "verdict": "PK-01: claim supported · crushed",
     "agree": true
    },
+   "models": {
+    "openai": {
+     "model": "gpt-6-luna",
+     "recordedAt": "2026-10-11",
+     "answered": 3,
+     "graded": 3,
+     "right": 2,
+     "interval": {
+      "low": 0.2077,
+      "high": 0.9385
+     },
+     "headline": {
+      "value": 0.6667,
+      "display": "66.7%"
+     }
+    }
+   },
    "previous": null,
    "delta": null,
    "runs": 1
@@ -5334,6 +7152,7 @@
    "domain": "vision",
    "number": null,
    "dataClass": "cached-real",
+   "provider": "openai",
    "run": {
     "model": "gpt-6-luna",
     "recordedAt": "2026-10-11",
@@ -5404,6 +7223,23 @@
     ],
     "verdict": "LF-01: mildew",
     "agree": true
+   },
+   "models": {
+    "openai": {
+     "model": "gpt-6-luna",
+     "recordedAt": "2026-10-11",
+     "answered": 4,
+     "graded": 4,
+     "right": 4,
+     "interval": {
+      "low": 0.5101,
+      "high": 1
+     },
+     "headline": {
+      "value": 1,
+      "display": "100%"
+     }
+    }
    },
    "previous": null,
    "delta": null,

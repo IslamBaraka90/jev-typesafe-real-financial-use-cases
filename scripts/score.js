@@ -13,7 +13,7 @@ import { mkdir, readFile, writeFile } from 'node:fs/promises';
 import path from 'node:path';
 import { DEMOS, demoCard, findDemo } from '../demos/index.js';
 import { repoRoot } from '../src/services/dataset.js';
-import { runKey, scoreDemo } from '../src/services/scoreboard.js';
+import { runKey, scoreDemo, scoreModels } from '../src/services/scoreboard.js';
 
 const args = process.argv.slice(2);
 const check = args.includes('--check');
@@ -38,7 +38,9 @@ if (slug) {
 }
 
 const rows = [];
-for (const demo of DEMOS) rows.push(await scoreDemo(demo));
+// Each row is the demo's own model (Jev, or OpenAI for the image demos); `models` puts every model
+// it was recorded on side by side, for the benchmark's comparison column.
+for (const demo of DEMOS) rows.push({ ...(await scoreDemo(demo)), models: await scoreModels(demo) });
 
 const history = await readFile(historyFile, 'utf8').then(JSON.parse).catch(() => ({ runs: [] }));
 const regressions = [];
@@ -70,6 +72,12 @@ const summary = {
   rightItems: graded.reduce((sum, row) => sum + row.right, 0),
   models: [...new Set(rows.map((row) => row.run.model).filter(Boolean))],
   latest: rows.map((row) => row.run.recordedAt).filter(Boolean).sort().at(-1) ?? null,
+  byModel: Object.fromEntries(
+    ['jev', 'openai'].map((provider) => {
+      const entries = rows.map((row) => row.models[provider]).filter((entry) => entry?.graded);
+      return [provider, { demos: entries.length, graded: entries.reduce((sum, entry) => sum + entry.graded, 0), right: entries.reduce((sum, entry) => sum + entry.right, 0) }];
+    }),
+  ),
   gates: { total: rows.reduce((sum, row) => sum + row.gates.length, 0), failed: rows.reduce((sum, row) => sum + row.gates.filter((gate) => !gate.passed).length, 0) },
 };
 
