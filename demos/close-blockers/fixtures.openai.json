@@ -1,0 +1,2713 @@
+{
+  "demo": "close-blockers",
+  "provider": "openai",
+  "model": "gpt-6-luna",
+  "recordedAt": "2026-10-11",
+  "source": "scripts/record-demo.js",
+  "usage": {
+    "input_tokens": 63226,
+    "output_tokens": 0
+  },
+  "answers": {
+    "TB-1000": {
+      "blocker_type": {
+        "type": "choice",
+        "choice": "NONE",
+        "confidence": 0.72,
+        "probabilities": {
+          "UNRECONCILED": 0.06,
+          "MISSING_ACCRUAL": 0.07,
+          "INTERCOMPANY": 0.02,
+          "FX_REVALUATION": 0.02,
+          "UNSUPPORTED_JOURNAL": 0.06,
+          "NONE": 0.77
+        }
+      },
+      "blocks_close": {
+        "type": "noul",
+        "noul": 0.2
+      },
+      "severity": {
+        "type": "score",
+        "score": 0.68,
+        "confidence": 0.6,
+        "probabilities": {
+          "0": 0.54,
+          "1": 0.27,
+          "2": 0.17,
+          "3": 0.01,
+          "4": 0.01,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "owner": {
+        "type": "choice",
+        "choice": "TREASURY",
+        "confidence": 1,
+        "probabilities": {
+          "AP": 0,
+          "AR": 0,
+          "TREASURY": 1,
+          "TAX": 0,
+          "CONTROLLER": 0
+        }
+      }
+    },
+    "TB-1010": {
+      "blocker_type": {
+        "type": "choice",
+        "choice": "FX_REVALUATION",
+        "confidence": 0.98,
+        "probabilities": {
+          "UNRECONCILED": 0,
+          "MISSING_ACCRUAL": 0,
+          "INTERCOMPANY": 0.01,
+          "FX_REVALUATION": 0.98,
+          "UNSUPPORTED_JOURNAL": 0.01,
+          "NONE": 0
+        }
+      },
+      "blocks_close": {
+        "type": "noul",
+        "noul": 0.98
+      },
+      "severity": {
+        "type": "score",
+        "score": 3.53,
+        "confidence": 0.41,
+        "probabilities": {
+          "0": 0.04,
+          "1": 0.06,
+          "2": 0.12,
+          "3": 0.16,
+          "4": 0.36,
+          "5": 0.25,
+          "6": 0.01
+        }
+      },
+      "owner": {
+        "type": "choice",
+        "choice": "TREASURY",
+        "confidence": 1,
+        "probabilities": {
+          "AP": 0,
+          "AR": 0,
+          "TREASURY": 1,
+          "TAX": 0,
+          "CONTROLLER": 0
+        }
+      }
+    },
+    "TB-1020": {
+      "blocker_type": {
+        "type": "choice",
+        "choice": "NONE",
+        "confidence": 0.63,
+        "probabilities": {
+          "UNRECONCILED": 0.04,
+          "MISSING_ACCRUAL": 0.08,
+          "INTERCOMPANY": 0.04,
+          "FX_REVALUATION": 0.03,
+          "UNSUPPORTED_JOURNAL": 0.12,
+          "NONE": 0.69
+        }
+      },
+      "blocks_close": {
+        "type": "noul",
+        "noul": 0.05
+      },
+      "severity": {
+        "type": "score",
+        "score": 0.56,
+        "confidence": 0.67,
+        "probabilities": {
+          "0": 0.56,
+          "1": 0.32,
+          "2": 0.12,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "owner": {
+        "type": "choice",
+        "choice": "TREASURY",
+        "confidence": 1,
+        "probabilities": {
+          "AP": 0,
+          "AR": 0,
+          "TREASURY": 1,
+          "TAX": 0,
+          "CONTROLLER": 0
+        }
+      }
+    },
+    "TB-1030": {
+      "blocker_type": {
+        "type": "choice",
+        "choice": "NONE",
+        "confidence": 0.81,
+        "probabilities": {
+          "UNRECONCILED": 0.04,
+          "MISSING_ACCRUAL": 0.04,
+          "INTERCOMPANY": 0.02,
+          "FX_REVALUATION": 0.01,
+          "UNSUPPORTED_JOURNAL": 0.05,
+          "NONE": 0.84
+        }
+      },
+      "blocks_close": {
+        "type": "noul",
+        "noul": 0.06
+      },
+      "severity": {
+        "type": "score",
+        "score": 1.43,
+        "confidence": 0.61,
+        "probabilities": {
+          "0": 0.15,
+          "1": 0.32,
+          "2": 0.49,
+          "3": 0.03,
+          "4": 0.01,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "owner": {
+        "type": "choice",
+        "choice": "TREASURY",
+        "confidence": 0.95,
+        "probabilities": {
+          "AP": 0.01,
+          "AR": 0,
+          "TREASURY": 0.96,
+          "TAX": 0,
+          "CONTROLLER": 0.03
+        }
+      }
+    },
+    "TB-1100": {
+      "blocker_type": {
+        "type": "choice",
+        "choice": "UNRECONCILED",
+        "confidence": 0.99,
+        "probabilities": {
+          "UNRECONCILED": 0.99,
+          "MISSING_ACCRUAL": 0.01,
+          "INTERCOMPANY": 0,
+          "FX_REVALUATION": 0,
+          "UNSUPPORTED_JOURNAL": 0,
+          "NONE": 0
+        }
+      },
+      "blocks_close": {
+        "type": "noul",
+        "noul": 0.97
+      },
+      "severity": {
+        "type": "score",
+        "score": 4.73,
+        "confidence": 0.83,
+        "probabilities": {
+          "0": 0,
+          "1": 0,
+          "2": 0.01,
+          "3": 0.05,
+          "4": 0.15,
+          "5": 0.78,
+          "6": 0.01
+        }
+      },
+      "owner": {
+        "type": "choice",
+        "choice": "AR",
+        "confidence": 1,
+        "probabilities": {
+          "AP": 0,
+          "AR": 1,
+          "TREASURY": 0,
+          "TAX": 0,
+          "CONTROLLER": 0
+        }
+      }
+    },
+    "TB-1110": {
+      "blocker_type": {
+        "type": "choice",
+        "choice": "NONE",
+        "confidence": 0.78,
+        "probabilities": {
+          "UNRECONCILED": 0.06,
+          "MISSING_ACCRUAL": 0.05,
+          "INTERCOMPANY": 0.01,
+          "FX_REVALUATION": 0.02,
+          "UNSUPPORTED_JOURNAL": 0.04,
+          "NONE": 0.82
+        }
+      },
+      "blocks_close": {
+        "type": "noul",
+        "noul": 0.05
+      },
+      "severity": {
+        "type": "score",
+        "score": 2.3,
+        "confidence": 0.37,
+        "probabilities": {
+          "0": 0.1,
+          "1": 0.19,
+          "2": 0.32,
+          "3": 0.18,
+          "4": 0.13,
+          "5": 0.07,
+          "6": 0.01
+        }
+      },
+      "owner": {
+        "type": "choice",
+        "choice": "AR",
+        "confidence": 1,
+        "probabilities": {
+          "AP": 0,
+          "AR": 1,
+          "TREASURY": 0,
+          "TAX": 0,
+          "CONTROLLER": 0
+        }
+      }
+    },
+    "TB-1120": {
+      "blocker_type": {
+        "type": "choice",
+        "choice": "NONE",
+        "confidence": 0.82,
+        "probabilities": {
+          "UNRECONCILED": 0.04,
+          "MISSING_ACCRUAL": 0.05,
+          "INTERCOMPANY": 0.02,
+          "FX_REVALUATION": 0.01,
+          "UNSUPPORTED_JOURNAL": 0.03,
+          "NONE": 0.85
+        }
+      },
+      "blocks_close": {
+        "type": "noul",
+        "noul": 0.04
+      },
+      "severity": {
+        "type": "score",
+        "score": 1,
+        "confidence": 0.42,
+        "probabilities": {
+          "0": 0.39,
+          "1": 0.28,
+          "2": 0.28,
+          "3": 0.04,
+          "4": 0.01,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "owner": {
+        "type": "choice",
+        "choice": "AR",
+        "confidence": 0.75,
+        "probabilities": {
+          "AP": 0,
+          "AR": 0.8,
+          "TREASURY": 0.01,
+          "TAX": 0.01,
+          "CONTROLLER": 0.18
+        }
+      }
+    },
+    "TB-1200": {
+      "blocker_type": {
+        "type": "choice",
+        "choice": "FX_REVALUATION",
+        "confidence": 0.95,
+        "probabilities": {
+          "UNRECONCILED": 0,
+          "MISSING_ACCRUAL": 0,
+          "INTERCOMPANY": 0.03,
+          "FX_REVALUATION": 0.96,
+          "UNSUPPORTED_JOURNAL": 0.01,
+          "NONE": 0
+        }
+      },
+      "blocks_close": {
+        "type": "noul",
+        "noul": 0.99
+      },
+      "severity": {
+        "type": "score",
+        "score": 4.56,
+        "confidence": 0.73,
+        "probabilities": {
+          "0": 0,
+          "1": 0,
+          "2": 0.01,
+          "3": 0.04,
+          "4": 0.34,
+          "5": 0.6,
+          "6": 0.01
+        }
+      },
+      "owner": {
+        "type": "choice",
+        "choice": "TREASURY",
+        "confidence": 0.74,
+        "probabilities": {
+          "AP": 0.01,
+          "AR": 0.2,
+          "TREASURY": 0.79,
+          "TAX": 0,
+          "CONTROLLER": 0
+        }
+      }
+    },
+    "TB-1210": {
+      "blocker_type": {
+        "type": "choice",
+        "choice": "NONE",
+        "confidence": 0.74,
+        "probabilities": {
+          "UNRECONCILED": 0.07,
+          "MISSING_ACCRUAL": 0.07,
+          "INTERCOMPANY": 0.02,
+          "FX_REVALUATION": 0.01,
+          "UNSUPPORTED_JOURNAL": 0.05,
+          "NONE": 0.78
+        }
+      },
+      "blocks_close": {
+        "type": "noul",
+        "noul": 0.07
+      },
+      "severity": {
+        "type": "score",
+        "score": 1.56,
+        "confidence": 0.72,
+        "probabilities": {
+          "0": 0.08,
+          "1": 0.3,
+          "2": 0.6,
+          "3": 0.02,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "owner": {
+        "type": "choice",
+        "choice": "AR",
+        "confidence": 1,
+        "probabilities": {
+          "AP": 0,
+          "AR": 1,
+          "TREASURY": 0,
+          "TAX": 0,
+          "CONTROLLER": 0
+        }
+      }
+    },
+    "TB-1300": {
+      "blocker_type": {
+        "type": "choice",
+        "choice": "NONE",
+        "confidence": 0.86,
+        "probabilities": {
+          "UNRECONCILED": 0.04,
+          "MISSING_ACCRUAL": 0.03,
+          "INTERCOMPANY": 0.01,
+          "FX_REVALUATION": 0.01,
+          "UNSUPPORTED_JOURNAL": 0.03,
+          "NONE": 0.88
+        }
+      },
+      "blocks_close": {
+        "type": "noul",
+        "noul": 0.06
+      },
+      "severity": {
+        "type": "score",
+        "score": 1.91,
+        "confidence": 0.7,
+        "probabilities": {
+          "0": 0.06,
+          "1": 0.18,
+          "2": 0.59,
+          "3": 0.13,
+          "4": 0.04,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "owner": {
+        "type": "choice",
+        "choice": "CONTROLLER",
+        "confidence": 0.77,
+        "probabilities": {
+          "AP": 0.12,
+          "AR": 0.01,
+          "TREASURY": 0.02,
+          "TAX": 0.03,
+          "CONTROLLER": 0.82
+        }
+      }
+    },
+    "TB-1310": {
+      "blocker_type": {
+        "type": "choice",
+        "choice": "NONE",
+        "confidence": 0.92,
+        "probabilities": {
+          "UNRECONCILED": 0.02,
+          "MISSING_ACCRUAL": 0.02,
+          "INTERCOMPANY": 0.01,
+          "FX_REVALUATION": 0,
+          "UNSUPPORTED_JOURNAL": 0.02,
+          "NONE": 0.93
+        }
+      },
+      "blocks_close": {
+        "type": "noul",
+        "noul": 0.09
+      },
+      "severity": {
+        "type": "score",
+        "score": 2.8,
+        "confidence": 0.32,
+        "probabilities": {
+          "0": 0.11,
+          "1": 0.08,
+          "2": 0.19,
+          "3": 0.3,
+          "4": 0.18,
+          "5": 0.12,
+          "6": 0.02
+        }
+      },
+      "owner": {
+        "type": "choice",
+        "choice": "CONTROLLER",
+        "confidence": 0.81,
+        "probabilities": {
+          "AP": 0.1,
+          "AR": 0.01,
+          "TREASURY": 0.02,
+          "TAX": 0.02,
+          "CONTROLLER": 0.85
+        }
+      }
+    },
+    "TB-1320": {
+      "blocker_type": {
+        "type": "choice",
+        "choice": "NONE",
+        "confidence": 0.74,
+        "probabilities": {
+          "UNRECONCILED": 0.08,
+          "MISSING_ACCRUAL": 0.05,
+          "INTERCOMPANY": 0.02,
+          "FX_REVALUATION": 0.02,
+          "UNSUPPORTED_JOURNAL": 0.05,
+          "NONE": 0.78
+        }
+      },
+      "blocks_close": {
+        "type": "noul",
+        "noul": 0.05
+      },
+      "severity": {
+        "type": "score",
+        "score": 1.03,
+        "confidence": 0.62,
+        "probabilities": {
+          "0": 0.31,
+          "1": 0.37,
+          "2": 0.3,
+          "3": 0.02,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "owner": {
+        "type": "choice",
+        "choice": "CONTROLLER",
+        "confidence": 0.55,
+        "probabilities": {
+          "AP": 0.27,
+          "AR": 0.02,
+          "TREASURY": 0.04,
+          "TAX": 0.03,
+          "CONTROLLER": 0.64
+        }
+      }
+    },
+    "TB-1330": {
+      "blocker_type": {
+        "type": "choice",
+        "choice": "NONE",
+        "confidence": 0.75,
+        "probabilities": {
+          "UNRECONCILED": 0.04,
+          "MISSING_ACCRUAL": 0.11,
+          "INTERCOMPANY": 0.02,
+          "FX_REVALUATION": 0.01,
+          "UNSUPPORTED_JOURNAL": 0.03,
+          "NONE": 0.79
+        }
+      },
+      "blocks_close": {
+        "type": "noul",
+        "noul": 0.07
+      },
+      "severity": {
+        "type": "score",
+        "score": 1.27,
+        "confidence": 0.53,
+        "probabilities": {
+          "0": 0.2,
+          "1": 0.37,
+          "2": 0.4,
+          "3": 0.02,
+          "4": 0.01,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "owner": {
+        "type": "choice",
+        "choice": "AP",
+        "confidence": 0.45,
+        "probabilities": {
+          "AP": 0.56,
+          "AR": 0.01,
+          "TREASURY": 0.01,
+          "TAX": 0.01,
+          "CONTROLLER": 0.41
+        }
+      }
+    },
+    "TB-1400": {
+      "blocker_type": {
+        "type": "choice",
+        "choice": "UNSUPPORTED_JOURNAL",
+        "confidence": 0.99,
+        "probabilities": {
+          "UNRECONCILED": 0.01,
+          "MISSING_ACCRUAL": 0,
+          "INTERCOMPANY": 0,
+          "FX_REVALUATION": 0,
+          "UNSUPPORTED_JOURNAL": 0.99,
+          "NONE": 0
+        }
+      },
+      "blocks_close": {
+        "type": "noul",
+        "noul": 0.99
+      },
+      "severity": {
+        "type": "score",
+        "score": 4.84,
+        "confidence": 0.88,
+        "probabilities": {
+          "0": 0,
+          "1": 0,
+          "2": 0.01,
+          "3": 0.01,
+          "4": 0.13,
+          "5": 0.83,
+          "6": 0.02
+        }
+      },
+      "owner": {
+        "type": "choice",
+        "choice": "CONTROLLER",
+        "confidence": 1,
+        "probabilities": {
+          "AP": 0,
+          "AR": 0,
+          "TREASURY": 0,
+          "TAX": 0,
+          "CONTROLLER": 1
+        }
+      }
+    },
+    "TB-1410": {
+      "blocker_type": {
+        "type": "choice",
+        "choice": "NONE",
+        "confidence": 0.93,
+        "probabilities": {
+          "UNRECONCILED": 0.01,
+          "MISSING_ACCRUAL": 0.01,
+          "INTERCOMPANY": 0.01,
+          "FX_REVALUATION": 0,
+          "UNSUPPORTED_JOURNAL": 0.03,
+          "NONE": 0.94
+        }
+      },
+      "blocks_close": {
+        "type": "noul",
+        "noul": 0.01
+      },
+      "severity": {
+        "type": "score",
+        "score": 1.11,
+        "confidence": 0.57,
+        "probabilities": {
+          "0": 0.31,
+          "1": 0.35,
+          "2": 0.29,
+          "3": 0.03,
+          "4": 0.01,
+          "5": 0.01,
+          "6": 0
+        }
+      },
+      "owner": {
+        "type": "choice",
+        "choice": "CONTROLLER",
+        "confidence": 0.95,
+        "probabilities": {
+          "AP": 0.02,
+          "AR": 0,
+          "TREASURY": 0.01,
+          "TAX": 0.01,
+          "CONTROLLER": 0.96
+        }
+      }
+    },
+    "TB-1420": {
+      "blocker_type": {
+        "type": "choice",
+        "choice": "NONE",
+        "confidence": 0.6,
+        "probabilities": {
+          "UNRECONCILED": 0.07,
+          "MISSING_ACCRUAL": 0.15,
+          "INTERCOMPANY": 0.04,
+          "FX_REVALUATION": 0.01,
+          "UNSUPPORTED_JOURNAL": 0.06,
+          "NONE": 0.67
+        }
+      },
+      "blocks_close": {
+        "type": "noul",
+        "noul": 0.05
+      },
+      "severity": {
+        "type": "score",
+        "score": 0.89,
+        "confidence": 0.63,
+        "probabilities": {
+          "0": 0.37,
+          "1": 0.38,
+          "2": 0.24,
+          "3": 0.01,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "owner": {
+        "type": "choice",
+        "choice": "AP",
+        "confidence": 0.99,
+        "probabilities": {
+          "AP": 0.99,
+          "AR": 0,
+          "TREASURY": 0,
+          "TAX": 0,
+          "CONTROLLER": 0.01
+        }
+      }
+    },
+    "TB-1430": {
+      "blocker_type": {
+        "type": "choice",
+        "choice": "NONE",
+        "confidence": 0.82,
+        "probabilities": {
+          "UNRECONCILED": 0.05,
+          "MISSING_ACCRUAL": 0.05,
+          "INTERCOMPANY": 0.01,
+          "FX_REVALUATION": 0.01,
+          "UNSUPPORTED_JOURNAL": 0.03,
+          "NONE": 0.85
+        }
+      },
+      "blocks_close": {
+        "type": "noul",
+        "noul": 0.09
+      },
+      "severity": {
+        "type": "score",
+        "score": 0.83,
+        "confidence": 0.52,
+        "probabilities": {
+          "0": 0.45,
+          "1": 0.31,
+          "2": 0.21,
+          "3": 0.02,
+          "4": 0.01,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "owner": {
+        "type": "choice",
+        "choice": "CONTROLLER",
+        "confidence": 1,
+        "probabilities": {
+          "AP": 0,
+          "AR": 0,
+          "TREASURY": 0,
+          "TAX": 0,
+          "CONTROLLER": 1
+        }
+      }
+    },
+    "TB-1500": {
+      "blocker_type": {
+        "type": "choice",
+        "choice": "NONE",
+        "confidence": 0.28,
+        "probabilities": {
+          "UNRECONCILED": 0.21,
+          "MISSING_ACCRUAL": 0.05,
+          "INTERCOMPANY": 0.06,
+          "FX_REVALUATION": 0.06,
+          "UNSUPPORTED_JOURNAL": 0.22,
+          "NONE": 0.4
+        }
+      },
+      "blocks_close": {
+        "type": "noul",
+        "noul": 0.86
+      },
+      "severity": {
+        "type": "score",
+        "score": 1.85,
+        "confidence": 0.52,
+        "probabilities": {
+          "0": 0.12,
+          "1": 0.25,
+          "2": 0.38,
+          "3": 0.18,
+          "4": 0.05,
+          "5": 0.02,
+          "6": 0
+        }
+      },
+      "owner": {
+        "type": "choice",
+        "choice": "CONTROLLER",
+        "confidence": 0.98,
+        "probabilities": {
+          "AP": 0.01,
+          "AR": 0,
+          "TREASURY": 0.01,
+          "TAX": 0,
+          "CONTROLLER": 0.98
+        }
+      }
+    },
+    "TB-1510": {
+      "blocker_type": {
+        "type": "choice",
+        "choice": "NONE",
+        "confidence": 0.81,
+        "probabilities": {
+          "UNRECONCILED": 0.03,
+          "MISSING_ACCRUAL": 0.03,
+          "INTERCOMPANY": 0.01,
+          "FX_REVALUATION": 0.01,
+          "UNSUPPORTED_JOURNAL": 0.08,
+          "NONE": 0.84
+        }
+      },
+      "blocks_close": {
+        "type": "noul",
+        "noul": 0.05
+      },
+      "severity": {
+        "type": "score",
+        "score": 0.75,
+        "confidence": 0.56,
+        "probabilities": {
+          "0": 0.48,
+          "1": 0.3,
+          "2": 0.21,
+          "3": 0.01,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "owner": {
+        "type": "choice",
+        "choice": "CONTROLLER",
+        "confidence": 0.81,
+        "probabilities": {
+          "AP": 0.02,
+          "AR": 0.01,
+          "TREASURY": 0.09,
+          "TAX": 0.03,
+          "CONTROLLER": 0.85
+        }
+      }
+    },
+    "TB-1520": {
+      "blocker_type": {
+        "type": "choice",
+        "choice": "NONE",
+        "confidence": 0.63,
+        "probabilities": {
+          "UNRECONCILED": 0.06,
+          "MISSING_ACCRUAL": 0.1,
+          "INTERCOMPANY": 0.02,
+          "FX_REVALUATION": 0.01,
+          "UNSUPPORTED_JOURNAL": 0.12,
+          "NONE": 0.69
+        }
+      },
+      "blocks_close": {
+        "type": "noul",
+        "noul": 0.3
+      },
+      "severity": {
+        "type": "score",
+        "score": 1.84,
+        "confidence": 0.65,
+        "probabilities": {
+          "0": 0.06,
+          "1": 0.26,
+          "2": 0.5,
+          "3": 0.15,
+          "4": 0.02,
+          "5": 0.01,
+          "6": 0
+        }
+      },
+      "owner": {
+        "type": "choice",
+        "choice": "CONTROLLER",
+        "confidence": 0.95,
+        "probabilities": {
+          "AP": 0.01,
+          "AR": 0.01,
+          "TREASURY": 0.01,
+          "TAX": 0.01,
+          "CONTROLLER": 0.96
+        }
+      }
+    },
+    "TB-1600": {
+      "blocker_type": {
+        "type": "choice",
+        "choice": "NONE",
+        "confidence": 0.8,
+        "probabilities": {
+          "UNRECONCILED": 0.04,
+          "MISSING_ACCRUAL": 0.04,
+          "INTERCOMPANY": 0.02,
+          "FX_REVALUATION": 0.02,
+          "UNSUPPORTED_JOURNAL": 0.05,
+          "NONE": 0.83
+        }
+      },
+      "blocks_close": {
+        "type": "noul",
+        "noul": 0.03
+      },
+      "severity": {
+        "type": "score",
+        "score": 1.22,
+        "confidence": 0.45,
+        "probabilities": {
+          "0": 0.28,
+          "1": 0.3,
+          "2": 0.37,
+          "3": 0.03,
+          "4": 0.01,
+          "5": 0.01,
+          "6": 0
+        }
+      },
+      "owner": {
+        "type": "choice",
+        "choice": "TREASURY",
+        "confidence": 1,
+        "probabilities": {
+          "AP": 0,
+          "AR": 0,
+          "TREASURY": 1,
+          "TAX": 0,
+          "CONTROLLER": 0
+        }
+      }
+    },
+    "TB-1610": {
+      "blocker_type": {
+        "type": "choice",
+        "choice": "INTERCOMPANY",
+        "confidence": 0.98,
+        "probabilities": {
+          "UNRECONCILED": 0.01,
+          "MISSING_ACCRUAL": 0.01,
+          "INTERCOMPANY": 0.98,
+          "FX_REVALUATION": 0,
+          "UNSUPPORTED_JOURNAL": 0,
+          "NONE": 0
+        }
+      },
+      "blocks_close": {
+        "type": "noul",
+        "noul": 0.99
+      },
+      "severity": {
+        "type": "score",
+        "score": 4.73,
+        "confidence": 0.83,
+        "probabilities": {
+          "0": 0,
+          "1": 0,
+          "2": 0.01,
+          "3": 0.03,
+          "4": 0.19,
+          "5": 0.76,
+          "6": 0.01
+        }
+      },
+      "owner": {
+        "type": "choice",
+        "choice": "TREASURY",
+        "confidence": 1,
+        "probabilities": {
+          "AP": 0,
+          "AR": 0,
+          "TREASURY": 1,
+          "TAX": 0,
+          "CONTROLLER": 0
+        }
+      }
+    },
+    "TB-1620": {
+      "blocker_type": {
+        "type": "choice",
+        "choice": "NONE",
+        "confidence": 0.53,
+        "probabilities": {
+          "UNRECONCILED": 0.12,
+          "MISSING_ACCRUAL": 0.08,
+          "INTERCOMPANY": 0.05,
+          "FX_REVALUATION": 0.04,
+          "UNSUPPORTED_JOURNAL": 0.1,
+          "NONE": 0.61
+        }
+      },
+      "blocks_close": {
+        "type": "noul",
+        "noul": 0.18
+      },
+      "severity": {
+        "type": "score",
+        "score": 1.55,
+        "confidence": 0.55,
+        "probabilities": {
+          "0": 0.17,
+          "1": 0.27,
+          "2": 0.44,
+          "3": 0.09,
+          "4": 0.02,
+          "5": 0.01,
+          "6": 0
+        }
+      },
+      "owner": {
+        "type": "choice",
+        "choice": "TREASURY",
+        "confidence": 1,
+        "probabilities": {
+          "AP": 0,
+          "AR": 0,
+          "TREASURY": 1,
+          "TAX": 0,
+          "CONTROLLER": 0
+        }
+      }
+    },
+    "TB-1700": {
+      "blocker_type": {
+        "type": "choice",
+        "choice": "NONE",
+        "confidence": 0.71,
+        "probabilities": {
+          "UNRECONCILED": 0.08,
+          "MISSING_ACCRUAL": 0.05,
+          "INTERCOMPANY": 0.02,
+          "FX_REVALUATION": 0.02,
+          "UNSUPPORTED_JOURNAL": 0.07,
+          "NONE": 0.76
+        }
+      },
+      "blocks_close": {
+        "type": "noul",
+        "noul": 0.01
+      },
+      "severity": {
+        "type": "score",
+        "score": 1.58,
+        "confidence": 0.42,
+        "probabilities": {
+          "0": 0.2,
+          "1": 0.31,
+          "2": 0.32,
+          "3": 0.09,
+          "4": 0.05,
+          "5": 0.02,
+          "6": 0.01
+        }
+      },
+      "owner": {
+        "type": "choice",
+        "choice": "TAX",
+        "confidence": 0.95,
+        "probabilities": {
+          "AP": 0,
+          "AR": 0,
+          "TREASURY": 0.03,
+          "TAX": 0.96,
+          "CONTROLLER": 0.01
+        }
+      }
+    },
+    "TB-1710": {
+      "blocker_type": {
+        "type": "choice",
+        "choice": "NONE",
+        "confidence": 0.89,
+        "probabilities": {
+          "UNRECONCILED": 0.02,
+          "MISSING_ACCRUAL": 0.02,
+          "INTERCOMPANY": 0.01,
+          "FX_REVALUATION": 0,
+          "UNSUPPORTED_JOURNAL": 0.04,
+          "NONE": 0.91
+        }
+      },
+      "blocks_close": {
+        "type": "noul",
+        "noul": 0.05
+      },
+      "severity": {
+        "type": "score",
+        "score": 0.62,
+        "confidence": 0.64,
+        "probabilities": {
+          "0": 0.52,
+          "1": 0.34,
+          "2": 0.14,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "owner": {
+        "type": "choice",
+        "choice": "TAX",
+        "confidence": 1,
+        "probabilities": {
+          "AP": 0,
+          "AR": 0,
+          "TREASURY": 0,
+          "TAX": 1,
+          "CONTROLLER": 0
+        }
+      }
+    },
+    "TB-1800": {
+      "blocker_type": {
+        "type": "choice",
+        "choice": "NONE",
+        "confidence": 0.64,
+        "probabilities": {
+          "UNRECONCILED": 0.12,
+          "MISSING_ACCRUAL": 0.09,
+          "INTERCOMPANY": 0.03,
+          "FX_REVALUATION": 0.02,
+          "UNSUPPORTED_JOURNAL": 0.04,
+          "NONE": 0.7
+        }
+      },
+      "blocks_close": {
+        "type": "noul",
+        "noul": 0.1
+      },
+      "severity": {
+        "type": "score",
+        "score": 0.96,
+        "confidence": 0.64,
+        "probabilities": {
+          "0": 0.33,
+          "1": 0.39,
+          "2": 0.27,
+          "3": 0.01,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "owner": {
+        "type": "choice",
+        "choice": "CONTROLLER",
+        "confidence": 0.71,
+        "probabilities": {
+          "AP": 0.03,
+          "AR": 0.01,
+          "TREASURY": 0.17,
+          "TAX": 0.02,
+          "CONTROLLER": 0.77
+        }
+      }
+    },
+    "TB-2000": {
+      "blocker_type": {
+        "type": "choice",
+        "choice": "NONE",
+        "confidence": 0.82,
+        "probabilities": {
+          "UNRECONCILED": 0.05,
+          "MISSING_ACCRUAL": 0.03,
+          "INTERCOMPANY": 0.02,
+          "FX_REVALUATION": 0.01,
+          "UNSUPPORTED_JOURNAL": 0.04,
+          "NONE": 0.85
+        }
+      },
+      "blocks_close": {
+        "type": "noul",
+        "noul": 0.01
+      },
+      "severity": {
+        "type": "score",
+        "score": 1.94,
+        "confidence": 0.63,
+        "probabilities": {
+          "0": 0.07,
+          "1": 0.21,
+          "2": 0.48,
+          "3": 0.2,
+          "4": 0.03,
+          "5": 0.01,
+          "6": 0
+        }
+      },
+      "owner": {
+        "type": "choice",
+        "choice": "AP",
+        "confidence": 0.75,
+        "probabilities": {
+          "AP": 0.8,
+          "AR": 0.02,
+          "TREASURY": 0.02,
+          "TAX": 0.02,
+          "CONTROLLER": 0.14
+        }
+      }
+    },
+    "TB-2010": {
+      "blocker_type": {
+        "type": "choice",
+        "choice": "NONE",
+        "confidence": 0.8,
+        "probabilities": {
+          "UNRECONCILED": 0.05,
+          "MISSING_ACCRUAL": 0.05,
+          "INTERCOMPANY": 0.02,
+          "FX_REVALUATION": 0.01,
+          "UNSUPPORTED_JOURNAL": 0.04,
+          "NONE": 0.83
+        }
+      },
+      "blocks_close": {
+        "type": "noul",
+        "noul": 0.02
+      },
+      "severity": {
+        "type": "score",
+        "score": 2.94,
+        "confidence": 0.24,
+        "probabilities": {
+          "0": 0.05,
+          "1": 0.1,
+          "2": 0.23,
+          "3": 0.22,
+          "4": 0.29,
+          "5": 0.1,
+          "6": 0.01
+        }
+      },
+      "owner": {
+        "type": "choice",
+        "choice": "AP",
+        "confidence": 0.99,
+        "probabilities": {
+          "AP": 0.99,
+          "AR": 0,
+          "TREASURY": 0,
+          "TAX": 0,
+          "CONTROLLER": 0.01
+        }
+      }
+    },
+    "TB-2020": {
+      "blocker_type": {
+        "type": "choice",
+        "choice": "NONE",
+        "confidence": 0.65,
+        "probabilities": {
+          "UNRECONCILED": 0.07,
+          "MISSING_ACCRUAL": 0.11,
+          "INTERCOMPANY": 0.03,
+          "FX_REVALUATION": 0.03,
+          "UNSUPPORTED_JOURNAL": 0.05,
+          "NONE": 0.71
+        }
+      },
+      "blocks_close": {
+        "type": "noul",
+        "noul": 0.13
+      },
+      "severity": {
+        "type": "score",
+        "score": 1.17,
+        "confidence": 0.57,
+        "probabilities": {
+          "0": 0.28,
+          "1": 0.35,
+          "2": 0.32,
+          "3": 0.03,
+          "4": 0.01,
+          "5": 0.01,
+          "6": 0
+        }
+      },
+      "owner": {
+        "type": "choice",
+        "choice": "AP",
+        "confidence": 1,
+        "probabilities": {
+          "AP": 1,
+          "AR": 0,
+          "TREASURY": 0,
+          "TAX": 0,
+          "CONTROLLER": 0
+        }
+      }
+    },
+    "TB-2100": {
+      "blocker_type": {
+        "type": "choice",
+        "choice": "NONE",
+        "confidence": 0.84,
+        "probabilities": {
+          "UNRECONCILED": 0.03,
+          "MISSING_ACCRUAL": 0.03,
+          "INTERCOMPANY": 0.01,
+          "FX_REVALUATION": 0.01,
+          "UNSUPPORTED_JOURNAL": 0.05,
+          "NONE": 0.87
+        }
+      },
+      "blocks_close": {
+        "type": "noul",
+        "noul": 0.05
+      },
+      "severity": {
+        "type": "score",
+        "score": 1.64,
+        "confidence": 0.44,
+        "probabilities": {
+          "0": 0.19,
+          "1": 0.28,
+          "2": 0.34,
+          "3": 0.12,
+          "4": 0.04,
+          "5": 0.02,
+          "6": 0.01
+        }
+      },
+      "owner": {
+        "type": "choice",
+        "choice": "AP",
+        "confidence": 0.96,
+        "probabilities": {
+          "AP": 0.97,
+          "AR": 0.01,
+          "TREASURY": 0,
+          "TAX": 0,
+          "CONTROLLER": 0.02
+        }
+      }
+    },
+    "TB-2110": {
+      "blocker_type": {
+        "type": "choice",
+        "choice": "NONE",
+        "confidence": 0.63,
+        "probabilities": {
+          "UNRECONCILED": 0.15,
+          "MISSING_ACCRUAL": 0.09,
+          "INTERCOMPANY": 0.03,
+          "FX_REVALUATION": 0.01,
+          "UNSUPPORTED_JOURNAL": 0.03,
+          "NONE": 0.69
+        }
+      },
+      "blocks_close": {
+        "type": "noul",
+        "noul": 0.26
+      },
+      "severity": {
+        "type": "score",
+        "score": 1.48,
+        "confidence": 0.58,
+        "probabilities": {
+          "0": 0.16,
+          "1": 0.3,
+          "2": 0.47,
+          "3": 0.04,
+          "4": 0.03,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "owner": {
+        "type": "choice",
+        "choice": "AP",
+        "confidence": 0.99,
+        "probabilities": {
+          "AP": 0.99,
+          "AR": 0,
+          "TREASURY": 0,
+          "TAX": 0,
+          "CONTROLLER": 0.01
+        }
+      }
+    },
+    "TB-2120": {
+      "blocker_type": {
+        "type": "choice",
+        "choice": "MISSING_ACCRUAL",
+        "confidence": 0.96,
+        "probabilities": {
+          "UNRECONCILED": 0.01,
+          "MISSING_ACCRUAL": 0.97,
+          "INTERCOMPANY": 0.01,
+          "FX_REVALUATION": 0,
+          "UNSUPPORTED_JOURNAL": 0,
+          "NONE": 0.01
+        }
+      },
+      "blocks_close": {
+        "type": "noul",
+        "noul": 0.99
+      },
+      "severity": {
+        "type": "score",
+        "score": 4.27,
+        "confidence": 0.56,
+        "probabilities": {
+          "0": 0.02,
+          "1": 0.01,
+          "2": 0.03,
+          "3": 0.09,
+          "4": 0.33,
+          "5": 0.51,
+          "6": 0.01
+        }
+      },
+      "owner": {
+        "type": "choice",
+        "choice": "AP",
+        "confidence": 0.95,
+        "probabilities": {
+          "AP": 0.96,
+          "AR": 0,
+          "TREASURY": 0,
+          "TAX": 0,
+          "CONTROLLER": 0.04
+        }
+      }
+    },
+    "TB-2130": {
+      "blocker_type": {
+        "type": "choice",
+        "choice": "NONE",
+        "confidence": 0.84,
+        "probabilities": {
+          "UNRECONCILED": 0.06,
+          "MISSING_ACCRUAL": 0.03,
+          "INTERCOMPANY": 0.01,
+          "FX_REVALUATION": 0.01,
+          "UNSUPPORTED_JOURNAL": 0.02,
+          "NONE": 0.87
+        }
+      },
+      "blocks_close": {
+        "type": "noul",
+        "noul": 0.06
+      },
+      "severity": {
+        "type": "score",
+        "score": 1.15,
+        "confidence": 0.61,
+        "probabilities": {
+          "0": 0.26,
+          "1": 0.38,
+          "2": 0.32,
+          "3": 0.03,
+          "4": 0.01,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "owner": {
+        "type": "choice",
+        "choice": "AP",
+        "confidence": 0.95,
+        "probabilities": {
+          "AP": 0.96,
+          "AR": 0,
+          "TREASURY": 0,
+          "TAX": 0,
+          "CONTROLLER": 0.04
+        }
+      }
+    },
+    "TB-2140": {
+      "blocker_type": {
+        "type": "choice",
+        "choice": "MISSING_ACCRUAL",
+        "confidence": 0.96,
+        "probabilities": {
+          "UNRECONCILED": 0.01,
+          "MISSING_ACCRUAL": 0.97,
+          "INTERCOMPANY": 0.01,
+          "FX_REVALUATION": 0,
+          "UNSUPPORTED_JOURNAL": 0,
+          "NONE": 0.01
+        }
+      },
+      "blocks_close": {
+        "type": "noul",
+        "noul": 0.94
+      },
+      "severity": {
+        "type": "score",
+        "score": 3.57,
+        "confidence": 0.61,
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.01,
+          "2": 0.12,
+          "3": 0.24,
+          "4": 0.5,
+          "5": 0.12,
+          "6": 0
+        }
+      },
+      "owner": {
+        "type": "choice",
+        "choice": "AP",
+        "confidence": 0.99,
+        "probabilities": {
+          "AP": 0.99,
+          "AR": 0,
+          "TREASURY": 0,
+          "TAX": 0,
+          "CONTROLLER": 0.01
+        }
+      }
+    },
+    "TB-2200": {
+      "blocker_type": {
+        "type": "choice",
+        "choice": "NONE",
+        "confidence": 0.8,
+        "probabilities": {
+          "UNRECONCILED": 0.05,
+          "MISSING_ACCRUAL": 0.05,
+          "INTERCOMPANY": 0.02,
+          "FX_REVALUATION": 0.01,
+          "UNSUPPORTED_JOURNAL": 0.04,
+          "NONE": 0.83
+        }
+      },
+      "blocks_close": {
+        "type": "noul",
+        "noul": 0.1
+      },
+      "severity": {
+        "type": "score",
+        "score": 0.81,
+        "confidence": 0.53,
+        "probabilities": {
+          "0": 0.43,
+          "1": 0.33,
+          "2": 0.24,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "owner": {
+        "type": "choice",
+        "choice": "CONTROLLER",
+        "confidence": 1,
+        "probabilities": {
+          "AP": 0,
+          "AR": 0,
+          "TREASURY": 0,
+          "TAX": 0,
+          "CONTROLLER": 1
+        }
+      }
+    },
+    "TB-2210": {
+      "blocker_type": {
+        "type": "choice",
+        "choice": "NONE",
+        "confidence": 0.59,
+        "probabilities": {
+          "UNRECONCILED": 0.05,
+          "MISSING_ACCRUAL": 0.1,
+          "INTERCOMPANY": 0.03,
+          "FX_REVALUATION": 0.02,
+          "UNSUPPORTED_JOURNAL": 0.14,
+          "NONE": 0.66
+        }
+      },
+      "blocks_close": {
+        "type": "noul",
+        "noul": 0.15
+      },
+      "severity": {
+        "type": "score",
+        "score": 3.44,
+        "confidence": 0.5,
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.03,
+          "2": 0.12,
+          "3": 0.34,
+          "4": 0.36,
+          "5": 0.13,
+          "6": 0.01
+        }
+      },
+      "owner": {
+        "type": "choice",
+        "choice": "CONTROLLER",
+        "confidence": 0.99,
+        "probabilities": {
+          "AP": 0.01,
+          "AR": 0,
+          "TREASURY": 0,
+          "TAX": 0,
+          "CONTROLLER": 0.99
+        }
+      }
+    },
+    "TB-2220": {
+      "blocker_type": {
+        "type": "choice",
+        "choice": "NONE",
+        "confidence": 0.74,
+        "probabilities": {
+          "UNRECONCILED": 0.06,
+          "MISSING_ACCRUAL": 0.06,
+          "INTERCOMPANY": 0.02,
+          "FX_REVALUATION": 0.01,
+          "UNSUPPORTED_JOURNAL": 0.07,
+          "NONE": 0.78
+        }
+      },
+      "blocks_close": {
+        "type": "noul",
+        "noul": 0.06
+      },
+      "severity": {
+        "type": "score",
+        "score": 1.34,
+        "confidence": 0.57,
+        "probabilities": {
+          "0": 0.19,
+          "1": 0.32,
+          "2": 0.46,
+          "3": 0.02,
+          "4": 0.01,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "owner": {
+        "type": "choice",
+        "choice": "CONTROLLER",
+        "confidence": 0.98,
+        "probabilities": {
+          "AP": 0,
+          "AR": 0,
+          "TREASURY": 0.01,
+          "TAX": 0.01,
+          "CONTROLLER": 0.98
+        }
+      }
+    },
+    "TB-2300": {
+      "blocker_type": {
+        "type": "choice",
+        "choice": "UNSUPPORTED_JOURNAL",
+        "confidence": 0.98,
+        "probabilities": {
+          "UNRECONCILED": 0.01,
+          "MISSING_ACCRUAL": 0,
+          "INTERCOMPANY": 0,
+          "FX_REVALUATION": 0,
+          "UNSUPPORTED_JOURNAL": 0.98,
+          "NONE": 0.01
+        }
+      },
+      "blocks_close": {
+        "type": "noul",
+        "noul": 0.99
+      },
+      "severity": {
+        "type": "score",
+        "score": 4.72,
+        "confidence": 0.83,
+        "probabilities": {
+          "0": 0,
+          "1": 0,
+          "2": 0.01,
+          "3": 0.03,
+          "4": 0.2,
+          "5": 0.75,
+          "6": 0.01
+        }
+      },
+      "owner": {
+        "type": "choice",
+        "choice": "TAX",
+        "confidence": 0.82,
+        "probabilities": {
+          "AP": 0.01,
+          "AR": 0,
+          "TREASURY": 0.01,
+          "TAX": 0.86,
+          "CONTROLLER": 0.12
+        }
+      }
+    },
+    "TB-2310": {
+      "blocker_type": {
+        "type": "choice",
+        "choice": "NONE",
+        "confidence": 0.89,
+        "probabilities": {
+          "UNRECONCILED": 0.02,
+          "MISSING_ACCRUAL": 0.01,
+          "INTERCOMPANY": 0.01,
+          "FX_REVALUATION": 0.01,
+          "UNSUPPORTED_JOURNAL": 0.04,
+          "NONE": 0.91
+        }
+      },
+      "blocks_close": {
+        "type": "noul",
+        "noul": 0.08
+      },
+      "severity": {
+        "type": "score",
+        "score": 0.68,
+        "confidence": 0.6,
+        "probabilities": {
+          "0": 0.49,
+          "1": 0.35,
+          "2": 0.15,
+          "3": 0.01,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "owner": {
+        "type": "choice",
+        "choice": "TAX",
+        "confidence": 0.98,
+        "probabilities": {
+          "AP": 0,
+          "AR": 0,
+          "TREASURY": 0.01,
+          "TAX": 0.98,
+          "CONTROLLER": 0.01
+        }
+      }
+    },
+    "TB-2320": {
+      "blocker_type": {
+        "type": "choice",
+        "choice": "NONE",
+        "confidence": 0.35,
+        "probabilities": {
+          "UNRECONCILED": 0.31,
+          "MISSING_ACCRUAL": 0.06,
+          "INTERCOMPANY": 0.05,
+          "FX_REVALUATION": 0.02,
+          "UNSUPPORTED_JOURNAL": 0.1,
+          "NONE": 0.46
+        }
+      },
+      "blocks_close": {
+        "type": "noul",
+        "noul": 0.91
+      },
+      "severity": {
+        "type": "score",
+        "score": 3.38,
+        "confidence": 0.43,
+        "probabilities": {
+          "0": 0.03,
+          "1": 0.03,
+          "2": 0.15,
+          "3": 0.29,
+          "4": 0.33,
+          "5": 0.16,
+          "6": 0.01
+        }
+      },
+      "owner": {
+        "type": "choice",
+        "choice": "TAX",
+        "confidence": 1,
+        "probabilities": {
+          "AP": 0,
+          "AR": 0,
+          "TREASURY": 0,
+          "TAX": 1,
+          "CONTROLLER": 0
+        }
+      }
+    },
+    "TB-2330": {
+      "blocker_type": {
+        "type": "choice",
+        "choice": "NONE",
+        "confidence": 0.81,
+        "probabilities": {
+          "UNRECONCILED": 0.05,
+          "MISSING_ACCRUAL": 0.05,
+          "INTERCOMPANY": 0.01,
+          "FX_REVALUATION": 0.01,
+          "UNSUPPORTED_JOURNAL": 0.04,
+          "NONE": 0.84
+        }
+      },
+      "blocks_close": {
+        "type": "noul",
+        "noul": 0.05
+      },
+      "severity": {
+        "type": "score",
+        "score": 1.71,
+        "confidence": 0.36,
+        "probabilities": {
+          "0": 0.23,
+          "1": 0.23,
+          "2": 0.28,
+          "3": 0.14,
+          "4": 0.1,
+          "5": 0.02,
+          "6": 0
+        }
+      },
+      "owner": {
+        "type": "choice",
+        "choice": "TAX",
+        "confidence": 0.99,
+        "probabilities": {
+          "AP": 0,
+          "AR": 0,
+          "TREASURY": 0.01,
+          "TAX": 0.99,
+          "CONTROLLER": 0
+        }
+      }
+    },
+    "TB-2340": {
+      "blocker_type": {
+        "type": "choice",
+        "choice": "NONE",
+        "confidence": 0.89,
+        "probabilities": {
+          "UNRECONCILED": 0.02,
+          "MISSING_ACCRUAL": 0.02,
+          "INTERCOMPANY": 0.01,
+          "FX_REVALUATION": 0.01,
+          "UNSUPPORTED_JOURNAL": 0.03,
+          "NONE": 0.91
+        }
+      },
+      "blocks_close": {
+        "type": "noul",
+        "noul": 0.04
+      },
+      "severity": {
+        "type": "score",
+        "score": 1.34,
+        "confidence": 0.4,
+        "probabilities": {
+          "0": 0.27,
+          "1": 0.3,
+          "2": 0.33,
+          "3": 0.05,
+          "4": 0.03,
+          "5": 0.01,
+          "6": 0.01
+        }
+      },
+      "owner": {
+        "type": "choice",
+        "choice": "TAX",
+        "confidence": 0.99,
+        "probabilities": {
+          "AP": 0,
+          "AR": 0,
+          "TREASURY": 0.01,
+          "TAX": 0.99,
+          "CONTROLLER": 0
+        }
+      }
+    },
+    "TB-2400": {
+      "blocker_type": {
+        "type": "choice",
+        "choice": "NONE",
+        "confidence": 0.83,
+        "probabilities": {
+          "UNRECONCILED": 0.04,
+          "MISSING_ACCRUAL": 0.04,
+          "INTERCOMPANY": 0.01,
+          "FX_REVALUATION": 0.01,
+          "UNSUPPORTED_JOURNAL": 0.04,
+          "NONE": 0.86
+        }
+      },
+      "blocks_close": {
+        "type": "noul",
+        "noul": 0.02
+      },
+      "severity": {
+        "type": "score",
+        "score": 0.82,
+        "confidence": 0.52,
+        "probabilities": {
+          "0": 0.47,
+          "1": 0.28,
+          "2": 0.22,
+          "3": 0.02,
+          "4": 0.01,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "owner": {
+        "type": "choice",
+        "choice": "AR",
+        "confidence": 1,
+        "probabilities": {
+          "AP": 0,
+          "AR": 1,
+          "TREASURY": 0,
+          "TAX": 0,
+          "CONTROLLER": 0
+        }
+      }
+    },
+    "TB-2410": {
+      "blocker_type": {
+        "type": "choice",
+        "choice": "NONE",
+        "confidence": 0.88,
+        "probabilities": {
+          "UNRECONCILED": 0.01,
+          "MISSING_ACCRUAL": 0.02,
+          "INTERCOMPANY": 0.01,
+          "FX_REVALUATION": 0.01,
+          "UNSUPPORTED_JOURNAL": 0.05,
+          "NONE": 0.9
+        }
+      },
+      "blocks_close": {
+        "type": "noul",
+        "noul": 0.06
+      },
+      "severity": {
+        "type": "score",
+        "score": 0.3,
+        "confidence": 0.83,
+        "probabilities": {
+          "0": 0.77,
+          "1": 0.16,
+          "2": 0.07,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "owner": {
+        "type": "choice",
+        "choice": "AR",
+        "confidence": 1,
+        "probabilities": {
+          "AP": 0,
+          "AR": 1,
+          "TREASURY": 0,
+          "TAX": 0,
+          "CONTROLLER": 0
+        }
+      }
+    },
+    "TB-2420": {
+      "blocker_type": {
+        "type": "choice",
+        "choice": "NONE",
+        "confidence": 0.9,
+        "probabilities": {
+          "UNRECONCILED": 0.02,
+          "MISSING_ACCRUAL": 0.03,
+          "INTERCOMPANY": 0.01,
+          "FX_REVALUATION": 0,
+          "UNSUPPORTED_JOURNAL": 0.02,
+          "NONE": 0.92
+        }
+      },
+      "blocks_close": {
+        "type": "noul",
+        "noul": 0.05
+      },
+      "severity": {
+        "type": "score",
+        "score": 0.52,
+        "confidence": 0.7,
+        "probabilities": {
+          "0": 0.59,
+          "1": 0.3,
+          "2": 0.11,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "owner": {
+        "type": "choice",
+        "choice": "AR",
+        "confidence": 1,
+        "probabilities": {
+          "AP": 0,
+          "AR": 1,
+          "TREASURY": 0,
+          "TAX": 0,
+          "CONTROLLER": 0
+        }
+      }
+    },
+    "TB-2500": {
+      "blocker_type": {
+        "type": "choice",
+        "choice": "INTERCOMPANY",
+        "confidence": 0.98,
+        "probabilities": {
+          "UNRECONCILED": 0.01,
+          "MISSING_ACCRUAL": 0.01,
+          "INTERCOMPANY": 0.98,
+          "FX_REVALUATION": 0,
+          "UNSUPPORTED_JOURNAL": 0,
+          "NONE": 0
+        }
+      },
+      "blocks_close": {
+        "type": "noul",
+        "noul": 0.97
+      },
+      "severity": {
+        "type": "score",
+        "score": 4.58,
+        "confidence": 0.74,
+        "probabilities": {
+          "0": 0,
+          "1": 0,
+          "2": 0.01,
+          "3": 0.05,
+          "4": 0.3,
+          "5": 0.63,
+          "6": 0.01
+        }
+      },
+      "owner": {
+        "type": "choice",
+        "choice": "TREASURY",
+        "confidence": 1,
+        "probabilities": {
+          "AP": 0,
+          "AR": 0,
+          "TREASURY": 1,
+          "TAX": 0,
+          "CONTROLLER": 0
+        }
+      }
+    },
+    "TB-2510": {
+      "blocker_type": {
+        "type": "choice",
+        "choice": "NONE",
+        "confidence": 0.41,
+        "probabilities": {
+          "UNRECONCILED": 0.23,
+          "MISSING_ACCRUAL": 0.07,
+          "INTERCOMPANY": 0.04,
+          "FX_REVALUATION": 0.05,
+          "UNSUPPORTED_JOURNAL": 0.1,
+          "NONE": 0.51
+        }
+      },
+      "blocks_close": {
+        "type": "noul",
+        "noul": 0.01
+      },
+      "severity": {
+        "type": "score",
+        "score": 1.78,
+        "confidence": 0.4,
+        "probabilities": {
+          "0": 0.17,
+          "1": 0.28,
+          "2": 0.32,
+          "3": 0.13,
+          "4": 0.05,
+          "5": 0.03,
+          "6": 0.02
+        }
+      },
+      "owner": {
+        "type": "choice",
+        "choice": "TREASURY",
+        "confidence": 1,
+        "probabilities": {
+          "AP": 0,
+          "AR": 0,
+          "TREASURY": 1,
+          "TAX": 0,
+          "CONTROLLER": 0
+        }
+      }
+    },
+    "TB-2520": {
+      "blocker_type": {
+        "type": "choice",
+        "choice": "NONE",
+        "confidence": 0.72,
+        "probabilities": {
+          "UNRECONCILED": 0.05,
+          "MISSING_ACCRUAL": 0.08,
+          "INTERCOMPANY": 0.03,
+          "FX_REVALUATION": 0.02,
+          "UNSUPPORTED_JOURNAL": 0.05,
+          "NONE": 0.77
+        }
+      },
+      "blocks_close": {
+        "type": "noul",
+        "noul": 0.09
+      },
+      "severity": {
+        "type": "score",
+        "score": 0.79,
+        "confidence": 0.54,
+        "probabilities": {
+          "0": 0.44,
+          "1": 0.34,
+          "2": 0.21,
+          "3": 0.01,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "owner": {
+        "type": "choice",
+        "choice": "TREASURY",
+        "confidence": 1,
+        "probabilities": {
+          "AP": 0,
+          "AR": 0,
+          "TREASURY": 1,
+          "TAX": 0,
+          "CONTROLLER": 0
+        }
+      }
+    },
+    "TB-2600": {
+      "blocker_type": {
+        "type": "choice",
+        "choice": "NONE",
+        "confidence": 0.87,
+        "probabilities": {
+          "UNRECONCILED": 0.03,
+          "MISSING_ACCRUAL": 0.02,
+          "INTERCOMPANY": 0.01,
+          "FX_REVALUATION": 0.01,
+          "UNSUPPORTED_JOURNAL": 0.04,
+          "NONE": 0.89
+        }
+      },
+      "blocks_close": {
+        "type": "noul",
+        "noul": 0.04
+      },
+      "severity": {
+        "type": "score",
+        "score": 0.68,
+        "confidence": 0.6,
+        "probabilities": {
+          "0": 0.54,
+          "1": 0.27,
+          "2": 0.17,
+          "3": 0.01,
+          "4": 0.01,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "owner": {
+        "type": "choice",
+        "choice": "TREASURY",
+        "confidence": 1,
+        "probabilities": {
+          "AP": 0,
+          "AR": 0,
+          "TREASURY": 1,
+          "TAX": 0,
+          "CONTROLLER": 0
+        }
+      }
+    },
+    "TB-2610": {
+      "blocker_type": {
+        "type": "choice",
+        "choice": "NONE",
+        "confidence": 0.77,
+        "probabilities": {
+          "UNRECONCILED": 0.04,
+          "MISSING_ACCRUAL": 0.04,
+          "INTERCOMPANY": 0.02,
+          "FX_REVALUATION": 0.02,
+          "UNSUPPORTED_JOURNAL": 0.07,
+          "NONE": 0.81
+        }
+      },
+      "blocks_close": {
+        "type": "noul",
+        "noul": 0.06
+      },
+      "severity": {
+        "type": "score",
+        "score": 0.71,
+        "confidence": 0.59,
+        "probabilities": {
+          "0": 0.51,
+          "1": 0.3,
+          "2": 0.17,
+          "3": 0.01,
+          "4": 0.01,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "owner": {
+        "type": "choice",
+        "choice": "TREASURY",
+        "confidence": 1,
+        "probabilities": {
+          "AP": 0,
+          "AR": 0,
+          "TREASURY": 1,
+          "TAX": 0,
+          "CONTROLLER": 0
+        }
+      }
+    },
+    "TB-2700": {
+      "blocker_type": {
+        "type": "choice",
+        "choice": "MISSING_ACCRUAL",
+        "confidence": 0.99,
+        "probabilities": {
+          "UNRECONCILED": 0,
+          "MISSING_ACCRUAL": 0.99,
+          "INTERCOMPANY": 0.01,
+          "FX_REVALUATION": 0,
+          "UNSUPPORTED_JOURNAL": 0,
+          "NONE": 0
+        }
+      },
+      "blocks_close": {
+        "type": "noul",
+        "noul": 0.97
+      },
+      "severity": {
+        "type": "score",
+        "score": 4.44,
+        "confidence": 0.65,
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.01,
+          "2": 0.03,
+          "3": 0.08,
+          "4": 0.24,
+          "5": 0.61,
+          "6": 0.02
+        }
+      },
+      "owner": {
+        "type": "choice",
+        "choice": "CONTROLLER",
+        "confidence": 1,
+        "probabilities": {
+          "AP": 0,
+          "AR": 0,
+          "TREASURY": 0,
+          "TAX": 0,
+          "CONTROLLER": 1
+        }
+      }
+    },
+    "TB-2710": {
+      "blocker_type": {
+        "type": "choice",
+        "choice": "NONE",
+        "confidence": 0.82,
+        "probabilities": {
+          "UNRECONCILED": 0.05,
+          "MISSING_ACCRUAL": 0.05,
+          "INTERCOMPANY": 0.01,
+          "FX_REVALUATION": 0.01,
+          "UNSUPPORTED_JOURNAL": 0.03,
+          "NONE": 0.85
+        }
+      },
+      "blocks_close": {
+        "type": "noul",
+        "noul": 0.02
+      },
+      "severity": {
+        "type": "score",
+        "score": 0.72,
+        "confidence": 0.58,
+        "probabilities": {
+          "0": 0.49,
+          "1": 0.31,
+          "2": 0.19,
+          "3": 0.01,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "owner": {
+        "type": "choice",
+        "choice": "CONTROLLER",
+        "confidence": 1,
+        "probabilities": {
+          "AP": 0,
+          "AR": 0,
+          "TREASURY": 0,
+          "TAX": 0,
+          "CONTROLLER": 1
+        }
+      }
+    },
+    "TB-2720": {
+      "blocker_type": {
+        "type": "choice",
+        "choice": "NONE",
+        "confidence": 0.82,
+        "probabilities": {
+          "UNRECONCILED": 0.03,
+          "MISSING_ACCRUAL": 0.04,
+          "INTERCOMPANY": 0.02,
+          "FX_REVALUATION": 0.01,
+          "UNSUPPORTED_JOURNAL": 0.05,
+          "NONE": 0.85
+        }
+      },
+      "blocks_close": {
+        "type": "noul",
+        "noul": 0.06
+      },
+      "severity": {
+        "type": "score",
+        "score": 2.82,
+        "confidence": 0.31,
+        "probabilities": {
+          "0": 0.09,
+          "1": 0.1,
+          "2": 0.21,
+          "3": 0.27,
+          "4": 0.18,
+          "5": 0.13,
+          "6": 0.02
+        }
+      },
+      "owner": {
+        "type": "choice",
+        "choice": "CONTROLLER",
+        "confidence": 1,
+        "probabilities": {
+          "AP": 0,
+          "AR": 0,
+          "TREASURY": 0,
+          "TAX": 0,
+          "CONTROLLER": 1
+        }
+      }
+    },
+    "TB-2800": {
+      "blocker_type": {
+        "type": "choice",
+        "choice": "UNRECONCILED",
+        "confidence": 0.98,
+        "probabilities": {
+          "UNRECONCILED": 0.98,
+          "MISSING_ACCRUAL": 0.01,
+          "INTERCOMPANY": 0,
+          "FX_REVALUATION": 0,
+          "UNSUPPORTED_JOURNAL": 0.01,
+          "NONE": 0
+        }
+      },
+      "blocks_close": {
+        "type": "noul",
+        "noul": 0.95
+      },
+      "severity": {
+        "type": "score",
+        "score": 3.02,
+        "confidence": 0.71,
+        "probabilities": {
+          "0": 0,
+          "1": 0.01,
+          "2": 0.22,
+          "3": 0.59,
+          "4": 0.1,
+          "5": 0.08,
+          "6": 0
+        }
+      },
+      "owner": {
+        "type": "choice",
+        "choice": "AP",
+        "confidence": 0.99,
+        "probabilities": {
+          "AP": 0.99,
+          "AR": 0,
+          "TREASURY": 0,
+          "TAX": 0,
+          "CONTROLLER": 0.01
+        }
+      }
+    },
+    "TB-2900": {
+      "blocker_type": {
+        "type": "choice",
+        "choice": "NONE",
+        "confidence": 0.6,
+        "probabilities": {
+          "UNRECONCILED": 0.04,
+          "MISSING_ACCRUAL": 0.06,
+          "INTERCOMPANY": 0.05,
+          "FX_REVALUATION": 0.03,
+          "UNSUPPORTED_JOURNAL": 0.15,
+          "NONE": 0.67
+        }
+      },
+      "blocks_close": {
+        "type": "noul",
+        "noul": 0.05
+      },
+      "severity": {
+        "type": "score",
+        "score": 1.46,
+        "confidence": 0.64,
+        "probabilities": {
+          "0": 0.12,
+          "1": 0.34,
+          "2": 0.51,
+          "3": 0.02,
+          "4": 0.01,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "owner": {
+        "type": "choice",
+        "choice": "CONTROLLER",
+        "confidence": 0.98,
+        "probabilities": {
+          "AP": 0,
+          "AR": 0,
+          "TREASURY": 0.01,
+          "TAX": 0.01,
+          "CONTROLLER": 0.98
+        }
+      }
+    },
+    "TB-2910": {
+      "blocker_type": {
+        "type": "choice",
+        "choice": "UNRECONCILED",
+        "confidence": 0.99,
+        "probabilities": {
+          "UNRECONCILED": 0.99,
+          "MISSING_ACCRUAL": 0.01,
+          "INTERCOMPANY": 0,
+          "FX_REVALUATION": 0,
+          "UNSUPPORTED_JOURNAL": 0,
+          "NONE": 0
+        }
+      },
+      "blocks_close": {
+        "type": "noul",
+        "noul": 0.97
+      },
+      "severity": {
+        "type": "score",
+        "score": 2.85,
+        "confidence": 0.7,
+        "probabilities": {
+          "0": 0,
+          "1": 0.01,
+          "2": 0.31,
+          "3": 0.57,
+          "4": 0.04,
+          "5": 0.07,
+          "6": 0
+        }
+      },
+      "owner": {
+        "type": "choice",
+        "choice": "CONTROLLER",
+        "confidence": 0.98,
+        "probabilities": {
+          "AP": 0,
+          "AR": 0,
+          "TREASURY": 0.01,
+          "TAX": 0.01,
+          "CONTROLLER": 0.98
+        }
+      }
+    },
+    "TB-2920": {
+      "blocker_type": {
+        "type": "choice",
+        "choice": "UNRECONCILED",
+        "confidence": 0.99,
+        "probabilities": {
+          "UNRECONCILED": 0.99,
+          "MISSING_ACCRUAL": 0.01,
+          "INTERCOMPANY": 0,
+          "FX_REVALUATION": 0,
+          "UNSUPPORTED_JOURNAL": 0,
+          "NONE": 0
+        }
+      },
+      "blocks_close": {
+        "type": "noul",
+        "noul": 0.98
+      },
+      "severity": {
+        "type": "score",
+        "score": 4.14,
+        "confidence": 0.49,
+        "probabilities": {
+          "0": 0,
+          "1": 0,
+          "2": 0.04,
+          "3": 0.2,
+          "4": 0.35,
+          "5": 0.4,
+          "6": 0.01
+        }
+      },
+      "owner": {
+        "type": "choice",
+        "choice": "TREASURY",
+        "confidence": 1,
+        "probabilities": {
+          "AP": 0,
+          "AR": 0,
+          "TREASURY": 1,
+          "TAX": 0,
+          "CONTROLLER": 0
+        }
+      }
+    },
+    "TB-3000": {
+      "blocker_type": {
+        "type": "choice",
+        "choice": "NONE",
+        "confidence": 0.92,
+        "probabilities": {
+          "UNRECONCILED": 0.02,
+          "MISSING_ACCRUAL": 0.01,
+          "INTERCOMPANY": 0.01,
+          "FX_REVALUATION": 0.01,
+          "UNSUPPORTED_JOURNAL": 0.02,
+          "NONE": 0.93
+        }
+      },
+      "blocks_close": {
+        "type": "noul",
+        "noul": 0.06
+      },
+      "severity": {
+        "type": "score",
+        "score": 0.59,
+        "confidence": 0.66,
+        "probabilities": {
+          "0": 0.58,
+          "1": 0.28,
+          "2": 0.12,
+          "3": 0.01,
+          "4": 0.01,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "owner": {
+        "type": "choice",
+        "choice": "CONTROLLER",
+        "confidence": 0.85,
+        "probabilities": {
+          "AP": 0.02,
+          "AR": 0.01,
+          "TREASURY": 0.06,
+          "TAX": 0.03,
+          "CONTROLLER": 0.88
+        }
+      }
+    },
+    "TB-3100": {
+      "blocker_type": {
+        "type": "choice",
+        "choice": "NONE",
+        "confidence": 0.63,
+        "probabilities": {
+          "UNRECONCILED": 0.07,
+          "MISSING_ACCRUAL": 0.1,
+          "INTERCOMPANY": 0.03,
+          "FX_REVALUATION": 0.03,
+          "UNSUPPORTED_JOURNAL": 0.08,
+          "NONE": 0.69
+        }
+      },
+      "blocks_close": {
+        "type": "noul",
+        "noul": 0.18
+      },
+      "severity": {
+        "type": "score",
+        "score": 1.21,
+        "confidence": 0.43,
+        "probabilities": {
+          "0": 0.28,
+          "1": 0.32,
+          "2": 0.33,
+          "3": 0.05,
+          "4": 0.02,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "owner": {
+        "type": "choice",
+        "choice": "CONTROLLER",
+        "confidence": 0.76,
+        "probabilities": {
+          "AP": 0.02,
+          "AR": 0.01,
+          "TREASURY": 0.14,
+          "TAX": 0.02,
+          "CONTROLLER": 0.81
+        }
+      }
+    },
+    "TB-3200": {
+      "blocker_type": {
+        "type": "choice",
+        "choice": "NONE",
+        "confidence": 0.66,
+        "probabilities": {
+          "UNRECONCILED": 0.05,
+          "MISSING_ACCRUAL": 0.08,
+          "INTERCOMPANY": 0.02,
+          "FX_REVALUATION": 0.02,
+          "UNSUPPORTED_JOURNAL": 0.11,
+          "NONE": 0.72
+        }
+      },
+      "blocks_close": {
+        "type": "noul",
+        "noul": 0.54
+      },
+      "severity": {
+        "type": "score",
+        "score": 0.74,
+        "confidence": 0.57,
+        "probabilities": {
+          "0": 0.48,
+          "1": 0.33,
+          "2": 0.17,
+          "3": 0.01,
+          "4": 0.01,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "owner": {
+        "type": "choice",
+        "choice": "TREASURY",
+        "confidence": 0.89,
+        "probabilities": {
+          "AP": 0,
+          "AR": 0,
+          "TREASURY": 0.91,
+          "TAX": 0.01,
+          "CONTROLLER": 0.08
+        }
+      }
+    }
+  }
+}

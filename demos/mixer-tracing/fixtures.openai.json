@@ -1,0 +1,4153 @@
+{
+  "demo": "mixer-tracing",
+  "provider": "openai",
+  "model": "gpt-6-luna",
+  "recordedAt": "2026-10-11",
+  "source": "scripts/record-demo.js",
+  "usage": {
+    "input_tokens": 152511,
+    "output_tokens": 0
+  },
+  "answers": {
+    "TRC-001": {
+      "tainted_funds": {
+        "type": "noul",
+        "noul": 0.95
+      },
+      "hops_to_source": {
+        "type": "choice",
+        "choice": "ONE",
+        "confidence": 0.57,
+        "probabilities": {
+          "ONE": 0.66,
+          "TWO": 0.13,
+          "THREE": 0.02,
+          "FOUR_PLUS": 0.02,
+          "NONE_FOUND": 0.17
+        }
+      },
+      "chain_broken_by_exchange": {
+        "type": "noul",
+        "noul": 0
+      },
+      "exposure": {
+        "type": "score",
+        "score": 4.45,
+        "confidence": 0.1,
+        "probabilities": {
+          "0": 0.05,
+          "1": 0.07,
+          "2": 0.06,
+          "3": 0.06,
+          "4": 0.18,
+          "5": 0.12,
+          "6": 0.46
+        }
+      },
+      "action": {
+        "type": "choice",
+        "choice": "FREEZE_PENDING_REVIEW",
+        "confidence": 0.72,
+        "probabilities": {
+          "CLEAR": 0.1,
+          "REPORT_INTERNALLY": 0.09,
+          "FREEZE_PENDING_REVIEW": 0.81
+        }
+      }
+    },
+    "TRC-002": {
+      "tainted_funds": {
+        "type": "noul",
+        "noul": 0.21
+      },
+      "hops_to_source": {
+        "type": "choice",
+        "choice": "TWO",
+        "confidence": 0.15,
+        "probabilities": {
+          "ONE": 0.25,
+          "TWO": 0.32,
+          "THREE": 0.31,
+          "FOUR_PLUS": 0.07,
+          "NONE_FOUND": 0.05
+        }
+      },
+      "chain_broken_by_exchange": {
+        "type": "noul",
+        "noul": 0
+      },
+      "exposure": {
+        "type": "score",
+        "score": 3.78,
+        "confidence": 0.26,
+        "probabilities": {
+          "0": 0.07,
+          "1": 0.03,
+          "2": 0.11,
+          "3": 0.15,
+          "4": 0.27,
+          "5": 0.22,
+          "6": 0.15
+        }
+      },
+      "action": {
+        "type": "choice",
+        "choice": "FREEZE_PENDING_REVIEW",
+        "confidence": 0.7,
+        "probabilities": {
+          "CLEAR": 0.11,
+          "REPORT_INTERNALLY": 0.09,
+          "FREEZE_PENDING_REVIEW": 0.8
+        }
+      }
+    },
+    "TRC-003": {
+      "tainted_funds": {
+        "type": "noul",
+        "noul": 0.2
+      },
+      "hops_to_source": {
+        "type": "choice",
+        "choice": "NONE_FOUND",
+        "confidence": 0.94,
+        "probabilities": {
+          "ONE": 0.01,
+          "TWO": 0.02,
+          "THREE": 0.01,
+          "FOUR_PLUS": 0.01,
+          "NONE_FOUND": 0.95
+        }
+      },
+      "chain_broken_by_exchange": {
+        "type": "noul",
+        "noul": 0
+      },
+      "exposure": {
+        "type": "score",
+        "score": 1.67,
+        "confidence": 0.03,
+        "probabilities": {
+          "0": 0.35,
+          "1": 0.16,
+          "2": 0.2,
+          "3": 0.12,
+          "4": 0.11,
+          "5": 0.05,
+          "6": 0.01
+        }
+      },
+      "action": {
+        "type": "choice",
+        "choice": "FREEZE_PENDING_REVIEW",
+        "confidence": 0.1,
+        "probabilities": {
+          "CLEAR": 0.3,
+          "REPORT_INTERNALLY": 0.3,
+          "FREEZE_PENDING_REVIEW": 0.4
+        }
+      }
+    },
+    "TRC-004": {
+      "tainted_funds": {
+        "type": "noul",
+        "noul": 0.11
+      },
+      "hops_to_source": {
+        "type": "choice",
+        "choice": "TWO",
+        "confidence": 0.31,
+        "probabilities": {
+          "ONE": 0.36,
+          "TWO": 0.45,
+          "THREE": 0.15,
+          "FOUR_PLUS": 0.02,
+          "NONE_FOUND": 0.02
+        }
+      },
+      "chain_broken_by_exchange": {
+        "type": "noul",
+        "noul": 0.61
+      },
+      "exposure": {
+        "type": "score",
+        "score": 3.93,
+        "confidence": 0.32,
+        "probabilities": {
+          "0": 0.05,
+          "1": 0.06,
+          "2": 0.07,
+          "3": 0.1,
+          "4": 0.3,
+          "5": 0.29,
+          "6": 0.13
+        }
+      },
+      "action": {
+        "type": "choice",
+        "choice": "FREEZE_PENDING_REVIEW",
+        "confidence": 0.63,
+        "probabilities": {
+          "CLEAR": 0.09,
+          "REPORT_INTERNALLY": 0.16,
+          "FREEZE_PENDING_REVIEW": 0.75
+        }
+      }
+    },
+    "TRC-005": {
+      "tainted_funds": {
+        "type": "noul",
+        "noul": 0.08
+      },
+      "hops_to_source": {
+        "type": "choice",
+        "choice": "NONE_FOUND",
+        "confidence": 0.52,
+        "probabilities": {
+          "ONE": 0.14,
+          "TWO": 0.11,
+          "THREE": 0.07,
+          "FOUR_PLUS": 0.06,
+          "NONE_FOUND": 0.62
+        }
+      },
+      "chain_broken_by_exchange": {
+        "type": "noul",
+        "noul": 0.51
+      },
+      "exposure": {
+        "type": "score",
+        "score": 1.9,
+        "confidence": 0,
+        "probabilities": {
+          "0": 0.25,
+          "1": 0.23,
+          "2": 0.21,
+          "3": 0.11,
+          "4": 0.11,
+          "5": 0.06,
+          "6": 0.03
+        }
+      },
+      "action": {
+        "type": "choice",
+        "choice": "FREEZE_PENDING_REVIEW",
+        "confidence": 0.27,
+        "probabilities": {
+          "CLEAR": 0.25,
+          "REPORT_INTERNALLY": 0.24,
+          "FREEZE_PENDING_REVIEW": 0.51
+        }
+      }
+    },
+    "TRC-006": {
+      "tainted_funds": {
+        "type": "noul",
+        "noul": 0.44
+      },
+      "hops_to_source": {
+        "type": "choice",
+        "choice": "NONE_FOUND",
+        "confidence": 0.87,
+        "probabilities": {
+          "ONE": 0.02,
+          "TWO": 0.03,
+          "THREE": 0.02,
+          "FOUR_PLUS": 0.03,
+          "NONE_FOUND": 0.9
+        }
+      },
+      "chain_broken_by_exchange": {
+        "type": "noul",
+        "noul": 0.01
+      },
+      "exposure": {
+        "type": "score",
+        "score": 2.15,
+        "confidence": 0,
+        "probabilities": {
+          "0": 0.3,
+          "1": 0.16,
+          "2": 0.13,
+          "3": 0.09,
+          "4": 0.17,
+          "5": 0.12,
+          "6": 0.03
+        }
+      },
+      "action": {
+        "type": "choice",
+        "choice": "CLEAR",
+        "confidence": 0.19,
+        "probabilities": {
+          "CLEAR": 0.46,
+          "REPORT_INTERNALLY": 0.28,
+          "FREEZE_PENDING_REVIEW": 0.26
+        }
+      }
+    },
+    "TRC-007": {
+      "tainted_funds": {
+        "type": "noul",
+        "noul": 0.32
+      },
+      "hops_to_source": {
+        "type": "choice",
+        "choice": "TWO",
+        "confidence": 0.2,
+        "probabilities": {
+          "ONE": 0.34,
+          "TWO": 0.36,
+          "THREE": 0.22,
+          "FOUR_PLUS": 0.05,
+          "NONE_FOUND": 0.03
+        }
+      },
+      "chain_broken_by_exchange": {
+        "type": "noul",
+        "noul": 0.56
+      },
+      "exposure": {
+        "type": "score",
+        "score": 3.67,
+        "confidence": 0.28,
+        "probabilities": {
+          "0": 0.07,
+          "1": 0.04,
+          "2": 0.1,
+          "3": 0.18,
+          "4": 0.28,
+          "5": 0.21,
+          "6": 0.12
+        }
+      },
+      "action": {
+        "type": "choice",
+        "choice": "FREEZE_PENDING_REVIEW",
+        "confidence": 0.45,
+        "probabilities": {
+          "CLEAR": 0.17,
+          "REPORT_INTERNALLY": 0.2,
+          "FREEZE_PENDING_REVIEW": 0.63
+        }
+      }
+    },
+    "TRC-008": {
+      "tainted_funds": {
+        "type": "noul",
+        "noul": 0.99
+      },
+      "hops_to_source": {
+        "type": "choice",
+        "choice": "ONE",
+        "confidence": 0.76,
+        "probabilities": {
+          "ONE": 0.81,
+          "TWO": 0.09,
+          "THREE": 0.04,
+          "FOUR_PLUS": 0.02,
+          "NONE_FOUND": 0.04
+        }
+      },
+      "chain_broken_by_exchange": {
+        "type": "noul",
+        "noul": 0
+      },
+      "exposure": {
+        "type": "score",
+        "score": 4.69,
+        "confidence": 0.24,
+        "probabilities": {
+          "0": 0.03,
+          "1": 0.04,
+          "2": 0.05,
+          "3": 0.04,
+          "4": 0.15,
+          "5": 0.31,
+          "6": 0.38
+        }
+      },
+      "action": {
+        "type": "choice",
+        "choice": "FREEZE_PENDING_REVIEW",
+        "confidence": 0.58,
+        "probabilities": {
+          "CLEAR": 0.14,
+          "REPORT_INTERNALLY": 0.14,
+          "FREEZE_PENDING_REVIEW": 0.72
+        }
+      }
+    },
+    "TRC-009": {
+      "tainted_funds": {
+        "type": "noul",
+        "noul": 0.02
+      },
+      "hops_to_source": {
+        "type": "choice",
+        "choice": "NONE_FOUND",
+        "confidence": 0.1,
+        "probabilities": {
+          "ONE": 0.23,
+          "TWO": 0.21,
+          "THREE": 0.23,
+          "FOUR_PLUS": 0.05,
+          "NONE_FOUND": 0.28
+        }
+      },
+      "chain_broken_by_exchange": {
+        "type": "noul",
+        "noul": 0.61
+      },
+      "exposure": {
+        "type": "score",
+        "score": 2.97,
+        "confidence": 0.4,
+        "probabilities": {
+          "0": 0.04,
+          "1": 0.08,
+          "2": 0.25,
+          "3": 0.26,
+          "4": 0.25,
+          "5": 0.11,
+          "6": 0.01
+        }
+      },
+      "action": {
+        "type": "choice",
+        "choice": "FREEZE_PENDING_REVIEW",
+        "confidence": 0.43,
+        "probabilities": {
+          "CLEAR": 0.15,
+          "REPORT_INTERNALLY": 0.23,
+          "FREEZE_PENDING_REVIEW": 0.62
+        }
+      }
+    },
+    "TRC-010": {
+      "tainted_funds": {
+        "type": "noul",
+        "noul": 0.89
+      },
+      "hops_to_source": {
+        "type": "choice",
+        "choice": "TWO",
+        "confidence": 0.36,
+        "probabilities": {
+          "ONE": 0.35,
+          "TWO": 0.49,
+          "THREE": 0.14,
+          "FOUR_PLUS": 0.01,
+          "NONE_FOUND": 0.01
+        }
+      },
+      "chain_broken_by_exchange": {
+        "type": "noul",
+        "noul": 0
+      },
+      "exposure": {
+        "type": "score",
+        "score": 4.34,
+        "confidence": 0.53,
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.02,
+          "2": 0.04,
+          "3": 0.05,
+          "4": 0.38,
+          "5": 0.43,
+          "6": 0.07
+        }
+      },
+      "action": {
+        "type": "choice",
+        "choice": "FREEZE_PENDING_REVIEW",
+        "confidence": 0.76,
+        "probabilities": {
+          "CLEAR": 0.06,
+          "REPORT_INTERNALLY": 0.1,
+          "FREEZE_PENDING_REVIEW": 0.84
+        }
+      }
+    },
+    "TRC-011": {
+      "tainted_funds": {
+        "type": "noul",
+        "noul": 0.03
+      },
+      "hops_to_source": {
+        "type": "choice",
+        "choice": "ONE",
+        "confidence": 0.24,
+        "probabilities": {
+          "ONE": 0.39,
+          "TWO": 0.23,
+          "THREE": 0.15,
+          "FOUR_PLUS": 0.06,
+          "NONE_FOUND": 0.17
+        }
+      },
+      "chain_broken_by_exchange": {
+        "type": "noul",
+        "noul": 0.31
+      },
+      "exposure": {
+        "type": "score",
+        "score": 3.07,
+        "confidence": 0.03,
+        "probabilities": {
+          "0": 0.11,
+          "1": 0.14,
+          "2": 0.14,
+          "3": 0.16,
+          "4": 0.19,
+          "5": 0.15,
+          "6": 0.11
+        }
+      },
+      "action": {
+        "type": "choice",
+        "choice": "FREEZE_PENDING_REVIEW",
+        "confidence": 0.56,
+        "probabilities": {
+          "CLEAR": 0.11,
+          "REPORT_INTERNALLY": 0.18,
+          "FREEZE_PENDING_REVIEW": 0.71
+        }
+      }
+    },
+    "TRC-012": {
+      "tainted_funds": {
+        "type": "noul",
+        "noul": 0.99
+      },
+      "hops_to_source": {
+        "type": "choice",
+        "choice": "ONE",
+        "confidence": 0.73,
+        "probabilities": {
+          "ONE": 0.78,
+          "TWO": 0.13,
+          "THREE": 0.03,
+          "FOUR_PLUS": 0.02,
+          "NONE_FOUND": 0.04
+        }
+      },
+      "chain_broken_by_exchange": {
+        "type": "noul",
+        "noul": 0
+      },
+      "exposure": {
+        "type": "score",
+        "score": 4.35,
+        "confidence": 0.43,
+        "probabilities": {
+          "0": 0.04,
+          "1": 0.03,
+          "2": 0.03,
+          "3": 0.03,
+          "4": 0.34,
+          "5": 0.37,
+          "6": 0.16
+        }
+      },
+      "action": {
+        "type": "choice",
+        "choice": "FREEZE_PENDING_REVIEW",
+        "confidence": 0.67,
+        "probabilities": {
+          "CLEAR": 0.11,
+          "REPORT_INTERNALLY": 0.11,
+          "FREEZE_PENDING_REVIEW": 0.78
+        }
+      }
+    },
+    "TRC-013": {
+      "tainted_funds": {
+        "type": "noul",
+        "noul": 0.47
+      },
+      "hops_to_source": {
+        "type": "choice",
+        "choice": "TWO",
+        "confidence": 0.34,
+        "probabilities": {
+          "ONE": 0.32,
+          "TWO": 0.47,
+          "THREE": 0.18,
+          "FOUR_PLUS": 0.02,
+          "NONE_FOUND": 0.01
+        }
+      },
+      "chain_broken_by_exchange": {
+        "type": "noul",
+        "noul": 0
+      },
+      "exposure": {
+        "type": "score",
+        "score": 3.66,
+        "confidence": 0.35,
+        "probabilities": {
+          "0": 0.05,
+          "1": 0.06,
+          "2": 0.11,
+          "3": 0.13,
+          "4": 0.31,
+          "5": 0.29,
+          "6": 0.05
+        }
+      },
+      "action": {
+        "type": "choice",
+        "choice": "FREEZE_PENDING_REVIEW",
+        "confidence": 0.73,
+        "probabilities": {
+          "CLEAR": 0.07,
+          "REPORT_INTERNALLY": 0.11,
+          "FREEZE_PENDING_REVIEW": 0.82
+        }
+      }
+    },
+    "TRC-014": {
+      "tainted_funds": {
+        "type": "noul",
+        "noul": 0.05
+      },
+      "hops_to_source": {
+        "type": "choice",
+        "choice": "NONE_FOUND",
+        "confidence": 0.6,
+        "probabilities": {
+          "ONE": 0.14,
+          "TWO": 0.11,
+          "THREE": 0.04,
+          "FOUR_PLUS": 0.03,
+          "NONE_FOUND": 0.68
+        }
+      },
+      "chain_broken_by_exchange": {
+        "type": "noul",
+        "noul": 0.49
+      },
+      "exposure": {
+        "type": "score",
+        "score": 1.76,
+        "confidence": 0,
+        "probabilities": {
+          "0": 0.27,
+          "1": 0.24,
+          "2": 0.22,
+          "3": 0.11,
+          "4": 0.08,
+          "5": 0.05,
+          "6": 0.03
+        }
+      },
+      "action": {
+        "type": "choice",
+        "choice": "FREEZE_PENDING_REVIEW",
+        "confidence": 0.34,
+        "probabilities": {
+          "CLEAR": 0.24,
+          "REPORT_INTERNALLY": 0.2,
+          "FREEZE_PENDING_REVIEW": 0.56
+        }
+      }
+    },
+    "TRC-015": {
+      "tainted_funds": {
+        "type": "noul",
+        "noul": 0.48
+      },
+      "hops_to_source": {
+        "type": "choice",
+        "choice": "NONE_FOUND",
+        "confidence": 0.74,
+        "probabilities": {
+          "ONE": 0.04,
+          "TWO": 0.07,
+          "THREE": 0.07,
+          "FOUR_PLUS": 0.03,
+          "NONE_FOUND": 0.79
+        }
+      },
+      "chain_broken_by_exchange": {
+        "type": "noul",
+        "noul": 0
+      },
+      "exposure": {
+        "type": "score",
+        "score": 2.05,
+        "confidence": 0,
+        "probabilities": {
+          "0": 0.34,
+          "1": 0.13,
+          "2": 0.15,
+          "3": 0.07,
+          "4": 0.16,
+          "5": 0.13,
+          "6": 0.02
+        }
+      },
+      "action": {
+        "type": "choice",
+        "choice": "FREEZE_PENDING_REVIEW",
+        "confidence": 0.13,
+        "probabilities": {
+          "CLEAR": 0.36,
+          "REPORT_INTERNALLY": 0.22,
+          "FREEZE_PENDING_REVIEW": 0.42
+        }
+      }
+    },
+    "TRC-016": {
+      "tainted_funds": {
+        "type": "noul",
+        "noul": 0.99
+      },
+      "hops_to_source": {
+        "type": "choice",
+        "choice": "ONE",
+        "confidence": 0.75,
+        "probabilities": {
+          "ONE": 0.8,
+          "TWO": 0.06,
+          "THREE": 0.04,
+          "FOUR_PLUS": 0.03,
+          "NONE_FOUND": 0.07
+        }
+      },
+      "chain_broken_by_exchange": {
+        "type": "noul",
+        "noul": 0
+      },
+      "exposure": {
+        "type": "score",
+        "score": 4.95,
+        "confidence": 0.39,
+        "probabilities": {
+          "0": 0.03,
+          "1": 0.05,
+          "2": 0.04,
+          "3": 0.04,
+          "4": 0.13,
+          "5": 0.08,
+          "6": 0.63
+        }
+      },
+      "action": {
+        "type": "choice",
+        "choice": "FREEZE_PENDING_REVIEW",
+        "confidence": 0.8,
+        "probabilities": {
+          "CLEAR": 0.06,
+          "REPORT_INTERNALLY": 0.07,
+          "FREEZE_PENDING_REVIEW": 0.87
+        }
+      }
+    },
+    "TRC-017": {
+      "tainted_funds": {
+        "type": "noul",
+        "noul": 0.99
+      },
+      "hops_to_source": {
+        "type": "choice",
+        "choice": "TWO",
+        "confidence": 0.39,
+        "probabilities": {
+          "ONE": 0.32,
+          "TWO": 0.51,
+          "THREE": 0.15,
+          "FOUR_PLUS": 0.01,
+          "NONE_FOUND": 0.01
+        }
+      },
+      "chain_broken_by_exchange": {
+        "type": "noul",
+        "noul": 0
+      },
+      "exposure": {
+        "type": "score",
+        "score": 4.92,
+        "confidence": 0.37,
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.02,
+          "2": 0.04,
+          "3": 0.04,
+          "4": 0.25,
+          "5": 0.14,
+          "6": 0.5
+        }
+      },
+      "action": {
+        "type": "choice",
+        "choice": "FREEZE_PENDING_REVIEW",
+        "confidence": 0.8,
+        "probabilities": {
+          "CLEAR": 0.07,
+          "REPORT_INTERNALLY": 0.06,
+          "FREEZE_PENDING_REVIEW": 0.87
+        }
+      }
+    },
+    "TRC-018": {
+      "tainted_funds": {
+        "type": "noul",
+        "noul": 0.43
+      },
+      "hops_to_source": {
+        "type": "choice",
+        "choice": "NONE_FOUND",
+        "confidence": 0.81,
+        "probabilities": {
+          "ONE": 0.03,
+          "TWO": 0.04,
+          "THREE": 0.05,
+          "FOUR_PLUS": 0.03,
+          "NONE_FOUND": 0.85
+        }
+      },
+      "chain_broken_by_exchange": {
+        "type": "noul",
+        "noul": 0
+      },
+      "exposure": {
+        "type": "score",
+        "score": 1.37,
+        "confidence": 0.2,
+        "probabilities": {
+          "0": 0.42,
+          "1": 0.18,
+          "2": 0.2,
+          "3": 0.07,
+          "4": 0.08,
+          "5": 0.04,
+          "6": 0.01
+        }
+      },
+      "action": {
+        "type": "choice",
+        "choice": "CLEAR",
+        "confidence": 0.09,
+        "probabilities": {
+          "CLEAR": 0.39,
+          "REPORT_INTERNALLY": 0.25,
+          "FREEZE_PENDING_REVIEW": 0.36
+        }
+      }
+    },
+    "TRC-019": {
+      "tainted_funds": {
+        "type": "noul",
+        "noul": 0.48
+      },
+      "hops_to_source": {
+        "type": "choice",
+        "choice": "NONE_FOUND",
+        "confidence": 0.95,
+        "probabilities": {
+          "ONE": 0.02,
+          "TWO": 0.01,
+          "THREE": 0,
+          "FOUR_PLUS": 0.01,
+          "NONE_FOUND": 0.96
+        }
+      },
+      "chain_broken_by_exchange": {
+        "type": "noul",
+        "noul": 0
+      },
+      "exposure": {
+        "type": "score",
+        "score": 1.54,
+        "confidence": 0.1,
+        "probabilities": {
+          "0": 0.41,
+          "1": 0.17,
+          "2": 0.18,
+          "3": 0.08,
+          "4": 0.06,
+          "5": 0.07,
+          "6": 0.03
+        }
+      },
+      "action": {
+        "type": "choice",
+        "choice": "CLEAR",
+        "confidence": 0.31,
+        "probabilities": {
+          "CLEAR": 0.54,
+          "REPORT_INTERNALLY": 0.28,
+          "FREEZE_PENDING_REVIEW": 0.18
+        }
+      }
+    },
+    "TRC-020": {
+      "tainted_funds": {
+        "type": "noul",
+        "noul": 0.85
+      },
+      "hops_to_source": {
+        "type": "choice",
+        "choice": "THREE",
+        "confidence": 0.61,
+        "probabilities": {
+          "ONE": 0.1,
+          "TWO": 0.19,
+          "THREE": 0.69,
+          "FOUR_PLUS": 0.01,
+          "NONE_FOUND": 0.01
+        }
+      },
+      "chain_broken_by_exchange": {
+        "type": "noul",
+        "noul": 0
+      },
+      "exposure": {
+        "type": "score",
+        "score": 4.4,
+        "confidence": 0.39,
+        "probabilities": {
+          "0": 0.03,
+          "1": 0.02,
+          "2": 0.04,
+          "3": 0.06,
+          "4": 0.37,
+          "5": 0.24,
+          "6": 0.24
+        }
+      },
+      "action": {
+        "type": "choice",
+        "choice": "FREEZE_PENDING_REVIEW",
+        "confidence": 0.73,
+        "probabilities": {
+          "CLEAR": 0.08,
+          "REPORT_INTERNALLY": 0.1,
+          "FREEZE_PENDING_REVIEW": 0.82
+        }
+      }
+    },
+    "TRC-021": {
+      "tainted_funds": {
+        "type": "noul",
+        "noul": 0.25
+      },
+      "hops_to_source": {
+        "type": "choice",
+        "choice": "ONE",
+        "confidence": 0.26,
+        "probabilities": {
+          "ONE": 0.41,
+          "TWO": 0.34,
+          "THREE": 0.17,
+          "FOUR_PLUS": 0.03,
+          "NONE_FOUND": 0.05
+        }
+      },
+      "chain_broken_by_exchange": {
+        "type": "noul",
+        "noul": 0.67
+      },
+      "exposure": {
+        "type": "score",
+        "score": 4.26,
+        "confidence": 0.37,
+        "probabilities": {
+          "0": 0.05,
+          "1": 0.03,
+          "2": 0.06,
+          "3": 0.06,
+          "4": 0.24,
+          "5": 0.39,
+          "6": 0.17
+        }
+      },
+      "action": {
+        "type": "choice",
+        "choice": "FREEZE_PENDING_REVIEW",
+        "confidence": 0.72,
+        "probabilities": {
+          "CLEAR": 0.07,
+          "REPORT_INTERNALLY": 0.12,
+          "FREEZE_PENDING_REVIEW": 0.81
+        }
+      }
+    },
+    "TRC-022": {
+      "tainted_funds": {
+        "type": "noul",
+        "noul": 0.41
+      },
+      "hops_to_source": {
+        "type": "choice",
+        "choice": "NONE_FOUND",
+        "confidence": 0.96,
+        "probabilities": {
+          "ONE": 0.01,
+          "TWO": 0.01,
+          "THREE": 0,
+          "FOUR_PLUS": 0.01,
+          "NONE_FOUND": 0.97
+        }
+      },
+      "chain_broken_by_exchange": {
+        "type": "noul",
+        "noul": 0
+      },
+      "exposure": {
+        "type": "score",
+        "score": 1.98,
+        "confidence": 0,
+        "probabilities": {
+          "0": 0.3,
+          "1": 0.15,
+          "2": 0.17,
+          "3": 0.13,
+          "4": 0.16,
+          "5": 0.08,
+          "6": 0.01
+        }
+      },
+      "action": {
+        "type": "choice",
+        "choice": "CLEAR",
+        "confidence": 0.31,
+        "probabilities": {
+          "CLEAR": 0.54,
+          "REPORT_INTERNALLY": 0.29,
+          "FREEZE_PENDING_REVIEW": 0.17
+        }
+      }
+    },
+    "TRC-023": {
+      "tainted_funds": {
+        "type": "noul",
+        "noul": 0.01
+      },
+      "hops_to_source": {
+        "type": "choice",
+        "choice": "NONE_FOUND",
+        "confidence": 0.55,
+        "probabilities": {
+          "ONE": 0.21,
+          "TWO": 0.1,
+          "THREE": 0.03,
+          "FOUR_PLUS": 0.02,
+          "NONE_FOUND": 0.64
+        }
+      },
+      "chain_broken_by_exchange": {
+        "type": "noul",
+        "noul": 0.47
+      },
+      "exposure": {
+        "type": "score",
+        "score": 1.53,
+        "confidence": 0.11,
+        "probabilities": {
+          "0": 0.38,
+          "1": 0.22,
+          "2": 0.15,
+          "3": 0.09,
+          "4": 0.09,
+          "5": 0.04,
+          "6": 0.03
+        }
+      },
+      "action": {
+        "type": "choice",
+        "choice": "FREEZE_PENDING_REVIEW",
+        "confidence": 0.53,
+        "probabilities": {
+          "CLEAR": 0.12,
+          "REPORT_INTERNALLY": 0.19,
+          "FREEZE_PENDING_REVIEW": 0.69
+        }
+      }
+    },
+    "TRC-024": {
+      "tainted_funds": {
+        "type": "noul",
+        "noul": 0.65
+      },
+      "hops_to_source": {
+        "type": "choice",
+        "choice": "THREE",
+        "confidence": 0.46,
+        "probabilities": {
+          "ONE": 0.1,
+          "TWO": 0.31,
+          "THREE": 0.57,
+          "FOUR_PLUS": 0.01,
+          "NONE_FOUND": 0.01
+        }
+      },
+      "chain_broken_by_exchange": {
+        "type": "noul",
+        "noul": 0
+      },
+      "exposure": {
+        "type": "score",
+        "score": 4.77,
+        "confidence": 0.28,
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.01,
+          "2": 0.03,
+          "3": 0.05,
+          "4": 0.28,
+          "5": 0.29,
+          "6": 0.33
+        }
+      },
+      "action": {
+        "type": "choice",
+        "choice": "FREEZE_PENDING_REVIEW",
+        "confidence": 0.86,
+        "probabilities": {
+          "CLEAR": 0.03,
+          "REPORT_INTERNALLY": 0.06,
+          "FREEZE_PENDING_REVIEW": 0.91
+        }
+      }
+    },
+    "TRC-025": {
+      "tainted_funds": {
+        "type": "noul",
+        "noul": 1
+      },
+      "hops_to_source": {
+        "type": "choice",
+        "choice": "TWO",
+        "confidence": 0.41,
+        "probabilities": {
+          "ONE": 0.35,
+          "TWO": 0.53,
+          "THREE": 0.1,
+          "FOUR_PLUS": 0.01,
+          "NONE_FOUND": 0.01
+        }
+      },
+      "chain_broken_by_exchange": {
+        "type": "noul",
+        "noul": 0
+      },
+      "exposure": {
+        "type": "score",
+        "score": 4.31,
+        "confidence": 0.53,
+        "probabilities": {
+          "0": 0.03,
+          "1": 0.03,
+          "2": 0.03,
+          "3": 0.04,
+          "4": 0.31,
+          "5": 0.5,
+          "6": 0.06
+        }
+      },
+      "action": {
+        "type": "choice",
+        "choice": "FREEZE_PENDING_REVIEW",
+        "confidence": 0.63,
+        "probabilities": {
+          "CLEAR": 0.12,
+          "REPORT_INTERNALLY": 0.13,
+          "FREEZE_PENDING_REVIEW": 0.75
+        }
+      }
+    },
+    "TRC-026": {
+      "tainted_funds": {
+        "type": "noul",
+        "noul": 0.29
+      },
+      "hops_to_source": {
+        "type": "choice",
+        "choice": "NONE_FOUND",
+        "confidence": 0.66,
+        "probabilities": {
+          "ONE": 0.05,
+          "TWO": 0.06,
+          "THREE": 0.09,
+          "FOUR_PLUS": 0.07,
+          "NONE_FOUND": 0.73
+        }
+      },
+      "chain_broken_by_exchange": {
+        "type": "noul",
+        "noul": 0
+      },
+      "exposure": {
+        "type": "score",
+        "score": 2.47,
+        "confidence": 0,
+        "probabilities": {
+          "0": 0.22,
+          "1": 0.11,
+          "2": 0.22,
+          "3": 0.12,
+          "4": 0.14,
+          "5": 0.14,
+          "6": 0.05
+        }
+      },
+      "action": {
+        "type": "choice",
+        "choice": "FREEZE_PENDING_REVIEW",
+        "confidence": 0.31,
+        "probabilities": {
+          "CLEAR": 0.26,
+          "REPORT_INTERNALLY": 0.2,
+          "FREEZE_PENDING_REVIEW": 0.54
+        }
+      }
+    },
+    "TRC-027": {
+      "tainted_funds": {
+        "type": "noul",
+        "noul": 0.09
+      },
+      "hops_to_source": {
+        "type": "choice",
+        "choice": "NONE_FOUND",
+        "confidence": 0.51,
+        "probabilities": {
+          "ONE": 0.16,
+          "TWO": 0.11,
+          "THREE": 0.07,
+          "FOUR_PLUS": 0.05,
+          "NONE_FOUND": 0.61
+        }
+      },
+      "chain_broken_by_exchange": {
+        "type": "noul",
+        "noul": 0.43
+      },
+      "exposure": {
+        "type": "score",
+        "score": 1.41,
+        "confidence": 0.18,
+        "probabilities": {
+          "0": 0.33,
+          "1": 0.27,
+          "2": 0.22,
+          "3": 0.08,
+          "4": 0.06,
+          "5": 0.02,
+          "6": 0.02
+        }
+      },
+      "action": {
+        "type": "choice",
+        "choice": "CLEAR",
+        "confidence": 0.1,
+        "probabilities": {
+          "CLEAR": 0.4,
+          "REPORT_INTERNALLY": 0.27,
+          "FREEZE_PENDING_REVIEW": 0.33
+        }
+      }
+    },
+    "TRC-028": {
+      "tainted_funds": {
+        "type": "noul",
+        "noul": 0.91
+      },
+      "hops_to_source": {
+        "type": "choice",
+        "choice": "ONE",
+        "confidence": 0.52,
+        "probabilities": {
+          "ONE": 0.62,
+          "TWO": 0.24,
+          "THREE": 0.07,
+          "FOUR_PLUS": 0.03,
+          "NONE_FOUND": 0.04
+        }
+      },
+      "chain_broken_by_exchange": {
+        "type": "noul",
+        "noul": 0
+      },
+      "exposure": {
+        "type": "score",
+        "score": 4.66,
+        "confidence": 0.5,
+        "probabilities": {
+          "0": 0.02,
+          "1": 0.02,
+          "2": 0.04,
+          "3": 0.05,
+          "4": 0.2,
+          "5": 0.41,
+          "6": 0.26
+        }
+      },
+      "action": {
+        "type": "choice",
+        "choice": "FREEZE_PENDING_REVIEW",
+        "confidence": 0.7,
+        "probabilities": {
+          "CLEAR": 0.09,
+          "REPORT_INTERNALLY": 0.11,
+          "FREEZE_PENDING_REVIEW": 0.8
+        }
+      }
+    },
+    "TRC-029": {
+      "tainted_funds": {
+        "type": "noul",
+        "noul": 0.09
+      },
+      "hops_to_source": {
+        "type": "choice",
+        "choice": "NONE_FOUND",
+        "confidence": 0.95,
+        "probabilities": {
+          "ONE": 0.01,
+          "TWO": 0.01,
+          "THREE": 0.01,
+          "FOUR_PLUS": 0.01,
+          "NONE_FOUND": 0.96
+        }
+      },
+      "chain_broken_by_exchange": {
+        "type": "noul",
+        "noul": 0
+      },
+      "exposure": {
+        "type": "score",
+        "score": 1.81,
+        "confidence": 0,
+        "probabilities": {
+          "0": 0.26,
+          "1": 0.22,
+          "2": 0.25,
+          "3": 0.08,
+          "4": 0.11,
+          "5": 0.07,
+          "6": 0.01
+        }
+      },
+      "action": {
+        "type": "choice",
+        "choice": "FREEZE_PENDING_REVIEW",
+        "confidence": 0.55,
+        "probabilities": {
+          "CLEAR": 0.16,
+          "REPORT_INTERNALLY": 0.14,
+          "FREEZE_PENDING_REVIEW": 0.7
+        }
+      }
+    },
+    "TRC-030": {
+      "tainted_funds": {
+        "type": "noul",
+        "noul": 1
+      },
+      "hops_to_source": {
+        "type": "choice",
+        "choice": "ONE",
+        "confidence": 0.54,
+        "probabilities": {
+          "ONE": 0.63,
+          "TWO": 0.16,
+          "THREE": 0.11,
+          "FOUR_PLUS": 0.04,
+          "NONE_FOUND": 0.06
+        }
+      },
+      "chain_broken_by_exchange": {
+        "type": "noul",
+        "noul": 0
+      },
+      "exposure": {
+        "type": "score",
+        "score": 4.38,
+        "confidence": 0.4,
+        "probabilities": {
+          "0": 0.05,
+          "1": 0.04,
+          "2": 0.04,
+          "3": 0.03,
+          "4": 0.23,
+          "5": 0.41,
+          "6": 0.2
+        }
+      },
+      "action": {
+        "type": "choice",
+        "choice": "FREEZE_PENDING_REVIEW",
+        "confidence": 0.83,
+        "probabilities": {
+          "CLEAR": 0.06,
+          "REPORT_INTERNALLY": 0.05,
+          "FREEZE_PENDING_REVIEW": 0.89
+        }
+      }
+    },
+    "TRC-031": {
+      "tainted_funds": {
+        "type": "noul",
+        "noul": 0.16
+      },
+      "hops_to_source": {
+        "type": "choice",
+        "choice": "NONE_FOUND",
+        "confidence": 0.69,
+        "probabilities": {
+          "ONE": 0.08,
+          "TWO": 0.08,
+          "THREE": 0.06,
+          "FOUR_PLUS": 0.03,
+          "NONE_FOUND": 0.75
+        }
+      },
+      "chain_broken_by_exchange": {
+        "type": "noul",
+        "noul": 0.32
+      },
+      "exposure": {
+        "type": "score",
+        "score": 1.71,
+        "confidence": 0,
+        "probabilities": {
+          "0": 0.29,
+          "1": 0.25,
+          "2": 0.2,
+          "3": 0.1,
+          "4": 0.08,
+          "5": 0.04,
+          "6": 0.04
+        }
+      },
+      "action": {
+        "type": "choice",
+        "choice": "FREEZE_PENDING_REVIEW",
+        "confidence": 0.06,
+        "probabilities": {
+          "CLEAR": 0.34,
+          "REPORT_INTERNALLY": 0.29,
+          "FREEZE_PENDING_REVIEW": 0.37
+        }
+      }
+    },
+    "TRC-032": {
+      "tainted_funds": {
+        "type": "noul",
+        "noul": 0
+      },
+      "hops_to_source": {
+        "type": "choice",
+        "choice": "TWO",
+        "confidence": 0.16,
+        "probabilities": {
+          "ONE": 0.26,
+          "TWO": 0.33,
+          "THREE": 0.23,
+          "FOUR_PLUS": 0.05,
+          "NONE_FOUND": 0.13
+        }
+      },
+      "chain_broken_by_exchange": {
+        "type": "noul",
+        "noul": 0.31
+      },
+      "exposure": {
+        "type": "score",
+        "score": 3.26,
+        "confidence": 0.16,
+        "probabilities": {
+          "0": 0.1,
+          "1": 0.11,
+          "2": 0.12,
+          "3": 0.12,
+          "4": 0.27,
+          "5": 0.21,
+          "6": 0.07
+        }
+      },
+      "action": {
+        "type": "choice",
+        "choice": "FREEZE_PENDING_REVIEW",
+        "confidence": 0.67,
+        "probabilities": {
+          "CLEAR": 0.09,
+          "REPORT_INTERNALLY": 0.13,
+          "FREEZE_PENDING_REVIEW": 0.78
+        }
+      }
+    },
+    "TRC-033": {
+      "tainted_funds": {
+        "type": "noul",
+        "noul": 0.99
+      },
+      "hops_to_source": {
+        "type": "choice",
+        "choice": "ONE",
+        "confidence": 0.56,
+        "probabilities": {
+          "ONE": 0.65,
+          "TWO": 0.15,
+          "THREE": 0.04,
+          "FOUR_PLUS": 0.03,
+          "NONE_FOUND": 0.13
+        }
+      },
+      "chain_broken_by_exchange": {
+        "type": "noul",
+        "noul": 0
+      },
+      "exposure": {
+        "type": "score",
+        "score": 4.04,
+        "confidence": 0.23,
+        "probabilities": {
+          "0": 0.05,
+          "1": 0.06,
+          "2": 0.08,
+          "3": 0.1,
+          "4": 0.28,
+          "5": 0.18,
+          "6": 0.25
+        }
+      },
+      "action": {
+        "type": "choice",
+        "choice": "FREEZE_PENDING_REVIEW",
+        "confidence": 0.55,
+        "probabilities": {
+          "CLEAR": 0.16,
+          "REPORT_INTERNALLY": 0.14,
+          "FREEZE_PENDING_REVIEW": 0.7
+        }
+      }
+    },
+    "TRC-034": {
+      "tainted_funds": {
+        "type": "noul",
+        "noul": 0.55
+      },
+      "hops_to_source": {
+        "type": "choice",
+        "choice": "TWO",
+        "confidence": 0.19,
+        "probabilities": {
+          "ONE": 0.28,
+          "TWO": 0.35,
+          "THREE": 0.31,
+          "FOUR_PLUS": 0.03,
+          "NONE_FOUND": 0.03
+        }
+      },
+      "chain_broken_by_exchange": {
+        "type": "noul",
+        "noul": 0
+      },
+      "exposure": {
+        "type": "score",
+        "score": 4.37,
+        "confidence": 0.05,
+        "probabilities": {
+          "0": 0.04,
+          "1": 0.02,
+          "2": 0.06,
+          "3": 0.16,
+          "4": 0.21,
+          "5": 0.15,
+          "6": 0.36
+        }
+      },
+      "action": {
+        "type": "choice",
+        "choice": "FREEZE_PENDING_REVIEW",
+        "confidence": 0.72,
+        "probabilities": {
+          "CLEAR": 0.09,
+          "REPORT_INTERNALLY": 0.1,
+          "FREEZE_PENDING_REVIEW": 0.81
+        }
+      }
+    },
+    "TRC-035": {
+      "tainted_funds": {
+        "type": "noul",
+        "noul": 0.08
+      },
+      "hops_to_source": {
+        "type": "choice",
+        "choice": "NONE_FOUND",
+        "confidence": 0.41,
+        "probabilities": {
+          "ONE": 0.12,
+          "TWO": 0.15,
+          "THREE": 0.16,
+          "FOUR_PLUS": 0.04,
+          "NONE_FOUND": 0.53
+        }
+      },
+      "chain_broken_by_exchange": {
+        "type": "noul",
+        "noul": 0.31
+      },
+      "exposure": {
+        "type": "score",
+        "score": 2.7,
+        "confidence": 0.36,
+        "probabilities": {
+          "0": 0.07,
+          "1": 0.13,
+          "2": 0.23,
+          "3": 0.27,
+          "4": 0.21,
+          "5": 0.08,
+          "6": 0.01
+        }
+      },
+      "action": {
+        "type": "choice",
+        "choice": "FREEZE_PENDING_REVIEW",
+        "confidence": 0.64,
+        "probabilities": {
+          "CLEAR": 0.1,
+          "REPORT_INTERNALLY": 0.14,
+          "FREEZE_PENDING_REVIEW": 0.76
+        }
+      }
+    },
+    "TRC-036": {
+      "tainted_funds": {
+        "type": "noul",
+        "noul": 0.01
+      },
+      "hops_to_source": {
+        "type": "choice",
+        "choice": "NONE_FOUND",
+        "confidence": 0.66,
+        "probabilities": {
+          "ONE": 0.03,
+          "TWO": 0.09,
+          "THREE": 0.11,
+          "FOUR_PLUS": 0.04,
+          "NONE_FOUND": 0.73
+        }
+      },
+      "chain_broken_by_exchange": {
+        "type": "noul",
+        "noul": 0
+      },
+      "exposure": {
+        "type": "score",
+        "score": 1.65,
+        "confidence": 0.04,
+        "probabilities": {
+          "0": 0.38,
+          "1": 0.2,
+          "2": 0.14,
+          "3": 0.06,
+          "4": 0.13,
+          "5": 0.07,
+          "6": 0.02
+        }
+      },
+      "action": {
+        "type": "choice",
+        "choice": "FREEZE_PENDING_REVIEW",
+        "confidence": 0.09,
+        "probabilities": {
+          "CLEAR": 0.35,
+          "REPORT_INTERNALLY": 0.26,
+          "FREEZE_PENDING_REVIEW": 0.39
+        }
+      }
+    },
+    "TRC-037": {
+      "tainted_funds": {
+        "type": "noul",
+        "noul": 1
+      },
+      "hops_to_source": {
+        "type": "choice",
+        "choice": "THREE",
+        "confidence": 0.3,
+        "probabilities": {
+          "ONE": 0.25,
+          "TWO": 0.29,
+          "THREE": 0.44,
+          "FOUR_PLUS": 0.01,
+          "NONE_FOUND": 0.01
+        }
+      },
+      "chain_broken_by_exchange": {
+        "type": "noul",
+        "noul": 0
+      },
+      "exposure": {
+        "type": "score",
+        "score": 4.23,
+        "confidence": 0.42,
+        "probabilities": {
+          "0": 0.03,
+          "1": 0.02,
+          "2": 0.05,
+          "3": 0.1,
+          "4": 0.35,
+          "5": 0.29,
+          "6": 0.16
+        }
+      },
+      "action": {
+        "type": "choice",
+        "choice": "FREEZE_PENDING_REVIEW",
+        "confidence": 0.82,
+        "probabilities": {
+          "CLEAR": 0.05,
+          "REPORT_INTERNALLY": 0.07,
+          "FREEZE_PENDING_REVIEW": 0.88
+        }
+      }
+    },
+    "TRC-038": {
+      "tainted_funds": {
+        "type": "noul",
+        "noul": 0.01
+      },
+      "hops_to_source": {
+        "type": "choice",
+        "choice": "NONE_FOUND",
+        "confidence": 0.19,
+        "probabilities": {
+          "ONE": 0.21,
+          "TWO": 0.22,
+          "THREE": 0.18,
+          "FOUR_PLUS": 0.04,
+          "NONE_FOUND": 0.35
+        }
+      },
+      "chain_broken_by_exchange": {
+        "type": "noul",
+        "noul": 0.49
+      },
+      "exposure": {
+        "type": "score",
+        "score": 1.87,
+        "confidence": 0.5,
+        "probabilities": {
+          "0": 0.13,
+          "1": 0.23,
+          "2": 0.37,
+          "3": 0.2,
+          "4": 0.05,
+          "5": 0.02,
+          "6": 0
+        }
+      },
+      "action": {
+        "type": "choice",
+        "choice": "FREEZE_PENDING_REVIEW",
+        "confidence": 0.27,
+        "probabilities": {
+          "CLEAR": 0.23,
+          "REPORT_INTERNALLY": 0.26,
+          "FREEZE_PENDING_REVIEW": 0.51
+        }
+      }
+    },
+    "TRC-039": {
+      "tainted_funds": {
+        "type": "noul",
+        "noul": 0.05
+      },
+      "hops_to_source": {
+        "type": "choice",
+        "choice": "NONE_FOUND",
+        "confidence": 0.44,
+        "probabilities": {
+          "ONE": 0.11,
+          "TWO": 0.1,
+          "THREE": 0.17,
+          "FOUR_PLUS": 0.07,
+          "NONE_FOUND": 0.55
+        }
+      },
+      "chain_broken_by_exchange": {
+        "type": "noul",
+        "noul": 0.66
+      },
+      "exposure": {
+        "type": "score",
+        "score": 1.64,
+        "confidence": 0.4,
+        "probabilities": {
+          "0": 0.22,
+          "1": 0.25,
+          "2": 0.35,
+          "3": 0.09,
+          "4": 0.05,
+          "5": 0.02,
+          "6": 0.02
+        }
+      },
+      "action": {
+        "type": "choice",
+        "choice": "FREEZE_PENDING_REVIEW",
+        "confidence": 0.19,
+        "probabilities": {
+          "CLEAR": 0.32,
+          "REPORT_INTERNALLY": 0.22,
+          "FREEZE_PENDING_REVIEW": 0.46
+        }
+      }
+    },
+    "TRC-040": {
+      "tainted_funds": {
+        "type": "noul",
+        "noul": 0.24
+      },
+      "hops_to_source": {
+        "type": "choice",
+        "choice": "NONE_FOUND",
+        "confidence": 0.37,
+        "probabilities": {
+          "ONE": 0.22,
+          "TWO": 0.19,
+          "THREE": 0.06,
+          "FOUR_PLUS": 0.03,
+          "NONE_FOUND": 0.5
+        }
+      },
+      "chain_broken_by_exchange": {
+        "type": "noul",
+        "noul": 0.33
+      },
+      "exposure": {
+        "type": "score",
+        "score": 1.99,
+        "confidence": 0.17,
+        "probabilities": {
+          "0": 0.22,
+          "1": 0.24,
+          "2": 0.22,
+          "3": 0.11,
+          "4": 0.11,
+          "5": 0.06,
+          "6": 0.04
+        }
+      },
+      "action": {
+        "type": "choice",
+        "choice": "CLEAR",
+        "confidence": 0.16,
+        "probabilities": {
+          "CLEAR": 0.44,
+          "REPORT_INTERNALLY": 0.23,
+          "FREEZE_PENDING_REVIEW": 0.33
+        }
+      }
+    },
+    "TRC-041": {
+      "tainted_funds": {
+        "type": "noul",
+        "noul": 0.94
+      },
+      "hops_to_source": {
+        "type": "choice",
+        "choice": "ONE",
+        "confidence": 0.7,
+        "probabilities": {
+          "ONE": 0.76,
+          "TWO": 0.07,
+          "THREE": 0.04,
+          "FOUR_PLUS": 0.03,
+          "NONE_FOUND": 0.1
+        }
+      },
+      "chain_broken_by_exchange": {
+        "type": "noul",
+        "noul": 0
+      },
+      "exposure": {
+        "type": "score",
+        "score": 4.11,
+        "confidence": 0.25,
+        "probabilities": {
+          "0": 0.08,
+          "1": 0.04,
+          "2": 0.05,
+          "3": 0.05,
+          "4": 0.31,
+          "5": 0.24,
+          "6": 0.23
+        }
+      },
+      "action": {
+        "type": "choice",
+        "choice": "FREEZE_PENDING_REVIEW",
+        "confidence": 0.7,
+        "probabilities": {
+          "CLEAR": 0.1,
+          "REPORT_INTERNALLY": 0.1,
+          "FREEZE_PENDING_REVIEW": 0.8
+        }
+      }
+    },
+    "TRC-042": {
+      "tainted_funds": {
+        "type": "noul",
+        "noul": 0.05
+      },
+      "hops_to_source": {
+        "type": "choice",
+        "choice": "ONE",
+        "confidence": 0.35,
+        "probabilities": {
+          "ONE": 0.48,
+          "TWO": 0.38,
+          "THREE": 0.11,
+          "FOUR_PLUS": 0.01,
+          "NONE_FOUND": 0.02
+        }
+      },
+      "chain_broken_by_exchange": {
+        "type": "noul",
+        "noul": 0.77
+      },
+      "exposure": {
+        "type": "score",
+        "score": 3.86,
+        "confidence": 0.22,
+        "probabilities": {
+          "0": 0.05,
+          "1": 0.06,
+          "2": 0.08,
+          "3": 0.12,
+          "4": 0.27,
+          "5": 0.32,
+          "6": 0.1
+        }
+      },
+      "action": {
+        "type": "choice",
+        "choice": "FREEZE_PENDING_REVIEW",
+        "confidence": 0.63,
+        "probabilities": {
+          "CLEAR": 0.12,
+          "REPORT_INTERNALLY": 0.13,
+          "FREEZE_PENDING_REVIEW": 0.75
+        }
+      }
+    },
+    "TRC-043": {
+      "tainted_funds": {
+        "type": "noul",
+        "noul": 0.08
+      },
+      "hops_to_source": {
+        "type": "choice",
+        "choice": "NONE_FOUND",
+        "confidence": 0.71,
+        "probabilities": {
+          "ONE": 0.08,
+          "TWO": 0.07,
+          "THREE": 0.04,
+          "FOUR_PLUS": 0.04,
+          "NONE_FOUND": 0.77
+        }
+      },
+      "chain_broken_by_exchange": {
+        "type": "noul",
+        "noul": 0.4
+      },
+      "exposure": {
+        "type": "score",
+        "score": 2,
+        "confidence": 0,
+        "probabilities": {
+          "0": 0.28,
+          "1": 0.17,
+          "2": 0.18,
+          "3": 0.16,
+          "4": 0.1,
+          "5": 0.07,
+          "6": 0.04
+        }
+      },
+      "action": {
+        "type": "choice",
+        "choice": "FREEZE_PENDING_REVIEW",
+        "confidence": 0.14,
+        "probabilities": {
+          "CLEAR": 0.3,
+          "REPORT_INTERNALLY": 0.27,
+          "FREEZE_PENDING_REVIEW": 0.43
+        }
+      }
+    },
+    "TRC-044": {
+      "tainted_funds": {
+        "type": "noul",
+        "noul": 0.01
+      },
+      "hops_to_source": {
+        "type": "choice",
+        "choice": "TWO",
+        "confidence": 0.2,
+        "probabilities": {
+          "ONE": 0.33,
+          "TWO": 0.36,
+          "THREE": 0.18,
+          "FOUR_PLUS": 0.03,
+          "NONE_FOUND": 0.1
+        }
+      },
+      "chain_broken_by_exchange": {
+        "type": "noul",
+        "noul": 0.63
+      },
+      "exposure": {
+        "type": "score",
+        "score": 3.9,
+        "confidence": 0.29,
+        "probabilities": {
+          "0": 0.04,
+          "1": 0.06,
+          "2": 0.08,
+          "3": 0.07,
+          "4": 0.34,
+          "5": 0.35,
+          "6": 0.06
+        }
+      },
+      "action": {
+        "type": "choice",
+        "choice": "FREEZE_PENDING_REVIEW",
+        "confidence": 0.55,
+        "probabilities": {
+          "CLEAR": 0.15,
+          "REPORT_INTERNALLY": 0.15,
+          "FREEZE_PENDING_REVIEW": 0.7
+        }
+      }
+    },
+    "TRC-045": {
+      "tainted_funds": {
+        "type": "noul",
+        "noul": 0.64
+      },
+      "hops_to_source": {
+        "type": "choice",
+        "choice": "ONE",
+        "confidence": 0.51,
+        "probabilities": {
+          "ONE": 0.61,
+          "TWO": 0.2,
+          "THREE": 0.04,
+          "FOUR_PLUS": 0.03,
+          "NONE_FOUND": 0.12
+        }
+      },
+      "chain_broken_by_exchange": {
+        "type": "noul",
+        "noul": 0
+      },
+      "exposure": {
+        "type": "score",
+        "score": 4.12,
+        "confidence": 0,
+        "probabilities": {
+          "0": 0.04,
+          "1": 0.08,
+          "2": 0.08,
+          "3": 0.09,
+          "4": 0.21,
+          "5": 0.23,
+          "6": 0.27
+        }
+      },
+      "action": {
+        "type": "choice",
+        "choice": "FREEZE_PENDING_REVIEW",
+        "confidence": 0.51,
+        "probabilities": {
+          "CLEAR": 0.18,
+          "REPORT_INTERNALLY": 0.15,
+          "FREEZE_PENDING_REVIEW": 0.67
+        }
+      }
+    },
+    "TRC-046": {
+      "tainted_funds": {
+        "type": "noul",
+        "noul": 0.99
+      },
+      "hops_to_source": {
+        "type": "choice",
+        "choice": "ONE",
+        "confidence": 0.51,
+        "probabilities": {
+          "ONE": 0.61,
+          "TWO": 0.18,
+          "THREE": 0.1,
+          "FOUR_PLUS": 0.03,
+          "NONE_FOUND": 0.08
+        }
+      },
+      "chain_broken_by_exchange": {
+        "type": "noul",
+        "noul": 0
+      },
+      "exposure": {
+        "type": "score",
+        "score": 4.68,
+        "confidence": 0.49,
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.03,
+          "2": 0.03,
+          "3": 0.04,
+          "4": 0.26,
+          "5": 0.35,
+          "6": 0.28
+        }
+      },
+      "action": {
+        "type": "choice",
+        "choice": "FREEZE_PENDING_REVIEW",
+        "confidence": 0.67,
+        "probabilities": {
+          "CLEAR": 0.09,
+          "REPORT_INTERNALLY": 0.13,
+          "FREEZE_PENDING_REVIEW": 0.78
+        }
+      }
+    },
+    "TRC-047": {
+      "tainted_funds": {
+        "type": "noul",
+        "noul": 0.02
+      },
+      "hops_to_source": {
+        "type": "choice",
+        "choice": "NONE_FOUND",
+        "confidence": 0.64,
+        "probabilities": {
+          "ONE": 0.08,
+          "TWO": 0.09,
+          "THREE": 0.08,
+          "FOUR_PLUS": 0.04,
+          "NONE_FOUND": 0.71
+        }
+      },
+      "chain_broken_by_exchange": {
+        "type": "noul",
+        "noul": 0
+      },
+      "exposure": {
+        "type": "score",
+        "score": 1.89,
+        "confidence": 0,
+        "probabilities": {
+          "0": 0.25,
+          "1": 0.24,
+          "2": 0.21,
+          "3": 0.08,
+          "4": 0.12,
+          "5": 0.09,
+          "6": 0.01
+        }
+      },
+      "action": {
+        "type": "choice",
+        "choice": "FREEZE_PENDING_REVIEW",
+        "confidence": 0.11,
+        "probabilities": {
+          "CLEAR": 0.3,
+          "REPORT_INTERNALLY": 0.29,
+          "FREEZE_PENDING_REVIEW": 0.41
+        }
+      }
+    },
+    "TRC-048": {
+      "tainted_funds": {
+        "type": "noul",
+        "noul": 0.33
+      },
+      "hops_to_source": {
+        "type": "choice",
+        "choice": "NONE_FOUND",
+        "confidence": 0.34,
+        "probabilities": {
+          "ONE": 0.13,
+          "TWO": 0.13,
+          "THREE": 0.23,
+          "FOUR_PLUS": 0.04,
+          "NONE_FOUND": 0.47
+        }
+      },
+      "chain_broken_by_exchange": {
+        "type": "noul",
+        "noul": 0
+      },
+      "exposure": {
+        "type": "score",
+        "score": 3.85,
+        "confidence": 0.43,
+        "probabilities": {
+          "0": 0.05,
+          "1": 0.03,
+          "2": 0.07,
+          "3": 0.13,
+          "4": 0.36,
+          "5": 0.31,
+          "6": 0.05
+        }
+      },
+      "action": {
+        "type": "choice",
+        "choice": "FREEZE_PENDING_REVIEW",
+        "confidence": 0.64,
+        "probabilities": {
+          "CLEAR": 0.11,
+          "REPORT_INTERNALLY": 0.13,
+          "FREEZE_PENDING_REVIEW": 0.76
+        }
+      }
+    },
+    "TRC-049": {
+      "tainted_funds": {
+        "type": "noul",
+        "noul": 0.47
+      },
+      "hops_to_source": {
+        "type": "choice",
+        "choice": "THREE",
+        "confidence": 0.33,
+        "probabilities": {
+          "ONE": 0.22,
+          "TWO": 0.19,
+          "THREE": 0.46,
+          "FOUR_PLUS": 0.08,
+          "NONE_FOUND": 0.05
+        }
+      },
+      "chain_broken_by_exchange": {
+        "type": "noul",
+        "noul": 0
+      },
+      "exposure": {
+        "type": "score",
+        "score": 3.69,
+        "confidence": 0.43,
+        "probabilities": {
+          "0": 0.02,
+          "1": 0.04,
+          "2": 0.1,
+          "3": 0.24,
+          "4": 0.35,
+          "5": 0.17,
+          "6": 0.08
+        }
+      },
+      "action": {
+        "type": "choice",
+        "choice": "FREEZE_PENDING_REVIEW",
+        "confidence": 0.55,
+        "probabilities": {
+          "CLEAR": 0.11,
+          "REPORT_INTERNALLY": 0.19,
+          "FREEZE_PENDING_REVIEW": 0.7
+        }
+      }
+    },
+    "TRC-050": {
+      "tainted_funds": {
+        "type": "noul",
+        "noul": 0.43
+      },
+      "hops_to_source": {
+        "type": "choice",
+        "choice": "NONE_FOUND",
+        "confidence": 0.37,
+        "probabilities": {
+          "ONE": 0.18,
+          "TWO": 0.16,
+          "THREE": 0.12,
+          "FOUR_PLUS": 0.04,
+          "NONE_FOUND": 0.5
+        }
+      },
+      "chain_broken_by_exchange": {
+        "type": "noul",
+        "noul": 0.35
+      },
+      "exposure": {
+        "type": "score",
+        "score": 2.04,
+        "confidence": 0.13,
+        "probabilities": {
+          "0": 0.23,
+          "1": 0.25,
+          "2": 0.18,
+          "3": 0.1,
+          "4": 0.12,
+          "5": 0.07,
+          "6": 0.05
+        }
+      },
+      "action": {
+        "type": "choice",
+        "choice": "FREEZE_PENDING_REVIEW",
+        "confidence": 0.22,
+        "probabilities": {
+          "CLEAR": 0.24,
+          "REPORT_INTERNALLY": 0.28,
+          "FREEZE_PENDING_REVIEW": 0.48
+        }
+      }
+    },
+    "TRC-051": {
+      "tainted_funds": {
+        "type": "noul",
+        "noul": 0.4
+      },
+      "hops_to_source": {
+        "type": "choice",
+        "choice": "NONE_FOUND",
+        "confidence": 0.93,
+        "probabilities": {
+          "ONE": 0.01,
+          "TWO": 0.02,
+          "THREE": 0.02,
+          "FOUR_PLUS": 0.01,
+          "NONE_FOUND": 0.94
+        }
+      },
+      "chain_broken_by_exchange": {
+        "type": "noul",
+        "noul": 0
+      },
+      "exposure": {
+        "type": "score",
+        "score": 2.37,
+        "confidence": 0,
+        "probabilities": {
+          "0": 0.28,
+          "1": 0.14,
+          "2": 0.14,
+          "3": 0.08,
+          "4": 0.13,
+          "5": 0.19,
+          "6": 0.04
+        }
+      },
+      "action": {
+        "type": "choice",
+        "choice": "CLEAR",
+        "confidence": 0.09,
+        "probabilities": {
+          "CLEAR": 0.39,
+          "REPORT_INTERNALLY": 0.32,
+          "FREEZE_PENDING_REVIEW": 0.29
+        }
+      }
+    },
+    "TRC-052": {
+      "tainted_funds": {
+        "type": "noul",
+        "noul": 0.38
+      },
+      "hops_to_source": {
+        "type": "choice",
+        "choice": "NONE_FOUND",
+        "confidence": 0.43,
+        "probabilities": {
+          "ONE": 0.16,
+          "TWO": 0.15,
+          "THREE": 0.1,
+          "FOUR_PLUS": 0.05,
+          "NONE_FOUND": 0.54
+        }
+      },
+      "chain_broken_by_exchange": {
+        "type": "noul",
+        "noul": 0.44
+      },
+      "exposure": {
+        "type": "score",
+        "score": 1.89,
+        "confidence": 0,
+        "probabilities": {
+          "0": 0.29,
+          "1": 0.23,
+          "2": 0.16,
+          "3": 0.09,
+          "4": 0.12,
+          "5": 0.07,
+          "6": 0.04
+        }
+      },
+      "action": {
+        "type": "choice",
+        "choice": "CLEAR",
+        "confidence": 0.1,
+        "probabilities": {
+          "CLEAR": 0.4,
+          "REPORT_INTERNALLY": 0.26,
+          "FREEZE_PENDING_REVIEW": 0.34
+        }
+      }
+    },
+    "TRC-053": {
+      "tainted_funds": {
+        "type": "noul",
+        "noul": 0.19
+      },
+      "hops_to_source": {
+        "type": "choice",
+        "choice": "NONE_FOUND",
+        "confidence": 0.74,
+        "probabilities": {
+          "ONE": 0.06,
+          "TWO": 0.07,
+          "THREE": 0.05,
+          "FOUR_PLUS": 0.03,
+          "NONE_FOUND": 0.79
+        }
+      },
+      "chain_broken_by_exchange": {
+        "type": "noul",
+        "noul": 0.37
+      },
+      "exposure": {
+        "type": "score",
+        "score": 2,
+        "confidence": 0,
+        "probabilities": {
+          "0": 0.27,
+          "1": 0.21,
+          "2": 0.18,
+          "3": 0.11,
+          "4": 0.11,
+          "5": 0.06,
+          "6": 0.06
+        }
+      },
+      "action": {
+        "type": "choice",
+        "choice": "FREEZE_PENDING_REVIEW",
+        "confidence": 0.3,
+        "probabilities": {
+          "CLEAR": 0.2,
+          "REPORT_INTERNALLY": 0.27,
+          "FREEZE_PENDING_REVIEW": 0.53
+        }
+      }
+    },
+    "TRC-054": {
+      "tainted_funds": {
+        "type": "noul",
+        "noul": 0.99
+      },
+      "hops_to_source": {
+        "type": "choice",
+        "choice": "ONE",
+        "confidence": 0.56,
+        "probabilities": {
+          "ONE": 0.65,
+          "TWO": 0.13,
+          "THREE": 0.03,
+          "FOUR_PLUS": 0.01,
+          "NONE_FOUND": 0.18
+        }
+      },
+      "chain_broken_by_exchange": {
+        "type": "noul",
+        "noul": 0
+      },
+      "exposure": {
+        "type": "score",
+        "score": 4.87,
+        "confidence": 0.34,
+        "probabilities": {
+          "0": 0.03,
+          "1": 0.04,
+          "2": 0.06,
+          "3": 0.05,
+          "4": 0.12,
+          "5": 0.12,
+          "6": 0.58
+        }
+      },
+      "action": {
+        "type": "choice",
+        "choice": "FREEZE_PENDING_REVIEW",
+        "confidence": 0.69,
+        "probabilities": {
+          "CLEAR": 0.12,
+          "REPORT_INTERNALLY": 0.09,
+          "FREEZE_PENDING_REVIEW": 0.79
+        }
+      }
+    },
+    "TRC-055": {
+      "tainted_funds": {
+        "type": "noul",
+        "noul": 0.97
+      },
+      "hops_to_source": {
+        "type": "choice",
+        "choice": "THREE",
+        "confidence": 0.5,
+        "probabilities": {
+          "ONE": 0.19,
+          "TWO": 0.2,
+          "THREE": 0.6,
+          "FOUR_PLUS": 0,
+          "NONE_FOUND": 0.01
+        }
+      },
+      "chain_broken_by_exchange": {
+        "type": "noul",
+        "noul": 0
+      },
+      "exposure": {
+        "type": "score",
+        "score": 4.33,
+        "confidence": 0.55,
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.02,
+          "2": 0.03,
+          "3": 0.05,
+          "4": 0.4,
+          "5": 0.44,
+          "6": 0.05
+        }
+      },
+      "action": {
+        "type": "choice",
+        "choice": "FREEZE_PENDING_REVIEW",
+        "confidence": 0.77,
+        "probabilities": {
+          "CLEAR": 0.08,
+          "REPORT_INTERNALLY": 0.07,
+          "FREEZE_PENDING_REVIEW": 0.85
+        }
+      }
+    },
+    "TRC-056": {
+      "tainted_funds": {
+        "type": "noul",
+        "noul": 0.04
+      },
+      "hops_to_source": {
+        "type": "choice",
+        "choice": "NONE_FOUND",
+        "confidence": 0.93,
+        "probabilities": {
+          "ONE": 0.02,
+          "TWO": 0.02,
+          "THREE": 0.01,
+          "FOUR_PLUS": 0.01,
+          "NONE_FOUND": 0.94
+        }
+      },
+      "chain_broken_by_exchange": {
+        "type": "noul",
+        "noul": 0
+      },
+      "exposure": {
+        "type": "score",
+        "score": 0.86,
+        "confidence": 0.5,
+        "probabilities": {
+          "0": 0.52,
+          "1": 0.23,
+          "2": 0.17,
+          "3": 0.04,
+          "4": 0.03,
+          "5": 0.01,
+          "6": 0
+        }
+      },
+      "action": {
+        "type": "choice",
+        "choice": "FREEZE_PENDING_REVIEW",
+        "confidence": 0.06,
+        "probabilities": {
+          "CLEAR": 0.32,
+          "REPORT_INTERNALLY": 0.31,
+          "FREEZE_PENDING_REVIEW": 0.37
+        }
+      }
+    },
+    "TRC-057": {
+      "tainted_funds": {
+        "type": "noul",
+        "noul": 0.25
+      },
+      "hops_to_source": {
+        "type": "choice",
+        "choice": "NONE_FOUND",
+        "confidence": 0.75,
+        "probabilities": {
+          "ONE": 0.03,
+          "TWO": 0.06,
+          "THREE": 0.06,
+          "FOUR_PLUS": 0.05,
+          "NONE_FOUND": 0.8
+        }
+      },
+      "chain_broken_by_exchange": {
+        "type": "noul",
+        "noul": 0.31
+      },
+      "exposure": {
+        "type": "score",
+        "score": 2.1,
+        "confidence": 0.24,
+        "probabilities": {
+          "0": 0.19,
+          "1": 0.22,
+          "2": 0.24,
+          "3": 0.13,
+          "4": 0.12,
+          "5": 0.07,
+          "6": 0.03
+        }
+      },
+      "action": {
+        "type": "choice",
+        "choice": "FREEZE_PENDING_REVIEW",
+        "confidence": 0.33,
+        "probabilities": {
+          "CLEAR": 0.25,
+          "REPORT_INTERNALLY": 0.2,
+          "FREEZE_PENDING_REVIEW": 0.55
+        }
+      }
+    },
+    "TRC-058": {
+      "tainted_funds": {
+        "type": "noul",
+        "noul": 0.93
+      },
+      "hops_to_source": {
+        "type": "choice",
+        "choice": "ONE",
+        "confidence": 0.31,
+        "probabilities": {
+          "ONE": 0.45,
+          "TWO": 0.31,
+          "THREE": 0.21,
+          "FOUR_PLUS": 0.02,
+          "NONE_FOUND": 0.01
+        }
+      },
+      "chain_broken_by_exchange": {
+        "type": "noul",
+        "noul": 0
+      },
+      "exposure": {
+        "type": "score",
+        "score": 4.23,
+        "confidence": 0.43,
+        "probabilities": {
+          "0": 0.03,
+          "1": 0.04,
+          "2": 0.05,
+          "3": 0.06,
+          "4": 0.29,
+          "5": 0.43,
+          "6": 0.1
+        }
+      },
+      "action": {
+        "type": "choice",
+        "choice": "FREEZE_PENDING_REVIEW",
+        "confidence": 0.77,
+        "probabilities": {
+          "CLEAR": 0.1,
+          "REPORT_INTERNALLY": 0.05,
+          "FREEZE_PENDING_REVIEW": 0.85
+        }
+      }
+    },
+    "TRC-059": {
+      "tainted_funds": {
+        "type": "noul",
+        "noul": 0.09
+      },
+      "hops_to_source": {
+        "type": "choice",
+        "choice": "NONE_FOUND",
+        "confidence": 0.35,
+        "probabilities": {
+          "ONE": 0.21,
+          "TWO": 0.17,
+          "THREE": 0.09,
+          "FOUR_PLUS": 0.05,
+          "NONE_FOUND": 0.48
+        }
+      },
+      "chain_broken_by_exchange": {
+        "type": "noul",
+        "noul": 0.54
+      },
+      "exposure": {
+        "type": "score",
+        "score": 2.14,
+        "confidence": 0.38,
+        "probabilities": {
+          "0": 0.11,
+          "1": 0.24,
+          "2": 0.3,
+          "3": 0.19,
+          "4": 0.1,
+          "5": 0.03,
+          "6": 0.03
+        }
+      },
+      "action": {
+        "type": "choice",
+        "choice": "CLEAR",
+        "confidence": 0.14,
+        "probabilities": {
+          "CLEAR": 0.43,
+          "REPORT_INTERNALLY": 0.24,
+          "FREEZE_PENDING_REVIEW": 0.33
+        }
+      }
+    },
+    "TRC-060": {
+      "tainted_funds": {
+        "type": "noul",
+        "noul": 0.04
+      },
+      "hops_to_source": {
+        "type": "choice",
+        "choice": "TWO",
+        "confidence": 0.31,
+        "probabilities": {
+          "ONE": 0.32,
+          "TWO": 0.45,
+          "THREE": 0.13,
+          "FOUR_PLUS": 0.03,
+          "NONE_FOUND": 0.07
+        }
+      },
+      "chain_broken_by_exchange": {
+        "type": "noul",
+        "noul": 0.06
+      },
+      "exposure": {
+        "type": "score",
+        "score": 4.01,
+        "confidence": 0.25,
+        "probabilities": {
+          "0": 0.05,
+          "1": 0.09,
+          "2": 0.07,
+          "3": 0.06,
+          "4": 0.2,
+          "5": 0.38,
+          "6": 0.15
+        }
+      },
+      "action": {
+        "type": "choice",
+        "choice": "FREEZE_PENDING_REVIEW",
+        "confidence": 0.58,
+        "probabilities": {
+          "CLEAR": 0.16,
+          "REPORT_INTERNALLY": 0.12,
+          "FREEZE_PENDING_REVIEW": 0.72
+        }
+      }
+    },
+    "TRC-061": {
+      "tainted_funds": {
+        "type": "noul",
+        "noul": 0.34
+      },
+      "hops_to_source": {
+        "type": "choice",
+        "choice": "TWO",
+        "confidence": 0.45,
+        "probabilities": {
+          "ONE": 0.32,
+          "TWO": 0.56,
+          "THREE": 0.1,
+          "FOUR_PLUS": 0.01,
+          "NONE_FOUND": 0.01
+        }
+      },
+      "chain_broken_by_exchange": {
+        "type": "noul",
+        "noul": 0
+      },
+      "exposure": {
+        "type": "score",
+        "score": 4.32,
+        "confidence": 0.02,
+        "probabilities": {
+          "0": 0.05,
+          "1": 0.05,
+          "2": 0.06,
+          "3": 0.05,
+          "4": 0.27,
+          "5": 0.2,
+          "6": 0.32
+        }
+      },
+      "action": {
+        "type": "choice",
+        "choice": "FREEZE_PENDING_REVIEW",
+        "confidence": 0.88,
+        "probabilities": {
+          "CLEAR": 0.04,
+          "REPORT_INTERNALLY": 0.04,
+          "FREEZE_PENDING_REVIEW": 0.92
+        }
+      }
+    },
+    "TRC-062": {
+      "tainted_funds": {
+        "type": "noul",
+        "noul": 0.06
+      },
+      "hops_to_source": {
+        "type": "choice",
+        "choice": "NONE_FOUND",
+        "confidence": 0.91,
+        "probabilities": {
+          "ONE": 0.01,
+          "TWO": 0.02,
+          "THREE": 0.02,
+          "FOUR_PLUS": 0.02,
+          "NONE_FOUND": 0.93
+        }
+      },
+      "chain_broken_by_exchange": {
+        "type": "noul",
+        "noul": 0
+      },
+      "exposure": {
+        "type": "score",
+        "score": 1.6,
+        "confidence": 0.07,
+        "probabilities": {
+          "0": 0.37,
+          "1": 0.12,
+          "2": 0.29,
+          "3": 0.07,
+          "4": 0.07,
+          "5": 0.07,
+          "6": 0.01
+        }
+      },
+      "action": {
+        "type": "choice",
+        "choice": "CLEAR",
+        "confidence": 0.09,
+        "probabilities": {
+          "CLEAR": 0.39,
+          "REPORT_INTERNALLY": 0.25,
+          "FREEZE_PENDING_REVIEW": 0.36
+        }
+      }
+    },
+    "TRC-063": {
+      "tainted_funds": {
+        "type": "noul",
+        "noul": 0.99
+      },
+      "hops_to_source": {
+        "type": "choice",
+        "choice": "ONE",
+        "confidence": 0.59,
+        "probabilities": {
+          "ONE": 0.67,
+          "TWO": 0.19,
+          "THREE": 0.04,
+          "FOUR_PLUS": 0.02,
+          "NONE_FOUND": 0.08
+        }
+      },
+      "chain_broken_by_exchange": {
+        "type": "noul",
+        "noul": 0
+      },
+      "exposure": {
+        "type": "score",
+        "score": 4.37,
+        "confidence": 0.54,
+        "probabilities": {
+          "0": 0.02,
+          "1": 0.04,
+          "2": 0.02,
+          "3": 0.04,
+          "4": 0.31,
+          "5": 0.49,
+          "6": 0.08
+        }
+      },
+      "action": {
+        "type": "choice",
+        "choice": "FREEZE_PENDING_REVIEW",
+        "confidence": 0.83,
+        "probabilities": {
+          "CLEAR": 0.04,
+          "REPORT_INTERNALLY": 0.07,
+          "FREEZE_PENDING_REVIEW": 0.89
+        }
+      }
+    },
+    "TRC-064": {
+      "tainted_funds": {
+        "type": "noul",
+        "noul": 0.08
+      },
+      "hops_to_source": {
+        "type": "choice",
+        "choice": "NONE_FOUND",
+        "confidence": 0.87,
+        "probabilities": {
+          "ONE": 0.02,
+          "TWO": 0.04,
+          "THREE": 0.02,
+          "FOUR_PLUS": 0.02,
+          "NONE_FOUND": 0.9
+        }
+      },
+      "chain_broken_by_exchange": {
+        "type": "noul",
+        "noul": 0
+      },
+      "exposure": {
+        "type": "score",
+        "score": 2.04,
+        "confidence": 0.4,
+        "probabilities": {
+          "0": 0.15,
+          "1": 0.19,
+          "2": 0.36,
+          "3": 0.13,
+          "4": 0.12,
+          "5": 0.04,
+          "6": 0.01
+        }
+      },
+      "action": {
+        "type": "choice",
+        "choice": "FREEZE_PENDING_REVIEW",
+        "confidence": 0.2,
+        "probabilities": {
+          "CLEAR": 0.22,
+          "REPORT_INTERNALLY": 0.31,
+          "FREEZE_PENDING_REVIEW": 0.47
+        }
+      }
+    },
+    "TRC-065": {
+      "tainted_funds": {
+        "type": "noul",
+        "noul": 0.44
+      },
+      "hops_to_source": {
+        "type": "choice",
+        "choice": "NONE_FOUND",
+        "confidence": 0.87,
+        "probabilities": {
+          "ONE": 0.02,
+          "TWO": 0.02,
+          "THREE": 0.03,
+          "FOUR_PLUS": 0.03,
+          "NONE_FOUND": 0.9
+        }
+      },
+      "chain_broken_by_exchange": {
+        "type": "noul",
+        "noul": 0
+      },
+      "exposure": {
+        "type": "score",
+        "score": 1.78,
+        "confidence": 0,
+        "probabilities": {
+          "0": 0.28,
+          "1": 0.21,
+          "2": 0.23,
+          "3": 0.11,
+          "4": 0.08,
+          "5": 0.08,
+          "6": 0.01
+        }
+      },
+      "action": {
+        "type": "choice",
+        "choice": "FREEZE_PENDING_REVIEW",
+        "confidence": 0.25,
+        "probabilities": {
+          "CLEAR": 0.25,
+          "REPORT_INTERNALLY": 0.25,
+          "FREEZE_PENDING_REVIEW": 0.5
+        }
+      }
+    },
+    "TRC-066": {
+      "tainted_funds": {
+        "type": "noul",
+        "noul": 0.1
+      },
+      "hops_to_source": {
+        "type": "choice",
+        "choice": "NONE_FOUND",
+        "confidence": 0.61,
+        "probabilities": {
+          "ONE": 0.13,
+          "TWO": 0.08,
+          "THREE": 0.06,
+          "FOUR_PLUS": 0.04,
+          "NONE_FOUND": 0.69
+        }
+      },
+      "chain_broken_by_exchange": {
+        "type": "noul",
+        "noul": 0.41
+      },
+      "exposure": {
+        "type": "score",
+        "score": 2.73,
+        "confidence": 0.19,
+        "probabilities": {
+          "0": 0.11,
+          "1": 0.16,
+          "2": 0.18,
+          "3": 0.2,
+          "4": 0.19,
+          "5": 0.11,
+          "6": 0.05
+        }
+      },
+      "action": {
+        "type": "choice",
+        "choice": "FREEZE_PENDING_REVIEW",
+        "confidence": 0.58,
+        "probabilities": {
+          "CLEAR": 0.08,
+          "REPORT_INTERNALLY": 0.2,
+          "FREEZE_PENDING_REVIEW": 0.72
+        }
+      }
+    },
+    "TRC-067": {
+      "tainted_funds": {
+        "type": "noul",
+        "noul": 0.15
+      },
+      "hops_to_source": {
+        "type": "choice",
+        "choice": "NONE_FOUND",
+        "confidence": 0.4,
+        "probabilities": {
+          "ONE": 0.19,
+          "TWO": 0.17,
+          "THREE": 0.07,
+          "FOUR_PLUS": 0.05,
+          "NONE_FOUND": 0.52
+        }
+      },
+      "chain_broken_by_exchange": {
+        "type": "noul",
+        "noul": 0.45
+      },
+      "exposure": {
+        "type": "score",
+        "score": 1.67,
+        "confidence": 0.03,
+        "probabilities": {
+          "0": 0.26,
+          "1": 0.26,
+          "2": 0.2,
+          "3": 0.16,
+          "4": 0.08,
+          "5": 0.03,
+          "6": 0.01
+        }
+      },
+      "action": {
+        "type": "choice",
+        "choice": "FREEZE_PENDING_REVIEW",
+        "confidence": 0.2,
+        "probabilities": {
+          "CLEAR": 0.25,
+          "REPORT_INTERNALLY": 0.28,
+          "FREEZE_PENDING_REVIEW": 0.47
+        }
+      }
+    },
+    "TRC-068": {
+      "tainted_funds": {
+        "type": "noul",
+        "noul": 0.98
+      },
+      "hops_to_source": {
+        "type": "choice",
+        "choice": "ONE",
+        "confidence": 0.25,
+        "probabilities": {
+          "ONE": 0.4,
+          "TWO": 0.39,
+          "THREE": 0.16,
+          "FOUR_PLUS": 0.02,
+          "NONE_FOUND": 0.03
+        }
+      },
+      "chain_broken_by_exchange": {
+        "type": "noul",
+        "noul": 0
+      },
+      "exposure": {
+        "type": "score",
+        "score": 4.6,
+        "confidence": 0.18,
+        "probabilities": {
+          "0": 0.03,
+          "1": 0.03,
+          "2": 0.06,
+          "3": 0.08,
+          "4": 0.19,
+          "5": 0.21,
+          "6": 0.4
+        }
+      },
+      "action": {
+        "type": "choice",
+        "choice": "FREEZE_PENDING_REVIEW",
+        "confidence": 0.8,
+        "probabilities": {
+          "CLEAR": 0.06,
+          "REPORT_INTERNALLY": 0.07,
+          "FREEZE_PENDING_REVIEW": 0.87
+        }
+      }
+    },
+    "TRC-069": {
+      "tainted_funds": {
+        "type": "noul",
+        "noul": 0.07
+      },
+      "hops_to_source": {
+        "type": "choice",
+        "choice": "TWO",
+        "confidence": 0.45,
+        "probabilities": {
+          "ONE": 0.33,
+          "TWO": 0.56,
+          "THREE": 0.09,
+          "FOUR_PLUS": 0.01,
+          "NONE_FOUND": 0.01
+        }
+      },
+      "chain_broken_by_exchange": {
+        "type": "noul",
+        "noul": 0.36
+      },
+      "exposure": {
+        "type": "score",
+        "score": 3.59,
+        "confidence": 0.28,
+        "probabilities": {
+          "0": 0.06,
+          "1": 0.1,
+          "2": 0.09,
+          "3": 0.1,
+          "4": 0.32,
+          "5": 0.25,
+          "6": 0.08
+        }
+      },
+      "action": {
+        "type": "choice",
+        "choice": "FREEZE_PENDING_REVIEW",
+        "confidence": 0.56,
+        "probabilities": {
+          "CLEAR": 0.14,
+          "REPORT_INTERNALLY": 0.15,
+          "FREEZE_PENDING_REVIEW": 0.71
+        }
+      }
+    },
+    "TRC-070": {
+      "tainted_funds": {
+        "type": "noul",
+        "noul": 0.02
+      },
+      "hops_to_source": {
+        "type": "choice",
+        "choice": "NONE_FOUND",
+        "confidence": 0.93,
+        "probabilities": {
+          "ONE": 0.02,
+          "TWO": 0.01,
+          "THREE": 0.02,
+          "FOUR_PLUS": 0.01,
+          "NONE_FOUND": 0.94
+        }
+      },
+      "chain_broken_by_exchange": {
+        "type": "noul",
+        "noul": 0
+      },
+      "exposure": {
+        "type": "score",
+        "score": 2.5,
+        "confidence": 0.3,
+        "probabilities": {
+          "0": 0.09,
+          "1": 0.17,
+          "2": 0.26,
+          "3": 0.21,
+          "4": 0.18,
+          "5": 0.08,
+          "6": 0.01
+        }
+      },
+      "action": {
+        "type": "choice",
+        "choice": "CLEAR",
+        "confidence": 0.19,
+        "probabilities": {
+          "CLEAR": 0.46,
+          "REPORT_INTERNALLY": 0.28,
+          "FREEZE_PENDING_REVIEW": 0.26
+        }
+      }
+    },
+    "TRC-071": {
+      "tainted_funds": {
+        "type": "noul",
+        "noul": 0.05
+      },
+      "hops_to_source": {
+        "type": "choice",
+        "choice": "NONE_FOUND",
+        "confidence": 0.44,
+        "probabilities": {
+          "ONE": 0.11,
+          "TWO": 0.13,
+          "THREE": 0.17,
+          "FOUR_PLUS": 0.04,
+          "NONE_FOUND": 0.55
+        }
+      },
+      "chain_broken_by_exchange": {
+        "type": "noul",
+        "noul": 0.76
+      },
+      "exposure": {
+        "type": "score",
+        "score": 3.02,
+        "confidence": 0.21,
+        "probabilities": {
+          "0": 0.08,
+          "1": 0.1,
+          "2": 0.15,
+          "3": 0.25,
+          "4": 0.26,
+          "5": 0.13,
+          "6": 0.03
+        }
+      },
+      "action": {
+        "type": "choice",
+        "choice": "FREEZE_PENDING_REVIEW",
+        "confidence": 0.69,
+        "probabilities": {
+          "CLEAR": 0.09,
+          "REPORT_INTERNALLY": 0.12,
+          "FREEZE_PENDING_REVIEW": 0.79
+        }
+      }
+    },
+    "TRC-072": {
+      "tainted_funds": {
+        "type": "noul",
+        "noul": 0.73
+      },
+      "hops_to_source": {
+        "type": "choice",
+        "choice": "TWO",
+        "confidence": 0.36,
+        "probabilities": {
+          "ONE": 0.33,
+          "TWO": 0.49,
+          "THREE": 0.16,
+          "FOUR_PLUS": 0.01,
+          "NONE_FOUND": 0.01
+        }
+      },
+      "chain_broken_by_exchange": {
+        "type": "noul",
+        "noul": 0
+      },
+      "exposure": {
+        "type": "score",
+        "score": 4.92,
+        "confidence": 0.37,
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.01,
+          "2": 0.04,
+          "3": 0.04,
+          "4": 0.24,
+          "5": 0.21,
+          "6": 0.45
+        }
+      },
+      "action": {
+        "type": "choice",
+        "choice": "FREEZE_PENDING_REVIEW",
+        "confidence": 0.89,
+        "probabilities": {
+          "CLEAR": 0.04,
+          "REPORT_INTERNALLY": 0.03,
+          "FREEZE_PENDING_REVIEW": 0.93
+        }
+      }
+    },
+    "TRC-073": {
+      "tainted_funds": {
+        "type": "noul",
+        "noul": 0.09
+      },
+      "hops_to_source": {
+        "type": "choice",
+        "choice": "NONE_FOUND",
+        "confidence": 0.76,
+        "probabilities": {
+          "ONE": 0.07,
+          "TWO": 0.06,
+          "THREE": 0.04,
+          "FOUR_PLUS": 0.02,
+          "NONE_FOUND": 0.81
+        }
+      },
+      "chain_broken_by_exchange": {
+        "type": "noul",
+        "noul": 0.23
+      },
+      "exposure": {
+        "type": "score",
+        "score": 1.78,
+        "confidence": 0,
+        "probabilities": {
+          "0": 0.3,
+          "1": 0.22,
+          "2": 0.19,
+          "3": 0.11,
+          "4": 0.09,
+          "5": 0.05,
+          "6": 0.04
+        }
+      },
+      "action": {
+        "type": "choice",
+        "choice": "FREEZE_PENDING_REVIEW",
+        "confidence": 0.09,
+        "probabilities": {
+          "CLEAR": 0.35,
+          "REPORT_INTERNALLY": 0.26,
+          "FREEZE_PENDING_REVIEW": 0.39
+        }
+      }
+    },
+    "TRC-074": {
+      "tainted_funds": {
+        "type": "noul",
+        "noul": 0.97
+      },
+      "hops_to_source": {
+        "type": "choice",
+        "choice": "ONE",
+        "confidence": 0.56,
+        "probabilities": {
+          "ONE": 0.65,
+          "TWO": 0.12,
+          "THREE": 0.11,
+          "FOUR_PLUS": 0.04,
+          "NONE_FOUND": 0.08
+        }
+      },
+      "chain_broken_by_exchange": {
+        "type": "noul",
+        "noul": 0
+      },
+      "exposure": {
+        "type": "score",
+        "score": 4.28,
+        "confidence": 0.28,
+        "probabilities": {
+          "0": 0.04,
+          "1": 0.05,
+          "2": 0.05,
+          "3": 0.07,
+          "4": 0.3,
+          "5": 0.22,
+          "6": 0.27
+        }
+      },
+      "action": {
+        "type": "choice",
+        "choice": "FREEZE_PENDING_REVIEW",
+        "confidence": 0.66,
+        "probabilities": {
+          "CLEAR": 0.12,
+          "REPORT_INTERNALLY": 0.11,
+          "FREEZE_PENDING_REVIEW": 0.77
+        }
+      }
+    },
+    "TRC-075": {
+      "tainted_funds": {
+        "type": "noul",
+        "noul": 0.89
+      },
+      "hops_to_source": {
+        "type": "choice",
+        "choice": "THREE",
+        "confidence": 0.64,
+        "probabilities": {
+          "ONE": 0.13,
+          "TWO": 0.16,
+          "THREE": 0.71,
+          "FOUR_PLUS": 0,
+          "NONE_FOUND": 0
+        }
+      },
+      "chain_broken_by_exchange": {
+        "type": "noul",
+        "noul": 0
+      },
+      "exposure": {
+        "type": "score",
+        "score": 4.78,
+        "confidence": 0.29,
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.01,
+          "2": 0.02,
+          "3": 0.06,
+          "4": 0.29,
+          "5": 0.27,
+          "6": 0.34
+        }
+      },
+      "action": {
+        "type": "choice",
+        "choice": "FREEZE_PENDING_REVIEW",
+        "confidence": 0.82,
+        "probabilities": {
+          "CLEAR": 0.06,
+          "REPORT_INTERNALLY": 0.06,
+          "FREEZE_PENDING_REVIEW": 0.88
+        }
+      }
+    },
+    "TRC-076": {
+      "tainted_funds": {
+        "type": "noul",
+        "noul": 0.17
+      },
+      "hops_to_source": {
+        "type": "choice",
+        "choice": "NONE_FOUND",
+        "confidence": 0.5,
+        "probabilities": {
+          "ONE": 0.14,
+          "TWO": 0.12,
+          "THREE": 0.07,
+          "FOUR_PLUS": 0.07,
+          "NONE_FOUND": 0.6
+        }
+      },
+      "chain_broken_by_exchange": {
+        "type": "noul",
+        "noul": 0.67
+      },
+      "exposure": {
+        "type": "score",
+        "score": 2,
+        "confidence": 0.24,
+        "probabilities": {
+          "0": 0.24,
+          "1": 0.17,
+          "2": 0.25,
+          "3": 0.16,
+          "4": 0.09,
+          "5": 0.05,
+          "6": 0.04
+        }
+      },
+      "action": {
+        "type": "choice",
+        "choice": "FREEZE_PENDING_REVIEW",
+        "confidence": 0.2,
+        "probabilities": {
+          "CLEAR": 0.26,
+          "REPORT_INTERNALLY": 0.27,
+          "FREEZE_PENDING_REVIEW": 0.47
+        }
+      }
+    },
+    "TRC-077": {
+      "tainted_funds": {
+        "type": "noul",
+        "noul": 0.25
+      },
+      "hops_to_source": {
+        "type": "choice",
+        "choice": "NONE_FOUND",
+        "confidence": 0.89,
+        "probabilities": {
+          "ONE": 0.03,
+          "TWO": 0.04,
+          "THREE": 0.01,
+          "FOUR_PLUS": 0.01,
+          "NONE_FOUND": 0.91
+        }
+      },
+      "chain_broken_by_exchange": {
+        "type": "noul",
+        "noul": 0
+      },
+      "exposure": {
+        "type": "score",
+        "score": 2.41,
+        "confidence": 0,
+        "probabilities": {
+          "0": 0.24,
+          "1": 0.07,
+          "2": 0.23,
+          "3": 0.15,
+          "4": 0.14,
+          "5": 0.15,
+          "6": 0.02
+        }
+      },
+      "action": {
+        "type": "choice",
+        "choice": "FREEZE_PENDING_REVIEW",
+        "confidence": 0.42,
+        "probabilities": {
+          "CLEAR": 0.09,
+          "REPORT_INTERNALLY": 0.3,
+          "FREEZE_PENDING_REVIEW": 0.61
+        }
+      }
+    },
+    "TRC-078": {
+      "tainted_funds": {
+        "type": "noul",
+        "noul": 0.39
+      },
+      "hops_to_source": {
+        "type": "choice",
+        "choice": "NONE_FOUND",
+        "confidence": 0.82,
+        "probabilities": {
+          "ONE": 0.02,
+          "TWO": 0.03,
+          "THREE": 0.06,
+          "FOUR_PLUS": 0.03,
+          "NONE_FOUND": 0.86
+        }
+      },
+      "chain_broken_by_exchange": {
+        "type": "noul",
+        "noul": 0
+      },
+      "exposure": {
+        "type": "score",
+        "score": 1.59,
+        "confidence": 0.07,
+        "probabilities": {
+          "0": 0.38,
+          "1": 0.16,
+          "2": 0.21,
+          "3": 0.09,
+          "4": 0.07,
+          "5": 0.08,
+          "6": 0.01
+        }
+      },
+      "action": {
+        "type": "choice",
+        "choice": "CLEAR",
+        "confidence": 0.18,
+        "probabilities": {
+          "CLEAR": 0.45,
+          "REPORT_INTERNALLY": 0.28,
+          "FREEZE_PENDING_REVIEW": 0.27
+        }
+      }
+    },
+    "TRC-079": {
+      "tainted_funds": {
+        "type": "noul",
+        "noul": 0.04
+      },
+      "hops_to_source": {
+        "type": "choice",
+        "choice": "NONE_FOUND",
+        "confidence": 0.37,
+        "probabilities": {
+          "ONE": 0.18,
+          "TWO": 0.2,
+          "THREE": 0.09,
+          "FOUR_PLUS": 0.03,
+          "NONE_FOUND": 0.5
+        }
+      },
+      "chain_broken_by_exchange": {
+        "type": "noul",
+        "noul": 0.36
+      },
+      "exposure": {
+        "type": "score",
+        "score": 2.13,
+        "confidence": 0.22,
+        "probabilities": {
+          "0": 0.2,
+          "1": 0.2,
+          "2": 0.23,
+          "3": 0.16,
+          "4": 0.11,
+          "5": 0.05,
+          "6": 0.05
+        }
+      },
+      "action": {
+        "type": "choice",
+        "choice": "FREEZE_PENDING_REVIEW",
+        "confidence": 0.28,
+        "probabilities": {
+          "CLEAR": 0.21,
+          "REPORT_INTERNALLY": 0.27,
+          "FREEZE_PENDING_REVIEW": 0.52
+        }
+      }
+    },
+    "TRC-080": {
+      "tainted_funds": {
+        "type": "noul",
+        "noul": 0.02
+      },
+      "hops_to_source": {
+        "type": "choice",
+        "choice": "ONE",
+        "confidence": 0.19,
+        "probabilities": {
+          "ONE": 0.35,
+          "TWO": 0.27,
+          "THREE": 0.24,
+          "FOUR_PLUS": 0.07,
+          "NONE_FOUND": 0.07
+        }
+      },
+      "chain_broken_by_exchange": {
+        "type": "noul",
+        "noul": 0.84
+      },
+      "exposure": {
+        "type": "score",
+        "score": 3.69,
+        "confidence": 0.22,
+        "probabilities": {
+          "0": 0.06,
+          "1": 0.08,
+          "2": 0.11,
+          "3": 0.12,
+          "4": 0.26,
+          "5": 0.23,
+          "6": 0.14
+        }
+      },
+      "action": {
+        "type": "choice",
+        "choice": "FREEZE_PENDING_REVIEW",
+        "confidence": 0.34,
+        "probabilities": {
+          "CLEAR": 0.24,
+          "REPORT_INTERNALLY": 0.2,
+          "FREEZE_PENDING_REVIEW": 0.56
+        }
+      }
+    },
+    "TRC-081": {
+      "tainted_funds": {
+        "type": "noul",
+        "noul": 0.01
+      },
+      "hops_to_source": {
+        "type": "choice",
+        "choice": "TWO",
+        "confidence": 0.15,
+        "probabilities": {
+          "ONE": 0.3,
+          "TWO": 0.32,
+          "THREE": 0.21,
+          "FOUR_PLUS": 0.12,
+          "NONE_FOUND": 0.05
+        }
+      },
+      "chain_broken_by_exchange": {
+        "type": "noul",
+        "noul": 0
+      },
+      "exposure": {
+        "type": "score",
+        "score": 3.05,
+        "confidence": 0.29,
+        "probabilities": {
+          "0": 0.06,
+          "1": 0.12,
+          "2": 0.16,
+          "3": 0.25,
+          "4": 0.24,
+          "5": 0.12,
+          "6": 0.05
+        }
+      },
+      "action": {
+        "type": "choice",
+        "choice": "FREEZE_PENDING_REVIEW",
+        "confidence": 0.74,
+        "probabilities": {
+          "CLEAR": 0.06,
+          "REPORT_INTERNALLY": 0.11,
+          "FREEZE_PENDING_REVIEW": 0.83
+        }
+      }
+    },
+    "TRC-082": {
+      "tainted_funds": {
+        "type": "noul",
+        "noul": 0.09
+      },
+      "hops_to_source": {
+        "type": "choice",
+        "choice": "NONE_FOUND",
+        "confidence": 0.44,
+        "probabilities": {
+          "ONE": 0.09,
+          "TWO": 0.14,
+          "THREE": 0.18,
+          "FOUR_PLUS": 0.04,
+          "NONE_FOUND": 0.55
+        }
+      },
+      "chain_broken_by_exchange": {
+        "type": "noul",
+        "noul": 0.32
+      },
+      "exposure": {
+        "type": "score",
+        "score": 1.81,
+        "confidence": 0,
+        "probabilities": {
+          "0": 0.28,
+          "1": 0.21,
+          "2": 0.22,
+          "3": 0.11,
+          "4": 0.1,
+          "5": 0.05,
+          "6": 0.03
+        }
+      },
+      "action": {
+        "type": "choice",
+        "choice": "FREEZE_PENDING_REVIEW",
+        "confidence": 0.04,
+        "probabilities": {
+          "CLEAR": 0.35,
+          "REPORT_INTERNALLY": 0.29,
+          "FREEZE_PENDING_REVIEW": 0.36
+        }
+      }
+    },
+    "TRC-083": {
+      "tainted_funds": {
+        "type": "noul",
+        "noul": 0.73
+      },
+      "hops_to_source": {
+        "type": "choice",
+        "choice": "THREE",
+        "confidence": 0.43,
+        "probabilities": {
+          "ONE": 0.23,
+          "TWO": 0.21,
+          "THREE": 0.54,
+          "FOUR_PLUS": 0.01,
+          "NONE_FOUND": 0.01
+        }
+      },
+      "chain_broken_by_exchange": {
+        "type": "noul",
+        "noul": 0
+      },
+      "exposure": {
+        "type": "score",
+        "score": 4.23,
+        "confidence": 0.26,
+        "probabilities": {
+          "0": 0.04,
+          "1": 0.03,
+          "2": 0.09,
+          "3": 0.09,
+          "4": 0.26,
+          "5": 0.23,
+          "6": 0.26
+        }
+      },
+      "action": {
+        "type": "choice",
+        "choice": "FREEZE_PENDING_REVIEW",
+        "confidence": 0.88,
+        "probabilities": {
+          "CLEAR": 0.04,
+          "REPORT_INTERNALLY": 0.04,
+          "FREEZE_PENDING_REVIEW": 0.92
+        }
+      }
+    },
+    "TRC-084": {
+      "tainted_funds": {
+        "type": "noul",
+        "noul": 0.08
+      },
+      "hops_to_source": {
+        "type": "choice",
+        "choice": "NONE_FOUND",
+        "confidence": 0.55,
+        "probabilities": {
+          "ONE": 0.08,
+          "TWO": 0.14,
+          "THREE": 0.1,
+          "FOUR_PLUS": 0.04,
+          "NONE_FOUND": 0.64
+        }
+      },
+      "chain_broken_by_exchange": {
+        "type": "noul",
+        "noul": 0.44
+      },
+      "exposure": {
+        "type": "score",
+        "score": 1.85,
+        "confidence": 0.21,
+        "probabilities": {
+          "0": 0.25,
+          "1": 0.28,
+          "2": 0.18,
+          "3": 0.09,
+          "4": 0.1,
+          "5": 0.06,
+          "6": 0.04
+        }
+      },
+      "action": {
+        "type": "choice",
+        "choice": "CLEAR",
+        "confidence": 0.13,
+        "probabilities": {
+          "CLEAR": 0.42,
+          "REPORT_INTERNALLY": 0.23,
+          "FREEZE_PENDING_REVIEW": 0.35
+        }
+      }
+    },
+    "TRC-085": {
+      "tainted_funds": {
+        "type": "noul",
+        "noul": 0.4
+      },
+      "hops_to_source": {
+        "type": "choice",
+        "choice": "NONE_FOUND",
+        "confidence": 0.71,
+        "probabilities": {
+          "ONE": 0.05,
+          "TWO": 0.07,
+          "THREE": 0.08,
+          "FOUR_PLUS": 0.03,
+          "NONE_FOUND": 0.77
+        }
+      },
+      "chain_broken_by_exchange": {
+        "type": "noul",
+        "noul": 0
+      },
+      "exposure": {
+        "type": "score",
+        "score": 2.32,
+        "confidence": 0.23,
+        "probabilities": {
+          "0": 0.19,
+          "1": 0.12,
+          "2": 0.26,
+          "3": 0.17,
+          "4": 0.15,
+          "5": 0.09,
+          "6": 0.02
+        }
+      },
+      "action": {
+        "type": "choice",
+        "choice": "FREEZE_PENDING_REVIEW",
+        "confidence": 0.3,
+        "probabilities": {
+          "CLEAR": 0.25,
+          "REPORT_INTERNALLY": 0.22,
+          "FREEZE_PENDING_REVIEW": 0.53
+        }
+      }
+    },
+    "TRC-086": {
+      "tainted_funds": {
+        "type": "noul",
+        "noul": 0.86
+      },
+      "hops_to_source": {
+        "type": "choice",
+        "choice": "TWO",
+        "confidence": 0.2,
+        "probabilities": {
+          "ONE": 0.26,
+          "TWO": 0.36,
+          "THREE": 0.34,
+          "FOUR_PLUS": 0.01,
+          "NONE_FOUND": 0.03
+        }
+      },
+      "chain_broken_by_exchange": {
+        "type": "noul",
+        "noul": 0
+      },
+      "exposure": {
+        "type": "score",
+        "score": 4.52,
+        "confidence": 0.63,
+        "probabilities": {
+          "0": 0.02,
+          "1": 0.03,
+          "2": 0.03,
+          "3": 0.02,
+          "4": 0.21,
+          "5": 0.61,
+          "6": 0.08
+        }
+      },
+      "action": {
+        "type": "choice",
+        "choice": "FREEZE_PENDING_REVIEW",
+        "confidence": 0.74,
+        "probabilities": {
+          "CLEAR": 0.08,
+          "REPORT_INTERNALLY": 0.09,
+          "FREEZE_PENDING_REVIEW": 0.83
+        }
+      }
+    },
+    "TRC-087": {
+      "tainted_funds": {
+        "type": "noul",
+        "noul": 0.34
+      },
+      "hops_to_source": {
+        "type": "choice",
+        "choice": "NONE_FOUND",
+        "confidence": 0.4,
+        "probabilities": {
+          "ONE": 0.08,
+          "TWO": 0.16,
+          "THREE": 0.14,
+          "FOUR_PLUS": 0.1,
+          "NONE_FOUND": 0.52
+        }
+      },
+      "chain_broken_by_exchange": {
+        "type": "noul",
+        "noul": 0
+      },
+      "exposure": {
+        "type": "score",
+        "score": 1.78,
+        "confidence": 0,
+        "probabilities": {
+          "0": 0.31,
+          "1": 0.25,
+          "2": 0.13,
+          "3": 0.1,
+          "4": 0.1,
+          "5": 0.09,
+          "6": 0.02
+        }
+      },
+      "action": {
+        "type": "choice",
+        "choice": "FREEZE_PENDING_REVIEW",
+        "confidence": 0.19,
+        "probabilities": {
+          "CLEAR": 0.27,
+          "REPORT_INTERNALLY": 0.27,
+          "FREEZE_PENDING_REVIEW": 0.46
+        }
+      }
+    },
+    "TRC-088": {
+      "tainted_funds": {
+        "type": "noul",
+        "noul": 0.37
+      },
+      "hops_to_source": {
+        "type": "choice",
+        "choice": "NONE_FOUND",
+        "confidence": 0.77,
+        "probabilities": {
+          "ONE": 0.03,
+          "TWO": 0.03,
+          "THREE": 0.07,
+          "FOUR_PLUS": 0.05,
+          "NONE_FOUND": 0.82
+        }
+      },
+      "chain_broken_by_exchange": {
+        "type": "noul",
+        "noul": 0
+      },
+      "exposure": {
+        "type": "score",
+        "score": 2.38,
+        "confidence": 0,
+        "probabilities": {
+          "0": 0.18,
+          "1": 0.15,
+          "2": 0.19,
+          "3": 0.18,
+          "4": 0.2,
+          "5": 0.09,
+          "6": 0.01
+        }
+      },
+      "action": {
+        "type": "choice",
+        "choice": "FREEZE_PENDING_REVIEW",
+        "confidence": 0.42,
+        "probabilities": {
+          "CLEAR": 0.17,
+          "REPORT_INTERNALLY": 0.22,
+          "FREEZE_PENDING_REVIEW": 0.61
+        }
+      }
+    },
+    "TRC-089": {
+      "tainted_funds": {
+        "type": "noul",
+        "noul": 0.98
+      },
+      "hops_to_source": {
+        "type": "choice",
+        "choice": "THREE",
+        "confidence": 0.65,
+        "probabilities": {
+          "ONE": 0.11,
+          "TWO": 0.16,
+          "THREE": 0.72,
+          "FOUR_PLUS": 0,
+          "NONE_FOUND": 0.01
+        }
+      },
+      "chain_broken_by_exchange": {
+        "type": "noul",
+        "noul": 0
+      },
+      "exposure": {
+        "type": "score",
+        "score": 3.89,
+        "confidence": 0.47,
+        "probabilities": {
+          "0": 0.03,
+          "1": 0.05,
+          "2": 0.06,
+          "3": 0.12,
+          "4": 0.39,
+          "5": 0.3,
+          "6": 0.05
+        }
+      },
+      "action": {
+        "type": "choice",
+        "choice": "FREEZE_PENDING_REVIEW",
+        "confidence": 0.8,
+        "probabilities": {
+          "CLEAR": 0.07,
+          "REPORT_INTERNALLY": 0.06,
+          "FREEZE_PENDING_REVIEW": 0.87
+        }
+      }
+    },
+    "TRC-090": {
+      "tainted_funds": {
+        "type": "noul",
+        "noul": 0.24
+      },
+      "hops_to_source": {
+        "type": "choice",
+        "choice": "THREE",
+        "confidence": 0.27,
+        "probabilities": {
+          "ONE": 0.36,
+          "TWO": 0.19,
+          "THREE": 0.42,
+          "FOUR_PLUS": 0.01,
+          "NONE_FOUND": 0.02
+        }
+      },
+      "chain_broken_by_exchange": {
+        "type": "noul",
+        "noul": 0
+      },
+      "exposure": {
+        "type": "score",
+        "score": 2.98,
+        "confidence": 0.05,
+        "probabilities": {
+          "0": 0.13,
+          "1": 0.12,
+          "2": 0.14,
+          "3": 0.16,
+          "4": 0.2,
+          "5": 0.2,
+          "6": 0.05
+        }
+      },
+      "action": {
+        "type": "choice",
+        "choice": "FREEZE_PENDING_REVIEW",
+        "confidence": 0.61,
+        "probabilities": {
+          "CLEAR": 0.12,
+          "REPORT_INTERNALLY": 0.14,
+          "FREEZE_PENDING_REVIEW": 0.74
+        }
+      }
+    }
+  }
+}

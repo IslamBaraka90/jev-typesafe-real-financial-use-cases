@@ -1,0 +1,5533 @@
+{
+  "demo": "mule-network",
+  "provider": "openai",
+  "model": "gpt-6-luna",
+  "recordedAt": "2026-10-11",
+  "source": "scripts/record-demo.js",
+  "usage": {
+    "input_tokens": 179724,
+    "output_tokens": 0
+  },
+  "answers": {
+    "ACC-0001": {
+      "role": {
+        "type": "choice",
+        "choice": "MULE",
+        "confidence": 0.45,
+        "probabilities": {
+          "COLLECTOR": 0.01,
+          "MULE": 0.59,
+          "ORIGINATOR": 0.02,
+          "UNRELATED": 0.38
+        }
+      },
+      "pass_through": {
+        "type": "noul",
+        "noul": 0.07
+      },
+      "network_confidence": {
+        "type": "score",
+        "score": 3,
+        "confidence": 0.71,
+        "probabilities": {
+          "0": 0,
+          "1": 0.03,
+          "2": 0.19,
+          "3": 0.55,
+          "4": 0.21,
+          "5": 0.02,
+          "6": 0
+        }
+      },
+      "action": {
+        "type": "choice",
+        "choice": "MONITOR",
+        "confidence": 0.59,
+        "probabilities": {
+          "NO_ACTION": 0.02,
+          "MONITOR": 0.69,
+          "RESTRICT_OUTBOUND": 0.27,
+          "FREEZE": 0.02
+        }
+      },
+      "income_consistent": {
+        "type": "noul",
+        "noul": 0.09
+      }
+    },
+    "ACC-0002": {
+      "role": {
+        "type": "choice",
+        "choice": "UNRELATED",
+        "confidence": 0.96,
+        "probabilities": {
+          "COLLECTOR": 0.01,
+          "MULE": 0.01,
+          "ORIGINATOR": 0.01,
+          "UNRELATED": 0.97
+        }
+      },
+      "pass_through": {
+        "type": "noul",
+        "noul": 0.06
+      },
+      "network_confidence": {
+        "type": "score",
+        "score": 2.3,
+        "confidence": 0.65,
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.13,
+          "2": 0.5,
+          "3": 0.28,
+          "4": 0.07,
+          "5": 0.01,
+          "6": 0
+        }
+      },
+      "action": {
+        "type": "choice",
+        "choice": "MONITOR",
+        "confidence": 0.47,
+        "probabilities": {
+          "NO_ACTION": 0.39,
+          "MONITOR": 0.6,
+          "RESTRICT_OUTBOUND": 0.01,
+          "FREEZE": 0
+        }
+      },
+      "income_consistent": {
+        "type": "noul",
+        "noul": 0.98
+      }
+    },
+    "ACC-0003": {
+      "role": {
+        "type": "choice",
+        "choice": "COLLECTOR",
+        "confidence": 0.72,
+        "probabilities": {
+          "COLLECTOR": 0.79,
+          "MULE": 0.13,
+          "ORIGINATOR": 0.02,
+          "UNRELATED": 0.06
+        }
+      },
+      "pass_through": {
+        "type": "noul",
+        "noul": 0.03
+      },
+      "network_confidence": {
+        "type": "score",
+        "score": 2.88,
+        "confidence": 0.64,
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.04,
+          "2": 0.26,
+          "3": 0.47,
+          "4": 0.19,
+          "5": 0.03,
+          "6": 0
+        }
+      },
+      "action": {
+        "type": "choice",
+        "choice": "MONITOR",
+        "confidence": 0.32,
+        "probabilities": {
+          "NO_ACTION": 0.06,
+          "MONITOR": 0.49,
+          "RESTRICT_OUTBOUND": 0.39,
+          "FREEZE": 0.06
+        }
+      },
+      "income_consistent": {
+        "type": "noul",
+        "noul": 0.14
+      }
+    },
+    "ACC-0004": {
+      "role": {
+        "type": "choice",
+        "choice": "COLLECTOR",
+        "confidence": 0.41,
+        "probabilities": {
+          "COLLECTOR": 0.56,
+          "MULE": 0.44,
+          "ORIGINATOR": 0,
+          "UNRELATED": 0
+        }
+      },
+      "pass_through": {
+        "type": "noul",
+        "noul": 0.28
+      },
+      "network_confidence": {
+        "type": "score",
+        "score": 3.97,
+        "confidence": 0.8,
+        "probabilities": {
+          "0": 0,
+          "1": 0,
+          "2": 0.02,
+          "3": 0.15,
+          "4": 0.67,
+          "5": 0.16,
+          "6": 0
+        }
+      },
+      "action": {
+        "type": "choice",
+        "choice": "MONITOR",
+        "confidence": 0.45,
+        "probabilities": {
+          "NO_ACTION": 0.01,
+          "MONITOR": 0.59,
+          "RESTRICT_OUTBOUND": 0.39,
+          "FREEZE": 0.01
+        }
+      },
+      "income_consistent": {
+        "type": "noul",
+        "noul": 0.19
+      }
+    },
+    "ACC-0005": {
+      "role": {
+        "type": "choice",
+        "choice": "MULE",
+        "confidence": 0.48,
+        "probabilities": {
+          "COLLECTOR": 0.38,
+          "MULE": 0.61,
+          "ORIGINATOR": 0.01,
+          "UNRELATED": 0
+        }
+      },
+      "pass_through": {
+        "type": "noul",
+        "noul": 0.82
+      },
+      "network_confidence": {
+        "type": "score",
+        "score": 3.54,
+        "confidence": 0.56,
+        "probabilities": {
+          "0": 0,
+          "1": 0.02,
+          "2": 0.12,
+          "3": 0.31,
+          "4": 0.4,
+          "5": 0.15,
+          "6": 0
+        }
+      },
+      "action": {
+        "type": "choice",
+        "choice": "MONITOR",
+        "confidence": 0.37,
+        "probabilities": {
+          "NO_ACTION": 0.04,
+          "MONITOR": 0.53,
+          "RESTRICT_OUTBOUND": 0.41,
+          "FREEZE": 0.02
+        }
+      },
+      "income_consistent": {
+        "type": "noul",
+        "noul": 0.02
+      }
+    },
+    "ACC-0006": {
+      "role": {
+        "type": "choice",
+        "choice": "MULE",
+        "confidence": 0.71,
+        "probabilities": {
+          "COLLECTOR": 0.22,
+          "MULE": 0.78,
+          "ORIGINATOR": 0,
+          "UNRELATED": 0
+        }
+      },
+      "pass_through": {
+        "type": "noul",
+        "noul": 0.93
+      },
+      "network_confidence": {
+        "type": "score",
+        "score": 4.26,
+        "confidence": 0.74,
+        "probabilities": {
+          "0": 0,
+          "1": 0,
+          "2": 0.02,
+          "3": 0.05,
+          "4": 0.58,
+          "5": 0.35,
+          "6": 0
+        }
+      },
+      "action": {
+        "type": "choice",
+        "choice": "RESTRICT_OUTBOUND",
+        "confidence": 0.32,
+        "probabilities": {
+          "NO_ACTION": 0,
+          "MONITOR": 0.49,
+          "RESTRICT_OUTBOUND": 0.49,
+          "FREEZE": 0.02
+        }
+      },
+      "income_consistent": {
+        "type": "noul",
+        "noul": 0.98
+      }
+    },
+    "ACC-0007": {
+      "role": {
+        "type": "choice",
+        "choice": "MULE",
+        "confidence": 0.67,
+        "probabilities": {
+          "COLLECTOR": 0.24,
+          "MULE": 0.75,
+          "ORIGINATOR": 0.01,
+          "UNRELATED": 0
+        }
+      },
+      "pass_through": {
+        "type": "noul",
+        "noul": 0.97
+      },
+      "network_confidence": {
+        "type": "score",
+        "score": 4.42,
+        "confidence": 0.7,
+        "probabilities": {
+          "0": 0,
+          "1": 0,
+          "2": 0.01,
+          "3": 0.03,
+          "4": 0.49,
+          "5": 0.47,
+          "6": 0
+        }
+      },
+      "action": {
+        "type": "choice",
+        "choice": "RESTRICT_OUTBOUND",
+        "confidence": 0.68,
+        "probabilities": {
+          "NO_ACTION": 0,
+          "MONITOR": 0.15,
+          "RESTRICT_OUTBOUND": 0.76,
+          "FREEZE": 0.09
+        }
+      },
+      "income_consistent": {
+        "type": "noul",
+        "noul": 0.26
+      }
+    },
+    "ACC-0008": {
+      "role": {
+        "type": "choice",
+        "choice": "MULE",
+        "confidence": 0.71,
+        "probabilities": {
+          "COLLECTOR": 0.22,
+          "MULE": 0.78,
+          "ORIGINATOR": 0,
+          "UNRELATED": 0
+        }
+      },
+      "pass_through": {
+        "type": "noul",
+        "noul": 0.51
+      },
+      "network_confidence": {
+        "type": "score",
+        "score": 3.52,
+        "confidence": 0.56,
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.02,
+          "2": 0.12,
+          "3": 0.28,
+          "4": 0.43,
+          "5": 0.14,
+          "6": 0
+        }
+      },
+      "action": {
+        "type": "choice",
+        "choice": "MONITOR",
+        "confidence": 0.65,
+        "probabilities": {
+          "NO_ACTION": 0.01,
+          "MONITOR": 0.74,
+          "RESTRICT_OUTBOUND": 0.25,
+          "FREEZE": 0
+        }
+      },
+      "income_consistent": {
+        "type": "noul",
+        "noul": 1
+      }
+    },
+    "ACC-0009": {
+      "role": {
+        "type": "choice",
+        "choice": "COLLECTOR",
+        "confidence": 0.73,
+        "probabilities": {
+          "COLLECTOR": 0.8,
+          "MULE": 0.19,
+          "ORIGINATOR": 0.01,
+          "UNRELATED": 0
+        }
+      },
+      "pass_through": {
+        "type": "noul",
+        "noul": 0.32
+      },
+      "network_confidence": {
+        "type": "score",
+        "score": 3.96,
+        "confidence": 0.77,
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.01,
+          "2": 0.02,
+          "3": 0.11,
+          "4": 0.67,
+          "5": 0.18,
+          "6": 0
+        }
+      },
+      "action": {
+        "type": "choice",
+        "choice": "MONITOR",
+        "confidence": 0.32,
+        "probabilities": {
+          "NO_ACTION": 0.01,
+          "MONITOR": 0.49,
+          "RESTRICT_OUTBOUND": 0.45,
+          "FREEZE": 0.05
+        }
+      },
+      "income_consistent": {
+        "type": "noul",
+        "noul": 0.87
+      }
+    },
+    "ACC-0010": {
+      "role": {
+        "type": "choice",
+        "choice": "UNRELATED",
+        "confidence": 0.47,
+        "probabilities": {
+          "COLLECTOR": 0.02,
+          "MULE": 0.18,
+          "ORIGINATOR": 0.2,
+          "UNRELATED": 0.6
+        }
+      },
+      "pass_through": {
+        "type": "noul",
+        "noul": 0.13
+      },
+      "network_confidence": {
+        "type": "score",
+        "score": 3.06,
+        "confidence": 0.64,
+        "probabilities": {
+          "0": 0,
+          "1": 0.03,
+          "2": 0.22,
+          "3": 0.46,
+          "4": 0.24,
+          "5": 0.05,
+          "6": 0
+        }
+      },
+      "action": {
+        "type": "choice",
+        "choice": "RESTRICT_OUTBOUND",
+        "confidence": 0.41,
+        "probabilities": {
+          "NO_ACTION": 0.01,
+          "MONITOR": 0.4,
+          "RESTRICT_OUTBOUND": 0.56,
+          "FREEZE": 0.03
+        }
+      },
+      "income_consistent": {
+        "type": "noul",
+        "noul": 0
+      }
+    },
+    "ACC-0011": {
+      "role": {
+        "type": "choice",
+        "choice": "UNRELATED",
+        "confidence": 0.68,
+        "probabilities": {
+          "COLLECTOR": 0.01,
+          "MULE": 0,
+          "ORIGINATOR": 0.23,
+          "UNRELATED": 0.76
+        }
+      },
+      "pass_through": {
+        "type": "noul",
+        "noul": 0
+      },
+      "network_confidence": {
+        "type": "score",
+        "score": 1.78,
+        "confidence": 0.43,
+        "probabilities": {
+          "0": 0.19,
+          "1": 0.22,
+          "2": 0.34,
+          "3": 0.16,
+          "4": 0.05,
+          "5": 0.04,
+          "6": 0
+        }
+      },
+      "action": {
+        "type": "choice",
+        "choice": "NO_ACTION",
+        "confidence": 0.35,
+        "probabilities": {
+          "NO_ACTION": 0.51,
+          "MONITOR": 0.43,
+          "RESTRICT_OUTBOUND": 0.05,
+          "FREEZE": 0.01
+        }
+      },
+      "income_consistent": {
+        "type": "noul",
+        "noul": 0.89
+      }
+    },
+    "ACC-0012": {
+      "role": {
+        "type": "choice",
+        "choice": "UNRELATED",
+        "confidence": 0.79,
+        "probabilities": {
+          "COLLECTOR": 0.1,
+          "MULE": 0.03,
+          "ORIGINATOR": 0.03,
+          "UNRELATED": 0.84
+        }
+      },
+      "pass_through": {
+        "type": "noul",
+        "noul": 0.06
+      },
+      "network_confidence": {
+        "type": "score",
+        "score": 2,
+        "confidence": 0.73,
+        "probabilities": {
+          "0": 0.03,
+          "1": 0.17,
+          "2": 0.59,
+          "3": 0.19,
+          "4": 0.02,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "action": {
+        "type": "choice",
+        "choice": "NO_ACTION",
+        "confidence": 0.51,
+        "probabilities": {
+          "NO_ACTION": 0.63,
+          "MONITOR": 0.32,
+          "RESTRICT_OUTBOUND": 0.04,
+          "FREEZE": 0.01
+        }
+      },
+      "income_consistent": {
+        "type": "noul",
+        "noul": 0.32
+      }
+    },
+    "ACC-0013": {
+      "role": {
+        "type": "choice",
+        "choice": "MULE",
+        "confidence": 0.33,
+        "probabilities": {
+          "COLLECTOR": 0.05,
+          "MULE": 0.5,
+          "ORIGINATOR": 0.05,
+          "UNRELATED": 0.4
+        }
+      },
+      "pass_through": {
+        "type": "noul",
+        "noul": 0.06
+      },
+      "network_confidence": {
+        "type": "score",
+        "score": 3.5,
+        "confidence": 0.63,
+        "probabilities": {
+          "0": 0,
+          "1": 0.01,
+          "2": 0.07,
+          "3": 0.4,
+          "4": 0.45,
+          "5": 0.07,
+          "6": 0
+        }
+      },
+      "action": {
+        "type": "choice",
+        "choice": "MONITOR",
+        "confidence": 0.76,
+        "probabilities": {
+          "NO_ACTION": 0.11,
+          "MONITOR": 0.82,
+          "RESTRICT_OUTBOUND": 0.06,
+          "FREEZE": 0.01
+        }
+      },
+      "income_consistent": {
+        "type": "noul",
+        "noul": 0.94
+      }
+    },
+    "ACC-0014": {
+      "role": {
+        "type": "choice",
+        "choice": "UNRELATED",
+        "confidence": 0.93,
+        "probabilities": {
+          "COLLECTOR": 0.01,
+          "MULE": 0.03,
+          "ORIGINATOR": 0.01,
+          "UNRELATED": 0.95
+        }
+      },
+      "pass_through": {
+        "type": "noul",
+        "noul": 0.06
+      },
+      "network_confidence": {
+        "type": "score",
+        "score": 2.18,
+        "confidence": 0.74,
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.11,
+          "2": 0.59,
+          "3": 0.27,
+          "4": 0.02,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "action": {
+        "type": "choice",
+        "choice": "MONITOR",
+        "confidence": 0.52,
+        "probabilities": {
+          "NO_ACTION": 0.35,
+          "MONITOR": 0.64,
+          "RESTRICT_OUTBOUND": 0.01,
+          "FREEZE": 0
+        }
+      },
+      "income_consistent": {
+        "type": "noul",
+        "noul": 1
+      }
+    },
+    "ACC-0015": {
+      "role": {
+        "type": "choice",
+        "choice": "UNRELATED",
+        "confidence": 0.28,
+        "probabilities": {
+          "COLLECTOR": 0.03,
+          "MULE": 0.46,
+          "ORIGINATOR": 0.05,
+          "UNRELATED": 0.46
+        }
+      },
+      "pass_through": {
+        "type": "noul",
+        "noul": 0.07
+      },
+      "network_confidence": {
+        "type": "score",
+        "score": 2.83,
+        "confidence": 0.67,
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.03,
+          "2": 0.28,
+          "3": 0.5,
+          "4": 0.16,
+          "5": 0.02,
+          "6": 0
+        }
+      },
+      "action": {
+        "type": "choice",
+        "choice": "MONITOR",
+        "confidence": 0.77,
+        "probabilities": {
+          "NO_ACTION": 0.05,
+          "MONITOR": 0.83,
+          "RESTRICT_OUTBOUND": 0.11,
+          "FREEZE": 0.01
+        }
+      },
+      "income_consistent": {
+        "type": "noul",
+        "noul": 0.99
+      }
+    },
+    "ACC-0016": {
+      "role": {
+        "type": "choice",
+        "choice": "UNRELATED",
+        "confidence": 0.63,
+        "probabilities": {
+          "COLLECTOR": 0.01,
+          "MULE": 0.19,
+          "ORIGINATOR": 0.08,
+          "UNRELATED": 0.72
+        }
+      },
+      "pass_through": {
+        "type": "noul",
+        "noul": 0.17
+      },
+      "network_confidence": {
+        "type": "score",
+        "score": 2.56,
+        "confidence": 0.54,
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.09,
+          "2": 0.39,
+          "3": 0.37,
+          "4": 0.12,
+          "5": 0.02,
+          "6": 0
+        }
+      },
+      "action": {
+        "type": "choice",
+        "choice": "MONITOR",
+        "confidence": 0.79,
+        "probabilities": {
+          "NO_ACTION": 0.05,
+          "MONITOR": 0.84,
+          "RESTRICT_OUTBOUND": 0.1,
+          "FREEZE": 0.01
+        }
+      },
+      "income_consistent": {
+        "type": "noul",
+        "noul": 0.01
+      }
+    },
+    "ACC-0017": {
+      "role": {
+        "type": "choice",
+        "choice": "UNRELATED",
+        "confidence": 0.41,
+        "probabilities": {
+          "COLLECTOR": 0.02,
+          "MULE": 0.39,
+          "ORIGINATOR": 0.03,
+          "UNRELATED": 0.56
+        }
+      },
+      "pass_through": {
+        "type": "noul",
+        "noul": 0.09
+      },
+      "network_confidence": {
+        "type": "score",
+        "score": 2.55,
+        "confidence": 0.64,
+        "probabilities": {
+          "0": 0,
+          "1": 0.05,
+          "2": 0.43,
+          "3": 0.45,
+          "4": 0.06,
+          "5": 0.01,
+          "6": 0
+        }
+      },
+      "action": {
+        "type": "choice",
+        "choice": "MONITOR",
+        "confidence": 0.52,
+        "probabilities": {
+          "NO_ACTION": 0.31,
+          "MONITOR": 0.64,
+          "RESTRICT_OUTBOUND": 0.05,
+          "FREEZE": 0
+        }
+      },
+      "income_consistent": {
+        "type": "noul",
+        "noul": 0.58
+      }
+    },
+    "ACC-0018": {
+      "role": {
+        "type": "choice",
+        "choice": "UNRELATED",
+        "confidence": 0.45,
+        "probabilities": {
+          "COLLECTOR": 0.01,
+          "MULE": 0.37,
+          "ORIGINATOR": 0.03,
+          "UNRELATED": 0.59
+        }
+      },
+      "pass_through": {
+        "type": "noul",
+        "noul": 0.05
+      },
+      "network_confidence": {
+        "type": "score",
+        "score": 3.03,
+        "confidence": 0.67,
+        "probabilities": {
+          "0": 0,
+          "1": 0.03,
+          "2": 0.21,
+          "3": 0.48,
+          "4": 0.26,
+          "5": 0.02,
+          "6": 0
+        }
+      },
+      "action": {
+        "type": "choice",
+        "choice": "MONITOR",
+        "confidence": 0.47,
+        "probabilities": {
+          "NO_ACTION": 0.38,
+          "MONITOR": 0.6,
+          "RESTRICT_OUTBOUND": 0.02,
+          "FREEZE": 0
+        }
+      },
+      "income_consistent": {
+        "type": "noul",
+        "noul": 0.99
+      }
+    },
+    "ACC-0019": {
+      "role": {
+        "type": "choice",
+        "choice": "UNRELATED",
+        "confidence": 0.72,
+        "probabilities": {
+          "COLLECTOR": 0.01,
+          "MULE": 0.15,
+          "ORIGINATOR": 0.05,
+          "UNRELATED": 0.79
+        }
+      },
+      "pass_through": {
+        "type": "noul",
+        "noul": 0.12
+      },
+      "network_confidence": {
+        "type": "score",
+        "score": 2.25,
+        "confidence": 0.66,
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.15,
+          "2": 0.5,
+          "3": 0.27,
+          "4": 0.06,
+          "5": 0.01,
+          "6": 0
+        }
+      },
+      "action": {
+        "type": "choice",
+        "choice": "MONITOR",
+        "confidence": 0.75,
+        "probabilities": {
+          "NO_ACTION": 0.1,
+          "MONITOR": 0.81,
+          "RESTRICT_OUTBOUND": 0.09,
+          "FREEZE": 0
+        }
+      },
+      "income_consistent": {
+        "type": "noul",
+        "noul": 0.99
+      }
+    },
+    "ACC-0020": {
+      "role": {
+        "type": "choice",
+        "choice": "UNRELATED",
+        "confidence": 0.35,
+        "probabilities": {
+          "COLLECTOR": 0.01,
+          "MULE": 0.4,
+          "ORIGINATOR": 0.08,
+          "UNRELATED": 0.51
+        }
+      },
+      "pass_through": {
+        "type": "noul",
+        "noul": 0.07
+      },
+      "network_confidence": {
+        "type": "score",
+        "score": 3.12,
+        "confidence": 0.69,
+        "probabilities": {
+          "0": 0,
+          "1": 0.02,
+          "2": 0.17,
+          "3": 0.5,
+          "4": 0.29,
+          "5": 0.02,
+          "6": 0
+        }
+      },
+      "action": {
+        "type": "choice",
+        "choice": "MONITOR",
+        "confidence": 0.51,
+        "probabilities": {
+          "NO_ACTION": 0.02,
+          "MONITOR": 0.63,
+          "RESTRICT_OUTBOUND": 0.31,
+          "FREEZE": 0.04
+        }
+      },
+      "income_consistent": {
+        "type": "noul",
+        "noul": 0.74
+      }
+    },
+    "ACC-0021": {
+      "role": {
+        "type": "choice",
+        "choice": "UNRELATED",
+        "confidence": 0.55,
+        "probabilities": {
+          "COLLECTOR": 0.31,
+          "MULE": 0.01,
+          "ORIGINATOR": 0.02,
+          "UNRELATED": 0.66
+        }
+      },
+      "pass_through": {
+        "type": "noul",
+        "noul": 0
+      },
+      "network_confidence": {
+        "type": "score",
+        "score": 1.72,
+        "confidence": 0.7,
+        "probabilities": {
+          "0": 0.04,
+          "1": 0.32,
+          "2": 0.53,
+          "3": 0.1,
+          "4": 0.01,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "action": {
+        "type": "choice",
+        "choice": "MONITOR",
+        "confidence": 0.43,
+        "probabilities": {
+          "NO_ACTION": 0.37,
+          "MONITOR": 0.57,
+          "RESTRICT_OUTBOUND": 0.06,
+          "FREEZE": 0
+        }
+      },
+      "income_consistent": {
+        "type": "noul",
+        "noul": 0.12
+      }
+    },
+    "ACC-0022": {
+      "role": {
+        "type": "choice",
+        "choice": "MULE",
+        "confidence": 1,
+        "probabilities": {
+          "COLLECTOR": 0,
+          "MULE": 1,
+          "ORIGINATOR": 0,
+          "UNRELATED": 0
+        }
+      },
+      "pass_through": {
+        "type": "noul",
+        "noul": 0.99
+      },
+      "network_confidence": {
+        "type": "score",
+        "score": 3.89,
+        "confidence": 0.78,
+        "probabilities": {
+          "0": 0,
+          "1": 0.01,
+          "2": 0.03,
+          "3": 0.15,
+          "4": 0.68,
+          "5": 0.13,
+          "6": 0
+        }
+      },
+      "action": {
+        "type": "choice",
+        "choice": "RESTRICT_OUTBOUND",
+        "confidence": 0.81,
+        "probabilities": {
+          "NO_ACTION": 0,
+          "MONITOR": 0.12,
+          "RESTRICT_OUTBOUND": 0.86,
+          "FREEZE": 0.02
+        }
+      },
+      "income_consistent": {
+        "type": "noul",
+        "noul": 0.14
+      }
+    },
+    "ACC-0023": {
+      "role": {
+        "type": "choice",
+        "choice": "MULE",
+        "confidence": 0.96,
+        "probabilities": {
+          "COLLECTOR": 0,
+          "MULE": 0.97,
+          "ORIGINATOR": 0.01,
+          "UNRELATED": 0.02
+        }
+      },
+      "pass_through": {
+        "type": "noul",
+        "noul": 0.99
+      },
+      "network_confidence": {
+        "type": "score",
+        "score": 3.55,
+        "confidence": 0.62,
+        "probabilities": {
+          "0": 0,
+          "1": 0.02,
+          "2": 0.1,
+          "3": 0.29,
+          "4": 0.49,
+          "5": 0.1,
+          "6": 0
+        }
+      },
+      "action": {
+        "type": "choice",
+        "choice": "MONITOR",
+        "confidence": 0.59,
+        "probabilities": {
+          "NO_ACTION": 0.01,
+          "MONITOR": 0.69,
+          "RESTRICT_OUTBOUND": 0.29,
+          "FREEZE": 0.01
+        }
+      },
+      "income_consistent": {
+        "type": "noul",
+        "noul": 0
+      }
+    },
+    "ACC-0024": {
+      "role": {
+        "type": "choice",
+        "choice": "MULE",
+        "confidence": 1,
+        "probabilities": {
+          "COLLECTOR": 0,
+          "MULE": 1,
+          "ORIGINATOR": 0,
+          "UNRELATED": 0
+        }
+      },
+      "pass_through": {
+        "type": "noul",
+        "noul": 1
+      },
+      "network_confidence": {
+        "type": "score",
+        "score": 3.97,
+        "confidence": 0.77,
+        "probabilities": {
+          "0": 0,
+          "1": 0.01,
+          "2": 0.03,
+          "3": 0.12,
+          "4": 0.66,
+          "5": 0.18,
+          "6": 0
+        }
+      },
+      "action": {
+        "type": "choice",
+        "choice": "MONITOR",
+        "confidence": 0.67,
+        "probabilities": {
+          "NO_ACTION": 0.01,
+          "MONITOR": 0.75,
+          "RESTRICT_OUTBOUND": 0.24,
+          "FREEZE": 0
+        }
+      },
+      "income_consistent": {
+        "type": "noul",
+        "noul": 1
+      }
+    },
+    "ACC-0025": {
+      "role": {
+        "type": "choice",
+        "choice": "MULE",
+        "confidence": 0.97,
+        "probabilities": {
+          "COLLECTOR": 0.01,
+          "MULE": 0.98,
+          "ORIGINATOR": 0,
+          "UNRELATED": 0.01
+        }
+      },
+      "pass_through": {
+        "type": "noul",
+        "noul": 0.99
+      },
+      "network_confidence": {
+        "type": "score",
+        "score": 4.31,
+        "confidence": 0.68,
+        "probabilities": {
+          "0": 0,
+          "1": 0.01,
+          "2": 0.01,
+          "3": 0.07,
+          "4": 0.48,
+          "5": 0.43,
+          "6": 0
+        }
+      },
+      "action": {
+        "type": "choice",
+        "choice": "MONITOR",
+        "confidence": 0.55,
+        "probabilities": {
+          "NO_ACTION": 0,
+          "MONITOR": 0.66,
+          "RESTRICT_OUTBOUND": 0.33,
+          "FREEZE": 0.01
+        }
+      },
+      "income_consistent": {
+        "type": "noul",
+        "noul": 1
+      }
+    },
+    "ACC-0026": {
+      "role": {
+        "type": "choice",
+        "choice": "UNRELATED",
+        "confidence": 0.91,
+        "probabilities": {
+          "COLLECTOR": 0.02,
+          "MULE": 0.03,
+          "ORIGINATOR": 0.02,
+          "UNRELATED": 0.93
+        }
+      },
+      "pass_through": {
+        "type": "noul",
+        "noul": 0.05
+      },
+      "network_confidence": {
+        "type": "score",
+        "score": 2.27,
+        "confidence": 0.66,
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.14,
+          "2": 0.49,
+          "3": 0.3,
+          "4": 0.05,
+          "5": 0.01,
+          "6": 0
+        }
+      },
+      "action": {
+        "type": "choice",
+        "choice": "MONITOR",
+        "confidence": 0.61,
+        "probabilities": {
+          "NO_ACTION": 0.27,
+          "MONITOR": 0.71,
+          "RESTRICT_OUTBOUND": 0.02,
+          "FREEZE": 0
+        }
+      },
+      "income_consistent": {
+        "type": "noul",
+        "noul": 0.98
+      }
+    },
+    "ACC-0027": {
+      "role": {
+        "type": "choice",
+        "choice": "UNRELATED",
+        "confidence": 0.8,
+        "probabilities": {
+          "COLLECTOR": 0.02,
+          "MULE": 0.1,
+          "ORIGINATOR": 0.03,
+          "UNRELATED": 0.85
+        }
+      },
+      "pass_through": {
+        "type": "noul",
+        "noul": 0.13
+      },
+      "network_confidence": {
+        "type": "score",
+        "score": 2.28,
+        "confidence": 0.71,
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.09,
+          "2": 0.52,
+          "3": 0.37,
+          "4": 0.01,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "action": {
+        "type": "choice",
+        "choice": "MONITOR",
+        "confidence": 0.53,
+        "probabilities": {
+          "NO_ACTION": 0.31,
+          "MONITOR": 0.65,
+          "RESTRICT_OUTBOUND": 0.04,
+          "FREEZE": 0
+        }
+      },
+      "income_consistent": {
+        "type": "noul",
+        "noul": 1
+      }
+    },
+    "ACC-0028": {
+      "role": {
+        "type": "choice",
+        "choice": "UNRELATED",
+        "confidence": 0.32,
+        "probabilities": {
+          "COLLECTOR": 0.01,
+          "MULE": 0.47,
+          "ORIGINATOR": 0.03,
+          "UNRELATED": 0.49
+        }
+      },
+      "pass_through": {
+        "type": "noul",
+        "noul": 0.04
+      },
+      "network_confidence": {
+        "type": "score",
+        "score": 2.48,
+        "confidence": 0.64,
+        "probabilities": {
+          "0": 0,
+          "1": 0.07,
+          "2": 0.47,
+          "3": 0.38,
+          "4": 0.07,
+          "5": 0.01,
+          "6": 0
+        }
+      },
+      "action": {
+        "type": "choice",
+        "choice": "MONITOR",
+        "confidence": 0.65,
+        "probabilities": {
+          "NO_ACTION": 0.23,
+          "MONITOR": 0.74,
+          "RESTRICT_OUTBOUND": 0.03,
+          "FREEZE": 0
+        }
+      },
+      "income_consistent": {
+        "type": "noul",
+        "noul": 0.99
+      }
+    },
+    "ACC-0029": {
+      "role": {
+        "type": "choice",
+        "choice": "UNRELATED",
+        "confidence": 0.52,
+        "probabilities": {
+          "COLLECTOR": 0.01,
+          "MULE": 0,
+          "ORIGINATOR": 0.35,
+          "UNRELATED": 0.64
+        }
+      },
+      "pass_through": {
+        "type": "noul",
+        "noul": 0
+      },
+      "network_confidence": {
+        "type": "score",
+        "score": 1.22,
+        "confidence": 0.43,
+        "probabilities": {
+          "0": 0.28,
+          "1": 0.32,
+          "2": 0.33,
+          "3": 0.05,
+          "4": 0.01,
+          "5": 0.01,
+          "6": 0
+        }
+      },
+      "action": {
+        "type": "choice",
+        "choice": "NO_ACTION",
+        "confidence": 0.64,
+        "probabilities": {
+          "NO_ACTION": 0.73,
+          "MONITOR": 0.26,
+          "RESTRICT_OUTBOUND": 0.01,
+          "FREEZE": 0
+        }
+      },
+      "income_consistent": {
+        "type": "noul",
+        "noul": 0.27
+      }
+    },
+    "ACC-0030": {
+      "role": {
+        "type": "choice",
+        "choice": "UNRELATED",
+        "confidence": 0.85,
+        "probabilities": {
+          "COLLECTOR": 0.02,
+          "MULE": 0.05,
+          "ORIGINATOR": 0.04,
+          "UNRELATED": 0.89
+        }
+      },
+      "pass_through": {
+        "type": "noul",
+        "noul": 0.06
+      },
+      "network_confidence": {
+        "type": "score",
+        "score": 2.37,
+        "confidence": 0.66,
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.09,
+          "2": 0.47,
+          "3": 0.38,
+          "4": 0.05,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "action": {
+        "type": "choice",
+        "choice": "MONITOR",
+        "confidence": 0.43,
+        "probabilities": {
+          "NO_ACTION": 0.38,
+          "MONITOR": 0.57,
+          "RESTRICT_OUTBOUND": 0.04,
+          "FREEZE": 0.01
+        }
+      },
+      "income_consistent": {
+        "type": "noul",
+        "noul": 1
+      }
+    },
+    "ACC-0031": {
+      "role": {
+        "type": "choice",
+        "choice": "MULE",
+        "confidence": 0.33,
+        "probabilities": {
+          "COLLECTOR": 0.01,
+          "MULE": 0.5,
+          "ORIGINATOR": 0.02,
+          "UNRELATED": 0.47
+        }
+      },
+      "pass_through": {
+        "type": "noul",
+        "noul": 0.05
+      },
+      "network_confidence": {
+        "type": "score",
+        "score": 3.44,
+        "confidence": 0.63,
+        "probabilities": {
+          "0": 0,
+          "1": 0.01,
+          "2": 0.08,
+          "3": 0.41,
+          "4": 0.46,
+          "5": 0.04,
+          "6": 0
+        }
+      },
+      "action": {
+        "type": "choice",
+        "choice": "MONITOR",
+        "confidence": 0.77,
+        "probabilities": {
+          "NO_ACTION": 0.03,
+          "MONITOR": 0.83,
+          "RESTRICT_OUTBOUND": 0.13,
+          "FREEZE": 0.01
+        }
+      },
+      "income_consistent": {
+        "type": "noul",
+        "noul": 1
+      }
+    },
+    "ACC-0032": {
+      "role": {
+        "type": "choice",
+        "choice": "UNRELATED",
+        "confidence": 0.95,
+        "probabilities": {
+          "COLLECTOR": 0.01,
+          "MULE": 0.02,
+          "ORIGINATOR": 0.01,
+          "UNRELATED": 0.96
+        }
+      },
+      "pass_through": {
+        "type": "noul",
+        "noul": 0.05
+      },
+      "network_confidence": {
+        "type": "score",
+        "score": 2.38,
+        "confidence": 0.6,
+        "probabilities": {
+          "0": 0.02,
+          "1": 0.11,
+          "2": 0.44,
+          "3": 0.34,
+          "4": 0.08,
+          "5": 0.01,
+          "6": 0
+        }
+      },
+      "action": {
+        "type": "choice",
+        "choice": "MONITOR",
+        "confidence": 0.69,
+        "probabilities": {
+          "NO_ACTION": 0.18,
+          "MONITOR": 0.77,
+          "RESTRICT_OUTBOUND": 0.05,
+          "FREEZE": 0
+        }
+      },
+      "income_consistent": {
+        "type": "noul",
+        "noul": 1
+      }
+    },
+    "ACC-0033": {
+      "role": {
+        "type": "choice",
+        "choice": "UNRELATED",
+        "confidence": 0.57,
+        "probabilities": {
+          "COLLECTOR": 0.04,
+          "MULE": 0.19,
+          "ORIGINATOR": 0.09,
+          "UNRELATED": 0.68
+        }
+      },
+      "pass_through": {
+        "type": "noul",
+        "noul": 0.05
+      },
+      "network_confidence": {
+        "type": "score",
+        "score": 2.06,
+        "confidence": 0.79,
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.13,
+          "2": 0.66,
+          "3": 0.19,
+          "4": 0.01,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "action": {
+        "type": "choice",
+        "choice": "MONITOR",
+        "confidence": 0.61,
+        "probabilities": {
+          "NO_ACTION": 0.17,
+          "MONITOR": 0.71,
+          "RESTRICT_OUTBOUND": 0.11,
+          "FREEZE": 0.01
+        }
+      },
+      "income_consistent": {
+        "type": "noul",
+        "noul": 1
+      }
+    },
+    "ACC-0034": {
+      "role": {
+        "type": "choice",
+        "choice": "UNRELATED",
+        "confidence": 0.61,
+        "probabilities": {
+          "COLLECTOR": 0.02,
+          "MULE": 0.16,
+          "ORIGINATOR": 0.11,
+          "UNRELATED": 0.71
+        }
+      },
+      "pass_through": {
+        "type": "noul",
+        "noul": 0.06
+      },
+      "network_confidence": {
+        "type": "score",
+        "score": 2.86,
+        "confidence": 0.61,
+        "probabilities": {
+          "0": 0,
+          "1": 0.06,
+          "2": 0.28,
+          "3": 0.43,
+          "4": 0.2,
+          "5": 0.03,
+          "6": 0
+        }
+      },
+      "action": {
+        "type": "choice",
+        "choice": "MONITOR",
+        "confidence": 0.68,
+        "probabilities": {
+          "NO_ACTION": 0.03,
+          "MONITOR": 0.76,
+          "RESTRICT_OUTBOUND": 0.2,
+          "FREEZE": 0.01
+        }
+      },
+      "income_consistent": {
+        "type": "noul",
+        "noul": 0.99
+      }
+    },
+    "ACC-0035": {
+      "role": {
+        "type": "choice",
+        "choice": "UNRELATED",
+        "confidence": 0.69,
+        "probabilities": {
+          "COLLECTOR": 0.02,
+          "MULE": 0.18,
+          "ORIGINATOR": 0.03,
+          "UNRELATED": 0.77
+        }
+      },
+      "pass_through": {
+        "type": "noul",
+        "noul": 0.02
+      },
+      "network_confidence": {
+        "type": "score",
+        "score": 3.19,
+        "confidence": 0.62,
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.02,
+          "2": 0.16,
+          "3": 0.43,
+          "4": 0.34,
+          "5": 0.04,
+          "6": 0
+        }
+      },
+      "action": {
+        "type": "choice",
+        "choice": "MONITOR",
+        "confidence": 0.63,
+        "probabilities": {
+          "NO_ACTION": 0.12,
+          "MONITOR": 0.72,
+          "RESTRICT_OUTBOUND": 0.15,
+          "FREEZE": 0.01
+        }
+      },
+      "income_consistent": {
+        "type": "noul",
+        "noul": 0.99
+      }
+    },
+    "ACC-0036": {
+      "role": {
+        "type": "choice",
+        "choice": "UNRELATED",
+        "confidence": 0.85,
+        "probabilities": {
+          "COLLECTOR": 0.01,
+          "MULE": 0.07,
+          "ORIGINATOR": 0.03,
+          "UNRELATED": 0.89
+        }
+      },
+      "pass_through": {
+        "type": "noul",
+        "noul": 0.06
+      },
+      "network_confidence": {
+        "type": "score",
+        "score": 2.18,
+        "confidence": 0.73,
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.12,
+          "2": 0.57,
+          "3": 0.28,
+          "4": 0.02,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "action": {
+        "type": "choice",
+        "choice": "MONITOR",
+        "confidence": 0.57,
+        "probabilities": {
+          "NO_ACTION": 0.3,
+          "MONITOR": 0.68,
+          "RESTRICT_OUTBOUND": 0.02,
+          "FREEZE": 0
+        }
+      },
+      "income_consistent": {
+        "type": "noul",
+        "noul": 0.91
+      }
+    },
+    "ACC-0037": {
+      "role": {
+        "type": "choice",
+        "choice": "UNRELATED",
+        "confidence": 0.81,
+        "probabilities": {
+          "COLLECTOR": 0.01,
+          "MULE": 0.09,
+          "ORIGINATOR": 0.04,
+          "UNRELATED": 0.86
+        }
+      },
+      "pass_through": {
+        "type": "noul",
+        "noul": 0.04
+      },
+      "network_confidence": {
+        "type": "score",
+        "score": 2.41,
+        "confidence": 0.64,
+        "probabilities": {
+          "0": 0,
+          "1": 0.1,
+          "2": 0.47,
+          "3": 0.36,
+          "4": 0.06,
+          "5": 0.01,
+          "6": 0
+        }
+      },
+      "action": {
+        "type": "choice",
+        "choice": "MONITOR",
+        "confidence": 0.4,
+        "probabilities": {
+          "NO_ACTION": 0.42,
+          "MONITOR": 0.55,
+          "RESTRICT_OUTBOUND": 0.03,
+          "FREEZE": 0
+        }
+      },
+      "income_consistent": {
+        "type": "noul",
+        "noul": 0.98
+      }
+    },
+    "ACC-0038": {
+      "role": {
+        "type": "choice",
+        "choice": "MULE",
+        "confidence": 0.44,
+        "probabilities": {
+          "COLLECTOR": 0.03,
+          "MULE": 0.58,
+          "ORIGINATOR": 0.02,
+          "UNRELATED": 0.37
+        }
+      },
+      "pass_through": {
+        "type": "noul",
+        "noul": 0.05
+      },
+      "network_confidence": {
+        "type": "score",
+        "score": 3.72,
+        "confidence": 0.79,
+        "probabilities": {
+          "0": 0,
+          "1": 0,
+          "2": 0.05,
+          "3": 0.22,
+          "4": 0.69,
+          "5": 0.04,
+          "6": 0
+        }
+      },
+      "action": {
+        "type": "choice",
+        "choice": "MONITOR",
+        "confidence": 0.79,
+        "probabilities": {
+          "NO_ACTION": 0.01,
+          "MONITOR": 0.84,
+          "RESTRICT_OUTBOUND": 0.14,
+          "FREEZE": 0.01
+        }
+      },
+      "income_consistent": {
+        "type": "noul",
+        "noul": 0.99
+      }
+    },
+    "ACC-0039": {
+      "role": {
+        "type": "choice",
+        "choice": "UNRELATED",
+        "confidence": 0.92,
+        "probabilities": {
+          "COLLECTOR": 0.03,
+          "MULE": 0.02,
+          "ORIGINATOR": 0.01,
+          "UNRELATED": 0.94
+        }
+      },
+      "pass_through": {
+        "type": "noul",
+        "noul": 0.05
+      },
+      "network_confidence": {
+        "type": "score",
+        "score": 2.46,
+        "confidence": 0.6,
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.1,
+          "2": 0.38,
+          "3": 0.45,
+          "4": 0.05,
+          "5": 0.01,
+          "6": 0
+        }
+      },
+      "action": {
+        "type": "choice",
+        "choice": "MONITOR",
+        "confidence": 0.33,
+        "probabilities": {
+          "NO_ACTION": 0.48,
+          "MONITOR": 0.5,
+          "RESTRICT_OUTBOUND": 0.02,
+          "FREEZE": 0
+        }
+      },
+      "income_consistent": {
+        "type": "noul",
+        "noul": 1
+      }
+    },
+    "ACC-0040": {
+      "role": {
+        "type": "choice",
+        "choice": "UNRELATED",
+        "confidence": 0.73,
+        "probabilities": {
+          "COLLECTOR": 0.01,
+          "MULE": 0.15,
+          "ORIGINATOR": 0.04,
+          "UNRELATED": 0.8
+        }
+      },
+      "pass_through": {
+        "type": "noul",
+        "noul": 0.06
+      },
+      "network_confidence": {
+        "type": "score",
+        "score": 3.12,
+        "confidence": 0.69,
+        "probabilities": {
+          "0": 0,
+          "1": 0.02,
+          "2": 0.17,
+          "3": 0.5,
+          "4": 0.29,
+          "5": 0.02,
+          "6": 0
+        }
+      },
+      "action": {
+        "type": "choice",
+        "choice": "MONITOR",
+        "confidence": 0.73,
+        "probabilities": {
+          "NO_ACTION": 0.16,
+          "MONITOR": 0.8,
+          "RESTRICT_OUTBOUND": 0.04,
+          "FREEZE": 0
+        }
+      },
+      "income_consistent": {
+        "type": "noul",
+        "noul": 0.97
+      }
+    },
+    "ACC-0041": {
+      "role": {
+        "type": "choice",
+        "choice": "COLLECTOR",
+        "confidence": 0.53,
+        "probabilities": {
+          "COLLECTOR": 0.65,
+          "MULE": 0.05,
+          "ORIGINATOR": 0.04,
+          "UNRELATED": 0.26
+        }
+      },
+      "pass_through": {
+        "type": "noul",
+        "noul": 0.01
+      },
+      "network_confidence": {
+        "type": "score",
+        "score": 2.75,
+        "confidence": 0.52,
+        "probabilities": {
+          "0": 0.02,
+          "1": 0.11,
+          "2": 0.26,
+          "3": 0.37,
+          "4": 0.19,
+          "5": 0.05,
+          "6": 0
+        }
+      },
+      "action": {
+        "type": "choice",
+        "choice": "MONITOR",
+        "confidence": 0.72,
+        "probabilities": {
+          "NO_ACTION": 0.06,
+          "MONITOR": 0.79,
+          "RESTRICT_OUTBOUND": 0.14,
+          "FREEZE": 0.01
+        }
+      },
+      "income_consistent": {
+        "type": "noul",
+        "noul": 0.99
+      }
+    },
+    "ACC-0042": {
+      "role": {
+        "type": "choice",
+        "choice": "MULE",
+        "confidence": 0.43,
+        "probabilities": {
+          "COLLECTOR": 0.41,
+          "MULE": 0.57,
+          "ORIGINATOR": 0.01,
+          "UNRELATED": 0.01
+        }
+      },
+      "pass_through": {
+        "type": "noul",
+        "noul": 0.48
+      },
+      "network_confidence": {
+        "type": "score",
+        "score": 3.39,
+        "confidence": 0.54,
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.02,
+          "2": 0.13,
+          "3": 0.34,
+          "4": 0.41,
+          "5": 0.09,
+          "6": 0
+        }
+      },
+      "action": {
+        "type": "choice",
+        "choice": "MONITOR",
+        "confidence": 0.69,
+        "probabilities": {
+          "NO_ACTION": 0.13,
+          "MONITOR": 0.77,
+          "RESTRICT_OUTBOUND": 0.1,
+          "FREEZE": 0
+        }
+      },
+      "income_consistent": {
+        "type": "noul",
+        "noul": 0.98
+      }
+    },
+    "ACC-0043": {
+      "role": {
+        "type": "choice",
+        "choice": "MULE",
+        "confidence": 0.73,
+        "probabilities": {
+          "COLLECTOR": 0.17,
+          "MULE": 0.8,
+          "ORIGINATOR": 0.01,
+          "UNRELATED": 0.02
+        }
+      },
+      "pass_through": {
+        "type": "noul",
+        "noul": 0.88
+      },
+      "network_confidence": {
+        "type": "score",
+        "score": 3.29,
+        "confidence": 0.54,
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.03,
+          "2": 0.16,
+          "3": 0.36,
+          "4": 0.34,
+          "5": 0.1,
+          "6": 0
+        }
+      },
+      "action": {
+        "type": "choice",
+        "choice": "MONITOR",
+        "confidence": 0.47,
+        "probabilities": {
+          "NO_ACTION": 0.02,
+          "MONITOR": 0.6,
+          "RESTRICT_OUTBOUND": 0.37,
+          "FREEZE": 0.01
+        }
+      },
+      "income_consistent": {
+        "type": "noul",
+        "noul": 1
+      }
+    },
+    "ACC-0044": {
+      "role": {
+        "type": "choice",
+        "choice": "MULE",
+        "confidence": 0.57,
+        "probabilities": {
+          "COLLECTOR": 0.31,
+          "MULE": 0.68,
+          "ORIGINATOR": 0,
+          "UNRELATED": 0.01
+        }
+      },
+      "pass_through": {
+        "type": "noul",
+        "noul": 0.67
+      },
+      "network_confidence": {
+        "type": "score",
+        "score": 3.56,
+        "confidence": 0.62,
+        "probabilities": {
+          "0": 0,
+          "1": 0.02,
+          "2": 0.09,
+          "3": 0.31,
+          "4": 0.47,
+          "5": 0.11,
+          "6": 0
+        }
+      },
+      "action": {
+        "type": "choice",
+        "choice": "MONITOR",
+        "confidence": 0.61,
+        "probabilities": {
+          "NO_ACTION": 0.01,
+          "MONITOR": 0.71,
+          "RESTRICT_OUTBOUND": 0.27,
+          "FREEZE": 0.01
+        }
+      },
+      "income_consistent": {
+        "type": "noul",
+        "noul": 0.98
+      }
+    },
+    "ACC-0045": {
+      "role": {
+        "type": "choice",
+        "choice": "COLLECTOR",
+        "confidence": 0.85,
+        "probabilities": {
+          "COLLECTOR": 0.89,
+          "MULE": 0.1,
+          "ORIGINATOR": 0.01,
+          "UNRELATED": 0
+        }
+      },
+      "pass_through": {
+        "type": "noul",
+        "noul": 0.61
+      },
+      "network_confidence": {
+        "type": "score",
+        "score": 3.71,
+        "confidence": 0.67,
+        "probabilities": {
+          "0": 0,
+          "1": 0.01,
+          "2": 0.06,
+          "3": 0.28,
+          "4": 0.51,
+          "5": 0.14,
+          "6": 0
+        }
+      },
+      "action": {
+        "type": "choice",
+        "choice": "MONITOR",
+        "confidence": 0.37,
+        "probabilities": {
+          "NO_ACTION": 0.02,
+          "MONITOR": 0.53,
+          "RESTRICT_OUTBOUND": 0.43,
+          "FREEZE": 0.02
+        }
+      },
+      "income_consistent": {
+        "type": "noul",
+        "noul": 1
+      }
+    },
+    "ACC-0046": {
+      "role": {
+        "type": "choice",
+        "choice": "MULE",
+        "confidence": 0.29,
+        "probabilities": {
+          "COLLECTOR": 0.02,
+          "MULE": 0.47,
+          "ORIGINATOR": 0.23,
+          "UNRELATED": 0.28
+        }
+      },
+      "pass_through": {
+        "type": "noul",
+        "noul": 0.07
+      },
+      "network_confidence": {
+        "type": "score",
+        "score": 3.53,
+        "confidence": 0.57,
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.02,
+          "2": 0.1,
+          "3": 0.3,
+          "4": 0.44,
+          "5": 0.13,
+          "6": 0
+        }
+      },
+      "action": {
+        "type": "choice",
+        "choice": "RESTRICT_OUTBOUND",
+        "confidence": 0.56,
+        "probabilities": {
+          "NO_ACTION": 0.01,
+          "MONITOR": 0.23,
+          "RESTRICT_OUTBOUND": 0.67,
+          "FREEZE": 0.09
+        }
+      },
+      "income_consistent": {
+        "type": "noul",
+        "noul": 0
+      }
+    },
+    "ACC-0047": {
+      "role": {
+        "type": "choice",
+        "choice": "UNRELATED",
+        "confidence": 0.93,
+        "probabilities": {
+          "COLLECTOR": 0.01,
+          "MULE": 0.02,
+          "ORIGINATOR": 0.02,
+          "UNRELATED": 0.95
+        }
+      },
+      "pass_through": {
+        "type": "noul",
+        "noul": 0.06
+      },
+      "network_confidence": {
+        "type": "score",
+        "score": 2.44,
+        "confidence": 0.57,
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.13,
+          "2": 0.36,
+          "3": 0.42,
+          "4": 0.07,
+          "5": 0.01,
+          "6": 0
+        }
+      },
+      "action": {
+        "type": "choice",
+        "choice": "MONITOR",
+        "confidence": 0.61,
+        "probabilities": {
+          "NO_ACTION": 0.23,
+          "MONITOR": 0.71,
+          "RESTRICT_OUTBOUND": 0.06,
+          "FREEZE": 0
+        }
+      },
+      "income_consistent": {
+        "type": "noul",
+        "noul": 0.91
+      }
+    },
+    "ACC-0048": {
+      "role": {
+        "type": "choice",
+        "choice": "UNRELATED",
+        "confidence": 0.83,
+        "probabilities": {
+          "COLLECTOR": 0.11,
+          "MULE": 0.01,
+          "ORIGINATOR": 0.01,
+          "UNRELATED": 0.87
+        }
+      },
+      "pass_through": {
+        "type": "noul",
+        "noul": 0.01
+      },
+      "network_confidence": {
+        "type": "score",
+        "score": 2.44,
+        "confidence": 0.56,
+        "probabilities": {
+          "0": 0.02,
+          "1": 0.12,
+          "2": 0.4,
+          "3": 0.34,
+          "4": 0.1,
+          "5": 0.02,
+          "6": 0
+        }
+      },
+      "action": {
+        "type": "choice",
+        "choice": "MONITOR",
+        "confidence": 0.41,
+        "probabilities": {
+          "NO_ACTION": 0.41,
+          "MONITOR": 0.56,
+          "RESTRICT_OUTBOUND": 0.02,
+          "FREEZE": 0.01
+        }
+      },
+      "income_consistent": {
+        "type": "noul",
+        "noul": 0.99
+      }
+    },
+    "ACC-0049": {
+      "role": {
+        "type": "choice",
+        "choice": "UNRELATED",
+        "confidence": 0.36,
+        "probabilities": {
+          "COLLECTOR": 0.02,
+          "MULE": 0.4,
+          "ORIGINATOR": 0.06,
+          "UNRELATED": 0.52
+        }
+      },
+      "pass_through": {
+        "type": "noul",
+        "noul": 0.05
+      },
+      "network_confidence": {
+        "type": "score",
+        "score": 2.63,
+        "confidence": 0.68,
+        "probabilities": {
+          "0": 0,
+          "1": 0.04,
+          "2": 0.38,
+          "3": 0.5,
+          "4": 0.07,
+          "5": 0.01,
+          "6": 0
+        }
+      },
+      "action": {
+        "type": "choice",
+        "choice": "MONITOR",
+        "confidence": 0.63,
+        "probabilities": {
+          "NO_ACTION": 0.09,
+          "MONITOR": 0.72,
+          "RESTRICT_OUTBOUND": 0.17,
+          "FREEZE": 0.02
+        }
+      },
+      "income_consistent": {
+        "type": "noul",
+        "noul": 0.38
+      }
+    },
+    "ACC-0050": {
+      "role": {
+        "type": "choice",
+        "choice": "UNRELATED",
+        "confidence": 0.91,
+        "probabilities": {
+          "COLLECTOR": 0.01,
+          "MULE": 0.05,
+          "ORIGINATOR": 0.01,
+          "UNRELATED": 0.93
+        }
+      },
+      "pass_through": {
+        "type": "noul",
+        "noul": 0.07
+      },
+      "network_confidence": {
+        "type": "score",
+        "score": 1.83,
+        "confidence": 0.73,
+        "probabilities": {
+          "0": 0.03,
+          "1": 0.26,
+          "2": 0.57,
+          "3": 0.13,
+          "4": 0.01,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "action": {
+        "type": "choice",
+        "choice": "MONITOR",
+        "confidence": 0.39,
+        "probabilities": {
+          "NO_ACTION": 0.45,
+          "MONITOR": 0.54,
+          "RESTRICT_OUTBOUND": 0.01,
+          "FREEZE": 0
+        }
+      },
+      "income_consistent": {
+        "type": "noul",
+        "noul": 1
+      }
+    },
+    "ACC-0051": {
+      "role": {
+        "type": "choice",
+        "choice": "UNRELATED",
+        "confidence": 0.88,
+        "probabilities": {
+          "COLLECTOR": 0.01,
+          "MULE": 0.06,
+          "ORIGINATOR": 0.02,
+          "UNRELATED": 0.91
+        }
+      },
+      "pass_through": {
+        "type": "noul",
+        "noul": 0.04
+      },
+      "network_confidence": {
+        "type": "score",
+        "score": 2.04,
+        "confidence": 0.76,
+        "probabilities": {
+          "0": 0.02,
+          "1": 0.15,
+          "2": 0.62,
+          "3": 0.19,
+          "4": 0.02,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "action": {
+        "type": "choice",
+        "choice": "NO_ACTION",
+        "confidence": 0.4,
+        "probabilities": {
+          "NO_ACTION": 0.55,
+          "MONITOR": 0.42,
+          "RESTRICT_OUTBOUND": 0.02,
+          "FREEZE": 0.01
+        }
+      },
+      "income_consistent": {
+        "type": "noul",
+        "noul": 1
+      }
+    },
+    "ACC-0052": {
+      "role": {
+        "type": "choice",
+        "choice": "UNRELATED",
+        "confidence": 0.85,
+        "probabilities": {
+          "COLLECTOR": 0.04,
+          "MULE": 0.05,
+          "ORIGINATOR": 0.02,
+          "UNRELATED": 0.89
+        }
+      },
+      "pass_through": {
+        "type": "noul",
+        "noul": 0.16
+      },
+      "network_confidence": {
+        "type": "score",
+        "score": 3.34,
+        "confidence": 0.58,
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.01,
+          "2": 0.14,
+          "3": 0.4,
+          "4": 0.35,
+          "5": 0.09,
+          "6": 0
+        }
+      },
+      "action": {
+        "type": "choice",
+        "choice": "MONITOR",
+        "confidence": 0.63,
+        "probabilities": {
+          "NO_ACTION": 0.18,
+          "MONITOR": 0.72,
+          "RESTRICT_OUTBOUND": 0.09,
+          "FREEZE": 0.01
+        }
+      },
+      "income_consistent": {
+        "type": "noul",
+        "noul": 0.98
+      }
+    },
+    "ACC-0053": {
+      "role": {
+        "type": "choice",
+        "choice": "UNRELATED",
+        "confidence": 0.81,
+        "probabilities": {
+          "COLLECTOR": 0.02,
+          "MULE": 0.07,
+          "ORIGINATOR": 0.05,
+          "UNRELATED": 0.86
+        }
+      },
+      "pass_through": {
+        "type": "noul",
+        "noul": 0.06
+      },
+      "network_confidence": {
+        "type": "score",
+        "score": 2.87,
+        "confidence": 0.64,
+        "probabilities": {
+          "0": 0,
+          "1": 0.06,
+          "2": 0.25,
+          "3": 0.48,
+          "4": 0.18,
+          "5": 0.03,
+          "6": 0
+        }
+      },
+      "action": {
+        "type": "choice",
+        "choice": "MONITOR",
+        "confidence": 0.75,
+        "probabilities": {
+          "NO_ACTION": 0.15,
+          "MONITOR": 0.81,
+          "RESTRICT_OUTBOUND": 0.04,
+          "FREEZE": 0
+        }
+      },
+      "income_consistent": {
+        "type": "noul",
+        "noul": 1
+      }
+    },
+    "ACC-0054": {
+      "role": {
+        "type": "choice",
+        "choice": "UNRELATED",
+        "confidence": 0.96,
+        "probabilities": {
+          "COLLECTOR": 0.01,
+          "MULE": 0.02,
+          "ORIGINATOR": 0,
+          "UNRELATED": 0.97
+        }
+      },
+      "pass_through": {
+        "type": "noul",
+        "noul": 0.02
+      },
+      "network_confidence": {
+        "type": "score",
+        "score": 1.92,
+        "confidence": 0.73,
+        "probabilities": {
+          "0": 0.03,
+          "1": 0.21,
+          "2": 0.58,
+          "3": 0.17,
+          "4": 0.01,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "action": {
+        "type": "choice",
+        "choice": "MONITOR",
+        "confidence": 0.33,
+        "probabilities": {
+          "NO_ACTION": 0.49,
+          "MONITOR": 0.5,
+          "RESTRICT_OUTBOUND": 0.01,
+          "FREEZE": 0
+        }
+      },
+      "income_consistent": {
+        "type": "noul",
+        "noul": 0.13
+      }
+    },
+    "ACC-0055": {
+      "role": {
+        "type": "choice",
+        "choice": "UNRELATED",
+        "confidence": 0.88,
+        "probabilities": {
+          "COLLECTOR": 0.06,
+          "MULE": 0.02,
+          "ORIGINATOR": 0.01,
+          "UNRELATED": 0.91
+        }
+      },
+      "pass_through": {
+        "type": "noul",
+        "noul": 0.05
+      },
+      "network_confidence": {
+        "type": "score",
+        "score": 3.02,
+        "confidence": 0.58,
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.04,
+          "2": 0.24,
+          "3": 0.42,
+          "4": 0.21,
+          "5": 0.08,
+          "6": 0
+        }
+      },
+      "action": {
+        "type": "choice",
+        "choice": "MONITOR",
+        "confidence": 0.52,
+        "probabilities": {
+          "NO_ACTION": 0.25,
+          "MONITOR": 0.64,
+          "RESTRICT_OUTBOUND": 0.1,
+          "FREEZE": 0.01
+        }
+      },
+      "income_consistent": {
+        "type": "noul",
+        "noul": 0.79
+      }
+    },
+    "ACC-0056": {
+      "role": {
+        "type": "choice",
+        "choice": "UNRELATED",
+        "confidence": 0.81,
+        "probabilities": {
+          "COLLECTOR": 0.01,
+          "MULE": 0.11,
+          "ORIGINATOR": 0.02,
+          "UNRELATED": 0.86
+        }
+      },
+      "pass_through": {
+        "type": "noul",
+        "noul": 0.1
+      },
+      "network_confidence": {
+        "type": "score",
+        "score": 2.15,
+        "confidence": 0.64,
+        "probabilities": {
+          "0": 0.02,
+          "1": 0.19,
+          "2": 0.47,
+          "3": 0.27,
+          "4": 0.04,
+          "5": 0.01,
+          "6": 0
+        }
+      },
+      "action": {
+        "type": "choice",
+        "choice": "NO_ACTION",
+        "confidence": 0.37,
+        "probabilities": {
+          "NO_ACTION": 0.53,
+          "MONITOR": 0.46,
+          "RESTRICT_OUTBOUND": 0.01,
+          "FREEZE": 0
+        }
+      },
+      "income_consistent": {
+        "type": "noul",
+        "noul": 0.98
+      }
+    },
+    "ACC-0057": {
+      "role": {
+        "type": "choice",
+        "choice": "MULE",
+        "confidence": 0.48,
+        "probabilities": {
+          "COLLECTOR": 0.04,
+          "MULE": 0.61,
+          "ORIGINATOR": 0.05,
+          "UNRELATED": 0.3
+        }
+      },
+      "pass_through": {
+        "type": "noul",
+        "noul": 0.06
+      },
+      "network_confidence": {
+        "type": "score",
+        "score": 2.88,
+        "confidence": 0.66,
+        "probabilities": {
+          "0": 0,
+          "1": 0.04,
+          "2": 0.27,
+          "3": 0.48,
+          "4": 0.19,
+          "5": 0.02,
+          "6": 0
+        }
+      },
+      "action": {
+        "type": "choice",
+        "choice": "MONITOR",
+        "confidence": 0.61,
+        "probabilities": {
+          "NO_ACTION": 0.04,
+          "MONITOR": 0.71,
+          "RESTRICT_OUTBOUND": 0.23,
+          "FREEZE": 0.02
+        }
+      },
+      "income_consistent": {
+        "type": "noul",
+        "noul": 0.01
+      }
+    },
+    "ACC-0058": {
+      "role": {
+        "type": "choice",
+        "choice": "UNRELATED",
+        "confidence": 0.6,
+        "probabilities": {
+          "COLLECTOR": 0.03,
+          "MULE": 0.15,
+          "ORIGINATOR": 0.12,
+          "UNRELATED": 0.7
+        }
+      },
+      "pass_through": {
+        "type": "noul",
+        "noul": 0.06
+      },
+      "network_confidence": {
+        "type": "score",
+        "score": 2.61,
+        "confidence": 0.64,
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.06,
+          "2": 0.35,
+          "3": 0.48,
+          "4": 0.09,
+          "5": 0.01,
+          "6": 0
+        }
+      },
+      "action": {
+        "type": "choice",
+        "choice": "MONITOR",
+        "confidence": 0.53,
+        "probabilities": {
+          "NO_ACTION": 0.3,
+          "MONITOR": 0.65,
+          "RESTRICT_OUTBOUND": 0.05,
+          "FREEZE": 0
+        }
+      },
+      "income_consistent": {
+        "type": "noul",
+        "noul": 1
+      }
+    },
+    "ACC-0059": {
+      "role": {
+        "type": "choice",
+        "choice": "UNRELATED",
+        "confidence": 0.97,
+        "probabilities": {
+          "COLLECTOR": 0,
+          "MULE": 0.01,
+          "ORIGINATOR": 0.01,
+          "UNRELATED": 0.98
+        }
+      },
+      "pass_through": {
+        "type": "noul",
+        "noul": 0.05
+      },
+      "network_confidence": {
+        "type": "score",
+        "score": 2.37,
+        "confidence": 0.66,
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.09,
+          "2": 0.49,
+          "3": 0.35,
+          "4": 0.05,
+          "5": 0.01,
+          "6": 0
+        }
+      },
+      "action": {
+        "type": "choice",
+        "choice": "MONITOR",
+        "confidence": 0.71,
+        "probabilities": {
+          "NO_ACTION": 0.19,
+          "MONITOR": 0.78,
+          "RESTRICT_OUTBOUND": 0.03,
+          "FREEZE": 0
+        }
+      },
+      "income_consistent": {
+        "type": "noul",
+        "noul": 1
+      }
+    },
+    "ACC-0060": {
+      "role": {
+        "type": "choice",
+        "choice": "UNRELATED",
+        "confidence": 0.73,
+        "probabilities": {
+          "COLLECTOR": 0.1,
+          "MULE": 0.07,
+          "ORIGINATOR": 0.03,
+          "UNRELATED": 0.8
+        }
+      },
+      "pass_through": {
+        "type": "noul",
+        "noul": 0.04
+      },
+      "network_confidence": {
+        "type": "score",
+        "score": 3.2,
+        "confidence": 0.69,
+        "probabilities": {
+          "0": 0,
+          "1": 0.01,
+          "2": 0.15,
+          "3": 0.5,
+          "4": 0.31,
+          "5": 0.03,
+          "6": 0
+        }
+      },
+      "action": {
+        "type": "choice",
+        "choice": "MONITOR",
+        "confidence": 0.72,
+        "probabilities": {
+          "NO_ACTION": 0.05,
+          "MONITOR": 0.79,
+          "RESTRICT_OUTBOUND": 0.15,
+          "FREEZE": 0.01
+        }
+      },
+      "income_consistent": {
+        "type": "noul",
+        "noul": 0.98
+      }
+    },
+    "ACC-0061": {
+      "role": {
+        "type": "choice",
+        "choice": "UNRELATED",
+        "confidence": 0.69,
+        "probabilities": {
+          "COLLECTOR": 0.02,
+          "MULE": 0.01,
+          "ORIGINATOR": 0.2,
+          "UNRELATED": 0.77
+        }
+      },
+      "pass_through": {
+        "type": "noul",
+        "noul": 0
+      },
+      "network_confidence": {
+        "type": "score",
+        "score": 2.95,
+        "confidence": 0.6,
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.06,
+          "2": 0.22,
+          "3": 0.42,
+          "4": 0.26,
+          "5": 0.03,
+          "6": 0
+        }
+      },
+      "action": {
+        "type": "choice",
+        "choice": "MONITOR",
+        "confidence": 0.28,
+        "probabilities": {
+          "NO_ACTION": 0.33,
+          "MONITOR": 0.46,
+          "RESTRICT_OUTBOUND": 0.2,
+          "FREEZE": 0.01
+        }
+      },
+      "income_consistent": {
+        "type": "noul",
+        "noul": 0.02
+      }
+    },
+    "ACC-0062": {
+      "role": {
+        "type": "choice",
+        "choice": "UNRELATED",
+        "confidence": 0.97,
+        "probabilities": {
+          "COLLECTOR": 0.01,
+          "MULE": 0.01,
+          "ORIGINATOR": 0,
+          "UNRELATED": 0.98
+        }
+      },
+      "pass_through": {
+        "type": "noul",
+        "noul": 0.01
+      },
+      "network_confidence": {
+        "type": "score",
+        "score": 1.16,
+        "confidence": 0.64,
+        "probabilities": {
+          "0": 0.23,
+          "1": 0.42,
+          "2": 0.32,
+          "3": 0.02,
+          "4": 0.01,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "action": {
+        "type": "choice",
+        "choice": "NO_ACTION",
+        "confidence": 0.81,
+        "probabilities": {
+          "NO_ACTION": 0.86,
+          "MONITOR": 0.13,
+          "RESTRICT_OUTBOUND": 0.01,
+          "FREEZE": 0
+        }
+      },
+      "income_consistent": {
+        "type": "noul",
+        "noul": 0.93
+      }
+    },
+    "ACC-0063": {
+      "role": {
+        "type": "choice",
+        "choice": "UNRELATED",
+        "confidence": 0.96,
+        "probabilities": {
+          "COLLECTOR": 0.01,
+          "MULE": 0.02,
+          "ORIGINATOR": 0,
+          "UNRELATED": 0.97
+        }
+      },
+      "pass_through": {
+        "type": "noul",
+        "noul": 0.01
+      },
+      "network_confidence": {
+        "type": "score",
+        "score": 1.64,
+        "confidence": 0.56,
+        "probabilities": {
+          "0": 0.13,
+          "1": 0.3,
+          "2": 0.42,
+          "3": 0.11,
+          "4": 0.03,
+          "5": 0.01,
+          "6": 0
+        }
+      },
+      "action": {
+        "type": "choice",
+        "choice": "NO_ACTION",
+        "confidence": 0.61,
+        "probabilities": {
+          "NO_ACTION": 0.71,
+          "MONITOR": 0.27,
+          "RESTRICT_OUTBOUND": 0.02,
+          "FREEZE": 0
+        }
+      },
+      "income_consistent": {
+        "type": "noul",
+        "noul": 0.72
+      }
+    },
+    "ACC-0064": {
+      "role": {
+        "type": "choice",
+        "choice": "UNRELATED",
+        "confidence": 0.97,
+        "probabilities": {
+          "COLLECTOR": 0.01,
+          "MULE": 0.01,
+          "ORIGINATOR": 0,
+          "UNRELATED": 0.98
+        }
+      },
+      "pass_through": {
+        "type": "noul",
+        "noul": 0.01
+      },
+      "network_confidence": {
+        "type": "score",
+        "score": 1.72,
+        "confidence": 0.6,
+        "probabilities": {
+          "0": 0.1,
+          "1": 0.28,
+          "2": 0.46,
+          "3": 0.13,
+          "4": 0.02,
+          "5": 0.01,
+          "6": 0
+        }
+      },
+      "action": {
+        "type": "choice",
+        "choice": "NO_ACTION",
+        "confidence": 0.55,
+        "probabilities": {
+          "NO_ACTION": 0.66,
+          "MONITOR": 0.33,
+          "RESTRICT_OUTBOUND": 0.01,
+          "FREEZE": 0
+        }
+      },
+      "income_consistent": {
+        "type": "noul",
+        "noul": 1
+      }
+    },
+    "ACC-0065": {
+      "role": {
+        "type": "choice",
+        "choice": "UNRELATED",
+        "confidence": 0.97,
+        "probabilities": {
+          "COLLECTOR": 0.01,
+          "MULE": 0.01,
+          "ORIGINATOR": 0,
+          "UNRELATED": 0.98
+        }
+      },
+      "pass_through": {
+        "type": "noul",
+        "noul": 0
+      },
+      "network_confidence": {
+        "type": "score",
+        "score": 1.56,
+        "confidence": 0.59,
+        "probabilities": {
+          "0": 0.11,
+          "1": 0.35,
+          "2": 0.43,
+          "3": 0.09,
+          "4": 0.02,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "action": {
+        "type": "choice",
+        "choice": "NO_ACTION",
+        "confidence": 0.69,
+        "probabilities": {
+          "NO_ACTION": 0.77,
+          "MONITOR": 0.22,
+          "RESTRICT_OUTBOUND": 0.01,
+          "FREEZE": 0
+        }
+      },
+      "income_consistent": {
+        "type": "noul",
+        "noul": 0.99
+      }
+    },
+    "ACC-0066": {
+      "role": {
+        "type": "choice",
+        "choice": "UNRELATED",
+        "confidence": 0.96,
+        "probabilities": {
+          "COLLECTOR": 0.01,
+          "MULE": 0.02,
+          "ORIGINATOR": 0,
+          "UNRELATED": 0.97
+        }
+      },
+      "pass_through": {
+        "type": "noul",
+        "noul": 0
+      },
+      "network_confidence": {
+        "type": "score",
+        "score": 2.38,
+        "confidence": 0.67,
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.07,
+          "2": 0.47,
+          "3": 0.43,
+          "4": 0.02,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "action": {
+        "type": "choice",
+        "choice": "NO_ACTION",
+        "confidence": 0.44,
+        "probabilities": {
+          "NO_ACTION": 0.58,
+          "MONITOR": 0.41,
+          "RESTRICT_OUTBOUND": 0.01,
+          "FREEZE": 0
+        }
+      },
+      "income_consistent": {
+        "type": "noul",
+        "noul": 1
+      }
+    },
+    "ACC-0067": {
+      "role": {
+        "type": "choice",
+        "choice": "UNRELATED",
+        "confidence": 0.89,
+        "probabilities": {
+          "COLLECTOR": 0.02,
+          "MULE": 0.04,
+          "ORIGINATOR": 0.02,
+          "UNRELATED": 0.92
+        }
+      },
+      "pass_through": {
+        "type": "noul",
+        "noul": 0
+      },
+      "network_confidence": {
+        "type": "score",
+        "score": 2.02,
+        "confidence": 0.62,
+        "probabilities": {
+          "0": 0.04,
+          "1": 0.24,
+          "2": 0.46,
+          "3": 0.19,
+          "4": 0.06,
+          "5": 0.01,
+          "6": 0
+        }
+      },
+      "action": {
+        "type": "choice",
+        "choice": "NO_ACTION",
+        "confidence": 0.68,
+        "probabilities": {
+          "NO_ACTION": 0.76,
+          "MONITOR": 0.23,
+          "RESTRICT_OUTBOUND": 0.01,
+          "FREEZE": 0
+        }
+      },
+      "income_consistent": {
+        "type": "noul",
+        "noul": 0.92
+      }
+    },
+    "ACC-0068": {
+      "role": {
+        "type": "choice",
+        "choice": "UNRELATED",
+        "confidence": 0.97,
+        "probabilities": {
+          "COLLECTOR": 0.01,
+          "MULE": 0.01,
+          "ORIGINATOR": 0,
+          "UNRELATED": 0.98
+        }
+      },
+      "pass_through": {
+        "type": "noul",
+        "noul": 0.01
+      },
+      "network_confidence": {
+        "type": "score",
+        "score": 1.57,
+        "confidence": 0.52,
+        "probabilities": {
+          "0": 0.16,
+          "1": 0.31,
+          "2": 0.38,
+          "3": 0.11,
+          "4": 0.03,
+          "5": 0.01,
+          "6": 0
+        }
+      },
+      "action": {
+        "type": "choice",
+        "choice": "NO_ACTION",
+        "confidence": 0.59,
+        "probabilities": {
+          "NO_ACTION": 0.69,
+          "MONITOR": 0.3,
+          "RESTRICT_OUTBOUND": 0.01,
+          "FREEZE": 0
+        }
+      },
+      "income_consistent": {
+        "type": "noul",
+        "noul": 1
+      }
+    },
+    "ACC-0069": {
+      "role": {
+        "type": "choice",
+        "choice": "UNRELATED",
+        "confidence": 0.93,
+        "probabilities": {
+          "COLLECTOR": 0.01,
+          "MULE": 0.03,
+          "ORIGINATOR": 0.01,
+          "UNRELATED": 0.95
+        }
+      },
+      "pass_through": {
+        "type": "noul",
+        "noul": 0
+      },
+      "network_confidence": {
+        "type": "score",
+        "score": 1.94,
+        "confidence": 0.74,
+        "probabilities": {
+          "0": 0.02,
+          "1": 0.21,
+          "2": 0.6,
+          "3": 0.15,
+          "4": 0.02,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "action": {
+        "type": "choice",
+        "choice": "NO_ACTION",
+        "confidence": 0.52,
+        "probabilities": {
+          "NO_ACTION": 0.64,
+          "MONITOR": 0.33,
+          "RESTRICT_OUTBOUND": 0.03,
+          "FREEZE": 0
+        }
+      },
+      "income_consistent": {
+        "type": "noul",
+        "noul": 0.98
+      }
+    },
+    "ACC-0070": {
+      "role": {
+        "type": "choice",
+        "choice": "UNRELATED",
+        "confidence": 0.97,
+        "probabilities": {
+          "COLLECTOR": 0.01,
+          "MULE": 0.01,
+          "ORIGINATOR": 0,
+          "UNRELATED": 0.98
+        }
+      },
+      "pass_through": {
+        "type": "noul",
+        "noul": 0
+      },
+      "network_confidence": {
+        "type": "score",
+        "score": 1.59,
+        "confidence": 0.52,
+        "probabilities": {
+          "0": 0.15,
+          "1": 0.32,
+          "2": 0.37,
+          "3": 0.12,
+          "4": 0.03,
+          "5": 0.01,
+          "6": 0
+        }
+      },
+      "action": {
+        "type": "choice",
+        "choice": "NO_ACTION",
+        "confidence": 0.76,
+        "probabilities": {
+          "NO_ACTION": 0.82,
+          "MONITOR": 0.17,
+          "RESTRICT_OUTBOUND": 0.01,
+          "FREEZE": 0
+        }
+      },
+      "income_consistent": {
+        "type": "noul",
+        "noul": 1
+      }
+    },
+    "ACC-0071": {
+      "role": {
+        "type": "choice",
+        "choice": "UNRELATED",
+        "confidence": 0.93,
+        "probabilities": {
+          "COLLECTOR": 0.02,
+          "MULE": 0.02,
+          "ORIGINATOR": 0.01,
+          "UNRELATED": 0.95
+        }
+      },
+      "pass_through": {
+        "type": "noul",
+        "noul": 0.02
+      },
+      "network_confidence": {
+        "type": "score",
+        "score": 1.78,
+        "confidence": 0.69,
+        "probabilities": {
+          "0": 0.07,
+          "1": 0.24,
+          "2": 0.55,
+          "3": 0.12,
+          "4": 0.02,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "action": {
+        "type": "choice",
+        "choice": "NO_ACTION",
+        "confidence": 0.51,
+        "probabilities": {
+          "NO_ACTION": 0.63,
+          "MONITOR": 0.33,
+          "RESTRICT_OUTBOUND": 0.04,
+          "FREEZE": 0
+        }
+      },
+      "income_consistent": {
+        "type": "noul",
+        "noul": 0.99
+      }
+    },
+    "ACC-0072": {
+      "role": {
+        "type": "choice",
+        "choice": "UNRELATED",
+        "confidence": 0.95,
+        "probabilities": {
+          "COLLECTOR": 0.01,
+          "MULE": 0.02,
+          "ORIGINATOR": 0.01,
+          "UNRELATED": 0.96
+        }
+      },
+      "pass_through": {
+        "type": "noul",
+        "noul": 0.04
+      },
+      "network_confidence": {
+        "type": "score",
+        "score": 1.01,
+        "confidence": 0.66,
+        "probabilities": {
+          "0": 0.29,
+          "1": 0.43,
+          "2": 0.26,
+          "3": 0.02,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "action": {
+        "type": "choice",
+        "choice": "NO_ACTION",
+        "confidence": 0.75,
+        "probabilities": {
+          "NO_ACTION": 0.81,
+          "MONITOR": 0.17,
+          "RESTRICT_OUTBOUND": 0.02,
+          "FREEZE": 0
+        }
+      },
+      "income_consistent": {
+        "type": "noul",
+        "noul": 1
+      }
+    },
+    "ACC-0073": {
+      "role": {
+        "type": "choice",
+        "choice": "MULE",
+        "confidence": 0.56,
+        "probabilities": {
+          "COLLECTOR": 0.04,
+          "MULE": 0.67,
+          "ORIGINATOR": 0.05,
+          "UNRELATED": 0.24
+        }
+      },
+      "pass_through": {
+        "type": "noul",
+        "noul": 0.08
+      },
+      "network_confidence": {
+        "type": "score",
+        "score": 2.71,
+        "confidence": 0.68,
+        "probabilities": {
+          "0": 0,
+          "1": 0.05,
+          "2": 0.32,
+          "3": 0.51,
+          "4": 0.11,
+          "5": 0.01,
+          "6": 0
+        }
+      },
+      "action": {
+        "type": "choice",
+        "choice": "MONITOR",
+        "confidence": 0.73,
+        "probabilities": {
+          "NO_ACTION": 0.05,
+          "MONITOR": 0.8,
+          "RESTRICT_OUTBOUND": 0.15,
+          "FREEZE": 0
+        }
+      },
+      "income_consistent": {
+        "type": "noul",
+        "noul": 1
+      }
+    },
+    "ACC-0074": {
+      "role": {
+        "type": "choice",
+        "choice": "UNRELATED",
+        "confidence": 0.65,
+        "probabilities": {
+          "COLLECTOR": 0.01,
+          "MULE": 0.21,
+          "ORIGINATOR": 0.04,
+          "UNRELATED": 0.74
+        }
+      },
+      "pass_through": {
+        "type": "noul",
+        "noul": 0.08
+      },
+      "network_confidence": {
+        "type": "score",
+        "score": 1.99,
+        "confidence": 0.81,
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.15,
+          "2": 0.69,
+          "3": 0.14,
+          "4": 0.01,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "action": {
+        "type": "choice",
+        "choice": "MONITOR",
+        "confidence": 0.69,
+        "probabilities": {
+          "NO_ACTION": 0.15,
+          "MONITOR": 0.77,
+          "RESTRICT_OUTBOUND": 0.08,
+          "FREEZE": 0
+        }
+      },
+      "income_consistent": {
+        "type": "noul",
+        "noul": 0.07
+      }
+    },
+    "ACC-0075": {
+      "role": {
+        "type": "choice",
+        "choice": "UNRELATED",
+        "confidence": 0.49,
+        "probabilities": {
+          "COLLECTOR": 0.01,
+          "MULE": 0.14,
+          "ORIGINATOR": 0.23,
+          "UNRELATED": 0.62
+        }
+      },
+      "pass_through": {
+        "type": "noul",
+        "noul": 0.06
+      },
+      "network_confidence": {
+        "type": "score",
+        "score": 2.82,
+        "confidence": 0.62,
+        "probabilities": {
+          "0": 0,
+          "1": 0.05,
+          "2": 0.32,
+          "3": 0.43,
+          "4": 0.16,
+          "5": 0.04,
+          "6": 0
+        }
+      },
+      "action": {
+        "type": "choice",
+        "choice": "MONITOR",
+        "confidence": 0.33,
+        "probabilities": {
+          "NO_ACTION": 0.03,
+          "MONITOR": 0.5,
+          "RESTRICT_OUTBOUND": 0.43,
+          "FREEZE": 0.04
+        }
+      },
+      "income_consistent": {
+        "type": "noul",
+        "noul": 0.03
+      }
+    },
+    "ACC-0076": {
+      "role": {
+        "type": "choice",
+        "choice": "UNRELATED",
+        "confidence": 0.88,
+        "probabilities": {
+          "COLLECTOR": 0.03,
+          "MULE": 0.04,
+          "ORIGINATOR": 0.02,
+          "UNRELATED": 0.91
+        }
+      },
+      "pass_through": {
+        "type": "noul",
+        "noul": 0.03
+      },
+      "network_confidence": {
+        "type": "score",
+        "score": 2.43,
+        "confidence": 0.64,
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.07,
+          "2": 0.49,
+          "3": 0.35,
+          "4": 0.07,
+          "5": 0.01,
+          "6": 0
+        }
+      },
+      "action": {
+        "type": "choice",
+        "choice": "MONITOR",
+        "confidence": 0.61,
+        "probabilities": {
+          "NO_ACTION": 0.23,
+          "MONITOR": 0.71,
+          "RESTRICT_OUTBOUND": 0.06,
+          "FREEZE": 0
+        }
+      },
+      "income_consistent": {
+        "type": "noul",
+        "noul": 1
+      }
+    },
+    "ACC-0077": {
+      "role": {
+        "type": "choice",
+        "choice": "UNRELATED",
+        "confidence": 0.81,
+        "probabilities": {
+          "COLLECTOR": 0.03,
+          "MULE": 0.04,
+          "ORIGINATOR": 0.07,
+          "UNRELATED": 0.86
+        }
+      },
+      "pass_through": {
+        "type": "noul",
+        "noul": 0.05
+      },
+      "network_confidence": {
+        "type": "score",
+        "score": 1.68,
+        "confidence": 0.76,
+        "probabilities": {
+          "0": 0.02,
+          "1": 0.33,
+          "2": 0.6,
+          "3": 0.05,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "action": {
+        "type": "choice",
+        "choice": "MONITOR",
+        "confidence": 0.45,
+        "probabilities": {
+          "NO_ACTION": 0.34,
+          "MONITOR": 0.59,
+          "RESTRICT_OUTBOUND": 0.06,
+          "FREEZE": 0.01
+        }
+      },
+      "income_consistent": {
+        "type": "noul",
+        "noul": 0.46
+      }
+    },
+    "ACC-0078": {
+      "role": {
+        "type": "choice",
+        "choice": "UNRELATED",
+        "confidence": 0.68,
+        "probabilities": {
+          "COLLECTOR": 0.02,
+          "MULE": 0.19,
+          "ORIGINATOR": 0.03,
+          "UNRELATED": 0.76
+        }
+      },
+      "pass_through": {
+        "type": "noul",
+        "noul": 0.05
+      },
+      "network_confidence": {
+        "type": "score",
+        "score": 2.62,
+        "confidence": 0.63,
+        "probabilities": {
+          "0": 0,
+          "1": 0.08,
+          "2": 0.35,
+          "3": 0.45,
+          "4": 0.11,
+          "5": 0.01,
+          "6": 0
+        }
+      },
+      "action": {
+        "type": "choice",
+        "choice": "MONITOR",
+        "confidence": 0.45,
+        "probabilities": {
+          "NO_ACTION": 0.37,
+          "MONITOR": 0.59,
+          "RESTRICT_OUTBOUND": 0.04,
+          "FREEZE": 0
+        }
+      },
+      "income_consistent": {
+        "type": "noul",
+        "noul": 0.98
+      }
+    },
+    "ACC-0079": {
+      "role": {
+        "type": "choice",
+        "choice": "UNRELATED",
+        "confidence": 0.77,
+        "probabilities": {
+          "COLLECTOR": 0.02,
+          "MULE": 0.12,
+          "ORIGINATOR": 0.03,
+          "UNRELATED": 0.83
+        }
+      },
+      "pass_through": {
+        "type": "noul",
+        "noul": 0.05
+      },
+      "network_confidence": {
+        "type": "score",
+        "score": 3,
+        "confidence": 0.71,
+        "probabilities": {
+          "0": 0,
+          "1": 0.02,
+          "2": 0.21,
+          "3": 0.53,
+          "4": 0.23,
+          "5": 0.01,
+          "6": 0
+        }
+      },
+      "action": {
+        "type": "choice",
+        "choice": "MONITOR",
+        "confidence": 0.51,
+        "probabilities": {
+          "NO_ACTION": 0.01,
+          "MONITOR": 0.63,
+          "RESTRICT_OUTBOUND": 0.35,
+          "FREEZE": 0.01
+        }
+      },
+      "income_consistent": {
+        "type": "noul",
+        "noul": 1
+      }
+    },
+    "ACC-0080": {
+      "role": {
+        "type": "choice",
+        "choice": "UNRELATED",
+        "confidence": 0.8,
+        "probabilities": {
+          "COLLECTOR": 0.02,
+          "MULE": 0.04,
+          "ORIGINATOR": 0.09,
+          "UNRELATED": 0.85
+        }
+      },
+      "pass_through": {
+        "type": "noul",
+        "noul": 0.05
+      },
+      "network_confidence": {
+        "type": "score",
+        "score": 2.14,
+        "confidence": 0.6,
+        "probabilities": {
+          "0": 0.04,
+          "1": 0.19,
+          "2": 0.43,
+          "3": 0.28,
+          "4": 0.05,
+          "5": 0.01,
+          "6": 0
+        }
+      },
+      "action": {
+        "type": "choice",
+        "choice": "MONITOR",
+        "confidence": 0.56,
+        "probabilities": {
+          "NO_ACTION": 0.19,
+          "MONITOR": 0.67,
+          "RESTRICT_OUTBOUND": 0.13,
+          "FREEZE": 0.01
+        }
+      },
+      "income_consistent": {
+        "type": "noul",
+        "noul": 0.06
+      }
+    },
+    "ACC-0081": {
+      "role": {
+        "type": "choice",
+        "choice": "UNRELATED",
+        "confidence": 0.92,
+        "probabilities": {
+          "COLLECTOR": 0.01,
+          "MULE": 0.04,
+          "ORIGINATOR": 0.01,
+          "UNRELATED": 0.94
+        }
+      },
+      "pass_through": {
+        "type": "noul",
+        "noul": 0.06
+      },
+      "network_confidence": {
+        "type": "score",
+        "score": 2.83,
+        "confidence": 0.7,
+        "probabilities": {
+          "0": 0,
+          "1": 0.04,
+          "2": 0.26,
+          "3": 0.55,
+          "4": 0.13,
+          "5": 0.02,
+          "6": 0
+        }
+      },
+      "action": {
+        "type": "choice",
+        "choice": "MONITOR",
+        "confidence": 0.61,
+        "probabilities": {
+          "NO_ACTION": 0.27,
+          "MONITOR": 0.71,
+          "RESTRICT_OUTBOUND": 0.02,
+          "FREEZE": 0
+        }
+      },
+      "income_consistent": {
+        "type": "noul",
+        "noul": 0.81
+      }
+    },
+    "ACC-0082": {
+      "role": {
+        "type": "choice",
+        "choice": "UNRELATED",
+        "confidence": 0.53,
+        "probabilities": {
+          "COLLECTOR": 0.03,
+          "MULE": 0.15,
+          "ORIGINATOR": 0.17,
+          "UNRELATED": 0.65
+        }
+      },
+      "pass_through": {
+        "type": "noul",
+        "noul": 0.06
+      },
+      "network_confidence": {
+        "type": "score",
+        "score": 2.38,
+        "confidence": 0.63,
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.11,
+          "2": 0.45,
+          "3": 0.36,
+          "4": 0.06,
+          "5": 0.01,
+          "6": 0
+        }
+      },
+      "action": {
+        "type": "choice",
+        "choice": "MONITOR",
+        "confidence": 0.49,
+        "probabilities": {
+          "NO_ACTION": 0.05,
+          "MONITOR": 0.62,
+          "RESTRICT_OUTBOUND": 0.31,
+          "FREEZE": 0.02
+        }
+      },
+      "income_consistent": {
+        "type": "noul",
+        "noul": 0.19
+      }
+    },
+    "ACC-0083": {
+      "role": {
+        "type": "choice",
+        "choice": "UNRELATED",
+        "confidence": 0.91,
+        "probabilities": {
+          "COLLECTOR": 0.04,
+          "MULE": 0.02,
+          "ORIGINATOR": 0.01,
+          "UNRELATED": 0.93
+        }
+      },
+      "pass_through": {
+        "type": "noul",
+        "noul": 0.05
+      },
+      "network_confidence": {
+        "type": "score",
+        "score": 2.26,
+        "confidence": 0.65,
+        "probabilities": {
+          "0": 0.02,
+          "1": 0.13,
+          "2": 0.5,
+          "3": 0.28,
+          "4": 0.06,
+          "5": 0.01,
+          "6": 0
+        }
+      },
+      "action": {
+        "type": "choice",
+        "choice": "MONITOR",
+        "confidence": 0.39,
+        "probabilities": {
+          "NO_ACTION": 0.4,
+          "MONITOR": 0.54,
+          "RESTRICT_OUTBOUND": 0.05,
+          "FREEZE": 0.01
+        }
+      },
+      "income_consistent": {
+        "type": "noul",
+        "noul": 0.98
+      }
+    },
+    "ACC-0084": {
+      "role": {
+        "type": "choice",
+        "choice": "UNRELATED",
+        "confidence": 0.97,
+        "probabilities": {
+          "COLLECTOR": 0.01,
+          "MULE": 0.01,
+          "ORIGINATOR": 0,
+          "UNRELATED": 0.98
+        }
+      },
+      "pass_through": {
+        "type": "noul",
+        "noul": 0.05
+      },
+      "network_confidence": {
+        "type": "score",
+        "score": 1.94,
+        "confidence": 0.69,
+        "probabilities": {
+          "0": 0.05,
+          "1": 0.2,
+          "2": 0.53,
+          "3": 0.2,
+          "4": 0.02,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "action": {
+        "type": "choice",
+        "choice": "NO_ACTION",
+        "confidence": 0.43,
+        "probabilities": {
+          "NO_ACTION": 0.57,
+          "MONITOR": 0.41,
+          "RESTRICT_OUTBOUND": 0.02,
+          "FREEZE": 0
+        }
+      },
+      "income_consistent": {
+        "type": "noul",
+        "noul": 1
+      }
+    },
+    "ACC-0085": {
+      "role": {
+        "type": "choice",
+        "choice": "UNRELATED",
+        "confidence": 0.91,
+        "probabilities": {
+          "COLLECTOR": 0.01,
+          "MULE": 0.04,
+          "ORIGINATOR": 0.02,
+          "UNRELATED": 0.93
+        }
+      },
+      "pass_through": {
+        "type": "noul",
+        "noul": 0.08
+      },
+      "network_confidence": {
+        "type": "score",
+        "score": 2.63,
+        "confidence": 0.68,
+        "probabilities": {
+          "0": 0,
+          "1": 0.05,
+          "2": 0.36,
+          "3": 0.51,
+          "4": 0.07,
+          "5": 0.01,
+          "6": 0
+        }
+      },
+      "action": {
+        "type": "choice",
+        "choice": "MONITOR",
+        "confidence": 0.33,
+        "probabilities": {
+          "NO_ACTION": 0.48,
+          "MONITOR": 0.5,
+          "RESTRICT_OUTBOUND": 0.02,
+          "FREEZE": 0
+        }
+      },
+      "income_consistent": {
+        "type": "noul",
+        "noul": 0.98
+      }
+    },
+    "ACC-0086": {
+      "role": {
+        "type": "choice",
+        "choice": "UNRELATED",
+        "confidence": 0.76,
+        "probabilities": {
+          "COLLECTOR": 0.01,
+          "MULE": 0.15,
+          "ORIGINATOR": 0.02,
+          "UNRELATED": 0.82
+        }
+      },
+      "pass_through": {
+        "type": "noul",
+        "noul": 0.08
+      },
+      "network_confidence": {
+        "type": "score",
+        "score": 2.05,
+        "confidence": 0.75,
+        "probabilities": {
+          "0": 0.02,
+          "1": 0.15,
+          "2": 0.61,
+          "3": 0.2,
+          "4": 0.02,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "action": {
+        "type": "choice",
+        "choice": "MONITOR",
+        "confidence": 0.33,
+        "probabilities": {
+          "NO_ACTION": 0.48,
+          "MONITOR": 0.5,
+          "RESTRICT_OUTBOUND": 0.02,
+          "FREEZE": 0
+        }
+      },
+      "income_consistent": {
+        "type": "noul",
+        "noul": 0.99
+      }
+    },
+    "ACC-0087": {
+      "role": {
+        "type": "choice",
+        "choice": "UNRELATED",
+        "confidence": 0.8,
+        "probabilities": {
+          "COLLECTOR": 0.01,
+          "MULE": 0.12,
+          "ORIGINATOR": 0.02,
+          "UNRELATED": 0.85
+        }
+      },
+      "pass_through": {
+        "type": "noul",
+        "noul": 0.09
+      },
+      "network_confidence": {
+        "type": "score",
+        "score": 2.77,
+        "confidence": 0.68,
+        "probabilities": {
+          "0": 0,
+          "1": 0.05,
+          "2": 0.29,
+          "3": 0.51,
+          "4": 0.14,
+          "5": 0.01,
+          "6": 0
+        }
+      },
+      "action": {
+        "type": "choice",
+        "choice": "MONITOR",
+        "confidence": 0.49,
+        "probabilities": {
+          "NO_ACTION": 0.33,
+          "MONITOR": 0.62,
+          "RESTRICT_OUTBOUND": 0.05,
+          "FREEZE": 0
+        }
+      },
+      "income_consistent": {
+        "type": "noul",
+        "noul": 0.98
+      }
+    },
+    "ACC-0088": {
+      "role": {
+        "type": "choice",
+        "choice": "MULE",
+        "confidence": 0.41,
+        "probabilities": {
+          "COLLECTOR": 0.01,
+          "MULE": 0.56,
+          "ORIGINATOR": 0.02,
+          "UNRELATED": 0.41
+        }
+      },
+      "pass_through": {
+        "type": "noul",
+        "noul": 0.08
+      },
+      "network_confidence": {
+        "type": "score",
+        "score": 2.55,
+        "confidence": 0.61,
+        "probabilities": {
+          "0": 0,
+          "1": 0.06,
+          "2": 0.45,
+          "3": 0.38,
+          "4": 0.1,
+          "5": 0.01,
+          "6": 0
+        }
+      },
+      "action": {
+        "type": "choice",
+        "choice": "MONITOR",
+        "confidence": 0.73,
+        "probabilities": {
+          "NO_ACTION": 0.04,
+          "MONITOR": 0.8,
+          "RESTRICT_OUTBOUND": 0.15,
+          "FREEZE": 0.01
+        }
+      },
+      "income_consistent": {
+        "type": "noul",
+        "noul": 1
+      }
+    },
+    "ACC-0089": {
+      "role": {
+        "type": "choice",
+        "choice": "UNRELATED",
+        "confidence": 0.79,
+        "probabilities": {
+          "COLLECTOR": 0.1,
+          "MULE": 0.04,
+          "ORIGINATOR": 0.02,
+          "UNRELATED": 0.84
+        }
+      },
+      "pass_through": {
+        "type": "noul",
+        "noul": 0.05
+      },
+      "network_confidence": {
+        "type": "score",
+        "score": 1.81,
+        "confidence": 0.66,
+        "probabilities": {
+          "0": 0.06,
+          "1": 0.27,
+          "2": 0.51,
+          "3": 0.13,
+          "4": 0.02,
+          "5": 0.01,
+          "6": 0
+        }
+      },
+      "action": {
+        "type": "choice",
+        "choice": "MONITOR",
+        "confidence": 0.72,
+        "probabilities": {
+          "NO_ACTION": 0.13,
+          "MONITOR": 0.79,
+          "RESTRICT_OUTBOUND": 0.07,
+          "FREEZE": 0.01
+        }
+      },
+      "income_consistent": {
+        "type": "noul",
+        "noul": 0.31
+      }
+    },
+    "ACC-0090": {
+      "role": {
+        "type": "choice",
+        "choice": "UNRELATED",
+        "confidence": 0.92,
+        "probabilities": {
+          "COLLECTOR": 0.03,
+          "MULE": 0.02,
+          "ORIGINATOR": 0.01,
+          "UNRELATED": 0.94
+        }
+      },
+      "pass_through": {
+        "type": "noul",
+        "noul": 0.06
+      },
+      "network_confidence": {
+        "type": "score",
+        "score": 1.9,
+        "confidence": 0.69,
+        "probabilities": {
+          "0": 0.04,
+          "1": 0.24,
+          "2": 0.54,
+          "3": 0.15,
+          "4": 0.02,
+          "5": 0.01,
+          "6": 0
+        }
+      },
+      "action": {
+        "type": "choice",
+        "choice": "NO_ACTION",
+        "confidence": 0.4,
+        "probabilities": {
+          "NO_ACTION": 0.55,
+          "MONITOR": 0.43,
+          "RESTRICT_OUTBOUND": 0.02,
+          "FREEZE": 0
+        }
+      },
+      "income_consistent": {
+        "type": "noul",
+        "noul": 0.91
+      }
+    },
+    "ACC-0091": {
+      "role": {
+        "type": "choice",
+        "choice": "UNRELATED",
+        "confidence": 0.88,
+        "probabilities": {
+          "COLLECTOR": 0.04,
+          "MULE": 0.03,
+          "ORIGINATOR": 0.02,
+          "UNRELATED": 0.91
+        }
+      },
+      "pass_through": {
+        "type": "noul",
+        "noul": 0.05
+      },
+      "network_confidence": {
+        "type": "score",
+        "score": 2.07,
+        "confidence": 0.77,
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.14,
+          "2": 0.64,
+          "3": 0.19,
+          "4": 0.02,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "action": {
+        "type": "choice",
+        "choice": "MONITOR",
+        "confidence": 0.48,
+        "probabilities": {
+          "NO_ACTION": 0.36,
+          "MONITOR": 0.61,
+          "RESTRICT_OUTBOUND": 0.03,
+          "FREEZE": 0
+        }
+      },
+      "income_consistent": {
+        "type": "noul",
+        "noul": 1
+      }
+    },
+    "ACC-0092": {
+      "role": {
+        "type": "choice",
+        "choice": "UNRELATED",
+        "confidence": 0.76,
+        "probabilities": {
+          "COLLECTOR": 0.01,
+          "MULE": 0.14,
+          "ORIGINATOR": 0.03,
+          "UNRELATED": 0.82
+        }
+      },
+      "pass_through": {
+        "type": "noul",
+        "noul": 0.04
+      },
+      "network_confidence": {
+        "type": "score",
+        "score": 2.71,
+        "confidence": 0.7,
+        "probabilities": {
+          "0": 0,
+          "1": 0.04,
+          "2": 0.32,
+          "3": 0.54,
+          "4": 0.09,
+          "5": 0.01,
+          "6": 0
+        }
+      },
+      "action": {
+        "type": "choice",
+        "choice": "MONITOR",
+        "confidence": 0.69,
+        "probabilities": {
+          "NO_ACTION": 0.05,
+          "MONITOR": 0.77,
+          "RESTRICT_OUTBOUND": 0.17,
+          "FREEZE": 0.01
+        }
+      },
+      "income_consistent": {
+        "type": "noul",
+        "noul": 1
+      }
+    },
+    "ACC-0093": {
+      "role": {
+        "type": "choice",
+        "choice": "UNRELATED",
+        "confidence": 0.88,
+        "probabilities": {
+          "COLLECTOR": 0.06,
+          "MULE": 0.02,
+          "ORIGINATOR": 0.01,
+          "UNRELATED": 0.91
+        }
+      },
+      "pass_through": {
+        "type": "noul",
+        "noul": 0.05
+      },
+      "network_confidence": {
+        "type": "score",
+        "score": 2.24,
+        "confidence": 0.7,
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.12,
+          "2": 0.53,
+          "3": 0.3,
+          "4": 0.04,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "action": {
+        "type": "choice",
+        "choice": "NO_ACTION",
+        "confidence": 0.4,
+        "probabilities": {
+          "NO_ACTION": 0.55,
+          "MONITOR": 0.42,
+          "RESTRICT_OUTBOUND": 0.03,
+          "FREEZE": 0
+        }
+      },
+      "income_consistent": {
+        "type": "noul",
+        "noul": 0.99
+      }
+    },
+    "ACC-0094": {
+      "role": {
+        "type": "choice",
+        "choice": "UNRELATED",
+        "confidence": 0.69,
+        "probabilities": {
+          "COLLECTOR": 0.04,
+          "MULE": 0.16,
+          "ORIGINATOR": 0.03,
+          "UNRELATED": 0.77
+        }
+      },
+      "pass_through": {
+        "type": "noul",
+        "noul": 0.05
+      },
+      "network_confidence": {
+        "type": "score",
+        "score": 2.78,
+        "confidence": 0.72,
+        "probabilities": {
+          "0": 0,
+          "1": 0.04,
+          "2": 0.27,
+          "3": 0.57,
+          "4": 0.11,
+          "5": 0.01,
+          "6": 0
+        }
+      },
+      "action": {
+        "type": "choice",
+        "choice": "MONITOR",
+        "confidence": 0.61,
+        "probabilities": {
+          "NO_ACTION": 0.15,
+          "MONITOR": 0.71,
+          "RESTRICT_OUTBOUND": 0.13,
+          "FREEZE": 0.01
+        }
+      },
+      "income_consistent": {
+        "type": "noul",
+        "noul": 0.17
+      }
+    },
+    "ACC-0095": {
+      "role": {
+        "type": "choice",
+        "choice": "UNRELATED",
+        "confidence": 0.32,
+        "probabilities": {
+          "COLLECTOR": 0,
+          "MULE": 0.49,
+          "ORIGINATOR": 0.02,
+          "UNRELATED": 0.49
+        }
+      },
+      "pass_through": {
+        "type": "noul",
+        "noul": 0.06
+      },
+      "network_confidence": {
+        "type": "score",
+        "score": 2.24,
+        "confidence": 0.72,
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.1,
+          "2": 0.56,
+          "3": 0.3,
+          "4": 0.03,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "action": {
+        "type": "choice",
+        "choice": "MONITOR",
+        "confidence": 0.88,
+        "probabilities": {
+          "NO_ACTION": 0.03,
+          "MONITOR": 0.91,
+          "RESTRICT_OUTBOUND": 0.06,
+          "FREEZE": 0
+        }
+      },
+      "income_consistent": {
+        "type": "noul",
+        "noul": 1
+      }
+    },
+    "ACC-0096": {
+      "role": {
+        "type": "choice",
+        "choice": "UNRELATED",
+        "confidence": 0.95,
+        "probabilities": {
+          "COLLECTOR": 0.01,
+          "MULE": 0.02,
+          "ORIGINATOR": 0.01,
+          "UNRELATED": 0.96
+        }
+      },
+      "pass_through": {
+        "type": "noul",
+        "noul": 0.05
+      },
+      "network_confidence": {
+        "type": "score",
+        "score": 2.18,
+        "confidence": 0.7,
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.15,
+          "2": 0.52,
+          "3": 0.29,
+          "4": 0.03,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "action": {
+        "type": "choice",
+        "choice": "MONITOR",
+        "confidence": 0.51,
+        "probabilities": {
+          "NO_ACTION": 0.34,
+          "MONITOR": 0.63,
+          "RESTRICT_OUTBOUND": 0.03,
+          "FREEZE": 0
+        }
+      },
+      "income_consistent": {
+        "type": "noul",
+        "noul": 1
+      }
+    },
+    "ACC-0097": {
+      "role": {
+        "type": "choice",
+        "choice": "UNRELATED",
+        "confidence": 0.95,
+        "probabilities": {
+          "COLLECTOR": 0.01,
+          "MULE": 0.02,
+          "ORIGINATOR": 0.01,
+          "UNRELATED": 0.96
+        }
+      },
+      "pass_through": {
+        "type": "noul",
+        "noul": 0.04
+      },
+      "network_confidence": {
+        "type": "score",
+        "score": 2.04,
+        "confidence": 0.74,
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.18,
+          "2": 0.6,
+          "3": 0.18,
+          "4": 0.03,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "action": {
+        "type": "choice",
+        "choice": "MONITOR",
+        "confidence": 0.32,
+        "probabilities": {
+          "NO_ACTION": 0.48,
+          "MONITOR": 0.49,
+          "RESTRICT_OUTBOUND": 0.02,
+          "FREEZE": 0.01
+        }
+      },
+      "income_consistent": {
+        "type": "noul",
+        "noul": 0.99
+      }
+    },
+    "ACC-0098": {
+      "role": {
+        "type": "choice",
+        "choice": "UNRELATED",
+        "confidence": 0.85,
+        "probabilities": {
+          "COLLECTOR": 0.09,
+          "MULE": 0.01,
+          "ORIGINATOR": 0.01,
+          "UNRELATED": 0.89
+        }
+      },
+      "pass_through": {
+        "type": "noul",
+        "noul": 0.01
+      },
+      "network_confidence": {
+        "type": "score",
+        "score": 2.03,
+        "confidence": 0.64,
+        "probabilities": {
+          "0": 0.05,
+          "1": 0.19,
+          "2": 0.49,
+          "3": 0.23,
+          "4": 0.03,
+          "5": 0.01,
+          "6": 0
+        }
+      },
+      "action": {
+        "type": "choice",
+        "choice": "NO_ACTION",
+        "confidence": 0.44,
+        "probabilities": {
+          "NO_ACTION": 0.58,
+          "MONITOR": 0.36,
+          "RESTRICT_OUTBOUND": 0.06,
+          "FREEZE": 0
+        }
+      },
+      "income_consistent": {
+        "type": "noul",
+        "noul": 1
+      }
+    },
+    "ACC-0099": {
+      "role": {
+        "type": "choice",
+        "choice": "UNRELATED",
+        "confidence": 0.81,
+        "probabilities": {
+          "COLLECTOR": 0.01,
+          "MULE": 0.1,
+          "ORIGINATOR": 0.03,
+          "UNRELATED": 0.86
+        }
+      },
+      "pass_through": {
+        "type": "noul",
+        "noul": 0.05
+      },
+      "network_confidence": {
+        "type": "score",
+        "score": 2.24,
+        "confidence": 0.67,
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.14,
+          "2": 0.5,
+          "3": 0.31,
+          "4": 0.03,
+          "5": 0.01,
+          "6": 0
+        }
+      },
+      "action": {
+        "type": "choice",
+        "choice": "MONITOR",
+        "confidence": 0.64,
+        "probabilities": {
+          "NO_ACTION": 0.23,
+          "MONITOR": 0.73,
+          "RESTRICT_OUTBOUND": 0.04,
+          "FREEZE": 0
+        }
+      },
+      "income_consistent": {
+        "type": "noul",
+        "noul": 1
+      }
+    },
+    "ACC-0100": {
+      "role": {
+        "type": "choice",
+        "choice": "UNRELATED",
+        "confidence": 0.73,
+        "probabilities": {
+          "COLLECTOR": 0.01,
+          "MULE": 0.14,
+          "ORIGINATOR": 0.05,
+          "UNRELATED": 0.8
+        }
+      },
+      "pass_through": {
+        "type": "noul",
+        "noul": 0.05
+      },
+      "network_confidence": {
+        "type": "score",
+        "score": 2.11,
+        "confidence": 0.69,
+        "probabilities": {
+          "0": 0.03,
+          "1": 0.15,
+          "2": 0.55,
+          "3": 0.23,
+          "4": 0.03,
+          "5": 0.01,
+          "6": 0
+        }
+      },
+      "action": {
+        "type": "choice",
+        "choice": "MONITOR",
+        "confidence": 0.47,
+        "probabilities": {
+          "NO_ACTION": 0.38,
+          "MONITOR": 0.6,
+          "RESTRICT_OUTBOUND": 0.02,
+          "FREEZE": 0
+        }
+      },
+      "income_consistent": {
+        "type": "noul",
+        "noul": 0.42
+      }
+    },
+    "ACC-0101": {
+      "role": {
+        "type": "choice",
+        "choice": "UNRELATED",
+        "confidence": 0.87,
+        "probabilities": {
+          "COLLECTOR": 0.03,
+          "MULE": 0.05,
+          "ORIGINATOR": 0.02,
+          "UNRELATED": 0.9
+        }
+      },
+      "pass_through": {
+        "type": "noul",
+        "noul": 0.06
+      },
+      "network_confidence": {
+        "type": "score",
+        "score": 2.57,
+        "confidence": 0.66,
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.05,
+          "2": 0.38,
+          "3": 0.49,
+          "4": 0.06,
+          "5": 0.01,
+          "6": 0
+        }
+      },
+      "action": {
+        "type": "choice",
+        "choice": "MONITOR",
+        "confidence": 0.31,
+        "probabilities": {
+          "NO_ACTION": 0.45,
+          "MONITOR": 0.48,
+          "RESTRICT_OUTBOUND": 0.06,
+          "FREEZE": 0.01
+        }
+      },
+      "income_consistent": {
+        "type": "noul",
+        "noul": 0.99
+      }
+    },
+    "ACC-0102": {
+      "role": {
+        "type": "choice",
+        "choice": "UNRELATED",
+        "confidence": 0.95,
+        "probabilities": {
+          "COLLECTOR": 0.01,
+          "MULE": 0.02,
+          "ORIGINATOR": 0.01,
+          "UNRELATED": 0.96
+        }
+      },
+      "pass_through": {
+        "type": "noul",
+        "noul": 0.08
+      },
+      "network_confidence": {
+        "type": "score",
+        "score": 2.63,
+        "confidence": 0.66,
+        "probabilities": {
+          "0": 0,
+          "1": 0.05,
+          "2": 0.38,
+          "3": 0.47,
+          "4": 0.09,
+          "5": 0.01,
+          "6": 0
+        }
+      },
+      "action": {
+        "type": "choice",
+        "choice": "MONITOR",
+        "confidence": 0.71,
+        "probabilities": {
+          "NO_ACTION": 0.16,
+          "MONITOR": 0.78,
+          "RESTRICT_OUTBOUND": 0.05,
+          "FREEZE": 0.01
+        }
+      },
+      "income_consistent": {
+        "type": "noul",
+        "noul": 1
+      }
+    },
+    "ACC-0103": {
+      "role": {
+        "type": "choice",
+        "choice": "UNRELATED",
+        "confidence": 0.93,
+        "probabilities": {
+          "COLLECTOR": 0.02,
+          "MULE": 0.02,
+          "ORIGINATOR": 0.01,
+          "UNRELATED": 0.95
+        }
+      },
+      "pass_through": {
+        "type": "noul",
+        "noul": 0.03
+      },
+      "network_confidence": {
+        "type": "score",
+        "score": 2.28,
+        "confidence": 0.64,
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.15,
+          "2": 0.46,
+          "3": 0.32,
+          "4": 0.05,
+          "5": 0.01,
+          "6": 0
+        }
+      },
+      "action": {
+        "type": "choice",
+        "choice": "MONITOR",
+        "confidence": 0.4,
+        "probabilities": {
+          "NO_ACTION": 0.41,
+          "MONITOR": 0.55,
+          "RESTRICT_OUTBOUND": 0.03,
+          "FREEZE": 0.01
+        }
+      },
+      "income_consistent": {
+        "type": "noul",
+        "noul": 0.65
+      }
+    },
+    "ACC-0104": {
+      "role": {
+        "type": "choice",
+        "choice": "UNRELATED",
+        "confidence": 0.92,
+        "probabilities": {
+          "COLLECTOR": 0.03,
+          "MULE": 0.02,
+          "ORIGINATOR": 0.01,
+          "UNRELATED": 0.94
+        }
+      },
+      "pass_through": {
+        "type": "noul",
+        "noul": 0.04
+      },
+      "network_confidence": {
+        "type": "score",
+        "score": 2,
+        "confidence": 0.6,
+        "probabilities": {
+          "0": 0.06,
+          "1": 0.22,
+          "2": 0.45,
+          "3": 0.21,
+          "4": 0.05,
+          "5": 0.01,
+          "6": 0
+        }
+      },
+      "action": {
+        "type": "choice",
+        "choice": "MONITOR",
+        "confidence": 0.37,
+        "probabilities": {
+          "NO_ACTION": 0.44,
+          "MONITOR": 0.53,
+          "RESTRICT_OUTBOUND": 0.03,
+          "FREEZE": 0
+        }
+      },
+      "income_consistent": {
+        "type": "noul",
+        "noul": 1
+      }
+    },
+    "ACC-0105": {
+      "role": {
+        "type": "choice",
+        "choice": "UNRELATED",
+        "confidence": 0.69,
+        "probabilities": {
+          "COLLECTOR": 0.03,
+          "MULE": 0.12,
+          "ORIGINATOR": 0.08,
+          "UNRELATED": 0.77
+        }
+      },
+      "pass_through": {
+        "type": "noul",
+        "noul": 0.08
+      },
+      "network_confidence": {
+        "type": "score",
+        "score": 2.84,
+        "confidence": 0.7,
+        "probabilities": {
+          "0": 0,
+          "1": 0.04,
+          "2": 0.26,
+          "3": 0.53,
+          "4": 0.16,
+          "5": 0.01,
+          "6": 0
+        }
+      },
+      "action": {
+        "type": "choice",
+        "choice": "MONITOR",
+        "confidence": 0.84,
+        "probabilities": {
+          "NO_ACTION": 0.05,
+          "MONITOR": 0.88,
+          "RESTRICT_OUTBOUND": 0.07,
+          "FREEZE": 0
+        }
+      },
+      "income_consistent": {
+        "type": "noul",
+        "noul": 1
+      }
+    },
+    "ACC-0106": {
+      "role": {
+        "type": "choice",
+        "choice": "UNRELATED",
+        "confidence": 0.97,
+        "probabilities": {
+          "COLLECTOR": 0.01,
+          "MULE": 0.01,
+          "ORIGINATOR": 0,
+          "UNRELATED": 0.98
+        }
+      },
+      "pass_through": {
+        "type": "noul",
+        "noul": 0.08
+      },
+      "network_confidence": {
+        "type": "score",
+        "score": 2.8,
+        "confidence": 0.78,
+        "probabilities": {
+          "0": 0,
+          "1": 0.02,
+          "2": 0.25,
+          "3": 0.65,
+          "4": 0.07,
+          "5": 0.01,
+          "6": 0
+        }
+      },
+      "action": {
+        "type": "choice",
+        "choice": "MONITOR",
+        "confidence": 0.68,
+        "probabilities": {
+          "NO_ACTION": 0.2,
+          "MONITOR": 0.76,
+          "RESTRICT_OUTBOUND": 0.04,
+          "FREEZE": 0
+        }
+      },
+      "income_consistent": {
+        "type": "noul",
+        "noul": 0.88
+      }
+    },
+    "ACC-0107": {
+      "role": {
+        "type": "choice",
+        "choice": "UNRELATED",
+        "confidence": 0.88,
+        "probabilities": {
+          "COLLECTOR": 0.01,
+          "MULE": 0.06,
+          "ORIGINATOR": 0.02,
+          "UNRELATED": 0.91
+        }
+      },
+      "pass_through": {
+        "type": "noul",
+        "noul": 0.05
+      },
+      "network_confidence": {
+        "type": "score",
+        "score": 2.38,
+        "confidence": 0.64,
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.1,
+          "2": 0.43,
+          "3": 0.42,
+          "4": 0.04,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "action": {
+        "type": "choice",
+        "choice": "MONITOR",
+        "confidence": 0.68,
+        "probabilities": {
+          "NO_ACTION": 0.2,
+          "MONITOR": 0.76,
+          "RESTRICT_OUTBOUND": 0.04,
+          "FREEZE": 0
+        }
+      },
+      "income_consistent": {
+        "type": "noul",
+        "noul": 0.14
+      }
+    },
+    "ACC-0108": {
+      "role": {
+        "type": "choice",
+        "choice": "UNRELATED",
+        "confidence": 0.68,
+        "probabilities": {
+          "COLLECTOR": 0.01,
+          "MULE": 0.21,
+          "ORIGINATOR": 0.02,
+          "UNRELATED": 0.76
+        }
+      },
+      "pass_through": {
+        "type": "noul",
+        "noul": 0.09
+      },
+      "network_confidence": {
+        "type": "score",
+        "score": 2.54,
+        "confidence": 0.64,
+        "probabilities": {
+          "0": 0,
+          "1": 0.06,
+          "2": 0.42,
+          "3": 0.45,
+          "4": 0.06,
+          "5": 0.01,
+          "6": 0
+        }
+      },
+      "action": {
+        "type": "choice",
+        "choice": "MONITOR",
+        "confidence": 0.81,
+        "probabilities": {
+          "NO_ACTION": 0.07,
+          "MONITOR": 0.86,
+          "RESTRICT_OUTBOUND": 0.07,
+          "FREEZE": 0
+        }
+      },
+      "income_consistent": {
+        "type": "noul",
+        "noul": 0.97
+      }
+    },
+    "ACC-0109": {
+      "role": {
+        "type": "choice",
+        "choice": "UNRELATED",
+        "confidence": 0.95,
+        "probabilities": {
+          "COLLECTOR": 0.01,
+          "MULE": 0.02,
+          "ORIGINATOR": 0.01,
+          "UNRELATED": 0.96
+        }
+      },
+      "pass_through": {
+        "type": "noul",
+        "noul": 0.05
+      },
+      "network_confidence": {
+        "type": "score",
+        "score": 1.66,
+        "confidence": 0.67,
+        "probabilities": {
+          "0": 0.06,
+          "1": 0.33,
+          "2": 0.51,
+          "3": 0.09,
+          "4": 0.01,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "action": {
+        "type": "choice",
+        "choice": "NO_ACTION",
+        "confidence": 0.39,
+        "probabilities": {
+          "NO_ACTION": 0.54,
+          "MONITOR": 0.43,
+          "RESTRICT_OUTBOUND": 0.03,
+          "FREEZE": 0
+        }
+      },
+      "income_consistent": {
+        "type": "noul",
+        "noul": 1
+      }
+    },
+    "ACC-0110": {
+      "role": {
+        "type": "choice",
+        "choice": "MULE",
+        "confidence": 0.75,
+        "probabilities": {
+          "COLLECTOR": 0,
+          "MULE": 0.81,
+          "ORIGINATOR": 0.02,
+          "UNRELATED": 0.17
+        }
+      },
+      "pass_through": {
+        "type": "noul",
+        "noul": 0.13
+      },
+      "network_confidence": {
+        "type": "score",
+        "score": 3.12,
+        "confidence": 0.71,
+        "probabilities": {
+          "0": 0,
+          "1": 0.02,
+          "2": 0.15,
+          "3": 0.54,
+          "4": 0.27,
+          "5": 0.02,
+          "6": 0
+        }
+      },
+      "action": {
+        "type": "choice",
+        "choice": "MONITOR",
+        "confidence": 0.59,
+        "probabilities": {
+          "NO_ACTION": 0.14,
+          "MONITOR": 0.69,
+          "RESTRICT_OUTBOUND": 0.16,
+          "FREEZE": 0.01
+        }
+      },
+      "income_consistent": {
+        "type": "noul",
+        "noul": 0.94
+      }
+    },
+    "ACC-0111": {
+      "role": {
+        "type": "choice",
+        "choice": "UNRELATED",
+        "confidence": 0.63,
+        "probabilities": {
+          "COLLECTOR": 0.04,
+          "MULE": 0.22,
+          "ORIGINATOR": 0.02,
+          "UNRELATED": 0.72
+        }
+      },
+      "pass_through": {
+        "type": "noul",
+        "noul": 0.06
+      },
+      "network_confidence": {
+        "type": "score",
+        "score": 2.98,
+        "confidence": 0.59,
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.04,
+          "2": 0.25,
+          "3": 0.41,
+          "4": 0.24,
+          "5": 0.05,
+          "6": 0
+        }
+      },
+      "action": {
+        "type": "choice",
+        "choice": "MONITOR",
+        "confidence": 0.45,
+        "probabilities": {
+          "NO_ACTION": 0.34,
+          "MONITOR": 0.59,
+          "RESTRICT_OUTBOUND": 0.07,
+          "FREEZE": 0
+        }
+      },
+      "income_consistent": {
+        "type": "noul",
+        "noul": 1
+      }
+    },
+    "ACC-0112": {
+      "role": {
+        "type": "choice",
+        "choice": "UNRELATED",
+        "confidence": 0.95,
+        "probabilities": {
+          "COLLECTOR": 0.01,
+          "MULE": 0.02,
+          "ORIGINATOR": 0.01,
+          "UNRELATED": 0.96
+        }
+      },
+      "pass_through": {
+        "type": "noul",
+        "noul": 0.03
+      },
+      "network_confidence": {
+        "type": "score",
+        "score": 1.73,
+        "confidence": 0.74,
+        "probabilities": {
+          "0": 0.04,
+          "1": 0.28,
+          "2": 0.6,
+          "3": 0.07,
+          "4": 0.01,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "action": {
+        "type": "choice",
+        "choice": "NO_ACTION",
+        "confidence": 0.69,
+        "probabilities": {
+          "NO_ACTION": 0.77,
+          "MONITOR": 0.22,
+          "RESTRICT_OUTBOUND": 0.01,
+          "FREEZE": 0
+        }
+      },
+      "income_consistent": {
+        "type": "noul",
+        "noul": 1
+      }
+    },
+    "ACC-0113": {
+      "role": {
+        "type": "choice",
+        "choice": "UNRELATED",
+        "confidence": 0.72,
+        "probabilities": {
+          "COLLECTOR": 0.02,
+          "MULE": 0.14,
+          "ORIGINATOR": 0.05,
+          "UNRELATED": 0.79
+        }
+      },
+      "pass_through": {
+        "type": "noul",
+        "noul": 0.1
+      },
+      "network_confidence": {
+        "type": "score",
+        "score": 2.63,
+        "confidence": 0.64,
+        "probabilities": {
+          "0": 0,
+          "1": 0.04,
+          "2": 0.41,
+          "3": 0.44,
+          "4": 0.1,
+          "5": 0.01,
+          "6": 0
+        }
+      },
+      "action": {
+        "type": "choice",
+        "choice": "MONITOR",
+        "confidence": 0.71,
+        "probabilities": {
+          "NO_ACTION": 0.18,
+          "MONITOR": 0.78,
+          "RESTRICT_OUTBOUND": 0.04,
+          "FREEZE": 0
+        }
+      },
+      "income_consistent": {
+        "type": "noul",
+        "noul": 1
+      }
+    },
+    "ACC-0114": {
+      "role": {
+        "type": "choice",
+        "choice": "UNRELATED",
+        "confidence": 0.41,
+        "probabilities": {
+          "COLLECTOR": 0.05,
+          "MULE": 0.23,
+          "ORIGINATOR": 0.16,
+          "UNRELATED": 0.56
+        }
+      },
+      "pass_through": {
+        "type": "noul",
+        "noul": 0.07
+      },
+      "network_confidence": {
+        "type": "score",
+        "score": 2.45,
+        "confidence": 0.67,
+        "probabilities": {
+          "0": 0,
+          "1": 0.06,
+          "2": 0.48,
+          "3": 0.42,
+          "4": 0.03,
+          "5": 0.01,
+          "6": 0
+        }
+      },
+      "action": {
+        "type": "choice",
+        "choice": "MONITOR",
+        "confidence": 0.57,
+        "probabilities": {
+          "NO_ACTION": 0.09,
+          "MONITOR": 0.68,
+          "RESTRICT_OUTBOUND": 0.22,
+          "FREEZE": 0.01
+        }
+      },
+      "income_consistent": {
+        "type": "noul",
+        "noul": 0.98
+      }
+    },
+    "ACC-0115": {
+      "role": {
+        "type": "choice",
+        "choice": "UNRELATED",
+        "confidence": 0.88,
+        "probabilities": {
+          "COLLECTOR": 0.01,
+          "MULE": 0.04,
+          "ORIGINATOR": 0.04,
+          "UNRELATED": 0.91
+        }
+      },
+      "pass_through": {
+        "type": "noul",
+        "noul": 0.07
+      },
+      "network_confidence": {
+        "type": "score",
+        "score": 1.91,
+        "confidence": 0.77,
+        "probabilities": {
+          "0": 0.02,
+          "1": 0.2,
+          "2": 0.64,
+          "3": 0.13,
+          "4": 0.01,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "action": {
+        "type": "choice",
+        "choice": "MONITOR",
+        "confidence": 0.45,
+        "probabilities": {
+          "NO_ACTION": 0.4,
+          "MONITOR": 0.59,
+          "RESTRICT_OUTBOUND": 0.01,
+          "FREEZE": 0
+        }
+      },
+      "income_consistent": {
+        "type": "noul",
+        "noul": 1
+      }
+    },
+    "ACC-0116": {
+      "role": {
+        "type": "choice",
+        "choice": "UNRELATED",
+        "confidence": 0.77,
+        "probabilities": {
+          "COLLECTOR": 0.03,
+          "MULE": 0.1,
+          "ORIGINATOR": 0.04,
+          "UNRELATED": 0.83
+        }
+      },
+      "pass_through": {
+        "type": "noul",
+        "noul": 0.07
+      },
+      "network_confidence": {
+        "type": "score",
+        "score": 2.75,
+        "confidence": 0.69,
+        "probabilities": {
+          "0": 0,
+          "1": 0.03,
+          "2": 0.33,
+          "3": 0.51,
+          "4": 0.12,
+          "5": 0.01,
+          "6": 0
+        }
+      },
+      "action": {
+        "type": "choice",
+        "choice": "MONITOR",
+        "confidence": 0.65,
+        "probabilities": {
+          "NO_ACTION": 0.19,
+          "MONITOR": 0.74,
+          "RESTRICT_OUTBOUND": 0.07,
+          "FREEZE": 0
+        }
+      },
+      "income_consistent": {
+        "type": "noul",
+        "noul": 0.31
+      }
+    },
+    "ACC-0117": {
+      "role": {
+        "type": "choice",
+        "choice": "UNRELATED",
+        "confidence": 0.8,
+        "probabilities": {
+          "COLLECTOR": 0.01,
+          "MULE": 0.09,
+          "ORIGINATOR": 0.05,
+          "UNRELATED": 0.85
+        }
+      },
+      "pass_through": {
+        "type": "noul",
+        "noul": 0.06
+      },
+      "network_confidence": {
+        "type": "score",
+        "score": 2.69,
+        "confidence": 0.7,
+        "probabilities": {
+          "0": 0,
+          "1": 0.04,
+          "2": 0.33,
+          "3": 0.54,
+          "4": 0.08,
+          "5": 0.01,
+          "6": 0
+        }
+      },
+      "action": {
+        "type": "choice",
+        "choice": "MONITOR",
+        "confidence": 0.63,
+        "probabilities": {
+          "NO_ACTION": 0.16,
+          "MONITOR": 0.72,
+          "RESTRICT_OUTBOUND": 0.11,
+          "FREEZE": 0.01
+        }
+      },
+      "income_consistent": {
+        "type": "noul",
+        "noul": 1
+      }
+    },
+    "ACC-0118": {
+      "role": {
+        "type": "choice",
+        "choice": "UNRELATED",
+        "confidence": 0.88,
+        "probabilities": {
+          "COLLECTOR": 0.03,
+          "MULE": 0.03,
+          "ORIGINATOR": 0.03,
+          "UNRELATED": 0.91
+        }
+      },
+      "pass_through": {
+        "type": "noul",
+        "noul": 0.06
+      },
+      "network_confidence": {
+        "type": "score",
+        "score": 2.33,
+        "confidence": 0.59,
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.17,
+          "2": 0.41,
+          "3": 0.32,
+          "4": 0.07,
+          "5": 0.02,
+          "6": 0
+        }
+      },
+      "action": {
+        "type": "choice",
+        "choice": "NO_ACTION",
+        "confidence": 0.36,
+        "probabilities": {
+          "NO_ACTION": 0.52,
+          "MONITOR": 0.46,
+          "RESTRICT_OUTBOUND": 0.02,
+          "FREEZE": 0
+        }
+      },
+      "income_consistent": {
+        "type": "noul",
+        "noul": 0.99
+      }
+    },
+    "ACC-0119": {
+      "role": {
+        "type": "choice",
+        "choice": "MULE",
+        "confidence": 0.31,
+        "probabilities": {
+          "COLLECTOR": 0.02,
+          "MULE": 0.48,
+          "ORIGINATOR": 0.02,
+          "UNRELATED": 0.48
+        }
+      },
+      "pass_through": {
+        "type": "noul",
+        "noul": 0.08
+      },
+      "network_confidence": {
+        "type": "score",
+        "score": 3.21,
+        "confidence": 0.69,
+        "probabilities": {
+          "0": 0,
+          "1": 0.01,
+          "2": 0.14,
+          "3": 0.51,
+          "4": 0.31,
+          "5": 0.03,
+          "6": 0
+        }
+      },
+      "action": {
+        "type": "choice",
+        "choice": "MONITOR",
+        "confidence": 0.69,
+        "probabilities": {
+          "NO_ACTION": 0.09,
+          "MONITOR": 0.77,
+          "RESTRICT_OUTBOUND": 0.13,
+          "FREEZE": 0.01
+        }
+      },
+      "income_consistent": {
+        "type": "noul",
+        "noul": 0.99
+      }
+    },
+    "ACC-0120": {
+      "role": {
+        "type": "choice",
+        "choice": "UNRELATED",
+        "confidence": 0.68,
+        "probabilities": {
+          "COLLECTOR": 0.01,
+          "MULE": 0.21,
+          "ORIGINATOR": 0.02,
+          "UNRELATED": 0.76
+        }
+      },
+      "pass_through": {
+        "type": "noul",
+        "noul": 0.06
+      },
+      "network_confidence": {
+        "type": "score",
+        "score": 2.25,
+        "confidence": 0.62,
+        "probabilities": {
+          "0": 0.02,
+          "1": 0.16,
+          "2": 0.45,
+          "3": 0.3,
+          "4": 0.06,
+          "5": 0.01,
+          "6": 0
+        }
+      },
+      "action": {
+        "type": "choice",
+        "choice": "MONITOR",
+        "confidence": 0.53,
+        "probabilities": {
+          "NO_ACTION": 0.31,
+          "MONITOR": 0.65,
+          "RESTRICT_OUTBOUND": 0.04,
+          "FREEZE": 0
+        }
+      },
+      "income_consistent": {
+        "type": "noul",
+        "noul": 0.9
+      }
+    }
+  }
+}

@@ -1,0 +1,2833 @@
+{
+  "demo": "bank-reconciliation",
+  "provider": "openai",
+  "model": "gpt-6-luna",
+  "recordedAt": "2026-10-11",
+  "source": "scripts/record-demo.js",
+  "usage": {
+    "input_tokens": 95125,
+    "output_tokens": 0
+  },
+  "answers": {
+    "S-0011": {
+      "best_match": {
+        "type": "choice",
+        "choice": "NONE",
+        "confidence": 0.94,
+        "probabilities": {
+          "CANDIDATE_1": 0.01,
+          "CANDIDATE_2": 0.01,
+          "CANDIDATE_3": 0.01,
+          "CANDIDATE_4": 0.01,
+          "CANDIDATE_5": 0.01,
+          "NONE": 0.95
+        }
+      },
+      "match_quality": {
+        "type": "score",
+        "score": 0.35,
+        "confidence": 0.8,
+        "probabilities": {
+          "0": 0.79,
+          "1": 0.16,
+          "2": 0.01,
+          "3": 0.01,
+          "4": 0.02,
+          "5": 0,
+          "6": 0.01
+        }
+      },
+      "break_reason": {
+        "type": "choice",
+        "choice": "BANK_FEE",
+        "confidence": 0.69,
+        "probabilities": {
+          "TIMING": 0.02,
+          "BANK_FEE": 0.73,
+          "FX_DIFFERENCE": 0.01,
+          "PARTIAL_PAYMENT": 0.01,
+          "DUPLICATE": 0.02,
+          "MISSING_IN_BOOKS": 0.2,
+          "MATCHED": 0.01
+        }
+      },
+      "auto_clear": {
+        "type": "noul",
+        "noul": 0
+      }
+    },
+    "S-0024": {
+      "best_match": {
+        "type": "choice",
+        "choice": "CANDIDATE_1",
+        "confidence": 0.65,
+        "probabilities": {
+          "CANDIDATE_1": 0.71,
+          "CANDIDATE_2": 0.02,
+          "CANDIDATE_3": 0.01,
+          "CANDIDATE_4": 0.01,
+          "CANDIDATE_5": 0,
+          "NONE": 0.25
+        }
+      },
+      "match_quality": {
+        "type": "score",
+        "score": 2.72,
+        "confidence": 0.08,
+        "probabilities": {
+          "0": 0.1,
+          "1": 0.16,
+          "2": 0.18,
+          "3": 0.19,
+          "4": 0.24,
+          "5": 0.11,
+          "6": 0.02
+        }
+      },
+      "break_reason": {
+        "type": "choice",
+        "choice": "PARTIAL_PAYMENT",
+        "confidence": 1,
+        "probabilities": {
+          "TIMING": 0,
+          "BANK_FEE": 0,
+          "FX_DIFFERENCE": 0,
+          "PARTIAL_PAYMENT": 1,
+          "DUPLICATE": 0,
+          "MISSING_IN_BOOKS": 0,
+          "MATCHED": 0
+        }
+      },
+      "auto_clear": {
+        "type": "noul",
+        "noul": 0
+      }
+    },
+    "S-0032": {
+      "best_match": {
+        "type": "choice",
+        "choice": "CANDIDATE_1",
+        "confidence": 0.4,
+        "probabilities": {
+          "CANDIDATE_1": 0.5,
+          "CANDIDATE_2": 0.03,
+          "CANDIDATE_3": 0.01,
+          "CANDIDATE_4": 0,
+          "CANDIDATE_5": 0.01,
+          "NONE": 0.45
+        }
+      },
+      "match_quality": {
+        "type": "score",
+        "score": 2.7,
+        "confidence": 0.29,
+        "probabilities": {
+          "0": 0.07,
+          "1": 0.18,
+          "2": 0.19,
+          "3": 0.27,
+          "4": 0.16,
+          "5": 0.09,
+          "6": 0.04
+        }
+      },
+      "break_reason": {
+        "type": "choice",
+        "choice": "PARTIAL_PAYMENT",
+        "confidence": 0.93,
+        "probabilities": {
+          "TIMING": 0.01,
+          "BANK_FEE": 0.01,
+          "FX_DIFFERENCE": 0.01,
+          "PARTIAL_PAYMENT": 0.94,
+          "DUPLICATE": 0.02,
+          "MISSING_IN_BOOKS": 0,
+          "MATCHED": 0.01
+        }
+      },
+      "auto_clear": {
+        "type": "noul",
+        "noul": 0.01
+      }
+    },
+    "S-0033": {
+      "best_match": {
+        "type": "choice",
+        "choice": "CANDIDATE_1",
+        "confidence": 0.99,
+        "probabilities": {
+          "CANDIDATE_1": 0.99,
+          "CANDIDATE_2": 0,
+          "CANDIDATE_3": 0,
+          "CANDIDATE_4": 0,
+          "CANDIDATE_5": 0.01,
+          "NONE": 0
+        }
+      },
+      "match_quality": {
+        "type": "score",
+        "score": 5.22,
+        "confidence": 0.65,
+        "probabilities": {
+          "0": 0,
+          "1": 0.01,
+          "2": 0.01,
+          "3": 0.02,
+          "4": 0.08,
+          "5": 0.47,
+          "6": 0.41
+        }
+      },
+      "break_reason": {
+        "type": "choice",
+        "choice": "MATCHED",
+        "confidence": 0.81,
+        "probabilities": {
+          "TIMING": 0.12,
+          "BANK_FEE": 0.02,
+          "FX_DIFFERENCE": 0.01,
+          "PARTIAL_PAYMENT": 0,
+          "DUPLICATE": 0.01,
+          "MISSING_IN_BOOKS": 0,
+          "MATCHED": 0.84
+        }
+      },
+      "auto_clear": {
+        "type": "noul",
+        "noul": 0.99
+      }
+    },
+    "S-0040": {
+      "best_match": {
+        "type": "choice",
+        "choice": "CANDIDATE_1",
+        "confidence": 0.36,
+        "probabilities": {
+          "CANDIDATE_1": 0.47,
+          "CANDIDATE_2": 0.04,
+          "CANDIDATE_3": 0.01,
+          "CANDIDATE_4": 0,
+          "CANDIDATE_5": 0.01,
+          "NONE": 0.47
+        }
+      },
+      "match_quality": {
+        "type": "score",
+        "score": 2.88,
+        "confidence": 0.26,
+        "probabilities": {
+          "0": 0.08,
+          "1": 0.12,
+          "2": 0.21,
+          "3": 0.23,
+          "4": 0.18,
+          "5": 0.15,
+          "6": 0.03
+        }
+      },
+      "break_reason": {
+        "type": "choice",
+        "choice": "FX_DIFFERENCE",
+        "confidence": 0.92,
+        "probabilities": {
+          "TIMING": 0.02,
+          "BANK_FEE": 0.02,
+          "FX_DIFFERENCE": 0.93,
+          "PARTIAL_PAYMENT": 0.01,
+          "DUPLICATE": 0.01,
+          "MISSING_IN_BOOKS": 0,
+          "MATCHED": 0.01
+        }
+      },
+      "auto_clear": {
+        "type": "noul",
+        "noul": 0
+      }
+    },
+    "S-0041": {
+      "best_match": {
+        "type": "choice",
+        "choice": "NONE",
+        "confidence": 0.92,
+        "probabilities": {
+          "CANDIDATE_1": 0.01,
+          "CANDIDATE_2": 0.03,
+          "CANDIDATE_3": 0.01,
+          "CANDIDATE_4": 0.01,
+          "CANDIDATE_5": 0.01,
+          "NONE": 0.93
+        }
+      },
+      "match_quality": {
+        "type": "score",
+        "score": 0.68,
+        "confidence": 0.6,
+        "probabilities": {
+          "0": 0.65,
+          "1": 0.18,
+          "2": 0.09,
+          "3": 0.03,
+          "4": 0.03,
+          "5": 0.01,
+          "6": 0.01
+        }
+      },
+      "break_reason": {
+        "type": "choice",
+        "choice": "MISSING_IN_BOOKS",
+        "confidence": 0.52,
+        "probabilities": {
+          "TIMING": 0.04,
+          "BANK_FEE": 0.08,
+          "FX_DIFFERENCE": 0.03,
+          "PARTIAL_PAYMENT": 0.06,
+          "DUPLICATE": 0.13,
+          "MISSING_IN_BOOKS": 0.59,
+          "MATCHED": 0.07
+        }
+      },
+      "auto_clear": {
+        "type": "noul",
+        "noul": 0
+      }
+    },
+    "S-0042": {
+      "best_match": {
+        "type": "choice",
+        "choice": "CANDIDATE_1",
+        "confidence": 1,
+        "probabilities": {
+          "CANDIDATE_1": 1,
+          "CANDIDATE_2": 0,
+          "CANDIDATE_3": 0,
+          "CANDIDATE_4": 0,
+          "CANDIDATE_5": 0,
+          "NONE": 0
+        }
+      },
+      "match_quality": {
+        "type": "score",
+        "score": 4.47,
+        "confidence": 0.52,
+        "probabilities": {
+          "0": 0.02,
+          "1": 0.03,
+          "2": 0.04,
+          "3": 0.08,
+          "4": 0.18,
+          "5": 0.5,
+          "6": 0.15
+        }
+      },
+      "break_reason": {
+        "type": "choice",
+        "choice": "MATCHED",
+        "confidence": 0.82,
+        "probabilities": {
+          "TIMING": 0.12,
+          "BANK_FEE": 0.01,
+          "FX_DIFFERENCE": 0.01,
+          "PARTIAL_PAYMENT": 0,
+          "DUPLICATE": 0.01,
+          "MISSING_IN_BOOKS": 0,
+          "MATCHED": 0.85
+        }
+      },
+      "auto_clear": {
+        "type": "noul",
+        "noul": 0.9
+      }
+    },
+    "S-0043": {
+      "best_match": {
+        "type": "choice",
+        "choice": "CANDIDATE_1",
+        "confidence": 0.99,
+        "probabilities": {
+          "CANDIDATE_1": 0.99,
+          "CANDIDATE_2": 0,
+          "CANDIDATE_3": 0,
+          "CANDIDATE_4": 0,
+          "CANDIDATE_5": 0,
+          "NONE": 0.01
+        }
+      },
+      "match_quality": {
+        "type": "score",
+        "score": 4.7,
+        "confidence": 0.64,
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.01,
+          "2": 0.02,
+          "3": 0.05,
+          "4": 0.21,
+          "5": 0.54,
+          "6": 0.16
+        }
+      },
+      "break_reason": {
+        "type": "choice",
+        "choice": "MATCHED",
+        "confidence": 0.78,
+        "probabilities": {
+          "TIMING": 0.13,
+          "BANK_FEE": 0.02,
+          "FX_DIFFERENCE": 0.01,
+          "PARTIAL_PAYMENT": 0.01,
+          "DUPLICATE": 0.01,
+          "MISSING_IN_BOOKS": 0.01,
+          "MATCHED": 0.81
+        }
+      },
+      "auto_clear": {
+        "type": "noul",
+        "noul": 0.3
+      }
+    },
+    "S-0053": {
+      "best_match": {
+        "type": "choice",
+        "choice": "NONE",
+        "confidence": 0.99,
+        "probabilities": {
+          "CANDIDATE_1": 0,
+          "CANDIDATE_2": 0.01,
+          "CANDIDATE_3": 0,
+          "CANDIDATE_4": 0,
+          "CANDIDATE_5": 0,
+          "NONE": 0.99
+        }
+      },
+      "match_quality": {
+        "type": "score",
+        "score": 0.4,
+        "confidence": 0.77,
+        "probabilities": {
+          "0": 0.66,
+          "1": 0.31,
+          "2": 0.01,
+          "3": 0.01,
+          "4": 0.01,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "break_reason": {
+        "type": "choice",
+        "choice": "BANK_FEE",
+        "confidence": 0.73,
+        "probabilities": {
+          "TIMING": 0,
+          "BANK_FEE": 0.77,
+          "FX_DIFFERENCE": 0.01,
+          "PARTIAL_PAYMENT": 0,
+          "DUPLICATE": 0.01,
+          "MISSING_IN_BOOKS": 0.2,
+          "MATCHED": 0.01
+        }
+      },
+      "auto_clear": {
+        "type": "noul",
+        "noul": 0
+      }
+    },
+    "S-0058": {
+      "best_match": {
+        "type": "choice",
+        "choice": "NONE",
+        "confidence": 0.29,
+        "probabilities": {
+          "CANDIDATE_1": 0.17,
+          "CANDIDATE_2": 0.39,
+          "CANDIDATE_3": 0.01,
+          "CANDIDATE_4": 0.01,
+          "CANDIDATE_5": 0.01,
+          "NONE": 0.41
+        }
+      },
+      "match_quality": {
+        "type": "score",
+        "score": 4.09,
+        "confidence": 0.28,
+        "probabilities": {
+          "0": 0.03,
+          "1": 0.05,
+          "2": 0.09,
+          "3": 0.1,
+          "4": 0.25,
+          "5": 0.32,
+          "6": 0.16
+        }
+      },
+      "break_reason": {
+        "type": "choice",
+        "choice": "TIMING",
+        "confidence": 0.51,
+        "probabilities": {
+          "TIMING": 0.58,
+          "BANK_FEE": 0.03,
+          "FX_DIFFERENCE": 0.04,
+          "PARTIAL_PAYMENT": 0.01,
+          "DUPLICATE": 0.02,
+          "MISSING_IN_BOOKS": 0.02,
+          "MATCHED": 0.3
+        }
+      },
+      "auto_clear": {
+        "type": "noul",
+        "noul": 0.01
+      }
+    },
+    "S-0059": {
+      "best_match": {
+        "type": "choice",
+        "choice": "CANDIDATE_2",
+        "confidence": 0.96,
+        "probabilities": {
+          "CANDIDATE_1": 0.03,
+          "CANDIDATE_2": 0.97,
+          "CANDIDATE_3": 0,
+          "CANDIDATE_4": 0,
+          "CANDIDATE_5": 0,
+          "NONE": 0
+        }
+      },
+      "match_quality": {
+        "type": "score",
+        "score": 5.7,
+        "confidence": 0.83,
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.02,
+          "2": 0.01,
+          "3": 0.01,
+          "4": 0.02,
+          "5": 0.03,
+          "6": 0.9
+        }
+      },
+      "break_reason": {
+        "type": "choice",
+        "choice": "MATCHED",
+        "confidence": 0.39,
+        "probabilities": {
+          "TIMING": 0.29,
+          "BANK_FEE": 0.08,
+          "FX_DIFFERENCE": 0.09,
+          "PARTIAL_PAYMENT": 0.02,
+          "DUPLICATE": 0.02,
+          "MISSING_IN_BOOKS": 0.02,
+          "MATCHED": 0.48
+        }
+      },
+      "auto_clear": {
+        "type": "noul",
+        "noul": 0.8
+      }
+    },
+    "S-0060": {
+      "best_match": {
+        "type": "choice",
+        "choice": "CANDIDATE_1",
+        "confidence": 0.65,
+        "probabilities": {
+          "CANDIDATE_1": 0.71,
+          "CANDIDATE_2": 0.02,
+          "CANDIDATE_3": 0.01,
+          "CANDIDATE_4": 0,
+          "CANDIDATE_5": 0,
+          "NONE": 0.26
+        }
+      },
+      "match_quality": {
+        "type": "score",
+        "score": 4.51,
+        "confidence": 0.13,
+        "probabilities": {
+          "0": 0.03,
+          "1": 0.07,
+          "2": 0.06,
+          "3": 0.07,
+          "4": 0.12,
+          "5": 0.27,
+          "6": 0.38
+        }
+      },
+      "break_reason": {
+        "type": "choice",
+        "choice": "DUPLICATE",
+        "confidence": 0.84,
+        "probabilities": {
+          "TIMING": 0.03,
+          "BANK_FEE": 0.01,
+          "FX_DIFFERENCE": 0.01,
+          "PARTIAL_PAYMENT": 0.02,
+          "DUPLICATE": 0.86,
+          "MISSING_IN_BOOKS": 0.01,
+          "MATCHED": 0.06
+        }
+      },
+      "auto_clear": {
+        "type": "noul",
+        "noul": 0
+      }
+    },
+    "S-0061": {
+      "best_match": {
+        "type": "choice",
+        "choice": "NONE",
+        "confidence": 0.92,
+        "probabilities": {
+          "CANDIDATE_1": 0,
+          "CANDIDATE_2": 0.04,
+          "CANDIDATE_3": 0.01,
+          "CANDIDATE_4": 0.01,
+          "CANDIDATE_5": 0.01,
+          "NONE": 0.93
+        }
+      },
+      "match_quality": {
+        "type": "score",
+        "score": 0.18,
+        "confidence": 0.9,
+        "probabilities": {
+          "0": 0.86,
+          "1": 0.12,
+          "2": 0.01,
+          "3": 0,
+          "4": 0.01,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "break_reason": {
+        "type": "choice",
+        "choice": "MISSING_IN_BOOKS",
+        "confidence": 0.73,
+        "probabilities": {
+          "TIMING": 0.03,
+          "BANK_FEE": 0.06,
+          "FX_DIFFERENCE": 0.02,
+          "PARTIAL_PAYMENT": 0.04,
+          "DUPLICATE": 0.06,
+          "MISSING_IN_BOOKS": 0.77,
+          "MATCHED": 0.02
+        }
+      },
+      "auto_clear": {
+        "type": "noul",
+        "noul": 0
+      }
+    },
+    "S-0062": {
+      "best_match": {
+        "type": "choice",
+        "choice": "CANDIDATE_1",
+        "confidence": 1,
+        "probabilities": {
+          "CANDIDATE_1": 1,
+          "CANDIDATE_2": 0,
+          "CANDIDATE_3": 0,
+          "CANDIDATE_4": 0,
+          "CANDIDATE_5": 0,
+          "NONE": 0
+        }
+      },
+      "match_quality": {
+        "type": "score",
+        "score": 4.66,
+        "confidence": 0.57,
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.02,
+          "2": 0.02,
+          "3": 0.06,
+          "4": 0.23,
+          "5": 0.46,
+          "6": 0.2
+        }
+      },
+      "break_reason": {
+        "type": "choice",
+        "choice": "MATCHED",
+        "confidence": 0.86,
+        "probabilities": {
+          "TIMING": 0.06,
+          "BANK_FEE": 0.02,
+          "FX_DIFFERENCE": 0.01,
+          "PARTIAL_PAYMENT": 0.01,
+          "DUPLICATE": 0.01,
+          "MISSING_IN_BOOKS": 0.01,
+          "MATCHED": 0.88
+        }
+      },
+      "auto_clear": {
+        "type": "noul",
+        "noul": 0.88
+      }
+    },
+    "S-0065": {
+      "best_match": {
+        "type": "choice",
+        "choice": "CANDIDATE_2",
+        "confidence": 0.89,
+        "probabilities": {
+          "CANDIDATE_1": 0.03,
+          "CANDIDATE_2": 0.91,
+          "CANDIDATE_3": 0.01,
+          "CANDIDATE_4": 0,
+          "CANDIDATE_5": 0,
+          "NONE": 0.05
+        }
+      },
+      "match_quality": {
+        "type": "score",
+        "score": 3.84,
+        "confidence": 0,
+        "probabilities": {
+          "0": 0.05,
+          "1": 0.09,
+          "2": 0.12,
+          "3": 0.12,
+          "4": 0.18,
+          "5": 0.21,
+          "6": 0.23
+        }
+      },
+      "break_reason": {
+        "type": "choice",
+        "choice": "TIMING",
+        "confidence": 0.62,
+        "probabilities": {
+          "TIMING": 0.67,
+          "BANK_FEE": 0,
+          "FX_DIFFERENCE": 0,
+          "PARTIAL_PAYMENT": 0,
+          "DUPLICATE": 0,
+          "MISSING_IN_BOOKS": 0.01,
+          "MATCHED": 0.32
+        }
+      },
+      "auto_clear": {
+        "type": "noul",
+        "noul": 0
+      }
+    },
+    "S-0066": {
+      "best_match": {
+        "type": "choice",
+        "choice": "CANDIDATE_1",
+        "confidence": 0.69,
+        "probabilities": {
+          "CANDIDATE_1": 0.74,
+          "CANDIDATE_2": 0.02,
+          "CANDIDATE_3": 0.01,
+          "CANDIDATE_4": 0,
+          "CANDIDATE_5": 0.01,
+          "NONE": 0.22
+        }
+      },
+      "match_quality": {
+        "type": "score",
+        "score": 2.78,
+        "confidence": 0.29,
+        "probabilities": {
+          "0": 0.05,
+          "1": 0.12,
+          "2": 0.29,
+          "3": 0.25,
+          "4": 0.15,
+          "5": 0.11,
+          "6": 0.03
+        }
+      },
+      "break_reason": {
+        "type": "choice",
+        "choice": "FX_DIFFERENCE",
+        "confidence": 0.95,
+        "probabilities": {
+          "TIMING": 0.01,
+          "BANK_FEE": 0.01,
+          "FX_DIFFERENCE": 0.96,
+          "PARTIAL_PAYMENT": 0,
+          "DUPLICATE": 0.01,
+          "MISSING_IN_BOOKS": 0,
+          "MATCHED": 0.01
+        }
+      },
+      "auto_clear": {
+        "type": "noul",
+        "noul": 0
+      }
+    },
+    "S-0067": {
+      "best_match": {
+        "type": "choice",
+        "choice": "NONE",
+        "confidence": 0.41,
+        "probabilities": {
+          "CANDIDATE_1": 0.41,
+          "CANDIDATE_2": 0.06,
+          "CANDIDATE_3": 0.01,
+          "CANDIDATE_4": 0,
+          "CANDIDATE_5": 0.01,
+          "NONE": 0.51
+        }
+      },
+      "match_quality": {
+        "type": "score",
+        "score": 2.58,
+        "confidence": 0.45,
+        "probabilities": {
+          "0": 0.04,
+          "1": 0.14,
+          "2": 0.28,
+          "3": 0.36,
+          "4": 0.11,
+          "5": 0.06,
+          "6": 0.01
+        }
+      },
+      "break_reason": {
+        "type": "choice",
+        "choice": "FX_DIFFERENCE",
+        "confidence": 0.98,
+        "probabilities": {
+          "TIMING": 0.01,
+          "BANK_FEE": 0.01,
+          "FX_DIFFERENCE": 0.98,
+          "PARTIAL_PAYMENT": 0,
+          "DUPLICATE": 0,
+          "MISSING_IN_BOOKS": 0,
+          "MATCHED": 0
+        }
+      },
+      "auto_clear": {
+        "type": "noul",
+        "noul": 0
+      }
+    },
+    "S-0068": {
+      "best_match": {
+        "type": "choice",
+        "choice": "CANDIDATE_1",
+        "confidence": 0.84,
+        "probabilities": {
+          "CANDIDATE_1": 0.87,
+          "CANDIDATE_2": 0.03,
+          "CANDIDATE_3": 0.01,
+          "CANDIDATE_4": 0.01,
+          "CANDIDATE_5": 0.01,
+          "NONE": 0.07
+        }
+      },
+      "match_quality": {
+        "type": "score",
+        "score": 4.96,
+        "confidence": 0.39,
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.02,
+          "2": 0.04,
+          "3": 0.04,
+          "4": 0.2,
+          "5": 0.2,
+          "6": 0.49
+        }
+      },
+      "break_reason": {
+        "type": "choice",
+        "choice": "DUPLICATE",
+        "confidence": 0.89,
+        "probabilities": {
+          "TIMING": 0.03,
+          "BANK_FEE": 0.01,
+          "FX_DIFFERENCE": 0.01,
+          "PARTIAL_PAYMENT": 0.02,
+          "DUPLICATE": 0.91,
+          "MISSING_IN_BOOKS": 0,
+          "MATCHED": 0.02
+        }
+      },
+      "auto_clear": {
+        "type": "noul",
+        "noul": 0
+      }
+    },
+    "S-0069": {
+      "best_match": {
+        "type": "choice",
+        "choice": "CANDIDATE_1",
+        "confidence": 0.99,
+        "probabilities": {
+          "CANDIDATE_1": 0.99,
+          "CANDIDATE_2": 0,
+          "CANDIDATE_3": 0,
+          "CANDIDATE_4": 0,
+          "CANDIDATE_5": 0,
+          "NONE": 0.01
+        }
+      },
+      "match_quality": {
+        "type": "score",
+        "score": 4.31,
+        "confidence": 0.52,
+        "probabilities": {
+          "0": 0.02,
+          "1": 0.02,
+          "2": 0.03,
+          "3": 0.08,
+          "4": 0.33,
+          "5": 0.45,
+          "6": 0.07
+        }
+      },
+      "break_reason": {
+        "type": "choice",
+        "choice": "MATCHED",
+        "confidence": 0.88,
+        "probabilities": {
+          "TIMING": 0.06,
+          "BANK_FEE": 0.01,
+          "FX_DIFFERENCE": 0.01,
+          "PARTIAL_PAYMENT": 0,
+          "DUPLICATE": 0.01,
+          "MISSING_IN_BOOKS": 0.01,
+          "MATCHED": 0.9
+        }
+      },
+      "auto_clear": {
+        "type": "noul",
+        "noul": 0.04
+      }
+    },
+    "S-0080": {
+      "best_match": {
+        "type": "choice",
+        "choice": "CANDIDATE_1",
+        "confidence": 1,
+        "probabilities": {
+          "CANDIDATE_1": 1,
+          "CANDIDATE_2": 0,
+          "CANDIDATE_3": 0,
+          "CANDIDATE_4": 0,
+          "CANDIDATE_5": 0,
+          "NONE": 0
+        }
+      },
+      "match_quality": {
+        "type": "score",
+        "score": 4.74,
+        "confidence": 0.53,
+        "probabilities": {
+          "0": 0,
+          "1": 0.02,
+          "2": 0.03,
+          "3": 0.08,
+          "4": 0.2,
+          "5": 0.4,
+          "6": 0.27
+        }
+      },
+      "break_reason": {
+        "type": "choice",
+        "choice": "TIMING",
+        "confidence": 0.57,
+        "probabilities": {
+          "TIMING": 0.63,
+          "BANK_FEE": 0.02,
+          "FX_DIFFERENCE": 0.01,
+          "PARTIAL_PAYMENT": 0.01,
+          "DUPLICATE": 0.01,
+          "MISSING_IN_BOOKS": 0.01,
+          "MATCHED": 0.31
+        }
+      },
+      "auto_clear": {
+        "type": "noul",
+        "noul": 0.95
+      }
+    },
+    "S-0081": {
+      "best_match": {
+        "type": "choice",
+        "choice": "CANDIDATE_2",
+        "confidence": 0.95,
+        "probabilities": {
+          "CANDIDATE_1": 0.03,
+          "CANDIDATE_2": 0.96,
+          "CANDIDATE_3": 0,
+          "CANDIDATE_4": 0,
+          "CANDIDATE_5": 0,
+          "NONE": 0.01
+        }
+      },
+      "match_quality": {
+        "type": "score",
+        "score": 3.78,
+        "confidence": 0.13,
+        "probabilities": {
+          "0": 0.04,
+          "1": 0.07,
+          "2": 0.16,
+          "3": 0.12,
+          "4": 0.16,
+          "5": 0.31,
+          "6": 0.14
+        }
+      },
+      "break_reason": {
+        "type": "choice",
+        "choice": "MATCHED",
+        "confidence": 0.57,
+        "probabilities": {
+          "TIMING": 0.05,
+          "BANK_FEE": 0.07,
+          "FX_DIFFERENCE": 0.06,
+          "PARTIAL_PAYMENT": 0.06,
+          "DUPLICATE": 0.06,
+          "MISSING_IN_BOOKS": 0.07,
+          "MATCHED": 0.63
+        }
+      },
+      "auto_clear": {
+        "type": "noul",
+        "noul": 0.02
+      }
+    },
+    "S-0082": {
+      "best_match": {
+        "type": "choice",
+        "choice": "CANDIDATE_1",
+        "confidence": 1,
+        "probabilities": {
+          "CANDIDATE_1": 1,
+          "CANDIDATE_2": 0,
+          "CANDIDATE_3": 0,
+          "CANDIDATE_4": 0,
+          "CANDIDATE_5": 0,
+          "NONE": 0
+        }
+      },
+      "match_quality": {
+        "type": "score",
+        "score": 4.77,
+        "confidence": 0.83,
+        "probabilities": {
+          "0": 0,
+          "1": 0,
+          "2": 0.01,
+          "3": 0.02,
+          "4": 0.19,
+          "5": 0.75,
+          "6": 0.03
+        }
+      },
+      "break_reason": {
+        "type": "choice",
+        "choice": "MATCHED",
+        "confidence": 0.63,
+        "probabilities": {
+          "TIMING": 0.22,
+          "BANK_FEE": 0.03,
+          "FX_DIFFERENCE": 0.02,
+          "PARTIAL_PAYMENT": 0.01,
+          "DUPLICATE": 0.01,
+          "MISSING_IN_BOOKS": 0.03,
+          "MATCHED": 0.68
+        }
+      },
+      "auto_clear": {
+        "type": "noul",
+        "noul": 0.74
+      }
+    },
+    "S-0084": {
+      "best_match": {
+        "type": "choice",
+        "choice": "CANDIDATE_1",
+        "confidence": 0.47,
+        "probabilities": {
+          "CANDIDATE_1": 0.56,
+          "CANDIDATE_2": 0.05,
+          "CANDIDATE_3": 0.01,
+          "CANDIDATE_4": 0.01,
+          "CANDIDATE_5": 0.01,
+          "NONE": 0.36
+        }
+      },
+      "match_quality": {
+        "type": "score",
+        "score": 2.95,
+        "confidence": 0.31,
+        "probabilities": {
+          "0": 0.07,
+          "1": 0.12,
+          "2": 0.17,
+          "3": 0.28,
+          "4": 0.19,
+          "5": 0.13,
+          "6": 0.04
+        }
+      },
+      "break_reason": {
+        "type": "choice",
+        "choice": "FX_DIFFERENCE",
+        "confidence": 0.94,
+        "probabilities": {
+          "TIMING": 0.02,
+          "BANK_FEE": 0.01,
+          "FX_DIFFERENCE": 0.95,
+          "PARTIAL_PAYMENT": 0.01,
+          "DUPLICATE": 0.01,
+          "MISSING_IN_BOOKS": 0,
+          "MATCHED": 0
+        }
+      },
+      "auto_clear": {
+        "type": "noul",
+        "noul": 0.01
+      }
+    },
+    "S-0085": {
+      "best_match": {
+        "type": "choice",
+        "choice": "CANDIDATE_1",
+        "confidence": 0.92,
+        "probabilities": {
+          "CANDIDATE_1": 0.93,
+          "CANDIDATE_2": 0.01,
+          "CANDIDATE_3": 0,
+          "CANDIDATE_4": 0,
+          "CANDIDATE_5": 0,
+          "NONE": 0.06
+        }
+      },
+      "match_quality": {
+        "type": "score",
+        "score": 3.89,
+        "confidence": 0.27,
+        "probabilities": {
+          "0": 0.04,
+          "1": 0.04,
+          "2": 0.08,
+          "3": 0.15,
+          "4": 0.28,
+          "5": 0.34,
+          "6": 0.07
+        }
+      },
+      "break_reason": {
+        "type": "choice",
+        "choice": "MATCHED",
+        "confidence": 0.57,
+        "probabilities": {
+          "TIMING": 0.31,
+          "BANK_FEE": 0.02,
+          "FX_DIFFERENCE": 0.01,
+          "PARTIAL_PAYMENT": 0.01,
+          "DUPLICATE": 0.01,
+          "MISSING_IN_BOOKS": 0.01,
+          "MATCHED": 0.63
+        }
+      },
+      "auto_clear": {
+        "type": "noul",
+        "noul": 0.16
+      }
+    },
+    "S-0092": {
+      "best_match": {
+        "type": "choice",
+        "choice": "CANDIDATE_2",
+        "confidence": 0.56,
+        "probabilities": {
+          "CANDIDATE_1": 0.37,
+          "CANDIDATE_2": 0.63,
+          "CANDIDATE_3": 0,
+          "CANDIDATE_4": 0,
+          "CANDIDATE_5": 0,
+          "NONE": 0
+        }
+      },
+      "match_quality": {
+        "type": "score",
+        "score": 4.33,
+        "confidence": 0.03,
+        "probabilities": {
+          "0": 0.03,
+          "1": 0.06,
+          "2": 0.09,
+          "3": 0.07,
+          "4": 0.22,
+          "5": 0.18,
+          "6": 0.35
+        }
+      },
+      "break_reason": {
+        "type": "choice",
+        "choice": "TIMING",
+        "confidence": 0.64,
+        "probabilities": {
+          "TIMING": 0.69,
+          "BANK_FEE": 0.02,
+          "FX_DIFFERENCE": 0.02,
+          "PARTIAL_PAYMENT": 0.01,
+          "DUPLICATE": 0.01,
+          "MISSING_IN_BOOKS": 0.01,
+          "MATCHED": 0.24
+        }
+      },
+      "auto_clear": {
+        "type": "noul",
+        "noul": 0
+      }
+    },
+    "S-0093": {
+      "best_match": {
+        "type": "choice",
+        "choice": "CANDIDATE_1",
+        "confidence": 0.44,
+        "probabilities": {
+          "CANDIDATE_1": 0.53,
+          "CANDIDATE_2": 0.02,
+          "CANDIDATE_3": 0.01,
+          "CANDIDATE_4": 0,
+          "CANDIDATE_5": 0.01,
+          "NONE": 0.43
+        }
+      },
+      "match_quality": {
+        "type": "score",
+        "score": 2.72,
+        "confidence": 0.33,
+        "probabilities": {
+          "0": 0.07,
+          "1": 0.14,
+          "2": 0.22,
+          "3": 0.29,
+          "4": 0.16,
+          "5": 0.09,
+          "6": 0.03
+        }
+      },
+      "break_reason": {
+        "type": "choice",
+        "choice": "FX_DIFFERENCE",
+        "confidence": 0.94,
+        "probabilities": {
+          "TIMING": 0.01,
+          "BANK_FEE": 0.01,
+          "FX_DIFFERENCE": 0.95,
+          "PARTIAL_PAYMENT": 0.01,
+          "DUPLICATE": 0.01,
+          "MISSING_IN_BOOKS": 0,
+          "MATCHED": 0.01
+        }
+      },
+      "auto_clear": {
+        "type": "noul",
+        "noul": 0
+      }
+    },
+    "S-0094": {
+      "best_match": {
+        "type": "choice",
+        "choice": "NONE",
+        "confidence": 0.58,
+        "probabilities": {
+          "CANDIDATE_1": 0.03,
+          "CANDIDATE_2": 0.1,
+          "CANDIDATE_3": 0.04,
+          "CANDIDATE_4": 0.09,
+          "CANDIDATE_5": 0.09,
+          "NONE": 0.65
+        }
+      },
+      "match_quality": {
+        "type": "score",
+        "score": 0.48,
+        "confidence": 0.72,
+        "probabilities": {
+          "0": 0.65,
+          "1": 0.28,
+          "2": 0.04,
+          "3": 0.01,
+          "4": 0.01,
+          "5": 0.01,
+          "6": 0
+        }
+      },
+      "break_reason": {
+        "type": "choice",
+        "choice": "MISSING_IN_BOOKS",
+        "confidence": 0.81,
+        "probabilities": {
+          "TIMING": 0.02,
+          "BANK_FEE": 0.04,
+          "FX_DIFFERENCE": 0.01,
+          "PARTIAL_PAYMENT": 0.02,
+          "DUPLICATE": 0.05,
+          "MISSING_IN_BOOKS": 0.84,
+          "MATCHED": 0.02
+        }
+      },
+      "auto_clear": {
+        "type": "noul",
+        "noul": 0
+      }
+    },
+    "S-0101": {
+      "best_match": {
+        "type": "choice",
+        "choice": "NONE",
+        "confidence": 0.86,
+        "probabilities": {
+          "CANDIDATE_1": 0.05,
+          "CANDIDATE_2": 0.04,
+          "CANDIDATE_3": 0.01,
+          "CANDIDATE_4": 0.01,
+          "CANDIDATE_5": 0.01,
+          "NONE": 0.88
+        }
+      },
+      "match_quality": {
+        "type": "score",
+        "score": 0.34,
+        "confidence": 0.8,
+        "probabilities": {
+          "0": 0.8,
+          "1": 0.14,
+          "2": 0.02,
+          "3": 0.01,
+          "4": 0.02,
+          "5": 0.01,
+          "6": 0
+        }
+      },
+      "break_reason": {
+        "type": "choice",
+        "choice": "BANK_FEE",
+        "confidence": 0.81,
+        "probabilities": {
+          "TIMING": 0.01,
+          "BANK_FEE": 0.84,
+          "FX_DIFFERENCE": 0,
+          "PARTIAL_PAYMENT": 0.01,
+          "DUPLICATE": 0.01,
+          "MISSING_IN_BOOKS": 0.12,
+          "MATCHED": 0.01
+        }
+      },
+      "auto_clear": {
+        "type": "noul",
+        "noul": 0
+      }
+    },
+    "S-0102": {
+      "best_match": {
+        "type": "choice",
+        "choice": "NONE",
+        "confidence": 0.8,
+        "probabilities": {
+          "CANDIDATE_1": 0.06,
+          "CANDIDATE_2": 0.06,
+          "CANDIDATE_3": 0.01,
+          "CANDIDATE_4": 0.01,
+          "CANDIDATE_5": 0.03,
+          "NONE": 0.83
+        }
+      },
+      "match_quality": {
+        "type": "score",
+        "score": 0.34,
+        "confidence": 0.8,
+        "probabilities": {
+          "0": 0.72,
+          "1": 0.25,
+          "2": 0.01,
+          "3": 0.01,
+          "4": 0.01,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "break_reason": {
+        "type": "choice",
+        "choice": "BANK_FEE",
+        "confidence": 0.81,
+        "probabilities": {
+          "TIMING": 0.01,
+          "BANK_FEE": 0.84,
+          "FX_DIFFERENCE": 0.01,
+          "PARTIAL_PAYMENT": 0.01,
+          "DUPLICATE": 0.01,
+          "MISSING_IN_BOOKS": 0.11,
+          "MATCHED": 0.01
+        }
+      },
+      "auto_clear": {
+        "type": "noul",
+        "noul": 0
+      }
+    },
+    "S-0103": {
+      "best_match": {
+        "type": "choice",
+        "choice": "NONE",
+        "confidence": 0.56,
+        "probabilities": {
+          "CANDIDATE_1": 0.29,
+          "CANDIDATE_2": 0.05,
+          "CANDIDATE_3": 0.01,
+          "CANDIDATE_4": 0.01,
+          "CANDIDATE_5": 0.01,
+          "NONE": 0.63
+        }
+      },
+      "match_quality": {
+        "type": "score",
+        "score": 1.52,
+        "confidence": 0.52,
+        "probabilities": {
+          "0": 0.15,
+          "1": 0.42,
+          "2": 0.3,
+          "3": 0.06,
+          "4": 0.04,
+          "5": 0.02,
+          "6": 0.01
+        }
+      },
+      "break_reason": {
+        "type": "choice",
+        "choice": "PARTIAL_PAYMENT",
+        "confidence": 0.82,
+        "probabilities": {
+          "TIMING": 0.03,
+          "BANK_FEE": 0.03,
+          "FX_DIFFERENCE": 0.01,
+          "PARTIAL_PAYMENT": 0.85,
+          "DUPLICATE": 0.04,
+          "MISSING_IN_BOOKS": 0.01,
+          "MATCHED": 0.03
+        }
+      },
+      "auto_clear": {
+        "type": "noul",
+        "noul": 0
+      }
+    },
+    "S-0104": {
+      "best_match": {
+        "type": "choice",
+        "choice": "CANDIDATE_1",
+        "confidence": 0.32,
+        "probabilities": {
+          "CANDIDATE_1": 0.43,
+          "CANDIDATE_2": 0.15,
+          "CANDIDATE_3": 0.01,
+          "CANDIDATE_4": 0.01,
+          "CANDIDATE_5": 0,
+          "NONE": 0.4
+        }
+      },
+      "match_quality": {
+        "type": "score",
+        "score": 5.29,
+        "confidence": 0.59,
+        "probabilities": {
+          "0": 0.03,
+          "1": 0.02,
+          "2": 0.03,
+          "3": 0.03,
+          "4": 0.04,
+          "5": 0.14,
+          "6": 0.71
+        }
+      },
+      "break_reason": {
+        "type": "choice",
+        "choice": "DUPLICATE",
+        "confidence": 0.69,
+        "probabilities": {
+          "TIMING": 0.07,
+          "BANK_FEE": 0.01,
+          "FX_DIFFERENCE": 0.01,
+          "PARTIAL_PAYMENT": 0.02,
+          "DUPLICATE": 0.73,
+          "MISSING_IN_BOOKS": 0.01,
+          "MATCHED": 0.15
+        }
+      },
+      "auto_clear": {
+        "type": "noul",
+        "noul": 0
+      }
+    },
+    "S-0110": {
+      "best_match": {
+        "type": "choice",
+        "choice": "CANDIDATE_2",
+        "confidence": 0.7,
+        "probabilities": {
+          "CANDIDATE_1": 0.25,
+          "CANDIDATE_2": 0.75,
+          "CANDIDATE_3": 0,
+          "CANDIDATE_4": 0,
+          "CANDIDATE_5": 0,
+          "NONE": 0
+        }
+      },
+      "match_quality": {
+        "type": "score",
+        "score": 4.57,
+        "confidence": 0.17,
+        "probabilities": {
+          "0": 0.04,
+          "1": 0.07,
+          "2": 0.07,
+          "3": 0.05,
+          "4": 0.13,
+          "5": 0.15,
+          "6": 0.49
+        }
+      },
+      "break_reason": {
+        "type": "choice",
+        "choice": "TIMING",
+        "confidence": 0.78,
+        "probabilities": {
+          "TIMING": 0.81,
+          "BANK_FEE": 0.03,
+          "FX_DIFFERENCE": 0.02,
+          "PARTIAL_PAYMENT": 0.01,
+          "DUPLICATE": 0.01,
+          "MISSING_IN_BOOKS": 0.01,
+          "MATCHED": 0.11
+        }
+      },
+      "auto_clear": {
+        "type": "noul",
+        "noul": 0.2
+      }
+    },
+    "S-0111": {
+      "best_match": {
+        "type": "choice",
+        "choice": "CANDIDATE_1",
+        "confidence": 0.94,
+        "probabilities": {
+          "CANDIDATE_1": 0.95,
+          "CANDIDATE_2": 0.03,
+          "CANDIDATE_3": 0,
+          "CANDIDATE_4": 0,
+          "CANDIDATE_5": 0,
+          "NONE": 0.02
+        }
+      },
+      "match_quality": {
+        "type": "score",
+        "score": 5.13,
+        "confidence": 0.49,
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.04,
+          "2": 0.02,
+          "3": 0.02,
+          "4": 0.11,
+          "5": 0.25,
+          "6": 0.55
+        }
+      },
+      "break_reason": {
+        "type": "choice",
+        "choice": "DUPLICATE",
+        "confidence": 0.64,
+        "probabilities": {
+          "TIMING": 0.06,
+          "BANK_FEE": 0.01,
+          "FX_DIFFERENCE": 0.01,
+          "PARTIAL_PAYMENT": 0.02,
+          "DUPLICATE": 0.69,
+          "MISSING_IN_BOOKS": 0.01,
+          "MATCHED": 0.2
+        }
+      },
+      "auto_clear": {
+        "type": "noul",
+        "noul": 0
+      }
+    },
+    "S-0112": {
+      "best_match": {
+        "type": "choice",
+        "choice": "CANDIDATE_1",
+        "confidence": 1,
+        "probabilities": {
+          "CANDIDATE_1": 1,
+          "CANDIDATE_2": 0,
+          "CANDIDATE_3": 0,
+          "CANDIDATE_4": 0,
+          "CANDIDATE_5": 0,
+          "NONE": 0
+        }
+      },
+      "match_quality": {
+        "type": "score",
+        "score": 4.79,
+        "confidence": 0.55,
+        "probabilities": {
+          "0": 0.02,
+          "1": 0.02,
+          "2": 0.01,
+          "3": 0.05,
+          "4": 0.18,
+          "5": 0.44,
+          "6": 0.28
+        }
+      },
+      "break_reason": {
+        "type": "choice",
+        "choice": "MATCHED",
+        "confidence": 0.94,
+        "probabilities": {
+          "TIMING": 0.02,
+          "BANK_FEE": 0.01,
+          "FX_DIFFERENCE": 0,
+          "PARTIAL_PAYMENT": 0,
+          "DUPLICATE": 0.01,
+          "MISSING_IN_BOOKS": 0.01,
+          "MATCHED": 0.95
+        }
+      },
+      "auto_clear": {
+        "type": "noul",
+        "noul": 0.97
+      }
+    },
+    "S-0122": {
+      "best_match": {
+        "type": "choice",
+        "choice": "CANDIDATE_1",
+        "confidence": 0.81,
+        "probabilities": {
+          "CANDIDATE_1": 0.84,
+          "CANDIDATE_2": 0.16,
+          "CANDIDATE_3": 0,
+          "CANDIDATE_4": 0,
+          "CANDIDATE_5": 0,
+          "NONE": 0
+        }
+      },
+      "match_quality": {
+        "type": "score",
+        "score": 5.62,
+        "confidence": 0.78,
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.02,
+          "2": 0.02,
+          "3": 0.01,
+          "4": 0.03,
+          "5": 0.05,
+          "6": 0.86
+        }
+      },
+      "break_reason": {
+        "type": "choice",
+        "choice": "TIMING",
+        "confidence": 0.37,
+        "probabilities": {
+          "TIMING": 0.46,
+          "BANK_FEE": 0.03,
+          "FX_DIFFERENCE": 0.05,
+          "PARTIAL_PAYMENT": 0.02,
+          "DUPLICATE": 0.04,
+          "MISSING_IN_BOOKS": 0.02,
+          "MATCHED": 0.38
+        }
+      },
+      "auto_clear": {
+        "type": "noul",
+        "noul": 0.02
+      }
+    },
+    "S-0123": {
+      "best_match": {
+        "type": "choice",
+        "choice": "CANDIDATE_2",
+        "confidence": 0.57,
+        "probabilities": {
+          "CANDIDATE_1": 0.01,
+          "CANDIDATE_2": 0.64,
+          "CANDIDATE_3": 0.01,
+          "CANDIDATE_4": 0.01,
+          "CANDIDATE_5": 0,
+          "NONE": 0.33
+        }
+      },
+      "match_quality": {
+        "type": "score",
+        "score": 5.27,
+        "confidence": 0.57,
+        "probabilities": {
+          "0": 0.02,
+          "1": 0.03,
+          "2": 0.03,
+          "3": 0.02,
+          "4": 0.05,
+          "5": 0.18,
+          "6": 0.67
+        }
+      },
+      "break_reason": {
+        "type": "choice",
+        "choice": "TIMING",
+        "confidence": 0.6,
+        "probabilities": {
+          "TIMING": 0.66,
+          "BANK_FEE": 0.02,
+          "FX_DIFFERENCE": 0.06,
+          "PARTIAL_PAYMENT": 0,
+          "DUPLICATE": 0.01,
+          "MISSING_IN_BOOKS": 0.01,
+          "MATCHED": 0.24
+        }
+      },
+      "auto_clear": {
+        "type": "noul",
+        "noul": 0.31
+      }
+    },
+    "S-0124": {
+      "best_match": {
+        "type": "choice",
+        "choice": "CANDIDATE_1",
+        "confidence": 0.62,
+        "probabilities": {
+          "CANDIDATE_1": 0.68,
+          "CANDIDATE_2": 0.01,
+          "CANDIDATE_3": 0,
+          "CANDIDATE_4": 0,
+          "CANDIDATE_5": 0,
+          "NONE": 0.31
+        }
+      },
+      "match_quality": {
+        "type": "score",
+        "score": 2.86,
+        "confidence": 0.25,
+        "probabilities": {
+          "0": 0.06,
+          "1": 0.08,
+          "2": 0.23,
+          "3": 0.27,
+          "4": 0.29,
+          "5": 0.07,
+          "6": 0
+        }
+      },
+      "break_reason": {
+        "type": "choice",
+        "choice": "FX_DIFFERENCE",
+        "confidence": 0.94,
+        "probabilities": {
+          "TIMING": 0.01,
+          "BANK_FEE": 0,
+          "FX_DIFFERENCE": 0.95,
+          "PARTIAL_PAYMENT": 0,
+          "DUPLICATE": 0.01,
+          "MISSING_IN_BOOKS": 0,
+          "MATCHED": 0.03
+        }
+      },
+      "auto_clear": {
+        "type": "noul",
+        "noul": 0
+      }
+    },
+    "S-0125": {
+      "best_match": {
+        "type": "choice",
+        "choice": "CANDIDATE_1",
+        "confidence": 1,
+        "probabilities": {
+          "CANDIDATE_1": 1,
+          "CANDIDATE_2": 0,
+          "CANDIDATE_3": 0,
+          "CANDIDATE_4": 0,
+          "CANDIDATE_5": 0,
+          "NONE": 0
+        }
+      },
+      "match_quality": {
+        "type": "score",
+        "score": 4.57,
+        "confidence": 0.67,
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.01,
+          "2": 0.01,
+          "3": 0.05,
+          "4": 0.28,
+          "5": 0.57,
+          "6": 0.07
+        }
+      },
+      "break_reason": {
+        "type": "choice",
+        "choice": "MATCHED",
+        "confidence": 0.6,
+        "probabilities": {
+          "TIMING": 0.28,
+          "BANK_FEE": 0.02,
+          "FX_DIFFERENCE": 0.02,
+          "PARTIAL_PAYMENT": 0,
+          "DUPLICATE": 0.01,
+          "MISSING_IN_BOOKS": 0.01,
+          "MATCHED": 0.66
+        }
+      },
+      "auto_clear": {
+        "type": "noul",
+        "noul": 0.94
+      }
+    },
+    "S-0131": {
+      "best_match": {
+        "type": "choice",
+        "choice": "CANDIDATE_1",
+        "confidence": 1,
+        "probabilities": {
+          "CANDIDATE_1": 1,
+          "CANDIDATE_2": 0,
+          "CANDIDATE_3": 0,
+          "CANDIDATE_4": 0,
+          "CANDIDATE_5": 0,
+          "NONE": 0
+        }
+      },
+      "match_quality": {
+        "type": "score",
+        "score": 4.72,
+        "confidence": 0.67,
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.01,
+          "2": 0.01,
+          "3": 0.06,
+          "4": 0.18,
+          "5": 0.59,
+          "6": 0.14
+        }
+      },
+      "break_reason": {
+        "type": "choice",
+        "choice": "MATCHED",
+        "confidence": 0.86,
+        "probabilities": {
+          "TIMING": 0.07,
+          "BANK_FEE": 0.02,
+          "FX_DIFFERENCE": 0.01,
+          "PARTIAL_PAYMENT": 0,
+          "DUPLICATE": 0.01,
+          "MISSING_IN_BOOKS": 0.01,
+          "MATCHED": 0.88
+        }
+      },
+      "auto_clear": {
+        "type": "noul",
+        "noul": 0.82
+      }
+    },
+    "S-0137": {
+      "best_match": {
+        "type": "choice",
+        "choice": "NONE",
+        "confidence": 0.93,
+        "probabilities": {
+          "CANDIDATE_1": 0.01,
+          "CANDIDATE_2": 0.02,
+          "CANDIDATE_3": 0.01,
+          "CANDIDATE_4": 0.01,
+          "CANDIDATE_5": 0.01,
+          "NONE": 0.94
+        }
+      },
+      "match_quality": {
+        "type": "score",
+        "score": 0.37,
+        "confidence": 0.78,
+        "probabilities": {
+          "0": 0.67,
+          "1": 0.31,
+          "2": 0.01,
+          "3": 0,
+          "4": 0.01,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "break_reason": {
+        "type": "choice",
+        "choice": "BANK_FEE",
+        "confidence": 0.97,
+        "probabilities": {
+          "TIMING": 0,
+          "BANK_FEE": 0.97,
+          "FX_DIFFERENCE": 0,
+          "PARTIAL_PAYMENT": 0,
+          "DUPLICATE": 0,
+          "MISSING_IN_BOOKS": 0.03,
+          "MATCHED": 0
+        }
+      },
+      "auto_clear": {
+        "type": "noul",
+        "noul": 0
+      }
+    },
+    "S-0138": {
+      "best_match": {
+        "type": "choice",
+        "choice": "CANDIDATE_2",
+        "confidence": 0.72,
+        "probabilities": {
+          "CANDIDATE_1": 0.05,
+          "CANDIDATE_2": 0.77,
+          "CANDIDATE_3": 0.01,
+          "CANDIDATE_4": 0.01,
+          "CANDIDATE_5": 0.01,
+          "NONE": 0.15
+        }
+      },
+      "match_quality": {
+        "type": "score",
+        "score": 2.74,
+        "confidence": 0.46,
+        "probabilities": {
+          "0": 0.03,
+          "1": 0.1,
+          "2": 0.3,
+          "3": 0.33,
+          "4": 0.17,
+          "5": 0.05,
+          "6": 0.02
+        }
+      },
+      "break_reason": {
+        "type": "choice",
+        "choice": "PARTIAL_PAYMENT",
+        "confidence": 0.79,
+        "probabilities": {
+          "TIMING": 0.02,
+          "BANK_FEE": 0.01,
+          "FX_DIFFERENCE": 0.02,
+          "PARTIAL_PAYMENT": 0.82,
+          "DUPLICATE": 0.04,
+          "MISSING_IN_BOOKS": 0.01,
+          "MATCHED": 0.08
+        }
+      },
+      "auto_clear": {
+        "type": "noul",
+        "noul": 0
+      }
+    },
+    "S-0139": {
+      "best_match": {
+        "type": "choice",
+        "choice": "NONE",
+        "confidence": 0.54,
+        "probabilities": {
+          "CANDIDATE_1": 0.27,
+          "CANDIDATE_2": 0.05,
+          "CANDIDATE_3": 0.02,
+          "CANDIDATE_4": 0.01,
+          "CANDIDATE_5": 0.03,
+          "NONE": 0.62
+        }
+      },
+      "match_quality": {
+        "type": "score",
+        "score": 1.57,
+        "confidence": 0.34,
+        "probabilities": {
+          "0": 0.28,
+          "1": 0.3,
+          "2": 0.18,
+          "3": 0.11,
+          "4": 0.08,
+          "5": 0.04,
+          "6": 0.01
+        }
+      },
+      "break_reason": {
+        "type": "choice",
+        "choice": "PARTIAL_PAYMENT",
+        "confidence": 0.98,
+        "probabilities": {
+          "TIMING": 0,
+          "BANK_FEE": 0,
+          "FX_DIFFERENCE": 0,
+          "PARTIAL_PAYMENT": 0.98,
+          "DUPLICATE": 0.02,
+          "MISSING_IN_BOOKS": 0,
+          "MATCHED": 0
+        }
+      },
+      "auto_clear": {
+        "type": "noul",
+        "noul": 0
+      }
+    },
+    "S-0140": {
+      "best_match": {
+        "type": "choice",
+        "choice": "NONE",
+        "confidence": 0.44,
+        "probabilities": {
+          "CANDIDATE_1": 0.32,
+          "CANDIDATE_2": 0.13,
+          "CANDIDATE_3": 0.01,
+          "CANDIDATE_4": 0,
+          "CANDIDATE_5": 0.01,
+          "NONE": 0.53
+        }
+      },
+      "match_quality": {
+        "type": "score",
+        "score": 2.03,
+        "confidence": 0.47,
+        "probabilities": {
+          "0": 0.1,
+          "1": 0.24,
+          "2": 0.32,
+          "3": 0.25,
+          "4": 0.06,
+          "5": 0.02,
+          "6": 0.01
+        }
+      },
+      "break_reason": {
+        "type": "choice",
+        "choice": "PARTIAL_PAYMENT",
+        "confidence": 0.78,
+        "probabilities": {
+          "TIMING": 0.03,
+          "BANK_FEE": 0.01,
+          "FX_DIFFERENCE": 0.01,
+          "PARTIAL_PAYMENT": 0.81,
+          "DUPLICATE": 0.03,
+          "MISSING_IN_BOOKS": 0.01,
+          "MATCHED": 0.1
+        }
+      },
+      "auto_clear": {
+        "type": "noul",
+        "noul": 0
+      }
+    },
+    "S-0149": {
+      "best_match": {
+        "type": "choice",
+        "choice": "NONE",
+        "confidence": 0.32,
+        "probabilities": {
+          "CANDIDATE_1": 0.35,
+          "CANDIDATE_2": 0.18,
+          "CANDIDATE_3": 0.02,
+          "CANDIDATE_4": 0.01,
+          "CANDIDATE_5": 0.01,
+          "NONE": 0.43
+        }
+      },
+      "match_quality": {
+        "type": "score",
+        "score": 4.39,
+        "confidence": 0.06,
+        "probabilities": {
+          "0": 0.06,
+          "1": 0.06,
+          "2": 0.04,
+          "3": 0.06,
+          "4": 0.21,
+          "5": 0.19,
+          "6": 0.38
+        }
+      },
+      "break_reason": {
+        "type": "choice",
+        "choice": "DUPLICATE",
+        "confidence": 0.76,
+        "probabilities": {
+          "TIMING": 0.04,
+          "BANK_FEE": 0.01,
+          "FX_DIFFERENCE": 0.02,
+          "PARTIAL_PAYMENT": 0.02,
+          "DUPLICATE": 0.79,
+          "MISSING_IN_BOOKS": 0.01,
+          "MATCHED": 0.11
+        }
+      },
+      "auto_clear": {
+        "type": "noul",
+        "noul": 0
+      }
+    },
+    "S-0154": {
+      "best_match": {
+        "type": "choice",
+        "choice": "CANDIDATE_2",
+        "confidence": 0.76,
+        "probabilities": {
+          "CANDIDATE_1": 0.2,
+          "CANDIDATE_2": 0.8,
+          "CANDIDATE_3": 0,
+          "CANDIDATE_4": 0,
+          "CANDIDATE_5": 0,
+          "NONE": 0
+        }
+      },
+      "match_quality": {
+        "type": "score",
+        "score": 3.47,
+        "confidence": 0.06,
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.05,
+          "2": 0.26,
+          "3": 0.21,
+          "4": 0.21,
+          "5": 0.13,
+          "6": 0.13
+        }
+      },
+      "break_reason": {
+        "type": "choice",
+        "choice": "TIMING",
+        "confidence": 0.78,
+        "probabilities": {
+          "TIMING": 0.81,
+          "BANK_FEE": 0.01,
+          "FX_DIFFERENCE": 0.03,
+          "PARTIAL_PAYMENT": 0,
+          "DUPLICATE": 0.01,
+          "MISSING_IN_BOOKS": 0,
+          "MATCHED": 0.14
+        }
+      },
+      "auto_clear": {
+        "type": "noul",
+        "noul": 0.02
+      }
+    },
+    "S-0155": {
+      "best_match": {
+        "type": "choice",
+        "choice": "CANDIDATE_1",
+        "confidence": 1,
+        "probabilities": {
+          "CANDIDATE_1": 1,
+          "CANDIDATE_2": 0,
+          "CANDIDATE_3": 0,
+          "CANDIDATE_4": 0,
+          "CANDIDATE_5": 0,
+          "NONE": 0
+        }
+      },
+      "match_quality": {
+        "type": "score",
+        "score": 5.23,
+        "confidence": 0.55,
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.01,
+          "2": 0.01,
+          "3": 0.02,
+          "4": 0.1,
+          "5": 0.36,
+          "6": 0.49
+        }
+      },
+      "break_reason": {
+        "type": "choice",
+        "choice": "TIMING",
+        "confidence": 0.7,
+        "probabilities": {
+          "TIMING": 0.74,
+          "BANK_FEE": 0.02,
+          "FX_DIFFERENCE": 0.01,
+          "PARTIAL_PAYMENT": 0.01,
+          "DUPLICATE": 0.01,
+          "MISSING_IN_BOOKS": 0.01,
+          "MATCHED": 0.2
+        }
+      },
+      "auto_clear": {
+        "type": "noul",
+        "noul": 0.22
+      }
+    },
+    "S-0165": {
+      "best_match": {
+        "type": "choice",
+        "choice": "CANDIDATE_1",
+        "confidence": 1,
+        "probabilities": {
+          "CANDIDATE_1": 1,
+          "CANDIDATE_2": 0,
+          "CANDIDATE_3": 0,
+          "CANDIDATE_4": 0,
+          "CANDIDATE_5": 0,
+          "NONE": 0
+        }
+      },
+      "match_quality": {
+        "type": "score",
+        "score": 5.01,
+        "confidence": 0.42,
+        "probabilities": {
+          "0": 0.04,
+          "1": 0.05,
+          "2": 0.04,
+          "3": 0.03,
+          "4": 0.08,
+          "5": 0.09,
+          "6": 0.67
+        }
+      },
+      "break_reason": {
+        "type": "choice",
+        "choice": "TIMING",
+        "confidence": 0.6,
+        "probabilities": {
+          "TIMING": 0.66,
+          "BANK_FEE": 0.01,
+          "FX_DIFFERENCE": 0.01,
+          "PARTIAL_PAYMENT": 0.01,
+          "DUPLICATE": 0.01,
+          "MISSING_IN_BOOKS": 0.01,
+          "MATCHED": 0.29
+        }
+      },
+      "auto_clear": {
+        "type": "noul",
+        "noul": 0.87
+      }
+    },
+    "S-0166": {
+      "best_match": {
+        "type": "choice",
+        "choice": "NONE",
+        "confidence": 0.92,
+        "probabilities": {
+          "CANDIDATE_1": 0.01,
+          "CANDIDATE_2": 0.03,
+          "CANDIDATE_3": 0.01,
+          "CANDIDATE_4": 0.01,
+          "CANDIDATE_5": 0.01,
+          "NONE": 0.93
+        }
+      },
+      "match_quality": {
+        "type": "score",
+        "score": 0.11,
+        "confidence": 0.94,
+        "probabilities": {
+          "0": 0.92,
+          "1": 0.07,
+          "2": 0,
+          "3": 0,
+          "4": 0.01,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "break_reason": {
+        "type": "choice",
+        "choice": "BANK_FEE",
+        "confidence": 0.52,
+        "probabilities": {
+          "TIMING": 0.01,
+          "BANK_FEE": 0.59,
+          "FX_DIFFERENCE": 0.01,
+          "PARTIAL_PAYMENT": 0.01,
+          "DUPLICATE": 0.02,
+          "MISSING_IN_BOOKS": 0.35,
+          "MATCHED": 0.01
+        }
+      },
+      "auto_clear": {
+        "type": "noul",
+        "noul": 0
+      }
+    },
+    "S-0177": {
+      "best_match": {
+        "type": "choice",
+        "choice": "CANDIDATE_1",
+        "confidence": 1,
+        "probabilities": {
+          "CANDIDATE_1": 1,
+          "CANDIDATE_2": 0,
+          "CANDIDATE_3": 0,
+          "CANDIDATE_4": 0,
+          "CANDIDATE_5": 0,
+          "NONE": 0
+        }
+      },
+      "match_quality": {
+        "type": "score",
+        "score": 4.5,
+        "confidence": 0.59,
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.02,
+          "2": 0.03,
+          "3": 0.08,
+          "4": 0.22,
+          "5": 0.54,
+          "6": 0.1
+        }
+      },
+      "break_reason": {
+        "type": "choice",
+        "choice": "MATCHED",
+        "confidence": 0.74,
+        "probabilities": {
+          "TIMING": 0.19,
+          "BANK_FEE": 0.01,
+          "FX_DIFFERENCE": 0.01,
+          "PARTIAL_PAYMENT": 0,
+          "DUPLICATE": 0.01,
+          "MISSING_IN_BOOKS": 0,
+          "MATCHED": 0.78
+        }
+      },
+      "auto_clear": {
+        "type": "noul",
+        "noul": 0.91
+      }
+    },
+    "S-0190": {
+      "best_match": {
+        "type": "choice",
+        "choice": "CANDIDATE_1",
+        "confidence": 0.99,
+        "probabilities": {
+          "CANDIDATE_1": 0.99,
+          "CANDIDATE_2": 0,
+          "CANDIDATE_3": 0,
+          "CANDIDATE_4": 0,
+          "CANDIDATE_5": 0,
+          "NONE": 0.01
+        }
+      },
+      "match_quality": {
+        "type": "score",
+        "score": 4.15,
+        "confidence": 0.27,
+        "probabilities": {
+          "0": 0.02,
+          "1": 0.06,
+          "2": 0.07,
+          "3": 0.13,
+          "4": 0.24,
+          "5": 0.28,
+          "6": 0.2
+        }
+      },
+      "break_reason": {
+        "type": "choice",
+        "choice": "TIMING",
+        "confidence": 0.66,
+        "probabilities": {
+          "TIMING": 0.71,
+          "BANK_FEE": 0.02,
+          "FX_DIFFERENCE": 0.01,
+          "PARTIAL_PAYMENT": 0.01,
+          "DUPLICATE": 0.01,
+          "MISSING_IN_BOOKS": 0,
+          "MATCHED": 0.24
+        }
+      },
+      "auto_clear": {
+        "type": "noul",
+        "noul": 0.35
+      }
+    },
+    "S-0191": {
+      "best_match": {
+        "type": "choice",
+        "choice": "NONE",
+        "confidence": 0.96,
+        "probabilities": {
+          "CANDIDATE_1": 0.01,
+          "CANDIDATE_2": 0.01,
+          "CANDIDATE_3": 0,
+          "CANDIDATE_4": 0,
+          "CANDIDATE_5": 0.01,
+          "NONE": 0.97
+        }
+      },
+      "match_quality": {
+        "type": "score",
+        "score": 0.3,
+        "confidence": 0.83,
+        "probabilities": {
+          "0": 0.74,
+          "1": 0.24,
+          "2": 0.01,
+          "3": 0,
+          "4": 0.01,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "break_reason": {
+        "type": "choice",
+        "choice": "BANK_FEE",
+        "confidence": 0.89,
+        "probabilities": {
+          "TIMING": 0,
+          "BANK_FEE": 0.91,
+          "FX_DIFFERENCE": 0,
+          "PARTIAL_PAYMENT": 0,
+          "DUPLICATE": 0.02,
+          "MISSING_IN_BOOKS": 0.06,
+          "MATCHED": 0.01
+        }
+      },
+      "auto_clear": {
+        "type": "noul",
+        "noul": 0
+      }
+    },
+    "S-0192": {
+      "best_match": {
+        "type": "choice",
+        "choice": "NONE",
+        "confidence": 0.92,
+        "probabilities": {
+          "CANDIDATE_1": 0,
+          "CANDIDATE_2": 0.02,
+          "CANDIDATE_3": 0.03,
+          "CANDIDATE_4": 0.01,
+          "CANDIDATE_5": 0.01,
+          "NONE": 0.93
+        }
+      },
+      "match_quality": {
+        "type": "score",
+        "score": 0.36,
+        "confidence": 0.79,
+        "probabilities": {
+          "0": 0.68,
+          "1": 0.3,
+          "2": 0.01,
+          "3": 0,
+          "4": 0.01,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "break_reason": {
+        "type": "choice",
+        "choice": "MISSING_IN_BOOKS",
+        "confidence": 0.86,
+        "probabilities": {
+          "TIMING": 0.01,
+          "BANK_FEE": 0.02,
+          "FX_DIFFERENCE": 0.01,
+          "PARTIAL_PAYMENT": 0.05,
+          "DUPLICATE": 0.03,
+          "MISSING_IN_BOOKS": 0.88,
+          "MATCHED": 0
+        }
+      },
+      "auto_clear": {
+        "type": "noul",
+        "noul": 0
+      }
+    },
+    "S-0198": {
+      "best_match": {
+        "type": "choice",
+        "choice": "NONE",
+        "confidence": 1,
+        "probabilities": {
+          "CANDIDATE_1": 0,
+          "CANDIDATE_2": 0,
+          "CANDIDATE_3": 0,
+          "CANDIDATE_4": 0,
+          "CANDIDATE_5": 0,
+          "NONE": 1
+        }
+      },
+      "match_quality": {
+        "type": "score",
+        "score": 0.13,
+        "confidence": 0.92,
+        "probabilities": {
+          "0": 0.91,
+          "1": 0.07,
+          "2": 0.01,
+          "3": 0,
+          "4": 0.01,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "break_reason": {
+        "type": "choice",
+        "choice": "BANK_FEE",
+        "confidence": 0.69,
+        "probabilities": {
+          "TIMING": 0.01,
+          "BANK_FEE": 0.73,
+          "FX_DIFFERENCE": 0.01,
+          "PARTIAL_PAYMENT": 0.01,
+          "DUPLICATE": 0.02,
+          "MISSING_IN_BOOKS": 0.22,
+          "MATCHED": 0
+        }
+      },
+      "auto_clear": {
+        "type": "noul",
+        "noul": 0
+      }
+    },
+    "S-0199": {
+      "best_match": {
+        "type": "choice",
+        "choice": "CANDIDATE_1",
+        "confidence": 0.66,
+        "probabilities": {
+          "CANDIDATE_1": 0.72,
+          "CANDIDATE_2": 0.03,
+          "CANDIDATE_3": 0.01,
+          "CANDIDATE_4": 0.01,
+          "CANDIDATE_5": 0,
+          "NONE": 0.23
+        }
+      },
+      "match_quality": {
+        "type": "score",
+        "score": 5.22,
+        "confidence": 0.54,
+        "probabilities": {
+          "0": 0.03,
+          "1": 0.04,
+          "2": 0.03,
+          "3": 0.02,
+          "4": 0.06,
+          "5": 0.1,
+          "6": 0.72
+        }
+      },
+      "break_reason": {
+        "type": "choice",
+        "choice": "DUPLICATE",
+        "confidence": 0.85,
+        "probabilities": {
+          "TIMING": 0.01,
+          "BANK_FEE": 0.01,
+          "FX_DIFFERENCE": 0.01,
+          "PARTIAL_PAYMENT": 0.04,
+          "DUPLICATE": 0.87,
+          "MISSING_IN_BOOKS": 0.01,
+          "MATCHED": 0.05
+        }
+      },
+      "auto_clear": {
+        "type": "noul",
+        "noul": 0.01
+      }
+    },
+    "S-0200": {
+      "best_match": {
+        "type": "choice",
+        "choice": "CANDIDATE_1",
+        "confidence": 1,
+        "probabilities": {
+          "CANDIDATE_1": 1,
+          "CANDIDATE_2": 0,
+          "CANDIDATE_3": 0,
+          "CANDIDATE_4": 0,
+          "CANDIDATE_5": 0,
+          "NONE": 0
+        }
+      },
+      "match_quality": {
+        "type": "score",
+        "score": 4.71,
+        "confidence": 0.64,
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.01,
+          "2": 0.01,
+          "3": 0.05,
+          "4": 0.23,
+          "5": 0.53,
+          "6": 0.16
+        }
+      },
+      "break_reason": {
+        "type": "choice",
+        "choice": "MATCHED",
+        "confidence": 0.86,
+        "probabilities": {
+          "TIMING": 0.06,
+          "BANK_FEE": 0.02,
+          "FX_DIFFERENCE": 0.01,
+          "PARTIAL_PAYMENT": 0.01,
+          "DUPLICATE": 0.01,
+          "MISSING_IN_BOOKS": 0.01,
+          "MATCHED": 0.88
+        }
+      },
+      "auto_clear": {
+        "type": "noul",
+        "noul": 0.16
+      }
+    },
+    "S-0211": {
+      "best_match": {
+        "type": "choice",
+        "choice": "CANDIDATE_1",
+        "confidence": 0.4,
+        "probabilities": {
+          "CANDIDATE_1": 0.5,
+          "CANDIDATE_2": 0.11,
+          "CANDIDATE_3": 0.02,
+          "CANDIDATE_4": 0.01,
+          "CANDIDATE_5": 0.01,
+          "NONE": 0.35
+        }
+      },
+      "match_quality": {
+        "type": "score",
+        "score": 2.98,
+        "confidence": 0.37,
+        "probabilities": {
+          "0": 0.04,
+          "1": 0.12,
+          "2": 0.19,
+          "3": 0.26,
+          "4": 0.26,
+          "5": 0.12,
+          "6": 0.01
+        }
+      },
+      "break_reason": {
+        "type": "choice",
+        "choice": "FX_DIFFERENCE",
+        "confidence": 0.95,
+        "probabilities": {
+          "TIMING": 0.01,
+          "BANK_FEE": 0.01,
+          "FX_DIFFERENCE": 0.96,
+          "PARTIAL_PAYMENT": 0.01,
+          "DUPLICATE": 0.01,
+          "MISSING_IN_BOOKS": 0,
+          "MATCHED": 0
+        }
+      },
+      "auto_clear": {
+        "type": "noul",
+        "noul": 0
+      }
+    },
+    "S-0212": {
+      "best_match": {
+        "type": "choice",
+        "choice": "CANDIDATE_1",
+        "confidence": 0.46,
+        "probabilities": {
+          "CANDIDATE_1": 0.55,
+          "CANDIDATE_2": 0.04,
+          "CANDIDATE_3": 0.01,
+          "CANDIDATE_4": 0,
+          "CANDIDATE_5": 0,
+          "NONE": 0.4
+        }
+      },
+      "match_quality": {
+        "type": "score",
+        "score": 2,
+        "confidence": 0.46,
+        "probabilities": {
+          "0": 0.08,
+          "1": 0.3,
+          "2": 0.32,
+          "3": 0.17,
+          "4": 0.1,
+          "5": 0.03,
+          "6": 0
+        }
+      },
+      "break_reason": {
+        "type": "choice",
+        "choice": "PARTIAL_PAYMENT",
+        "confidence": 0.97,
+        "probabilities": {
+          "TIMING": 0.01,
+          "BANK_FEE": 0,
+          "FX_DIFFERENCE": 0,
+          "PARTIAL_PAYMENT": 0.97,
+          "DUPLICATE": 0.02,
+          "MISSING_IN_BOOKS": 0,
+          "MATCHED": 0
+        }
+      },
+      "auto_clear": {
+        "type": "noul",
+        "noul": 0
+      }
+    },
+    "S-0218": {
+      "best_match": {
+        "type": "choice",
+        "choice": "CANDIDATE_1",
+        "confidence": 0.33,
+        "probabilities": {
+          "CANDIDATE_1": 0.44,
+          "CANDIDATE_2": 0.08,
+          "CANDIDATE_3": 0.02,
+          "CANDIDATE_4": 0.01,
+          "CANDIDATE_5": 0.01,
+          "NONE": 0.44
+        }
+      },
+      "match_quality": {
+        "type": "score",
+        "score": 2.44,
+        "confidence": 0.35,
+        "probabilities": {
+          "0": 0.08,
+          "1": 0.18,
+          "2": 0.24,
+          "3": 0.3,
+          "4": 0.13,
+          "5": 0.06,
+          "6": 0.01
+        }
+      },
+      "break_reason": {
+        "type": "choice",
+        "choice": "PARTIAL_PAYMENT",
+        "confidence": 0.84,
+        "probabilities": {
+          "TIMING": 0.03,
+          "BANK_FEE": 0.01,
+          "FX_DIFFERENCE": 0,
+          "PARTIAL_PAYMENT": 0.86,
+          "DUPLICATE": 0.02,
+          "MISSING_IN_BOOKS": 0.01,
+          "MATCHED": 0.07
+        }
+      },
+      "auto_clear": {
+        "type": "noul",
+        "noul": 0
+      }
+    },
+    "S-0226": {
+      "best_match": {
+        "type": "choice",
+        "choice": "NONE",
+        "confidence": 1,
+        "probabilities": {
+          "CANDIDATE_1": 0,
+          "CANDIDATE_2": 0,
+          "CANDIDATE_3": 0,
+          "CANDIDATE_4": 0,
+          "CANDIDATE_5": 0,
+          "NONE": 1
+        }
+      },
+      "match_quality": {
+        "type": "score",
+        "score": 0.17,
+        "confidence": 0.9,
+        "probabilities": {
+          "0": 0.87,
+          "1": 0.11,
+          "2": 0.01,
+          "3": 0,
+          "4": 0.01,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "break_reason": {
+        "type": "choice",
+        "choice": "BANK_FEE",
+        "confidence": 0.81,
+        "probabilities": {
+          "TIMING": 0.01,
+          "BANK_FEE": 0.84,
+          "FX_DIFFERENCE": 0,
+          "PARTIAL_PAYMENT": 0.01,
+          "DUPLICATE": 0.02,
+          "MISSING_IN_BOOKS": 0.11,
+          "MATCHED": 0.01
+        }
+      },
+      "auto_clear": {
+        "type": "noul",
+        "noul": 0
+      }
+    },
+    "S-0232": {
+      "best_match": {
+        "type": "choice",
+        "choice": "NONE",
+        "confidence": 0.9,
+        "probabilities": {
+          "CANDIDATE_1": 0.01,
+          "CANDIDATE_2": 0.04,
+          "CANDIDATE_3": 0.01,
+          "CANDIDATE_4": 0.01,
+          "CANDIDATE_5": 0.01,
+          "NONE": 0.92
+        }
+      },
+      "match_quality": {
+        "type": "score",
+        "score": 0.34,
+        "confidence": 0.8,
+        "probabilities": {
+          "0": 0.7,
+          "1": 0.28,
+          "2": 0.01,
+          "3": 0,
+          "4": 0.01,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "break_reason": {
+        "type": "choice",
+        "choice": "MISSING_IN_BOOKS",
+        "confidence": 0.82,
+        "probabilities": {
+          "TIMING": 0.01,
+          "BANK_FEE": 0.03,
+          "FX_DIFFERENCE": 0.02,
+          "PARTIAL_PAYMENT": 0.02,
+          "DUPLICATE": 0.05,
+          "MISSING_IN_BOOKS": 0.85,
+          "MATCHED": 0.02
+        }
+      },
+      "auto_clear": {
+        "type": "noul",
+        "noul": 0
+      }
+    }
+  }
+}

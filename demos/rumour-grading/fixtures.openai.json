@@ -1,0 +1,9373 @@
+{
+  "demo": "rumour-grading",
+  "provider": "openai",
+  "model": "gpt-6-luna",
+  "recordedAt": "2026-10-11",
+  "source": "scripts/record-demo.js",
+  "usage": {
+    "input_tokens": 286017,
+    "output_tokens": 0
+  },
+  "answers": {
+    "RM-0001": {
+      "source_reliability": {
+        "type": "score",
+        "score": 2.91,
+        "confidence": 0.92,
+        "probabilities": {
+          "0": 0,
+          "1": 0,
+          "2": 0.11,
+          "3": 0.87,
+          "4": 0.02,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "corroborated": {
+        "type": "noul",
+        "noul": 0.86
+      },
+      "coordinated_push": {
+        "type": "noul",
+        "noul": 0.09
+      },
+      "checkable": {
+        "type": "noul",
+        "noul": 0
+      },
+      "disposition": {
+        "type": "choice",
+        "choice": "VERIFY",
+        "confidence": 0.75,
+        "probabilities": {
+          "IGNORE": 0,
+          "WATCH": 0.19,
+          "VERIFY": 0.81,
+          "ACT_WORTHY": 0
+        }
+      }
+    },
+    "RM-0002": {
+      "source_reliability": {
+        "type": "score",
+        "score": 2.08,
+        "confidence": 0.9,
+        "probabilities": {
+          "0": 0,
+          "1": 0.05,
+          "2": 0.82,
+          "3": 0.13,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "corroborated": {
+        "type": "noul",
+        "noul": 0
+      },
+      "coordinated_push": {
+        "type": "noul",
+        "noul": 0
+      },
+      "checkable": {
+        "type": "noul",
+        "noul": 0
+      },
+      "disposition": {
+        "type": "choice",
+        "choice": "WATCH",
+        "confidence": 0.6,
+        "probabilities": {
+          "IGNORE": 0,
+          "WATCH": 0.7,
+          "VERIFY": 0.3,
+          "ACT_WORTHY": 0
+        }
+      }
+    },
+    "RM-0003": {
+      "source_reliability": {
+        "type": "score",
+        "score": 1.49,
+        "confidence": 0.7,
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.49,
+          "2": 0.5,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "corroborated": {
+        "type": "noul",
+        "noul": 0.66
+      },
+      "coordinated_push": {
+        "type": "noul",
+        "noul": 0.04
+      },
+      "checkable": {
+        "type": "noul",
+        "noul": 0
+      },
+      "disposition": {
+        "type": "choice",
+        "choice": "WATCH",
+        "confidence": 0.43,
+        "probabilities": {
+          "IGNORE": 0,
+          "WATCH": 0.57,
+          "VERIFY": 0.43,
+          "ACT_WORTHY": 0
+        }
+      }
+    },
+    "RM-0004": {
+      "source_reliability": {
+        "type": "score",
+        "score": 2.02,
+        "confidence": 0.85,
+        "probabilities": {
+          "0": 0,
+          "1": 0.12,
+          "2": 0.74,
+          "3": 0.14,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "corroborated": {
+        "type": "noul",
+        "noul": 0.76
+      },
+      "coordinated_push": {
+        "type": "noul",
+        "noul": 0.02
+      },
+      "checkable": {
+        "type": "noul",
+        "noul": 0
+      },
+      "disposition": {
+        "type": "choice",
+        "choice": "VERIFY",
+        "confidence": 0.57,
+        "probabilities": {
+          "IGNORE": 0,
+          "WATCH": 0.32,
+          "VERIFY": 0.68,
+          "ACT_WORTHY": 0
+        }
+      }
+    },
+    "RM-0005": {
+      "source_reliability": {
+        "type": "score",
+        "score": 1.04,
+        "confidence": 0.88,
+        "probabilities": {
+          "0": 0.08,
+          "1": 0.8,
+          "2": 0.12,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "corroborated": {
+        "type": "noul",
+        "noul": 0
+      },
+      "coordinated_push": {
+        "type": "noul",
+        "noul": 0
+      },
+      "checkable": {
+        "type": "noul",
+        "noul": 0
+      },
+      "disposition": {
+        "type": "choice",
+        "choice": "WATCH",
+        "confidence": 0.81,
+        "probabilities": {
+          "IGNORE": 0,
+          "WATCH": 0.86,
+          "VERIFY": 0.14,
+          "ACT_WORTHY": 0
+        }
+      }
+    },
+    "RM-0006": {
+      "source_reliability": {
+        "type": "score",
+        "score": 1.66,
+        "confidence": 0.76,
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.36,
+          "2": 0.6,
+          "3": 0.02,
+          "4": 0.01,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "corroborated": {
+        "type": "noul",
+        "noul": 0.59
+      },
+      "coordinated_push": {
+        "type": "noul",
+        "noul": 0.01
+      },
+      "checkable": {
+        "type": "noul",
+        "noul": 0
+      },
+      "disposition": {
+        "type": "choice",
+        "choice": "WATCH",
+        "confidence": 0.83,
+        "probabilities": {
+          "IGNORE": 0,
+          "WATCH": 0.87,
+          "VERIFY": 0.13,
+          "ACT_WORTHY": 0
+        }
+      }
+    },
+    "RM-0007": {
+      "source_reliability": {
+        "type": "score",
+        "score": 0.54,
+        "confidence": 0.72,
+        "probabilities": {
+          "0": 0.47,
+          "1": 0.52,
+          "2": 0.01,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "corroborated": {
+        "type": "noul",
+        "noul": 0.54
+      },
+      "coordinated_push": {
+        "type": "noul",
+        "noul": 0
+      },
+      "checkable": {
+        "type": "noul",
+        "noul": 0
+      },
+      "disposition": {
+        "type": "choice",
+        "choice": "WATCH",
+        "confidence": 0.33,
+        "probabilities": {
+          "IGNORE": 0.01,
+          "WATCH": 0.5,
+          "VERIFY": 0.49,
+          "ACT_WORTHY": 0
+        }
+      }
+    },
+    "RM-0008": {
+      "source_reliability": {
+        "type": "score",
+        "score": 2.64,
+        "confidence": 0.78,
+        "probabilities": {
+          "0": 0,
+          "1": 0.02,
+          "2": 0.33,
+          "3": 0.64,
+          "4": 0.01,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "corroborated": {
+        "type": "noul",
+        "noul": 0.21
+      },
+      "coordinated_push": {
+        "type": "noul",
+        "noul": 0.97
+      },
+      "checkable": {
+        "type": "noul",
+        "noul": 0
+      },
+      "disposition": {
+        "type": "choice",
+        "choice": "VERIFY",
+        "confidence": 0.81,
+        "probabilities": {
+          "IGNORE": 0,
+          "WATCH": 0.13,
+          "VERIFY": 0.86,
+          "ACT_WORTHY": 0.01
+        }
+      }
+    },
+    "RM-0009": {
+      "source_reliability": {
+        "type": "score",
+        "score": 2.92,
+        "confidence": 0.91,
+        "probabilities": {
+          "0": 0,
+          "1": 0.01,
+          "2": 0.1,
+          "3": 0.85,
+          "4": 0.04,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "corroborated": {
+        "type": "noul",
+        "noul": 0.53
+      },
+      "coordinated_push": {
+        "type": "noul",
+        "noul": 0.04
+      },
+      "checkable": {
+        "type": "noul",
+        "noul": 0
+      },
+      "disposition": {
+        "type": "choice",
+        "choice": "VERIFY",
+        "confidence": 0.85,
+        "probabilities": {
+          "IGNORE": 0,
+          "WATCH": 0.11,
+          "VERIFY": 0.89,
+          "ACT_WORTHY": 0
+        }
+      }
+    },
+    "RM-0010": {
+      "source_reliability": {
+        "type": "score",
+        "score": 1.74,
+        "confidence": 0.84,
+        "probabilities": {
+          "0": 0,
+          "1": 0.27,
+          "2": 0.72,
+          "3": 0.01,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "corroborated": {
+        "type": "noul",
+        "noul": 0.88
+      },
+      "coordinated_push": {
+        "type": "noul",
+        "noul": 0.01
+      },
+      "checkable": {
+        "type": "noul",
+        "noul": 0
+      },
+      "disposition": {
+        "type": "choice",
+        "choice": "VERIFY",
+        "confidence": 0.43,
+        "probabilities": {
+          "IGNORE": 0,
+          "WATCH": 0.42,
+          "VERIFY": 0.57,
+          "ACT_WORTHY": 0.01
+        }
+      }
+    },
+    "RM-0011": {
+      "source_reliability": {
+        "type": "score",
+        "score": 1.85,
+        "confidence": 0.89,
+        "probabilities": {
+          "0": 0,
+          "1": 0.17,
+          "2": 0.81,
+          "3": 0.02,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "corroborated": {
+        "type": "noul",
+        "noul": 0.55
+      },
+      "coordinated_push": {
+        "type": "noul",
+        "noul": 0.01
+      },
+      "checkable": {
+        "type": "noul",
+        "noul": 0
+      },
+      "disposition": {
+        "type": "choice",
+        "choice": "WATCH",
+        "confidence": 0.57,
+        "probabilities": {
+          "IGNORE": 0,
+          "WATCH": 0.68,
+          "VERIFY": 0.32,
+          "ACT_WORTHY": 0
+        }
+      }
+    },
+    "RM-0012": {
+      "source_reliability": {
+        "type": "score",
+        "score": 0.61,
+        "confidence": 0.75,
+        "probabilities": {
+          "0": 0.41,
+          "1": 0.57,
+          "2": 0.02,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "corroborated": {
+        "type": "noul",
+        "noul": 0
+      },
+      "coordinated_push": {
+        "type": "noul",
+        "noul": 0
+      },
+      "checkable": {
+        "type": "noul",
+        "noul": 0
+      },
+      "disposition": {
+        "type": "choice",
+        "choice": "WATCH",
+        "confidence": 0.77,
+        "probabilities": {
+          "IGNORE": 0,
+          "WATCH": 0.83,
+          "VERIFY": 0.17,
+          "ACT_WORTHY": 0
+        }
+      }
+    },
+    "RM-0013": {
+      "source_reliability": {
+        "type": "score",
+        "score": 0.92,
+        "confidence": 0.86,
+        "probabilities": {
+          "0": 0.16,
+          "1": 0.76,
+          "2": 0.08,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "corroborated": {
+        "type": "noul",
+        "noul": 0.64
+      },
+      "coordinated_push": {
+        "type": "noul",
+        "noul": 0.05
+      },
+      "checkable": {
+        "type": "noul",
+        "noul": 0
+      },
+      "disposition": {
+        "type": "choice",
+        "choice": "WATCH",
+        "confidence": 0.59,
+        "probabilities": {
+          "IGNORE": 0,
+          "WATCH": 0.69,
+          "VERIFY": 0.31,
+          "ACT_WORTHY": 0
+        }
+      }
+    },
+    "RM-0014": {
+      "source_reliability": {
+        "type": "score",
+        "score": 2.64,
+        "confidence": 0.79,
+        "probabilities": {
+          "0": 0,
+          "1": 0.01,
+          "2": 0.34,
+          "3": 0.65,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "corroborated": {
+        "type": "noul",
+        "noul": 0
+      },
+      "coordinated_push": {
+        "type": "noul",
+        "noul": 0.16
+      },
+      "checkable": {
+        "type": "noul",
+        "noul": 0
+      },
+      "disposition": {
+        "type": "choice",
+        "choice": "WATCH",
+        "confidence": 0.53,
+        "probabilities": {
+          "IGNORE": 0,
+          "WATCH": 0.65,
+          "VERIFY": 0.35,
+          "ACT_WORTHY": 0
+        }
+      }
+    },
+    "RM-0015": {
+      "source_reliability": {
+        "type": "score",
+        "score": 2.58,
+        "confidence": 0.74,
+        "probabilities": {
+          "0": 0,
+          "1": 0.05,
+          "2": 0.33,
+          "3": 0.61,
+          "4": 0.01,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "corroborated": {
+        "type": "noul",
+        "noul": 0.71
+      },
+      "coordinated_push": {
+        "type": "noul",
+        "noul": 0.15
+      },
+      "checkable": {
+        "type": "noul",
+        "noul": 0
+      },
+      "disposition": {
+        "type": "choice",
+        "choice": "VERIFY",
+        "confidence": 0.71,
+        "probabilities": {
+          "IGNORE": 0,
+          "WATCH": 0.22,
+          "VERIFY": 0.78,
+          "ACT_WORTHY": 0
+        }
+      }
+    },
+    "RM-0016": {
+      "source_reliability": {
+        "type": "score",
+        "score": 1.33,
+        "confidence": 0.78,
+        "probabilities": {
+          "0": 0.02,
+          "1": 0.63,
+          "2": 0.35,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "corroborated": {
+        "type": "noul",
+        "noul": 0
+      },
+      "coordinated_push": {
+        "type": "noul",
+        "noul": 1
+      },
+      "checkable": {
+        "type": "noul",
+        "noul": 0
+      },
+      "disposition": {
+        "type": "choice",
+        "choice": "WATCH",
+        "confidence": 0.56,
+        "probabilities": {
+          "IGNORE": 0,
+          "WATCH": 0.67,
+          "VERIFY": 0.33,
+          "ACT_WORTHY": 0
+        }
+      }
+    },
+    "RM-0017": {
+      "source_reliability": {
+        "type": "score",
+        "score": 0.97,
+        "confidence": 0.9,
+        "probabilities": {
+          "0": 0.1,
+          "1": 0.83,
+          "2": 0.07,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "corroborated": {
+        "type": "noul",
+        "noul": 0.46
+      },
+      "coordinated_push": {
+        "type": "noul",
+        "noul": 0
+      },
+      "checkable": {
+        "type": "noul",
+        "noul": 0
+      },
+      "disposition": {
+        "type": "choice",
+        "choice": "WATCH",
+        "confidence": 0.59,
+        "probabilities": {
+          "IGNORE": 0,
+          "WATCH": 0.69,
+          "VERIFY": 0.31,
+          "ACT_WORTHY": 0
+        }
+      }
+    },
+    "RM-0018": {
+      "source_reliability": {
+        "type": "score",
+        "score": 1.19,
+        "confidence": 0.88,
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.79,
+          "2": 0.2,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "corroborated": {
+        "type": "noul",
+        "noul": 0.74
+      },
+      "coordinated_push": {
+        "type": "noul",
+        "noul": 0.02
+      },
+      "checkable": {
+        "type": "noul",
+        "noul": 0
+      },
+      "disposition": {
+        "type": "choice",
+        "choice": "WATCH",
+        "confidence": 0.36,
+        "probabilities": {
+          "IGNORE": 0,
+          "WATCH": 0.52,
+          "VERIFY": 0.48,
+          "ACT_WORTHY": 0
+        }
+      }
+    },
+    "RM-0019": {
+      "source_reliability": {
+        "type": "score",
+        "score": 1.53,
+        "confidence": 0.73,
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.45,
+          "2": 0.54,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "corroborated": {
+        "type": "noul",
+        "noul": 0
+      },
+      "coordinated_push": {
+        "type": "noul",
+        "noul": 0.04
+      },
+      "checkable": {
+        "type": "noul",
+        "noul": 0
+      },
+      "disposition": {
+        "type": "choice",
+        "choice": "WATCH",
+        "confidence": 0.59,
+        "probabilities": {
+          "IGNORE": 0,
+          "WATCH": 0.69,
+          "VERIFY": 0.31,
+          "ACT_WORTHY": 0
+        }
+      }
+    },
+    "RM-0020": {
+      "source_reliability": {
+        "type": "score",
+        "score": 1.11,
+        "confidence": 0.88,
+        "probabilities": {
+          "0": 0.05,
+          "1": 0.79,
+          "2": 0.16,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "corroborated": {
+        "type": "noul",
+        "noul": 0.92
+      },
+      "coordinated_push": {
+        "type": "noul",
+        "noul": 0.08
+      },
+      "checkable": {
+        "type": "noul",
+        "noul": 0
+      },
+      "disposition": {
+        "type": "choice",
+        "choice": "VERIFY",
+        "confidence": 0.57,
+        "probabilities": {
+          "IGNORE": 0,
+          "WATCH": 0.32,
+          "VERIFY": 0.68,
+          "ACT_WORTHY": 0
+        }
+      }
+    },
+    "RM-0021": {
+      "source_reliability": {
+        "type": "score",
+        "score": 1.89,
+        "confidence": 0.76,
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.24,
+          "2": 0.61,
+          "3": 0.13,
+          "4": 0.01,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "corroborated": {
+        "type": "noul",
+        "noul": 0.84
+      },
+      "coordinated_push": {
+        "type": "noul",
+        "noul": 0
+      },
+      "checkable": {
+        "type": "noul",
+        "noul": 1
+      },
+      "disposition": {
+        "type": "choice",
+        "choice": "VERIFY",
+        "confidence": 0.72,
+        "probabilities": {
+          "IGNORE": 0,
+          "WATCH": 0.2,
+          "VERIFY": 0.79,
+          "ACT_WORTHY": 0.01
+        }
+      }
+    },
+    "RM-0022": {
+      "source_reliability": {
+        "type": "score",
+        "score": 0.87,
+        "confidence": 0.84,
+        "probabilities": {
+          "0": 0.2,
+          "1": 0.73,
+          "2": 0.07,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "corroborated": {
+        "type": "noul",
+        "noul": 0.73
+      },
+      "coordinated_push": {
+        "type": "noul",
+        "noul": 0.03
+      },
+      "checkable": {
+        "type": "noul",
+        "noul": 0
+      },
+      "disposition": {
+        "type": "choice",
+        "choice": "VERIFY",
+        "confidence": 0.45,
+        "probabilities": {
+          "IGNORE": 0,
+          "WATCH": 0.41,
+          "VERIFY": 0.59,
+          "ACT_WORTHY": 0
+        }
+      }
+    },
+    "RM-0023": {
+      "source_reliability": {
+        "type": "score",
+        "score": 1.11,
+        "confidence": 0.9,
+        "probabilities": {
+          "0": 0.03,
+          "1": 0.83,
+          "2": 0.14,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "corroborated": {
+        "type": "noul",
+        "noul": 0.59
+      },
+      "coordinated_push": {
+        "type": "noul",
+        "noul": 0.02
+      },
+      "checkable": {
+        "type": "noul",
+        "noul": 0
+      },
+      "disposition": {
+        "type": "choice",
+        "choice": "VERIFY",
+        "confidence": 0.85,
+        "probabilities": {
+          "IGNORE": 0,
+          "WATCH": 0.11,
+          "VERIFY": 0.89,
+          "ACT_WORTHY": 0
+        }
+      }
+    },
+    "RM-0024": {
+      "source_reliability": {
+        "type": "score",
+        "score": 1.54,
+        "confidence": 0.72,
+        "probabilities": {
+          "0": 0.02,
+          "1": 0.43,
+          "2": 0.54,
+          "3": 0.01,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "corroborated": {
+        "type": "noul",
+        "noul": 0.52
+      },
+      "coordinated_push": {
+        "type": "noul",
+        "noul": 0.09
+      },
+      "checkable": {
+        "type": "noul",
+        "noul": 0
+      },
+      "disposition": {
+        "type": "choice",
+        "choice": "WATCH",
+        "confidence": 0.44,
+        "probabilities": {
+          "IGNORE": 0,
+          "WATCH": 0.58,
+          "VERIFY": 0.42,
+          "ACT_WORTHY": 0
+        }
+      }
+    },
+    "RM-0025": {
+      "source_reliability": {
+        "type": "score",
+        "score": 0.74,
+        "confidence": 0.81,
+        "probabilities": {
+          "0": 0.29,
+          "1": 0.68,
+          "2": 0.03,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "corroborated": {
+        "type": "noul",
+        "noul": 0.15
+      },
+      "coordinated_push": {
+        "type": "noul",
+        "noul": 0.27
+      },
+      "checkable": {
+        "type": "noul",
+        "noul": 0
+      },
+      "disposition": {
+        "type": "choice",
+        "choice": "WATCH",
+        "confidence": 0.72,
+        "probabilities": {
+          "IGNORE": 0,
+          "WATCH": 0.79,
+          "VERIFY": 0.21,
+          "ACT_WORTHY": 0
+        }
+      }
+    },
+    "RM-0026": {
+      "source_reliability": {
+        "type": "score",
+        "score": 0.86,
+        "confidence": 0.9,
+        "probabilities": {
+          "0": 0.16,
+          "1": 0.82,
+          "2": 0.02,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "corroborated": {
+        "type": "noul",
+        "noul": 0.83
+      },
+      "coordinated_push": {
+        "type": "noul",
+        "noul": 0.05
+      },
+      "checkable": {
+        "type": "noul",
+        "noul": 0
+      },
+      "disposition": {
+        "type": "choice",
+        "choice": "WATCH",
+        "confidence": 0.53,
+        "probabilities": {
+          "IGNORE": 0,
+          "WATCH": 0.65,
+          "VERIFY": 0.35,
+          "ACT_WORTHY": 0
+        }
+      }
+    },
+    "RM-0027": {
+      "source_reliability": {
+        "type": "score",
+        "score": 1.98,
+        "confidence": 0.92,
+        "probabilities": {
+          "0": 0,
+          "1": 0.08,
+          "2": 0.86,
+          "3": 0.06,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "corroborated": {
+        "type": "noul",
+        "noul": 0.71
+      },
+      "coordinated_push": {
+        "type": "noul",
+        "noul": 0
+      },
+      "checkable": {
+        "type": "noul",
+        "noul": 0
+      },
+      "disposition": {
+        "type": "choice",
+        "choice": "VERIFY",
+        "confidence": 0.55,
+        "probabilities": {
+          "IGNORE": 0,
+          "WATCH": 0.34,
+          "VERIFY": 0.66,
+          "ACT_WORTHY": 0
+        }
+      }
+    },
+    "RM-0028": {
+      "source_reliability": {
+        "type": "score",
+        "score": 2.22,
+        "confidence": 0.77,
+        "probabilities": {
+          "0": 0,
+          "1": 0.09,
+          "2": 0.6,
+          "3": 0.31,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "corroborated": {
+        "type": "noul",
+        "noul": 0.84
+      },
+      "coordinated_push": {
+        "type": "noul",
+        "noul": 0
+      },
+      "checkable": {
+        "type": "noul",
+        "noul": 0
+      },
+      "disposition": {
+        "type": "choice",
+        "choice": "WATCH",
+        "confidence": 0.36,
+        "probabilities": {
+          "IGNORE": 0,
+          "WATCH": 0.52,
+          "VERIFY": 0.48,
+          "ACT_WORTHY": 0
+        }
+      }
+    },
+    "RM-0029": {
+      "source_reliability": {
+        "type": "score",
+        "score": 1.38,
+        "confidence": 0.77,
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.6,
+          "2": 0.39,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "corroborated": {
+        "type": "noul",
+        "noul": 0.61
+      },
+      "coordinated_push": {
+        "type": "noul",
+        "noul": 0.09
+      },
+      "checkable": {
+        "type": "noul",
+        "noul": 0
+      },
+      "disposition": {
+        "type": "choice",
+        "choice": "WATCH",
+        "confidence": 0.8,
+        "probabilities": {
+          "IGNORE": 0,
+          "WATCH": 0.85,
+          "VERIFY": 0.15,
+          "ACT_WORTHY": 0
+        }
+      }
+    },
+    "RM-0030": {
+      "source_reliability": {
+        "type": "score",
+        "score": 2.32,
+        "confidence": 0.71,
+        "probabilities": {
+          "0": 0,
+          "1": 0.09,
+          "2": 0.51,
+          "3": 0.39,
+          "4": 0.01,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "corroborated": {
+        "type": "noul",
+        "noul": 0.77
+      },
+      "coordinated_push": {
+        "type": "noul",
+        "noul": 0.12
+      },
+      "checkable": {
+        "type": "noul",
+        "noul": 0.64
+      },
+      "disposition": {
+        "type": "choice",
+        "choice": "VERIFY",
+        "confidence": 0.41,
+        "probabilities": {
+          "IGNORE": 0.03,
+          "WATCH": 0.4,
+          "VERIFY": 0.56,
+          "ACT_WORTHY": 0.01
+        }
+      }
+    },
+    "RM-0031": {
+      "source_reliability": {
+        "type": "score",
+        "score": 1.49,
+        "confidence": 0.7,
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.5,
+          "2": 0.48,
+          "3": 0.01,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "corroborated": {
+        "type": "noul",
+        "noul": 0.89
+      },
+      "coordinated_push": {
+        "type": "noul",
+        "noul": 0
+      },
+      "checkable": {
+        "type": "noul",
+        "noul": 0
+      },
+      "disposition": {
+        "type": "choice",
+        "choice": "WATCH",
+        "confidence": 0.52,
+        "probabilities": {
+          "IGNORE": 0,
+          "WATCH": 0.64,
+          "VERIFY": 0.36,
+          "ACT_WORTHY": 0
+        }
+      }
+    },
+    "RM-0032": {
+      "source_reliability": {
+        "type": "score",
+        "score": 0.94,
+        "confidence": 0.9,
+        "probabilities": {
+          "0": 0.12,
+          "1": 0.82,
+          "2": 0.06,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "corroborated": {
+        "type": "noul",
+        "noul": 0.51
+      },
+      "coordinated_push": {
+        "type": "noul",
+        "noul": 0.1
+      },
+      "checkable": {
+        "type": "noul",
+        "noul": 0
+      },
+      "disposition": {
+        "type": "choice",
+        "choice": "VERIFY",
+        "confidence": 0.72,
+        "probabilities": {
+          "IGNORE": 0,
+          "WATCH": 0.21,
+          "VERIFY": 0.79,
+          "ACT_WORTHY": 0
+        }
+      }
+    },
+    "RM-0033": {
+      "source_reliability": {
+        "type": "score",
+        "score": 1.27,
+        "confidence": 0.83,
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.71,
+          "2": 0.28,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "corroborated": {
+        "type": "noul",
+        "noul": 0.05
+      },
+      "coordinated_push": {
+        "type": "noul",
+        "noul": 0.99
+      },
+      "checkable": {
+        "type": "noul",
+        "noul": 0
+      },
+      "disposition": {
+        "type": "choice",
+        "choice": "VERIFY",
+        "confidence": 0.61,
+        "probabilities": {
+          "IGNORE": 0,
+          "WATCH": 0.29,
+          "VERIFY": 0.71,
+          "ACT_WORTHY": 0
+        }
+      }
+    },
+    "RM-0034": {
+      "source_reliability": {
+        "type": "score",
+        "score": 2.65,
+        "confidence": 0.78,
+        "probabilities": {
+          "0": 0,
+          "1": 0.02,
+          "2": 0.32,
+          "3": 0.65,
+          "4": 0.01,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "corroborated": {
+        "type": "noul",
+        "noul": 0.15
+      },
+      "coordinated_push": {
+        "type": "noul",
+        "noul": 0.99
+      },
+      "checkable": {
+        "type": "noul",
+        "noul": 0
+      },
+      "disposition": {
+        "type": "choice",
+        "choice": "WATCH",
+        "confidence": 0.43,
+        "probabilities": {
+          "IGNORE": 0,
+          "WATCH": 0.57,
+          "VERIFY": 0.43,
+          "ACT_WORTHY": 0
+        }
+      }
+    },
+    "RM-0035": {
+      "source_reliability": {
+        "type": "score",
+        "score": 1.85,
+        "confidence": 0.71,
+        "probabilities": {
+          "0": 0.02,
+          "1": 0.28,
+          "2": 0.54,
+          "3": 0.15,
+          "4": 0.01,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "corroborated": {
+        "type": "noul",
+        "noul": 0.99
+      },
+      "coordinated_push": {
+        "type": "noul",
+        "noul": 0.06
+      },
+      "checkable": {
+        "type": "noul",
+        "noul": 1
+      },
+      "disposition": {
+        "type": "choice",
+        "choice": "VERIFY",
+        "confidence": 0.37,
+        "probabilities": {
+          "IGNORE": 0.08,
+          "WATCH": 0.38,
+          "VERIFY": 0.53,
+          "ACT_WORTHY": 0.01
+        }
+      }
+    },
+    "RM-0036": {
+      "source_reliability": {
+        "type": "score",
+        "score": 2.34,
+        "confidence": 0.77,
+        "probabilities": {
+          "0": 0,
+          "1": 0.03,
+          "2": 0.61,
+          "3": 0.35,
+          "4": 0.01,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "corroborated": {
+        "type": "noul",
+        "noul": 0
+      },
+      "coordinated_push": {
+        "type": "noul",
+        "noul": 0.09
+      },
+      "checkable": {
+        "type": "noul",
+        "noul": 1
+      },
+      "disposition": {
+        "type": "choice",
+        "choice": "VERIFY",
+        "confidence": 0.51,
+        "probabilities": {
+          "IGNORE": 0,
+          "WATCH": 0.37,
+          "VERIFY": 0.63,
+          "ACT_WORTHY": 0
+        }
+      }
+    },
+    "RM-0037": {
+      "source_reliability": {
+        "type": "score",
+        "score": 2.29,
+        "confidence": 0.76,
+        "probabilities": {
+          "0": 0,
+          "1": 0.06,
+          "2": 0.6,
+          "3": 0.33,
+          "4": 0.01,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "corroborated": {
+        "type": "noul",
+        "noul": 0.77
+      },
+      "coordinated_push": {
+        "type": "noul",
+        "noul": 0.04
+      },
+      "checkable": {
+        "type": "noul",
+        "noul": 0
+      },
+      "disposition": {
+        "type": "choice",
+        "choice": "WATCH",
+        "confidence": 0.65,
+        "probabilities": {
+          "IGNORE": 0,
+          "WATCH": 0.74,
+          "VERIFY": 0.26,
+          "ACT_WORTHY": 0
+        }
+      }
+    },
+    "RM-0038": {
+      "source_reliability": {
+        "type": "score",
+        "score": 2.26,
+        "confidence": 0.79,
+        "probabilities": {
+          "0": 0,
+          "1": 0.05,
+          "2": 0.64,
+          "3": 0.31,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "corroborated": {
+        "type": "noul",
+        "noul": 0
+      },
+      "coordinated_push": {
+        "type": "noul",
+        "noul": 0.03
+      },
+      "checkable": {
+        "type": "noul",
+        "noul": 1
+      },
+      "disposition": {
+        "type": "choice",
+        "choice": "VERIFY",
+        "confidence": 0.83,
+        "probabilities": {
+          "IGNORE": 0,
+          "WATCH": 0.13,
+          "VERIFY": 0.87,
+          "ACT_WORTHY": 0
+        }
+      }
+    },
+    "RM-0039": {
+      "source_reliability": {
+        "type": "score",
+        "score": 2.29,
+        "confidence": 0.77,
+        "probabilities": {
+          "0": 0,
+          "1": 0.05,
+          "2": 0.62,
+          "3": 0.32,
+          "4": 0.01,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "corroborated": {
+        "type": "noul",
+        "noul": 0.68
+      },
+      "coordinated_push": {
+        "type": "noul",
+        "noul": 0.01
+      },
+      "checkable": {
+        "type": "noul",
+        "noul": 0
+      },
+      "disposition": {
+        "type": "choice",
+        "choice": "VERIFY",
+        "confidence": 0.73,
+        "probabilities": {
+          "IGNORE": 0,
+          "WATCH": 0.2,
+          "VERIFY": 0.8,
+          "ACT_WORTHY": 0
+        }
+      }
+    },
+    "RM-0040": {
+      "source_reliability": {
+        "type": "score",
+        "score": 1.04,
+        "confidence": 0.93,
+        "probabilities": {
+          "0": 0.04,
+          "1": 0.88,
+          "2": 0.08,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "corroborated": {
+        "type": "noul",
+        "noul": 0.52
+      },
+      "coordinated_push": {
+        "type": "noul",
+        "noul": 0.1
+      },
+      "checkable": {
+        "type": "noul",
+        "noul": 0
+      },
+      "disposition": {
+        "type": "choice",
+        "choice": "WATCH",
+        "confidence": 0.79,
+        "probabilities": {
+          "IGNORE": 0,
+          "WATCH": 0.84,
+          "VERIFY": 0.16,
+          "ACT_WORTHY": 0
+        }
+      }
+    },
+    "RM-0041": {
+      "source_reliability": {
+        "type": "score",
+        "score": 0.28,
+        "confidence": 0.84,
+        "probabilities": {
+          "0": 0.73,
+          "1": 0.26,
+          "2": 0.01,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "corroborated": {
+        "type": "noul",
+        "noul": 0
+      },
+      "coordinated_push": {
+        "type": "noul",
+        "noul": 0.01
+      },
+      "checkable": {
+        "type": "noul",
+        "noul": 0
+      },
+      "disposition": {
+        "type": "choice",
+        "choice": "WATCH",
+        "confidence": 0.67,
+        "probabilities": {
+          "IGNORE": 0.01,
+          "WATCH": 0.75,
+          "VERIFY": 0.24,
+          "ACT_WORTHY": 0
+        }
+      }
+    },
+    "RM-0042": {
+      "source_reliability": {
+        "type": "score",
+        "score": 1.49,
+        "confidence": 0.7,
+        "probabilities": {
+          "0": 0.02,
+          "1": 0.47,
+          "2": 0.51,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "corroborated": {
+        "type": "noul",
+        "noul": 0
+      },
+      "coordinated_push": {
+        "type": "noul",
+        "noul": 1
+      },
+      "checkable": {
+        "type": "noul",
+        "noul": 0
+      },
+      "disposition": {
+        "type": "choice",
+        "choice": "VERIFY",
+        "confidence": 0.6,
+        "probabilities": {
+          "IGNORE": 0,
+          "WATCH": 0.3,
+          "VERIFY": 0.7,
+          "ACT_WORTHY": 0
+        }
+      }
+    },
+    "RM-0043": {
+      "source_reliability": {
+        "type": "score",
+        "score": 2.99,
+        "confidence": 0.84,
+        "probabilities": {
+          "0": 0,
+          "1": 0.01,
+          "2": 0.12,
+          "3": 0.74,
+          "4": 0.13,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "corroborated": {
+        "type": "noul",
+        "noul": 0.78
+      },
+      "coordinated_push": {
+        "type": "noul",
+        "noul": 0.04
+      },
+      "checkable": {
+        "type": "noul",
+        "noul": 0
+      },
+      "disposition": {
+        "type": "choice",
+        "choice": "VERIFY",
+        "confidence": 0.8,
+        "probabilities": {
+          "IGNORE": 0,
+          "WATCH": 0.15,
+          "VERIFY": 0.85,
+          "ACT_WORTHY": 0
+        }
+      }
+    },
+    "RM-0044": {
+      "source_reliability": {
+        "type": "score",
+        "score": 1.12,
+        "confidence": 0.91,
+        "probabilities": {
+          "0": 0.02,
+          "1": 0.84,
+          "2": 0.14,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "corroborated": {
+        "type": "noul",
+        "noul": 0.75
+      },
+      "coordinated_push": {
+        "type": "noul",
+        "noul": 0.04
+      },
+      "checkable": {
+        "type": "noul",
+        "noul": 0
+      },
+      "disposition": {
+        "type": "choice",
+        "choice": "WATCH",
+        "confidence": 0.43,
+        "probabilities": {
+          "IGNORE": 0,
+          "WATCH": 0.57,
+          "VERIFY": 0.43,
+          "ACT_WORTHY": 0
+        }
+      }
+    },
+    "RM-0045": {
+      "source_reliability": {
+        "type": "score",
+        "score": 1.87,
+        "confidence": 0.87,
+        "probabilities": {
+          "0": 0,
+          "1": 0.18,
+          "2": 0.77,
+          "3": 0.05,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "corroborated": {
+        "type": "noul",
+        "noul": 0.64
+      },
+      "coordinated_push": {
+        "type": "noul",
+        "noul": 0.03
+      },
+      "checkable": {
+        "type": "noul",
+        "noul": 0
+      },
+      "disposition": {
+        "type": "choice",
+        "choice": "WATCH",
+        "confidence": 0.43,
+        "probabilities": {
+          "IGNORE": 0,
+          "WATCH": 0.57,
+          "VERIFY": 0.43,
+          "ACT_WORTHY": 0
+        }
+      }
+    },
+    "RM-0046": {
+      "source_reliability": {
+        "type": "score",
+        "score": 2.44,
+        "confidence": 0.7,
+        "probabilities": {
+          "0": 0,
+          "1": 0.04,
+          "2": 0.49,
+          "3": 0.46,
+          "4": 0.01,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "corroborated": {
+        "type": "noul",
+        "noul": 0
+      },
+      "coordinated_push": {
+        "type": "noul",
+        "noul": 0
+      },
+      "checkable": {
+        "type": "noul",
+        "noul": 0
+      },
+      "disposition": {
+        "type": "choice",
+        "choice": "WATCH",
+        "confidence": 0.63,
+        "probabilities": {
+          "IGNORE": 0,
+          "WATCH": 0.72,
+          "VERIFY": 0.28,
+          "ACT_WORTHY": 0
+        }
+      }
+    },
+    "RM-0047": {
+      "source_reliability": {
+        "type": "score",
+        "score": 1.95,
+        "confidence": 0.83,
+        "probabilities": {
+          "0": 0,
+          "1": 0.17,
+          "2": 0.71,
+          "3": 0.12,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "corroborated": {
+        "type": "noul",
+        "noul": 0.71
+      },
+      "coordinated_push": {
+        "type": "noul",
+        "noul": 0.01
+      },
+      "checkable": {
+        "type": "noul",
+        "noul": 0
+      },
+      "disposition": {
+        "type": "choice",
+        "choice": "VERIFY",
+        "confidence": 0.35,
+        "probabilities": {
+          "IGNORE": 0,
+          "WATCH": 0.49,
+          "VERIFY": 0.51,
+          "ACT_WORTHY": 0
+        }
+      }
+    },
+    "RM-0048": {
+      "source_reliability": {
+        "type": "score",
+        "score": 0.79,
+        "confidence": 0.87,
+        "probabilities": {
+          "0": 0.22,
+          "1": 0.77,
+          "2": 0.01,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "corroborated": {
+        "type": "noul",
+        "noul": 0.56
+      },
+      "coordinated_push": {
+        "type": "noul",
+        "noul": 0.1
+      },
+      "checkable": {
+        "type": "noul",
+        "noul": 0
+      },
+      "disposition": {
+        "type": "choice",
+        "choice": "WATCH",
+        "confidence": 0.53,
+        "probabilities": {
+          "IGNORE": 0,
+          "WATCH": 0.65,
+          "VERIFY": 0.35,
+          "ACT_WORTHY": 0
+        }
+      }
+    },
+    "RM-0049": {
+      "source_reliability": {
+        "type": "score",
+        "score": 0.85,
+        "confidence": 0.81,
+        "probabilities": {
+          "0": 0.24,
+          "1": 0.67,
+          "2": 0.09,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "corroborated": {
+        "type": "noul",
+        "noul": 0.53
+      },
+      "coordinated_push": {
+        "type": "noul",
+        "noul": 0.06
+      },
+      "checkable": {
+        "type": "noul",
+        "noul": 0
+      },
+      "disposition": {
+        "type": "choice",
+        "choice": "WATCH",
+        "confidence": 0.56,
+        "probabilities": {
+          "IGNORE": 0,
+          "WATCH": 0.67,
+          "VERIFY": 0.33,
+          "ACT_WORTHY": 0
+        }
+      }
+    },
+    "RM-0050": {
+      "source_reliability": {
+        "type": "score",
+        "score": 1.27,
+        "confidence": 0.82,
+        "probabilities": {
+          "0": 0.02,
+          "1": 0.69,
+          "2": 0.29,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "corroborated": {
+        "type": "noul",
+        "noul": 0.7
+      },
+      "coordinated_push": {
+        "type": "noul",
+        "noul": 0.08
+      },
+      "checkable": {
+        "type": "noul",
+        "noul": 0
+      },
+      "disposition": {
+        "type": "choice",
+        "choice": "WATCH",
+        "confidence": 0.61,
+        "probabilities": {
+          "IGNORE": 0,
+          "WATCH": 0.71,
+          "VERIFY": 0.29,
+          "ACT_WORTHY": 0
+        }
+      }
+    },
+    "RM-0051": {
+      "source_reliability": {
+        "type": "score",
+        "score": 1.94,
+        "confidence": 0.91,
+        "probabilities": {
+          "0": 0,
+          "1": 0.11,
+          "2": 0.84,
+          "3": 0.05,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "corroborated": {
+        "type": "noul",
+        "noul": 0.44
+      },
+      "coordinated_push": {
+        "type": "noul",
+        "noul": 0
+      },
+      "checkable": {
+        "type": "noul",
+        "noul": 0
+      },
+      "disposition": {
+        "type": "choice",
+        "choice": "VERIFY",
+        "confidence": 0.51,
+        "probabilities": {
+          "IGNORE": 0,
+          "WATCH": 0.37,
+          "VERIFY": 0.63,
+          "ACT_WORTHY": 0
+        }
+      }
+    },
+    "RM-0052": {
+      "source_reliability": {
+        "type": "score",
+        "score": 1.6,
+        "confidence": 0.77,
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.38,
+          "2": 0.61,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "corroborated": {
+        "type": "noul",
+        "noul": 0.49
+      },
+      "coordinated_push": {
+        "type": "noul",
+        "noul": 0.15
+      },
+      "checkable": {
+        "type": "noul",
+        "noul": 0
+      },
+      "disposition": {
+        "type": "choice",
+        "choice": "WATCH",
+        "confidence": 0.48,
+        "probabilities": {
+          "IGNORE": 0.02,
+          "WATCH": 0.61,
+          "VERIFY": 0.37,
+          "ACT_WORTHY": 0
+        }
+      }
+    },
+    "RM-0053": {
+      "source_reliability": {
+        "type": "score",
+        "score": 1.57,
+        "confidence": 0.74,
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.42,
+          "2": 0.56,
+          "3": 0.01,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "corroborated": {
+        "type": "noul",
+        "noul": 0.03
+      },
+      "coordinated_push": {
+        "type": "noul",
+        "noul": 0.99
+      },
+      "checkable": {
+        "type": "noul",
+        "noul": 0
+      },
+      "disposition": {
+        "type": "choice",
+        "choice": "VERIFY",
+        "confidence": 0.37,
+        "probabilities": {
+          "IGNORE": 0,
+          "WATCH": 0.47,
+          "VERIFY": 0.53,
+          "ACT_WORTHY": 0
+        }
+      }
+    },
+    "RM-0054": {
+      "source_reliability": {
+        "type": "score",
+        "score": 0.92,
+        "confidence": 0.92,
+        "probabilities": {
+          "0": 0.11,
+          "1": 0.86,
+          "2": 0.03,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "corroborated": {
+        "type": "noul",
+        "noul": 0
+      },
+      "coordinated_push": {
+        "type": "noul",
+        "noul": 0.04
+      },
+      "checkable": {
+        "type": "noul",
+        "noul": 0
+      },
+      "disposition": {
+        "type": "choice",
+        "choice": "WATCH",
+        "confidence": 0.4,
+        "probabilities": {
+          "IGNORE": 0,
+          "WATCH": 0.55,
+          "VERIFY": 0.45,
+          "ACT_WORTHY": 0
+        }
+      }
+    },
+    "RM-0055": {
+      "source_reliability": {
+        "type": "score",
+        "score": 1.15,
+        "confidence": 0.85,
+        "probabilities": {
+          "0": 0.05,
+          "1": 0.75,
+          "2": 0.2,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "corroborated": {
+        "type": "noul",
+        "noul": 0.54
+      },
+      "coordinated_push": {
+        "type": "noul",
+        "noul": 0.07
+      },
+      "checkable": {
+        "type": "noul",
+        "noul": 0
+      },
+      "disposition": {
+        "type": "choice",
+        "choice": "WATCH",
+        "confidence": 0.63,
+        "probabilities": {
+          "IGNORE": 0,
+          "WATCH": 0.72,
+          "VERIFY": 0.28,
+          "ACT_WORTHY": 0
+        }
+      }
+    },
+    "RM-0056": {
+      "source_reliability": {
+        "type": "score",
+        "score": 2.85,
+        "confidence": 0.89,
+        "probabilities": {
+          "0": 0,
+          "1": 0.01,
+          "2": 0.15,
+          "3": 0.82,
+          "4": 0.02,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "corroborated": {
+        "type": "noul",
+        "noul": 0.73
+      },
+      "coordinated_push": {
+        "type": "noul",
+        "noul": 0.01
+      },
+      "checkable": {
+        "type": "noul",
+        "noul": 0
+      },
+      "disposition": {
+        "type": "choice",
+        "choice": "WATCH",
+        "confidence": 0.47,
+        "probabilities": {
+          "IGNORE": 0,
+          "WATCH": 0.6,
+          "VERIFY": 0.39,
+          "ACT_WORTHY": 0.01
+        }
+      }
+    },
+    "RM-0057": {
+      "source_reliability": {
+        "type": "score",
+        "score": 2.31,
+        "confidence": 0.76,
+        "probabilities": {
+          "0": 0,
+          "1": 0.05,
+          "2": 0.59,
+          "3": 0.36,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "corroborated": {
+        "type": "noul",
+        "noul": 0.74
+      },
+      "coordinated_push": {
+        "type": "noul",
+        "noul": 0.07
+      },
+      "checkable": {
+        "type": "noul",
+        "noul": 0
+      },
+      "disposition": {
+        "type": "choice",
+        "choice": "WATCH",
+        "confidence": 0.48,
+        "probabilities": {
+          "IGNORE": 0,
+          "WATCH": 0.61,
+          "VERIFY": 0.39,
+          "ACT_WORTHY": 0
+        }
+      }
+    },
+    "RM-0058": {
+      "source_reliability": {
+        "type": "score",
+        "score": 2.57,
+        "confidence": 0.74,
+        "probabilities": {
+          "0": 0,
+          "1": 0.02,
+          "2": 0.4,
+          "3": 0.57,
+          "4": 0.01,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "corroborated": {
+        "type": "noul",
+        "noul": 0.7
+      },
+      "coordinated_push": {
+        "type": "noul",
+        "noul": 0.04
+      },
+      "checkable": {
+        "type": "noul",
+        "noul": 0
+      },
+      "disposition": {
+        "type": "choice",
+        "choice": "WATCH",
+        "confidence": 0.35,
+        "probabilities": {
+          "IGNORE": 0,
+          "WATCH": 0.51,
+          "VERIFY": 0.49,
+          "ACT_WORTHY": 0
+        }
+      }
+    },
+    "RM-0059": {
+      "source_reliability": {
+        "type": "score",
+        "score": 1.23,
+        "confidence": 0.84,
+        "probabilities": {
+          "0": 0.02,
+          "1": 0.74,
+          "2": 0.23,
+          "3": 0.01,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "corroborated": {
+        "type": "noul",
+        "noul": 0.8
+      },
+      "coordinated_push": {
+        "type": "noul",
+        "noul": 0.05
+      },
+      "checkable": {
+        "type": "noul",
+        "noul": 0
+      },
+      "disposition": {
+        "type": "choice",
+        "choice": "VERIFY",
+        "confidence": 0.68,
+        "probabilities": {
+          "IGNORE": 0,
+          "WATCH": 0.24,
+          "VERIFY": 0.76,
+          "ACT_WORTHY": 0
+        }
+      }
+    },
+    "RM-0060": {
+      "source_reliability": {
+        "type": "score",
+        "score": 2.36,
+        "confidence": 0.73,
+        "probabilities": {
+          "0": 0,
+          "1": 0.05,
+          "2": 0.55,
+          "3": 0.39,
+          "4": 0.01,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "corroborated": {
+        "type": "noul",
+        "noul": 0
+      },
+      "coordinated_push": {
+        "type": "noul",
+        "noul": 0
+      },
+      "checkable": {
+        "type": "noul",
+        "noul": 0
+      },
+      "disposition": {
+        "type": "choice",
+        "choice": "VERIFY",
+        "confidence": 0.65,
+        "probabilities": {
+          "IGNORE": 0,
+          "WATCH": 0.26,
+          "VERIFY": 0.74,
+          "ACT_WORTHY": 0
+        }
+      }
+    },
+    "RM-0061": {
+      "source_reliability": {
+        "type": "score",
+        "score": 0.94,
+        "confidence": 0.93,
+        "probabilities": {
+          "0": 0.09,
+          "1": 0.88,
+          "2": 0.03,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "corroborated": {
+        "type": "noul",
+        "noul": 0
+      },
+      "coordinated_push": {
+        "type": "noul",
+        "noul": 0.1
+      },
+      "checkable": {
+        "type": "noul",
+        "noul": 0
+      },
+      "disposition": {
+        "type": "choice",
+        "choice": "VERIFY",
+        "confidence": 0.59,
+        "probabilities": {
+          "IGNORE": 0,
+          "WATCH": 0.31,
+          "VERIFY": 0.69,
+          "ACT_WORTHY": 0
+        }
+      }
+    },
+    "RM-0062": {
+      "source_reliability": {
+        "type": "score",
+        "score": 1.92,
+        "confidence": 0.91,
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.1,
+          "2": 0.85,
+          "3": 0.04,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "corroborated": {
+        "type": "noul",
+        "noul": 0.26
+      },
+      "coordinated_push": {
+        "type": "noul",
+        "noul": 1
+      },
+      "checkable": {
+        "type": "noul",
+        "noul": 0
+      },
+      "disposition": {
+        "type": "choice",
+        "choice": "WATCH",
+        "confidence": 0.63,
+        "probabilities": {
+          "IGNORE": 0,
+          "WATCH": 0.72,
+          "VERIFY": 0.28,
+          "ACT_WORTHY": 0
+        }
+      }
+    },
+    "RM-0063": {
+      "source_reliability": {
+        "type": "score",
+        "score": 2.57,
+        "confidence": 0.75,
+        "probabilities": {
+          "0": 0,
+          "1": 0.03,
+          "2": 0.37,
+          "3": 0.6,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "corroborated": {
+        "type": "noul",
+        "noul": 0
+      },
+      "coordinated_push": {
+        "type": "noul",
+        "noul": 0.02
+      },
+      "checkable": {
+        "type": "noul",
+        "noul": 0
+      },
+      "disposition": {
+        "type": "choice",
+        "choice": "VERIFY",
+        "confidence": 0.89,
+        "probabilities": {
+          "IGNORE": 0,
+          "WATCH": 0.08,
+          "VERIFY": 0.92,
+          "ACT_WORTHY": 0
+        }
+      }
+    },
+    "RM-0064": {
+      "source_reliability": {
+        "type": "score",
+        "score": 1.72,
+        "confidence": 0.83,
+        "probabilities": {
+          "0": 0,
+          "1": 0.29,
+          "2": 0.7,
+          "3": 0.01,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "corroborated": {
+        "type": "noul",
+        "noul": 0.73
+      },
+      "coordinated_push": {
+        "type": "noul",
+        "noul": 0.03
+      },
+      "checkable": {
+        "type": "noul",
+        "noul": 0
+      },
+      "disposition": {
+        "type": "choice",
+        "choice": "WATCH",
+        "confidence": 0.79,
+        "probabilities": {
+          "IGNORE": 0,
+          "WATCH": 0.84,
+          "VERIFY": 0.16,
+          "ACT_WORTHY": 0
+        }
+      }
+    },
+    "RM-0065": {
+      "source_reliability": {
+        "type": "score",
+        "score": 1.01,
+        "confidence": 0.9,
+        "probabilities": {
+          "0": 0.08,
+          "1": 0.83,
+          "2": 0.09,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "corroborated": {
+        "type": "noul",
+        "noul": 0.44
+      },
+      "coordinated_push": {
+        "type": "noul",
+        "noul": 0.06
+      },
+      "checkable": {
+        "type": "noul",
+        "noul": 0
+      },
+      "disposition": {
+        "type": "choice",
+        "choice": "WATCH",
+        "confidence": 0.69,
+        "probabilities": {
+          "IGNORE": 0.01,
+          "WATCH": 0.77,
+          "VERIFY": 0.22,
+          "ACT_WORTHY": 0
+        }
+      }
+    },
+    "RM-0066": {
+      "source_reliability": {
+        "type": "score",
+        "score": 1.37,
+        "confidence": 0.77,
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.61,
+          "2": 0.38,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "corroborated": {
+        "type": "noul",
+        "noul": 0.3
+      },
+      "coordinated_push": {
+        "type": "noul",
+        "noul": 0.07
+      },
+      "checkable": {
+        "type": "noul",
+        "noul": 0
+      },
+      "disposition": {
+        "type": "choice",
+        "choice": "VERIFY",
+        "confidence": 0.68,
+        "probabilities": {
+          "IGNORE": 0,
+          "WATCH": 0.24,
+          "VERIFY": 0.76,
+          "ACT_WORTHY": 0
+        }
+      }
+    },
+    "RM-0067": {
+      "source_reliability": {
+        "type": "score",
+        "score": 1.59,
+        "confidence": 0.75,
+        "probabilities": {
+          "0": 0,
+          "1": 0.42,
+          "2": 0.57,
+          "3": 0.01,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "corroborated": {
+        "type": "noul",
+        "noul": 0
+      },
+      "coordinated_push": {
+        "type": "noul",
+        "noul": 0.06
+      },
+      "checkable": {
+        "type": "noul",
+        "noul": 0
+      },
+      "disposition": {
+        "type": "choice",
+        "choice": "WATCH",
+        "confidence": 0.41,
+        "probabilities": {
+          "IGNORE": 0,
+          "WATCH": 0.56,
+          "VERIFY": 0.44,
+          "ACT_WORTHY": 0
+        }
+      }
+    },
+    "RM-0068": {
+      "source_reliability": {
+        "type": "score",
+        "score": 2.26,
+        "confidence": 0.8,
+        "probabilities": {
+          "0": 0,
+          "1": 0.04,
+          "2": 0.66,
+          "3": 0.3,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "corroborated": {
+        "type": "noul",
+        "noul": 0.83
+      },
+      "coordinated_push": {
+        "type": "noul",
+        "noul": 0.01
+      },
+      "checkable": {
+        "type": "noul",
+        "noul": 0
+      },
+      "disposition": {
+        "type": "choice",
+        "choice": "VERIFY",
+        "confidence": 0.37,
+        "probabilities": {
+          "IGNORE": 0,
+          "WATCH": 0.47,
+          "VERIFY": 0.53,
+          "ACT_WORTHY": 0
+        }
+      }
+    },
+    "RM-0069": {
+      "source_reliability": {
+        "type": "score",
+        "score": 1.22,
+        "confidence": 0.84,
+        "probabilities": {
+          "0": 0.03,
+          "1": 0.72,
+          "2": 0.25,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "corroborated": {
+        "type": "noul",
+        "noul": 0
+      },
+      "coordinated_push": {
+        "type": "noul",
+        "noul": 0.05
+      },
+      "checkable": {
+        "type": "noul",
+        "noul": 0
+      },
+      "disposition": {
+        "type": "choice",
+        "choice": "WATCH",
+        "confidence": 0.56,
+        "probabilities": {
+          "IGNORE": 0,
+          "WATCH": 0.67,
+          "VERIFY": 0.33,
+          "ACT_WORTHY": 0
+        }
+      }
+    },
+    "RM-0070": {
+      "source_reliability": {
+        "type": "score",
+        "score": 1.4,
+        "confidence": 0.76,
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.58,
+          "2": 0.41,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "corroborated": {
+        "type": "noul",
+        "noul": 0.59
+      },
+      "coordinated_push": {
+        "type": "noul",
+        "noul": 0
+      },
+      "checkable": {
+        "type": "noul",
+        "noul": 0
+      },
+      "disposition": {
+        "type": "choice",
+        "choice": "WATCH",
+        "confidence": 0.6,
+        "probabilities": {
+          "IGNORE": 0,
+          "WATCH": 0.7,
+          "VERIFY": 0.3,
+          "ACT_WORTHY": 0
+        }
+      }
+    },
+    "RM-0071": {
+      "source_reliability": {
+        "type": "score",
+        "score": 1.15,
+        "confidence": 0.82,
+        "probabilities": {
+          "0": 0.08,
+          "1": 0.69,
+          "2": 0.23,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "corroborated": {
+        "type": "noul",
+        "noul": 0
+      },
+      "coordinated_push": {
+        "type": "noul",
+        "noul": 0
+      },
+      "checkable": {
+        "type": "noul",
+        "noul": 0
+      },
+      "disposition": {
+        "type": "choice",
+        "choice": "WATCH",
+        "confidence": 0.65,
+        "probabilities": {
+          "IGNORE": 0,
+          "WATCH": 0.74,
+          "VERIFY": 0.26,
+          "ACT_WORTHY": 0
+        }
+      }
+    },
+    "RM-0072": {
+      "source_reliability": {
+        "type": "score",
+        "score": 0.97,
+        "confidence": 0.9,
+        "probabilities": {
+          "0": 0.1,
+          "1": 0.83,
+          "2": 0.07,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "corroborated": {
+        "type": "noul",
+        "noul": 0.98
+      },
+      "coordinated_push": {
+        "type": "noul",
+        "noul": 0
+      },
+      "checkable": {
+        "type": "noul",
+        "noul": 0
+      },
+      "disposition": {
+        "type": "choice",
+        "choice": "WATCH",
+        "confidence": 0.76,
+        "probabilities": {
+          "IGNORE": 0,
+          "WATCH": 0.82,
+          "VERIFY": 0.18,
+          "ACT_WORTHY": 0
+        }
+      }
+    },
+    "RM-0073": {
+      "source_reliability": {
+        "type": "score",
+        "score": 0.48,
+        "confidence": 0.72,
+        "probabilities": {
+          "0": 0.52,
+          "1": 0.48,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "corroborated": {
+        "type": "noul",
+        "noul": 0
+      },
+      "coordinated_push": {
+        "type": "noul",
+        "noul": 0
+      },
+      "checkable": {
+        "type": "noul",
+        "noul": 0
+      },
+      "disposition": {
+        "type": "choice",
+        "choice": "WATCH",
+        "confidence": 0.57,
+        "probabilities": {
+          "IGNORE": 0,
+          "WATCH": 0.68,
+          "VERIFY": 0.32,
+          "ACT_WORTHY": 0
+        }
+      }
+    },
+    "RM-0074": {
+      "source_reliability": {
+        "type": "score",
+        "score": 1.03,
+        "confidence": 0.83,
+        "probabilities": {
+          "0": 0.13,
+          "1": 0.71,
+          "2": 0.16,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "corroborated": {
+        "type": "noul",
+        "noul": 0.51
+      },
+      "coordinated_push": {
+        "type": "noul",
+        "noul": 0.09
+      },
+      "checkable": {
+        "type": "noul",
+        "noul": 0
+      },
+      "disposition": {
+        "type": "choice",
+        "choice": "WATCH",
+        "confidence": 0.35,
+        "probabilities": {
+          "IGNORE": 0,
+          "WATCH": 0.51,
+          "VERIFY": 0.49,
+          "ACT_WORTHY": 0
+        }
+      }
+    },
+    "RM-0075": {
+      "source_reliability": {
+        "type": "score",
+        "score": 1.26,
+        "confidence": 0.84,
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.72,
+          "2": 0.27,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "corroborated": {
+        "type": "noul",
+        "noul": 0
+      },
+      "coordinated_push": {
+        "type": "noul",
+        "noul": 1
+      },
+      "checkable": {
+        "type": "noul",
+        "noul": 0
+      },
+      "disposition": {
+        "type": "choice",
+        "choice": "WATCH",
+        "confidence": 0.49,
+        "probabilities": {
+          "IGNORE": 0,
+          "WATCH": 0.62,
+          "VERIFY": 0.38,
+          "ACT_WORTHY": 0
+        }
+      }
+    },
+    "RM-0076": {
+      "source_reliability": {
+        "type": "score",
+        "score": 0.8,
+        "confidence": 0.81,
+        "probabilities": {
+          "0": 0.26,
+          "1": 0.68,
+          "2": 0.06,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "corroborated": {
+        "type": "noul",
+        "noul": 0.15
+      },
+      "coordinated_push": {
+        "type": "noul",
+        "noul": 0
+      },
+      "checkable": {
+        "type": "noul",
+        "noul": 0
+      },
+      "disposition": {
+        "type": "choice",
+        "choice": "VERIFY",
+        "confidence": 0.49,
+        "probabilities": {
+          "IGNORE": 0,
+          "WATCH": 0.38,
+          "VERIFY": 0.62,
+          "ACT_WORTHY": 0
+        }
+      }
+    },
+    "RM-0077": {
+      "source_reliability": {
+        "type": "score",
+        "score": 1.67,
+        "confidence": 0.8,
+        "probabilities": {
+          "0": 0,
+          "1": 0.34,
+          "2": 0.65,
+          "3": 0.01,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "corroborated": {
+        "type": "noul",
+        "noul": 0.66
+      },
+      "coordinated_push": {
+        "type": "noul",
+        "noul": 0.01
+      },
+      "checkable": {
+        "type": "noul",
+        "noul": 0
+      },
+      "disposition": {
+        "type": "choice",
+        "choice": "WATCH",
+        "confidence": 0.35,
+        "probabilities": {
+          "IGNORE": 0,
+          "WATCH": 0.51,
+          "VERIFY": 0.49,
+          "ACT_WORTHY": 0
+        }
+      }
+    },
+    "RM-0078": {
+      "source_reliability": {
+        "type": "score",
+        "score": 2.23,
+        "confidence": 0.82,
+        "probabilities": {
+          "0": 0,
+          "1": 0.04,
+          "2": 0.69,
+          "3": 0.27,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "corroborated": {
+        "type": "noul",
+        "noul": 0
+      },
+      "coordinated_push": {
+        "type": "noul",
+        "noul": 0.14
+      },
+      "checkable": {
+        "type": "noul",
+        "noul": 1
+      },
+      "disposition": {
+        "type": "choice",
+        "choice": "VERIFY",
+        "confidence": 0.55,
+        "probabilities": {
+          "IGNORE": 0,
+          "WATCH": 0.34,
+          "VERIFY": 0.66,
+          "ACT_WORTHY": 0
+        }
+      }
+    },
+    "RM-0079": {
+      "source_reliability": {
+        "type": "score",
+        "score": 1.04,
+        "confidence": 0.84,
+        "probabilities": {
+          "0": 0.12,
+          "1": 0.72,
+          "2": 0.16,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "corroborated": {
+        "type": "noul",
+        "noul": 0.49
+      },
+      "coordinated_push": {
+        "type": "noul",
+        "noul": 0.14
+      },
+      "checkable": {
+        "type": "noul",
+        "noul": 0
+      },
+      "disposition": {
+        "type": "choice",
+        "choice": "VERIFY",
+        "confidence": 0.76,
+        "probabilities": {
+          "IGNORE": 0,
+          "WATCH": 0.18,
+          "VERIFY": 0.82,
+          "ACT_WORTHY": 0
+        }
+      }
+    },
+    "RM-0080": {
+      "source_reliability": {
+        "type": "score",
+        "score": 0.72,
+        "confidence": 0.79,
+        "probabilities": {
+          "0": 0.32,
+          "1": 0.64,
+          "2": 0.04,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "corroborated": {
+        "type": "noul",
+        "noul": 0.74
+      },
+      "coordinated_push": {
+        "type": "noul",
+        "noul": 0.01
+      },
+      "checkable": {
+        "type": "noul",
+        "noul": 0
+      },
+      "disposition": {
+        "type": "choice",
+        "choice": "VERIFY",
+        "confidence": 0.76,
+        "probabilities": {
+          "IGNORE": 0,
+          "WATCH": 0.17,
+          "VERIFY": 0.82,
+          "ACT_WORTHY": 0.01
+        }
+      }
+    },
+    "RM-0081": {
+      "source_reliability": {
+        "type": "score",
+        "score": 2.89,
+        "confidence": 0.88,
+        "probabilities": {
+          "0": 0,
+          "1": 0.01,
+          "2": 0.14,
+          "3": 0.8,
+          "4": 0.05,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "corroborated": {
+        "type": "noul",
+        "noul": 0.85
+      },
+      "coordinated_push": {
+        "type": "noul",
+        "noul": 0.08
+      },
+      "checkable": {
+        "type": "noul",
+        "noul": 0
+      },
+      "disposition": {
+        "type": "choice",
+        "choice": "WATCH",
+        "confidence": 0.37,
+        "probabilities": {
+          "IGNORE": 0,
+          "WATCH": 0.53,
+          "VERIFY": 0.47,
+          "ACT_WORTHY": 0
+        }
+      }
+    },
+    "RM-0082": {
+      "source_reliability": {
+        "type": "score",
+        "score": 1.13,
+        "confidence": 0.89,
+        "probabilities": {
+          "0": 0.03,
+          "1": 0.81,
+          "2": 0.16,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "corroborated": {
+        "type": "noul",
+        "noul": 0
+      },
+      "coordinated_push": {
+        "type": "noul",
+        "noul": 0.01
+      },
+      "checkable": {
+        "type": "noul",
+        "noul": 0
+      },
+      "disposition": {
+        "type": "choice",
+        "choice": "WATCH",
+        "confidence": 0.72,
+        "probabilities": {
+          "IGNORE": 0,
+          "WATCH": 0.79,
+          "VERIFY": 0.21,
+          "ACT_WORTHY": 0
+        }
+      }
+    },
+    "RM-0083": {
+      "source_reliability": {
+        "type": "score",
+        "score": 0.95,
+        "confidence": 0.9,
+        "probabilities": {
+          "0": 0.11,
+          "1": 0.83,
+          "2": 0.06,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "corroborated": {
+        "type": "noul",
+        "noul": 0.97
+      },
+      "coordinated_push": {
+        "type": "noul",
+        "noul": 0.03
+      },
+      "checkable": {
+        "type": "noul",
+        "noul": 0
+      },
+      "disposition": {
+        "type": "choice",
+        "choice": "VERIFY",
+        "confidence": 0.45,
+        "probabilities": {
+          "IGNORE": 0,
+          "WATCH": 0.41,
+          "VERIFY": 0.59,
+          "ACT_WORTHY": 0
+        }
+      }
+    },
+    "RM-0084": {
+      "source_reliability": {
+        "type": "score",
+        "score": 0.88,
+        "confidence": 0.88,
+        "probabilities": {
+          "0": 0.16,
+          "1": 0.8,
+          "2": 0.04,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "corroborated": {
+        "type": "noul",
+        "noul": 0.74
+      },
+      "coordinated_push": {
+        "type": "noul",
+        "noul": 0.03
+      },
+      "checkable": {
+        "type": "noul",
+        "noul": 0
+      },
+      "disposition": {
+        "type": "choice",
+        "choice": "WATCH",
+        "confidence": 0.4,
+        "probabilities": {
+          "IGNORE": 0,
+          "WATCH": 0.55,
+          "VERIFY": 0.45,
+          "ACT_WORTHY": 0
+        }
+      }
+    },
+    "RM-0085": {
+      "source_reliability": {
+        "type": "score",
+        "score": 1.13,
+        "confidence": 0.88,
+        "probabilities": {
+          "0": 0.04,
+          "1": 0.79,
+          "2": 0.17,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "corroborated": {
+        "type": "noul",
+        "noul": 0.58
+      },
+      "coordinated_push": {
+        "type": "noul",
+        "noul": 0.17
+      },
+      "checkable": {
+        "type": "noul",
+        "noul": 0
+      },
+      "disposition": {
+        "type": "choice",
+        "choice": "VERIFY",
+        "confidence": 0.45,
+        "probabilities": {
+          "IGNORE": 0.01,
+          "WATCH": 0.4,
+          "VERIFY": 0.59,
+          "ACT_WORTHY": 0
+        }
+      }
+    },
+    "RM-0086": {
+      "source_reliability": {
+        "type": "score",
+        "score": 1.72,
+        "confidence": 0.83,
+        "probabilities": {
+          "0": 0,
+          "1": 0.29,
+          "2": 0.7,
+          "3": 0.01,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "corroborated": {
+        "type": "noul",
+        "noul": 0.98
+      },
+      "coordinated_push": {
+        "type": "noul",
+        "noul": 0.14
+      },
+      "checkable": {
+        "type": "noul",
+        "noul": 0
+      },
+      "disposition": {
+        "type": "choice",
+        "choice": "WATCH",
+        "confidence": 0.79,
+        "probabilities": {
+          "IGNORE": 0,
+          "WATCH": 0.84,
+          "VERIFY": 0.16,
+          "ACT_WORTHY": 0
+        }
+      }
+    },
+    "RM-0087": {
+      "source_reliability": {
+        "type": "score",
+        "score": 1.33,
+        "confidence": 0.8,
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.65,
+          "2": 0.34,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "corroborated": {
+        "type": "noul",
+        "noul": 0
+      },
+      "coordinated_push": {
+        "type": "noul",
+        "noul": 0
+      },
+      "checkable": {
+        "type": "noul",
+        "noul": 0
+      },
+      "disposition": {
+        "type": "choice",
+        "choice": "WATCH",
+        "confidence": 0.61,
+        "probabilities": {
+          "IGNORE": 0,
+          "WATCH": 0.71,
+          "VERIFY": 0.29,
+          "ACT_WORTHY": 0
+        }
+      }
+    },
+    "RM-0088": {
+      "source_reliability": {
+        "type": "score",
+        "score": 1.78,
+        "confidence": 0.86,
+        "probabilities": {
+          "0": 0,
+          "1": 0.23,
+          "2": 0.76,
+          "3": 0.01,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "corroborated": {
+        "type": "noul",
+        "noul": 0
+      },
+      "coordinated_push": {
+        "type": "noul",
+        "noul": 0.06
+      },
+      "checkable": {
+        "type": "noul",
+        "noul": 0
+      },
+      "disposition": {
+        "type": "choice",
+        "choice": "WATCH",
+        "confidence": 0.37,
+        "probabilities": {
+          "IGNORE": 0,
+          "WATCH": 0.53,
+          "VERIFY": 0.47,
+          "ACT_WORTHY": 0
+        }
+      }
+    },
+    "RM-0089": {
+      "source_reliability": {
+        "type": "score",
+        "score": 0.97,
+        "confidence": 0.91,
+        "probabilities": {
+          "0": 0.09,
+          "1": 0.85,
+          "2": 0.06,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "corroborated": {
+        "type": "noul",
+        "noul": 0.66
+      },
+      "coordinated_push": {
+        "type": "noul",
+        "noul": 0.01
+      },
+      "checkable": {
+        "type": "noul",
+        "noul": 0
+      },
+      "disposition": {
+        "type": "choice",
+        "choice": "VERIFY",
+        "confidence": 0.65,
+        "probabilities": {
+          "IGNORE": 0,
+          "WATCH": 0.26,
+          "VERIFY": 0.74,
+          "ACT_WORTHY": 0
+        }
+      }
+    },
+    "RM-0090": {
+      "source_reliability": {
+        "type": "score",
+        "score": 1.11,
+        "confidence": 0.9,
+        "probabilities": {
+          "0": 0.03,
+          "1": 0.83,
+          "2": 0.14,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "corroborated": {
+        "type": "noul",
+        "noul": 0.88
+      },
+      "coordinated_push": {
+        "type": "noul",
+        "noul": 0
+      },
+      "checkable": {
+        "type": "noul",
+        "noul": 0
+      },
+      "disposition": {
+        "type": "choice",
+        "choice": "WATCH",
+        "confidence": 0.39,
+        "probabilities": {
+          "IGNORE": 0,
+          "WATCH": 0.54,
+          "VERIFY": 0.46,
+          "ACT_WORTHY": 0
+        }
+      }
+    },
+    "RM-0091": {
+      "source_reliability": {
+        "type": "score",
+        "score": 1.85,
+        "confidence": 0.87,
+        "probabilities": {
+          "0": 0,
+          "1": 0.19,
+          "2": 0.77,
+          "3": 0.04,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "corroborated": {
+        "type": "noul",
+        "noul": 0.45
+      },
+      "coordinated_push": {
+        "type": "noul",
+        "noul": 0
+      },
+      "checkable": {
+        "type": "noul",
+        "noul": 0
+      },
+      "disposition": {
+        "type": "choice",
+        "choice": "WATCH",
+        "confidence": 0.52,
+        "probabilities": {
+          "IGNORE": 0.01,
+          "WATCH": 0.64,
+          "VERIFY": 0.35,
+          "ACT_WORTHY": 0
+        }
+      }
+    },
+    "RM-0092": {
+      "source_reliability": {
+        "type": "score",
+        "score": 1.29,
+        "confidence": 0.82,
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.69,
+          "2": 0.3,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "corroborated": {
+        "type": "noul",
+        "noul": 0.82
+      },
+      "coordinated_push": {
+        "type": "noul",
+        "noul": 0
+      },
+      "checkable": {
+        "type": "noul",
+        "noul": 0
+      },
+      "disposition": {
+        "type": "choice",
+        "choice": "WATCH",
+        "confidence": 0.35,
+        "probabilities": {
+          "IGNORE": 0,
+          "WATCH": 0.51,
+          "VERIFY": 0.49,
+          "ACT_WORTHY": 0
+        }
+      }
+    },
+    "RM-0093": {
+      "source_reliability": {
+        "type": "score",
+        "score": 1.66,
+        "confidence": 0.79,
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.33,
+          "2": 0.65,
+          "3": 0.01,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "corroborated": {
+        "type": "noul",
+        "noul": 0.73
+      },
+      "coordinated_push": {
+        "type": "noul",
+        "noul": 0.08
+      },
+      "checkable": {
+        "type": "noul",
+        "noul": 0
+      },
+      "disposition": {
+        "type": "choice",
+        "choice": "WATCH",
+        "confidence": 0.83,
+        "probabilities": {
+          "IGNORE": 0,
+          "WATCH": 0.87,
+          "VERIFY": 0.13,
+          "ACT_WORTHY": 0
+        }
+      }
+    },
+    "RM-0094": {
+      "source_reliability": {
+        "type": "score",
+        "score": 1.69,
+        "confidence": 0.81,
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.3,
+          "2": 0.68,
+          "3": 0.01,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "corroborated": {
+        "type": "noul",
+        "noul": 0.74
+      },
+      "coordinated_push": {
+        "type": "noul",
+        "noul": 0.05
+      },
+      "checkable": {
+        "type": "noul",
+        "noul": 0
+      },
+      "disposition": {
+        "type": "choice",
+        "choice": "VERIFY",
+        "confidence": 0.6,
+        "probabilities": {
+          "IGNORE": 0,
+          "WATCH": 0.3,
+          "VERIFY": 0.7,
+          "ACT_WORTHY": 0
+        }
+      }
+    },
+    "RM-0095": {
+      "source_reliability": {
+        "type": "score",
+        "score": 1.77,
+        "confidence": 0.84,
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.23,
+          "2": 0.74,
+          "3": 0.02,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "corroborated": {
+        "type": "noul",
+        "noul": 0.49
+      },
+      "coordinated_push": {
+        "type": "noul",
+        "noul": 0.07
+      },
+      "checkable": {
+        "type": "noul",
+        "noul": 0
+      },
+      "disposition": {
+        "type": "choice",
+        "choice": "WATCH",
+        "confidence": 0.84,
+        "probabilities": {
+          "IGNORE": 0,
+          "WATCH": 0.88,
+          "VERIFY": 0.12,
+          "ACT_WORTHY": 0
+        }
+      }
+    },
+    "RM-0096": {
+      "source_reliability": {
+        "type": "score",
+        "score": 1.23,
+        "confidence": 0.84,
+        "probabilities": {
+          "0": 0.02,
+          "1": 0.73,
+          "2": 0.25,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "corroborated": {
+        "type": "noul",
+        "noul": 0.1
+      },
+      "coordinated_push": {
+        "type": "noul",
+        "noul": 0.99
+      },
+      "checkable": {
+        "type": "noul",
+        "noul": 0
+      },
+      "disposition": {
+        "type": "choice",
+        "choice": "WATCH",
+        "confidence": 0.64,
+        "probabilities": {
+          "IGNORE": 0,
+          "WATCH": 0.73,
+          "VERIFY": 0.27,
+          "ACT_WORTHY": 0
+        }
+      }
+    },
+    "RM-0097": {
+      "source_reliability": {
+        "type": "score",
+        "score": 1.9,
+        "confidence": 0.88,
+        "probabilities": {
+          "0": 0,
+          "1": 0.15,
+          "2": 0.8,
+          "3": 0.05,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "corroborated": {
+        "type": "noul",
+        "noul": 0
+      },
+      "coordinated_push": {
+        "type": "noul",
+        "noul": 0.05
+      },
+      "checkable": {
+        "type": "noul",
+        "noul": 0
+      },
+      "disposition": {
+        "type": "choice",
+        "choice": "VERIFY",
+        "confidence": 0.79,
+        "probabilities": {
+          "IGNORE": 0,
+          "WATCH": 0.16,
+          "VERIFY": 0.84,
+          "ACT_WORTHY": 0
+        }
+      }
+    },
+    "RM-0098": {
+      "source_reliability": {
+        "type": "score",
+        "score": 1.79,
+        "confidence": 0.87,
+        "probabilities": {
+          "0": 0,
+          "1": 0.22,
+          "2": 0.77,
+          "3": 0.01,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "corroborated": {
+        "type": "noul",
+        "noul": 0.99
+      },
+      "coordinated_push": {
+        "type": "noul",
+        "noul": 0
+      },
+      "checkable": {
+        "type": "noul",
+        "noul": 0
+      },
+      "disposition": {
+        "type": "choice",
+        "choice": "WATCH",
+        "confidence": 0.43,
+        "probabilities": {
+          "IGNORE": 0,
+          "WATCH": 0.57,
+          "VERIFY": 0.43,
+          "ACT_WORTHY": 0
+        }
+      }
+    },
+    "RM-0099": {
+      "source_reliability": {
+        "type": "score",
+        "score": 0.71,
+        "confidence": 0.8,
+        "probabilities": {
+          "0": 0.32,
+          "1": 0.65,
+          "2": 0.03,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "corroborated": {
+        "type": "noul",
+        "noul": 0.62
+      },
+      "coordinated_push": {
+        "type": "noul",
+        "noul": 0.01
+      },
+      "checkable": {
+        "type": "noul",
+        "noul": 0
+      },
+      "disposition": {
+        "type": "choice",
+        "choice": "WATCH",
+        "confidence": 0.59,
+        "probabilities": {
+          "IGNORE": 0.01,
+          "WATCH": 0.69,
+          "VERIFY": 0.3,
+          "ACT_WORTHY": 0
+        }
+      }
+    },
+    "RM-0100": {
+      "source_reliability": {
+        "type": "score",
+        "score": 1.41,
+        "confidence": 0.75,
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.57,
+          "2": 0.42,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "corroborated": {
+        "type": "noul",
+        "noul": 0.27
+      },
+      "coordinated_push": {
+        "type": "noul",
+        "noul": 0.01
+      },
+      "checkable": {
+        "type": "noul",
+        "noul": 0
+      },
+      "disposition": {
+        "type": "choice",
+        "choice": "WATCH",
+        "confidence": 0.6,
+        "probabilities": {
+          "IGNORE": 0,
+          "WATCH": 0.7,
+          "VERIFY": 0.3,
+          "ACT_WORTHY": 0
+        }
+      }
+    },
+    "RM-0101": {
+      "source_reliability": {
+        "type": "score",
+        "score": 1.36,
+        "confidence": 0.76,
+        "probabilities": {
+          "0": 0.03,
+          "1": 0.58,
+          "2": 0.39,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "corroborated": {
+        "type": "noul",
+        "noul": 0
+      },
+      "coordinated_push": {
+        "type": "noul",
+        "noul": 0
+      },
+      "checkable": {
+        "type": "noul",
+        "noul": 0
+      },
+      "disposition": {
+        "type": "choice",
+        "choice": "WATCH",
+        "confidence": 0.84,
+        "probabilities": {
+          "IGNORE": 0,
+          "WATCH": 0.88,
+          "VERIFY": 0.12,
+          "ACT_WORTHY": 0
+        }
+      }
+    },
+    "RM-0102": {
+      "source_reliability": {
+        "type": "score",
+        "score": 1.1,
+        "confidence": 0.87,
+        "probabilities": {
+          "0": 0.06,
+          "1": 0.78,
+          "2": 0.16,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "corroborated": {
+        "type": "noul",
+        "noul": 0.5
+      },
+      "coordinated_push": {
+        "type": "noul",
+        "noul": 0.07
+      },
+      "checkable": {
+        "type": "noul",
+        "noul": 0
+      },
+      "disposition": {
+        "type": "choice",
+        "choice": "WATCH",
+        "confidence": 0.81,
+        "probabilities": {
+          "IGNORE": 0,
+          "WATCH": 0.86,
+          "VERIFY": 0.14,
+          "ACT_WORTHY": 0
+        }
+      }
+    },
+    "RM-0103": {
+      "source_reliability": {
+        "type": "score",
+        "score": 1.87,
+        "confidence": 0.82,
+        "probabilities": {
+          "0": 0,
+          "1": 0.22,
+          "2": 0.69,
+          "3": 0.09,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "corroborated": {
+        "type": "noul",
+        "noul": 0
+      },
+      "coordinated_push": {
+        "type": "noul",
+        "noul": 0.07
+      },
+      "checkable": {
+        "type": "noul",
+        "noul": 0
+      },
+      "disposition": {
+        "type": "choice",
+        "choice": "WATCH",
+        "confidence": 0.73,
+        "probabilities": {
+          "IGNORE": 0,
+          "WATCH": 0.8,
+          "VERIFY": 0.2,
+          "ACT_WORTHY": 0
+        }
+      }
+    },
+    "RM-0104": {
+      "source_reliability": {
+        "type": "score",
+        "score": 1.28,
+        "confidence": 0.83,
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.7,
+          "2": 0.29,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "corroborated": {
+        "type": "noul",
+        "noul": 0
+      },
+      "coordinated_push": {
+        "type": "noul",
+        "noul": 0
+      },
+      "checkable": {
+        "type": "noul",
+        "noul": 0
+      },
+      "disposition": {
+        "type": "choice",
+        "choice": "WATCH",
+        "confidence": 0.36,
+        "probabilities": {
+          "IGNORE": 0,
+          "WATCH": 0.52,
+          "VERIFY": 0.48,
+          "ACT_WORTHY": 0
+        }
+      }
+    },
+    "RM-0105": {
+      "source_reliability": {
+        "type": "score",
+        "score": 0.92,
+        "confidence": 0.9,
+        "probabilities": {
+          "0": 0.13,
+          "1": 0.82,
+          "2": 0.05,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "corroborated": {
+        "type": "noul",
+        "noul": 0
+      },
+      "coordinated_push": {
+        "type": "noul",
+        "noul": 0.07
+      },
+      "checkable": {
+        "type": "noul",
+        "noul": 0
+      },
+      "disposition": {
+        "type": "choice",
+        "choice": "WATCH",
+        "confidence": 0.73,
+        "probabilities": {
+          "IGNORE": 0,
+          "WATCH": 0.8,
+          "VERIFY": 0.2,
+          "ACT_WORTHY": 0
+        }
+      }
+    },
+    "RM-0106": {
+      "source_reliability": {
+        "type": "score",
+        "score": 1.17,
+        "confidence": 0.89,
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.81,
+          "2": 0.18,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "corroborated": {
+        "type": "noul",
+        "noul": 0.89
+      },
+      "coordinated_push": {
+        "type": "noul",
+        "noul": 0.01
+      },
+      "checkable": {
+        "type": "noul",
+        "noul": 0
+      },
+      "disposition": {
+        "type": "choice",
+        "choice": "VERIFY",
+        "confidence": 0.6,
+        "probabilities": {
+          "IGNORE": 0,
+          "WATCH": 0.3,
+          "VERIFY": 0.7,
+          "ACT_WORTHY": 0
+        }
+      }
+    },
+    "RM-0107": {
+      "source_reliability": {
+        "type": "score",
+        "score": 1.1,
+        "confidence": 0.92,
+        "probabilities": {
+          "0": 0.02,
+          "1": 0.86,
+          "2": 0.12,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "corroborated": {
+        "type": "noul",
+        "noul": 0.64
+      },
+      "coordinated_push": {
+        "type": "noul",
+        "noul": 0.17
+      },
+      "checkable": {
+        "type": "noul",
+        "noul": 0
+      },
+      "disposition": {
+        "type": "choice",
+        "choice": "WATCH",
+        "confidence": 0.52,
+        "probabilities": {
+          "IGNORE": 0.01,
+          "WATCH": 0.64,
+          "VERIFY": 0.35,
+          "ACT_WORTHY": 0
+        }
+      }
+    },
+    "RM-0108": {
+      "source_reliability": {
+        "type": "score",
+        "score": 1.38,
+        "confidence": 0.77,
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.6,
+          "2": 0.39,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "corroborated": {
+        "type": "noul",
+        "noul": 0.71
+      },
+      "coordinated_push": {
+        "type": "noul",
+        "noul": 0
+      },
+      "checkable": {
+        "type": "noul",
+        "noul": 0
+      },
+      "disposition": {
+        "type": "choice",
+        "choice": "WATCH",
+        "confidence": 0.48,
+        "probabilities": {
+          "IGNORE": 0,
+          "WATCH": 0.61,
+          "VERIFY": 0.39,
+          "ACT_WORTHY": 0
+        }
+      }
+    },
+    "RM-0109": {
+      "source_reliability": {
+        "type": "score",
+        "score": 2.18,
+        "confidence": 0.79,
+        "probabilities": {
+          "0": 0,
+          "1": 0.09,
+          "2": 0.64,
+          "3": 0.27,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "corroborated": {
+        "type": "noul",
+        "noul": 0.77
+      },
+      "coordinated_push": {
+        "type": "noul",
+        "noul": 0
+      },
+      "checkable": {
+        "type": "noul",
+        "noul": 0
+      },
+      "disposition": {
+        "type": "choice",
+        "choice": "VERIFY",
+        "confidence": 0.39,
+        "probabilities": {
+          "IGNORE": 0,
+          "WATCH": 0.46,
+          "VERIFY": 0.54,
+          "ACT_WORTHY": 0
+        }
+      }
+    },
+    "RM-0110": {
+      "source_reliability": {
+        "type": "score",
+        "score": 1.26,
+        "confidence": 0.83,
+        "probabilities": {
+          "0": 0.02,
+          "1": 0.7,
+          "2": 0.28,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "corroborated": {
+        "type": "noul",
+        "noul": 0.96
+      },
+      "coordinated_push": {
+        "type": "noul",
+        "noul": 0.03
+      },
+      "checkable": {
+        "type": "noul",
+        "noul": 0
+      },
+      "disposition": {
+        "type": "choice",
+        "choice": "WATCH",
+        "confidence": 0.51,
+        "probabilities": {
+          "IGNORE": 0,
+          "WATCH": 0.63,
+          "VERIFY": 0.37,
+          "ACT_WORTHY": 0
+        }
+      }
+    },
+    "RM-0111": {
+      "source_reliability": {
+        "type": "score",
+        "score": 1.21,
+        "confidence": 0.84,
+        "probabilities": {
+          "0": 0.03,
+          "1": 0.73,
+          "2": 0.24,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "corroborated": {
+        "type": "noul",
+        "noul": 0.49
+      },
+      "coordinated_push": {
+        "type": "noul",
+        "noul": 0.08
+      },
+      "checkable": {
+        "type": "noul",
+        "noul": 0
+      },
+      "disposition": {
+        "type": "choice",
+        "choice": "WATCH",
+        "confidence": 0.64,
+        "probabilities": {
+          "IGNORE": 0,
+          "WATCH": 0.73,
+          "VERIFY": 0.27,
+          "ACT_WORTHY": 0
+        }
+      }
+    },
+    "RM-0112": {
+      "source_reliability": {
+        "type": "score",
+        "score": 1.85,
+        "confidence": 0.89,
+        "probabilities": {
+          "0": 0,
+          "1": 0.17,
+          "2": 0.81,
+          "3": 0.02,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "corroborated": {
+        "type": "noul",
+        "noul": 0.43
+      },
+      "coordinated_push": {
+        "type": "noul",
+        "noul": 0.04
+      },
+      "checkable": {
+        "type": "noul",
+        "noul": 0
+      },
+      "disposition": {
+        "type": "choice",
+        "choice": "WATCH",
+        "confidence": 0.39,
+        "probabilities": {
+          "IGNORE": 0,
+          "WATCH": 0.54,
+          "VERIFY": 0.46,
+          "ACT_WORTHY": 0
+        }
+      }
+    },
+    "RM-0113": {
+      "source_reliability": {
+        "type": "score",
+        "score": 1.56,
+        "confidence": 0.74,
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.42,
+          "2": 0.57,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "corroborated": {
+        "type": "noul",
+        "noul": 0
+      },
+      "coordinated_push": {
+        "type": "noul",
+        "noul": 0.01
+      },
+      "checkable": {
+        "type": "noul",
+        "noul": 0
+      },
+      "disposition": {
+        "type": "choice",
+        "choice": "WATCH",
+        "confidence": 0.64,
+        "probabilities": {
+          "IGNORE": 0,
+          "WATCH": 0.73,
+          "VERIFY": 0.27,
+          "ACT_WORTHY": 0
+        }
+      }
+    },
+    "RM-0114": {
+      "source_reliability": {
+        "type": "score",
+        "score": 0.69,
+        "confidence": 0.8,
+        "probabilities": {
+          "0": 0.33,
+          "1": 0.65,
+          "2": 0.02,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "corroborated": {
+        "type": "noul",
+        "noul": 0
+      },
+      "coordinated_push": {
+        "type": "noul",
+        "noul": 0.13
+      },
+      "checkable": {
+        "type": "noul",
+        "noul": 0
+      },
+      "disposition": {
+        "type": "choice",
+        "choice": "WATCH",
+        "confidence": 0.65,
+        "probabilities": {
+          "IGNORE": 0.01,
+          "WATCH": 0.74,
+          "VERIFY": 0.25,
+          "ACT_WORTHY": 0
+        }
+      }
+    },
+    "RM-0115": {
+      "source_reliability": {
+        "type": "score",
+        "score": 2.7,
+        "confidence": 0.81,
+        "probabilities": {
+          "0": 0,
+          "1": 0.02,
+          "2": 0.27,
+          "3": 0.7,
+          "4": 0.01,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "corroborated": {
+        "type": "noul",
+        "noul": 0.74
+      },
+      "coordinated_push": {
+        "type": "noul",
+        "noul": 0.01
+      },
+      "checkable": {
+        "type": "noul",
+        "noul": 0
+      },
+      "disposition": {
+        "type": "choice",
+        "choice": "VERIFY",
+        "confidence": 0.44,
+        "probabilities": {
+          "IGNORE": 0,
+          "WATCH": 0.42,
+          "VERIFY": 0.58,
+          "ACT_WORTHY": 0
+        }
+      }
+    },
+    "RM-0116": {
+      "source_reliability": {
+        "type": "score",
+        "score": 1.89,
+        "confidence": 0.87,
+        "probabilities": {
+          "0": 0,
+          "1": 0.17,
+          "2": 0.77,
+          "3": 0.06,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "corroborated": {
+        "type": "noul",
+        "noul": 0.55
+      },
+      "coordinated_push": {
+        "type": "noul",
+        "noul": 0.01
+      },
+      "checkable": {
+        "type": "noul",
+        "noul": 0
+      },
+      "disposition": {
+        "type": "choice",
+        "choice": "VERIFY",
+        "confidence": 0.72,
+        "probabilities": {
+          "IGNORE": 0,
+          "WATCH": 0.21,
+          "VERIFY": 0.79,
+          "ACT_WORTHY": 0
+        }
+      }
+    },
+    "RM-0117": {
+      "source_reliability": {
+        "type": "score",
+        "score": 0.82,
+        "confidence": 0.88,
+        "probabilities": {
+          "0": 0.19,
+          "1": 0.8,
+          "2": 0.01,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "corroborated": {
+        "type": "noul",
+        "noul": 0.84
+      },
+      "coordinated_push": {
+        "type": "noul",
+        "noul": 0
+      },
+      "checkable": {
+        "type": "noul",
+        "noul": 0
+      },
+      "disposition": {
+        "type": "choice",
+        "choice": "VERIFY",
+        "confidence": 0.39,
+        "probabilities": {
+          "IGNORE": 0,
+          "WATCH": 0.46,
+          "VERIFY": 0.54,
+          "ACT_WORTHY": 0
+        }
+      }
+    },
+    "RM-0118": {
+      "source_reliability": {
+        "type": "score",
+        "score": 0.8,
+        "confidence": 0.8,
+        "probabilities": {
+          "0": 0.27,
+          "1": 0.66,
+          "2": 0.07,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "corroborated": {
+        "type": "noul",
+        "noul": 0.52
+      },
+      "coordinated_push": {
+        "type": "noul",
+        "noul": 0.04
+      },
+      "checkable": {
+        "type": "noul",
+        "noul": 0
+      },
+      "disposition": {
+        "type": "choice",
+        "choice": "WATCH",
+        "confidence": 0.69,
+        "probabilities": {
+          "IGNORE": 0,
+          "WATCH": 0.77,
+          "VERIFY": 0.23,
+          "ACT_WORTHY": 0
+        }
+      }
+    },
+    "RM-0119": {
+      "source_reliability": {
+        "type": "score",
+        "score": 0.93,
+        "confidence": 0.9,
+        "probabilities": {
+          "0": 0.12,
+          "1": 0.83,
+          "2": 0.05,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "corroborated": {
+        "type": "noul",
+        "noul": 0.71
+      },
+      "coordinated_push": {
+        "type": "noul",
+        "noul": 0.01
+      },
+      "checkable": {
+        "type": "noul",
+        "noul": 0
+      },
+      "disposition": {
+        "type": "choice",
+        "choice": "WATCH",
+        "confidence": 0.61,
+        "probabilities": {
+          "IGNORE": 0,
+          "WATCH": 0.71,
+          "VERIFY": 0.29,
+          "ACT_WORTHY": 0
+        }
+      }
+    },
+    "RM-0120": {
+      "source_reliability": {
+        "type": "score",
+        "score": 0.94,
+        "confidence": 0.88,
+        "probabilities": {
+          "0": 0.13,
+          "1": 0.8,
+          "2": 0.07,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "corroborated": {
+        "type": "noul",
+        "noul": 0
+      },
+      "coordinated_push": {
+        "type": "noul",
+        "noul": 0.01
+      },
+      "checkable": {
+        "type": "noul",
+        "noul": 0
+      },
+      "disposition": {
+        "type": "choice",
+        "choice": "VERIFY",
+        "confidence": 0.4,
+        "probabilities": {
+          "IGNORE": 0,
+          "WATCH": 0.45,
+          "VERIFY": 0.55,
+          "ACT_WORTHY": 0
+        }
+      }
+    },
+    "RM-0121": {
+      "source_reliability": {
+        "type": "score",
+        "score": 1.3,
+        "confidence": 0.8,
+        "probabilities": {
+          "0": 0.02,
+          "1": 0.66,
+          "2": 0.32,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "corroborated": {
+        "type": "noul",
+        "noul": 0
+      },
+      "coordinated_push": {
+        "type": "noul",
+        "noul": 0.03
+      },
+      "checkable": {
+        "type": "noul",
+        "noul": 0
+      },
+      "disposition": {
+        "type": "choice",
+        "choice": "WATCH",
+        "confidence": 0.67,
+        "probabilities": {
+          "IGNORE": 0,
+          "WATCH": 0.75,
+          "VERIFY": 0.25,
+          "ACT_WORTHY": 0
+        }
+      }
+    },
+    "RM-0122": {
+      "source_reliability": {
+        "type": "score",
+        "score": 1.76,
+        "confidence": 0.83,
+        "probabilities": {
+          "0": 0,
+          "1": 0.27,
+          "2": 0.7,
+          "3": 0.03,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "corroborated": {
+        "type": "noul",
+        "noul": 0
+      },
+      "coordinated_push": {
+        "type": "noul",
+        "noul": 0.02
+      },
+      "checkable": {
+        "type": "noul",
+        "noul": 0
+      },
+      "disposition": {
+        "type": "choice",
+        "choice": "WATCH",
+        "confidence": 0.83,
+        "probabilities": {
+          "IGNORE": 0,
+          "WATCH": 0.87,
+          "VERIFY": 0.13,
+          "ACT_WORTHY": 0
+        }
+      }
+    },
+    "RM-0123": {
+      "source_reliability": {
+        "type": "score",
+        "score": 1.26,
+        "confidence": 0.83,
+        "probabilities": {
+          "0": 0.02,
+          "1": 0.7,
+          "2": 0.28,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "corroborated": {
+        "type": "noul",
+        "noul": 0.78
+      },
+      "coordinated_push": {
+        "type": "noul",
+        "noul": 0.03
+      },
+      "checkable": {
+        "type": "noul",
+        "noul": 0
+      },
+      "disposition": {
+        "type": "choice",
+        "choice": "WATCH",
+        "confidence": 0.47,
+        "probabilities": {
+          "IGNORE": 0,
+          "WATCH": 0.6,
+          "VERIFY": 0.4,
+          "ACT_WORTHY": 0
+        }
+      }
+    },
+    "RM-0124": {
+      "source_reliability": {
+        "type": "score",
+        "score": 1.84,
+        "confidence": 0.85,
+        "probabilities": {
+          "0": 0,
+          "1": 0.21,
+          "2": 0.74,
+          "3": 0.05,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "corroborated": {
+        "type": "noul",
+        "noul": 0
+      },
+      "coordinated_push": {
+        "type": "noul",
+        "noul": 0.04
+      },
+      "checkable": {
+        "type": "noul",
+        "noul": 0
+      },
+      "disposition": {
+        "type": "choice",
+        "choice": "VERIFY",
+        "confidence": 0.41,
+        "probabilities": {
+          "IGNORE": 0,
+          "WATCH": 0.44,
+          "VERIFY": 0.56,
+          "ACT_WORTHY": 0
+        }
+      }
+    },
+    "RM-0125": {
+      "source_reliability": {
+        "type": "score",
+        "score": 1.36,
+        "confidence": 0.77,
+        "probabilities": {
+          "0": 0.02,
+          "1": 0.6,
+          "2": 0.38,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "corroborated": {
+        "type": "noul",
+        "noul": 0
+      },
+      "coordinated_push": {
+        "type": "noul",
+        "noul": 0
+      },
+      "checkable": {
+        "type": "noul",
+        "noul": 0
+      },
+      "disposition": {
+        "type": "choice",
+        "choice": "WATCH",
+        "confidence": 0.39,
+        "probabilities": {
+          "IGNORE": 0,
+          "WATCH": 0.54,
+          "VERIFY": 0.46,
+          "ACT_WORTHY": 0
+        }
+      }
+    },
+    "RM-0126": {
+      "source_reliability": {
+        "type": "score",
+        "score": 2.49,
+        "confidence": 0.69,
+        "probabilities": {
+          "0": 0,
+          "1": 0.03,
+          "2": 0.46,
+          "3": 0.5,
+          "4": 0.01,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "corroborated": {
+        "type": "noul",
+        "noul": 0.59
+      },
+      "coordinated_push": {
+        "type": "noul",
+        "noul": 0.01
+      },
+      "checkable": {
+        "type": "noul",
+        "noul": 0
+      },
+      "disposition": {
+        "type": "choice",
+        "choice": "WATCH",
+        "confidence": 0.55,
+        "probabilities": {
+          "IGNORE": 0,
+          "WATCH": 0.66,
+          "VERIFY": 0.34,
+          "ACT_WORTHY": 0
+        }
+      }
+    },
+    "RM-0127": {
+      "source_reliability": {
+        "type": "score",
+        "score": 0.7,
+        "confidence": 0.8,
+        "probabilities": {
+          "0": 0.32,
+          "1": 0.66,
+          "2": 0.02,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "corroborated": {
+        "type": "noul",
+        "noul": 0.56
+      },
+      "coordinated_push": {
+        "type": "noul",
+        "noul": 0.01
+      },
+      "checkable": {
+        "type": "noul",
+        "noul": 0
+      },
+      "disposition": {
+        "type": "choice",
+        "choice": "WATCH",
+        "confidence": 0.4,
+        "probabilities": {
+          "IGNORE": 0.01,
+          "WATCH": 0.55,
+          "VERIFY": 0.44,
+          "ACT_WORTHY": 0
+        }
+      }
+    },
+    "RM-0128": {
+      "source_reliability": {
+        "type": "score",
+        "score": 1,
+        "confidence": 0.86,
+        "probabilities": {
+          "0": 0.12,
+          "1": 0.76,
+          "2": 0.12,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "corroborated": {
+        "type": "noul",
+        "noul": 0.36
+      },
+      "coordinated_push": {
+        "type": "noul",
+        "noul": 0.75
+      },
+      "checkable": {
+        "type": "noul",
+        "noul": 0
+      },
+      "disposition": {
+        "type": "choice",
+        "choice": "WATCH",
+        "confidence": 0.35,
+        "probabilities": {
+          "IGNORE": 0,
+          "WATCH": 0.51,
+          "VERIFY": 0.49,
+          "ACT_WORTHY": 0
+        }
+      }
+    },
+    "RM-0129": {
+      "source_reliability": {
+        "type": "score",
+        "score": 0.55,
+        "confidence": 0.68,
+        "probabilities": {
+          "0": 0.49,
+          "1": 0.47,
+          "2": 0.04,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "corroborated": {
+        "type": "noul",
+        "noul": 0.58
+      },
+      "coordinated_push": {
+        "type": "noul",
+        "noul": 0.01
+      },
+      "checkable": {
+        "type": "noul",
+        "noul": 0
+      },
+      "disposition": {
+        "type": "choice",
+        "choice": "VERIFY",
+        "confidence": 0.71,
+        "probabilities": {
+          "IGNORE": 0,
+          "WATCH": 0.22,
+          "VERIFY": 0.78,
+          "ACT_WORTHY": 0
+        }
+      }
+    },
+    "RM-0130": {
+      "source_reliability": {
+        "type": "score",
+        "score": 0.88,
+        "confidence": 0.85,
+        "probabilities": {
+          "0": 0.19,
+          "1": 0.74,
+          "2": 0.07,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "corroborated": {
+        "type": "noul",
+        "noul": 0
+      },
+      "coordinated_push": {
+        "type": "noul",
+        "noul": 0.03
+      },
+      "checkable": {
+        "type": "noul",
+        "noul": 0
+      },
+      "disposition": {
+        "type": "choice",
+        "choice": "WATCH",
+        "confidence": 0.53,
+        "probabilities": {
+          "IGNORE": 0,
+          "WATCH": 0.65,
+          "VERIFY": 0.35,
+          "ACT_WORTHY": 0
+        }
+      }
+    },
+    "RM-0131": {
+      "source_reliability": {
+        "type": "score",
+        "score": 0.89,
+        "confidence": 0.84,
+        "probabilities": {
+          "0": 0.19,
+          "1": 0.73,
+          "2": 0.08,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "corroborated": {
+        "type": "noul",
+        "noul": 0.43
+      },
+      "coordinated_push": {
+        "type": "noul",
+        "noul": 0.03
+      },
+      "checkable": {
+        "type": "noul",
+        "noul": 0
+      },
+      "disposition": {
+        "type": "choice",
+        "choice": "WATCH",
+        "confidence": 0.51,
+        "probabilities": {
+          "IGNORE": 0,
+          "WATCH": 0.63,
+          "VERIFY": 0.37,
+          "ACT_WORTHY": 0
+        }
+      }
+    },
+    "RM-0132": {
+      "source_reliability": {
+        "type": "score",
+        "score": 0.97,
+        "confidence": 0.92,
+        "probabilities": {
+          "0": 0.08,
+          "1": 0.87,
+          "2": 0.05,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "corroborated": {
+        "type": "noul",
+        "noul": 0
+      },
+      "coordinated_push": {
+        "type": "noul",
+        "noul": 0.05
+      },
+      "checkable": {
+        "type": "noul",
+        "noul": 0
+      },
+      "disposition": {
+        "type": "choice",
+        "choice": "WATCH",
+        "confidence": 0.71,
+        "probabilities": {
+          "IGNORE": 0,
+          "WATCH": 0.78,
+          "VERIFY": 0.22,
+          "ACT_WORTHY": 0
+        }
+      }
+    },
+    "RM-0133": {
+      "source_reliability": {
+        "type": "score",
+        "score": 1.89,
+        "confidence": 0.89,
+        "probabilities": {
+          "0": 0,
+          "1": 0.15,
+          "2": 0.81,
+          "3": 0.04,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "corroborated": {
+        "type": "noul",
+        "noul": 0
+      },
+      "coordinated_push": {
+        "type": "noul",
+        "noul": 0
+      },
+      "checkable": {
+        "type": "noul",
+        "noul": 0.99
+      },
+      "disposition": {
+        "type": "choice",
+        "choice": "VERIFY",
+        "confidence": 0.87,
+        "probabilities": {
+          "IGNORE": 0,
+          "WATCH": 0.1,
+          "VERIFY": 0.9,
+          "ACT_WORTHY": 0
+        }
+      }
+    },
+    "RM-0134": {
+      "source_reliability": {
+        "type": "score",
+        "score": 2.21,
+        "confidence": 0.81,
+        "probabilities": {
+          "0": 0,
+          "1": 0.06,
+          "2": 0.67,
+          "3": 0.27,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "corroborated": {
+        "type": "noul",
+        "noul": 0.84
+      },
+      "coordinated_push": {
+        "type": "noul",
+        "noul": 0.06
+      },
+      "checkable": {
+        "type": "noul",
+        "noul": 0.99
+      },
+      "disposition": {
+        "type": "choice",
+        "choice": "VERIFY",
+        "confidence": 0.39,
+        "probabilities": {
+          "IGNORE": 0,
+          "WATCH": 0.46,
+          "VERIFY": 0.54,
+          "ACT_WORTHY": 0
+        }
+      }
+    },
+    "RM-0135": {
+      "source_reliability": {
+        "type": "score",
+        "score": 1.07,
+        "confidence": 0.95,
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.91,
+          "2": 0.08,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "corroborated": {
+        "type": "noul",
+        "noul": 0.61
+      },
+      "coordinated_push": {
+        "type": "noul",
+        "noul": 0.13
+      },
+      "checkable": {
+        "type": "noul",
+        "noul": 0
+      },
+      "disposition": {
+        "type": "choice",
+        "choice": "VERIFY",
+        "confidence": 0.57,
+        "probabilities": {
+          "IGNORE": 0,
+          "WATCH": 0.32,
+          "VERIFY": 0.68,
+          "ACT_WORTHY": 0
+        }
+      }
+    },
+    "RM-0136": {
+      "source_reliability": {
+        "type": "score",
+        "score": 2.71,
+        "confidence": 0.82,
+        "probabilities": {
+          "0": 0,
+          "1": 0.01,
+          "2": 0.28,
+          "3": 0.7,
+          "4": 0.01,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "corroborated": {
+        "type": "noul",
+        "noul": 0.82
+      },
+      "coordinated_push": {
+        "type": "noul",
+        "noul": 0.1
+      },
+      "checkable": {
+        "type": "noul",
+        "noul": 0
+      },
+      "disposition": {
+        "type": "choice",
+        "choice": "VERIFY",
+        "confidence": 0.6,
+        "probabilities": {
+          "IGNORE": 0,
+          "WATCH": 0.3,
+          "VERIFY": 0.7,
+          "ACT_WORTHY": 0
+        }
+      }
+    },
+    "RM-0137": {
+      "source_reliability": {
+        "type": "score",
+        "score": 0.89,
+        "confidence": 0.87,
+        "probabilities": {
+          "0": 0.17,
+          "1": 0.77,
+          "2": 0.06,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "corroborated": {
+        "type": "noul",
+        "noul": 0
+      },
+      "coordinated_push": {
+        "type": "noul",
+        "noul": 0.99
+      },
+      "checkable": {
+        "type": "noul",
+        "noul": 0
+      },
+      "disposition": {
+        "type": "choice",
+        "choice": "WATCH",
+        "confidence": 0.81,
+        "probabilities": {
+          "IGNORE": 0,
+          "WATCH": 0.86,
+          "VERIFY": 0.14,
+          "ACT_WORTHY": 0
+        }
+      }
+    },
+    "RM-0138": {
+      "source_reliability": {
+        "type": "score",
+        "score": 2.72,
+        "confidence": 0.83,
+        "probabilities": {
+          "0": 0,
+          "1": 0.01,
+          "2": 0.27,
+          "3": 0.71,
+          "4": 0.01,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "corroborated": {
+        "type": "noul",
+        "noul": 0
+      },
+      "coordinated_push": {
+        "type": "noul",
+        "noul": 0.01
+      },
+      "checkable": {
+        "type": "noul",
+        "noul": 0
+      },
+      "disposition": {
+        "type": "choice",
+        "choice": "WATCH",
+        "confidence": 0.77,
+        "probabilities": {
+          "IGNORE": 0,
+          "WATCH": 0.83,
+          "VERIFY": 0.17,
+          "ACT_WORTHY": 0
+        }
+      }
+    },
+    "RM-0139": {
+      "source_reliability": {
+        "type": "score",
+        "score": 1.67,
+        "confidence": 0.78,
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.33,
+          "2": 0.64,
+          "3": 0.02,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "corroborated": {
+        "type": "noul",
+        "noul": 0.69
+      },
+      "coordinated_push": {
+        "type": "noul",
+        "noul": 0.03
+      },
+      "checkable": {
+        "type": "noul",
+        "noul": 0.01
+      },
+      "disposition": {
+        "type": "choice",
+        "choice": "VERIFY",
+        "confidence": 0.77,
+        "probabilities": {
+          "IGNORE": 0,
+          "WATCH": 0.17,
+          "VERIFY": 0.83,
+          "ACT_WORTHY": 0
+        }
+      }
+    },
+    "RM-0140": {
+      "source_reliability": {
+        "type": "score",
+        "score": 1.42,
+        "confidence": 0.74,
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.56,
+          "2": 0.43,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "corroborated": {
+        "type": "noul",
+        "noul": 0.6
+      },
+      "coordinated_push": {
+        "type": "noul",
+        "noul": 0.04
+      },
+      "checkable": {
+        "type": "noul",
+        "noul": 0
+      },
+      "disposition": {
+        "type": "choice",
+        "choice": "VERIFY",
+        "confidence": 0.37,
+        "probabilities": {
+          "IGNORE": 0,
+          "WATCH": 0.47,
+          "VERIFY": 0.53,
+          "ACT_WORTHY": 0
+        }
+      }
+    },
+    "RM-0141": {
+      "source_reliability": {
+        "type": "score",
+        "score": 1.3,
+        "confidence": 0.79,
+        "probabilities": {
+          "0": 0.03,
+          "1": 0.64,
+          "2": 0.33,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "corroborated": {
+        "type": "noul",
+        "noul": 0.67
+      },
+      "coordinated_push": {
+        "type": "noul",
+        "noul": 0
+      },
+      "checkable": {
+        "type": "noul",
+        "noul": 0
+      },
+      "disposition": {
+        "type": "choice",
+        "choice": "WATCH",
+        "confidence": 0.41,
+        "probabilities": {
+          "IGNORE": 0,
+          "WATCH": 0.56,
+          "VERIFY": 0.44,
+          "ACT_WORTHY": 0
+        }
+      }
+    },
+    "RM-0142": {
+      "source_reliability": {
+        "type": "score",
+        "score": 1.28,
+        "confidence": 0.83,
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.7,
+          "2": 0.29,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "corroborated": {
+        "type": "noul",
+        "noul": 0.93
+      },
+      "coordinated_push": {
+        "type": "noul",
+        "noul": 0.1
+      },
+      "checkable": {
+        "type": "noul",
+        "noul": 0
+      },
+      "disposition": {
+        "type": "choice",
+        "choice": "WATCH",
+        "confidence": 0.6,
+        "probabilities": {
+          "IGNORE": 0,
+          "WATCH": 0.7,
+          "VERIFY": 0.3,
+          "ACT_WORTHY": 0
+        }
+      }
+    },
+    "RM-0143": {
+      "source_reliability": {
+        "type": "score",
+        "score": 1.18,
+        "confidence": 0.84,
+        "probabilities": {
+          "0": 0.05,
+          "1": 0.72,
+          "2": 0.23,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "corroborated": {
+        "type": "noul",
+        "noul": 0
+      },
+      "coordinated_push": {
+        "type": "noul",
+        "noul": 0.04
+      },
+      "checkable": {
+        "type": "noul",
+        "noul": 0
+      },
+      "disposition": {
+        "type": "choice",
+        "choice": "WATCH",
+        "confidence": 0.41,
+        "probabilities": {
+          "IGNORE": 0,
+          "WATCH": 0.56,
+          "VERIFY": 0.44,
+          "ACT_WORTHY": 0
+        }
+      }
+    },
+    "RM-0144": {
+      "source_reliability": {
+        "type": "score",
+        "score": 1.83,
+        "confidence": 0.84,
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.2,
+          "2": 0.74,
+          "3": 0.05,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "corroborated": {
+        "type": "noul",
+        "noul": 0.68
+      },
+      "coordinated_push": {
+        "type": "noul",
+        "noul": 0.06
+      },
+      "checkable": {
+        "type": "noul",
+        "noul": 0
+      },
+      "disposition": {
+        "type": "choice",
+        "choice": "WATCH",
+        "confidence": 0.72,
+        "probabilities": {
+          "IGNORE": 0,
+          "WATCH": 0.79,
+          "VERIFY": 0.21,
+          "ACT_WORTHY": 0
+        }
+      }
+    },
+    "RM-0145": {
+      "source_reliability": {
+        "type": "score",
+        "score": 1.19,
+        "confidence": 0.84,
+        "probabilities": {
+          "0": 0.04,
+          "1": 0.73,
+          "2": 0.23,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "corroborated": {
+        "type": "noul",
+        "noul": 0
+      },
+      "coordinated_push": {
+        "type": "noul",
+        "noul": 0.05
+      },
+      "checkable": {
+        "type": "noul",
+        "noul": 0
+      },
+      "disposition": {
+        "type": "choice",
+        "choice": "WATCH",
+        "confidence": 0.68,
+        "probabilities": {
+          "IGNORE": 0,
+          "WATCH": 0.76,
+          "VERIFY": 0.24,
+          "ACT_WORTHY": 0
+        }
+      }
+    },
+    "RM-0146": {
+      "source_reliability": {
+        "type": "score",
+        "score": 1.89,
+        "confidence": 0.83,
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.18,
+          "2": 0.72,
+          "3": 0.09,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "corroborated": {
+        "type": "noul",
+        "noul": 0.71
+      },
+      "coordinated_push": {
+        "type": "noul",
+        "noul": 0
+      },
+      "checkable": {
+        "type": "noul",
+        "noul": 0
+      },
+      "disposition": {
+        "type": "choice",
+        "choice": "VERIFY",
+        "confidence": 0.57,
+        "probabilities": {
+          "IGNORE": 0,
+          "WATCH": 0.32,
+          "VERIFY": 0.68,
+          "ACT_WORTHY": 0
+        }
+      }
+    },
+    "RM-0147": {
+      "source_reliability": {
+        "type": "score",
+        "score": 1.82,
+        "confidence": 0.88,
+        "probabilities": {
+          "0": 0,
+          "1": 0.19,
+          "2": 0.8,
+          "3": 0.01,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "corroborated": {
+        "type": "noul",
+        "noul": 0.84
+      },
+      "coordinated_push": {
+        "type": "noul",
+        "noul": 0.02
+      },
+      "checkable": {
+        "type": "noul",
+        "noul": 0
+      },
+      "disposition": {
+        "type": "choice",
+        "choice": "VERIFY",
+        "confidence": 0.47,
+        "probabilities": {
+          "IGNORE": 0,
+          "WATCH": 0.4,
+          "VERIFY": 0.6,
+          "ACT_WORTHY": 0
+        }
+      }
+    },
+    "RM-0148": {
+      "source_reliability": {
+        "type": "score",
+        "score": 2.87,
+        "confidence": 0.91,
+        "probabilities": {
+          "0": 0,
+          "1": 0.01,
+          "2": 0.12,
+          "3": 0.86,
+          "4": 0.01,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "corroborated": {
+        "type": "noul",
+        "noul": 0.51
+      },
+      "coordinated_push": {
+        "type": "noul",
+        "noul": 0.08
+      },
+      "checkable": {
+        "type": "noul",
+        "noul": 0
+      },
+      "disposition": {
+        "type": "choice",
+        "choice": "WATCH",
+        "confidence": 0.55,
+        "probabilities": {
+          "IGNORE": 0,
+          "WATCH": 0.66,
+          "VERIFY": 0.34,
+          "ACT_WORTHY": 0
+        }
+      }
+    },
+    "RM-0149": {
+      "source_reliability": {
+        "type": "score",
+        "score": 0.5,
+        "confidence": 0.71,
+        "probabilities": {
+          "0": 0.52,
+          "1": 0.46,
+          "2": 0.02,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "corroborated": {
+        "type": "noul",
+        "noul": 0.25
+      },
+      "coordinated_push": {
+        "type": "noul",
+        "noul": 0.89
+      },
+      "checkable": {
+        "type": "noul",
+        "noul": 0
+      },
+      "disposition": {
+        "type": "choice",
+        "choice": "VERIFY",
+        "confidence": 0.47,
+        "probabilities": {
+          "IGNORE": 0,
+          "WATCH": 0.4,
+          "VERIFY": 0.6,
+          "ACT_WORTHY": 0
+        }
+      }
+    },
+    "RM-0150": {
+      "source_reliability": {
+        "type": "score",
+        "score": 2.77,
+        "confidence": 0.84,
+        "probabilities": {
+          "0": 0,
+          "1": 0.01,
+          "2": 0.23,
+          "3": 0.74,
+          "4": 0.02,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "corroborated": {
+        "type": "noul",
+        "noul": 0.74
+      },
+      "coordinated_push": {
+        "type": "noul",
+        "noul": 0.07
+      },
+      "checkable": {
+        "type": "noul",
+        "noul": 0
+      },
+      "disposition": {
+        "type": "choice",
+        "choice": "VERIFY",
+        "confidence": 0.72,
+        "probabilities": {
+          "IGNORE": 0,
+          "WATCH": 0.21,
+          "VERIFY": 0.79,
+          "ACT_WORTHY": 0
+        }
+      }
+    },
+    "RM-0151": {
+      "source_reliability": {
+        "type": "score",
+        "score": 1.36,
+        "confidence": 0.74,
+        "probabilities": {
+          "0": 0.04,
+          "1": 0.56,
+          "2": 0.4,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "corroborated": {
+        "type": "noul",
+        "noul": 0.65
+      },
+      "coordinated_push": {
+        "type": "noul",
+        "noul": 0.05
+      },
+      "checkable": {
+        "type": "noul",
+        "noul": 0
+      },
+      "disposition": {
+        "type": "choice",
+        "choice": "WATCH",
+        "confidence": 0.41,
+        "probabilities": {
+          "IGNORE": 0,
+          "WATCH": 0.56,
+          "VERIFY": 0.44,
+          "ACT_WORTHY": 0
+        }
+      }
+    },
+    "RM-0152": {
+      "source_reliability": {
+        "type": "score",
+        "score": 1.94,
+        "confidence": 0.91,
+        "probabilities": {
+          "0": 0,
+          "1": 0.11,
+          "2": 0.84,
+          "3": 0.05,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "corroborated": {
+        "type": "noul",
+        "noul": 0.14
+      },
+      "coordinated_push": {
+        "type": "noul",
+        "noul": 0.03
+      },
+      "checkable": {
+        "type": "noul",
+        "noul": 0
+      },
+      "disposition": {
+        "type": "choice",
+        "choice": "VERIFY",
+        "confidence": 0.72,
+        "probabilities": {
+          "IGNORE": 0,
+          "WATCH": 0.21,
+          "VERIFY": 0.79,
+          "ACT_WORTHY": 0
+        }
+      }
+    },
+    "RM-0153": {
+      "source_reliability": {
+        "type": "score",
+        "score": 1.22,
+        "confidence": 0.85,
+        "probabilities": {
+          "0": 0.02,
+          "1": 0.74,
+          "2": 0.24,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "corroborated": {
+        "type": "noul",
+        "noul": 0
+      },
+      "coordinated_push": {
+        "type": "noul",
+        "noul": 0.02
+      },
+      "checkable": {
+        "type": "noul",
+        "noul": 0
+      },
+      "disposition": {
+        "type": "choice",
+        "choice": "WATCH",
+        "confidence": 0.83,
+        "probabilities": {
+          "IGNORE": 0,
+          "WATCH": 0.87,
+          "VERIFY": 0.13,
+          "ACT_WORTHY": 0
+        }
+      }
+    },
+    "RM-0154": {
+      "source_reliability": {
+        "type": "score",
+        "score": 0.63,
+        "confidence": 0.75,
+        "probabilities": {
+          "0": 0.4,
+          "1": 0.57,
+          "2": 0.03,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "corroborated": {
+        "type": "noul",
+        "noul": 0
+      },
+      "coordinated_push": {
+        "type": "noul",
+        "noul": 0
+      },
+      "checkable": {
+        "type": "noul",
+        "noul": 0
+      },
+      "disposition": {
+        "type": "choice",
+        "choice": "WATCH",
+        "confidence": 0.61,
+        "probabilities": {
+          "IGNORE": 0,
+          "WATCH": 0.71,
+          "VERIFY": 0.29,
+          "ACT_WORTHY": 0
+        }
+      }
+    },
+    "RM-0155": {
+      "source_reliability": {
+        "type": "score",
+        "score": 2.05,
+        "confidence": 0.89,
+        "probabilities": {
+          "0": 0,
+          "1": 0.07,
+          "2": 0.81,
+          "3": 0.12,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "corroborated": {
+        "type": "noul",
+        "noul": 0.95
+      },
+      "coordinated_push": {
+        "type": "noul",
+        "noul": 0.02
+      },
+      "checkable": {
+        "type": "noul",
+        "noul": 0
+      },
+      "disposition": {
+        "type": "choice",
+        "choice": "WATCH",
+        "confidence": 0.64,
+        "probabilities": {
+          "IGNORE": 0,
+          "WATCH": 0.73,
+          "VERIFY": 0.27,
+          "ACT_WORTHY": 0
+        }
+      }
+    },
+    "RM-0156": {
+      "source_reliability": {
+        "type": "score",
+        "score": 0.79,
+        "confidence": 0.83,
+        "probabilities": {
+          "0": 0.25,
+          "1": 0.71,
+          "2": 0.04,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "corroborated": {
+        "type": "noul",
+        "noul": 0.65
+      },
+      "coordinated_push": {
+        "type": "noul",
+        "noul": 0
+      },
+      "checkable": {
+        "type": "noul",
+        "noul": 0
+      },
+      "disposition": {
+        "type": "choice",
+        "choice": "WATCH",
+        "confidence": 0.53,
+        "probabilities": {
+          "IGNORE": 0,
+          "WATCH": 0.65,
+          "VERIFY": 0.35,
+          "ACT_WORTHY": 0
+        }
+      }
+    },
+    "RM-0157": {
+      "source_reliability": {
+        "type": "score",
+        "score": 1.56,
+        "confidence": 0.74,
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.42,
+          "2": 0.57,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "corroborated": {
+        "type": "noul",
+        "noul": 0.66
+      },
+      "coordinated_push": {
+        "type": "noul",
+        "noul": 0.02
+      },
+      "checkable": {
+        "type": "noul",
+        "noul": 0
+      },
+      "disposition": {
+        "type": "choice",
+        "choice": "WATCH",
+        "confidence": 0.92,
+        "probabilities": {
+          "IGNORE": 0,
+          "WATCH": 0.94,
+          "VERIFY": 0.06,
+          "ACT_WORTHY": 0
+        }
+      }
+    },
+    "RM-0158": {
+      "source_reliability": {
+        "type": "score",
+        "score": 1.21,
+        "confidence": 0.84,
+        "probabilities": {
+          "0": 0.03,
+          "1": 0.73,
+          "2": 0.24,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "corroborated": {
+        "type": "noul",
+        "noul": 0.78
+      },
+      "coordinated_push": {
+        "type": "noul",
+        "noul": 0.08
+      },
+      "checkable": {
+        "type": "noul",
+        "noul": 0
+      },
+      "disposition": {
+        "type": "choice",
+        "choice": "VERIFY",
+        "confidence": 0.73,
+        "probabilities": {
+          "IGNORE": 0,
+          "WATCH": 0.2,
+          "VERIFY": 0.8,
+          "ACT_WORTHY": 0
+        }
+      }
+    },
+    "RM-0159": {
+      "source_reliability": {
+        "type": "score",
+        "score": 1.14,
+        "confidence": 0.9,
+        "probabilities": {
+          "0": 0.02,
+          "1": 0.82,
+          "2": 0.16,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "corroborated": {
+        "type": "noul",
+        "noul": 0.68
+      },
+      "coordinated_push": {
+        "type": "noul",
+        "noul": 0
+      },
+      "checkable": {
+        "type": "noul",
+        "noul": 0
+      },
+      "disposition": {
+        "type": "choice",
+        "choice": "WATCH",
+        "confidence": 0.37,
+        "probabilities": {
+          "IGNORE": 0,
+          "WATCH": 0.53,
+          "VERIFY": 0.47,
+          "ACT_WORTHY": 0
+        }
+      }
+    },
+    "RM-0160": {
+      "source_reliability": {
+        "type": "score",
+        "score": 1.06,
+        "confidence": 0.85,
+        "probabilities": {
+          "0": 0.1,
+          "1": 0.74,
+          "2": 0.16,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "corroborated": {
+        "type": "noul",
+        "noul": 0.47
+      },
+      "coordinated_push": {
+        "type": "noul",
+        "noul": 0.02
+      },
+      "checkable": {
+        "type": "noul",
+        "noul": 0
+      },
+      "disposition": {
+        "type": "choice",
+        "choice": "VERIFY",
+        "confidence": 0.67,
+        "probabilities": {
+          "IGNORE": 0,
+          "WATCH": 0.25,
+          "VERIFY": 0.75,
+          "ACT_WORTHY": 0
+        }
+      }
+    },
+    "RM-0161": {
+      "source_reliability": {
+        "type": "score",
+        "score": 1.17,
+        "confidence": 0.85,
+        "probabilities": {
+          "0": 0.04,
+          "1": 0.75,
+          "2": 0.21,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "corroborated": {
+        "type": "noul",
+        "noul": 0.47
+      },
+      "coordinated_push": {
+        "type": "noul",
+        "noul": 0
+      },
+      "checkable": {
+        "type": "noul",
+        "noul": 0
+      },
+      "disposition": {
+        "type": "choice",
+        "choice": "VERIFY",
+        "confidence": 0.68,
+        "probabilities": {
+          "IGNORE": 0,
+          "WATCH": 0.24,
+          "VERIFY": 0.76,
+          "ACT_WORTHY": 0
+        }
+      }
+    },
+    "RM-0162": {
+      "source_reliability": {
+        "type": "score",
+        "score": 2.23,
+        "confidence": 0.81,
+        "probabilities": {
+          "0": 0,
+          "1": 0.05,
+          "2": 0.67,
+          "3": 0.28,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "corroborated": {
+        "type": "noul",
+        "noul": 0
+      },
+      "coordinated_push": {
+        "type": "noul",
+        "noul": 0.08
+      },
+      "checkable": {
+        "type": "noul",
+        "noul": 0
+      },
+      "disposition": {
+        "type": "choice",
+        "choice": "WATCH",
+        "confidence": 0.6,
+        "probabilities": {
+          "IGNORE": 0,
+          "WATCH": 0.7,
+          "VERIFY": 0.3,
+          "ACT_WORTHY": 0
+        }
+      }
+    },
+    "RM-0163": {
+      "source_reliability": {
+        "type": "score",
+        "score": 1.3,
+        "confidence": 0.78,
+        "probabilities": {
+          "0": 0.04,
+          "1": 0.62,
+          "2": 0.34,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "corroborated": {
+        "type": "noul",
+        "noul": 0.38
+      },
+      "coordinated_push": {
+        "type": "noul",
+        "noul": 0.16
+      },
+      "checkable": {
+        "type": "noul",
+        "noul": 0
+      },
+      "disposition": {
+        "type": "choice",
+        "choice": "VERIFY",
+        "confidence": 0.48,
+        "probabilities": {
+          "IGNORE": 0,
+          "WATCH": 0.39,
+          "VERIFY": 0.61,
+          "ACT_WORTHY": 0
+        }
+      }
+    },
+    "RM-0164": {
+      "source_reliability": {
+        "type": "score",
+        "score": 1.32,
+        "confidence": 0.8,
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.66,
+          "2": 0.33,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "corroborated": {
+        "type": "noul",
+        "noul": 0.67
+      },
+      "coordinated_push": {
+        "type": "noul",
+        "noul": 0.02
+      },
+      "checkable": {
+        "type": "noul",
+        "noul": 0
+      },
+      "disposition": {
+        "type": "choice",
+        "choice": "WATCH",
+        "confidence": 0.71,
+        "probabilities": {
+          "IGNORE": 0,
+          "WATCH": 0.78,
+          "VERIFY": 0.22,
+          "ACT_WORTHY": 0
+        }
+      }
+    },
+    "RM-0165": {
+      "source_reliability": {
+        "type": "score",
+        "score": 1.69,
+        "confidence": 0.81,
+        "probabilities": {
+          "0": 0,
+          "1": 0.32,
+          "2": 0.67,
+          "3": 0.01,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "corroborated": {
+        "type": "noul",
+        "noul": 0.55
+      },
+      "coordinated_push": {
+        "type": "noul",
+        "noul": 0.12
+      },
+      "checkable": {
+        "type": "noul",
+        "noul": 0
+      },
+      "disposition": {
+        "type": "choice",
+        "choice": "WATCH",
+        "confidence": 0.37,
+        "probabilities": {
+          "IGNORE": 0,
+          "WATCH": 0.53,
+          "VERIFY": 0.47,
+          "ACT_WORTHY": 0
+        }
+      }
+    },
+    "RM-0166": {
+      "source_reliability": {
+        "type": "score",
+        "score": 2.68,
+        "confidence": 0.81,
+        "probabilities": {
+          "0": 0,
+          "1": 0.02,
+          "2": 0.28,
+          "3": 0.7,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "corroborated": {
+        "type": "noul",
+        "noul": 0.73
+      },
+      "coordinated_push": {
+        "type": "noul",
+        "noul": 0.03
+      },
+      "checkable": {
+        "type": "noul",
+        "noul": 0
+      },
+      "disposition": {
+        "type": "choice",
+        "choice": "VERIFY",
+        "confidence": 0.6,
+        "probabilities": {
+          "IGNORE": 0,
+          "WATCH": 0.3,
+          "VERIFY": 0.7,
+          "ACT_WORTHY": 0
+        }
+      }
+    },
+    "RM-0167": {
+      "source_reliability": {
+        "type": "score",
+        "score": 2.53,
+        "confidence": 0.73,
+        "probabilities": {
+          "0": 0,
+          "1": 0.03,
+          "2": 0.41,
+          "3": 0.56,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "corroborated": {
+        "type": "noul",
+        "noul": 0.71
+      },
+      "coordinated_push": {
+        "type": "noul",
+        "noul": 0.01
+      },
+      "checkable": {
+        "type": "noul",
+        "noul": 0
+      },
+      "disposition": {
+        "type": "choice",
+        "choice": "VERIFY",
+        "confidence": 0.49,
+        "probabilities": {
+          "IGNORE": 0,
+          "WATCH": 0.38,
+          "VERIFY": 0.62,
+          "ACT_WORTHY": 0
+        }
+      }
+    },
+    "RM-0168": {
+      "source_reliability": {
+        "type": "score",
+        "score": 0.59,
+        "confidence": 0.75,
+        "probabilities": {
+          "0": 0.42,
+          "1": 0.57,
+          "2": 0.01,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "corroborated": {
+        "type": "noul",
+        "noul": 0.54
+      },
+      "coordinated_push": {
+        "type": "noul",
+        "noul": 0.05
+      },
+      "checkable": {
+        "type": "noul",
+        "noul": 0
+      },
+      "disposition": {
+        "type": "choice",
+        "choice": "WATCH",
+        "confidence": 0.64,
+        "probabilities": {
+          "IGNORE": 0,
+          "WATCH": 0.73,
+          "VERIFY": 0.27,
+          "ACT_WORTHY": 0
+        }
+      }
+    },
+    "RM-0169": {
+      "source_reliability": {
+        "type": "score",
+        "score": 1,
+        "confidence": 0.88,
+        "probabilities": {
+          "0": 0.1,
+          "1": 0.8,
+          "2": 0.1,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "corroborated": {
+        "type": "noul",
+        "noul": 0.77
+      },
+      "coordinated_push": {
+        "type": "noul",
+        "noul": 0.05
+      },
+      "checkable": {
+        "type": "noul",
+        "noul": 0.01
+      },
+      "disposition": {
+        "type": "choice",
+        "choice": "VERIFY",
+        "confidence": 0.47,
+        "probabilities": {
+          "IGNORE": 0,
+          "WATCH": 0.4,
+          "VERIFY": 0.6,
+          "ACT_WORTHY": 0
+        }
+      }
+    },
+    "RM-0170": {
+      "source_reliability": {
+        "type": "score",
+        "score": 2.52,
+        "confidence": 0.71,
+        "probabilities": {
+          "0": 0,
+          "1": 0.02,
+          "2": 0.45,
+          "3": 0.52,
+          "4": 0.01,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "corroborated": {
+        "type": "noul",
+        "noul": 0
+      },
+      "coordinated_push": {
+        "type": "noul",
+        "noul": 0.11
+      },
+      "checkable": {
+        "type": "noul",
+        "noul": 0
+      },
+      "disposition": {
+        "type": "choice",
+        "choice": "VERIFY",
+        "confidence": 0.35,
+        "probabilities": {
+          "IGNORE": 0,
+          "WATCH": 0.49,
+          "VERIFY": 0.51,
+          "ACT_WORTHY": 0
+        }
+      }
+    },
+    "RM-0171": {
+      "source_reliability": {
+        "type": "score",
+        "score": 1.14,
+        "confidence": 0.86,
+        "probabilities": {
+          "0": 0.05,
+          "1": 0.76,
+          "2": 0.19,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "corroborated": {
+        "type": "noul",
+        "noul": 0
+      },
+      "coordinated_push": {
+        "type": "noul",
+        "noul": 1
+      },
+      "checkable": {
+        "type": "noul",
+        "noul": 0
+      },
+      "disposition": {
+        "type": "choice",
+        "choice": "VERIFY",
+        "confidence": 0.37,
+        "probabilities": {
+          "IGNORE": 0,
+          "WATCH": 0.47,
+          "VERIFY": 0.53,
+          "ACT_WORTHY": 0
+        }
+      }
+    },
+    "RM-0172": {
+      "source_reliability": {
+        "type": "score",
+        "score": 0.94,
+        "confidence": 0.95,
+        "probabilities": {
+          "0": 0.07,
+          "1": 0.92,
+          "2": 0.01,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "corroborated": {
+        "type": "noul",
+        "noul": 0
+      },
+      "coordinated_push": {
+        "type": "noul",
+        "noul": 0.1
+      },
+      "checkable": {
+        "type": "noul",
+        "noul": 0
+      },
+      "disposition": {
+        "type": "choice",
+        "choice": "VERIFY",
+        "confidence": 0.81,
+        "probabilities": {
+          "IGNORE": 0,
+          "WATCH": 0.14,
+          "VERIFY": 0.86,
+          "ACT_WORTHY": 0
+        }
+      }
+    },
+    "RM-0173": {
+      "source_reliability": {
+        "type": "score",
+        "score": 1.72,
+        "confidence": 0.83,
+        "probabilities": {
+          "0": 0,
+          "1": 0.29,
+          "2": 0.7,
+          "3": 0.01,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "corroborated": {
+        "type": "noul",
+        "noul": 0.79
+      },
+      "coordinated_push": {
+        "type": "noul",
+        "noul": 0.01
+      },
+      "checkable": {
+        "type": "noul",
+        "noul": 0
+      },
+      "disposition": {
+        "type": "choice",
+        "choice": "WATCH",
+        "confidence": 0.68,
+        "probabilities": {
+          "IGNORE": 0,
+          "WATCH": 0.76,
+          "VERIFY": 0.24,
+          "ACT_WORTHY": 0
+        }
+      }
+    },
+    "RM-0174": {
+      "source_reliability": {
+        "type": "score",
+        "score": 1.02,
+        "confidence": 0.91,
+        "probabilities": {
+          "0": 0.07,
+          "1": 0.84,
+          "2": 0.09,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "corroborated": {
+        "type": "noul",
+        "noul": 0
+      },
+      "coordinated_push": {
+        "type": "noul",
+        "noul": 1
+      },
+      "checkable": {
+        "type": "noul",
+        "noul": 0
+      },
+      "disposition": {
+        "type": "choice",
+        "choice": "VERIFY",
+        "confidence": 0.47,
+        "probabilities": {
+          "IGNORE": 0,
+          "WATCH": 0.4,
+          "VERIFY": 0.6,
+          "ACT_WORTHY": 0
+        }
+      }
+    },
+    "RM-0175": {
+      "source_reliability": {
+        "type": "score",
+        "score": 2.31,
+        "confidence": 0.71,
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.07,
+          "2": 0.53,
+          "3": 0.38,
+          "4": 0.01,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "corroborated": {
+        "type": "noul",
+        "noul": 0.75
+      },
+      "coordinated_push": {
+        "type": "noul",
+        "noul": 0.01
+      },
+      "checkable": {
+        "type": "noul",
+        "noul": 0
+      },
+      "disposition": {
+        "type": "choice",
+        "choice": "VERIFY",
+        "confidence": 0.64,
+        "probabilities": {
+          "IGNORE": 0,
+          "WATCH": 0.26,
+          "VERIFY": 0.73,
+          "ACT_WORTHY": 0.01
+        }
+      }
+    },
+    "RM-0176": {
+      "source_reliability": {
+        "type": "score",
+        "score": 1.43,
+        "confidence": 0.74,
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.56,
+          "2": 0.42,
+          "3": 0.01,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "corroborated": {
+        "type": "noul",
+        "noul": 0.55
+      },
+      "coordinated_push": {
+        "type": "noul",
+        "noul": 0.08
+      },
+      "checkable": {
+        "type": "noul",
+        "noul": 0
+      },
+      "disposition": {
+        "type": "choice",
+        "choice": "WATCH",
+        "confidence": 0.89,
+        "probabilities": {
+          "IGNORE": 0,
+          "WATCH": 0.92,
+          "VERIFY": 0.08,
+          "ACT_WORTHY": 0
+        }
+      }
+    },
+    "RM-0177": {
+      "source_reliability": {
+        "type": "score",
+        "score": 2.4,
+        "confidence": 0.72,
+        "probabilities": {
+          "0": 0,
+          "1": 0.04,
+          "2": 0.52,
+          "3": 0.44,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "corroborated": {
+        "type": "noul",
+        "noul": 0.56
+      },
+      "coordinated_push": {
+        "type": "noul",
+        "noul": 0.01
+      },
+      "checkable": {
+        "type": "noul",
+        "noul": 0
+      },
+      "disposition": {
+        "type": "choice",
+        "choice": "VERIFY",
+        "confidence": 0.36,
+        "probabilities": {
+          "IGNORE": 0,
+          "WATCH": 0.48,
+          "VERIFY": 0.52,
+          "ACT_WORTHY": 0
+        }
+      }
+    },
+    "RM-0178": {
+      "source_reliability": {
+        "type": "score",
+        "score": 1.02,
+        "confidence": 0.91,
+        "probabilities": {
+          "0": 0.07,
+          "1": 0.84,
+          "2": 0.09,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "corroborated": {
+        "type": "noul",
+        "noul": 0.56
+      },
+      "coordinated_push": {
+        "type": "noul",
+        "noul": 0.05
+      },
+      "checkable": {
+        "type": "noul",
+        "noul": 0
+      },
+      "disposition": {
+        "type": "choice",
+        "choice": "WATCH",
+        "confidence": 0.76,
+        "probabilities": {
+          "IGNORE": 0,
+          "WATCH": 0.82,
+          "VERIFY": 0.18,
+          "ACT_WORTHY": 0
+        }
+      }
+    },
+    "RM-0179": {
+      "source_reliability": {
+        "type": "score",
+        "score": 1.74,
+        "confidence": 0.83,
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.26,
+          "2": 0.71,
+          "3": 0.02,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "corroborated": {
+        "type": "noul",
+        "noul": 0.83
+      },
+      "coordinated_push": {
+        "type": "noul",
+        "noul": 0
+      },
+      "checkable": {
+        "type": "noul",
+        "noul": 0
+      },
+      "disposition": {
+        "type": "choice",
+        "choice": "WATCH",
+        "confidence": 0.37,
+        "probabilities": {
+          "IGNORE": 0,
+          "WATCH": 0.53,
+          "VERIFY": 0.47,
+          "ACT_WORTHY": 0
+        }
+      }
+    },
+    "RM-0180": {
+      "source_reliability": {
+        "type": "score",
+        "score": 0.91,
+        "confidence": 0.84,
+        "probabilities": {
+          "0": 0.18,
+          "1": 0.73,
+          "2": 0.09,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "corroborated": {
+        "type": "noul",
+        "noul": 0.77
+      },
+      "coordinated_push": {
+        "type": "noul",
+        "noul": 0.04
+      },
+      "checkable": {
+        "type": "noul",
+        "noul": 0
+      },
+      "disposition": {
+        "type": "choice",
+        "choice": "WATCH",
+        "confidence": 0.52,
+        "probabilities": {
+          "IGNORE": 0,
+          "WATCH": 0.64,
+          "VERIFY": 0.36,
+          "ACT_WORTHY": 0
+        }
+      }
+    },
+    "RM-0181": {
+      "source_reliability": {
+        "type": "score",
+        "score": 2.06,
+        "confidence": 0.83,
+        "probabilities": {
+          "0": 0,
+          "1": 0.12,
+          "2": 0.7,
+          "3": 0.18,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "corroborated": {
+        "type": "noul",
+        "noul": 0.75
+      },
+      "coordinated_push": {
+        "type": "noul",
+        "noul": 0
+      },
+      "checkable": {
+        "type": "noul",
+        "noul": 0
+      },
+      "disposition": {
+        "type": "choice",
+        "choice": "WATCH",
+        "confidence": 0.49,
+        "probabilities": {
+          "IGNORE": 0,
+          "WATCH": 0.62,
+          "VERIFY": 0.38,
+          "ACT_WORTHY": 0
+        }
+      }
+    },
+    "RM-0182": {
+      "source_reliability": {
+        "type": "score",
+        "score": 1.45,
+        "confidence": 0.73,
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.53,
+          "2": 0.46,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "corroborated": {
+        "type": "noul",
+        "noul": 0
+      },
+      "coordinated_push": {
+        "type": "noul",
+        "noul": 0.04
+      },
+      "checkable": {
+        "type": "noul",
+        "noul": 0
+      },
+      "disposition": {
+        "type": "choice",
+        "choice": "WATCH",
+        "confidence": 0.47,
+        "probabilities": {
+          "IGNORE": 0,
+          "WATCH": 0.6,
+          "VERIFY": 0.4,
+          "ACT_WORTHY": 0
+        }
+      }
+    },
+    "RM-0183": {
+      "source_reliability": {
+        "type": "score",
+        "score": 2.8,
+        "confidence": 0.86,
+        "probabilities": {
+          "0": 0,
+          "1": 0.02,
+          "2": 0.18,
+          "3": 0.78,
+          "4": 0.02,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "corroborated": {
+        "type": "noul",
+        "noul": 0.63
+      },
+      "coordinated_push": {
+        "type": "noul",
+        "noul": 0.05
+      },
+      "checkable": {
+        "type": "noul",
+        "noul": 0
+      },
+      "disposition": {
+        "type": "choice",
+        "choice": "VERIFY",
+        "confidence": 0.69,
+        "probabilities": {
+          "IGNORE": 0,
+          "WATCH": 0.23,
+          "VERIFY": 0.77,
+          "ACT_WORTHY": 0
+        }
+      }
+    },
+    "RM-0184": {
+      "source_reliability": {
+        "type": "score",
+        "score": 1.29,
+        "confidence": 0.81,
+        "probabilities": {
+          "0": 0.02,
+          "1": 0.67,
+          "2": 0.31,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "corroborated": {
+        "type": "noul",
+        "noul": 0.74
+      },
+      "coordinated_push": {
+        "type": "noul",
+        "noul": 0
+      },
+      "checkable": {
+        "type": "noul",
+        "noul": 0
+      },
+      "disposition": {
+        "type": "choice",
+        "choice": "VERIFY",
+        "confidence": 0.59,
+        "probabilities": {
+          "IGNORE": 0,
+          "WATCH": 0.31,
+          "VERIFY": 0.69,
+          "ACT_WORTHY": 0
+        }
+      }
+    },
+    "RM-0185": {
+      "source_reliability": {
+        "type": "score",
+        "score": 2.04,
+        "confidence": 0.87,
+        "probabilities": {
+          "0": 0,
+          "1": 0.09,
+          "2": 0.78,
+          "3": 0.13,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "corroborated": {
+        "type": "noul",
+        "noul": 0.84
+      },
+      "coordinated_push": {
+        "type": "noul",
+        "noul": 0.06
+      },
+      "checkable": {
+        "type": "noul",
+        "noul": 0
+      },
+      "disposition": {
+        "type": "choice",
+        "choice": "VERIFY",
+        "confidence": 0.55,
+        "probabilities": {
+          "IGNORE": 0,
+          "WATCH": 0.34,
+          "VERIFY": 0.66,
+          "ACT_WORTHY": 0
+        }
+      }
+    },
+    "RM-0186": {
+      "source_reliability": {
+        "type": "score",
+        "score": 2.61,
+        "confidence": 0.75,
+        "probabilities": {
+          "0": 0,
+          "1": 0.02,
+          "2": 0.37,
+          "3": 0.59,
+          "4": 0.02,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "corroborated": {
+        "type": "noul",
+        "noul": 0.67
+      },
+      "coordinated_push": {
+        "type": "noul",
+        "noul": 0.01
+      },
+      "checkable": {
+        "type": "noul",
+        "noul": 0
+      },
+      "disposition": {
+        "type": "choice",
+        "choice": "WATCH",
+        "confidence": 0.35,
+        "probabilities": {
+          "IGNORE": 0,
+          "WATCH": 0.51,
+          "VERIFY": 0.49,
+          "ACT_WORTHY": 0
+        }
+      }
+    },
+    "RM-0187": {
+      "source_reliability": {
+        "type": "score",
+        "score": 2.03,
+        "confidence": 0.84,
+        "probabilities": {
+          "0": 0,
+          "1": 0.12,
+          "2": 0.73,
+          "3": 0.15,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "corroborated": {
+        "type": "noul",
+        "noul": 0.78
+      },
+      "coordinated_push": {
+        "type": "noul",
+        "noul": 0
+      },
+      "checkable": {
+        "type": "noul",
+        "noul": 0
+      },
+      "disposition": {
+        "type": "choice",
+        "choice": "WATCH",
+        "confidence": 0.35,
+        "probabilities": {
+          "IGNORE": 0,
+          "WATCH": 0.51,
+          "VERIFY": 0.49,
+          "ACT_WORTHY": 0
+        }
+      }
+    },
+    "RM-0188": {
+      "source_reliability": {
+        "type": "score",
+        "score": 2.88,
+        "confidence": 0.88,
+        "probabilities": {
+          "0": 0,
+          "1": 0.01,
+          "2": 0.14,
+          "3": 0.81,
+          "4": 0.04,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "corroborated": {
+        "type": "noul",
+        "noul": 0
+      },
+      "coordinated_push": {
+        "type": "noul",
+        "noul": 0.09
+      },
+      "checkable": {
+        "type": "noul",
+        "noul": 0
+      },
+      "disposition": {
+        "type": "choice",
+        "choice": "VERIFY",
+        "confidence": 0.57,
+        "probabilities": {
+          "IGNORE": 0,
+          "WATCH": 0.32,
+          "VERIFY": 0.68,
+          "ACT_WORTHY": 0
+        }
+      }
+    },
+    "RM-0189": {
+      "source_reliability": {
+        "type": "score",
+        "score": 1.36,
+        "confidence": 0.76,
+        "probabilities": {
+          "0": 0.03,
+          "1": 0.58,
+          "2": 0.39,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "corroborated": {
+        "type": "noul",
+        "noul": 0
+      },
+      "coordinated_push": {
+        "type": "noul",
+        "noul": 0.06
+      },
+      "checkable": {
+        "type": "noul",
+        "noul": 0
+      },
+      "disposition": {
+        "type": "choice",
+        "choice": "WATCH",
+        "confidence": 0.47,
+        "probabilities": {
+          "IGNORE": 0,
+          "WATCH": 0.6,
+          "VERIFY": 0.4,
+          "ACT_WORTHY": 0
+        }
+      }
+    },
+    "RM-0190": {
+      "source_reliability": {
+        "type": "score",
+        "score": 1.42,
+        "confidence": 0.74,
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.56,
+          "2": 0.43,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "corroborated": {
+        "type": "noul",
+        "noul": 0
+      },
+      "coordinated_push": {
+        "type": "noul",
+        "noul": 0.03
+      },
+      "checkable": {
+        "type": "noul",
+        "noul": 0
+      },
+      "disposition": {
+        "type": "choice",
+        "choice": "WATCH",
+        "confidence": 0.44,
+        "probabilities": {
+          "IGNORE": 0,
+          "WATCH": 0.58,
+          "VERIFY": 0.42,
+          "ACT_WORTHY": 0
+        }
+      }
+    },
+    "RM-0191": {
+      "source_reliability": {
+        "type": "score",
+        "score": 2.2,
+        "confidence": 0.78,
+        "probabilities": {
+          "0": 0,
+          "1": 0.09,
+          "2": 0.63,
+          "3": 0.27,
+          "4": 0.01,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "corroborated": {
+        "type": "noul",
+        "noul": 0.89
+      },
+      "coordinated_push": {
+        "type": "noul",
+        "noul": 0.07
+      },
+      "checkable": {
+        "type": "noul",
+        "noul": 0
+      },
+      "disposition": {
+        "type": "choice",
+        "choice": "VERIFY",
+        "confidence": 0.35,
+        "probabilities": {
+          "IGNORE": 0,
+          "WATCH": 0.49,
+          "VERIFY": 0.51,
+          "ACT_WORTHY": 0
+        }
+      }
+    },
+    "RM-0192": {
+      "source_reliability": {
+        "type": "score",
+        "score": 1.26,
+        "confidence": 0.84,
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.72,
+          "2": 0.27,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "corroborated": {
+        "type": "noul",
+        "noul": 0
+      },
+      "coordinated_push": {
+        "type": "noul",
+        "noul": 0.01
+      },
+      "checkable": {
+        "type": "noul",
+        "noul": 0
+      },
+      "disposition": {
+        "type": "choice",
+        "choice": "WATCH",
+        "confidence": 0.6,
+        "probabilities": {
+          "IGNORE": 0,
+          "WATCH": 0.7,
+          "VERIFY": 0.3,
+          "ACT_WORTHY": 0
+        }
+      }
+    },
+    "RM-0193": {
+      "source_reliability": {
+        "type": "score",
+        "score": 1.6,
+        "confidence": 0.76,
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.39,
+          "2": 0.59,
+          "3": 0.01,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "corroborated": {
+        "type": "noul",
+        "noul": 0.84
+      },
+      "coordinated_push": {
+        "type": "noul",
+        "noul": 0.11
+      },
+      "checkable": {
+        "type": "noul",
+        "noul": 0
+      },
+      "disposition": {
+        "type": "choice",
+        "choice": "WATCH",
+        "confidence": 0.56,
+        "probabilities": {
+          "IGNORE": 0,
+          "WATCH": 0.67,
+          "VERIFY": 0.33,
+          "ACT_WORTHY": 0
+        }
+      }
+    },
+    "RM-0194": {
+      "source_reliability": {
+        "type": "score",
+        "score": 0.98,
+        "confidence": 0.88,
+        "probabilities": {
+          "0": 0.11,
+          "1": 0.8,
+          "2": 0.09,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "corroborated": {
+        "type": "noul",
+        "noul": 0
+      },
+      "coordinated_push": {
+        "type": "noul",
+        "noul": 0
+      },
+      "checkable": {
+        "type": "noul",
+        "noul": 0
+      },
+      "disposition": {
+        "type": "choice",
+        "choice": "WATCH",
+        "confidence": 0.53,
+        "probabilities": {
+          "IGNORE": 0,
+          "WATCH": 0.65,
+          "VERIFY": 0.35,
+          "ACT_WORTHY": 0
+        }
+      }
+    },
+    "RM-0195": {
+      "source_reliability": {
+        "type": "score",
+        "score": 0.95,
+        "confidence": 0.85,
+        "probabilities": {
+          "0": 0.15,
+          "1": 0.75,
+          "2": 0.1,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "corroborated": {
+        "type": "noul",
+        "noul": 0.46
+      },
+      "coordinated_push": {
+        "type": "noul",
+        "noul": 0
+      },
+      "checkable": {
+        "type": "noul",
+        "noul": 0
+      },
+      "disposition": {
+        "type": "choice",
+        "choice": "VERIFY",
+        "confidence": 0.75,
+        "probabilities": {
+          "IGNORE": 0,
+          "WATCH": 0.19,
+          "VERIFY": 0.81,
+          "ACT_WORTHY": 0
+        }
+      }
+    },
+    "RM-0196": {
+      "source_reliability": {
+        "type": "score",
+        "score": 1.87,
+        "confidence": 0.83,
+        "probabilities": {
+          "0": 0,
+          "1": 0.21,
+          "2": 0.71,
+          "3": 0.08,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "corroborated": {
+        "type": "noul",
+        "noul": 0
+      },
+      "coordinated_push": {
+        "type": "noul",
+        "noul": 0
+      },
+      "checkable": {
+        "type": "noul",
+        "noul": 0
+      },
+      "disposition": {
+        "type": "choice",
+        "choice": "WATCH",
+        "confidence": 0.6,
+        "probabilities": {
+          "IGNORE": 0,
+          "WATCH": 0.7,
+          "VERIFY": 0.3,
+          "ACT_WORTHY": 0
+        }
+      }
+    },
+    "RM-0197": {
+      "source_reliability": {
+        "type": "score",
+        "score": 2.58,
+        "confidence": 0.76,
+        "probabilities": {
+          "0": 0,
+          "1": 0.03,
+          "2": 0.36,
+          "3": 0.61,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "corroborated": {
+        "type": "noul",
+        "noul": 0.76
+      },
+      "coordinated_push": {
+        "type": "noul",
+        "noul": 0.07
+      },
+      "checkable": {
+        "type": "noul",
+        "noul": 0
+      },
+      "disposition": {
+        "type": "choice",
+        "choice": "WATCH",
+        "confidence": 0.48,
+        "probabilities": {
+          "IGNORE": 0,
+          "WATCH": 0.61,
+          "VERIFY": 0.39,
+          "ACT_WORTHY": 0
+        }
+      }
+    },
+    "RM-0198": {
+      "source_reliability": {
+        "type": "score",
+        "score": 1.05,
+        "confidence": 0.85,
+        "probabilities": {
+          "0": 0.1,
+          "1": 0.75,
+          "2": 0.15,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "corroborated": {
+        "type": "noul",
+        "noul": 0
+      },
+      "coordinated_push": {
+        "type": "noul",
+        "noul": 0.02
+      },
+      "checkable": {
+        "type": "noul",
+        "noul": 0
+      },
+      "disposition": {
+        "type": "choice",
+        "choice": "WATCH",
+        "confidence": 0.83,
+        "probabilities": {
+          "IGNORE": 0,
+          "WATCH": 0.87,
+          "VERIFY": 0.13,
+          "ACT_WORTHY": 0
+        }
+      }
+    },
+    "RM-0199": {
+      "source_reliability": {
+        "type": "score",
+        "score": 1.8,
+        "confidence": 0.79,
+        "probabilities": {
+          "0": 0,
+          "1": 0.28,
+          "2": 0.64,
+          "3": 0.08,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "corroborated": {
+        "type": "noul",
+        "noul": 0.76
+      },
+      "coordinated_push": {
+        "type": "noul",
+        "noul": 0.03
+      },
+      "checkable": {
+        "type": "noul",
+        "noul": 0
+      },
+      "disposition": {
+        "type": "choice",
+        "choice": "VERIFY",
+        "confidence": 0.55,
+        "probabilities": {
+          "IGNORE": 0,
+          "WATCH": 0.34,
+          "VERIFY": 0.66,
+          "ACT_WORTHY": 0
+        }
+      }
+    },
+    "RM-0200": {
+      "source_reliability": {
+        "type": "score",
+        "score": 1.69,
+        "confidence": 0.81,
+        "probabilities": {
+          "0": 0,
+          "1": 0.32,
+          "2": 0.67,
+          "3": 0.01,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "corroborated": {
+        "type": "noul",
+        "noul": 0.66
+      },
+      "coordinated_push": {
+        "type": "noul",
+        "noul": 0.05
+      },
+      "checkable": {
+        "type": "noul",
+        "noul": 0
+      },
+      "disposition": {
+        "type": "choice",
+        "choice": "VERIFY",
+        "confidence": 0.56,
+        "probabilities": {
+          "IGNORE": 0,
+          "WATCH": 0.33,
+          "VERIFY": 0.67,
+          "ACT_WORTHY": 0
+        }
+      }
+    },
+    "RM-0201": {
+      "source_reliability": {
+        "type": "score",
+        "score": 1.49,
+        "confidence": 0.7,
+        "probabilities": {
+          "0": 0.02,
+          "1": 0.47,
+          "2": 0.51,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "corroborated": {
+        "type": "noul",
+        "noul": 0
+      },
+      "coordinated_push": {
+        "type": "noul",
+        "noul": 0.05
+      },
+      "checkable": {
+        "type": "noul",
+        "noul": 0
+      },
+      "disposition": {
+        "type": "choice",
+        "choice": "VERIFY",
+        "confidence": 0.68,
+        "probabilities": {
+          "IGNORE": 0,
+          "WATCH": 0.24,
+          "VERIFY": 0.76,
+          "ACT_WORTHY": 0
+        }
+      }
+    },
+    "RM-0202": {
+      "source_reliability": {
+        "type": "score",
+        "score": 2.21,
+        "confidence": 0.78,
+        "probabilities": {
+          "0": 0,
+          "1": 0.08,
+          "2": 0.63,
+          "3": 0.29,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "corroborated": {
+        "type": "noul",
+        "noul": 0.84
+      },
+      "coordinated_push": {
+        "type": "noul",
+        "noul": 0.01
+      },
+      "checkable": {
+        "type": "noul",
+        "noul": 0
+      },
+      "disposition": {
+        "type": "choice",
+        "choice": "WATCH",
+        "confidence": 0.6,
+        "probabilities": {
+          "IGNORE": 0,
+          "WATCH": 0.7,
+          "VERIFY": 0.3,
+          "ACT_WORTHY": 0
+        }
+      }
+    },
+    "RM-0203": {
+      "source_reliability": {
+        "type": "score",
+        "score": 1.32,
+        "confidence": 0.74,
+        "probabilities": {
+          "0": 0.06,
+          "1": 0.56,
+          "2": 0.38,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "corroborated": {
+        "type": "noul",
+        "noul": 0
+      },
+      "coordinated_push": {
+        "type": "noul",
+        "noul": 1
+      },
+      "checkable": {
+        "type": "noul",
+        "noul": 0
+      },
+      "disposition": {
+        "type": "choice",
+        "choice": "WATCH",
+        "confidence": 0.36,
+        "probabilities": {
+          "IGNORE": 0,
+          "WATCH": 0.52,
+          "VERIFY": 0.48,
+          "ACT_WORTHY": 0
+        }
+      }
+    },
+    "RM-0204": {
+      "source_reliability": {
+        "type": "score",
+        "score": 1.52,
+        "confidence": 0.72,
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.46,
+          "2": 0.53,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "corroborated": {
+        "type": "noul",
+        "noul": 0
+      },
+      "coordinated_push": {
+        "type": "noul",
+        "noul": 0.01
+      },
+      "checkable": {
+        "type": "noul",
+        "noul": 0
+      },
+      "disposition": {
+        "type": "choice",
+        "choice": "WATCH",
+        "confidence": 0.83,
+        "probabilities": {
+          "IGNORE": 0,
+          "WATCH": 0.87,
+          "VERIFY": 0.13,
+          "ACT_WORTHY": 0
+        }
+      }
+    },
+    "RM-0205": {
+      "source_reliability": {
+        "type": "score",
+        "score": 1.05,
+        "confidence": 0.89,
+        "probabilities": {
+          "0": 0.07,
+          "1": 0.81,
+          "2": 0.12,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "corroborated": {
+        "type": "noul",
+        "noul": 0
+      },
+      "coordinated_push": {
+        "type": "noul",
+        "noul": 0.99
+      },
+      "checkable": {
+        "type": "noul",
+        "noul": 0
+      },
+      "disposition": {
+        "type": "choice",
+        "choice": "VERIFY",
+        "confidence": 0.48,
+        "probabilities": {
+          "IGNORE": 0,
+          "WATCH": 0.39,
+          "VERIFY": 0.61,
+          "ACT_WORTHY": 0
+        }
+      }
+    },
+    "RM-0206": {
+      "source_reliability": {
+        "type": "score",
+        "score": 1.92,
+        "confidence": 0.86,
+        "probabilities": {
+          "0": 0,
+          "1": 0.16,
+          "2": 0.76,
+          "3": 0.08,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "corroborated": {
+        "type": "noul",
+        "noul": 0
+      },
+      "coordinated_push": {
+        "type": "noul",
+        "noul": 0
+      },
+      "checkable": {
+        "type": "noul",
+        "noul": 0
+      },
+      "disposition": {
+        "type": "choice",
+        "choice": "WATCH",
+        "confidence": 0.71,
+        "probabilities": {
+          "IGNORE": 0,
+          "WATCH": 0.78,
+          "VERIFY": 0.22,
+          "ACT_WORTHY": 0
+        }
+      }
+    },
+    "RM-0207": {
+      "source_reliability": {
+        "type": "score",
+        "score": 2.37,
+        "confidence": 0.75,
+        "probabilities": {
+          "0": 0,
+          "1": 0.03,
+          "2": 0.58,
+          "3": 0.38,
+          "4": 0.01,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "corroborated": {
+        "type": "noul",
+        "noul": 0.93
+      },
+      "coordinated_push": {
+        "type": "noul",
+        "noul": 0.04
+      },
+      "checkable": {
+        "type": "noul",
+        "noul": 0
+      },
+      "disposition": {
+        "type": "choice",
+        "choice": "WATCH",
+        "confidence": 0.53,
+        "probabilities": {
+          "IGNORE": 0,
+          "WATCH": 0.65,
+          "VERIFY": 0.35,
+          "ACT_WORTHY": 0
+        }
+      }
+    },
+    "RM-0208": {
+      "source_reliability": {
+        "type": "score",
+        "score": 0.94,
+        "confidence": 0.94,
+        "probabilities": {
+          "0": 0.08,
+          "1": 0.9,
+          "2": 0.02,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "corroborated": {
+        "type": "noul",
+        "noul": 0
+      },
+      "coordinated_push": {
+        "type": "noul",
+        "noul": 0
+      },
+      "checkable": {
+        "type": "noul",
+        "noul": 0
+      },
+      "disposition": {
+        "type": "choice",
+        "choice": "WATCH",
+        "confidence": 0.89,
+        "probabilities": {
+          "IGNORE": 0.02,
+          "WATCH": 0.92,
+          "VERIFY": 0.06,
+          "ACT_WORTHY": 0
+        }
+      }
+    },
+    "RM-0209": {
+      "source_reliability": {
+        "type": "score",
+        "score": 1.01,
+        "confidence": 0.88,
+        "probabilities": {
+          "0": 0.1,
+          "1": 0.79,
+          "2": 0.11,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "corroborated": {
+        "type": "noul",
+        "noul": 0.62
+      },
+      "coordinated_push": {
+        "type": "noul",
+        "noul": 0.03
+      },
+      "checkable": {
+        "type": "noul",
+        "noul": 0
+      },
+      "disposition": {
+        "type": "choice",
+        "choice": "WATCH",
+        "confidence": 0.48,
+        "probabilities": {
+          "IGNORE": 0,
+          "WATCH": 0.61,
+          "VERIFY": 0.39,
+          "ACT_WORTHY": 0
+        }
+      }
+    },
+    "RM-0210": {
+      "source_reliability": {
+        "type": "score",
+        "score": 2.09,
+        "confidence": 0.84,
+        "probabilities": {
+          "0": 0,
+          "1": 0.09,
+          "2": 0.73,
+          "3": 0.18,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "corroborated": {
+        "type": "noul",
+        "noul": 0.75
+      },
+      "coordinated_push": {
+        "type": "noul",
+        "noul": 0.05
+      },
+      "checkable": {
+        "type": "noul",
+        "noul": 0
+      },
+      "disposition": {
+        "type": "choice",
+        "choice": "WATCH",
+        "confidence": 0.56,
+        "probabilities": {
+          "IGNORE": 0,
+          "WATCH": 0.67,
+          "VERIFY": 0.33,
+          "ACT_WORTHY": 0
+        }
+      }
+    },
+    "RM-0211": {
+      "source_reliability": {
+        "type": "score",
+        "score": 1.07,
+        "confidence": 0.88,
+        "probabilities": {
+          "0": 0.07,
+          "1": 0.79,
+          "2": 0.14,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "corroborated": {
+        "type": "noul",
+        "noul": 0
+      },
+      "coordinated_push": {
+        "type": "noul",
+        "noul": 0
+      },
+      "checkable": {
+        "type": "noul",
+        "noul": 0
+      },
+      "disposition": {
+        "type": "choice",
+        "choice": "WATCH",
+        "confidence": 0.83,
+        "probabilities": {
+          "IGNORE": 0,
+          "WATCH": 0.87,
+          "VERIFY": 0.13,
+          "ACT_WORTHY": 0
+        }
+      }
+    },
+    "RM-0212": {
+      "source_reliability": {
+        "type": "score",
+        "score": 0.92,
+        "confidence": 0.87,
+        "probabilities": {
+          "0": 0.15,
+          "1": 0.78,
+          "2": 0.07,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "corroborated": {
+        "type": "noul",
+        "noul": 0.86
+      },
+      "coordinated_push": {
+        "type": "noul",
+        "noul": 0
+      },
+      "checkable": {
+        "type": "noul",
+        "noul": 0
+      },
+      "disposition": {
+        "type": "choice",
+        "choice": "WATCH",
+        "confidence": 0.44,
+        "probabilities": {
+          "IGNORE": 0,
+          "WATCH": 0.58,
+          "VERIFY": 0.42,
+          "ACT_WORTHY": 0
+        }
+      }
+    },
+    "RM-0213": {
+      "source_reliability": {
+        "type": "score",
+        "score": 2.04,
+        "confidence": 0.85,
+        "probabilities": {
+          "0": 0,
+          "1": 0.11,
+          "2": 0.74,
+          "3": 0.15,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "corroborated": {
+        "type": "noul",
+        "noul": 0.82
+      },
+      "coordinated_push": {
+        "type": "noul",
+        "noul": 0.04
+      },
+      "checkable": {
+        "type": "noul",
+        "noul": 0
+      },
+      "disposition": {
+        "type": "choice",
+        "choice": "VERIFY",
+        "confidence": 0.35,
+        "probabilities": {
+          "IGNORE": 0,
+          "WATCH": 0.49,
+          "VERIFY": 0.51,
+          "ACT_WORTHY": 0
+        }
+      }
+    },
+    "RM-0214": {
+      "source_reliability": {
+        "type": "score",
+        "score": 0.96,
+        "confidence": 0.9,
+        "probabilities": {
+          "0": 0.11,
+          "1": 0.82,
+          "2": 0.07,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "corroborated": {
+        "type": "noul",
+        "noul": 0.12
+      },
+      "coordinated_push": {
+        "type": "noul",
+        "noul": 0.06
+      },
+      "checkable": {
+        "type": "noul",
+        "noul": 0
+      },
+      "disposition": {
+        "type": "choice",
+        "choice": "VERIFY",
+        "confidence": 0.63,
+        "probabilities": {
+          "IGNORE": 0,
+          "WATCH": 0.28,
+          "VERIFY": 0.72,
+          "ACT_WORTHY": 0
+        }
+      }
+    },
+    "RM-0215": {
+      "source_reliability": {
+        "type": "score",
+        "score": 0.6,
+        "confidence": 0.76,
+        "probabilities": {
+          "0": 0.41,
+          "1": 0.58,
+          "2": 0.01,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "corroborated": {
+        "type": "noul",
+        "noul": 0.65
+      },
+      "coordinated_push": {
+        "type": "noul",
+        "noul": 0.03
+      },
+      "checkable": {
+        "type": "noul",
+        "noul": 0
+      },
+      "disposition": {
+        "type": "choice",
+        "choice": "WATCH",
+        "confidence": 0.77,
+        "probabilities": {
+          "IGNORE": 0.01,
+          "WATCH": 0.83,
+          "VERIFY": 0.16,
+          "ACT_WORTHY": 0
+        }
+      }
+    },
+    "RM-0216": {
+      "source_reliability": {
+        "type": "score",
+        "score": 1.72,
+        "confidence": 0.81,
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.28,
+          "2": 0.69,
+          "3": 0.02,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "corroborated": {
+        "type": "noul",
+        "noul": 0.35
+      },
+      "coordinated_push": {
+        "type": "noul",
+        "noul": 0.07
+      },
+      "checkable": {
+        "type": "noul",
+        "noul": 0
+      },
+      "disposition": {
+        "type": "choice",
+        "choice": "WATCH",
+        "confidence": 0.47,
+        "probabilities": {
+          "IGNORE": 0,
+          "WATCH": 0.6,
+          "VERIFY": 0.4,
+          "ACT_WORTHY": 0
+        }
+      }
+    },
+    "RM-0217": {
+      "source_reliability": {
+        "type": "score",
+        "score": 0.87,
+        "confidence": 0.88,
+        "probabilities": {
+          "0": 0.17,
+          "1": 0.79,
+          "2": 0.04,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "corroborated": {
+        "type": "noul",
+        "noul": 0.75
+      },
+      "coordinated_push": {
+        "type": "noul",
+        "noul": 0.02
+      },
+      "checkable": {
+        "type": "noul",
+        "noul": 0
+      },
+      "disposition": {
+        "type": "choice",
+        "choice": "WATCH",
+        "confidence": 0.68,
+        "probabilities": {
+          "IGNORE": 0,
+          "WATCH": 0.76,
+          "VERIFY": 0.24,
+          "ACT_WORTHY": 0
+        }
+      }
+    },
+    "RM-0218": {
+      "source_reliability": {
+        "type": "score",
+        "score": 2.72,
+        "confidence": 0.81,
+        "probabilities": {
+          "0": 0,
+          "1": 0.02,
+          "2": 0.26,
+          "3": 0.7,
+          "4": 0.02,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "corroborated": {
+        "type": "noul",
+        "noul": 0.76
+      },
+      "coordinated_push": {
+        "type": "noul",
+        "noul": 0
+      },
+      "checkable": {
+        "type": "noul",
+        "noul": 0
+      },
+      "disposition": {
+        "type": "choice",
+        "choice": "VERIFY",
+        "confidence": 0.64,
+        "probabilities": {
+          "IGNORE": 0,
+          "WATCH": 0.27,
+          "VERIFY": 0.73,
+          "ACT_WORTHY": 0
+        }
+      }
+    },
+    "RM-0219": {
+      "source_reliability": {
+        "type": "score",
+        "score": 1.12,
+        "confidence": 0.92,
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.86,
+          "2": 0.13,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "corroborated": {
+        "type": "noul",
+        "noul": 0.78
+      },
+      "coordinated_push": {
+        "type": "noul",
+        "noul": 0.01
+      },
+      "checkable": {
+        "type": "noul",
+        "noul": 0
+      },
+      "disposition": {
+        "type": "choice",
+        "choice": "WATCH",
+        "confidence": 0.45,
+        "probabilities": {
+          "IGNORE": 0,
+          "WATCH": 0.59,
+          "VERIFY": 0.41,
+          "ACT_WORTHY": 0
+        }
+      }
+    },
+    "RM-0220": {
+      "source_reliability": {
+        "type": "score",
+        "score": 2.25,
+        "confidence": 0.78,
+        "probabilities": {
+          "0": 0,
+          "1": 0.06,
+          "2": 0.63,
+          "3": 0.31,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "corroborated": {
+        "type": "noul",
+        "noul": 0.66
+      },
+      "coordinated_push": {
+        "type": "noul",
+        "noul": 0.13
+      },
+      "checkable": {
+        "type": "noul",
+        "noul": 0
+      },
+      "disposition": {
+        "type": "choice",
+        "choice": "VERIFY",
+        "confidence": 0.8,
+        "probabilities": {
+          "IGNORE": 0,
+          "WATCH": 0.15,
+          "VERIFY": 0.85,
+          "ACT_WORTHY": 0
+        }
+      }
+    },
+    "RM-0221": {
+      "source_reliability": {
+        "type": "score",
+        "score": 1.21,
+        "confidence": 0.85,
+        "probabilities": {
+          "0": 0.02,
+          "1": 0.75,
+          "2": 0.23,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "corroborated": {
+        "type": "noul",
+        "noul": 0.48
+      },
+      "coordinated_push": {
+        "type": "noul",
+        "noul": 0
+      },
+      "checkable": {
+        "type": "noul",
+        "noul": 0
+      },
+      "disposition": {
+        "type": "choice",
+        "choice": "WATCH",
+        "confidence": 0.45,
+        "probabilities": {
+          "IGNORE": 0,
+          "WATCH": 0.59,
+          "VERIFY": 0.41,
+          "ACT_WORTHY": 0
+        }
+      }
+    },
+    "RM-0222": {
+      "source_reliability": {
+        "type": "score",
+        "score": 1.16,
+        "confidence": 0.88,
+        "probabilities": {
+          "0": 0.02,
+          "1": 0.8,
+          "2": 0.18,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "corroborated": {
+        "type": "noul",
+        "noul": 0
+      },
+      "coordinated_push": {
+        "type": "noul",
+        "noul": 1
+      },
+      "checkable": {
+        "type": "noul",
+        "noul": 0
+      },
+      "disposition": {
+        "type": "choice",
+        "choice": "WATCH",
+        "confidence": 0.72,
+        "probabilities": {
+          "IGNORE": 0,
+          "WATCH": 0.79,
+          "VERIFY": 0.21,
+          "ACT_WORTHY": 0
+        }
+      }
+    },
+    "RM-0223": {
+      "source_reliability": {
+        "type": "score",
+        "score": 1.3,
+        "confidence": 0.81,
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.68,
+          "2": 0.31,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "corroborated": {
+        "type": "noul",
+        "noul": 0.57
+      },
+      "coordinated_push": {
+        "type": "noul",
+        "noul": 0.02
+      },
+      "checkable": {
+        "type": "noul",
+        "noul": 0
+      },
+      "disposition": {
+        "type": "choice",
+        "choice": "WATCH",
+        "confidence": 0.51,
+        "probabilities": {
+          "IGNORE": 0,
+          "WATCH": 0.63,
+          "VERIFY": 0.37,
+          "ACT_WORTHY": 0
+        }
+      }
+    },
+    "RM-0224": {
+      "source_reliability": {
+        "type": "score",
+        "score": 1.11,
+        "confidence": 0.92,
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.87,
+          "2": 0.12,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "corroborated": {
+        "type": "noul",
+        "noul": 0.63
+      },
+      "coordinated_push": {
+        "type": "noul",
+        "noul": 0
+      },
+      "checkable": {
+        "type": "noul",
+        "noul": 0
+      },
+      "disposition": {
+        "type": "choice",
+        "choice": "VERIFY",
+        "confidence": 0.73,
+        "probabilities": {
+          "IGNORE": 0,
+          "WATCH": 0.2,
+          "VERIFY": 0.8,
+          "ACT_WORTHY": 0
+        }
+      }
+    },
+    "RM-0225": {
+      "source_reliability": {
+        "type": "score",
+        "score": 2.27,
+        "confidence": 0.75,
+        "probabilities": {
+          "0": 0,
+          "1": 0.08,
+          "2": 0.57,
+          "3": 0.35,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "corroborated": {
+        "type": "noul",
+        "noul": 0.6
+      },
+      "coordinated_push": {
+        "type": "noul",
+        "noul": 0
+      },
+      "checkable": {
+        "type": "noul",
+        "noul": 1
+      },
+      "disposition": {
+        "type": "choice",
+        "choice": "VERIFY",
+        "confidence": 0.57,
+        "probabilities": {
+          "IGNORE": 0,
+          "WATCH": 0.32,
+          "VERIFY": 0.68,
+          "ACT_WORTHY": 0
+        }
+      }
+    },
+    "RM-0226": {
+      "source_reliability": {
+        "type": "score",
+        "score": 1.05,
+        "confidence": 0.91,
+        "probabilities": {
+          "0": 0.05,
+          "1": 0.85,
+          "2": 0.1,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "corroborated": {
+        "type": "noul",
+        "noul": 0
+      },
+      "coordinated_push": {
+        "type": "noul",
+        "noul": 0
+      },
+      "checkable": {
+        "type": "noul",
+        "noul": 0
+      },
+      "disposition": {
+        "type": "choice",
+        "choice": "WATCH",
+        "confidence": 0.44,
+        "probabilities": {
+          "IGNORE": 0,
+          "WATCH": 0.58,
+          "VERIFY": 0.42,
+          "ACT_WORTHY": 0
+        }
+      }
+    },
+    "RM-0227": {
+      "source_reliability": {
+        "type": "score",
+        "score": 1.07,
+        "confidence": 0.92,
+        "probabilities": {
+          "0": 0.03,
+          "1": 0.87,
+          "2": 0.1,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "corroborated": {
+        "type": "noul",
+        "noul": 0
+      },
+      "coordinated_push": {
+        "type": "noul",
+        "noul": 0.03
+      },
+      "checkable": {
+        "type": "noul",
+        "noul": 0
+      },
+      "disposition": {
+        "type": "choice",
+        "choice": "WATCH",
+        "confidence": 0.83,
+        "probabilities": {
+          "IGNORE": 0,
+          "WATCH": 0.87,
+          "VERIFY": 0.13,
+          "ACT_WORTHY": 0
+        }
+      }
+    },
+    "RM-0228": {
+      "source_reliability": {
+        "type": "score",
+        "score": 1.07,
+        "confidence": 0.94,
+        "probabilities": {
+          "0": 0.02,
+          "1": 0.89,
+          "2": 0.09,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "corroborated": {
+        "type": "noul",
+        "noul": 0.8
+      },
+      "coordinated_push": {
+        "type": "noul",
+        "noul": 0.02
+      },
+      "checkable": {
+        "type": "noul",
+        "noul": 0
+      },
+      "disposition": {
+        "type": "choice",
+        "choice": "VERIFY",
+        "confidence": 0.56,
+        "probabilities": {
+          "IGNORE": 0,
+          "WATCH": 0.33,
+          "VERIFY": 0.67,
+          "ACT_WORTHY": 0
+        }
+      }
+    },
+    "RM-0229": {
+      "source_reliability": {
+        "type": "score",
+        "score": 1.32,
+        "confidence": 0.77,
+        "probabilities": {
+          "0": 0.04,
+          "1": 0.6,
+          "2": 0.36,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "corroborated": {
+        "type": "noul",
+        "noul": 0.74
+      },
+      "coordinated_push": {
+        "type": "noul",
+        "noul": 0
+      },
+      "checkable": {
+        "type": "noul",
+        "noul": 0
+      },
+      "disposition": {
+        "type": "choice",
+        "choice": "WATCH",
+        "confidence": 0.72,
+        "probabilities": {
+          "IGNORE": 0,
+          "WATCH": 0.79,
+          "VERIFY": 0.21,
+          "ACT_WORTHY": 0
+        }
+      }
+    },
+    "RM-0230": {
+      "source_reliability": {
+        "type": "score",
+        "score": 2.29,
+        "confidence": 0.8,
+        "probabilities": {
+          "0": 0,
+          "1": 0.03,
+          "2": 0.66,
+          "3": 0.3,
+          "4": 0.01,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "corroborated": {
+        "type": "noul",
+        "noul": 0.69
+      },
+      "coordinated_push": {
+        "type": "noul",
+        "noul": 0.04
+      },
+      "checkable": {
+        "type": "noul",
+        "noul": 0
+      },
+      "disposition": {
+        "type": "choice",
+        "choice": "WATCH",
+        "confidence": 0.43,
+        "probabilities": {
+          "IGNORE": 0,
+          "WATCH": 0.57,
+          "VERIFY": 0.43,
+          "ACT_WORTHY": 0
+        }
+      }
+    },
+    "RM-0231": {
+      "source_reliability": {
+        "type": "score",
+        "score": 0.87,
+        "confidence": 0.88,
+        "probabilities": {
+          "0": 0.17,
+          "1": 0.79,
+          "2": 0.04,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "corroborated": {
+        "type": "noul",
+        "noul": 0.51
+      },
+      "coordinated_push": {
+        "type": "noul",
+        "noul": 0.05
+      },
+      "checkable": {
+        "type": "noul",
+        "noul": 0
+      },
+      "disposition": {
+        "type": "choice",
+        "choice": "WATCH",
+        "confidence": 0.72,
+        "probabilities": {
+          "IGNORE": 0,
+          "WATCH": 0.79,
+          "VERIFY": 0.21,
+          "ACT_WORTHY": 0
+        }
+      }
+    },
+    "RM-0232": {
+      "source_reliability": {
+        "type": "score",
+        "score": 0.79,
+        "confidence": 0.84,
+        "probabilities": {
+          "0": 0.24,
+          "1": 0.73,
+          "2": 0.03,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "corroborated": {
+        "type": "noul",
+        "noul": 0.33
+      },
+      "coordinated_push": {
+        "type": "noul",
+        "noul": 0.04
+      },
+      "checkable": {
+        "type": "noul",
+        "noul": 0
+      },
+      "disposition": {
+        "type": "choice",
+        "choice": "WATCH",
+        "confidence": 0.73,
+        "probabilities": {
+          "IGNORE": 0,
+          "WATCH": 0.8,
+          "VERIFY": 0.2,
+          "ACT_WORTHY": 0
+        }
+      }
+    },
+    "RM-0233": {
+      "source_reliability": {
+        "type": "score",
+        "score": 1.04,
+        "confidence": 0.87,
+        "probabilities": {
+          "0": 0.09,
+          "1": 0.78,
+          "2": 0.13,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "corroborated": {
+        "type": "noul",
+        "noul": 0.48
+      },
+      "coordinated_push": {
+        "type": "noul",
+        "noul": 0.12
+      },
+      "checkable": {
+        "type": "noul",
+        "noul": 0
+      },
+      "disposition": {
+        "type": "choice",
+        "choice": "WATCH",
+        "confidence": 0.85,
+        "probabilities": {
+          "IGNORE": 0,
+          "WATCH": 0.89,
+          "VERIFY": 0.11,
+          "ACT_WORTHY": 0
+        }
+      }
+    },
+    "RM-0234": {
+      "source_reliability": {
+        "type": "score",
+        "score": 1.1,
+        "confidence": 0.87,
+        "probabilities": {
+          "0": 0.06,
+          "1": 0.78,
+          "2": 0.16,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "corroborated": {
+        "type": "noul",
+        "noul": 0.53
+      },
+      "coordinated_push": {
+        "type": "noul",
+        "noul": 0.11
+      },
+      "checkable": {
+        "type": "noul",
+        "noul": 0
+      },
+      "disposition": {
+        "type": "choice",
+        "choice": "VERIFY",
+        "confidence": 0.41,
+        "probabilities": {
+          "IGNORE": 0,
+          "WATCH": 0.44,
+          "VERIFY": 0.56,
+          "ACT_WORTHY": 0
+        }
+      }
+    },
+    "RM-0235": {
+      "source_reliability": {
+        "type": "score",
+        "score": 1.68,
+        "confidence": 0.81,
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.3,
+          "2": 0.69,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "corroborated": {
+        "type": "noul",
+        "noul": 0.57
+      },
+      "coordinated_push": {
+        "type": "noul",
+        "noul": 0
+      },
+      "checkable": {
+        "type": "noul",
+        "noul": 0
+      },
+      "disposition": {
+        "type": "choice",
+        "choice": "WATCH",
+        "confidence": 0.57,
+        "probabilities": {
+          "IGNORE": 0,
+          "WATCH": 0.68,
+          "VERIFY": 0.32,
+          "ACT_WORTHY": 0
+        }
+      }
+    },
+    "RM-0236": {
+      "source_reliability": {
+        "type": "score",
+        "score": 1.73,
+        "confidence": 0.83,
+        "probabilities": {
+          "0": 0,
+          "1": 0.28,
+          "2": 0.71,
+          "3": 0.01,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "corroborated": {
+        "type": "noul",
+        "noul": 0
+      },
+      "coordinated_push": {
+        "type": "noul",
+        "noul": 0.05
+      },
+      "checkable": {
+        "type": "noul",
+        "noul": 0
+      },
+      "disposition": {
+        "type": "choice",
+        "choice": "VERIFY",
+        "confidence": 0.67,
+        "probabilities": {
+          "IGNORE": 0,
+          "WATCH": 0.25,
+          "VERIFY": 0.75,
+          "ACT_WORTHY": 0
+        }
+      }
+    },
+    "RM-0237": {
+      "source_reliability": {
+        "type": "score",
+        "score": 2.7,
+        "confidence": 0.81,
+        "probabilities": {
+          "0": 0,
+          "1": 0.01,
+          "2": 0.29,
+          "3": 0.69,
+          "4": 0.01,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "corroborated": {
+        "type": "noul",
+        "noul": 0.83
+      },
+      "coordinated_push": {
+        "type": "noul",
+        "noul": 0.05
+      },
+      "checkable": {
+        "type": "noul",
+        "noul": 0
+      },
+      "disposition": {
+        "type": "choice",
+        "choice": "WATCH",
+        "confidence": 0.4,
+        "probabilities": {
+          "IGNORE": 0,
+          "WATCH": 0.55,
+          "VERIFY": 0.45,
+          "ACT_WORTHY": 0
+        }
+      }
+    },
+    "RM-0238": {
+      "source_reliability": {
+        "type": "score",
+        "score": 2.86,
+        "confidence": 0.91,
+        "probabilities": {
+          "0": 0,
+          "1": 0.01,
+          "2": 0.13,
+          "3": 0.85,
+          "4": 0.01,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "corroborated": {
+        "type": "noul",
+        "noul": 0.66
+      },
+      "coordinated_push": {
+        "type": "noul",
+        "noul": 0.11
+      },
+      "checkable": {
+        "type": "noul",
+        "noul": 0
+      },
+      "disposition": {
+        "type": "choice",
+        "choice": "VERIFY",
+        "confidence": 0.6,
+        "probabilities": {
+          "IGNORE": 0,
+          "WATCH": 0.3,
+          "VERIFY": 0.7,
+          "ACT_WORTHY": 0
+        }
+      }
+    },
+    "RM-0239": {
+      "source_reliability": {
+        "type": "score",
+        "score": 1.14,
+        "confidence": 0.81,
+        "probabilities": {
+          "0": 0.09,
+          "1": 0.68,
+          "2": 0.23,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "corroborated": {
+        "type": "noul",
+        "noul": 0.81
+      },
+      "coordinated_push": {
+        "type": "noul",
+        "noul": 0.02
+      },
+      "checkable": {
+        "type": "noul",
+        "noul": 0
+      },
+      "disposition": {
+        "type": "choice",
+        "choice": "WATCH",
+        "confidence": 0.81,
+        "probabilities": {
+          "IGNORE": 0,
+          "WATCH": 0.86,
+          "VERIFY": 0.14,
+          "ACT_WORTHY": 0
+        }
+      }
+    },
+    "RM-0240": {
+      "source_reliability": {
+        "type": "score",
+        "score": 1.46,
+        "confidence": 0.71,
+        "probabilities": {
+          "0": 0.02,
+          "1": 0.51,
+          "2": 0.46,
+          "3": 0.01,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "corroborated": {
+        "type": "noul",
+        "noul": 0.59
+      },
+      "coordinated_push": {
+        "type": "noul",
+        "noul": 0.14
+      },
+      "checkable": {
+        "type": "noul",
+        "noul": 0
+      },
+      "disposition": {
+        "type": "choice",
+        "choice": "WATCH",
+        "confidence": 0.77,
+        "probabilities": {
+          "IGNORE": 0,
+          "WATCH": 0.83,
+          "VERIFY": 0.17,
+          "ACT_WORTHY": 0
+        }
+      }
+    }
+  }
+}

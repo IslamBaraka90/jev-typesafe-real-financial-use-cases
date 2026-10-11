@@ -1,0 +1,859 @@
+{
+  "demo": "portfolio-compare",
+  "provider": "openai",
+  "model": "gpt-6-luna",
+  "recordedAt": "2026-10-11",
+  "source": "scripts/record-demo.js",
+  "usage": {
+    "input_tokens": 41786,
+    "output_tokens": 0
+  },
+  "answers": {
+    "PC-01": {
+      "better_fit": {
+        "type": "choice",
+        "choice": "PORTFOLIO_A",
+        "confidence": 1,
+        "probabilities": {
+          "PORTFOLIO_A": 1,
+          "PORTFOLIO_B": 0,
+          "TOO_CLOSE": 0
+        }
+      },
+      "biggest_difference": {
+        "type": "choice",
+        "choice": "INCOME",
+        "confidence": 0.99,
+        "probabilities": {
+          "CONCENTRATION": 0.01,
+          "SECTOR_MIX": 0,
+          "CURRENCY": 0,
+          "LIQUIDITY": 0,
+          "INCOME": 0.99,
+          "DRAWDOWN_RISK": 0
+        }
+      },
+      "decisiveness": {
+        "type": "score",
+        "score": 4.54,
+        "confidence": 0.67,
+        "probabilities": {
+          "0": 0.01,
+          "1": 0,
+          "2": 0.01,
+          "3": 0.05,
+          "4": 0.33,
+          "5": 0.55,
+          "6": 0.05
+        }
+      },
+      "goal_constraint_breached": {
+        "type": "noul",
+        "noul": 1
+      },
+      "one_change_would_flip_it": {
+        "type": "noul",
+        "noul": 0.09
+      }
+    },
+    "PC-02": {
+      "better_fit": {
+        "type": "choice",
+        "choice": "PORTFOLIO_A",
+        "confidence": 0.97,
+        "probabilities": {
+          "PORTFOLIO_A": 0.98,
+          "PORTFOLIO_B": 0,
+          "TOO_CLOSE": 0.02
+        }
+      },
+      "biggest_difference": {
+        "type": "choice",
+        "choice": "DRAWDOWN_RISK",
+        "confidence": 0.47,
+        "probabilities": {
+          "CONCENTRATION": 0.29,
+          "SECTOR_MIX": 0.06,
+          "CURRENCY": 0.02,
+          "LIQUIDITY": 0.02,
+          "INCOME": 0.05,
+          "DRAWDOWN_RISK": 0.56
+        }
+      },
+      "decisiveness": {
+        "type": "score",
+        "score": 4.01,
+        "confidence": 0.55,
+        "probabilities": {
+          "0": 0,
+          "1": 0.01,
+          "2": 0.04,
+          "3": 0.27,
+          "4": 0.33,
+          "5": 0.31,
+          "6": 0.04
+        }
+      },
+      "goal_constraint_breached": {
+        "type": "noul",
+        "noul": 1
+      },
+      "one_change_would_flip_it": {
+        "type": "noul",
+        "noul": 0.12
+      }
+    },
+    "PC-03": {
+      "better_fit": {
+        "type": "choice",
+        "choice": "PORTFOLIO_A",
+        "confidence": 0.63,
+        "probabilities": {
+          "PORTFOLIO_A": 0.75,
+          "PORTFOLIO_B": 0.19,
+          "TOO_CLOSE": 0.06
+        }
+      },
+      "biggest_difference": {
+        "type": "choice",
+        "choice": "SECTOR_MIX",
+        "confidence": 0.54,
+        "probabilities": {
+          "CONCENTRATION": 0.31,
+          "SECTOR_MIX": 0.62,
+          "CURRENCY": 0.01,
+          "LIQUIDITY": 0.01,
+          "INCOME": 0.01,
+          "DRAWDOWN_RISK": 0.04
+        }
+      },
+      "decisiveness": {
+        "type": "score",
+        "score": 2.33,
+        "confidence": 0.45,
+        "probabilities": {
+          "0": 0.07,
+          "1": 0.21,
+          "2": 0.18,
+          "3": 0.44,
+          "4": 0.06,
+          "5": 0.04,
+          "6": 0
+        }
+      },
+      "goal_constraint_breached": {
+        "type": "noul",
+        "noul": 0
+      },
+      "one_change_would_flip_it": {
+        "type": "noul",
+        "noul": 0.64
+      }
+    },
+    "PC-04": {
+      "better_fit": {
+        "type": "choice",
+        "choice": "PORTFOLIO_A",
+        "confidence": 1,
+        "probabilities": {
+          "PORTFOLIO_A": 1,
+          "PORTFOLIO_B": 0,
+          "TOO_CLOSE": 0
+        }
+      },
+      "biggest_difference": {
+        "type": "choice",
+        "choice": "CONCENTRATION",
+        "confidence": 0.62,
+        "probabilities": {
+          "CONCENTRATION": 0.68,
+          "SECTOR_MIX": 0.24,
+          "CURRENCY": 0.03,
+          "LIQUIDITY": 0.02,
+          "INCOME": 0.02,
+          "DRAWDOWN_RISK": 0.01
+        }
+      },
+      "decisiveness": {
+        "type": "score",
+        "score": 5.12,
+        "confidence": 0.63,
+        "probabilities": {
+          "0": 0.01,
+          "1": 0,
+          "2": 0.01,
+          "3": 0.03,
+          "4": 0.12,
+          "5": 0.45,
+          "6": 0.38
+        }
+      },
+      "goal_constraint_breached": {
+        "type": "noul",
+        "noul": 1
+      },
+      "one_change_would_flip_it": {
+        "type": "noul",
+        "noul": 0.12
+      }
+    },
+    "PC-05": {
+      "better_fit": {
+        "type": "choice",
+        "choice": "PORTFOLIO_A",
+        "confidence": 1,
+        "probabilities": {
+          "PORTFOLIO_A": 1,
+          "PORTFOLIO_B": 0,
+          "TOO_CLOSE": 0
+        }
+      },
+      "biggest_difference": {
+        "type": "choice",
+        "choice": "DRAWDOWN_RISK",
+        "confidence": 0.94,
+        "probabilities": {
+          "CONCENTRATION": 0.03,
+          "SECTOR_MIX": 0.02,
+          "CURRENCY": 0,
+          "LIQUIDITY": 0,
+          "INCOME": 0,
+          "DRAWDOWN_RISK": 0.95
+        }
+      },
+      "decisiveness": {
+        "type": "score",
+        "score": 3.78,
+        "confidence": 0.59,
+        "probabilities": {
+          "0": 0,
+          "1": 0.01,
+          "2": 0.04,
+          "3": 0.35,
+          "4": 0.37,
+          "5": 0.22,
+          "6": 0.01
+        }
+      },
+      "goal_constraint_breached": {
+        "type": "noul",
+        "noul": 1
+      },
+      "one_change_would_flip_it": {
+        "type": "noul",
+        "noul": 0.19
+      }
+    },
+    "PC-06": {
+      "better_fit": {
+        "type": "choice",
+        "choice": "PORTFOLIO_A",
+        "confidence": 1,
+        "probabilities": {
+          "PORTFOLIO_A": 1,
+          "PORTFOLIO_B": 0,
+          "TOO_CLOSE": 0
+        }
+      },
+      "biggest_difference": {
+        "type": "choice",
+        "choice": "CURRENCY",
+        "confidence": 1,
+        "probabilities": {
+          "CONCENTRATION": 0,
+          "SECTOR_MIX": 0,
+          "CURRENCY": 1,
+          "LIQUIDITY": 0,
+          "INCOME": 0,
+          "DRAWDOWN_RISK": 0
+        }
+      },
+      "decisiveness": {
+        "type": "score",
+        "score": 3.56,
+        "confidence": 0.53,
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.01,
+          "2": 0.07,
+          "3": 0.44,
+          "4": 0.29,
+          "5": 0.15,
+          "6": 0.03
+        }
+      },
+      "goal_constraint_breached": {
+        "type": "noul",
+        "noul": 0.97
+      },
+      "one_change_would_flip_it": {
+        "type": "noul",
+        "noul": 0.87
+      }
+    },
+    "PC-07": {
+      "better_fit": {
+        "type": "choice",
+        "choice": "PORTFOLIO_B",
+        "confidence": 1,
+        "probabilities": {
+          "PORTFOLIO_A": 0,
+          "PORTFOLIO_B": 1,
+          "TOO_CLOSE": 0
+        }
+      },
+      "biggest_difference": {
+        "type": "choice",
+        "choice": "INCOME",
+        "confidence": 1,
+        "probabilities": {
+          "CONCENTRATION": 0,
+          "SECTOR_MIX": 0,
+          "CURRENCY": 0,
+          "LIQUIDITY": 0,
+          "INCOME": 1,
+          "DRAWDOWN_RISK": 0
+        }
+      },
+      "decisiveness": {
+        "type": "score",
+        "score": 4.82,
+        "confidence": 0.7,
+        "probabilities": {
+          "0": 0.01,
+          "1": 0,
+          "2": 0.01,
+          "3": 0.03,
+          "4": 0.21,
+          "5": 0.57,
+          "6": 0.17
+        }
+      },
+      "goal_constraint_breached": {
+        "type": "noul",
+        "noul": 0.99
+      },
+      "one_change_would_flip_it": {
+        "type": "noul",
+        "noul": 0.14
+      }
+    },
+    "PC-08": {
+      "better_fit": {
+        "type": "choice",
+        "choice": "PORTFOLIO_A",
+        "confidence": 0.8,
+        "probabilities": {
+          "PORTFOLIO_A": 0.87,
+          "PORTFOLIO_B": 0.12,
+          "TOO_CLOSE": 0.01
+        }
+      },
+      "biggest_difference": {
+        "type": "choice",
+        "choice": "DRAWDOWN_RISK",
+        "confidence": 0.32,
+        "probabilities": {
+          "CONCENTRATION": 0.42,
+          "SECTOR_MIX": 0.07,
+          "CURRENCY": 0.01,
+          "LIQUIDITY": 0.01,
+          "INCOME": 0.06,
+          "DRAWDOWN_RISK": 0.43
+        }
+      },
+      "decisiveness": {
+        "type": "score",
+        "score": 2.37,
+        "confidence": 0.55,
+        "probabilities": {
+          "0": 0.03,
+          "1": 0.19,
+          "2": 0.23,
+          "3": 0.5,
+          "4": 0.03,
+          "5": 0.02,
+          "6": 0
+        }
+      },
+      "goal_constraint_breached": {
+        "type": "noul",
+        "noul": 1
+      },
+      "one_change_would_flip_it": {
+        "type": "noul",
+        "noul": 0.61
+      }
+    },
+    "PC-09": {
+      "better_fit": {
+        "type": "choice",
+        "choice": "PORTFOLIO_B",
+        "confidence": 0.99,
+        "probabilities": {
+          "PORTFOLIO_A": 0.01,
+          "PORTFOLIO_B": 0.99,
+          "TOO_CLOSE": 0
+        }
+      },
+      "biggest_difference": {
+        "type": "choice",
+        "choice": "CONCENTRATION",
+        "confidence": 0.99,
+        "probabilities": {
+          "CONCENTRATION": 0.99,
+          "SECTOR_MIX": 0.01,
+          "CURRENCY": 0,
+          "LIQUIDITY": 0,
+          "INCOME": 0,
+          "DRAWDOWN_RISK": 0
+        }
+      },
+      "decisiveness": {
+        "type": "score",
+        "score": 3.33,
+        "confidence": 0.73,
+        "probabilities": {
+          "0": 0,
+          "1": 0.02,
+          "2": 0.03,
+          "3": 0.65,
+          "4": 0.21,
+          "5": 0.08,
+          "6": 0.01
+        }
+      },
+      "goal_constraint_breached": {
+        "type": "noul",
+        "noul": 1
+      },
+      "one_change_would_flip_it": {
+        "type": "noul",
+        "noul": 0.15
+      }
+    },
+    "PC-10": {
+      "better_fit": {
+        "type": "choice",
+        "choice": "PORTFOLIO_B",
+        "confidence": 0.99,
+        "probabilities": {
+          "PORTFOLIO_A": 0.01,
+          "PORTFOLIO_B": 0.99,
+          "TOO_CLOSE": 0
+        }
+      },
+      "biggest_difference": {
+        "type": "choice",
+        "choice": "CONCENTRATION",
+        "confidence": 0.56,
+        "probabilities": {
+          "CONCENTRATION": 0.63,
+          "SECTOR_MIX": 0.31,
+          "CURRENCY": 0.01,
+          "LIQUIDITY": 0.01,
+          "INCOME": 0.02,
+          "DRAWDOWN_RISK": 0.02
+        }
+      },
+      "decisiveness": {
+        "type": "score",
+        "score": 4.46,
+        "confidence": 0.63,
+        "probabilities": {
+          "0": 0,
+          "1": 0,
+          "2": 0.01,
+          "3": 0.08,
+          "4": 0.4,
+          "5": 0.46,
+          "6": 0.05
+        }
+      },
+      "goal_constraint_breached": {
+        "type": "noul",
+        "noul": 1
+      },
+      "one_change_would_flip_it": {
+        "type": "noul",
+        "noul": 0.16
+      }
+    },
+    "PC-11": {
+      "better_fit": {
+        "type": "choice",
+        "choice": "PORTFOLIO_B",
+        "confidence": 1,
+        "probabilities": {
+          "PORTFOLIO_A": 0,
+          "PORTFOLIO_B": 1,
+          "TOO_CLOSE": 0
+        }
+      },
+      "biggest_difference": {
+        "type": "choice",
+        "choice": "CURRENCY",
+        "confidence": 1,
+        "probabilities": {
+          "CONCENTRATION": 0,
+          "SECTOR_MIX": 0,
+          "CURRENCY": 1,
+          "LIQUIDITY": 0,
+          "INCOME": 0,
+          "DRAWDOWN_RISK": 0
+        }
+      },
+      "decisiveness": {
+        "type": "score",
+        "score": 3.94,
+        "confidence": 0.58,
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.01,
+          "2": 0.02,
+          "3": 0.28,
+          "4": 0.4,
+          "5": 0.23,
+          "6": 0.05
+        }
+      },
+      "goal_constraint_breached": {
+        "type": "noul",
+        "noul": 0.92
+      },
+      "one_change_would_flip_it": {
+        "type": "noul",
+        "noul": 0.8
+      }
+    },
+    "PC-12": {
+      "better_fit": {
+        "type": "choice",
+        "choice": "PORTFOLIO_B",
+        "confidence": 0.99,
+        "probabilities": {
+          "PORTFOLIO_A": 0.01,
+          "PORTFOLIO_B": 0.99,
+          "TOO_CLOSE": 0
+        }
+      },
+      "biggest_difference": {
+        "type": "choice",
+        "choice": "LIQUIDITY",
+        "confidence": 0.95,
+        "probabilities": {
+          "CONCENTRATION": 0.02,
+          "SECTOR_MIX": 0.01,
+          "CURRENCY": 0,
+          "LIQUIDITY": 0.96,
+          "INCOME": 0,
+          "DRAWDOWN_RISK": 0.01
+        }
+      },
+      "decisiveness": {
+        "type": "score",
+        "score": 3.85,
+        "confidence": 0.7,
+        "probabilities": {
+          "0": 0,
+          "1": 0.01,
+          "2": 0.02,
+          "3": 0.26,
+          "4": 0.54,
+          "5": 0.16,
+          "6": 0.01
+        }
+      },
+      "goal_constraint_breached": {
+        "type": "noul",
+        "noul": 0.11
+      },
+      "one_change_would_flip_it": {
+        "type": "noul",
+        "noul": 0.21
+      }
+    },
+    "PC-13": {
+      "better_fit": {
+        "type": "choice",
+        "choice": "TOO_CLOSE",
+        "confidence": 0.74,
+        "probabilities": {
+          "PORTFOLIO_A": 0.15,
+          "PORTFOLIO_B": 0.02,
+          "TOO_CLOSE": 0.83
+        }
+      },
+      "biggest_difference": {
+        "type": "choice",
+        "choice": "INCOME",
+        "confidence": 0.4,
+        "probabilities": {
+          "CONCENTRATION": 0.08,
+          "SECTOR_MIX": 0.03,
+          "CURRENCY": 0.06,
+          "LIQUIDITY": 0.21,
+          "INCOME": 0.5,
+          "DRAWDOWN_RISK": 0.12
+        }
+      },
+      "decisiveness": {
+        "type": "score",
+        "score": 0.37,
+        "confidence": 0.78,
+        "probabilities": {
+          "0": 0.65,
+          "1": 0.33,
+          "2": 0.02,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "goal_constraint_breached": {
+        "type": "noul",
+        "noul": 0
+      },
+      "one_change_would_flip_it": {
+        "type": "noul",
+        "noul": 0.85
+      }
+    },
+    "PC-14": {
+      "better_fit": {
+        "type": "choice",
+        "choice": "PORTFOLIO_A",
+        "confidence": 0.34,
+        "probabilities": {
+          "PORTFOLIO_A": 0.56,
+          "PORTFOLIO_B": 0.05,
+          "TOO_CLOSE": 0.39
+        }
+      },
+      "biggest_difference": {
+        "type": "choice",
+        "choice": "CONCENTRATION",
+        "confidence": 0.71,
+        "probabilities": {
+          "CONCENTRATION": 0.76,
+          "SECTOR_MIX": 0.01,
+          "CURRENCY": 0.01,
+          "LIQUIDITY": 0,
+          "INCOME": 0.01,
+          "DRAWDOWN_RISK": 0.21
+        }
+      },
+      "decisiveness": {
+        "type": "score",
+        "score": 0.79,
+        "confidence": 0.73,
+        "probabilities": {
+          "0": 0.34,
+          "1": 0.57,
+          "2": 0.06,
+          "3": 0.02,
+          "4": 0.01,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "goal_constraint_breached": {
+        "type": "noul",
+        "noul": 0
+      },
+      "one_change_would_flip_it": {
+        "type": "noul",
+        "noul": 0.95
+      }
+    },
+    "PC-15": {
+      "better_fit": {
+        "type": "choice",
+        "choice": "TOO_CLOSE",
+        "confidence": 0.66,
+        "probabilities": {
+          "PORTFOLIO_A": 0.18,
+          "PORTFOLIO_B": 0.05,
+          "TOO_CLOSE": 0.77
+        }
+      },
+      "biggest_difference": {
+        "type": "choice",
+        "choice": "CONCENTRATION",
+        "confidence": 0.64,
+        "probabilities": {
+          "CONCENTRATION": 0.7,
+          "SECTOR_MIX": 0.02,
+          "CURRENCY": 0.03,
+          "LIQUIDITY": 0.02,
+          "INCOME": 0.02,
+          "DRAWDOWN_RISK": 0.21
+        }
+      },
+      "decisiveness": {
+        "type": "score",
+        "score": 0.23,
+        "confidence": 0.87,
+        "probabilities": {
+          "0": 0.82,
+          "1": 0.15,
+          "2": 0.02,
+          "3": 0,
+          "4": 0.01,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "goal_constraint_breached": {
+        "type": "noul",
+        "noul": 1
+      },
+      "one_change_would_flip_it": {
+        "type": "noul",
+        "noul": 0.9
+      }
+    },
+    "PC-16": {
+      "better_fit": {
+        "type": "choice",
+        "choice": "TOO_CLOSE",
+        "confidence": 0.37,
+        "probabilities": {
+          "PORTFOLIO_A": 0.25,
+          "PORTFOLIO_B": 0.17,
+          "TOO_CLOSE": 0.58
+        }
+      },
+      "biggest_difference": {
+        "type": "choice",
+        "choice": "CONCENTRATION",
+        "confidence": 0.38,
+        "probabilities": {
+          "CONCENTRATION": 0.48,
+          "SECTOR_MIX": 0.12,
+          "CURRENCY": 0.01,
+          "LIQUIDITY": 0.02,
+          "INCOME": 0.35,
+          "DRAWDOWN_RISK": 0.02
+        }
+      },
+      "decisiveness": {
+        "type": "score",
+        "score": 0.38,
+        "confidence": 0.78,
+        "probabilities": {
+          "0": 0.68,
+          "1": 0.27,
+          "2": 0.04,
+          "3": 0.01,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "goal_constraint_breached": {
+        "type": "noul",
+        "noul": 0
+      },
+      "one_change_would_flip_it": {
+        "type": "noul",
+        "noul": 0.99
+      }
+    },
+    "PC-17": {
+      "better_fit": {
+        "type": "choice",
+        "choice": "PORTFOLIO_B",
+        "confidence": 0.64,
+        "probabilities": {
+          "PORTFOLIO_A": 0.24,
+          "PORTFOLIO_B": 0.76,
+          "TOO_CLOSE": 0
+        }
+      },
+      "biggest_difference": {
+        "type": "choice",
+        "choice": "DRAWDOWN_RISK",
+        "confidence": 0.95,
+        "probabilities": {
+          "CONCENTRATION": 0.03,
+          "SECTOR_MIX": 0.01,
+          "CURRENCY": 0,
+          "LIQUIDITY": 0,
+          "INCOME": 0,
+          "DRAWDOWN_RISK": 0.96
+        }
+      },
+      "decisiveness": {
+        "type": "score",
+        "score": 3,
+        "confidence": 0.62,
+        "probabilities": {
+          "0": 0.02,
+          "1": 0.07,
+          "2": 0.13,
+          "3": 0.53,
+          "4": 0.17,
+          "5": 0.08,
+          "6": 0
+        }
+      },
+      "goal_constraint_breached": {
+        "type": "noul",
+        "noul": 1
+      },
+      "one_change_would_flip_it": {
+        "type": "noul",
+        "noul": 0.21
+      }
+    },
+    "PC-18": {
+      "better_fit": {
+        "type": "choice",
+        "choice": "PORTFOLIO_A",
+        "confidence": 1,
+        "probabilities": {
+          "PORTFOLIO_A": 1,
+          "PORTFOLIO_B": 0,
+          "TOO_CLOSE": 0
+        }
+      },
+      "biggest_difference": {
+        "type": "choice",
+        "choice": "DRAWDOWN_RISK",
+        "confidence": 0.98,
+        "probabilities": {
+          "CONCENTRATION": 0.01,
+          "SECTOR_MIX": 0.01,
+          "CURRENCY": 0,
+          "LIQUIDITY": 0,
+          "INCOME": 0,
+          "DRAWDOWN_RISK": 0.98
+        }
+      },
+      "decisiveness": {
+        "type": "score",
+        "score": 3.42,
+        "confidence": 0.69,
+        "probabilities": {
+          "0": 0,
+          "1": 0.01,
+          "2": 0.04,
+          "3": 0.6,
+          "4": 0.22,
+          "5": 0.13,
+          "6": 0
+        }
+      },
+      "goal_constraint_breached": {
+        "type": "noul",
+        "noul": 1
+      },
+      "one_change_would_flip_it": {
+        "type": "noul",
+        "noul": 0.33
+      }
+    }
+  }
+}

@@ -1,0 +1,7153 @@
+{
+  "demo": "overfit-review",
+  "provider": "openai",
+  "model": "gpt-6-luna",
+  "recordedAt": "2026-10-11",
+  "source": "scripts/record-demo.js",
+  "usage": {
+    "input_tokens": 520447,
+    "output_tokens": 0
+  },
+  "answers": {
+    "OR-0001": {
+      "overfit_risk": {
+        "type": "score",
+        "score": 4,
+        "confidence": 0.76,
+        "probabilities": {
+          "0": 0,
+          "1": 0.01,
+          "2": 0.03,
+          "3": 0.12,
+          "4": 0.63,
+          "5": 0.21,
+          "6": 0
+        }
+      },
+      "symptom": {
+        "type": "choice",
+        "choice": "NONE",
+        "confidence": 0.38,
+        "probabilities": {
+          "PARAMETER_CLIFF": 0.29,
+          "FEW_TRADES": 0.1,
+          "LOOK_AHEAD": 0.07,
+          "SURVIVORSHIP": 0.04,
+          "COSTS_OMITTED": 0.02,
+          "NONE": 0.48
+        }
+      },
+      "trust": {
+        "type": "score",
+        "score": 1.89,
+        "confidence": 0.7,
+        "probabilities": {
+          "0": 0,
+          "1": 0.31,
+          "2": 0.52,
+          "3": 0.14,
+          "4": 0.03,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "worth_forward_testing": {
+        "type": "noul",
+        "noul": 0.81
+      },
+      "curve_too_smooth": {
+        "type": "noul",
+        "noul": 0.1
+      }
+    },
+    "OR-0002": {
+      "overfit_risk": {
+        "type": "score",
+        "score": 5,
+        "confidence": 0.99,
+        "probabilities": {
+          "0": 0,
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0.01,
+          "5": 0.98,
+          "6": 0.01
+        }
+      },
+      "symptom": {
+        "type": "choice",
+        "choice": "PARAMETER_CLIFF",
+        "confidence": 1,
+        "probabilities": {
+          "PARAMETER_CLIFF": 1,
+          "FEW_TRADES": 0,
+          "LOOK_AHEAD": 0,
+          "SURVIVORSHIP": 0,
+          "COSTS_OMITTED": 0,
+          "NONE": 0
+        }
+      },
+      "trust": {
+        "type": "score",
+        "score": 1,
+        "confidence": 0.95,
+        "probabilities": {
+          "0": 0.04,
+          "1": 0.92,
+          "2": 0.04,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "worth_forward_testing": {
+        "type": "noul",
+        "noul": 0.77
+      },
+      "curve_too_smooth": {
+        "type": "noul",
+        "noul": 1
+      }
+    },
+    "OR-0003": {
+      "overfit_risk": {
+        "type": "score",
+        "score": 4.97,
+        "confidence": 0.97,
+        "probabilities": {
+          "0": 0,
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0.04,
+          "5": 0.95,
+          "6": 0.01
+        }
+      },
+      "symptom": {
+        "type": "choice",
+        "choice": "PARAMETER_CLIFF",
+        "confidence": 0.99,
+        "probabilities": {
+          "PARAMETER_CLIFF": 0.99,
+          "FEW_TRADES": 0,
+          "LOOK_AHEAD": 0,
+          "SURVIVORSHIP": 0,
+          "COSTS_OMITTED": 0,
+          "NONE": 0.01
+        }
+      },
+      "trust": {
+        "type": "score",
+        "score": 1.04,
+        "confidence": 0.97,
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.94,
+          "2": 0.05,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "worth_forward_testing": {
+        "type": "noul",
+        "noul": 0.72
+      },
+      "curve_too_smooth": {
+        "type": "noul",
+        "noul": 1
+      }
+    },
+    "OR-0004": {
+      "overfit_risk": {
+        "type": "score",
+        "score": 3.62,
+        "confidence": 0.74,
+        "probabilities": {
+          "0": 0,
+          "1": 0,
+          "2": 0.04,
+          "3": 0.33,
+          "4": 0.6,
+          "5": 0.03,
+          "6": 0
+        }
+      },
+      "symptom": {
+        "type": "choice",
+        "choice": "FEW_TRADES",
+        "confidence": 0.57,
+        "probabilities": {
+          "PARAMETER_CLIFF": 0.03,
+          "FEW_TRADES": 0.64,
+          "LOOK_AHEAD": 0.02,
+          "SURVIVORSHIP": 0.02,
+          "COSTS_OMITTED": 0.01,
+          "NONE": 0.28
+        }
+      },
+      "trust": {
+        "type": "score",
+        "score": 2.37,
+        "confidence": 0.68,
+        "probabilities": {
+          "0": 0,
+          "1": 0.09,
+          "2": 0.48,
+          "3": 0.4,
+          "4": 0.03,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "worth_forward_testing": {
+        "type": "noul",
+        "noul": 0.84
+      },
+      "curve_too_smooth": {
+        "type": "noul",
+        "noul": 0.11
+      }
+    },
+    "OR-0005": {
+      "overfit_risk": {
+        "type": "score",
+        "score": 4.88,
+        "confidence": 0.92,
+        "probabilities": {
+          "0": 0,
+          "1": 0.01,
+          "2": 0,
+          "3": 0,
+          "4": 0.09,
+          "5": 0.89,
+          "6": 0.01
+        }
+      },
+      "symptom": {
+        "type": "choice",
+        "choice": "LOOK_AHEAD",
+        "confidence": 1,
+        "probabilities": {
+          "PARAMETER_CLIFF": 0,
+          "FEW_TRADES": 0,
+          "LOOK_AHEAD": 1,
+          "SURVIVORSHIP": 0,
+          "COSTS_OMITTED": 0,
+          "NONE": 0
+        }
+      },
+      "trust": {
+        "type": "score",
+        "score": 1.05,
+        "confidence": 0.96,
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.93,
+          "2": 0.06,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "worth_forward_testing": {
+        "type": "noul",
+        "noul": 0.77
+      },
+      "curve_too_smooth": {
+        "type": "noul",
+        "noul": 0.99
+      }
+    },
+    "OR-0006": {
+      "overfit_risk": {
+        "type": "score",
+        "score": 4.3,
+        "confidence": 0.72,
+        "probabilities": {
+          "0": 0,
+          "1": 0,
+          "2": 0.01,
+          "3": 0.07,
+          "4": 0.53,
+          "5": 0.39,
+          "6": 0
+        }
+      },
+      "symptom": {
+        "type": "choice",
+        "choice": "NONE",
+        "confidence": 0.39,
+        "probabilities": {
+          "PARAMETER_CLIFF": 0.33,
+          "FEW_TRADES": 0.07,
+          "LOOK_AHEAD": 0.06,
+          "SURVIVORSHIP": 0.03,
+          "COSTS_OMITTED": 0.02,
+          "NONE": 0.49
+        }
+      },
+      "trust": {
+        "type": "score",
+        "score": 1.76,
+        "confidence": 0.67,
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.38,
+          "2": 0.47,
+          "3": 0.12,
+          "4": 0.02,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "worth_forward_testing": {
+        "type": "noul",
+        "noul": 0.79
+      },
+      "curve_too_smooth": {
+        "type": "noul",
+        "noul": 0.14
+      }
+    },
+    "OR-0007": {
+      "overfit_risk": {
+        "type": "score",
+        "score": 4.13,
+        "confidence": 0.85,
+        "probabilities": {
+          "0": 0,
+          "1": 0,
+          "2": 0.01,
+          "3": 0.04,
+          "4": 0.76,
+          "5": 0.19,
+          "6": 0
+        }
+      },
+      "symptom": {
+        "type": "choice",
+        "choice": "NONE",
+        "confidence": 0.74,
+        "probabilities": {
+          "PARAMETER_CLIFF": 0.07,
+          "FEW_TRADES": 0.11,
+          "LOOK_AHEAD": 0.01,
+          "SURVIVORSHIP": 0.01,
+          "COSTS_OMITTED": 0.02,
+          "NONE": 0.78
+        }
+      },
+      "trust": {
+        "type": "score",
+        "score": 1.65,
+        "confidence": 0.68,
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.43,
+          "2": 0.47,
+          "3": 0.08,
+          "4": 0.01,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "worth_forward_testing": {
+        "type": "noul",
+        "noul": 0.79
+      },
+      "curve_too_smooth": {
+        "type": "noul",
+        "noul": 0.69
+      }
+    },
+    "OR-0008": {
+      "overfit_risk": {
+        "type": "score",
+        "score": 3.92,
+        "confidence": 0.69,
+        "probabilities": {
+          "0": 0,
+          "1": 0.01,
+          "2": 0.05,
+          "3": 0.18,
+          "4": 0.53,
+          "5": 0.23,
+          "6": 0
+        }
+      },
+      "symptom": {
+        "type": "choice",
+        "choice": "NONE",
+        "confidence": 0.53,
+        "probabilities": {
+          "PARAMETER_CLIFF": 0.06,
+          "FEW_TRADES": 0.21,
+          "LOOK_AHEAD": 0.06,
+          "SURVIVORSHIP": 0.03,
+          "COSTS_OMITTED": 0.03,
+          "NONE": 0.61
+        }
+      },
+      "trust": {
+        "type": "score",
+        "score": 2.03,
+        "confidence": 0.61,
+        "probabilities": {
+          "0": 0,
+          "1": 0.32,
+          "2": 0.38,
+          "3": 0.26,
+          "4": 0.03,
+          "5": 0.01,
+          "6": 0
+        }
+      },
+      "worth_forward_testing": {
+        "type": "noul",
+        "noul": 0.8
+      },
+      "curve_too_smooth": {
+        "type": "noul",
+        "noul": 0.29
+      }
+    },
+    "OR-0009": {
+      "overfit_risk": {
+        "type": "score",
+        "score": 4.01,
+        "confidence": 0.9,
+        "probabilities": {
+          "0": 0,
+          "1": 0,
+          "2": 0.01,
+          "3": 0.06,
+          "4": 0.84,
+          "5": 0.09,
+          "6": 0
+        }
+      },
+      "symptom": {
+        "type": "choice",
+        "choice": "FEW_TRADES",
+        "confidence": 0.48,
+        "probabilities": {
+          "PARAMETER_CLIFF": 0.04,
+          "FEW_TRADES": 0.57,
+          "LOOK_AHEAD": 0.02,
+          "SURVIVORSHIP": 0.02,
+          "COSTS_OMITTED": 0.02,
+          "NONE": 0.33
+        }
+      },
+      "trust": {
+        "type": "score",
+        "score": 2.22,
+        "confidence": 0.6,
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.21,
+          "2": 0.4,
+          "3": 0.32,
+          "4": 0.05,
+          "5": 0.01,
+          "6": 0
+        }
+      },
+      "worth_forward_testing": {
+        "type": "noul",
+        "noul": 0.77
+      },
+      "curve_too_smooth": {
+        "type": "noul",
+        "noul": 0.33
+      }
+    },
+    "OR-0010": {
+      "overfit_risk": {
+        "type": "score",
+        "score": 3.72,
+        "confidence": 0.77,
+        "probabilities": {
+          "0": 0,
+          "1": 0.01,
+          "2": 0.05,
+          "3": 0.21,
+          "4": 0.67,
+          "5": 0.06,
+          "6": 0
+        }
+      },
+      "symptom": {
+        "type": "choice",
+        "choice": "NONE",
+        "confidence": 0.82,
+        "probabilities": {
+          "PARAMETER_CLIFF": 0.03,
+          "FEW_TRADES": 0.07,
+          "LOOK_AHEAD": 0.02,
+          "SURVIVORSHIP": 0.01,
+          "COSTS_OMITTED": 0.02,
+          "NONE": 0.85
+        }
+      },
+      "trust": {
+        "type": "score",
+        "score": 2.38,
+        "confidence": 0.56,
+        "probabilities": {
+          "0": 0,
+          "1": 0.17,
+          "2": 0.35,
+          "3": 0.42,
+          "4": 0.05,
+          "5": 0.01,
+          "6": 0
+        }
+      },
+      "worth_forward_testing": {
+        "type": "noul",
+        "noul": 0.8
+      },
+      "curve_too_smooth": {
+        "type": "noul",
+        "noul": 0.15
+      }
+    },
+    "OR-0011": {
+      "overfit_risk": {
+        "type": "score",
+        "score": 3.47,
+        "confidence": 0.6,
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.02,
+          "2": 0.13,
+          "3": 0.25,
+          "4": 0.51,
+          "5": 0.08,
+          "6": 0
+        }
+      },
+      "symptom": {
+        "type": "choice",
+        "choice": "NONE",
+        "confidence": 0.18,
+        "probabilities": {
+          "PARAMETER_CLIFF": 0.29,
+          "FEW_TRADES": 0.17,
+          "LOOK_AHEAD": 0.15,
+          "SURVIVORSHIP": 0.05,
+          "COSTS_OMITTED": 0.02,
+          "NONE": 0.32
+        }
+      },
+      "trust": {
+        "type": "score",
+        "score": 2.1,
+        "confidence": 0.59,
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.28,
+          "2": 0.38,
+          "3": 0.27,
+          "4": 0.05,
+          "5": 0.01,
+          "6": 0
+        }
+      },
+      "worth_forward_testing": {
+        "type": "noul",
+        "noul": 0.77
+      },
+      "curve_too_smooth": {
+        "type": "noul",
+        "noul": 0.09
+      }
+    },
+    "OR-0012": {
+      "overfit_risk": {
+        "type": "score",
+        "score": 4.97,
+        "confidence": 0.97,
+        "probabilities": {
+          "0": 0,
+          "1": 0,
+          "2": 0,
+          "3": 0.01,
+          "4": 0.02,
+          "5": 0.96,
+          "6": 0.01
+        }
+      },
+      "symptom": {
+        "type": "choice",
+        "choice": "FEW_TRADES",
+        "confidence": 1,
+        "probabilities": {
+          "PARAMETER_CLIFF": 0,
+          "FEW_TRADES": 1,
+          "LOOK_AHEAD": 0,
+          "SURVIVORSHIP": 0,
+          "COSTS_OMITTED": 0,
+          "NONE": 0
+        }
+      },
+      "trust": {
+        "type": "score",
+        "score": 1.08,
+        "confidence": 0.93,
+        "probabilities": {
+          "0": 0.02,
+          "1": 0.88,
+          "2": 0.1,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "worth_forward_testing": {
+        "type": "noul",
+        "noul": 0.74
+      },
+      "curve_too_smooth": {
+        "type": "noul",
+        "noul": 1
+      }
+    },
+    "OR-0013": {
+      "overfit_risk": {
+        "type": "score",
+        "score": 4.05,
+        "confidence": 0.87,
+        "probabilities": {
+          "0": 0,
+          "1": 0,
+          "2": 0.01,
+          "3": 0.07,
+          "4": 0.78,
+          "5": 0.14,
+          "6": 0
+        }
+      },
+      "symptom": {
+        "type": "choice",
+        "choice": "NONE",
+        "confidence": 0.63,
+        "probabilities": {
+          "PARAMETER_CLIFF": 0.13,
+          "FEW_TRADES": 0.04,
+          "LOOK_AHEAD": 0.1,
+          "SURVIVORSHIP": 0.03,
+          "COSTS_OMITTED": 0.01,
+          "NONE": 0.69
+        }
+      },
+      "trust": {
+        "type": "score",
+        "score": 1.73,
+        "confidence": 0.68,
+        "probabilities": {
+          "0": 0,
+          "1": 0.41,
+          "2": 0.46,
+          "3": 0.12,
+          "4": 0.01,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "worth_forward_testing": {
+        "type": "noul",
+        "noul": 0.8
+      },
+      "curve_too_smooth": {
+        "type": "noul",
+        "noul": 0.13
+      }
+    },
+    "OR-0014": {
+      "overfit_risk": {
+        "type": "score",
+        "score": 4.09,
+        "confidence": 0.85,
+        "probabilities": {
+          "0": 0,
+          "1": 0,
+          "2": 0.01,
+          "3": 0.06,
+          "4": 0.76,
+          "5": 0.17,
+          "6": 0
+        }
+      },
+      "symptom": {
+        "type": "choice",
+        "choice": "FEW_TRADES",
+        "confidence": 0.7,
+        "probabilities": {
+          "PARAMETER_CLIFF": 0.03,
+          "FEW_TRADES": 0.75,
+          "LOOK_AHEAD": 0.02,
+          "SURVIVORSHIP": 0.02,
+          "COSTS_OMITTED": 0.01,
+          "NONE": 0.17
+        }
+      },
+      "trust": {
+        "type": "score",
+        "score": 1.86,
+        "confidence": 0.71,
+        "probabilities": {
+          "0": 0,
+          "1": 0.32,
+          "2": 0.51,
+          "3": 0.16,
+          "4": 0.01,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "worth_forward_testing": {
+        "type": "noul",
+        "noul": 0.77
+      },
+      "curve_too_smooth": {
+        "type": "noul",
+        "noul": 0.22
+      }
+    },
+    "OR-0015": {
+      "overfit_risk": {
+        "type": "score",
+        "score": 3.84,
+        "confidence": 0.7,
+        "probabilities": {
+          "0": 0,
+          "1": 0.01,
+          "2": 0.06,
+          "3": 0.19,
+          "4": 0.56,
+          "5": 0.18,
+          "6": 0
+        }
+      },
+      "symptom": {
+        "type": "choice",
+        "choice": "FEW_TRADES",
+        "confidence": 0.51,
+        "probabilities": {
+          "PARAMETER_CLIFF": 0.03,
+          "FEW_TRADES": 0.59,
+          "LOOK_AHEAD": 0.03,
+          "SURVIVORSHIP": 0.02,
+          "COSTS_OMITTED": 0.02,
+          "NONE": 0.31
+        }
+      },
+      "trust": {
+        "type": "score",
+        "score": 2.2,
+        "confidence": 0.65,
+        "probabilities": {
+          "0": 0,
+          "1": 0.2,
+          "2": 0.46,
+          "3": 0.29,
+          "4": 0.04,
+          "5": 0.01,
+          "6": 0
+        }
+      },
+      "worth_forward_testing": {
+        "type": "noul",
+        "noul": 0.79
+      },
+      "curve_too_smooth": {
+        "type": "noul",
+        "noul": 0.12
+      }
+    },
+    "OR-0016": {
+      "overfit_risk": {
+        "type": "score",
+        "score": 4.21,
+        "confidence": 0.67,
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.01,
+          "2": 0.02,
+          "3": 0.07,
+          "4": 0.5,
+          "5": 0.39,
+          "6": 0
+        }
+      },
+      "symptom": {
+        "type": "choice",
+        "choice": "NONE",
+        "confidence": 0.45,
+        "probabilities": {
+          "PARAMETER_CLIFF": 0.15,
+          "FEW_TRADES": 0.09,
+          "LOOK_AHEAD": 0.15,
+          "SURVIVORSHIP": 0.04,
+          "COSTS_OMITTED": 0.03,
+          "NONE": 0.54
+        }
+      },
+      "trust": {
+        "type": "score",
+        "score": 1.52,
+        "confidence": 0.67,
+        "probabilities": {
+          "0": 0.02,
+          "1": 0.53,
+          "2": 0.37,
+          "3": 0.07,
+          "4": 0.01,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "worth_forward_testing": {
+        "type": "noul",
+        "noul": 0.75
+      },
+      "curve_too_smooth": {
+        "type": "noul",
+        "noul": 0.08
+      }
+    },
+    "OR-0017": {
+      "overfit_risk": {
+        "type": "score",
+        "score": 4.97,
+        "confidence": 0.97,
+        "probabilities": {
+          "0": 0,
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0.04,
+          "5": 0.95,
+          "6": 0.01
+        }
+      },
+      "symptom": {
+        "type": "choice",
+        "choice": "FEW_TRADES",
+        "confidence": 0.99,
+        "probabilities": {
+          "PARAMETER_CLIFF": 0.01,
+          "FEW_TRADES": 0.99,
+          "LOOK_AHEAD": 0,
+          "SURVIVORSHIP": 0,
+          "COSTS_OMITTED": 0,
+          "NONE": 0
+        }
+      },
+      "trust": {
+        "type": "score",
+        "score": 1.03,
+        "confidence": 0.97,
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.95,
+          "2": 0.04,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "worth_forward_testing": {
+        "type": "noul",
+        "noul": 0.76
+      },
+      "curve_too_smooth": {
+        "type": "noul",
+        "noul": 0.99
+      }
+    },
+    "OR-0018": {
+      "overfit_risk": {
+        "type": "score",
+        "score": 4.99,
+        "confidence": 0.99,
+        "probabilities": {
+          "0": 0,
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0.01,
+          "5": 0.99,
+          "6": 0
+        }
+      },
+      "symptom": {
+        "type": "choice",
+        "choice": "PARAMETER_CLIFF",
+        "confidence": 1,
+        "probabilities": {
+          "PARAMETER_CLIFF": 1,
+          "FEW_TRADES": 0,
+          "LOOK_AHEAD": 0,
+          "SURVIVORSHIP": 0,
+          "COSTS_OMITTED": 0,
+          "NONE": 0
+        }
+      },
+      "trust": {
+        "type": "score",
+        "score": 1.01,
+        "confidence": 0.98,
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.97,
+          "2": 0.02,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "worth_forward_testing": {
+        "type": "noul",
+        "noul": 0.72
+      },
+      "curve_too_smooth": {
+        "type": "noul",
+        "noul": 0.99
+      }
+    },
+    "OR-0019": {
+      "overfit_risk": {
+        "type": "score",
+        "score": 4.06,
+        "confidence": 0.9,
+        "probabilities": {
+          "0": 0,
+          "1": 0,
+          "2": 0.01,
+          "3": 0.04,
+          "4": 0.83,
+          "5": 0.12,
+          "6": 0
+        }
+      },
+      "symptom": {
+        "type": "choice",
+        "choice": "NONE",
+        "confidence": 0.48,
+        "probabilities": {
+          "PARAMETER_CLIFF": 0.05,
+          "FEW_TRADES": 0.31,
+          "LOOK_AHEAD": 0.03,
+          "SURVIVORSHIP": 0.02,
+          "COSTS_OMITTED": 0.02,
+          "NONE": 0.57
+        }
+      },
+      "trust": {
+        "type": "score",
+        "score": 1.81,
+        "confidence": 0.77,
+        "probabilities": {
+          "0": 0,
+          "1": 0.29,
+          "2": 0.62,
+          "3": 0.08,
+          "4": 0.01,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "worth_forward_testing": {
+        "type": "noul",
+        "noul": 0.77
+      },
+      "curve_too_smooth": {
+        "type": "noul",
+        "noul": 0.02
+      }
+    },
+    "OR-0020": {
+      "overfit_risk": {
+        "type": "score",
+        "score": 4.09,
+        "confidence": 0.88,
+        "probabilities": {
+          "0": 0,
+          "1": 0,
+          "2": 0.01,
+          "3": 0.04,
+          "4": 0.8,
+          "5": 0.15,
+          "6": 0
+        }
+      },
+      "symptom": {
+        "type": "choice",
+        "choice": "NONE",
+        "confidence": 0.45,
+        "probabilities": {
+          "PARAMETER_CLIFF": 0.08,
+          "FEW_TRADES": 0.22,
+          "LOOK_AHEAD": 0.1,
+          "SURVIVORSHIP": 0.03,
+          "COSTS_OMITTED": 0.03,
+          "NONE": 0.54
+        }
+      },
+      "trust": {
+        "type": "score",
+        "score": 1.63,
+        "confidence": 0.74,
+        "probabilities": {
+          "0": 0,
+          "1": 0.41,
+          "2": 0.55,
+          "3": 0.04,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "worth_forward_testing": {
+        "type": "noul",
+        "noul": 0.78
+      },
+      "curve_too_smooth": {
+        "type": "noul",
+        "noul": 0.15
+      }
+    },
+    "OR-0021": {
+      "overfit_risk": {
+        "type": "score",
+        "score": 4.54,
+        "confidence": 0.73,
+        "probabilities": {
+          "0": 0,
+          "1": 0.01,
+          "2": 0,
+          "3": 0.02,
+          "4": 0.38,
+          "5": 0.59,
+          "6": 0
+        }
+      },
+      "symptom": {
+        "type": "choice",
+        "choice": "PARAMETER_CLIFF",
+        "confidence": 0.33,
+        "probabilities": {
+          "PARAMETER_CLIFF": 0.44,
+          "FEW_TRADES": 0.05,
+          "LOOK_AHEAD": 0.1,
+          "SURVIVORSHIP": 0.06,
+          "COSTS_OMITTED": 0.02,
+          "NONE": 0.33
+        }
+      },
+      "trust": {
+        "type": "score",
+        "score": 1.51,
+        "confidence": 0.7,
+        "probabilities": {
+          "0": 0,
+          "1": 0.55,
+          "2": 0.4,
+          "3": 0.04,
+          "4": 0.01,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "worth_forward_testing": {
+        "type": "noul",
+        "noul": 0.78
+      },
+      "curve_too_smooth": {
+        "type": "noul",
+        "noul": 0.86
+      }
+    },
+    "OR-0022": {
+      "overfit_risk": {
+        "type": "score",
+        "score": 3.85,
+        "confidence": 0.66,
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.01,
+          "2": 0.06,
+          "3": 0.18,
+          "4": 0.52,
+          "5": 0.22,
+          "6": 0
+        }
+      },
+      "symptom": {
+        "type": "choice",
+        "choice": "NONE",
+        "confidence": 0.5,
+        "probabilities": {
+          "PARAMETER_CLIFF": 0.2,
+          "FEW_TRADES": 0.11,
+          "LOOK_AHEAD": 0.05,
+          "SURVIVORSHIP": 0.04,
+          "COSTS_OMITTED": 0.02,
+          "NONE": 0.58
+        }
+      },
+      "trust": {
+        "type": "score",
+        "score": 1.75,
+        "confidence": 0.55,
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.46,
+          "2": 0.35,
+          "3": 0.14,
+          "4": 0.03,
+          "5": 0.01,
+          "6": 0
+        }
+      },
+      "worth_forward_testing": {
+        "type": "noul",
+        "noul": 0.76
+      },
+      "curve_too_smooth": {
+        "type": "noul",
+        "noul": 0.19
+      }
+    },
+    "OR-0023": {
+      "overfit_risk": {
+        "type": "score",
+        "score": 4.85,
+        "confidence": 0.9,
+        "probabilities": {
+          "0": 0,
+          "1": 0,
+          "2": 0,
+          "3": 0.01,
+          "4": 0.14,
+          "5": 0.84,
+          "6": 0.01
+        }
+      },
+      "symptom": {
+        "type": "choice",
+        "choice": "FEW_TRADES",
+        "confidence": 0.98,
+        "probabilities": {
+          "PARAMETER_CLIFF": 0.01,
+          "FEW_TRADES": 0.98,
+          "LOOK_AHEAD": 0,
+          "SURVIVORSHIP": 0,
+          "COSTS_OMITTED": 0,
+          "NONE": 0.01
+        }
+      },
+      "trust": {
+        "type": "score",
+        "score": 1.07,
+        "confidence": 0.95,
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.91,
+          "2": 0.08,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "worth_forward_testing": {
+        "type": "noul",
+        "noul": 0.76
+      },
+      "curve_too_smooth": {
+        "type": "noul",
+        "noul": 1
+      }
+    },
+    "OR-0024": {
+      "overfit_risk": {
+        "type": "score",
+        "score": 4.99,
+        "confidence": 0.99,
+        "probabilities": {
+          "0": 0,
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0.01,
+          "5": 0.99,
+          "6": 0
+        }
+      },
+      "symptom": {
+        "type": "choice",
+        "choice": "PARAMETER_CLIFF",
+        "confidence": 0.99,
+        "probabilities": {
+          "PARAMETER_CLIFF": 0.99,
+          "FEW_TRADES": 0.01,
+          "LOOK_AHEAD": 0,
+          "SURVIVORSHIP": 0,
+          "COSTS_OMITTED": 0,
+          "NONE": 0
+        }
+      },
+      "trust": {
+        "type": "score",
+        "score": 1.01,
+        "confidence": 0.97,
+        "probabilities": {
+          "0": 0.02,
+          "1": 0.95,
+          "2": 0.03,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "worth_forward_testing": {
+        "type": "noul",
+        "noul": 0.74
+      },
+      "curve_too_smooth": {
+        "type": "noul",
+        "noul": 1
+      }
+    },
+    "OR-0025": {
+      "overfit_risk": {
+        "type": "score",
+        "score": 4.27,
+        "confidence": 0.77,
+        "probabilities": {
+          "0": 0,
+          "1": 0,
+          "2": 0.01,
+          "3": 0.04,
+          "4": 0.62,
+          "5": 0.33,
+          "6": 0
+        }
+      },
+      "symptom": {
+        "type": "choice",
+        "choice": "FEW_TRADES",
+        "confidence": 0.59,
+        "probabilities": {
+          "PARAMETER_CLIFF": 0.06,
+          "FEW_TRADES": 0.66,
+          "LOOK_AHEAD": 0.03,
+          "SURVIVORSHIP": 0.02,
+          "COSTS_OMITTED": 0.02,
+          "NONE": 0.21
+        }
+      },
+      "trust": {
+        "type": "score",
+        "score": 2.19,
+        "confidence": 0.76,
+        "probabilities": {
+          "0": 0,
+          "1": 0.11,
+          "2": 0.61,
+          "3": 0.26,
+          "4": 0.02,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "worth_forward_testing": {
+        "type": "noul",
+        "noul": 0.8
+      },
+      "curve_too_smooth": {
+        "type": "noul",
+        "noul": 0.54
+      }
+    },
+    "OR-0026": {
+      "overfit_risk": {
+        "type": "score",
+        "score": 4.44,
+        "confidence": 0.7,
+        "probabilities": {
+          "0": 0,
+          "1": 0,
+          "2": 0.01,
+          "3": 0.02,
+          "4": 0.49,
+          "5": 0.48,
+          "6": 0
+        }
+      },
+      "symptom": {
+        "type": "choice",
+        "choice": "PARAMETER_CLIFF",
+        "confidence": 0.29,
+        "probabilities": {
+          "PARAMETER_CLIFF": 0.41,
+          "FEW_TRADES": 0.06,
+          "LOOK_AHEAD": 0.15,
+          "SURVIVORSHIP": 0.05,
+          "COSTS_OMITTED": 0.02,
+          "NONE": 0.31
+        }
+      },
+      "trust": {
+        "type": "score",
+        "score": 1.72,
+        "confidence": 0.74,
+        "probabilities": {
+          "0": 0,
+          "1": 0.36,
+          "2": 0.57,
+          "3": 0.06,
+          "4": 0.01,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "worth_forward_testing": {
+        "type": "noul",
+        "noul": 0.77
+      },
+      "curve_too_smooth": {
+        "type": "noul",
+        "noul": 0.66
+      }
+    },
+    "OR-0027": {
+      "overfit_risk": {
+        "type": "score",
+        "score": 4.99,
+        "confidence": 0.99,
+        "probabilities": {
+          "0": 0,
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0.01,
+          "5": 0.99,
+          "6": 0
+        }
+      },
+      "symptom": {
+        "type": "choice",
+        "choice": "PARAMETER_CLIFF",
+        "confidence": 1,
+        "probabilities": {
+          "PARAMETER_CLIFF": 1,
+          "FEW_TRADES": 0,
+          "LOOK_AHEAD": 0,
+          "SURVIVORSHIP": 0,
+          "COSTS_OMITTED": 0,
+          "NONE": 0
+        }
+      },
+      "trust": {
+        "type": "score",
+        "score": 1,
+        "confidence": 0.99,
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.98,
+          "2": 0.01,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "worth_forward_testing": {
+        "type": "noul",
+        "noul": 0.68
+      },
+      "curve_too_smooth": {
+        "type": "noul",
+        "noul": 0.96
+      }
+    },
+    "OR-0028": {
+      "overfit_risk": {
+        "type": "score",
+        "score": 4.49,
+        "confidence": 0.7,
+        "probabilities": {
+          "0": 0,
+          "1": 0,
+          "2": 0,
+          "3": 0.01,
+          "4": 0.49,
+          "5": 0.5,
+          "6": 0
+        }
+      },
+      "symptom": {
+        "type": "choice",
+        "choice": "SURVIVORSHIP",
+        "confidence": 0.99,
+        "probabilities": {
+          "PARAMETER_CLIFF": 0,
+          "FEW_TRADES": 0,
+          "LOOK_AHEAD": 0.01,
+          "SURVIVORSHIP": 0.99,
+          "COSTS_OMITTED": 0,
+          "NONE": 0
+        }
+      },
+      "trust": {
+        "type": "score",
+        "score": 1.06,
+        "confidence": 0.95,
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.92,
+          "2": 0.07,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "worth_forward_testing": {
+        "type": "noul",
+        "noul": 0.8
+      },
+      "curve_too_smooth": {
+        "type": "noul",
+        "noul": 0.48
+      }
+    },
+    "OR-0029": {
+      "overfit_risk": {
+        "type": "score",
+        "score": 3.79,
+        "confidence": 0.76,
+        "probabilities": {
+          "0": 0,
+          "1": 0.01,
+          "2": 0.05,
+          "3": 0.18,
+          "4": 0.66,
+          "5": 0.1,
+          "6": 0
+        }
+      },
+      "symptom": {
+        "type": "choice",
+        "choice": "FEW_TRADES",
+        "confidence": 0.47,
+        "probabilities": {
+          "PARAMETER_CLIFF": 0.04,
+          "FEW_TRADES": 0.56,
+          "LOOK_AHEAD": 0.03,
+          "SURVIVORSHIP": 0.02,
+          "COSTS_OMITTED": 0.02,
+          "NONE": 0.33
+        }
+      },
+      "trust": {
+        "type": "score",
+        "score": 2.17,
+        "confidence": 0.62,
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.22,
+          "2": 0.43,
+          "3": 0.28,
+          "4": 0.05,
+          "5": 0.01,
+          "6": 0
+        }
+      },
+      "worth_forward_testing": {
+        "type": "noul",
+        "noul": 0.79
+      },
+      "curve_too_smooth": {
+        "type": "noul",
+        "noul": 0.15
+      }
+    },
+    "OR-0030": {
+      "overfit_risk": {
+        "type": "score",
+        "score": 4.93,
+        "confidence": 0.95,
+        "probabilities": {
+          "0": 0,
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0.08,
+          "5": 0.91,
+          "6": 0.01
+        }
+      },
+      "symptom": {
+        "type": "choice",
+        "choice": "SURVIVORSHIP",
+        "confidence": 1,
+        "probabilities": {
+          "PARAMETER_CLIFF": 0,
+          "FEW_TRADES": 0,
+          "LOOK_AHEAD": 0,
+          "SURVIVORSHIP": 1,
+          "COSTS_OMITTED": 0,
+          "NONE": 0
+        }
+      },
+      "trust": {
+        "type": "score",
+        "score": 1.02,
+        "confidence": 0.97,
+        "probabilities": {
+          "0": 0.02,
+          "1": 0.94,
+          "2": 0.04,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "worth_forward_testing": {
+        "type": "noul",
+        "noul": 0.77
+      },
+      "curve_too_smooth": {
+        "type": "noul",
+        "noul": 0.4
+      }
+    },
+    "OR-0031": {
+      "overfit_risk": {
+        "type": "score",
+        "score": 4.82,
+        "confidence": 0.9,
+        "probabilities": {
+          "0": 0,
+          "1": 0,
+          "2": 0,
+          "3": 0.01,
+          "4": 0.16,
+          "5": 0.83,
+          "6": 0
+        }
+      },
+      "symptom": {
+        "type": "choice",
+        "choice": "FEW_TRADES",
+        "confidence": 0.89,
+        "probabilities": {
+          "PARAMETER_CLIFF": 0.03,
+          "FEW_TRADES": 0.91,
+          "LOOK_AHEAD": 0.01,
+          "SURVIVORSHIP": 0.01,
+          "COSTS_OMITTED": 0.01,
+          "NONE": 0.03
+        }
+      },
+      "trust": {
+        "type": "score",
+        "score": 1.21,
+        "confidence": 0.87,
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.78,
+          "2": 0.2,
+          "3": 0.01,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "worth_forward_testing": {
+        "type": "noul",
+        "noul": 0.75
+      },
+      "curve_too_smooth": {
+        "type": "noul",
+        "noul": 0.97
+      }
+    },
+    "OR-0032": {
+      "overfit_risk": {
+        "type": "score",
+        "score": 4.88,
+        "confidence": 0.93,
+        "probabilities": {
+          "0": 0,
+          "1": 0,
+          "2": 0,
+          "3": 0.01,
+          "4": 0.1,
+          "5": 0.89,
+          "6": 0
+        }
+      },
+      "symptom": {
+        "type": "choice",
+        "choice": "SURVIVORSHIP",
+        "confidence": 1,
+        "probabilities": {
+          "PARAMETER_CLIFF": 0,
+          "FEW_TRADES": 0,
+          "LOOK_AHEAD": 0,
+          "SURVIVORSHIP": 1,
+          "COSTS_OMITTED": 0,
+          "NONE": 0
+        }
+      },
+      "trust": {
+        "type": "score",
+        "score": 1.04,
+        "confidence": 0.97,
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.94,
+          "2": 0.05,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "worth_forward_testing": {
+        "type": "noul",
+        "noul": 0.75
+      },
+      "curve_too_smooth": {
+        "type": "noul",
+        "noul": 0.2
+      }
+    },
+    "OR-0033": {
+      "overfit_risk": {
+        "type": "score",
+        "score": 3.87,
+        "confidence": 0.71,
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.01,
+          "2": 0.04,
+          "3": 0.16,
+          "4": 0.6,
+          "5": 0.18,
+          "6": 0
+        }
+      },
+      "symptom": {
+        "type": "choice",
+        "choice": "NONE",
+        "confidence": 0.59,
+        "probabilities": {
+          "PARAMETER_CLIFF": 0.04,
+          "FEW_TRADES": 0.2,
+          "LOOK_AHEAD": 0.04,
+          "SURVIVORSHIP": 0.02,
+          "COSTS_OMITTED": 0.04,
+          "NONE": 0.66
+        }
+      },
+      "trust": {
+        "type": "score",
+        "score": 1.87,
+        "confidence": 0.68,
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.32,
+          "2": 0.47,
+          "3": 0.19,
+          "4": 0.01,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "worth_forward_testing": {
+        "type": "noul",
+        "noul": 0.78
+      },
+      "curve_too_smooth": {
+        "type": "noul",
+        "noul": 0.35
+      }
+    },
+    "OR-0034": {
+      "overfit_risk": {
+        "type": "score",
+        "score": 3.78,
+        "confidence": 0.74,
+        "probabilities": {
+          "0": 0,
+          "1": 0.01,
+          "2": 0.05,
+          "3": 0.2,
+          "4": 0.63,
+          "5": 0.11,
+          "6": 0
+        }
+      },
+      "symptom": {
+        "type": "choice",
+        "choice": "FEW_TRADES",
+        "confidence": 0.53,
+        "probabilities": {
+          "PARAMETER_CLIFF": 0.03,
+          "FEW_TRADES": 0.61,
+          "LOOK_AHEAD": 0.02,
+          "SURVIVORSHIP": 0.02,
+          "COSTS_OMITTED": 0.01,
+          "NONE": 0.31
+        }
+      },
+      "trust": {
+        "type": "score",
+        "score": 2.68,
+        "confidence": 0.6,
+        "probabilities": {
+          "0": 0,
+          "1": 0.1,
+          "2": 0.3,
+          "3": 0.44,
+          "4": 0.14,
+          "5": 0.02,
+          "6": 0
+        }
+      },
+      "worth_forward_testing": {
+        "type": "noul",
+        "noul": 0.81
+      },
+      "curve_too_smooth": {
+        "type": "noul",
+        "noul": 0.13
+      }
+    },
+    "OR-0035": {
+      "overfit_risk": {
+        "type": "score",
+        "score": 4.13,
+        "confidence": 0.84,
+        "probabilities": {
+          "0": 0,
+          "1": 0,
+          "2": 0.01,
+          "3": 0.05,
+          "4": 0.74,
+          "5": 0.2,
+          "6": 0
+        }
+      },
+      "symptom": {
+        "type": "choice",
+        "choice": "NONE",
+        "confidence": 0.26,
+        "probabilities": {
+          "PARAMETER_CLIFF": 0.08,
+          "FEW_TRADES": 0.37,
+          "LOOK_AHEAD": 0.1,
+          "SURVIVORSHIP": 0.05,
+          "COSTS_OMITTED": 0.02,
+          "NONE": 0.38
+        }
+      },
+      "trust": {
+        "type": "score",
+        "score": 2.01,
+        "confidence": 0.71,
+        "probabilities": {
+          "0": 0,
+          "1": 0.24,
+          "2": 0.52,
+          "3": 0.23,
+          "4": 0.01,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "worth_forward_testing": {
+        "type": "noul",
+        "noul": 0.78
+      },
+      "curve_too_smooth": {
+        "type": "noul",
+        "noul": 0.14
+      }
+    },
+    "OR-0036": {
+      "overfit_risk": {
+        "type": "score",
+        "score": 3.91,
+        "confidence": 0.75,
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.01,
+          "2": 0.03,
+          "3": 0.13,
+          "4": 0.65,
+          "5": 0.17,
+          "6": 0
+        }
+      },
+      "symptom": {
+        "type": "choice",
+        "choice": "NONE",
+        "confidence": 0.39,
+        "probabilities": {
+          "PARAMETER_CLIFF": 0.28,
+          "FEW_TRADES": 0.07,
+          "LOOK_AHEAD": 0.1,
+          "SURVIVORSHIP": 0.04,
+          "COSTS_OMITTED": 0.02,
+          "NONE": 0.49
+        }
+      },
+      "trust": {
+        "type": "score",
+        "score": 1.73,
+        "confidence": 0.68,
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.39,
+          "2": 0.48,
+          "3": 0.1,
+          "4": 0.02,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "worth_forward_testing": {
+        "type": "noul",
+        "noul": 0.78
+      },
+      "curve_too_smooth": {
+        "type": "noul",
+        "noul": 0.04
+      }
+    },
+    "OR-0037": {
+      "overfit_risk": {
+        "type": "score",
+        "score": 4.72,
+        "confidence": 0.83,
+        "probabilities": {
+          "0": 0,
+          "1": 0,
+          "2": 0,
+          "3": 0.01,
+          "4": 0.27,
+          "5": 0.71,
+          "6": 0.01
+        }
+      },
+      "symptom": {
+        "type": "choice",
+        "choice": "LOOK_AHEAD",
+        "confidence": 0.99,
+        "probabilities": {
+          "PARAMETER_CLIFF": 0.01,
+          "FEW_TRADES": 0,
+          "LOOK_AHEAD": 0.99,
+          "SURVIVORSHIP": 0,
+          "COSTS_OMITTED": 0,
+          "NONE": 0
+        }
+      },
+      "trust": {
+        "type": "score",
+        "score": 1.08,
+        "confidence": 0.93,
+        "probabilities": {
+          "0": 0.02,
+          "1": 0.88,
+          "2": 0.1,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "worth_forward_testing": {
+        "type": "noul",
+        "noul": 0.8
+      },
+      "curve_too_smooth": {
+        "type": "noul",
+        "noul": 0.97
+      }
+    },
+    "OR-0038": {
+      "overfit_risk": {
+        "type": "score",
+        "score": 3.89,
+        "confidence": 0.89,
+        "probabilities": {
+          "0": 0,
+          "1": 0,
+          "2": 0.02,
+          "3": 0.11,
+          "4": 0.83,
+          "5": 0.04,
+          "6": 0
+        }
+      },
+      "symptom": {
+        "type": "choice",
+        "choice": "NONE",
+        "confidence": 0.57,
+        "probabilities": {
+          "PARAMETER_CLIFF": 0.04,
+          "FEW_TRADES": 0.22,
+          "LOOK_AHEAD": 0.04,
+          "SURVIVORSHIP": 0.03,
+          "COSTS_OMITTED": 0.03,
+          "NONE": 0.64
+        }
+      },
+      "trust": {
+        "type": "score",
+        "score": 2.36,
+        "confidence": 0.64,
+        "probabilities": {
+          "0": 0,
+          "1": 0.13,
+          "2": 0.43,
+          "3": 0.39,
+          "4": 0.05,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "worth_forward_testing": {
+        "type": "noul",
+        "noul": 0.8
+      },
+      "curve_too_smooth": {
+        "type": "noul",
+        "noul": 0.03
+      }
+    },
+    "OR-0039": {
+      "overfit_risk": {
+        "type": "score",
+        "score": 4.99,
+        "confidence": 0.98,
+        "probabilities": {
+          "0": 0,
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0.02,
+          "5": 0.97,
+          "6": 0.01
+        }
+      },
+      "symptom": {
+        "type": "choice",
+        "choice": "SURVIVORSHIP",
+        "confidence": 1,
+        "probabilities": {
+          "PARAMETER_CLIFF": 0,
+          "FEW_TRADES": 0,
+          "LOOK_AHEAD": 0,
+          "SURVIVORSHIP": 1,
+          "COSTS_OMITTED": 0,
+          "NONE": 0
+        }
+      },
+      "trust": {
+        "type": "score",
+        "score": 1.07,
+        "confidence": 0.96,
+        "probabilities": {
+          "0": 0,
+          "1": 0.93,
+          "2": 0.07,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "worth_forward_testing": {
+        "type": "noul",
+        "noul": 0.79
+      },
+      "curve_too_smooth": {
+        "type": "noul",
+        "noul": 0.89
+      }
+    },
+    "OR-0040": {
+      "overfit_risk": {
+        "type": "score",
+        "score": 4.72,
+        "confidence": 0.83,
+        "probabilities": {
+          "0": 0,
+          "1": 0,
+          "2": 0,
+          "3": 0.01,
+          "4": 0.27,
+          "5": 0.71,
+          "6": 0.01
+        }
+      },
+      "symptom": {
+        "type": "choice",
+        "choice": "COSTS_OMITTED",
+        "confidence": 0.52,
+        "probabilities": {
+          "PARAMETER_CLIFF": 0.32,
+          "FEW_TRADES": 0.02,
+          "LOOK_AHEAD": 0.02,
+          "SURVIVORSHIP": 0.03,
+          "COSTS_OMITTED": 0.6,
+          "NONE": 0.01
+        }
+      },
+      "trust": {
+        "type": "score",
+        "score": 1.1,
+        "confidence": 0.94,
+        "probabilities": {
+          "0": 0,
+          "1": 0.9,
+          "2": 0.1,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "worth_forward_testing": {
+        "type": "noul",
+        "noul": 0.8
+      },
+      "curve_too_smooth": {
+        "type": "noul",
+        "noul": 0.37
+      }
+    },
+    "OR-0041": {
+      "overfit_risk": {
+        "type": "score",
+        "score": 3.84,
+        "confidence": 0.86,
+        "probabilities": {
+          "0": 0,
+          "1": 0,
+          "2": 0.02,
+          "3": 0.16,
+          "4": 0.78,
+          "5": 0.04,
+          "6": 0
+        }
+      },
+      "symptom": {
+        "type": "choice",
+        "choice": "NONE",
+        "confidence": 0.7,
+        "probabilities": {
+          "PARAMETER_CLIFF": 0.06,
+          "FEW_TRADES": 0.1,
+          "LOOK_AHEAD": 0.06,
+          "SURVIVORSHIP": 0.02,
+          "COSTS_OMITTED": 0.01,
+          "NONE": 0.75
+        }
+      },
+      "trust": {
+        "type": "score",
+        "score": 2,
+        "confidence": 0.72,
+        "probabilities": {
+          "0": 0,
+          "1": 0.24,
+          "2": 0.54,
+          "3": 0.2,
+          "4": 0.02,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "worth_forward_testing": {
+        "type": "noul",
+        "noul": 0.78
+      },
+      "curve_too_smooth": {
+        "type": "noul",
+        "noul": 0.1
+      }
+    },
+    "OR-0042": {
+      "overfit_risk": {
+        "type": "score",
+        "score": 4.88,
+        "confidence": 0.93,
+        "probabilities": {
+          "0": 0,
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0.12,
+          "5": 0.88,
+          "6": 0
+        }
+      },
+      "symptom": {
+        "type": "choice",
+        "choice": "SURVIVORSHIP",
+        "confidence": 1,
+        "probabilities": {
+          "PARAMETER_CLIFF": 0,
+          "FEW_TRADES": 0,
+          "LOOK_AHEAD": 0,
+          "SURVIVORSHIP": 1,
+          "COSTS_OMITTED": 0,
+          "NONE": 0
+        }
+      },
+      "trust": {
+        "type": "score",
+        "score": 1.01,
+        "confidence": 0.98,
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.97,
+          "2": 0.02,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "worth_forward_testing": {
+        "type": "noul",
+        "noul": 0.77
+      },
+      "curve_too_smooth": {
+        "type": "noul",
+        "noul": 0.89
+      }
+    },
+    "OR-0043": {
+      "overfit_risk": {
+        "type": "score",
+        "score": 4.65,
+        "confidence": 0.8,
+        "probabilities": {
+          "0": 0,
+          "1": 0,
+          "2": 0,
+          "3": 0.01,
+          "4": 0.33,
+          "5": 0.66,
+          "6": 0
+        }
+      },
+      "symptom": {
+        "type": "choice",
+        "choice": "SURVIVORSHIP",
+        "confidence": 0.9,
+        "probabilities": {
+          "PARAMETER_CLIFF": 0,
+          "FEW_TRADES": 0.01,
+          "LOOK_AHEAD": 0.06,
+          "SURVIVORSHIP": 0.92,
+          "COSTS_OMITTED": 0.01,
+          "NONE": 0
+        }
+      },
+      "trust": {
+        "type": "score",
+        "score": 1.13,
+        "confidence": 0.91,
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.85,
+          "2": 0.14,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "worth_forward_testing": {
+        "type": "noul",
+        "noul": 0.77
+      },
+      "curve_too_smooth": {
+        "type": "noul",
+        "noul": 0.8
+      }
+    },
+    "OR-0044": {
+      "overfit_risk": {
+        "type": "score",
+        "score": 3.97,
+        "confidence": 0.81,
+        "probabilities": {
+          "0": 0,
+          "1": 0,
+          "2": 0.02,
+          "3": 0.14,
+          "4": 0.69,
+          "5": 0.15,
+          "6": 0
+        }
+      },
+      "symptom": {
+        "type": "choice",
+        "choice": "NONE",
+        "confidence": 0.33,
+        "probabilities": {
+          "PARAMETER_CLIFF": 0.2,
+          "FEW_TRADES": 0.29,
+          "LOOK_AHEAD": 0.03,
+          "SURVIVORSHIP": 0.02,
+          "COSTS_OMITTED": 0.02,
+          "NONE": 0.44
+        }
+      },
+      "trust": {
+        "type": "score",
+        "score": 2.34,
+        "confidence": 0.66,
+        "probabilities": {
+          "0": 0,
+          "1": 0.12,
+          "2": 0.46,
+          "3": 0.39,
+          "4": 0.02,
+          "5": 0.01,
+          "6": 0
+        }
+      },
+      "worth_forward_testing": {
+        "type": "noul",
+        "noul": 0.81
+      },
+      "curve_too_smooth": {
+        "type": "noul",
+        "noul": 0.1
+      }
+    },
+    "OR-0045": {
+      "overfit_risk": {
+        "type": "score",
+        "score": 4.01,
+        "confidence": 0.77,
+        "probabilities": {
+          "0": 0,
+          "1": 0.01,
+          "2": 0.02,
+          "3": 0.12,
+          "4": 0.65,
+          "5": 0.2,
+          "6": 0
+        }
+      },
+      "symptom": {
+        "type": "choice",
+        "choice": "FEW_TRADES",
+        "confidence": 0.81,
+        "probabilities": {
+          "PARAMETER_CLIFF": 0.04,
+          "FEW_TRADES": 0.84,
+          "LOOK_AHEAD": 0.03,
+          "SURVIVORSHIP": 0.02,
+          "COSTS_OMITTED": 0.01,
+          "NONE": 0.06
+        }
+      },
+      "trust": {
+        "type": "score",
+        "score": 1.75,
+        "confidence": 0.66,
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.4,
+          "2": 0.44,
+          "3": 0.13,
+          "4": 0.02,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "worth_forward_testing": {
+        "type": "noul",
+        "noul": 0.78
+      },
+      "curve_too_smooth": {
+        "type": "noul",
+        "noul": 0.55
+      }
+    },
+    "OR-0046": {
+      "overfit_risk": {
+        "type": "score",
+        "score": 3.97,
+        "confidence": 0.82,
+        "probabilities": {
+          "0": 0,
+          "1": 0,
+          "2": 0.02,
+          "3": 0.13,
+          "4": 0.71,
+          "5": 0.14,
+          "6": 0
+        }
+      },
+      "symptom": {
+        "type": "choice",
+        "choice": "NONE",
+        "confidence": 0.52,
+        "probabilities": {
+          "PARAMETER_CLIFF": 0.12,
+          "FEW_TRADES": 0.09,
+          "LOOK_AHEAD": 0.13,
+          "SURVIVORSHIP": 0.04,
+          "COSTS_OMITTED": 0.02,
+          "NONE": 0.6
+        }
+      },
+      "trust": {
+        "type": "score",
+        "score": 1.71,
+        "confidence": 0.66,
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.42,
+          "2": 0.43,
+          "3": 0.13,
+          "4": 0.01,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "worth_forward_testing": {
+        "type": "noul",
+        "noul": 0.78
+      },
+      "curve_too_smooth": {
+        "type": "noul",
+        "noul": 0.07
+      }
+    },
+    "OR-0047": {
+      "overfit_risk": {
+        "type": "score",
+        "score": 3.9,
+        "confidence": 0.85,
+        "probabilities": {
+          "0": 0,
+          "1": 0,
+          "2": 0.02,
+          "3": 0.14,
+          "4": 0.76,
+          "5": 0.08,
+          "6": 0
+        }
+      },
+      "symptom": {
+        "type": "choice",
+        "choice": "NONE",
+        "confidence": 0.36,
+        "probabilities": {
+          "PARAMETER_CLIFF": 0.16,
+          "FEW_TRADES": 0.27,
+          "LOOK_AHEAD": 0.04,
+          "SURVIVORSHIP": 0.03,
+          "COSTS_OMITTED": 0.03,
+          "NONE": 0.47
+        }
+      },
+      "trust": {
+        "type": "score",
+        "score": 1.86,
+        "confidence": 0.72,
+        "probabilities": {
+          "0": 0,
+          "1": 0.31,
+          "2": 0.53,
+          "3": 0.15,
+          "4": 0.01,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "worth_forward_testing": {
+        "type": "noul",
+        "noul": 0.77
+      },
+      "curve_too_smooth": {
+        "type": "noul",
+        "noul": 0.19
+      }
+    },
+    "OR-0048": {
+      "overfit_risk": {
+        "type": "score",
+        "score": 4.78,
+        "confidence": 0.87,
+        "probabilities": {
+          "0": 0,
+          "1": 0,
+          "2": 0,
+          "3": 0.01,
+          "4": 0.2,
+          "5": 0.79,
+          "6": 0
+        }
+      },
+      "symptom": {
+        "type": "choice",
+        "choice": "LOOK_AHEAD",
+        "confidence": 0.99,
+        "probabilities": {
+          "PARAMETER_CLIFF": 0,
+          "FEW_TRADES": 0,
+          "LOOK_AHEAD": 0.99,
+          "SURVIVORSHIP": 0.01,
+          "COSTS_OMITTED": 0,
+          "NONE": 0
+        }
+      },
+      "trust": {
+        "type": "score",
+        "score": 1.03,
+        "confidence": 0.94,
+        "probabilities": {
+          "0": 0.04,
+          "1": 0.89,
+          "2": 0.07,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "worth_forward_testing": {
+        "type": "noul",
+        "noul": 0.83
+      },
+      "curve_too_smooth": {
+        "type": "noul",
+        "noul": 1
+      }
+    },
+    "OR-0049": {
+      "overfit_risk": {
+        "type": "score",
+        "score": 4.5,
+        "confidence": 0.71,
+        "probabilities": {
+          "0": 0,
+          "1": 0,
+          "2": 0,
+          "3": 0.02,
+          "4": 0.46,
+          "5": 0.52,
+          "6": 0
+        }
+      },
+      "symptom": {
+        "type": "choice",
+        "choice": "LOOK_AHEAD",
+        "confidence": 1,
+        "probabilities": {
+          "PARAMETER_CLIFF": 0,
+          "FEW_TRADES": 0,
+          "LOOK_AHEAD": 1,
+          "SURVIVORSHIP": 0,
+          "COSTS_OMITTED": 0,
+          "NONE": 0
+        }
+      },
+      "trust": {
+        "type": "score",
+        "score": 1.06,
+        "confidence": 0.95,
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.92,
+          "2": 0.07,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "worth_forward_testing": {
+        "type": "noul",
+        "noul": 0.83
+      },
+      "curve_too_smooth": {
+        "type": "noul",
+        "noul": 1
+      }
+    },
+    "OR-0050": {
+      "overfit_risk": {
+        "type": "score",
+        "score": 4.49,
+        "confidence": 0.7,
+        "probabilities": {
+          "0": 0,
+          "1": 0,
+          "2": 0,
+          "3": 0.01,
+          "4": 0.49,
+          "5": 0.5,
+          "6": 0
+        }
+      },
+      "symptom": {
+        "type": "choice",
+        "choice": "COSTS_OMITTED",
+        "confidence": 0.72,
+        "probabilities": {
+          "PARAMETER_CLIFF": 0.08,
+          "FEW_TRADES": 0.07,
+          "LOOK_AHEAD": 0.04,
+          "SURVIVORSHIP": 0.03,
+          "COSTS_OMITTED": 0.77,
+          "NONE": 0.01
+        }
+      },
+      "trust": {
+        "type": "score",
+        "score": 1.19,
+        "confidence": 0.88,
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.8,
+          "2": 0.18,
+          "3": 0.01,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "worth_forward_testing": {
+        "type": "noul",
+        "noul": 0.79
+      },
+      "curve_too_smooth": {
+        "type": "noul",
+        "noul": 0.94
+      }
+    },
+    "OR-0051": {
+      "overfit_risk": {
+        "type": "score",
+        "score": 4.18,
+        "confidence": 0.72,
+        "probabilities": {
+          "0": 0,
+          "1": 0.01,
+          "2": 0.01,
+          "3": 0.1,
+          "4": 0.55,
+          "5": 0.33,
+          "6": 0
+        }
+      },
+      "symptom": {
+        "type": "choice",
+        "choice": "NONE",
+        "confidence": 0.35,
+        "probabilities": {
+          "PARAMETER_CLIFF": 0.35,
+          "FEW_TRADES": 0.06,
+          "LOOK_AHEAD": 0.07,
+          "SURVIVORSHIP": 0.04,
+          "COSTS_OMITTED": 0.02,
+          "NONE": 0.46
+        }
+      },
+      "trust": {
+        "type": "score",
+        "score": 1.69,
+        "confidence": 0.7,
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.39,
+          "2": 0.51,
+          "3": 0.08,
+          "4": 0.01,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "worth_forward_testing": {
+        "type": "noul",
+        "noul": 0.76
+      },
+      "curve_too_smooth": {
+        "type": "noul",
+        "noul": 0.16
+      }
+    },
+    "OR-0052": {
+      "overfit_risk": {
+        "type": "score",
+        "score": 3.8,
+        "confidence": 0.84,
+        "probabilities": {
+          "0": 0,
+          "1": 0,
+          "2": 0.03,
+          "3": 0.18,
+          "4": 0.75,
+          "5": 0.04,
+          "6": 0
+        }
+      },
+      "symptom": {
+        "type": "choice",
+        "choice": "FEW_TRADES",
+        "confidence": 0.51,
+        "probabilities": {
+          "PARAMETER_CLIFF": 0.03,
+          "FEW_TRADES": 0.59,
+          "LOOK_AHEAD": 0.02,
+          "SURVIVORSHIP": 0.02,
+          "COSTS_OMITTED": 0.02,
+          "NONE": 0.32
+        }
+      },
+      "trust": {
+        "type": "score",
+        "score": 2.79,
+        "confidence": 0.67,
+        "probabilities": {
+          "0": 0,
+          "1": 0.07,
+          "2": 0.25,
+          "3": 0.51,
+          "4": 0.16,
+          "5": 0.01,
+          "6": 0
+        }
+      },
+      "worth_forward_testing": {
+        "type": "noul",
+        "noul": 0.81
+      },
+      "curve_too_smooth": {
+        "type": "noul",
+        "noul": 0.32
+      }
+    },
+    "OR-0053": {
+      "overfit_risk": {
+        "type": "score",
+        "score": 3.66,
+        "confidence": 0.69,
+        "probabilities": {
+          "0": 0,
+          "1": 0.01,
+          "2": 0.08,
+          "3": 0.25,
+          "4": 0.56,
+          "5": 0.1,
+          "6": 0
+        }
+      },
+      "symptom": {
+        "type": "choice",
+        "choice": "NONE",
+        "confidence": 0.45,
+        "probabilities": {
+          "PARAMETER_CLIFF": 0.04,
+          "FEW_TRADES": 0.32,
+          "LOOK_AHEAD": 0.03,
+          "SURVIVORSHIP": 0.03,
+          "COSTS_OMITTED": 0.04,
+          "NONE": 0.54
+        }
+      },
+      "trust": {
+        "type": "score",
+        "score": 2.04,
+        "confidence": 0.64,
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.27,
+          "2": 0.44,
+          "3": 0.23,
+          "4": 0.05,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "worth_forward_testing": {
+        "type": "noul",
+        "noul": 0.79
+      },
+      "curve_too_smooth": {
+        "type": "noul",
+        "noul": 0.02
+      }
+    },
+    "OR-0054": {
+      "overfit_risk": {
+        "type": "score",
+        "score": 4.84,
+        "confidence": 0.91,
+        "probabilities": {
+          "0": 0,
+          "1": 0,
+          "2": 0,
+          "3": 0.01,
+          "4": 0.14,
+          "5": 0.85,
+          "6": 0
+        }
+      },
+      "symptom": {
+        "type": "choice",
+        "choice": "LOOK_AHEAD",
+        "confidence": 1,
+        "probabilities": {
+          "PARAMETER_CLIFF": 0,
+          "FEW_TRADES": 0,
+          "LOOK_AHEAD": 1,
+          "SURVIVORSHIP": 0,
+          "COSTS_OMITTED": 0,
+          "NONE": 0
+        }
+      },
+      "trust": {
+        "type": "score",
+        "score": 1.05,
+        "confidence": 0.94,
+        "probabilities": {
+          "0": 0.03,
+          "1": 0.89,
+          "2": 0.08,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "worth_forward_testing": {
+        "type": "noul",
+        "noul": 0.82
+      },
+      "curve_too_smooth": {
+        "type": "noul",
+        "noul": 0.98
+      }
+    },
+    "OR-0055": {
+      "overfit_risk": {
+        "type": "score",
+        "score": 4.78,
+        "confidence": 0.86,
+        "probabilities": {
+          "0": 0,
+          "1": 0,
+          "2": 0,
+          "3": 0.01,
+          "4": 0.21,
+          "5": 0.77,
+          "6": 0.01
+        }
+      },
+      "symptom": {
+        "type": "choice",
+        "choice": "FEW_TRADES",
+        "confidence": 0.99,
+        "probabilities": {
+          "PARAMETER_CLIFF": 0.01,
+          "FEW_TRADES": 0.99,
+          "LOOK_AHEAD": 0,
+          "SURVIVORSHIP": 0,
+          "COSTS_OMITTED": 0,
+          "NONE": 0
+        }
+      },
+      "trust": {
+        "type": "score",
+        "score": 1,
+        "confidence": 0.97,
+        "probabilities": {
+          "0": 0.03,
+          "1": 0.94,
+          "2": 0.03,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "worth_forward_testing": {
+        "type": "noul",
+        "noul": 0.8
+      },
+      "curve_too_smooth": {
+        "type": "noul",
+        "noul": 0.99
+      }
+    },
+    "OR-0056": {
+      "overfit_risk": {
+        "type": "score",
+        "score": 4.99,
+        "confidence": 0.99,
+        "probabilities": {
+          "0": 0,
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0.01,
+          "5": 0.99,
+          "6": 0
+        }
+      },
+      "symptom": {
+        "type": "choice",
+        "choice": "PARAMETER_CLIFF",
+        "confidence": 1,
+        "probabilities": {
+          "PARAMETER_CLIFF": 1,
+          "FEW_TRADES": 0,
+          "LOOK_AHEAD": 0,
+          "SURVIVORSHIP": 0,
+          "COSTS_OMITTED": 0,
+          "NONE": 0
+        }
+      },
+      "trust": {
+        "type": "score",
+        "score": 0.98,
+        "confidence": 0.98,
+        "probabilities": {
+          "0": 0.03,
+          "1": 0.96,
+          "2": 0.01,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "worth_forward_testing": {
+        "type": "noul",
+        "noul": 0.74
+      },
+      "curve_too_smooth": {
+        "type": "noul",
+        "noul": 1
+      }
+    },
+    "OR-0057": {
+      "overfit_risk": {
+        "type": "score",
+        "score": 3.98,
+        "confidence": 0.71,
+        "probabilities": {
+          "0": 0.01,
+          "1": 0,
+          "2": 0.03,
+          "3": 0.16,
+          "4": 0.56,
+          "5": 0.24,
+          "6": 0
+        }
+      },
+      "symptom": {
+        "type": "choice",
+        "choice": "NONE",
+        "confidence": 0.66,
+        "probabilities": {
+          "PARAMETER_CLIFF": 0.12,
+          "FEW_TRADES": 0.09,
+          "LOOK_AHEAD": 0.03,
+          "SURVIVORSHIP": 0.02,
+          "COSTS_OMITTED": 0.02,
+          "NONE": 0.72
+        }
+      },
+      "trust": {
+        "type": "score",
+        "score": 1.82,
+        "confidence": 0.63,
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.39,
+          "2": 0.41,
+          "3": 0.16,
+          "4": 0.02,
+          "5": 0.01,
+          "6": 0
+        }
+      },
+      "worth_forward_testing": {
+        "type": "noul",
+        "noul": 0.78
+      },
+      "curve_too_smooth": {
+        "type": "noul",
+        "noul": 0.52
+      }
+    },
+    "OR-0058": {
+      "overfit_risk": {
+        "type": "score",
+        "score": 4.53,
+        "confidence": 0.73,
+        "probabilities": {
+          "0": 0,
+          "1": 0,
+          "2": 0,
+          "3": 0.01,
+          "4": 0.45,
+          "5": 0.54,
+          "6": 0
+        }
+      },
+      "symptom": {
+        "type": "choice",
+        "choice": "COSTS_OMITTED",
+        "confidence": 0.78,
+        "probabilities": {
+          "PARAMETER_CLIFF": 0.06,
+          "FEW_TRADES": 0.03,
+          "LOOK_AHEAD": 0.04,
+          "SURVIVORSHIP": 0.04,
+          "COSTS_OMITTED": 0.82,
+          "NONE": 0.01
+        }
+      },
+      "trust": {
+        "type": "score",
+        "score": 1.11,
+        "confidence": 0.92,
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.87,
+          "2": 0.12,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "worth_forward_testing": {
+        "type": "noul",
+        "noul": 0.79
+      },
+      "curve_too_smooth": {
+        "type": "noul",
+        "noul": 0.88
+      }
+    },
+    "OR-0059": {
+      "overfit_risk": {
+        "type": "score",
+        "score": 4.63,
+        "confidence": 0.77,
+        "probabilities": {
+          "0": 0,
+          "1": 0,
+          "2": 0,
+          "3": 0.01,
+          "4": 0.36,
+          "5": 0.62,
+          "6": 0.01
+        }
+      },
+      "symptom": {
+        "type": "choice",
+        "choice": "COSTS_OMITTED",
+        "confidence": 0.68,
+        "probabilities": {
+          "PARAMETER_CLIFF": 0.06,
+          "FEW_TRADES": 0.14,
+          "LOOK_AHEAD": 0.03,
+          "SURVIVORSHIP": 0.03,
+          "COSTS_OMITTED": 0.73,
+          "NONE": 0.01
+        }
+      },
+      "trust": {
+        "type": "score",
+        "score": 1.11,
+        "confidence": 0.92,
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.88,
+          "2": 0.1,
+          "3": 0.01,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "worth_forward_testing": {
+        "type": "noul",
+        "noul": 0.79
+      },
+      "curve_too_smooth": {
+        "type": "noul",
+        "noul": 0.89
+      }
+    },
+    "OR-0060": {
+      "overfit_risk": {
+        "type": "score",
+        "score": 3.39,
+        "confidence": 0.57,
+        "probabilities": {
+          "0": 0,
+          "1": 0.02,
+          "2": 0.15,
+          "3": 0.31,
+          "4": 0.46,
+          "5": 0.06,
+          "6": 0
+        }
+      },
+      "symptom": {
+        "type": "choice",
+        "choice": "NONE",
+        "confidence": 0.59,
+        "probabilities": {
+          "PARAMETER_CLIFF": 0.06,
+          "FEW_TRADES": 0.19,
+          "LOOK_AHEAD": 0.04,
+          "SURVIVORSHIP": 0.02,
+          "COSTS_OMITTED": 0.03,
+          "NONE": 0.66
+        }
+      },
+      "trust": {
+        "type": "score",
+        "score": 1.92,
+        "confidence": 0.45,
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.41,
+          "2": 0.32,
+          "3": 0.18,
+          "4": 0.07,
+          "5": 0.01,
+          "6": 0
+        }
+      },
+      "worth_forward_testing": {
+        "type": "noul",
+        "noul": 0.78
+      },
+      "curve_too_smooth": {
+        "type": "noul",
+        "noul": 0.11
+      }
+    },
+    "OR-0061": {
+      "overfit_risk": {
+        "type": "score",
+        "score": 4.99,
+        "confidence": 0.99,
+        "probabilities": {
+          "0": 0,
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0.01,
+          "5": 0.99,
+          "6": 0
+        }
+      },
+      "symptom": {
+        "type": "choice",
+        "choice": "PARAMETER_CLIFF",
+        "confidence": 0.99,
+        "probabilities": {
+          "PARAMETER_CLIFF": 0.99,
+          "FEW_TRADES": 0.01,
+          "LOOK_AHEAD": 0,
+          "SURVIVORSHIP": 0,
+          "COSTS_OMITTED": 0,
+          "NONE": 0
+        }
+      },
+      "trust": {
+        "type": "score",
+        "score": 1,
+        "confidence": 0.99,
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.98,
+          "2": 0.01,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "worth_forward_testing": {
+        "type": "noul",
+        "noul": 0.74
+      },
+      "curve_too_smooth": {
+        "type": "noul",
+        "noul": 1
+      }
+    },
+    "OR-0062": {
+      "overfit_risk": {
+        "type": "score",
+        "score": 4.19,
+        "confidence": 0.74,
+        "probabilities": {
+          "0": 0,
+          "1": 0.01,
+          "2": 0.02,
+          "3": 0.06,
+          "4": 0.59,
+          "5": 0.32,
+          "6": 0
+        }
+      },
+      "symptom": {
+        "type": "choice",
+        "choice": "FEW_TRADES",
+        "confidence": 0.29,
+        "probabilities": {
+          "PARAMETER_CLIFF": 0.07,
+          "FEW_TRADES": 0.41,
+          "LOOK_AHEAD": 0.05,
+          "SURVIVORSHIP": 0.04,
+          "COSTS_OMITTED": 0.03,
+          "NONE": 0.4
+        }
+      },
+      "trust": {
+        "type": "score",
+        "score": 1.88,
+        "confidence": 0.84,
+        "probabilities": {
+          "0": 0,
+          "1": 0.2,
+          "2": 0.73,
+          "3": 0.06,
+          "4": 0.01,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "worth_forward_testing": {
+        "type": "noul",
+        "noul": 0.77
+      },
+      "curve_too_smooth": {
+        "type": "noul",
+        "noul": 0.13
+      }
+    },
+    "OR-0063": {
+      "overfit_risk": {
+        "type": "score",
+        "score": 3.58,
+        "confidence": 0.66,
+        "probabilities": {
+          "0": 0,
+          "1": 0.01,
+          "2": 0.09,
+          "3": 0.29,
+          "4": 0.53,
+          "5": 0.08,
+          "6": 0
+        }
+      },
+      "symptom": {
+        "type": "choice",
+        "choice": "NONE",
+        "confidence": 0.47,
+        "probabilities": {
+          "PARAMETER_CLIFF": 0.2,
+          "FEW_TRADES": 0.1,
+          "LOOK_AHEAD": 0.06,
+          "SURVIVORSHIP": 0.05,
+          "COSTS_OMITTED": 0.03,
+          "NONE": 0.56
+        }
+      },
+      "trust": {
+        "type": "score",
+        "score": 1.83,
+        "confidence": 0.69,
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.33,
+          "2": 0.49,
+          "3": 0.16,
+          "4": 0.01,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "worth_forward_testing": {
+        "type": "noul",
+        "noul": 0.79
+      },
+      "curve_too_smooth": {
+        "type": "noul",
+        "noul": 0.26
+      }
+    },
+    "OR-0064": {
+      "overfit_risk": {
+        "type": "score",
+        "score": 3.46,
+        "confidence": 0.58,
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.02,
+          "2": 0.11,
+          "3": 0.31,
+          "4": 0.46,
+          "5": 0.09,
+          "6": 0
+        }
+      },
+      "symptom": {
+        "type": "choice",
+        "choice": "FEW_TRADES",
+        "confidence": 0.65,
+        "probabilities": {
+          "PARAMETER_CLIFF": 0.03,
+          "FEW_TRADES": 0.71,
+          "LOOK_AHEAD": 0.03,
+          "SURVIVORSHIP": 0.02,
+          "COSTS_OMITTED": 0.02,
+          "NONE": 0.19
+        }
+      },
+      "trust": {
+        "type": "score",
+        "score": 1.96,
+        "confidence": 0.65,
+        "probabilities": {
+          "0": 0,
+          "1": 0.32,
+          "2": 0.43,
+          "3": 0.22,
+          "4": 0.03,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "worth_forward_testing": {
+        "type": "noul",
+        "noul": 0.78
+      },
+      "curve_too_smooth": {
+        "type": "noul",
+        "noul": 0.12
+      }
+    },
+    "OR-0065": {
+      "overfit_risk": {
+        "type": "score",
+        "score": 4.83,
+        "confidence": 0.89,
+        "probabilities": {
+          "0": 0,
+          "1": 0,
+          "2": 0,
+          "3": 0.01,
+          "4": 0.16,
+          "5": 0.82,
+          "6": 0.01
+        }
+      },
+      "symptom": {
+        "type": "choice",
+        "choice": "LOOK_AHEAD",
+        "confidence": 1,
+        "probabilities": {
+          "PARAMETER_CLIFF": 0,
+          "FEW_TRADES": 0,
+          "LOOK_AHEAD": 1,
+          "SURVIVORSHIP": 0,
+          "COSTS_OMITTED": 0,
+          "NONE": 0
+        }
+      },
+      "trust": {
+        "type": "score",
+        "score": 1.01,
+        "confidence": 0.97,
+        "probabilities": {
+          "0": 0.02,
+          "1": 0.95,
+          "2": 0.03,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "worth_forward_testing": {
+        "type": "noul",
+        "noul": 0.84
+      },
+      "curve_too_smooth": {
+        "type": "noul",
+        "noul": 0.98
+      }
+    },
+    "OR-0066": {
+      "overfit_risk": {
+        "type": "score",
+        "score": 4.79,
+        "confidence": 0.88,
+        "probabilities": {
+          "0": 0,
+          "1": 0,
+          "2": 0,
+          "3": 0.01,
+          "4": 0.19,
+          "5": 0.8,
+          "6": 0
+        }
+      },
+      "symptom": {
+        "type": "choice",
+        "choice": "FEW_TRADES",
+        "confidence": 0.99,
+        "probabilities": {
+          "PARAMETER_CLIFF": 0,
+          "FEW_TRADES": 0.99,
+          "LOOK_AHEAD": 0,
+          "SURVIVORSHIP": 0,
+          "COSTS_OMITTED": 0,
+          "NONE": 0.01
+        }
+      },
+      "trust": {
+        "type": "score",
+        "score": 1.26,
+        "confidence": 0.84,
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.72,
+          "2": 0.27,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "worth_forward_testing": {
+        "type": "noul",
+        "noul": 0.72
+      },
+      "curve_too_smooth": {
+        "type": "noul",
+        "noul": 0.99
+      }
+    },
+    "OR-0067": {
+      "overfit_risk": {
+        "type": "score",
+        "score": 4.03,
+        "confidence": 0.82,
+        "probabilities": {
+          "0": 0,
+          "1": 0,
+          "2": 0.02,
+          "3": 0.1,
+          "4": 0.71,
+          "5": 0.17,
+          "6": 0
+        }
+      },
+      "symptom": {
+        "type": "choice",
+        "choice": "FEW_TRADES",
+        "confidence": 0.46,
+        "probabilities": {
+          "PARAMETER_CLIFF": 0.02,
+          "FEW_TRADES": 0.55,
+          "LOOK_AHEAD": 0.01,
+          "SURVIVORSHIP": 0.01,
+          "COSTS_OMITTED": 0.01,
+          "NONE": 0.4
+        }
+      },
+      "trust": {
+        "type": "score",
+        "score": 2.65,
+        "confidence": 0.71,
+        "probabilities": {
+          "0": 0,
+          "1": 0.04,
+          "2": 0.34,
+          "3": 0.55,
+          "4": 0.07,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "worth_forward_testing": {
+        "type": "noul",
+        "noul": 0.77
+      },
+      "curve_too_smooth": {
+        "type": "noul",
+        "noul": 0.15
+      }
+    },
+    "OR-0068": {
+      "overfit_risk": {
+        "type": "score",
+        "score": 4.19,
+        "confidence": 0.73,
+        "probabilities": {
+          "0": 0,
+          "1": 0.01,
+          "2": 0.01,
+          "3": 0.09,
+          "4": 0.56,
+          "5": 0.33,
+          "6": 0
+        }
+      },
+      "symptom": {
+        "type": "choice",
+        "choice": "NONE",
+        "confidence": 0.47,
+        "probabilities": {
+          "PARAMETER_CLIFF": 0.11,
+          "FEW_TRADES": 0.11,
+          "LOOK_AHEAD": 0.09,
+          "SURVIVORSHIP": 0.08,
+          "COSTS_OMITTED": 0.05,
+          "NONE": 0.56
+        }
+      },
+      "trust": {
+        "type": "score",
+        "score": 2.12,
+        "confidence": 0.66,
+        "probabilities": {
+          "0": 0,
+          "1": 0.23,
+          "2": 0.45,
+          "3": 0.29,
+          "4": 0.03,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "worth_forward_testing": {
+        "type": "noul",
+        "noul": 0.79
+      },
+      "curve_too_smooth": {
+        "type": "noul",
+        "noul": 0.06
+      }
+    },
+    "OR-0069": {
+      "overfit_risk": {
+        "type": "score",
+        "score": 4.15,
+        "confidence": 0.83,
+        "probabilities": {
+          "0": 0,
+          "1": 0,
+          "2": 0.01,
+          "3": 0.05,
+          "4": 0.72,
+          "5": 0.22,
+          "6": 0
+        }
+      },
+      "symptom": {
+        "type": "choice",
+        "choice": "FEW_TRADES",
+        "confidence": 0.57,
+        "probabilities": {
+          "PARAMETER_CLIFF": 0.05,
+          "FEW_TRADES": 0.64,
+          "LOOK_AHEAD": 0.07,
+          "SURVIVORSHIP": 0.04,
+          "COSTS_OMITTED": 0.02,
+          "NONE": 0.18
+        }
+      },
+      "trust": {
+        "type": "score",
+        "score": 1.81,
+        "confidence": 0.7,
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.33,
+          "2": 0.51,
+          "3": 0.14,
+          "4": 0.01,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "worth_forward_testing": {
+        "type": "noul",
+        "noul": 0.76
+      },
+      "curve_too_smooth": {
+        "type": "noul",
+        "noul": 0.14
+      }
+    },
+    "OR-0070": {
+      "overfit_risk": {
+        "type": "score",
+        "score": 4.9,
+        "confidence": 0.93,
+        "probabilities": {
+          "0": 0,
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0.11,
+          "5": 0.88,
+          "6": 0.01
+        }
+      },
+      "symptom": {
+        "type": "choice",
+        "choice": "LOOK_AHEAD",
+        "confidence": 1,
+        "probabilities": {
+          "PARAMETER_CLIFF": 0,
+          "FEW_TRADES": 0,
+          "LOOK_AHEAD": 1,
+          "SURVIVORSHIP": 0,
+          "COSTS_OMITTED": 0,
+          "NONE": 0
+        }
+      },
+      "trust": {
+        "type": "score",
+        "score": 1.02,
+        "confidence": 0.97,
+        "probabilities": {
+          "0": 0.02,
+          "1": 0.94,
+          "2": 0.04,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "worth_forward_testing": {
+        "type": "noul",
+        "noul": 0.84
+      },
+      "curve_too_smooth": {
+        "type": "noul",
+        "noul": 1
+      }
+    },
+    "OR-0071": {
+      "overfit_risk": {
+        "type": "score",
+        "score": 4.31,
+        "confidence": 0.78,
+        "probabilities": {
+          "0": 0,
+          "1": 0,
+          "2": 0.01,
+          "3": 0.01,
+          "4": 0.64,
+          "5": 0.34,
+          "6": 0
+        }
+      },
+      "symptom": {
+        "type": "choice",
+        "choice": "COSTS_OMITTED",
+        "confidence": 0.78,
+        "probabilities": {
+          "PARAMETER_CLIFF": 0.07,
+          "FEW_TRADES": 0.02,
+          "LOOK_AHEAD": 0.04,
+          "SURVIVORSHIP": 0.04,
+          "COSTS_OMITTED": 0.82,
+          "NONE": 0.01
+        }
+      },
+      "trust": {
+        "type": "score",
+        "score": 1.17,
+        "confidence": 0.89,
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.82,
+          "2": 0.16,
+          "3": 0.01,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "worth_forward_testing": {
+        "type": "noul",
+        "noul": 0.76
+      },
+      "curve_too_smooth": {
+        "type": "noul",
+        "noul": 0.93
+      }
+    },
+    "OR-0072": {
+      "overfit_risk": {
+        "type": "score",
+        "score": 3.87,
+        "confidence": 0.67,
+        "probabilities": {
+          "0": 0,
+          "1": 0.01,
+          "2": 0.07,
+          "3": 0.18,
+          "4": 0.52,
+          "5": 0.22,
+          "6": 0
+        }
+      },
+      "symptom": {
+        "type": "choice",
+        "choice": "FEW_TRADES",
+        "confidence": 0.32,
+        "probabilities": {
+          "PARAMETER_CLIFF": 0.08,
+          "FEW_TRADES": 0.43,
+          "LOOK_AHEAD": 0.03,
+          "SURVIVORSHIP": 0.03,
+          "COSTS_OMITTED": 0.02,
+          "NONE": 0.41
+        }
+      },
+      "trust": {
+        "type": "score",
+        "score": 1.76,
+        "confidence": 0.53,
+        "probabilities": {
+          "0": 0.02,
+          "1": 0.41,
+          "2": 0.38,
+          "3": 0.17,
+          "4": 0.02,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "worth_forward_testing": {
+        "type": "noul",
+        "noul": 0.75
+      },
+      "curve_too_smooth": {
+        "type": "noul",
+        "noul": 0.14
+      }
+    },
+    "OR-0073": {
+      "overfit_risk": {
+        "type": "score",
+        "score": 4.89,
+        "confidence": 0.92,
+        "probabilities": {
+          "0": 0,
+          "1": 0.01,
+          "2": 0,
+          "3": 0.01,
+          "4": 0.06,
+          "5": 0.91,
+          "6": 0.01
+        }
+      },
+      "symptom": {
+        "type": "choice",
+        "choice": "FEW_TRADES",
+        "confidence": 0.99,
+        "probabilities": {
+          "PARAMETER_CLIFF": 0.01,
+          "FEW_TRADES": 0.99,
+          "LOOK_AHEAD": 0,
+          "SURVIVORSHIP": 0,
+          "COSTS_OMITTED": 0,
+          "NONE": 0
+        }
+      },
+      "trust": {
+        "type": "score",
+        "score": 1.15,
+        "confidence": 0.9,
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.83,
+          "2": 0.16,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "worth_forward_testing": {
+        "type": "noul",
+        "noul": 0.78
+      },
+      "curve_too_smooth": {
+        "type": "noul",
+        "noul": 0.99
+      }
+    },
+    "OR-0074": {
+      "overfit_risk": {
+        "type": "score",
+        "score": 3.89,
+        "confidence": 0.87,
+        "probabilities": {
+          "0": 0,
+          "1": 0,
+          "2": 0.02,
+          "3": 0.13,
+          "4": 0.79,
+          "5": 0.06,
+          "6": 0
+        }
+      },
+      "symptom": {
+        "type": "choice",
+        "choice": "NONE",
+        "confidence": 0.38,
+        "probabilities": {
+          "PARAMETER_CLIFF": 0.12,
+          "FEW_TRADES": 0.31,
+          "LOOK_AHEAD": 0.04,
+          "SURVIVORSHIP": 0.02,
+          "COSTS_OMITTED": 0.03,
+          "NONE": 0.48
+        }
+      },
+      "trust": {
+        "type": "score",
+        "score": 2.12,
+        "confidence": 0.78,
+        "probabilities": {
+          "0": 0,
+          "1": 0.13,
+          "2": 0.63,
+          "3": 0.23,
+          "4": 0.01,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "worth_forward_testing": {
+        "type": "noul",
+        "noul": 0.78
+      },
+      "curve_too_smooth": {
+        "type": "noul",
+        "noul": 0.18
+      }
+    },
+    "OR-0075": {
+      "overfit_risk": {
+        "type": "score",
+        "score": 4.72,
+        "confidence": 0.83,
+        "probabilities": {
+          "0": 0,
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0.29,
+          "5": 0.7,
+          "6": 0.01
+        }
+      },
+      "symptom": {
+        "type": "choice",
+        "choice": "SURVIVORSHIP",
+        "confidence": 1,
+        "probabilities": {
+          "PARAMETER_CLIFF": 0,
+          "FEW_TRADES": 0,
+          "LOOK_AHEAD": 0,
+          "SURVIVORSHIP": 1,
+          "COSTS_OMITTED": 0,
+          "NONE": 0
+        }
+      },
+      "trust": {
+        "type": "score",
+        "score": 1.03,
+        "confidence": 0.97,
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.95,
+          "2": 0.04,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "worth_forward_testing": {
+        "type": "noul",
+        "noul": 0.78
+      },
+      "curve_too_smooth": {
+        "type": "noul",
+        "noul": 0.93
+      }
+    },
+    "OR-0076": {
+      "overfit_risk": {
+        "type": "score",
+        "score": 4.99,
+        "confidence": 0.99,
+        "probabilities": {
+          "0": 0,
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0.01,
+          "5": 0.99,
+          "6": 0
+        }
+      },
+      "symptom": {
+        "type": "choice",
+        "choice": "PARAMETER_CLIFF",
+        "confidence": 0.98,
+        "probabilities": {
+          "PARAMETER_CLIFF": 0.98,
+          "FEW_TRADES": 0.01,
+          "LOOK_AHEAD": 0,
+          "SURVIVORSHIP": 0,
+          "COSTS_OMITTED": 0,
+          "NONE": 0.01
+        }
+      },
+      "trust": {
+        "type": "score",
+        "score": 0.97,
+        "confidence": 0.96,
+        "probabilities": {
+          "0": 0.05,
+          "1": 0.93,
+          "2": 0.02,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "worth_forward_testing": {
+        "type": "noul",
+        "noul": 0.68
+      },
+      "curve_too_smooth": {
+        "type": "noul",
+        "noul": 1
+      }
+    },
+    "OR-0077": {
+      "overfit_risk": {
+        "type": "score",
+        "score": 3.93,
+        "confidence": 0.8,
+        "probabilities": {
+          "0": 0,
+          "1": 0,
+          "2": 0.03,
+          "3": 0.15,
+          "4": 0.68,
+          "5": 0.14,
+          "6": 0
+        }
+      },
+      "symptom": {
+        "type": "choice",
+        "choice": "NONE",
+        "confidence": 0.64,
+        "probabilities": {
+          "PARAMETER_CLIFF": 0.21,
+          "FEW_TRADES": 0.06,
+          "LOOK_AHEAD": 0.01,
+          "SURVIVORSHIP": 0.01,
+          "COSTS_OMITTED": 0.01,
+          "NONE": 0.7
+        }
+      },
+      "trust": {
+        "type": "score",
+        "score": 2.41,
+        "confidence": 0.59,
+        "probabilities": {
+          "0": 0,
+          "1": 0.13,
+          "2": 0.39,
+          "3": 0.43,
+          "4": 0.04,
+          "5": 0.01,
+          "6": 0
+        }
+      },
+      "worth_forward_testing": {
+        "type": "noul",
+        "noul": 0.79
+      },
+      "curve_too_smooth": {
+        "type": "noul",
+        "noul": 0.35
+      }
+    },
+    "OR-0078": {
+      "overfit_risk": {
+        "type": "score",
+        "score": 5,
+        "confidence": 0.99,
+        "probabilities": {
+          "0": 0,
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0.01,
+          "5": 0.98,
+          "6": 0.01
+        }
+      },
+      "symptom": {
+        "type": "choice",
+        "choice": "PARAMETER_CLIFF",
+        "confidence": 0.99,
+        "probabilities": {
+          "PARAMETER_CLIFF": 0.99,
+          "FEW_TRADES": 0.01,
+          "LOOK_AHEAD": 0,
+          "SURVIVORSHIP": 0,
+          "COSTS_OMITTED": 0,
+          "NONE": 0
+        }
+      },
+      "trust": {
+        "type": "score",
+        "score": 1,
+        "confidence": 0.99,
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.98,
+          "2": 0.01,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "worth_forward_testing": {
+        "type": "noul",
+        "noul": 0.71
+      },
+      "curve_too_smooth": {
+        "type": "noul",
+        "noul": 0.99
+      }
+    },
+    "OR-0079": {
+      "overfit_risk": {
+        "type": "score",
+        "score": 3.88,
+        "confidence": 0.83,
+        "probabilities": {
+          "0": 0,
+          "1": 0,
+          "2": 0.03,
+          "3": 0.15,
+          "4": 0.73,
+          "5": 0.09,
+          "6": 0
+        }
+      },
+      "symptom": {
+        "type": "choice",
+        "choice": "FEW_TRADES",
+        "confidence": 0.7,
+        "probabilities": {
+          "PARAMETER_CLIFF": 0.01,
+          "FEW_TRADES": 0.75,
+          "LOOK_AHEAD": 0.02,
+          "SURVIVORSHIP": 0.01,
+          "COSTS_OMITTED": 0.01,
+          "NONE": 0.2
+        }
+      },
+      "trust": {
+        "type": "score",
+        "score": 2.33,
+        "confidence": 0.71,
+        "probabilities": {
+          "0": 0,
+          "1": 0.08,
+          "2": 0.52,
+          "3": 0.39,
+          "4": 0.01,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "worth_forward_testing": {
+        "type": "noul",
+        "noul": 0.77
+      },
+      "curve_too_smooth": {
+        "type": "noul",
+        "noul": 0.12
+      }
+    },
+    "OR-0080": {
+      "overfit_risk": {
+        "type": "score",
+        "score": 4.76,
+        "confidence": 0.86,
+        "probabilities": {
+          "0": 0,
+          "1": 0,
+          "2": 0,
+          "3": 0.01,
+          "4": 0.22,
+          "5": 0.77,
+          "6": 0
+        }
+      },
+      "symptom": {
+        "type": "choice",
+        "choice": "FEW_TRADES",
+        "confidence": 0.98,
+        "probabilities": {
+          "PARAMETER_CLIFF": 0.01,
+          "FEW_TRADES": 0.98,
+          "LOOK_AHEAD": 0.01,
+          "SURVIVORSHIP": 0,
+          "COSTS_OMITTED": 0,
+          "NONE": 0
+        }
+      },
+      "trust": {
+        "type": "score",
+        "score": 1.07,
+        "confidence": 0.94,
+        "probabilities": {
+          "0": 0.02,
+          "1": 0.89,
+          "2": 0.09,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "worth_forward_testing": {
+        "type": "noul",
+        "noul": 0.78
+      },
+      "curve_too_smooth": {
+        "type": "noul",
+        "noul": 0.98
+      }
+    },
+    "OR-0081": {
+      "overfit_risk": {
+        "type": "score",
+        "score": 4.96,
+        "confidence": 0.95,
+        "probabilities": {
+          "0": 0,
+          "1": 0.01,
+          "2": 0,
+          "3": 0,
+          "4": 0.02,
+          "5": 0.95,
+          "6": 0.02
+        }
+      },
+      "symptom": {
+        "type": "choice",
+        "choice": "PARAMETER_CLIFF",
+        "confidence": 0.99,
+        "probabilities": {
+          "PARAMETER_CLIFF": 0.99,
+          "FEW_TRADES": 0.01,
+          "LOOK_AHEAD": 0,
+          "SURVIVORSHIP": 0,
+          "COSTS_OMITTED": 0,
+          "NONE": 0
+        }
+      },
+      "trust": {
+        "type": "score",
+        "score": 0.99,
+        "confidence": 0.97,
+        "probabilities": {
+          "0": 0.03,
+          "1": 0.95,
+          "2": 0.02,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "worth_forward_testing": {
+        "type": "noul",
+        "noul": 0.66
+      },
+      "curve_too_smooth": {
+        "type": "noul",
+        "noul": 0.99
+      }
+    },
+    "OR-0082": {
+      "overfit_risk": {
+        "type": "score",
+        "score": 4.99,
+        "confidence": 0.99,
+        "probabilities": {
+          "0": 0,
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0.01,
+          "5": 0.99,
+          "6": 0
+        }
+      },
+      "symptom": {
+        "type": "choice",
+        "choice": "PARAMETER_CLIFF",
+        "confidence": 1,
+        "probabilities": {
+          "PARAMETER_CLIFF": 1,
+          "FEW_TRADES": 0,
+          "LOOK_AHEAD": 0,
+          "SURVIVORSHIP": 0,
+          "COSTS_OMITTED": 0,
+          "NONE": 0
+        }
+      },
+      "trust": {
+        "type": "score",
+        "score": 1,
+        "confidence": 0.99,
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.98,
+          "2": 0.01,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "worth_forward_testing": {
+        "type": "noul",
+        "noul": 0.58
+      },
+      "curve_too_smooth": {
+        "type": "noul",
+        "noul": 0.99
+      }
+    },
+    "OR-0083": {
+      "overfit_risk": {
+        "type": "score",
+        "score": 3.9,
+        "confidence": 0.85,
+        "probabilities": {
+          "0": 0,
+          "1": 0,
+          "2": 0.03,
+          "3": 0.12,
+          "4": 0.77,
+          "5": 0.08,
+          "6": 0
+        }
+      },
+      "symptom": {
+        "type": "choice",
+        "choice": "NONE",
+        "confidence": 0.56,
+        "probabilities": {
+          "PARAMETER_CLIFF": 0.1,
+          "FEW_TRADES": 0.08,
+          "LOOK_AHEAD": 0.1,
+          "SURVIVORSHIP": 0.05,
+          "COSTS_OMITTED": 0.04,
+          "NONE": 0.63
+        }
+      },
+      "trust": {
+        "type": "score",
+        "score": 1.89,
+        "confidence": 0.69,
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.3,
+          "2": 0.49,
+          "3": 0.19,
+          "4": 0.01,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "worth_forward_testing": {
+        "type": "noul",
+        "noul": 0.74
+      },
+      "curve_too_smooth": {
+        "type": "noul",
+        "noul": 0.62
+      }
+    },
+    "OR-0084": {
+      "overfit_risk": {
+        "type": "score",
+        "score": 4.93,
+        "confidence": 0.96,
+        "probabilities": {
+          "0": 0,
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0.07,
+          "5": 0.93,
+          "6": 0
+        }
+      },
+      "symptom": {
+        "type": "choice",
+        "choice": "FEW_TRADES",
+        "confidence": 0.98,
+        "probabilities": {
+          "PARAMETER_CLIFF": 0.01,
+          "FEW_TRADES": 0.98,
+          "LOOK_AHEAD": 0.01,
+          "SURVIVORSHIP": 0,
+          "COSTS_OMITTED": 0,
+          "NONE": 0
+        }
+      },
+      "trust": {
+        "type": "score",
+        "score": 1.07,
+        "confidence": 0.95,
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.91,
+          "2": 0.08,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "worth_forward_testing": {
+        "type": "noul",
+        "noul": 0.76
+      },
+      "curve_too_smooth": {
+        "type": "noul",
+        "noul": 1
+      }
+    },
+    "OR-0085": {
+      "overfit_risk": {
+        "type": "score",
+        "score": 4.7,
+        "confidence": 0.83,
+        "probabilities": {
+          "0": 0,
+          "1": 0.01,
+          "2": 0,
+          "3": 0.01,
+          "4": 0.24,
+          "5": 0.74,
+          "6": 0
+        }
+      },
+      "symptom": {
+        "type": "choice",
+        "choice": "FEW_TRADES",
+        "confidence": 0.99,
+        "probabilities": {
+          "PARAMETER_CLIFF": 0.01,
+          "FEW_TRADES": 0.99,
+          "LOOK_AHEAD": 0,
+          "SURVIVORSHIP": 0,
+          "COSTS_OMITTED": 0,
+          "NONE": 0
+        }
+      },
+      "trust": {
+        "type": "score",
+        "score": 1.03,
+        "confidence": 0.97,
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.95,
+          "2": 0.04,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "worth_forward_testing": {
+        "type": "noul",
+        "noul": 0.79
+      },
+      "curve_too_smooth": {
+        "type": "noul",
+        "noul": 0.99
+      }
+    },
+    "OR-0086": {
+      "overfit_risk": {
+        "type": "score",
+        "score": 4.99,
+        "confidence": 0.99,
+        "probabilities": {
+          "0": 0,
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0.01,
+          "5": 0.99,
+          "6": 0
+        }
+      },
+      "symptom": {
+        "type": "choice",
+        "choice": "PARAMETER_CLIFF",
+        "confidence": 1,
+        "probabilities": {
+          "PARAMETER_CLIFF": 1,
+          "FEW_TRADES": 0,
+          "LOOK_AHEAD": 0,
+          "SURVIVORSHIP": 0,
+          "COSTS_OMITTED": 0,
+          "NONE": 0
+        }
+      },
+      "trust": {
+        "type": "score",
+        "score": 1,
+        "confidence": 0.99,
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.98,
+          "2": 0.01,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "worth_forward_testing": {
+        "type": "noul",
+        "noul": 0.7
+      },
+      "curve_too_smooth": {
+        "type": "noul",
+        "noul": 1
+      }
+    },
+    "OR-0087": {
+      "overfit_risk": {
+        "type": "score",
+        "score": 4.99,
+        "confidence": 0.99,
+        "probabilities": {
+          "0": 0,
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0.01,
+          "5": 0.99,
+          "6": 0
+        }
+      },
+      "symptom": {
+        "type": "choice",
+        "choice": "PARAMETER_CLIFF",
+        "confidence": 1,
+        "probabilities": {
+          "PARAMETER_CLIFF": 1,
+          "FEW_TRADES": 0,
+          "LOOK_AHEAD": 0,
+          "SURVIVORSHIP": 0,
+          "COSTS_OMITTED": 0,
+          "NONE": 0
+        }
+      },
+      "trust": {
+        "type": "score",
+        "score": 1.03,
+        "confidence": 0.97,
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.95,
+          "2": 0.04,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "worth_forward_testing": {
+        "type": "noul",
+        "noul": 0.71
+      },
+      "curve_too_smooth": {
+        "type": "noul",
+        "noul": 0.97
+      }
+    },
+    "OR-0088": {
+      "overfit_risk": {
+        "type": "score",
+        "score": 4.79,
+        "confidence": 0.87,
+        "probabilities": {
+          "0": 0,
+          "1": 0,
+          "2": 0,
+          "3": 0.01,
+          "4": 0.2,
+          "5": 0.78,
+          "6": 0.01
+        }
+      },
+      "symptom": {
+        "type": "choice",
+        "choice": "FEW_TRADES",
+        "confidence": 0.98,
+        "probabilities": {
+          "PARAMETER_CLIFF": 0.01,
+          "FEW_TRADES": 0.98,
+          "LOOK_AHEAD": 0,
+          "SURVIVORSHIP": 0,
+          "COSTS_OMITTED": 0,
+          "NONE": 0.01
+        }
+      },
+      "trust": {
+        "type": "score",
+        "score": 1.2,
+        "confidence": 0.86,
+        "probabilities": {
+          "0": 0.02,
+          "1": 0.77,
+          "2": 0.2,
+          "3": 0.01,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "worth_forward_testing": {
+        "type": "noul",
+        "noul": 0.75
+      },
+      "curve_too_smooth": {
+        "type": "noul",
+        "noul": 1
+      }
+    },
+    "OR-0089": {
+      "overfit_risk": {
+        "type": "score",
+        "score": 4.55,
+        "confidence": 0.74,
+        "probabilities": {
+          "0": 0,
+          "1": 0,
+          "2": 0,
+          "3": 0.01,
+          "4": 0.43,
+          "5": 0.56,
+          "6": 0
+        }
+      },
+      "symptom": {
+        "type": "choice",
+        "choice": "COSTS_OMITTED",
+        "confidence": 0.89,
+        "probabilities": {
+          "PARAMETER_CLIFF": 0.01,
+          "FEW_TRADES": 0.05,
+          "LOOK_AHEAD": 0.01,
+          "SURVIVORSHIP": 0.02,
+          "COSTS_OMITTED": 0.91,
+          "NONE": 0
+        }
+      },
+      "trust": {
+        "type": "score",
+        "score": 1.05,
+        "confidence": 0.96,
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.93,
+          "2": 0.06,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "worth_forward_testing": {
+        "type": "noul",
+        "noul": 0.79
+      },
+      "curve_too_smooth": {
+        "type": "noul",
+        "noul": 0.76
+      }
+    },
+    "OR-0090": {
+      "overfit_risk": {
+        "type": "score",
+        "score": 4.02,
+        "confidence": 0.86,
+        "probabilities": {
+          "0": 0,
+          "1": 0,
+          "2": 0.01,
+          "3": 0.09,
+          "4": 0.77,
+          "5": 0.13,
+          "6": 0
+        }
+      },
+      "symptom": {
+        "type": "choice",
+        "choice": "FEW_TRADES",
+        "confidence": 0.65,
+        "probabilities": {
+          "PARAMETER_CLIFF": 0.02,
+          "FEW_TRADES": 0.71,
+          "LOOK_AHEAD": 0.02,
+          "SURVIVORSHIP": 0.02,
+          "COSTS_OMITTED": 0.01,
+          "NONE": 0.22
+        }
+      },
+      "trust": {
+        "type": "score",
+        "score": 1.87,
+        "confidence": 0.71,
+        "probabilities": {
+          "0": 0,
+          "1": 0.31,
+          "2": 0.53,
+          "3": 0.14,
+          "4": 0.02,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "worth_forward_testing": {
+        "type": "noul",
+        "noul": 0.81
+      },
+      "curve_too_smooth": {
+        "type": "noul",
+        "noul": 0.22
+      }
+    },
+    "OR-0091": {
+      "overfit_risk": {
+        "type": "score",
+        "score": 4.73,
+        "confidence": 0.84,
+        "probabilities": {
+          "0": 0,
+          "1": 0,
+          "2": 0,
+          "3": 0.01,
+          "4": 0.25,
+          "5": 0.74,
+          "6": 0
+        }
+      },
+      "symptom": {
+        "type": "choice",
+        "choice": "PARAMETER_CLIFF",
+        "confidence": 0.45,
+        "probabilities": {
+          "PARAMETER_CLIFF": 0.54,
+          "FEW_TRADES": 0.01,
+          "LOOK_AHEAD": 0.01,
+          "SURVIVORSHIP": 0.03,
+          "COSTS_OMITTED": 0.4,
+          "NONE": 0.01
+        }
+      },
+      "trust": {
+        "type": "score",
+        "score": 1.15,
+        "confidence": 0.9,
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.83,
+          "2": 0.16,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "worth_forward_testing": {
+        "type": "noul",
+        "noul": 0.76
+      },
+      "curve_too_smooth": {
+        "type": "noul",
+        "noul": 0.57
+      }
+    },
+    "OR-0092": {
+      "overfit_risk": {
+        "type": "score",
+        "score": 4.61,
+        "confidence": 0.77,
+        "probabilities": {
+          "0": 0,
+          "1": 0,
+          "2": 0,
+          "3": 0.02,
+          "4": 0.35,
+          "5": 0.63,
+          "6": 0
+        }
+      },
+      "symptom": {
+        "type": "choice",
+        "choice": "LOOK_AHEAD",
+        "confidence": 0.99,
+        "probabilities": {
+          "PARAMETER_CLIFF": 0.01,
+          "FEW_TRADES": 0,
+          "LOOK_AHEAD": 0.99,
+          "SURVIVORSHIP": 0,
+          "COSTS_OMITTED": 0,
+          "NONE": 0
+        }
+      },
+      "trust": {
+        "type": "score",
+        "score": 1.04,
+        "confidence": 0.95,
+        "probabilities": {
+          "0": 0.02,
+          "1": 0.92,
+          "2": 0.06,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "worth_forward_testing": {
+        "type": "noul",
+        "noul": 0.82
+      },
+      "curve_too_smooth": {
+        "type": "noul",
+        "noul": 0.98
+      }
+    },
+    "OR-0093": {
+      "overfit_risk": {
+        "type": "score",
+        "score": 4.6,
+        "confidence": 0.76,
+        "probabilities": {
+          "0": 0,
+          "1": 0,
+          "2": 0,
+          "3": 0.01,
+          "4": 0.39,
+          "5": 0.59,
+          "6": 0.01
+        }
+      },
+      "symptom": {
+        "type": "choice",
+        "choice": "LOOK_AHEAD",
+        "confidence": 0.99,
+        "probabilities": {
+          "PARAMETER_CLIFF": 0.01,
+          "FEW_TRADES": 0,
+          "LOOK_AHEAD": 0.99,
+          "SURVIVORSHIP": 0,
+          "COSTS_OMITTED": 0,
+          "NONE": 0
+        }
+      },
+      "trust": {
+        "type": "score",
+        "score": 1.04,
+        "confidence": 0.97,
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.94,
+          "2": 0.05,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "worth_forward_testing": {
+        "type": "noul",
+        "noul": 0.81
+      },
+      "curve_too_smooth": {
+        "type": "noul",
+        "noul": 1
+      }
+    },
+    "OR-0094": {
+      "overfit_risk": {
+        "type": "score",
+        "score": 4.77,
+        "confidence": 0.87,
+        "probabilities": {
+          "0": 0,
+          "1": 0,
+          "2": 0,
+          "3": 0.01,
+          "4": 0.21,
+          "5": 0.78,
+          "6": 0
+        }
+      },
+      "symptom": {
+        "type": "choice",
+        "choice": "LOOK_AHEAD",
+        "confidence": 0.99,
+        "probabilities": {
+          "PARAMETER_CLIFF": 0.01,
+          "FEW_TRADES": 0,
+          "LOOK_AHEAD": 0.99,
+          "SURVIVORSHIP": 0,
+          "COSTS_OMITTED": 0,
+          "NONE": 0
+        }
+      },
+      "trust": {
+        "type": "score",
+        "score": 1.01,
+        "confidence": 0.97,
+        "probabilities": {
+          "0": 0.02,
+          "1": 0.95,
+          "2": 0.03,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "worth_forward_testing": {
+        "type": "noul",
+        "noul": 0.82
+      },
+      "curve_too_smooth": {
+        "type": "noul",
+        "noul": 0.98
+      }
+    },
+    "OR-0095": {
+      "overfit_risk": {
+        "type": "score",
+        "score": 4.46,
+        "confidence": 0.72,
+        "probabilities": {
+          "0": 0,
+          "1": 0,
+          "2": 0,
+          "3": 0.01,
+          "4": 0.52,
+          "5": 0.47,
+          "6": 0
+        }
+      },
+      "symptom": {
+        "type": "choice",
+        "choice": "COSTS_OMITTED",
+        "confidence": 0.75,
+        "probabilities": {
+          "PARAMETER_CLIFF": 0.13,
+          "FEW_TRADES": 0.01,
+          "LOOK_AHEAD": 0.02,
+          "SURVIVORSHIP": 0.03,
+          "COSTS_OMITTED": 0.79,
+          "NONE": 0.02
+        }
+      },
+      "trust": {
+        "type": "score",
+        "score": 1.16,
+        "confidence": 0.9,
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.83,
+          "2": 0.15,
+          "3": 0.01,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "worth_forward_testing": {
+        "type": "noul",
+        "noul": 0.78
+      },
+      "curve_too_smooth": {
+        "type": "noul",
+        "noul": 0.53
+      }
+    },
+    "OR-0096": {
+      "overfit_risk": {
+        "type": "score",
+        "score": 4.01,
+        "confidence": 0.76,
+        "probabilities": {
+          "0": 0.01,
+          "1": 0,
+          "2": 0.02,
+          "3": 0.12,
+          "4": 0.64,
+          "5": 0.21,
+          "6": 0
+        }
+      },
+      "symptom": {
+        "type": "choice",
+        "choice": "NONE",
+        "confidence": 0.45,
+        "probabilities": {
+          "PARAMETER_CLIFF": 0.29,
+          "FEW_TRADES": 0.07,
+          "LOOK_AHEAD": 0.04,
+          "SURVIVORSHIP": 0.04,
+          "COSTS_OMITTED": 0.02,
+          "NONE": 0.54
+        }
+      },
+      "trust": {
+        "type": "score",
+        "score": 1.75,
+        "confidence": 0.71,
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.35,
+          "2": 0.53,
+          "3": 0.1,
+          "4": 0.01,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "worth_forward_testing": {
+        "type": "noul",
+        "noul": 0.8
+      },
+      "curve_too_smooth": {
+        "type": "noul",
+        "noul": 0.01
+      }
+    },
+    "OR-0097": {
+      "overfit_risk": {
+        "type": "score",
+        "score": 4.13,
+        "confidence": 0.84,
+        "probabilities": {
+          "0": 0,
+          "1": 0,
+          "2": 0.01,
+          "3": 0.05,
+          "4": 0.74,
+          "5": 0.2,
+          "6": 0
+        }
+      },
+      "symptom": {
+        "type": "choice",
+        "choice": "NONE",
+        "confidence": 0.47,
+        "probabilities": {
+          "PARAMETER_CLIFF": 0.34,
+          "FEW_TRADES": 0.04,
+          "LOOK_AHEAD": 0.02,
+          "SURVIVORSHIP": 0.02,
+          "COSTS_OMITTED": 0.02,
+          "NONE": 0.56
+        }
+      },
+      "trust": {
+        "type": "score",
+        "score": 1.75,
+        "confidence": 0.76,
+        "probabilities": {
+          "0": 0,
+          "1": 0.33,
+          "2": 0.6,
+          "3": 0.06,
+          "4": 0.01,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "worth_forward_testing": {
+        "type": "noul",
+        "noul": 0.77
+      },
+      "curve_too_smooth": {
+        "type": "noul",
+        "noul": 0.12
+      }
+    },
+    "OR-0098": {
+      "overfit_risk": {
+        "type": "score",
+        "score": 4.99,
+        "confidence": 0.99,
+        "probabilities": {
+          "0": 0,
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0.01,
+          "5": 0.99,
+          "6": 0
+        }
+      },
+      "symptom": {
+        "type": "choice",
+        "choice": "PARAMETER_CLIFF",
+        "confidence": 1,
+        "probabilities": {
+          "PARAMETER_CLIFF": 1,
+          "FEW_TRADES": 0,
+          "LOOK_AHEAD": 0,
+          "SURVIVORSHIP": 0,
+          "COSTS_OMITTED": 0,
+          "NONE": 0
+        }
+      },
+      "trust": {
+        "type": "score",
+        "score": 1.02,
+        "confidence": 0.98,
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.96,
+          "2": 0.03,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "worth_forward_testing": {
+        "type": "noul",
+        "noul": 0.75
+      },
+      "curve_too_smooth": {
+        "type": "noul",
+        "noul": 0.99
+      }
+    },
+    "OR-0099": {
+      "overfit_risk": {
+        "type": "score",
+        "score": 4.37,
+        "confidence": 0.74,
+        "probabilities": {
+          "0": 0,
+          "1": 0.01,
+          "2": 0,
+          "3": 0.01,
+          "4": 0.57,
+          "5": 0.41,
+          "6": 0
+        }
+      },
+      "symptom": {
+        "type": "choice",
+        "choice": "COSTS_OMITTED",
+        "confidence": 0.82,
+        "probabilities": {
+          "PARAMETER_CLIFF": 0.1,
+          "FEW_TRADES": 0.01,
+          "LOOK_AHEAD": 0.01,
+          "SURVIVORSHIP": 0.02,
+          "COSTS_OMITTED": 0.85,
+          "NONE": 0.01
+        }
+      },
+      "trust": {
+        "type": "score",
+        "score": 1.15,
+        "confidence": 0.9,
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.83,
+          "2": 0.16,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "worth_forward_testing": {
+        "type": "noul",
+        "noul": 0.8
+      },
+      "curve_too_smooth": {
+        "type": "noul",
+        "noul": 0.61
+      }
+    },
+    "OR-0100": {
+      "overfit_risk": {
+        "type": "score",
+        "score": 3.89,
+        "confidence": 0.7,
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.01,
+          "2": 0.04,
+          "3": 0.16,
+          "4": 0.58,
+          "5": 0.2,
+          "6": 0
+        }
+      },
+      "symptom": {
+        "type": "choice",
+        "choice": "NONE",
+        "confidence": 0.32,
+        "probabilities": {
+          "PARAMETER_CLIFF": 0.18,
+          "FEW_TRADES": 0.24,
+          "LOOK_AHEAD": 0.09,
+          "SURVIVORSHIP": 0.04,
+          "COSTS_OMITTED": 0.02,
+          "NONE": 0.43
+        }
+      },
+      "trust": {
+        "type": "score",
+        "score": 1.75,
+        "confidence": 0.69,
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.37,
+          "2": 0.49,
+          "3": 0.12,
+          "4": 0.01,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "worth_forward_testing": {
+        "type": "noul",
+        "noul": 0.78
+      },
+      "curve_too_smooth": {
+        "type": "noul",
+        "noul": 0.12
+      }
+    },
+    "OR-0101": {
+      "overfit_risk": {
+        "type": "score",
+        "score": 3.92,
+        "confidence": 0.7,
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.01,
+          "2": 0.04,
+          "3": 0.15,
+          "4": 0.57,
+          "5": 0.22,
+          "6": 0
+        }
+      },
+      "symptom": {
+        "type": "choice",
+        "choice": "NONE",
+        "confidence": 0.28,
+        "probabilities": {
+          "PARAMETER_CLIFF": 0.24,
+          "FEW_TRADES": 0.09,
+          "LOOK_AHEAD": 0.16,
+          "SURVIVORSHIP": 0.07,
+          "COSTS_OMITTED": 0.04,
+          "NONE": 0.4
+        }
+      },
+      "trust": {
+        "type": "score",
+        "score": 2.01,
+        "confidence": 0.59,
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.33,
+          "2": 0.37,
+          "3": 0.23,
+          "4": 0.05,
+          "5": 0.01,
+          "6": 0
+        }
+      },
+      "worth_forward_testing": {
+        "type": "noul",
+        "noul": 0.79
+      },
+      "curve_too_smooth": {
+        "type": "noul",
+        "noul": 0.08
+      }
+    },
+    "OR-0102": {
+      "overfit_risk": {
+        "type": "score",
+        "score": 4.64,
+        "confidence": 0.79,
+        "probabilities": {
+          "0": 0,
+          "1": 0,
+          "2": 0,
+          "3": 0.02,
+          "4": 0.32,
+          "5": 0.66,
+          "6": 0
+        }
+      },
+      "symptom": {
+        "type": "choice",
+        "choice": "LOOK_AHEAD",
+        "confidence": 0.99,
+        "probabilities": {
+          "PARAMETER_CLIFF": 0,
+          "FEW_TRADES": 0,
+          "LOOK_AHEAD": 0.99,
+          "SURVIVORSHIP": 0,
+          "COSTS_OMITTED": 0,
+          "NONE": 0.01
+        }
+      },
+      "trust": {
+        "type": "score",
+        "score": 1.02,
+        "confidence": 0.95,
+        "probabilities": {
+          "0": 0.03,
+          "1": 0.92,
+          "2": 0.05,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "worth_forward_testing": {
+        "type": "noul",
+        "noul": 0.77
+      },
+      "curve_too_smooth": {
+        "type": "noul",
+        "noul": 1
+      }
+    },
+    "OR-0103": {
+      "overfit_risk": {
+        "type": "score",
+        "score": 3.88,
+        "confidence": 0.9,
+        "probabilities": {
+          "0": 0,
+          "1": 0,
+          "2": 0.02,
+          "3": 0.11,
+          "4": 0.84,
+          "5": 0.03,
+          "6": 0
+        }
+      },
+      "symptom": {
+        "type": "choice",
+        "choice": "NONE",
+        "confidence": 0.59,
+        "probabilities": {
+          "PARAMETER_CLIFF": 0.02,
+          "FEW_TRADES": 0.25,
+          "LOOK_AHEAD": 0.02,
+          "SURVIVORSHIP": 0.02,
+          "COSTS_OMITTED": 0.03,
+          "NONE": 0.66
+        }
+      },
+      "trust": {
+        "type": "score",
+        "score": 2.35,
+        "confidence": 0.68,
+        "probabilities": {
+          "0": 0,
+          "1": 0.1,
+          "2": 0.47,
+          "3": 0.41,
+          "4": 0.02,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "worth_forward_testing": {
+        "type": "noul",
+        "noul": 0.8
+      },
+      "curve_too_smooth": {
+        "type": "noul",
+        "noul": 0.09
+      }
+    },
+    "OR-0104": {
+      "overfit_risk": {
+        "type": "score",
+        "score": 4.07,
+        "confidence": 0.89,
+        "probabilities": {
+          "0": 0,
+          "1": 0,
+          "2": 0.01,
+          "3": 0.04,
+          "4": 0.82,
+          "5": 0.13,
+          "6": 0
+        }
+      },
+      "symptom": {
+        "type": "choice",
+        "choice": "FEW_TRADES",
+        "confidence": 0.3,
+        "probabilities": {
+          "PARAMETER_CLIFF": 0.11,
+          "FEW_TRADES": 0.42,
+          "LOOK_AHEAD": 0.05,
+          "SURVIVORSHIP": 0.04,
+          "COSTS_OMITTED": 0.03,
+          "NONE": 0.35
+        }
+      },
+      "trust": {
+        "type": "score",
+        "score": 1.61,
+        "confidence": 0.69,
+        "probabilities": {
+          "0": 0,
+          "1": 0.46,
+          "2": 0.47,
+          "3": 0.07,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "worth_forward_testing": {
+        "type": "noul",
+        "noul": 0.79
+      },
+      "curve_too_smooth": {
+        "type": "noul",
+        "noul": 0.13
+      }
+    },
+    "OR-0105": {
+      "overfit_risk": {
+        "type": "score",
+        "score": 4.25,
+        "confidence": 0.77,
+        "probabilities": {
+          "0": 0,
+          "1": 0,
+          "2": 0.01,
+          "3": 0.05,
+          "4": 0.62,
+          "5": 0.32,
+          "6": 0
+        }
+      },
+      "symptom": {
+        "type": "choice",
+        "choice": "FEW_TRADES",
+        "confidence": 0.69,
+        "probabilities": {
+          "PARAMETER_CLIFF": 0.03,
+          "FEW_TRADES": 0.74,
+          "LOOK_AHEAD": 0.02,
+          "SURVIVORSHIP": 0.02,
+          "COSTS_OMITTED": 0.01,
+          "NONE": 0.18
+        }
+      },
+      "trust": {
+        "type": "score",
+        "score": 1.9,
+        "confidence": 0.7,
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.29,
+          "2": 0.5,
+          "3": 0.19,
+          "4": 0.01,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "worth_forward_testing": {
+        "type": "noul",
+        "noul": 0.81
+      },
+      "curve_too_smooth": {
+        "type": "noul",
+        "noul": 0.19
+      }
+    },
+    "OR-0106": {
+      "overfit_risk": {
+        "type": "score",
+        "score": 4.85,
+        "confidence": 0.9,
+        "probabilities": {
+          "0": 0,
+          "1": 0,
+          "2": 0,
+          "3": 0.02,
+          "4": 0.12,
+          "5": 0.85,
+          "6": 0.01
+        }
+      },
+      "symptom": {
+        "type": "choice",
+        "choice": "FEW_TRADES",
+        "confidence": 0.93,
+        "probabilities": {
+          "PARAMETER_CLIFF": 0.02,
+          "FEW_TRADES": 0.94,
+          "LOOK_AHEAD": 0.01,
+          "SURVIVORSHIP": 0.01,
+          "COSTS_OMITTED": 0.01,
+          "NONE": 0.01
+        }
+      },
+      "trust": {
+        "type": "score",
+        "score": 1.1,
+        "confidence": 0.92,
+        "probabilities": {
+          "0": 0.02,
+          "1": 0.87,
+          "2": 0.1,
+          "3": 0.01,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "worth_forward_testing": {
+        "type": "noul",
+        "noul": 0.74
+      },
+      "curve_too_smooth": {
+        "type": "noul",
+        "noul": 0.99
+      }
+    },
+    "OR-0107": {
+      "overfit_risk": {
+        "type": "score",
+        "score": 4.75,
+        "confidence": 0.85,
+        "probabilities": {
+          "0": 0,
+          "1": 0,
+          "2": 0,
+          "3": 0.01,
+          "4": 0.23,
+          "5": 0.76,
+          "6": 0
+        }
+      },
+      "symptom": {
+        "type": "choice",
+        "choice": "LOOK_AHEAD",
+        "confidence": 0.99,
+        "probabilities": {
+          "PARAMETER_CLIFF": 0.01,
+          "FEW_TRADES": 0,
+          "LOOK_AHEAD": 0.99,
+          "SURVIVORSHIP": 0,
+          "COSTS_OMITTED": 0,
+          "NONE": 0
+        }
+      },
+      "trust": {
+        "type": "score",
+        "score": 1.06,
+        "confidence": 0.94,
+        "probabilities": {
+          "0": 0.02,
+          "1": 0.9,
+          "2": 0.08,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "worth_forward_testing": {
+        "type": "noul",
+        "noul": 0.78
+      },
+      "curve_too_smooth": {
+        "type": "noul",
+        "noul": 0.99
+      }
+    },
+    "OR-0108": {
+      "overfit_risk": {
+        "type": "score",
+        "score": 3.72,
+        "confidence": 0.67,
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.01,
+          "2": 0.06,
+          "3": 0.23,
+          "4": 0.55,
+          "5": 0.14,
+          "6": 0
+        }
+      },
+      "symptom": {
+        "type": "choice",
+        "choice": "NONE",
+        "confidence": 0.4,
+        "probabilities": {
+          "PARAMETER_CLIFF": 0.08,
+          "FEW_TRADES": 0.19,
+          "LOOK_AHEAD": 0.13,
+          "SURVIVORSHIP": 0.06,
+          "COSTS_OMITTED": 0.04,
+          "NONE": 0.5
+        }
+      },
+      "trust": {
+        "type": "score",
+        "score": 1.6,
+        "confidence": 0.62,
+        "probabilities": {
+          "0": 0.03,
+          "1": 0.49,
+          "2": 0.35,
+          "3": 0.11,
+          "4": 0.02,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "worth_forward_testing": {
+        "type": "noul",
+        "noul": 0.78
+      },
+      "curve_too_smooth": {
+        "type": "noul",
+        "noul": 0.79
+      }
+    },
+    "OR-0109": {
+      "overfit_risk": {
+        "type": "score",
+        "score": 4.04,
+        "confidence": 0.85,
+        "probabilities": {
+          "0": 0,
+          "1": 0,
+          "2": 0.01,
+          "3": 0.09,
+          "4": 0.75,
+          "5": 0.15,
+          "6": 0
+        }
+      },
+      "symptom": {
+        "type": "choice",
+        "choice": "FEW_TRADES",
+        "confidence": 0.42,
+        "probabilities": {
+          "PARAMETER_CLIFF": 0.04,
+          "FEW_TRADES": 0.52,
+          "LOOK_AHEAD": 0.04,
+          "SURVIVORSHIP": 0.02,
+          "COSTS_OMITTED": 0.02,
+          "NONE": 0.36
+        }
+      },
+      "trust": {
+        "type": "score",
+        "score": 2.19,
+        "confidence": 0.74,
+        "probabilities": {
+          "0": 0,
+          "1": 0.13,
+          "2": 0.58,
+          "3": 0.26,
+          "4": 0.03,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "worth_forward_testing": {
+        "type": "noul",
+        "noul": 0.78
+      },
+      "curve_too_smooth": {
+        "type": "noul",
+        "noul": 0.1
+      }
+    },
+    "OR-0110": {
+      "overfit_risk": {
+        "type": "score",
+        "score": 4.86,
+        "confidence": 0.91,
+        "probabilities": {
+          "0": 0,
+          "1": 0,
+          "2": 0,
+          "3": 0.01,
+          "4": 0.13,
+          "5": 0.85,
+          "6": 0.01
+        }
+      },
+      "symptom": {
+        "type": "choice",
+        "choice": "LOOK_AHEAD",
+        "confidence": 1,
+        "probabilities": {
+          "PARAMETER_CLIFF": 0,
+          "FEW_TRADES": 0,
+          "LOOK_AHEAD": 1,
+          "SURVIVORSHIP": 0,
+          "COSTS_OMITTED": 0,
+          "NONE": 0
+        }
+      },
+      "trust": {
+        "type": "score",
+        "score": 1.01,
+        "confidence": 0.97,
+        "probabilities": {
+          "0": 0.02,
+          "1": 0.95,
+          "2": 0.03,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "worth_forward_testing": {
+        "type": "noul",
+        "noul": 0.82
+      },
+      "curve_too_smooth": {
+        "type": "noul",
+        "noul": 0.97
+      }
+    },
+    "OR-0111": {
+      "overfit_risk": {
+        "type": "score",
+        "score": 4.89,
+        "confidence": 0.92,
+        "probabilities": {
+          "0": 0,
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0.12,
+          "5": 0.87,
+          "6": 0.01
+        }
+      },
+      "symptom": {
+        "type": "choice",
+        "choice": "SURVIVORSHIP",
+        "confidence": 1,
+        "probabilities": {
+          "PARAMETER_CLIFF": 0,
+          "FEW_TRADES": 0,
+          "LOOK_AHEAD": 0,
+          "SURVIVORSHIP": 1,
+          "COSTS_OMITTED": 0,
+          "NONE": 0
+        }
+      },
+      "trust": {
+        "type": "score",
+        "score": 1.02,
+        "confidence": 0.98,
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.96,
+          "2": 0.03,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "worth_forward_testing": {
+        "type": "noul",
+        "noul": 0.77
+      },
+      "curve_too_smooth": {
+        "type": "noul",
+        "noul": 0.96
+      }
+    },
+    "OR-0112": {
+      "overfit_risk": {
+        "type": "score",
+        "score": 4.65,
+        "confidence": 0.8,
+        "probabilities": {
+          "0": 0,
+          "1": 0,
+          "2": 0,
+          "3": 0.01,
+          "4": 0.33,
+          "5": 0.66,
+          "6": 0
+        }
+      },
+      "symptom": {
+        "type": "choice",
+        "choice": "LOOK_AHEAD",
+        "confidence": 0.99,
+        "probabilities": {
+          "PARAMETER_CLIFF": 0,
+          "FEW_TRADES": 0,
+          "LOOK_AHEAD": 0.99,
+          "SURVIVORSHIP": 0.01,
+          "COSTS_OMITTED": 0,
+          "NONE": 0
+        }
+      },
+      "trust": {
+        "type": "score",
+        "score": 1.06,
+        "confidence": 0.94,
+        "probabilities": {
+          "0": 0.02,
+          "1": 0.9,
+          "2": 0.08,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "worth_forward_testing": {
+        "type": "noul",
+        "noul": 0.82
+      },
+      "curve_too_smooth": {
+        "type": "noul",
+        "noul": 0.97
+      }
+    },
+    "OR-0113": {
+      "overfit_risk": {
+        "type": "score",
+        "score": 5,
+        "confidence": 0.99,
+        "probabilities": {
+          "0": 0,
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0.01,
+          "5": 0.98,
+          "6": 0.01
+        }
+      },
+      "symptom": {
+        "type": "choice",
+        "choice": "PARAMETER_CLIFF",
+        "confidence": 0.99,
+        "probabilities": {
+          "PARAMETER_CLIFF": 0.99,
+          "FEW_TRADES": 0.01,
+          "LOOK_AHEAD": 0,
+          "SURVIVORSHIP": 0,
+          "COSTS_OMITTED": 0,
+          "NONE": 0
+        }
+      },
+      "trust": {
+        "type": "score",
+        "score": 1.03,
+        "confidence": 0.97,
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.95,
+          "2": 0.04,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "worth_forward_testing": {
+        "type": "noul",
+        "noul": 0.73
+      },
+      "curve_too_smooth": {
+        "type": "noul",
+        "noul": 1
+      }
+    },
+    "OR-0114": {
+      "overfit_risk": {
+        "type": "score",
+        "score": 4.89,
+        "confidence": 0.92,
+        "probabilities": {
+          "0": 0,
+          "1": 0,
+          "2": 0,
+          "3": 0.02,
+          "4": 0.08,
+          "5": 0.89,
+          "6": 0.01
+        }
+      },
+      "symptom": {
+        "type": "choice",
+        "choice": "FEW_TRADES",
+        "confidence": 0.98,
+        "probabilities": {
+          "PARAMETER_CLIFF": 0.01,
+          "FEW_TRADES": 0.98,
+          "LOOK_AHEAD": 0.01,
+          "SURVIVORSHIP": 0,
+          "COSTS_OMITTED": 0,
+          "NONE": 0
+        }
+      },
+      "trust": {
+        "type": "score",
+        "score": 1.04,
+        "confidence": 0.97,
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.94,
+          "2": 0.05,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "worth_forward_testing": {
+        "type": "noul",
+        "noul": 0.75
+      },
+      "curve_too_smooth": {
+        "type": "noul",
+        "noul": 0.99
+      }
+    },
+    "OR-0115": {
+      "overfit_risk": {
+        "type": "score",
+        "score": 4.99,
+        "confidence": 0.99,
+        "probabilities": {
+          "0": 0,
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0.01,
+          "5": 0.99,
+          "6": 0
+        }
+      },
+      "symptom": {
+        "type": "choice",
+        "choice": "PARAMETER_CLIFF",
+        "confidence": 1,
+        "probabilities": {
+          "PARAMETER_CLIFF": 1,
+          "FEW_TRADES": 0,
+          "LOOK_AHEAD": 0,
+          "SURVIVORSHIP": 0,
+          "COSTS_OMITTED": 0,
+          "NONE": 0
+        }
+      },
+      "trust": {
+        "type": "score",
+        "score": 1,
+        "confidence": 0.99,
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.98,
+          "2": 0.01,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "worth_forward_testing": {
+        "type": "noul",
+        "noul": 0.7
+      },
+      "curve_too_smooth": {
+        "type": "noul",
+        "noul": 0.99
+      }
+    },
+    "OR-0116": {
+      "overfit_risk": {
+        "type": "score",
+        "score": 4.32,
+        "confidence": 0.76,
+        "probabilities": {
+          "0": 0,
+          "1": 0,
+          "2": 0.01,
+          "3": 0.03,
+          "4": 0.59,
+          "5": 0.37,
+          "6": 0
+        }
+      },
+      "symptom": {
+        "type": "choice",
+        "choice": "PARAMETER_CLIFF",
+        "confidence": 0.45,
+        "probabilities": {
+          "PARAMETER_CLIFF": 0.54,
+          "FEW_TRADES": 0.02,
+          "LOOK_AHEAD": 0.05,
+          "SURVIVORSHIP": 0.05,
+          "COSTS_OMITTED": 0.01,
+          "NONE": 0.33
+        }
+      },
+      "trust": {
+        "type": "score",
+        "score": 1.57,
+        "confidence": 0.67,
+        "probabilities": {
+          "0": 0,
+          "1": 0.49,
+          "2": 0.46,
+          "3": 0.04,
+          "4": 0.01,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "worth_forward_testing": {
+        "type": "noul",
+        "noul": 0.77
+      },
+      "curve_too_smooth": {
+        "type": "noul",
+        "noul": 0.27
+      }
+    },
+    "OR-0117": {
+      "overfit_risk": {
+        "type": "score",
+        "score": 5,
+        "confidence": 0.99,
+        "probabilities": {
+          "0": 0,
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0.01,
+          "5": 0.98,
+          "6": 0.01
+        }
+      },
+      "symptom": {
+        "type": "choice",
+        "choice": "PARAMETER_CLIFF",
+        "confidence": 1,
+        "probabilities": {
+          "PARAMETER_CLIFF": 1,
+          "FEW_TRADES": 0,
+          "LOOK_AHEAD": 0,
+          "SURVIVORSHIP": 0,
+          "COSTS_OMITTED": 0,
+          "NONE": 0
+        }
+      },
+      "trust": {
+        "type": "score",
+        "score": 1.01,
+        "confidence": 0.98,
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.97,
+          "2": 0.02,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "worth_forward_testing": {
+        "type": "noul",
+        "noul": 0.68
+      },
+      "curve_too_smooth": {
+        "type": "noul",
+        "noul": 0.97
+      }
+    },
+    "OR-0118": {
+      "overfit_risk": {
+        "type": "score",
+        "score": 3.78,
+        "confidence": 0.79,
+        "probabilities": {
+          "0": 0,
+          "1": 0.01,
+          "2": 0.03,
+          "3": 0.2,
+          "4": 0.69,
+          "5": 0.07,
+          "6": 0
+        }
+      },
+      "symptom": {
+        "type": "choice",
+        "choice": "NONE",
+        "confidence": 0.58,
+        "probabilities": {
+          "PARAMETER_CLIFF": 0.17,
+          "FEW_TRADES": 0.11,
+          "LOOK_AHEAD": 0.03,
+          "SURVIVORSHIP": 0.02,
+          "COSTS_OMITTED": 0.02,
+          "NONE": 0.65
+        }
+      },
+      "trust": {
+        "type": "score",
+        "score": 2.4,
+        "confidence": 0.64,
+        "probabilities": {
+          "0": 0,
+          "1": 0.11,
+          "2": 0.47,
+          "3": 0.34,
+          "4": 0.07,
+          "5": 0.01,
+          "6": 0
+        }
+      },
+      "worth_forward_testing": {
+        "type": "noul",
+        "noul": 0.78
+      },
+      "curve_too_smooth": {
+        "type": "noul",
+        "noul": 0.13
+      }
+    },
+    "OR-0119": {
+      "overfit_risk": {
+        "type": "score",
+        "score": 4.05,
+        "confidence": 0.73,
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.01,
+          "2": 0.02,
+          "3": 0.1,
+          "4": 0.6,
+          "5": 0.26,
+          "6": 0
+        }
+      },
+      "symptom": {
+        "type": "choice",
+        "choice": "FEW_TRADES",
+        "confidence": 0.5,
+        "probabilities": {
+          "PARAMETER_CLIFF": 0.07,
+          "FEW_TRADES": 0.58,
+          "LOOK_AHEAD": 0.08,
+          "SURVIVORSHIP": 0.06,
+          "COSTS_OMITTED": 0.03,
+          "NONE": 0.18
+        }
+      },
+      "trust": {
+        "type": "score",
+        "score": 1.71,
+        "confidence": 0.67,
+        "probabilities": {
+          "0": 0,
+          "1": 0.43,
+          "2": 0.44,
+          "3": 0.12,
+          "4": 0.01,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "worth_forward_testing": {
+        "type": "noul",
+        "noul": 0.8
+      },
+      "curve_too_smooth": {
+        "type": "noul",
+        "noul": 0.09
+      }
+    },
+    "OR-0120": {
+      "overfit_risk": {
+        "type": "score",
+        "score": 4.82,
+        "confidence": 0.88,
+        "probabilities": {
+          "0": 0,
+          "1": 0,
+          "2": 0,
+          "3": 0.01,
+          "4": 0.17,
+          "5": 0.81,
+          "6": 0.01
+        }
+      },
+      "symptom": {
+        "type": "choice",
+        "choice": "FEW_TRADES",
+        "confidence": 0.98,
+        "probabilities": {
+          "PARAMETER_CLIFF": 0.02,
+          "FEW_TRADES": 0.98,
+          "LOOK_AHEAD": 0,
+          "SURVIVORSHIP": 0,
+          "COSTS_OMITTED": 0,
+          "NONE": 0
+        }
+      },
+      "trust": {
+        "type": "score",
+        "score": 1.07,
+        "confidence": 0.96,
+        "probabilities": {
+          "0": 0,
+          "1": 0.93,
+          "2": 0.07,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "worth_forward_testing": {
+        "type": "noul",
+        "noul": 0.78
+      },
+      "curve_too_smooth": {
+        "type": "noul",
+        "noul": 0.98
+      }
+    },
+    "OR-0121": {
+      "overfit_risk": {
+        "type": "score",
+        "score": 4.25,
+        "confidence": 0.74,
+        "probabilities": {
+          "0": 0,
+          "1": 0,
+          "2": 0.01,
+          "3": 0.08,
+          "4": 0.56,
+          "5": 0.35,
+          "6": 0
+        }
+      },
+      "symptom": {
+        "type": "choice",
+        "choice": "NONE",
+        "confidence": 0.29,
+        "probabilities": {
+          "PARAMETER_CLIFF": 0.31,
+          "FEW_TRADES": 0.07,
+          "LOOK_AHEAD": 0.11,
+          "SURVIVORSHIP": 0.07,
+          "COSTS_OMITTED": 0.03,
+          "NONE": 0.41
+        }
+      },
+      "trust": {
+        "type": "score",
+        "score": 1.94,
+        "confidence": 0.65,
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.31,
+          "2": 0.45,
+          "3": 0.19,
+          "4": 0.04,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "worth_forward_testing": {
+        "type": "noul",
+        "noul": 0.83
+      },
+      "curve_too_smooth": {
+        "type": "noul",
+        "noul": 0.77
+      }
+    },
+    "OR-0122": {
+      "overfit_risk": {
+        "type": "score",
+        "score": 5,
+        "confidence": 0.99,
+        "probabilities": {
+          "0": 0,
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0.01,
+          "5": 0.98,
+          "6": 0.01
+        }
+      },
+      "symptom": {
+        "type": "choice",
+        "choice": "PARAMETER_CLIFF",
+        "confidence": 1,
+        "probabilities": {
+          "PARAMETER_CLIFF": 1,
+          "FEW_TRADES": 0,
+          "LOOK_AHEAD": 0,
+          "SURVIVORSHIP": 0,
+          "COSTS_OMITTED": 0,
+          "NONE": 0
+        }
+      },
+      "trust": {
+        "type": "score",
+        "score": 0.99,
+        "confidence": 0.98,
+        "probabilities": {
+          "0": 0.02,
+          "1": 0.97,
+          "2": 0.01,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "worth_forward_testing": {
+        "type": "noul",
+        "noul": 0.72
+      },
+      "curve_too_smooth": {
+        "type": "noul",
+        "noul": 0.98
+      }
+    },
+    "OR-0123": {
+      "overfit_risk": {
+        "type": "score",
+        "score": 4.02,
+        "confidence": 0.78,
+        "probabilities": {
+          "0": 0,
+          "1": 0,
+          "2": 0.02,
+          "3": 0.14,
+          "4": 0.64,
+          "5": 0.2,
+          "6": 0
+        }
+      },
+      "symptom": {
+        "type": "choice",
+        "choice": "NONE",
+        "confidence": 0.5,
+        "probabilities": {
+          "PARAMETER_CLIFF": 0.11,
+          "FEW_TRADES": 0.11,
+          "LOOK_AHEAD": 0.13,
+          "SURVIVORSHIP": 0.04,
+          "COSTS_OMITTED": 0.03,
+          "NONE": 0.58
+        }
+      },
+      "trust": {
+        "type": "score",
+        "score": 1.74,
+        "confidence": 0.67,
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.39,
+          "2": 0.46,
+          "3": 0.13,
+          "4": 0.01,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "worth_forward_testing": {
+        "type": "noul",
+        "noul": 0.79
+      },
+      "curve_too_smooth": {
+        "type": "noul",
+        "noul": 0.13
+      }
+    },
+    "OR-0124": {
+      "overfit_risk": {
+        "type": "score",
+        "score": 4.31,
+        "confidence": 0.71,
+        "probabilities": {
+          "0": 0,
+          "1": 0.01,
+          "2": 0.01,
+          "3": 0.04,
+          "4": 0.54,
+          "5": 0.4,
+          "6": 0
+        }
+      },
+      "symptom": {
+        "type": "choice",
+        "choice": "NONE",
+        "confidence": 0.3,
+        "probabilities": {
+          "PARAMETER_CLIFF": 0.19,
+          "FEW_TRADES": 0.28,
+          "LOOK_AHEAD": 0.05,
+          "SURVIVORSHIP": 0.04,
+          "COSTS_OMITTED": 0.02,
+          "NONE": 0.42
+        }
+      },
+      "trust": {
+        "type": "score",
+        "score": 1.73,
+        "confidence": 0.74,
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.34,
+          "2": 0.57,
+          "3": 0.07,
+          "4": 0.01,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "worth_forward_testing": {
+        "type": "noul",
+        "noul": 0.78
+      },
+      "curve_too_smooth": {
+        "type": "noul",
+        "noul": 0.01
+      }
+    },
+    "OR-0125": {
+      "overfit_risk": {
+        "type": "score",
+        "score": 4.91,
+        "confidence": 0.95,
+        "probabilities": {
+          "0": 0,
+          "1": 0,
+          "2": 0,
+          "3": 0.01,
+          "4": 0.07,
+          "5": 0.92,
+          "6": 0
+        }
+      },
+      "symptom": {
+        "type": "choice",
+        "choice": "FEW_TRADES",
+        "confidence": 0.98,
+        "probabilities": {
+          "PARAMETER_CLIFF": 0.01,
+          "FEW_TRADES": 0.98,
+          "LOOK_AHEAD": 0.01,
+          "SURVIVORSHIP": 0,
+          "COSTS_OMITTED": 0,
+          "NONE": 0
+        }
+      },
+      "trust": {
+        "type": "score",
+        "score": 1.1,
+        "confidence": 0.93,
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.89,
+          "2": 0.09,
+          "3": 0.01,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "worth_forward_testing": {
+        "type": "noul",
+        "noul": 0.82
+      },
+      "curve_too_smooth": {
+        "type": "noul",
+        "noul": 0.98
+      }
+    },
+    "OR-0126": {
+      "overfit_risk": {
+        "type": "score",
+        "score": 4.9,
+        "confidence": 0.94,
+        "probabilities": {
+          "0": 0,
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0.1,
+          "5": 0.9,
+          "6": 0
+        }
+      },
+      "symptom": {
+        "type": "choice",
+        "choice": "SURVIVORSHIP",
+        "confidence": 1,
+        "probabilities": {
+          "PARAMETER_CLIFF": 0,
+          "FEW_TRADES": 0,
+          "LOOK_AHEAD": 0,
+          "SURVIVORSHIP": 1,
+          "COSTS_OMITTED": 0,
+          "NONE": 0
+        }
+      },
+      "trust": {
+        "type": "score",
+        "score": 1.02,
+        "confidence": 0.98,
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.96,
+          "2": 0.03,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "worth_forward_testing": {
+        "type": "noul",
+        "noul": 0.78
+      },
+      "curve_too_smooth": {
+        "type": "noul",
+        "noul": 0.71
+      }
+    },
+    "OR-0127": {
+      "overfit_risk": {
+        "type": "score",
+        "score": 3.98,
+        "confidence": 0.85,
+        "probabilities": {
+          "0": 0,
+          "1": 0,
+          "2": 0.01,
+          "3": 0.12,
+          "4": 0.75,
+          "5": 0.12,
+          "6": 0
+        }
+      },
+      "symptom": {
+        "type": "choice",
+        "choice": "NONE",
+        "confidence": 0.35,
+        "probabilities": {
+          "PARAMETER_CLIFF": 0.12,
+          "FEW_TRADES": 0.32,
+          "LOOK_AHEAD": 0.03,
+          "SURVIVORSHIP": 0.04,
+          "COSTS_OMITTED": 0.03,
+          "NONE": 0.46
+        }
+      },
+      "trust": {
+        "type": "score",
+        "score": 2,
+        "confidence": 0.64,
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.29,
+          "2": 0.42,
+          "3": 0.25,
+          "4": 0.03,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "worth_forward_testing": {
+        "type": "noul",
+        "noul": 0.79
+      },
+      "curve_too_smooth": {
+        "type": "noul",
+        "noul": 0.02
+      }
+    },
+    "OR-0128": {
+      "overfit_risk": {
+        "type": "score",
+        "score": 4.99,
+        "confidence": 0.99,
+        "probabilities": {
+          "0": 0,
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0.01,
+          "5": 0.99,
+          "6": 0
+        }
+      },
+      "symptom": {
+        "type": "choice",
+        "choice": "PARAMETER_CLIFF",
+        "confidence": 1,
+        "probabilities": {
+          "PARAMETER_CLIFF": 1,
+          "FEW_TRADES": 0,
+          "LOOK_AHEAD": 0,
+          "SURVIVORSHIP": 0,
+          "COSTS_OMITTED": 0,
+          "NONE": 0
+        }
+      },
+      "trust": {
+        "type": "score",
+        "score": 0.99,
+        "confidence": 0.98,
+        "probabilities": {
+          "0": 0.02,
+          "1": 0.97,
+          "2": 0.01,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "worth_forward_testing": {
+        "type": "noul",
+        "noul": 0.67
+      },
+      "curve_too_smooth": {
+        "type": "noul",
+        "noul": 1
+      }
+    },
+    "OR-0129": {
+      "overfit_risk": {
+        "type": "score",
+        "score": 3.96,
+        "confidence": 0.84,
+        "probabilities": {
+          "0": 0,
+          "1": 0.01,
+          "2": 0.01,
+          "3": 0.11,
+          "4": 0.75,
+          "5": 0.12,
+          "6": 0
+        }
+      },
+      "symptom": {
+        "type": "choice",
+        "choice": "FEW_TRADES",
+        "confidence": 0.58,
+        "probabilities": {
+          "PARAMETER_CLIFF": 0.03,
+          "FEW_TRADES": 0.65,
+          "LOOK_AHEAD": 0.02,
+          "SURVIVORSHIP": 0.02,
+          "COSTS_OMITTED": 0.01,
+          "NONE": 0.27
+        }
+      },
+      "trust": {
+        "type": "score",
+        "score": 2.03,
+        "confidence": 0.71,
+        "probabilities": {
+          "0": 0,
+          "1": 0.23,
+          "2": 0.52,
+          "3": 0.24,
+          "4": 0.01,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "worth_forward_testing": {
+        "type": "noul",
+        "noul": 0.79
+      },
+      "curve_too_smooth": {
+        "type": "noul",
+        "noul": 0.16
+      }
+    },
+    "OR-0130": {
+      "overfit_risk": {
+        "type": "score",
+        "score": 4.98,
+        "confidence": 0.98,
+        "probabilities": {
+          "0": 0,
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0.03,
+          "5": 0.96,
+          "6": 0.01
+        }
+      },
+      "symptom": {
+        "type": "choice",
+        "choice": "PARAMETER_CLIFF",
+        "confidence": 1,
+        "probabilities": {
+          "PARAMETER_CLIFF": 1,
+          "FEW_TRADES": 0,
+          "LOOK_AHEAD": 0,
+          "SURVIVORSHIP": 0,
+          "COSTS_OMITTED": 0,
+          "NONE": 0
+        }
+      },
+      "trust": {
+        "type": "score",
+        "score": 1.01,
+        "confidence": 0.97,
+        "probabilities": {
+          "0": 0.02,
+          "1": 0.95,
+          "2": 0.03,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "worth_forward_testing": {
+        "type": "noul",
+        "noul": 0.74
+      },
+      "curve_too_smooth": {
+        "type": "noul",
+        "noul": 0.96
+      }
+    },
+    "OR-0131": {
+      "overfit_risk": {
+        "type": "score",
+        "score": 4.18,
+        "confidence": 0.71,
+        "probabilities": {
+          "0": 0,
+          "1": 0.01,
+          "2": 0.02,
+          "3": 0.09,
+          "4": 0.54,
+          "5": 0.34,
+          "6": 0
+        }
+      },
+      "symptom": {
+        "type": "choice",
+        "choice": "NONE",
+        "confidence": 0.27,
+        "probabilities": {
+          "PARAMETER_CLIFF": 0.17,
+          "FEW_TRADES": 0.08,
+          "LOOK_AHEAD": 0.22,
+          "SURVIVORSHIP": 0.1,
+          "COSTS_OMITTED": 0.04,
+          "NONE": 0.39
+        }
+      },
+      "trust": {
+        "type": "score",
+        "score": 1.51,
+        "confidence": 0.69,
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.54,
+          "2": 0.38,
+          "3": 0.07,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "worth_forward_testing": {
+        "type": "noul",
+        "noul": 0.78
+      },
+      "curve_too_smooth": {
+        "type": "noul",
+        "noul": 0.12
+      }
+    },
+    "OR-0132": {
+      "overfit_risk": {
+        "type": "score",
+        "score": 4.94,
+        "confidence": 0.95,
+        "probabilities": {
+          "0": 0,
+          "1": 0,
+          "2": 0,
+          "3": 0.01,
+          "4": 0.05,
+          "5": 0.93,
+          "6": 0.01
+        }
+      },
+      "symptom": {
+        "type": "choice",
+        "choice": "FEW_TRADES",
+        "confidence": 1,
+        "probabilities": {
+          "PARAMETER_CLIFF": 0,
+          "FEW_TRADES": 1,
+          "LOOK_AHEAD": 0,
+          "SURVIVORSHIP": 0,
+          "COSTS_OMITTED": 0,
+          "NONE": 0
+        }
+      },
+      "trust": {
+        "type": "score",
+        "score": 1.01,
+        "confidence": 0.98,
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.97,
+          "2": 0.02,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "worth_forward_testing": {
+        "type": "noul",
+        "noul": 0.72
+      },
+      "curve_too_smooth": {
+        "type": "noul",
+        "noul": 0.99
+      }
+    },
+    "OR-0133": {
+      "overfit_risk": {
+        "type": "score",
+        "score": 4.12,
+        "confidence": 0.77,
+        "probabilities": {
+          "0": 0,
+          "1": 0.01,
+          "2": 0.01,
+          "3": 0.09,
+          "4": 0.63,
+          "5": 0.26,
+          "6": 0
+        }
+      },
+      "symptom": {
+        "type": "choice",
+        "choice": "NONE",
+        "confidence": 0.54,
+        "probabilities": {
+          "PARAMETER_CLIFF": 0.12,
+          "FEW_TRADES": 0.09,
+          "LOOK_AHEAD": 0.11,
+          "SURVIVORSHIP": 0.04,
+          "COSTS_OMITTED": 0.02,
+          "NONE": 0.62
+        }
+      },
+      "trust": {
+        "type": "score",
+        "score": 1.89,
+        "confidence": 0.64,
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.34,
+          "2": 0.46,
+          "3": 0.14,
+          "4": 0.04,
+          "5": 0.01,
+          "6": 0
+        }
+      },
+      "worth_forward_testing": {
+        "type": "noul",
+        "noul": 0.78
+      },
+      "curve_too_smooth": {
+        "type": "noul",
+        "noul": 0.22
+      }
+    },
+    "OR-0134": {
+      "overfit_risk": {
+        "type": "score",
+        "score": 4.96,
+        "confidence": 0.98,
+        "probabilities": {
+          "0": 0,
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0.04,
+          "5": 0.96,
+          "6": 0
+        }
+      },
+      "symptom": {
+        "type": "choice",
+        "choice": "SURVIVORSHIP",
+        "confidence": 0.99,
+        "probabilities": {
+          "PARAMETER_CLIFF": 0,
+          "FEW_TRADES": 0,
+          "LOOK_AHEAD": 0.01,
+          "SURVIVORSHIP": 0.99,
+          "COSTS_OMITTED": 0,
+          "NONE": 0
+        }
+      },
+      "trust": {
+        "type": "score",
+        "score": 1.02,
+        "confidence": 0.98,
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.96,
+          "2": 0.03,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "worth_forward_testing": {
+        "type": "noul",
+        "noul": 0.81
+      },
+      "curve_too_smooth": {
+        "type": "noul",
+        "noul": 0.93
+      }
+    },
+    "OR-0135": {
+      "overfit_risk": {
+        "type": "score",
+        "score": 3.61,
+        "confidence": 0.73,
+        "probabilities": {
+          "0": 0,
+          "1": 0.01,
+          "2": 0.06,
+          "3": 0.28,
+          "4": 0.61,
+          "5": 0.04,
+          "6": 0
+        }
+      },
+      "symptom": {
+        "type": "choice",
+        "choice": "NONE",
+        "confidence": 0.69,
+        "probabilities": {
+          "PARAMETER_CLIFF": 0.02,
+          "FEW_TRADES": 0.19,
+          "LOOK_AHEAD": 0.02,
+          "SURVIVORSHIP": 0.01,
+          "COSTS_OMITTED": 0.02,
+          "NONE": 0.74
+        }
+      },
+      "trust": {
+        "type": "score",
+        "score": 2.42,
+        "confidence": 0.53,
+        "probabilities": {
+          "0": 0,
+          "1": 0.18,
+          "2": 0.33,
+          "3": 0.39,
+          "4": 0.09,
+          "5": 0.01,
+          "6": 0
+        }
+      },
+      "worth_forward_testing": {
+        "type": "noul",
+        "noul": 0.82
+      },
+      "curve_too_smooth": {
+        "type": "noul",
+        "noul": 0.11
+      }
+    },
+    "OR-0136": {
+      "overfit_risk": {
+        "type": "score",
+        "score": 4.99,
+        "confidence": 0.99,
+        "probabilities": {
+          "0": 0,
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0.01,
+          "5": 0.99,
+          "6": 0
+        }
+      },
+      "symptom": {
+        "type": "choice",
+        "choice": "PARAMETER_CLIFF",
+        "confidence": 1,
+        "probabilities": {
+          "PARAMETER_CLIFF": 1,
+          "FEW_TRADES": 0,
+          "LOOK_AHEAD": 0,
+          "SURVIVORSHIP": 0,
+          "COSTS_OMITTED": 0,
+          "NONE": 0
+        }
+      },
+      "trust": {
+        "type": "score",
+        "score": 1.02,
+        "confidence": 0.98,
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.96,
+          "2": 0.03,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "worth_forward_testing": {
+        "type": "noul",
+        "noul": 0.72
+      },
+      "curve_too_smooth": {
+        "type": "noul",
+        "noul": 0.99
+      }
+    },
+    "OR-0137": {
+      "overfit_risk": {
+        "type": "score",
+        "score": 4.99,
+        "confidence": 0.98,
+        "probabilities": {
+          "0": 0,
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0.02,
+          "5": 0.97,
+          "6": 0.01
+        }
+      },
+      "symptom": {
+        "type": "choice",
+        "choice": "FEW_TRADES",
+        "confidence": 0.99,
+        "probabilities": {
+          "PARAMETER_CLIFF": 0.01,
+          "FEW_TRADES": 0.99,
+          "LOOK_AHEAD": 0,
+          "SURVIVORSHIP": 0,
+          "COSTS_OMITTED": 0,
+          "NONE": 0
+        }
+      },
+      "trust": {
+        "type": "score",
+        "score": 1.05,
+        "confidence": 0.96,
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.93,
+          "2": 0.06,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "worth_forward_testing": {
+        "type": "noul",
+        "noul": 0.75
+      },
+      "curve_too_smooth": {
+        "type": "noul",
+        "noul": 1
+      }
+    },
+    "OR-0138": {
+      "overfit_risk": {
+        "type": "score",
+        "score": 4.98,
+        "confidence": 0.99,
+        "probabilities": {
+          "0": 0,
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0.02,
+          "5": 0.98,
+          "6": 0
+        }
+      },
+      "symptom": {
+        "type": "choice",
+        "choice": "PARAMETER_CLIFF",
+        "confidence": 1,
+        "probabilities": {
+          "PARAMETER_CLIFF": 1,
+          "FEW_TRADES": 0,
+          "LOOK_AHEAD": 0,
+          "SURVIVORSHIP": 0,
+          "COSTS_OMITTED": 0,
+          "NONE": 0
+        }
+      },
+      "trust": {
+        "type": "score",
+        "score": 0.99,
+        "confidence": 0.98,
+        "probabilities": {
+          "0": 0.02,
+          "1": 0.97,
+          "2": 0.01,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "worth_forward_testing": {
+        "type": "noul",
+        "noul": 0.71
+      },
+      "curve_too_smooth": {
+        "type": "noul",
+        "noul": 0.98
+      }
+    },
+    "OR-0139": {
+      "overfit_risk": {
+        "type": "score",
+        "score": 4.99,
+        "confidence": 0.98,
+        "probabilities": {
+          "0": 0,
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0.02,
+          "5": 0.97,
+          "6": 0.01
+        }
+      },
+      "symptom": {
+        "type": "choice",
+        "choice": "FEW_TRADES",
+        "confidence": 0.98,
+        "probabilities": {
+          "PARAMETER_CLIFF": 0.01,
+          "FEW_TRADES": 0.98,
+          "LOOK_AHEAD": 0,
+          "SURVIVORSHIP": 0,
+          "COSTS_OMITTED": 0,
+          "NONE": 0.01
+        }
+      },
+      "trust": {
+        "type": "score",
+        "score": 1.11,
+        "confidence": 0.92,
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.87,
+          "2": 0.12,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "worth_forward_testing": {
+        "type": "noul",
+        "noul": 0.77
+      },
+      "curve_too_smooth": {
+        "type": "noul",
+        "noul": 1
+      }
+    },
+    "OR-0140": {
+      "overfit_risk": {
+        "type": "score",
+        "score": 4.92,
+        "confidence": 0.94,
+        "probabilities": {
+          "0": 0,
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0.09,
+          "5": 0.9,
+          "6": 0.01
+        }
+      },
+      "symptom": {
+        "type": "choice",
+        "choice": "SURVIVORSHIP",
+        "confidence": 1,
+        "probabilities": {
+          "PARAMETER_CLIFF": 0,
+          "FEW_TRADES": 0,
+          "LOOK_AHEAD": 0,
+          "SURVIVORSHIP": 1,
+          "COSTS_OMITTED": 0,
+          "NONE": 0
+        }
+      },
+      "trust": {
+        "type": "score",
+        "score": 1.01,
+        "confidence": 0.97,
+        "probabilities": {
+          "0": 0.02,
+          "1": 0.95,
+          "2": 0.03,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "worth_forward_testing": {
+        "type": "noul",
+        "noul": 0.84
+      },
+      "curve_too_smooth": {
+        "type": "noul",
+        "noul": 0.88
+      }
+    }
+  }
+}

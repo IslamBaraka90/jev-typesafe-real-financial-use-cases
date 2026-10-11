@@ -1,0 +1,3705 @@
+{
+  "demo": "golden-cross-review",
+  "provider": "openai",
+  "model": "gpt-6-luna",
+  "recordedAt": "2026-10-11",
+  "source": "scripts/record-demo.js",
+  "usage": {
+    "input_tokens": 262694,
+    "output_tokens": 0
+  },
+  "answers": {
+    "GX-0001": {
+      "valid_signal": {
+        "type": "noul",
+        "noul": 0.26
+      },
+      "context": {
+        "type": "choice",
+        "choice": "RANGE_BREAK",
+        "confidence": 0.15,
+        "probabilities": {
+          "ESTABLISHED_TREND": 0.15,
+          "CHOP": 0.08,
+          "POST_GAP": 0.16,
+          "RANGE_BREAK": 0.32,
+          "REVERSAL_RISK": 0.29
+        }
+      },
+      "signal_quality": {
+        "type": "score",
+        "score": 1.77,
+        "confidence": 0.83,
+        "probabilities": {
+          "0": 0,
+          "1": 0.26,
+          "2": 0.71,
+          "3": 0.03,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "decision": {
+        "type": "choice",
+        "choice": "SKIP",
+        "confidence": 1,
+        "probabilities": {
+          "TAKE": 0,
+          "SKIP": 1
+        }
+      },
+      "stop_placement": {
+        "type": "choice",
+        "choice": "BELOW_SWING_LOW",
+        "confidence": 0.96,
+        "probabilities": {
+          "BELOW_SLOW_MA": 0,
+          "BELOW_SWING_LOW": 0.97,
+          "ATR_BASED": 0.02,
+          "NONE": 0.01
+        }
+      }
+    },
+    "GX-0002": {
+      "valid_signal": {
+        "type": "noul",
+        "noul": 0.2
+      },
+      "context": {
+        "type": "choice",
+        "choice": "CHOP",
+        "confidence": 0.46,
+        "probabilities": {
+          "ESTABLISHED_TREND": 0.06,
+          "CHOP": 0.57,
+          "POST_GAP": 0.04,
+          "RANGE_BREAK": 0.22,
+          "REVERSAL_RISK": 0.11
+        }
+      },
+      "signal_quality": {
+        "type": "score",
+        "score": 1.97,
+        "confidence": 0.85,
+        "probabilities": {
+          "0": 0,
+          "1": 0.14,
+          "2": 0.75,
+          "3": 0.11,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "decision": {
+        "type": "choice",
+        "choice": "SKIP",
+        "confidence": 0.96,
+        "probabilities": {
+          "TAKE": 0.02,
+          "SKIP": 0.98
+        }
+      },
+      "stop_placement": {
+        "type": "choice",
+        "choice": "BELOW_SWING_LOW",
+        "confidence": 0.71,
+        "probabilities": {
+          "BELOW_SLOW_MA": 0.17,
+          "BELOW_SWING_LOW": 0.78,
+          "ATR_BASED": 0.02,
+          "NONE": 0.03
+        }
+      }
+    },
+    "GX-0003": {
+      "valid_signal": {
+        "type": "noul",
+        "noul": 0.42
+      },
+      "context": {
+        "type": "choice",
+        "choice": "ESTABLISHED_TREND",
+        "confidence": 0.43,
+        "probabilities": {
+          "ESTABLISHED_TREND": 0.54,
+          "CHOP": 0.07,
+          "POST_GAP": 0.21,
+          "RANGE_BREAK": 0.14,
+          "REVERSAL_RISK": 0.04
+        }
+      },
+      "signal_quality": {
+        "type": "score",
+        "score": 3.01,
+        "confidence": 0.89,
+        "probabilities": {
+          "0": 0,
+          "1": 0,
+          "2": 0.09,
+          "3": 0.81,
+          "4": 0.1,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "decision": {
+        "type": "choice",
+        "choice": "TAKE",
+        "confidence": 0.48,
+        "probabilities": {
+          "TAKE": 0.74,
+          "SKIP": 0.26
+        }
+      },
+      "stop_placement": {
+        "type": "choice",
+        "choice": "BELOW_SWING_LOW",
+        "confidence": 0.29,
+        "probabilities": {
+          "BELOW_SLOW_MA": 0.46,
+          "BELOW_SWING_LOW": 0.47,
+          "ATR_BASED": 0.06,
+          "NONE": 0.01
+        }
+      }
+    },
+    "GX-0004": {
+      "valid_signal": {
+        "type": "noul",
+        "noul": 0.55
+      },
+      "context": {
+        "type": "choice",
+        "choice": "ESTABLISHED_TREND",
+        "confidence": 0.14,
+        "probabilities": {
+          "ESTABLISHED_TREND": 0.31,
+          "CHOP": 0.14,
+          "POST_GAP": 0.19,
+          "RANGE_BREAK": 0.25,
+          "REVERSAL_RISK": 0.11
+        }
+      },
+      "signal_quality": {
+        "type": "score",
+        "score": 2.8,
+        "confidence": 0.84,
+        "probabilities": {
+          "0": 0,
+          "1": 0.01,
+          "2": 0.22,
+          "3": 0.73,
+          "4": 0.04,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "decision": {
+        "type": "choice",
+        "choice": "SKIP",
+        "confidence": 0.32,
+        "probabilities": {
+          "TAKE": 0.34,
+          "SKIP": 0.66
+        }
+      },
+      "stop_placement": {
+        "type": "choice",
+        "choice": "BELOW_SWING_LOW",
+        "confidence": 0.81,
+        "probabilities": {
+          "BELOW_SLOW_MA": 0.06,
+          "BELOW_SWING_LOW": 0.86,
+          "ATR_BASED": 0.07,
+          "NONE": 0.01
+        }
+      }
+    },
+    "GX-0005": {
+      "valid_signal": {
+        "type": "noul",
+        "noul": 0.71
+      },
+      "context": {
+        "type": "choice",
+        "choice": "ESTABLISHED_TREND",
+        "confidence": 0.62,
+        "probabilities": {
+          "ESTABLISHED_TREND": 0.7,
+          "CHOP": 0.06,
+          "POST_GAP": 0.11,
+          "RANGE_BREAK": 0.1,
+          "REVERSAL_RISK": 0.03
+        }
+      },
+      "signal_quality": {
+        "type": "score",
+        "score": 2.96,
+        "confidence": 0.85,
+        "probabilities": {
+          "0": 0,
+          "1": 0.01,
+          "2": 0.13,
+          "3": 0.75,
+          "4": 0.11,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "decision": {
+        "type": "choice",
+        "choice": "TAKE",
+        "confidence": 0.2,
+        "probabilities": {
+          "TAKE": 0.6,
+          "SKIP": 0.4
+        }
+      },
+      "stop_placement": {
+        "type": "choice",
+        "choice": "ATR_BASED",
+        "confidence": 0.15,
+        "probabilities": {
+          "BELOW_SLOW_MA": 0.34,
+          "BELOW_SWING_LOW": 0.28,
+          "ATR_BASED": 0.36,
+          "NONE": 0.02
+        }
+      }
+    },
+    "GX-0006": {
+      "valid_signal": {
+        "type": "noul",
+        "noul": 0.23
+      },
+      "context": {
+        "type": "choice",
+        "choice": "CHOP",
+        "confidence": 0.16,
+        "probabilities": {
+          "ESTABLISHED_TREND": 0.15,
+          "CHOP": 0.33,
+          "POST_GAP": 0.12,
+          "RANGE_BREAK": 0.24,
+          "REVERSAL_RISK": 0.16
+        }
+      },
+      "signal_quality": {
+        "type": "score",
+        "score": 2,
+        "confidence": 0.85,
+        "probabilities": {
+          "0": 0,
+          "1": 0.13,
+          "2": 0.74,
+          "3": 0.13,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "decision": {
+        "type": "choice",
+        "choice": "SKIP",
+        "confidence": 0.96,
+        "probabilities": {
+          "TAKE": 0.02,
+          "SKIP": 0.98
+        }
+      },
+      "stop_placement": {
+        "type": "choice",
+        "choice": "BELOW_SWING_LOW",
+        "confidence": 0.63,
+        "probabilities": {
+          "BELOW_SLOW_MA": 0.04,
+          "BELOW_SWING_LOW": 0.72,
+          "ATR_BASED": 0.12,
+          "NONE": 0.12
+        }
+      }
+    },
+    "GX-0007": {
+      "valid_signal": {
+        "type": "noul",
+        "noul": 0.57
+      },
+      "context": {
+        "type": "choice",
+        "choice": "ESTABLISHED_TREND",
+        "confidence": 0.14,
+        "probabilities": {
+          "ESTABLISHED_TREND": 0.31,
+          "CHOP": 0.14,
+          "POST_GAP": 0.1,
+          "RANGE_BREAK": 0.31,
+          "REVERSAL_RISK": 0.14
+        }
+      },
+      "signal_quality": {
+        "type": "score",
+        "score": 3.18,
+        "confidence": 0.84,
+        "probabilities": {
+          "0": 0,
+          "1": 0,
+          "2": 0.05,
+          "3": 0.73,
+          "4": 0.21,
+          "5": 0.01,
+          "6": 0
+        }
+      },
+      "decision": {
+        "type": "choice",
+        "choice": "TAKE",
+        "confidence": 0.4,
+        "probabilities": {
+          "TAKE": 0.7,
+          "SKIP": 0.3
+        }
+      },
+      "stop_placement": {
+        "type": "choice",
+        "choice": "BELOW_SWING_LOW",
+        "confidence": 0.45,
+        "probabilities": {
+          "BELOW_SLOW_MA": 0.32,
+          "BELOW_SWING_LOW": 0.59,
+          "ATR_BASED": 0.07,
+          "NONE": 0.02
+        }
+      }
+    },
+    "GX-0008": {
+      "valid_signal": {
+        "type": "noul",
+        "noul": 0.29
+      },
+      "context": {
+        "type": "choice",
+        "choice": "ESTABLISHED_TREND",
+        "confidence": 0.21,
+        "probabilities": {
+          "ESTABLISHED_TREND": 0.37,
+          "CHOP": 0.11,
+          "POST_GAP": 0.23,
+          "RANGE_BREAK": 0.25,
+          "REVERSAL_RISK": 0.04
+        }
+      },
+      "signal_quality": {
+        "type": "score",
+        "score": 2.54,
+        "confidence": 0.72,
+        "probabilities": {
+          "0": 0,
+          "1": 0.02,
+          "2": 0.43,
+          "3": 0.54,
+          "4": 0.01,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "decision": {
+        "type": "choice",
+        "choice": "SKIP",
+        "confidence": 0.6,
+        "probabilities": {
+          "TAKE": 0.2,
+          "SKIP": 0.8
+        }
+      },
+      "stop_placement": {
+        "type": "choice",
+        "choice": "BELOW_SWING_LOW",
+        "confidence": 0.55,
+        "probabilities": {
+          "BELOW_SLOW_MA": 0.28,
+          "BELOW_SWING_LOW": 0.66,
+          "ATR_BASED": 0.03,
+          "NONE": 0.03
+        }
+      }
+    },
+    "GX-0009": {
+      "valid_signal": {
+        "type": "noul",
+        "noul": 0.63
+      },
+      "context": {
+        "type": "choice",
+        "choice": "ESTABLISHED_TREND",
+        "confidence": 0.49,
+        "probabilities": {
+          "ESTABLISHED_TREND": 0.59,
+          "CHOP": 0.05,
+          "POST_GAP": 0.16,
+          "RANGE_BREAK": 0.18,
+          "REVERSAL_RISK": 0.02
+        }
+      },
+      "signal_quality": {
+        "type": "score",
+        "score": 2.75,
+        "confidence": 0.78,
+        "probabilities": {
+          "0": 0,
+          "1": 0.02,
+          "2": 0.27,
+          "3": 0.65,
+          "4": 0.06,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "decision": {
+        "type": "choice",
+        "choice": "SKIP",
+        "confidence": 0.68,
+        "probabilities": {
+          "TAKE": 0.16,
+          "SKIP": 0.84
+        }
+      },
+      "stop_placement": {
+        "type": "choice",
+        "choice": "BELOW_SWING_LOW",
+        "confidence": 0.24,
+        "probabilities": {
+          "BELOW_SLOW_MA": 0.39,
+          "BELOW_SWING_LOW": 0.43,
+          "ATR_BASED": 0.11,
+          "NONE": 0.07
+        }
+      }
+    },
+    "GX-0010": {
+      "valid_signal": {
+        "type": "noul",
+        "noul": 0.24
+      },
+      "context": {
+        "type": "choice",
+        "choice": "ESTABLISHED_TREND",
+        "confidence": 0.14,
+        "probabilities": {
+          "ESTABLISHED_TREND": 0.31,
+          "CHOP": 0.23,
+          "POST_GAP": 0.17,
+          "RANGE_BREAK": 0.22,
+          "REVERSAL_RISK": 0.07
+        }
+      },
+      "signal_quality": {
+        "type": "score",
+        "score": 1.92,
+        "confidence": 0.81,
+        "probabilities": {
+          "0": 0,
+          "1": 0.2,
+          "2": 0.68,
+          "3": 0.12,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "decision": {
+        "type": "choice",
+        "choice": "SKIP",
+        "confidence": 0.98,
+        "probabilities": {
+          "TAKE": 0.01,
+          "SKIP": 0.99
+        }
+      },
+      "stop_placement": {
+        "type": "choice",
+        "choice": "BELOW_SWING_LOW",
+        "confidence": 0.21,
+        "probabilities": {
+          "BELOW_SLOW_MA": 0.16,
+          "BELOW_SWING_LOW": 0.41,
+          "ATR_BASED": 0.21,
+          "NONE": 0.22
+        }
+      }
+    },
+    "GX-0011": {
+      "valid_signal": {
+        "type": "noul",
+        "noul": 0.13
+      },
+      "context": {
+        "type": "choice",
+        "choice": "REVERSAL_RISK",
+        "confidence": 0.39,
+        "probabilities": {
+          "ESTABLISHED_TREND": 0.21,
+          "CHOP": 0.05,
+          "POST_GAP": 0.08,
+          "RANGE_BREAK": 0.15,
+          "REVERSAL_RISK": 0.51
+        }
+      },
+      "signal_quality": {
+        "type": "score",
+        "score": 1.73,
+        "confidence": 0.82,
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.27,
+          "2": 0.7,
+          "3": 0.02,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "decision": {
+        "type": "choice",
+        "choice": "SKIP",
+        "confidence": 1,
+        "probabilities": {
+          "TAKE": 0,
+          "SKIP": 1
+        }
+      },
+      "stop_placement": {
+        "type": "choice",
+        "choice": "BELOW_SWING_LOW",
+        "confidence": 0.79,
+        "probabilities": {
+          "BELOW_SLOW_MA": 0.01,
+          "BELOW_SWING_LOW": 0.84,
+          "ATR_BASED": 0.06,
+          "NONE": 0.09
+        }
+      }
+    },
+    "GX-0012": {
+      "valid_signal": {
+        "type": "noul",
+        "noul": 0.37
+      },
+      "context": {
+        "type": "choice",
+        "choice": "POST_GAP",
+        "confidence": 0.25,
+        "probabilities": {
+          "ESTABLISHED_TREND": 0.36,
+          "CHOP": 0.07,
+          "POST_GAP": 0.4,
+          "RANGE_BREAK": 0.14,
+          "REVERSAL_RISK": 0.03
+        }
+      },
+      "signal_quality": {
+        "type": "score",
+        "score": 2.76,
+        "confidence": 0.76,
+        "probabilities": {
+          "0": 0,
+          "1": 0.05,
+          "2": 0.23,
+          "3": 0.63,
+          "4": 0.09,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "decision": {
+        "type": "choice",
+        "choice": "SKIP",
+        "confidence": 0.56,
+        "probabilities": {
+          "TAKE": 0.22,
+          "SKIP": 0.78
+        }
+      },
+      "stop_placement": {
+        "type": "choice",
+        "choice": "BELOW_SWING_LOW",
+        "confidence": 0.28,
+        "probabilities": {
+          "BELOW_SLOW_MA": 0.33,
+          "BELOW_SWING_LOW": 0.46,
+          "ATR_BASED": 0.17,
+          "NONE": 0.04
+        }
+      }
+    },
+    "GX-0013": {
+      "valid_signal": {
+        "type": "noul",
+        "noul": 0.59
+      },
+      "context": {
+        "type": "choice",
+        "choice": "ESTABLISHED_TREND",
+        "confidence": 0.73,
+        "probabilities": {
+          "ESTABLISHED_TREND": 0.78,
+          "CHOP": 0.05,
+          "POST_GAP": 0.09,
+          "RANGE_BREAK": 0.05,
+          "REVERSAL_RISK": 0.03
+        }
+      },
+      "signal_quality": {
+        "type": "score",
+        "score": 2.68,
+        "confidence": 0.78,
+        "probabilities": {
+          "0": 0,
+          "1": 0.01,
+          "2": 0.33,
+          "3": 0.63,
+          "4": 0.03,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "decision": {
+        "type": "choice",
+        "choice": "SKIP",
+        "confidence": 0.02,
+        "probabilities": {
+          "TAKE": 0.49,
+          "SKIP": 0.51
+        }
+      },
+      "stop_placement": {
+        "type": "choice",
+        "choice": "BELOW_SLOW_MA",
+        "confidence": 0.29,
+        "probabilities": {
+          "BELOW_SLOW_MA": 0.47,
+          "BELOW_SWING_LOW": 0.25,
+          "ATR_BASED": 0.27,
+          "NONE": 0.01
+        }
+      }
+    },
+    "GX-0014": {
+      "valid_signal": {
+        "type": "noul",
+        "noul": 0.69
+      },
+      "context": {
+        "type": "choice",
+        "choice": "ESTABLISHED_TREND",
+        "confidence": 0.75,
+        "probabilities": {
+          "ESTABLISHED_TREND": 0.8,
+          "CHOP": 0.04,
+          "POST_GAP": 0.03,
+          "RANGE_BREAK": 0.1,
+          "REVERSAL_RISK": 0.03
+        }
+      },
+      "signal_quality": {
+        "type": "score",
+        "score": 3.27,
+        "confidence": 0.81,
+        "probabilities": {
+          "0": 0,
+          "1": 0,
+          "2": 0.03,
+          "3": 0.68,
+          "4": 0.28,
+          "5": 0.01,
+          "6": 0
+        }
+      },
+      "decision": {
+        "type": "choice",
+        "choice": "TAKE",
+        "confidence": 0.4,
+        "probabilities": {
+          "TAKE": 0.7,
+          "SKIP": 0.3
+        }
+      },
+      "stop_placement": {
+        "type": "choice",
+        "choice": "BELOW_SWING_LOW",
+        "confidence": 0.83,
+        "probabilities": {
+          "BELOW_SLOW_MA": 0.1,
+          "BELOW_SWING_LOW": 0.87,
+          "ATR_BASED": 0.02,
+          "NONE": 0.01
+        }
+      }
+    },
+    "GX-0015": {
+      "valid_signal": {
+        "type": "noul",
+        "noul": 0.11
+      },
+      "context": {
+        "type": "choice",
+        "choice": "REVERSAL_RISK",
+        "confidence": 0.18,
+        "probabilities": {
+          "ESTABLISHED_TREND": 0.22,
+          "CHOP": 0.07,
+          "POST_GAP": 0.18,
+          "RANGE_BREAK": 0.19,
+          "REVERSAL_RISK": 0.34
+        }
+      },
+      "signal_quality": {
+        "type": "score",
+        "score": 1.6,
+        "confidence": 0.76,
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.39,
+          "2": 0.59,
+          "3": 0.01,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "decision": {
+        "type": "choice",
+        "choice": "SKIP",
+        "confidence": 0.98,
+        "probabilities": {
+          "TAKE": 0.01,
+          "SKIP": 0.99
+        }
+      },
+      "stop_placement": {
+        "type": "choice",
+        "choice": "BELOW_SWING_LOW",
+        "confidence": 0.75,
+        "probabilities": {
+          "BELOW_SLOW_MA": 0.03,
+          "BELOW_SWING_LOW": 0.81,
+          "ATR_BASED": 0.03,
+          "NONE": 0.13
+        }
+      }
+    },
+    "GX-0016": {
+      "valid_signal": {
+        "type": "noul",
+        "noul": 0.62
+      },
+      "context": {
+        "type": "choice",
+        "choice": "ESTABLISHED_TREND",
+        "confidence": 0.56,
+        "probabilities": {
+          "ESTABLISHED_TREND": 0.65,
+          "CHOP": 0.08,
+          "POST_GAP": 0.19,
+          "RANGE_BREAK": 0.06,
+          "REVERSAL_RISK": 0.02
+        }
+      },
+      "signal_quality": {
+        "type": "score",
+        "score": 3.07,
+        "confidence": 0.88,
+        "probabilities": {
+          "0": 0,
+          "1": 0,
+          "2": 0.07,
+          "3": 0.79,
+          "4": 0.14,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "decision": {
+        "type": "choice",
+        "choice": "SKIP",
+        "confidence": 0.02,
+        "probabilities": {
+          "TAKE": 0.49,
+          "SKIP": 0.51
+        }
+      },
+      "stop_placement": {
+        "type": "choice",
+        "choice": "BELOW_SLOW_MA",
+        "confidence": 0.44,
+        "probabilities": {
+          "BELOW_SLOW_MA": 0.58,
+          "BELOW_SWING_LOW": 0.29,
+          "ATR_BASED": 0.12,
+          "NONE": 0.01
+        }
+      }
+    },
+    "GX-0017": {
+      "valid_signal": {
+        "type": "noul",
+        "noul": 0.43
+      },
+      "context": {
+        "type": "choice",
+        "choice": "ESTABLISHED_TREND",
+        "confidence": 0.43,
+        "probabilities": {
+          "ESTABLISHED_TREND": 0.54,
+          "CHOP": 0.1,
+          "POST_GAP": 0.22,
+          "RANGE_BREAK": 0.1,
+          "REVERSAL_RISK": 0.04
+        }
+      },
+      "signal_quality": {
+        "type": "score",
+        "score": 2.29,
+        "confidence": 0.7,
+        "probabilities": {
+          "0": 0,
+          "1": 0.11,
+          "2": 0.51,
+          "3": 0.36,
+          "4": 0.02,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "decision": {
+        "type": "choice",
+        "choice": "SKIP",
+        "confidence": 0.86,
+        "probabilities": {
+          "TAKE": 0.07,
+          "SKIP": 0.93
+        }
+      },
+      "stop_placement": {
+        "type": "choice",
+        "choice": "BELOW_SWING_LOW",
+        "confidence": 0.43,
+        "probabilities": {
+          "BELOW_SLOW_MA": 0.25,
+          "BELOW_SWING_LOW": 0.57,
+          "ATR_BASED": 0.15,
+          "NONE": 0.03
+        }
+      }
+    },
+    "GX-0018": {
+      "valid_signal": {
+        "type": "noul",
+        "noul": 0.51
+      },
+      "context": {
+        "type": "choice",
+        "choice": "ESTABLISHED_TREND",
+        "confidence": 0.59,
+        "probabilities": {
+          "ESTABLISHED_TREND": 0.67,
+          "CHOP": 0.04,
+          "POST_GAP": 0.13,
+          "RANGE_BREAK": 0.14,
+          "REVERSAL_RISK": 0.02
+        }
+      },
+      "signal_quality": {
+        "type": "score",
+        "score": 2.79,
+        "confidence": 0.8,
+        "probabilities": {
+          "0": 0,
+          "1": 0.02,
+          "2": 0.24,
+          "3": 0.67,
+          "4": 0.07,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "decision": {
+        "type": "choice",
+        "choice": "TAKE",
+        "confidence": 0.22,
+        "probabilities": {
+          "TAKE": 0.61,
+          "SKIP": 0.39
+        }
+      },
+      "stop_placement": {
+        "type": "choice",
+        "choice": "BELOW_SWING_LOW",
+        "confidence": 0.83,
+        "probabilities": {
+          "BELOW_SLOW_MA": 0.08,
+          "BELOW_SWING_LOW": 0.87,
+          "ATR_BASED": 0.04,
+          "NONE": 0.01
+        }
+      }
+    },
+    "GX-0019": {
+      "valid_signal": {
+        "type": "noul",
+        "noul": 0.62
+      },
+      "context": {
+        "type": "choice",
+        "choice": "ESTABLISHED_TREND",
+        "confidence": 0.27,
+        "probabilities": {
+          "ESTABLISHED_TREND": 0.42,
+          "CHOP": 0.05,
+          "POST_GAP": 0.27,
+          "RANGE_BREAK": 0.24,
+          "REVERSAL_RISK": 0.02
+        }
+      },
+      "signal_quality": {
+        "type": "score",
+        "score": 2.56,
+        "confidence": 0.71,
+        "probabilities": {
+          "0": 0,
+          "1": 0.03,
+          "2": 0.41,
+          "3": 0.53,
+          "4": 0.03,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "decision": {
+        "type": "choice",
+        "choice": "SKIP",
+        "confidence": 0.44,
+        "probabilities": {
+          "TAKE": 0.28,
+          "SKIP": 0.72
+        }
+      },
+      "stop_placement": {
+        "type": "choice",
+        "choice": "BELOW_SWING_LOW",
+        "confidence": 0.88,
+        "probabilities": {
+          "BELOW_SLOW_MA": 0.06,
+          "BELOW_SWING_LOW": 0.91,
+          "ATR_BASED": 0.01,
+          "NONE": 0.02
+        }
+      }
+    },
+    "GX-0020": {
+      "valid_signal": {
+        "type": "noul",
+        "noul": 0.59
+      },
+      "context": {
+        "type": "choice",
+        "choice": "ESTABLISHED_TREND",
+        "confidence": 0.35,
+        "probabilities": {
+          "ESTABLISHED_TREND": 0.48,
+          "CHOP": 0.09,
+          "POST_GAP": 0.21,
+          "RANGE_BREAK": 0.19,
+          "REVERSAL_RISK": 0.03
+        }
+      },
+      "signal_quality": {
+        "type": "score",
+        "score": 2.83,
+        "confidence": 0.84,
+        "probabilities": {
+          "0": 0,
+          "1": 0.01,
+          "2": 0.2,
+          "3": 0.74,
+          "4": 0.05,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "decision": {
+        "type": "choice",
+        "choice": "TAKE",
+        "confidence": 0.44,
+        "probabilities": {
+          "TAKE": 0.72,
+          "SKIP": 0.28
+        }
+      },
+      "stop_placement": {
+        "type": "choice",
+        "choice": "BELOW_SWING_LOW",
+        "confidence": 0.24,
+        "probabilities": {
+          "BELOW_SLOW_MA": 0.23,
+          "BELOW_SWING_LOW": 0.43,
+          "ATR_BASED": 0.29,
+          "NONE": 0.05
+        }
+      }
+    },
+    "GX-0021": {
+      "valid_signal": {
+        "type": "noul",
+        "noul": 0.7
+      },
+      "context": {
+        "type": "choice",
+        "choice": "ESTABLISHED_TREND",
+        "confidence": 0.41,
+        "probabilities": {
+          "ESTABLISHED_TREND": 0.53,
+          "CHOP": 0.05,
+          "POST_GAP": 0.22,
+          "RANGE_BREAK": 0.16,
+          "REVERSAL_RISK": 0.04
+        }
+      },
+      "signal_quality": {
+        "type": "score",
+        "score": 3.75,
+        "confidence": 0.83,
+        "probabilities": {
+          "0": 0,
+          "1": 0,
+          "2": 0.01,
+          "3": 0.25,
+          "4": 0.72,
+          "5": 0.02,
+          "6": 0
+        }
+      },
+      "decision": {
+        "type": "choice",
+        "choice": "TAKE",
+        "confidence": 0.78,
+        "probabilities": {
+          "TAKE": 0.89,
+          "SKIP": 0.11
+        }
+      },
+      "stop_placement": {
+        "type": "choice",
+        "choice": "BELOW_SWING_LOW",
+        "confidence": 0.36,
+        "probabilities": {
+          "BELOW_SLOW_MA": 0.2,
+          "BELOW_SWING_LOW": 0.52,
+          "ATR_BASED": 0.27,
+          "NONE": 0.01
+        }
+      }
+    },
+    "GX-0022": {
+      "valid_signal": {
+        "type": "noul",
+        "noul": 0.09
+      },
+      "context": {
+        "type": "choice",
+        "choice": "ESTABLISHED_TREND",
+        "confidence": 0.06,
+        "probabilities": {
+          "ESTABLISHED_TREND": 0.25,
+          "CHOP": 0.23,
+          "POST_GAP": 0.11,
+          "RANGE_BREAK": 0.19,
+          "REVERSAL_RISK": 0.22
+        }
+      },
+      "signal_quality": {
+        "type": "score",
+        "score": 1.59,
+        "confidence": 0.75,
+        "probabilities": {
+          "0": 0,
+          "1": 0.42,
+          "2": 0.57,
+          "3": 0.01,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "decision": {
+        "type": "choice",
+        "choice": "SKIP",
+        "confidence": 1,
+        "probabilities": {
+          "TAKE": 0,
+          "SKIP": 1
+        }
+      },
+      "stop_placement": {
+        "type": "choice",
+        "choice": "BELOW_SWING_LOW",
+        "confidence": 0.72,
+        "probabilities": {
+          "BELOW_SLOW_MA": 0.07,
+          "BELOW_SWING_LOW": 0.79,
+          "ATR_BASED": 0.07,
+          "NONE": 0.07
+        }
+      }
+    },
+    "GX-0023": {
+      "valid_signal": {
+        "type": "noul",
+        "noul": 0.56
+      },
+      "context": {
+        "type": "choice",
+        "choice": "ESTABLISHED_TREND",
+        "confidence": 0.18,
+        "probabilities": {
+          "ESTABLISHED_TREND": 0.34,
+          "CHOP": 0.05,
+          "POST_GAP": 0.3,
+          "RANGE_BREAK": 0.28,
+          "REVERSAL_RISK": 0.03
+        }
+      },
+      "signal_quality": {
+        "type": "score",
+        "score": 3.04,
+        "confidence": 0.81,
+        "probabilities": {
+          "0": 0,
+          "1": 0.01,
+          "2": 0.12,
+          "3": 0.69,
+          "4": 0.18,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "decision": {
+        "type": "choice",
+        "choice": "TAKE",
+        "confidence": 0.78,
+        "probabilities": {
+          "TAKE": 0.89,
+          "SKIP": 0.11
+        }
+      },
+      "stop_placement": {
+        "type": "choice",
+        "choice": "BELOW_SWING_LOW",
+        "confidence": 0.44,
+        "probabilities": {
+          "BELOW_SLOW_MA": 0.32,
+          "BELOW_SWING_LOW": 0.58,
+          "ATR_BASED": 0.1,
+          "NONE": 0
+        }
+      }
+    },
+    "GX-0024": {
+      "valid_signal": {
+        "type": "noul",
+        "noul": 0.67
+      },
+      "context": {
+        "type": "choice",
+        "choice": "ESTABLISHED_TREND",
+        "confidence": 0.39,
+        "probabilities": {
+          "ESTABLISHED_TREND": 0.51,
+          "CHOP": 0.1,
+          "POST_GAP": 0.12,
+          "RANGE_BREAK": 0.24,
+          "REVERSAL_RISK": 0.03
+        }
+      },
+      "signal_quality": {
+        "type": "score",
+        "score": 3.27,
+        "confidence": 0.82,
+        "probabilities": {
+          "0": 0,
+          "1": 0,
+          "2": 0.02,
+          "3": 0.7,
+          "4": 0.27,
+          "5": 0.01,
+          "6": 0
+        }
+      },
+      "decision": {
+        "type": "choice",
+        "choice": "TAKE",
+        "confidence": 0.84,
+        "probabilities": {
+          "TAKE": 0.92,
+          "SKIP": 0.08
+        }
+      },
+      "stop_placement": {
+        "type": "choice",
+        "choice": "BELOW_SWING_LOW",
+        "confidence": 0.65,
+        "probabilities": {
+          "BELOW_SLOW_MA": 0.25,
+          "BELOW_SWING_LOW": 0.74,
+          "ATR_BASED": 0.01,
+          "NONE": 0
+        }
+      }
+    },
+    "GX-0025": {
+      "valid_signal": {
+        "type": "noul",
+        "noul": 0.19
+      },
+      "context": {
+        "type": "choice",
+        "choice": "ESTABLISHED_TREND",
+        "confidence": 0.41,
+        "probabilities": {
+          "ESTABLISHED_TREND": 0.53,
+          "CHOP": 0.11,
+          "POST_GAP": 0.11,
+          "RANGE_BREAK": 0.2,
+          "REVERSAL_RISK": 0.05
+        }
+      },
+      "signal_quality": {
+        "type": "score",
+        "score": 1.79,
+        "confidence": 0.84,
+        "probabilities": {
+          "0": 0,
+          "1": 0.24,
+          "2": 0.73,
+          "3": 0.03,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "decision": {
+        "type": "choice",
+        "choice": "SKIP",
+        "confidence": 1,
+        "probabilities": {
+          "TAKE": 0,
+          "SKIP": 1
+        }
+      },
+      "stop_placement": {
+        "type": "choice",
+        "choice": "BELOW_SWING_LOW",
+        "confidence": 0.84,
+        "probabilities": {
+          "BELOW_SLOW_MA": 0.05,
+          "BELOW_SWING_LOW": 0.88,
+          "ATR_BASED": 0.03,
+          "NONE": 0.04
+        }
+      }
+    },
+    "GX-0026": {
+      "valid_signal": {
+        "type": "noul",
+        "noul": 0.29
+      },
+      "context": {
+        "type": "choice",
+        "choice": "ESTABLISHED_TREND",
+        "confidence": 0.3,
+        "probabilities": {
+          "ESTABLISHED_TREND": 0.44,
+          "CHOP": 0.08,
+          "POST_GAP": 0.21,
+          "RANGE_BREAK": 0.21,
+          "REVERSAL_RISK": 0.06
+        }
+      },
+      "signal_quality": {
+        "type": "score",
+        "score": 2.12,
+        "confidence": 0.83,
+        "probabilities": {
+          "0": 0,
+          "1": 0.09,
+          "2": 0.7,
+          "3": 0.21,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "decision": {
+        "type": "choice",
+        "choice": "SKIP",
+        "confidence": 0.94,
+        "probabilities": {
+          "TAKE": 0.03,
+          "SKIP": 0.97
+        }
+      },
+      "stop_placement": {
+        "type": "choice",
+        "choice": "BELOW_SWING_LOW",
+        "confidence": 0.32,
+        "probabilities": {
+          "BELOW_SLOW_MA": 0.25,
+          "BELOW_SWING_LOW": 0.49,
+          "ATR_BASED": 0.09,
+          "NONE": 0.17
+        }
+      }
+    },
+    "GX-0027": {
+      "valid_signal": {
+        "type": "noul",
+        "noul": 0.6
+      },
+      "context": {
+        "type": "choice",
+        "choice": "ESTABLISHED_TREND",
+        "confidence": 0.45,
+        "probabilities": {
+          "ESTABLISHED_TREND": 0.56,
+          "CHOP": 0.1,
+          "POST_GAP": 0.08,
+          "RANGE_BREAK": 0.23,
+          "REVERSAL_RISK": 0.03
+        }
+      },
+      "signal_quality": {
+        "type": "score",
+        "score": 2.91,
+        "confidence": 0.88,
+        "probabilities": {
+          "0": 0,
+          "1": 0.01,
+          "2": 0.13,
+          "3": 0.8,
+          "4": 0.06,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "decision": {
+        "type": "choice",
+        "choice": "SKIP",
+        "confidence": 0.2,
+        "probabilities": {
+          "TAKE": 0.4,
+          "SKIP": 0.6
+        }
+      },
+      "stop_placement": {
+        "type": "choice",
+        "choice": "BELOW_SWING_LOW",
+        "confidence": 0.61,
+        "probabilities": {
+          "BELOW_SLOW_MA": 0.2,
+          "BELOW_SWING_LOW": 0.71,
+          "ATR_BASED": 0.06,
+          "NONE": 0.03
+        }
+      }
+    },
+    "GX-0028": {
+      "valid_signal": {
+        "type": "noul",
+        "noul": 0.66
+      },
+      "context": {
+        "type": "choice",
+        "choice": "ESTABLISHED_TREND",
+        "confidence": 0.3,
+        "probabilities": {
+          "ESTABLISHED_TREND": 0.44,
+          "CHOP": 0.04,
+          "POST_GAP": 0.41,
+          "RANGE_BREAK": 0.05,
+          "REVERSAL_RISK": 0.06
+        }
+      },
+      "signal_quality": {
+        "type": "score",
+        "score": 2.39,
+        "confidence": 0.73,
+        "probabilities": {
+          "0": 0,
+          "1": 0.04,
+          "2": 0.55,
+          "3": 0.39,
+          "4": 0.02,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "decision": {
+        "type": "choice",
+        "choice": "SKIP",
+        "confidence": 0.84,
+        "probabilities": {
+          "TAKE": 0.08,
+          "SKIP": 0.92
+        }
+      },
+      "stop_placement": {
+        "type": "choice",
+        "choice": "BELOW_SWING_LOW",
+        "confidence": 0.45,
+        "probabilities": {
+          "BELOW_SLOW_MA": 0.18,
+          "BELOW_SWING_LOW": 0.59,
+          "ATR_BASED": 0.1,
+          "NONE": 0.13
+        }
+      }
+    },
+    "GX-0029": {
+      "valid_signal": {
+        "type": "noul",
+        "noul": 0.5
+      },
+      "context": {
+        "type": "choice",
+        "choice": "ESTABLISHED_TREND",
+        "confidence": 0.82,
+        "probabilities": {
+          "ESTABLISHED_TREND": 0.86,
+          "CHOP": 0.04,
+          "POST_GAP": 0.03,
+          "RANGE_BREAK": 0.05,
+          "REVERSAL_RISK": 0.02
+        }
+      },
+      "signal_quality": {
+        "type": "score",
+        "score": 2.9,
+        "confidence": 0.91,
+        "probabilities": {
+          "0": 0,
+          "1": 0,
+          "2": 0.13,
+          "3": 0.84,
+          "4": 0.03,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "decision": {
+        "type": "choice",
+        "choice": "TAKE",
+        "confidence": 0.26,
+        "probabilities": {
+          "TAKE": 0.63,
+          "SKIP": 0.37
+        }
+      },
+      "stop_placement": {
+        "type": "choice",
+        "choice": "BELOW_SWING_LOW",
+        "confidence": 0.72,
+        "probabilities": {
+          "BELOW_SLOW_MA": 0.15,
+          "BELOW_SWING_LOW": 0.79,
+          "ATR_BASED": 0.05,
+          "NONE": 0.01
+        }
+      }
+    },
+    "GX-0030": {
+      "valid_signal": {
+        "type": "noul",
+        "noul": 0.7
+      },
+      "context": {
+        "type": "choice",
+        "choice": "ESTABLISHED_TREND",
+        "confidence": 0.62,
+        "probabilities": {
+          "ESTABLISHED_TREND": 0.7,
+          "CHOP": 0.08,
+          "POST_GAP": 0.04,
+          "RANGE_BREAK": 0.06,
+          "REVERSAL_RISK": 0.12
+        }
+      },
+      "signal_quality": {
+        "type": "score",
+        "score": 2.75,
+        "confidence": 0.76,
+        "probabilities": {
+          "0": 0,
+          "1": 0.03,
+          "2": 0.27,
+          "3": 0.62,
+          "4": 0.08,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "decision": {
+        "type": "choice",
+        "choice": "SKIP",
+        "confidence": 0.38,
+        "probabilities": {
+          "TAKE": 0.31,
+          "SKIP": 0.69
+        }
+      },
+      "stop_placement": {
+        "type": "choice",
+        "choice": "BELOW_SWING_LOW",
+        "confidence": 0.39,
+        "probabilities": {
+          "BELOW_SLOW_MA": 0.37,
+          "BELOW_SWING_LOW": 0.54,
+          "ATR_BASED": 0.08,
+          "NONE": 0.01
+        }
+      }
+    },
+    "GX-0031": {
+      "valid_signal": {
+        "type": "noul",
+        "noul": 0.24
+      },
+      "context": {
+        "type": "choice",
+        "choice": "REVERSAL_RISK",
+        "confidence": 0.46,
+        "probabilities": {
+          "ESTABLISHED_TREND": 0.17,
+          "CHOP": 0.05,
+          "POST_GAP": 0.06,
+          "RANGE_BREAK": 0.15,
+          "REVERSAL_RISK": 0.57
+        }
+      },
+      "signal_quality": {
+        "type": "score",
+        "score": 1.88,
+        "confidence": 0.86,
+        "probabilities": {
+          "0": 0,
+          "1": 0.18,
+          "2": 0.76,
+          "3": 0.06,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "decision": {
+        "type": "choice",
+        "choice": "SKIP",
+        "confidence": 0.92,
+        "probabilities": {
+          "TAKE": 0.04,
+          "SKIP": 0.96
+        }
+      },
+      "stop_placement": {
+        "type": "choice",
+        "choice": "BELOW_SWING_LOW",
+        "confidence": 0.55,
+        "probabilities": {
+          "BELOW_SLOW_MA": 0.06,
+          "BELOW_SWING_LOW": 0.66,
+          "ATR_BASED": 0.1,
+          "NONE": 0.18
+        }
+      }
+    },
+    "GX-0032": {
+      "valid_signal": {
+        "type": "noul",
+        "noul": 0.67
+      },
+      "context": {
+        "type": "choice",
+        "choice": "POST_GAP",
+        "confidence": 0.29,
+        "probabilities": {
+          "ESTABLISHED_TREND": 0.26,
+          "CHOP": 0.04,
+          "POST_GAP": 0.43,
+          "RANGE_BREAK": 0.19,
+          "REVERSAL_RISK": 0.08
+        }
+      },
+      "signal_quality": {
+        "type": "score",
+        "score": 3.07,
+        "confidence": 0.8,
+        "probabilities": {
+          "0": 0,
+          "1": 0.01,
+          "2": 0.12,
+          "3": 0.67,
+          "4": 0.19,
+          "5": 0.01,
+          "6": 0
+        }
+      },
+      "decision": {
+        "type": "choice",
+        "choice": "SKIP",
+        "confidence": 0.34,
+        "probabilities": {
+          "TAKE": 0.33,
+          "SKIP": 0.67
+        }
+      },
+      "stop_placement": {
+        "type": "choice",
+        "choice": "BELOW_SWING_LOW",
+        "confidence": 0.52,
+        "probabilities": {
+          "BELOW_SLOW_MA": 0.16,
+          "BELOW_SWING_LOW": 0.64,
+          "ATR_BASED": 0.12,
+          "NONE": 0.08
+        }
+      }
+    },
+    "GX-0033": {
+      "valid_signal": {
+        "type": "noul",
+        "noul": 0.68
+      },
+      "context": {
+        "type": "choice",
+        "choice": "ESTABLISHED_TREND",
+        "confidence": 0.44,
+        "probabilities": {
+          "ESTABLISHED_TREND": 0.55,
+          "CHOP": 0.06,
+          "POST_GAP": 0.21,
+          "RANGE_BREAK": 0.12,
+          "REVERSAL_RISK": 0.06
+        }
+      },
+      "signal_quality": {
+        "type": "score",
+        "score": 2.81,
+        "confidence": 0.78,
+        "probabilities": {
+          "0": 0,
+          "1": 0.01,
+          "2": 0.26,
+          "3": 0.64,
+          "4": 0.09,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "decision": {
+        "type": "choice",
+        "choice": "SKIP",
+        "confidence": 0.02,
+        "probabilities": {
+          "TAKE": 0.49,
+          "SKIP": 0.51
+        }
+      },
+      "stop_placement": {
+        "type": "choice",
+        "choice": "BELOW_SWING_LOW",
+        "confidence": 0.37,
+        "probabilities": {
+          "BELOW_SLOW_MA": 0.35,
+          "BELOW_SWING_LOW": 0.53,
+          "ATR_BASED": 0.11,
+          "NONE": 0.01
+        }
+      }
+    },
+    "GX-0034": {
+      "valid_signal": {
+        "type": "noul",
+        "noul": 0.54
+      },
+      "context": {
+        "type": "choice",
+        "choice": "ESTABLISHED_TREND",
+        "confidence": 0.31,
+        "probabilities": {
+          "ESTABLISHED_TREND": 0.45,
+          "CHOP": 0.05,
+          "POST_GAP": 0.34,
+          "RANGE_BREAK": 0.07,
+          "REVERSAL_RISK": 0.09
+        }
+      },
+      "signal_quality": {
+        "type": "score",
+        "score": 2.4,
+        "confidence": 0.74,
+        "probabilities": {
+          "0": 0,
+          "1": 0.02,
+          "2": 0.57,
+          "3": 0.4,
+          "4": 0.01,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "decision": {
+        "type": "choice",
+        "choice": "SKIP",
+        "confidence": 0.78,
+        "probabilities": {
+          "TAKE": 0.11,
+          "SKIP": 0.89
+        }
+      },
+      "stop_placement": {
+        "type": "choice",
+        "choice": "BELOW_SWING_LOW",
+        "confidence": 0.2,
+        "probabilities": {
+          "BELOW_SLOW_MA": 0.38,
+          "BELOW_SWING_LOW": 0.4,
+          "ATR_BASED": 0.19,
+          "NONE": 0.03
+        }
+      }
+    },
+    "GX-0035": {
+      "valid_signal": {
+        "type": "noul",
+        "noul": 0.18
+      },
+      "context": {
+        "type": "choice",
+        "choice": "CHOP",
+        "confidence": 0.14,
+        "probabilities": {
+          "ESTABLISHED_TREND": 0.25,
+          "CHOP": 0.31,
+          "POST_GAP": 0.14,
+          "RANGE_BREAK": 0.21,
+          "REVERSAL_RISK": 0.09
+        }
+      },
+      "signal_quality": {
+        "type": "score",
+        "score": 2,
+        "confidence": 0.85,
+        "probabilities": {
+          "0": 0,
+          "1": 0.13,
+          "2": 0.75,
+          "3": 0.11,
+          "4": 0.01,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "decision": {
+        "type": "choice",
+        "choice": "SKIP",
+        "confidence": 0.84,
+        "probabilities": {
+          "TAKE": 0.08,
+          "SKIP": 0.92
+        }
+      },
+      "stop_placement": {
+        "type": "choice",
+        "choice": "BELOW_SWING_LOW",
+        "confidence": 0.6,
+        "probabilities": {
+          "BELOW_SLOW_MA": 0.11,
+          "BELOW_SWING_LOW": 0.7,
+          "ATR_BASED": 0.09,
+          "NONE": 0.1
+        }
+      }
+    },
+    "GX-0036": {
+      "valid_signal": {
+        "type": "noul",
+        "noul": 0.58
+      },
+      "context": {
+        "type": "choice",
+        "choice": "POST_GAP",
+        "confidence": 0.26,
+        "probabilities": {
+          "ESTABLISHED_TREND": 0.36,
+          "CHOP": 0.05,
+          "POST_GAP": 0.41,
+          "RANGE_BREAK": 0.14,
+          "REVERSAL_RISK": 0.04
+        }
+      },
+      "signal_quality": {
+        "type": "score",
+        "score": 2.81,
+        "confidence": 0.87,
+        "probabilities": {
+          "0": 0,
+          "1": 0.01,
+          "2": 0.19,
+          "3": 0.78,
+          "4": 0.02,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "decision": {
+        "type": "choice",
+        "choice": "SKIP",
+        "confidence": 0.2,
+        "probabilities": {
+          "TAKE": 0.4,
+          "SKIP": 0.6
+        }
+      },
+      "stop_placement": {
+        "type": "choice",
+        "choice": "BELOW_SWING_LOW",
+        "confidence": 0.23,
+        "probabilities": {
+          "BELOW_SLOW_MA": 0.38,
+          "BELOW_SWING_LOW": 0.42,
+          "ATR_BASED": 0.15,
+          "NONE": 0.05
+        }
+      }
+    },
+    "GX-0037": {
+      "valid_signal": {
+        "type": "noul",
+        "noul": 0.33
+      },
+      "context": {
+        "type": "choice",
+        "choice": "ESTABLISHED_TREND",
+        "confidence": 0.14,
+        "probabilities": {
+          "ESTABLISHED_TREND": 0.31,
+          "CHOP": 0.28,
+          "POST_GAP": 0.1,
+          "RANGE_BREAK": 0.27,
+          "REVERSAL_RISK": 0.04
+        }
+      },
+      "signal_quality": {
+        "type": "score",
+        "score": 2.67,
+        "confidence": 0.8,
+        "probabilities": {
+          "0": 0,
+          "1": 0.01,
+          "2": 0.32,
+          "3": 0.66,
+          "4": 0.01,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "decision": {
+        "type": "choice",
+        "choice": "SKIP",
+        "confidence": 0.74,
+        "probabilities": {
+          "TAKE": 0.13,
+          "SKIP": 0.87
+        }
+      },
+      "stop_placement": {
+        "type": "choice",
+        "choice": "BELOW_SWING_LOW",
+        "confidence": 0.71,
+        "probabilities": {
+          "BELOW_SLOW_MA": 0.14,
+          "BELOW_SWING_LOW": 0.78,
+          "ATR_BASED": 0.07,
+          "NONE": 0.01
+        }
+      }
+    },
+    "GX-0038": {
+      "valid_signal": {
+        "type": "noul",
+        "noul": 0.6
+      },
+      "context": {
+        "type": "choice",
+        "choice": "ESTABLISHED_TREND",
+        "confidence": 0.8,
+        "probabilities": {
+          "ESTABLISHED_TREND": 0.84,
+          "CHOP": 0.04,
+          "POST_GAP": 0.05,
+          "RANGE_BREAK": 0.04,
+          "REVERSAL_RISK": 0.03
+        }
+      },
+      "signal_quality": {
+        "type": "score",
+        "score": 3.11,
+        "confidence": 0.78,
+        "probabilities": {
+          "0": 0,
+          "1": 0.01,
+          "2": 0.11,
+          "3": 0.65,
+          "4": 0.22,
+          "5": 0.01,
+          "6": 0
+        }
+      },
+      "decision": {
+        "type": "choice",
+        "choice": "TAKE",
+        "confidence": 0.18,
+        "probabilities": {
+          "TAKE": 0.59,
+          "SKIP": 0.41
+        }
+      },
+      "stop_placement": {
+        "type": "choice",
+        "choice": "BELOW_SWING_LOW",
+        "confidence": 0.59,
+        "probabilities": {
+          "BELOW_SLOW_MA": 0.24,
+          "BELOW_SWING_LOW": 0.69,
+          "ATR_BASED": 0.06,
+          "NONE": 0.01
+        }
+      }
+    },
+    "GX-0039": {
+      "valid_signal": {
+        "type": "noul",
+        "noul": 0.76
+      },
+      "context": {
+        "type": "choice",
+        "choice": "ESTABLISHED_TREND",
+        "confidence": 0.6,
+        "probabilities": {
+          "ESTABLISHED_TREND": 0.68,
+          "CHOP": 0.08,
+          "POST_GAP": 0.13,
+          "RANGE_BREAK": 0.06,
+          "REVERSAL_RISK": 0.05
+        }
+      },
+      "signal_quality": {
+        "type": "score",
+        "score": 2.97,
+        "confidence": 0.78,
+        "probabilities": {
+          "0": 0,
+          "1": 0.01,
+          "2": 0.18,
+          "3": 0.64,
+          "4": 0.17,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "decision": {
+        "type": "choice",
+        "choice": "SKIP",
+        "confidence": 0.84,
+        "probabilities": {
+          "TAKE": 0.08,
+          "SKIP": 0.92
+        }
+      },
+      "stop_placement": {
+        "type": "choice",
+        "choice": "BELOW_SWING_LOW",
+        "confidence": 0.07,
+        "probabilities": {
+          "BELOW_SLOW_MA": 0.23,
+          "BELOW_SWING_LOW": 0.3,
+          "ATR_BASED": 0.25,
+          "NONE": 0.22
+        }
+      }
+    },
+    "GX-0040": {
+      "valid_signal": {
+        "type": "noul",
+        "noul": 0.36
+      },
+      "context": {
+        "type": "choice",
+        "choice": "ESTABLISHED_TREND",
+        "confidence": 0.34,
+        "probabilities": {
+          "ESTABLISHED_TREND": 0.47,
+          "CHOP": 0.15,
+          "POST_GAP": 0.16,
+          "RANGE_BREAK": 0.13,
+          "REVERSAL_RISK": 0.09
+        }
+      },
+      "signal_quality": {
+        "type": "score",
+        "score": 2.6,
+        "confidence": 0.76,
+        "probabilities": {
+          "0": 0,
+          "1": 0.04,
+          "2": 0.33,
+          "3": 0.62,
+          "4": 0.01,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "decision": {
+        "type": "choice",
+        "choice": "SKIP",
+        "confidence": 0.82,
+        "probabilities": {
+          "TAKE": 0.09,
+          "SKIP": 0.91
+        }
+      },
+      "stop_placement": {
+        "type": "choice",
+        "choice": "BELOW_SWING_LOW",
+        "confidence": 0.49,
+        "probabilities": {
+          "BELOW_SLOW_MA": 0.15,
+          "BELOW_SWING_LOW": 0.62,
+          "ATR_BASED": 0.22,
+          "NONE": 0.01
+        }
+      }
+    },
+    "GX-0041": {
+      "valid_signal": {
+        "type": "noul",
+        "noul": 0.31
+      },
+      "context": {
+        "type": "choice",
+        "choice": "RANGE_BREAK",
+        "confidence": 0.2,
+        "probabilities": {
+          "ESTABLISHED_TREND": 0.18,
+          "CHOP": 0.15,
+          "POST_GAP": 0.19,
+          "RANGE_BREAK": 0.36,
+          "REVERSAL_RISK": 0.12
+        }
+      },
+      "signal_quality": {
+        "type": "score",
+        "score": 2.37,
+        "confidence": 0.76,
+        "probabilities": {
+          "0": 0,
+          "1": 0.02,
+          "2": 0.6,
+          "3": 0.37,
+          "4": 0.01,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "decision": {
+        "type": "choice",
+        "choice": "SKIP",
+        "confidence": 0.84,
+        "probabilities": {
+          "TAKE": 0.08,
+          "SKIP": 0.92
+        }
+      },
+      "stop_placement": {
+        "type": "choice",
+        "choice": "BELOW_SWING_LOW",
+        "confidence": 0.43,
+        "probabilities": {
+          "BELOW_SLOW_MA": 0.33,
+          "BELOW_SWING_LOW": 0.57,
+          "ATR_BASED": 0.06,
+          "NONE": 0.04
+        }
+      }
+    },
+    "GX-0042": {
+      "valid_signal": {
+        "type": "noul",
+        "noul": 0.66
+      },
+      "context": {
+        "type": "choice",
+        "choice": "POST_GAP",
+        "confidence": 0.77,
+        "probabilities": {
+          "ESTABLISHED_TREND": 0.09,
+          "CHOP": 0.03,
+          "POST_GAP": 0.82,
+          "RANGE_BREAK": 0.04,
+          "REVERSAL_RISK": 0.02
+        }
+      },
+      "signal_quality": {
+        "type": "score",
+        "score": 2.57,
+        "confidence": 0.64,
+        "probabilities": {
+          "0": 0,
+          "1": 0.05,
+          "2": 0.42,
+          "3": 0.44,
+          "4": 0.09,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "decision": {
+        "type": "choice",
+        "choice": "SKIP",
+        "confidence": 0.84,
+        "probabilities": {
+          "TAKE": 0.08,
+          "SKIP": 0.92
+        }
+      },
+      "stop_placement": {
+        "type": "choice",
+        "choice": "ATR_BASED",
+        "confidence": 0.33,
+        "probabilities": {
+          "BELOW_SLOW_MA": 0.22,
+          "BELOW_SWING_LOW": 0.27,
+          "ATR_BASED": 0.5,
+          "NONE": 0.01
+        }
+      }
+    },
+    "GX-0043": {
+      "valid_signal": {
+        "type": "noul",
+        "noul": 0.63
+      },
+      "context": {
+        "type": "choice",
+        "choice": "ESTABLISHED_TREND",
+        "confidence": 0.41,
+        "probabilities": {
+          "ESTABLISHED_TREND": 0.53,
+          "CHOP": 0.09,
+          "POST_GAP": 0.2,
+          "RANGE_BREAK": 0.14,
+          "REVERSAL_RISK": 0.04
+        }
+      },
+      "signal_quality": {
+        "type": "score",
+        "score": 3.39,
+        "confidence": 0.71,
+        "probabilities": {
+          "0": 0,
+          "1": 0,
+          "2": 0.05,
+          "3": 0.52,
+          "4": 0.42,
+          "5": 0.01,
+          "6": 0
+        }
+      },
+      "decision": {
+        "type": "choice",
+        "choice": "TAKE",
+        "confidence": 0.32,
+        "probabilities": {
+          "TAKE": 0.66,
+          "SKIP": 0.34
+        }
+      },
+      "stop_placement": {
+        "type": "choice",
+        "choice": "BELOW_SLOW_MA",
+        "confidence": 0.27,
+        "probabilities": {
+          "BELOW_SLOW_MA": 0.45,
+          "BELOW_SWING_LOW": 0.38,
+          "ATR_BASED": 0.14,
+          "NONE": 0.03
+        }
+      }
+    },
+    "GX-0044": {
+      "valid_signal": {
+        "type": "noul",
+        "noul": 0.34
+      },
+      "context": {
+        "type": "choice",
+        "choice": "RANGE_BREAK",
+        "confidence": 0.27,
+        "probabilities": {
+          "ESTABLISHED_TREND": 0.13,
+          "CHOP": 0.11,
+          "POST_GAP": 0.24,
+          "RANGE_BREAK": 0.42,
+          "REVERSAL_RISK": 0.1
+        }
+      },
+      "signal_quality": {
+        "type": "score",
+        "score": 2.96,
+        "confidence": 0.93,
+        "probabilities": {
+          "0": 0,
+          "1": 0,
+          "2": 0.08,
+          "3": 0.88,
+          "4": 0.04,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "decision": {
+        "type": "choice",
+        "choice": "SKIP",
+        "confidence": 0.24,
+        "probabilities": {
+          "TAKE": 0.38,
+          "SKIP": 0.62
+        }
+      },
+      "stop_placement": {
+        "type": "choice",
+        "choice": "BELOW_SWING_LOW",
+        "confidence": 0.68,
+        "probabilities": {
+          "BELOW_SLOW_MA": 0.15,
+          "BELOW_SWING_LOW": 0.76,
+          "ATR_BASED": 0.07,
+          "NONE": 0.02
+        }
+      }
+    },
+    "GX-0045": {
+      "valid_signal": {
+        "type": "noul",
+        "noul": 0.6
+      },
+      "context": {
+        "type": "choice",
+        "choice": "ESTABLISHED_TREND",
+        "confidence": 0.24,
+        "probabilities": {
+          "ESTABLISHED_TREND": 0.39,
+          "CHOP": 0.06,
+          "POST_GAP": 0.09,
+          "RANGE_BREAK": 0.37,
+          "REVERSAL_RISK": 0.09
+        }
+      },
+      "signal_quality": {
+        "type": "score",
+        "score": 3.26,
+        "confidence": 0.76,
+        "probabilities": {
+          "0": 0,
+          "1": 0,
+          "2": 0.08,
+          "3": 0.59,
+          "4": 0.32,
+          "5": 0.01,
+          "6": 0
+        }
+      },
+      "decision": {
+        "type": "choice",
+        "choice": "TAKE",
+        "confidence": 0.66,
+        "probabilities": {
+          "TAKE": 0.83,
+          "SKIP": 0.17
+        }
+      },
+      "stop_placement": {
+        "type": "choice",
+        "choice": "BELOW_SWING_LOW",
+        "confidence": 0.56,
+        "probabilities": {
+          "BELOW_SLOW_MA": 0.29,
+          "BELOW_SWING_LOW": 0.67,
+          "ATR_BASED": 0.03,
+          "NONE": 0.01
+        }
+      }
+    },
+    "GX-0046": {
+      "valid_signal": {
+        "type": "noul",
+        "noul": 0.3
+      },
+      "context": {
+        "type": "choice",
+        "choice": "CHOP",
+        "confidence": 0.29,
+        "probabilities": {
+          "ESTABLISHED_TREND": 0.15,
+          "CHOP": 0.43,
+          "POST_GAP": 0.08,
+          "RANGE_BREAK": 0.23,
+          "REVERSAL_RISK": 0.11
+        }
+      },
+      "signal_quality": {
+        "type": "score",
+        "score": 2.83,
+        "confidence": 0.84,
+        "probabilities": {
+          "0": 0,
+          "1": 0.01,
+          "2": 0.2,
+          "3": 0.74,
+          "4": 0.05,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "decision": {
+        "type": "choice",
+        "choice": "SKIP",
+        "confidence": 0.26,
+        "probabilities": {
+          "TAKE": 0.37,
+          "SKIP": 0.63
+        }
+      },
+      "stop_placement": {
+        "type": "choice",
+        "choice": "BELOW_SWING_LOW",
+        "confidence": 0.93,
+        "probabilities": {
+          "BELOW_SLOW_MA": 0.04,
+          "BELOW_SWING_LOW": 0.95,
+          "ATR_BASED": 0.01,
+          "NONE": 0
+        }
+      }
+    },
+    "GX-0047": {
+      "valid_signal": {
+        "type": "noul",
+        "noul": 0.65
+      },
+      "context": {
+        "type": "choice",
+        "choice": "ESTABLISHED_TREND",
+        "confidence": 0.77,
+        "probabilities": {
+          "ESTABLISHED_TREND": 0.82,
+          "CHOP": 0.04,
+          "POST_GAP": 0.07,
+          "RANGE_BREAK": 0.05,
+          "REVERSAL_RISK": 0.02
+        }
+      },
+      "signal_quality": {
+        "type": "score",
+        "score": 3.07,
+        "confidence": 0.89,
+        "probabilities": {
+          "0": 0,
+          "1": 0,
+          "2": 0.06,
+          "3": 0.81,
+          "4": 0.13,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "decision": {
+        "type": "choice",
+        "choice": "TAKE",
+        "confidence": 0.4,
+        "probabilities": {
+          "TAKE": 0.7,
+          "SKIP": 0.3
+        }
+      },
+      "stop_placement": {
+        "type": "choice",
+        "choice": "BELOW_SWING_LOW",
+        "confidence": 0.75,
+        "probabilities": {
+          "BELOW_SLOW_MA": 0.16,
+          "BELOW_SWING_LOW": 0.81,
+          "ATR_BASED": 0.02,
+          "NONE": 0.01
+        }
+      }
+    },
+    "GX-0048": {
+      "valid_signal": {
+        "type": "noul",
+        "noul": 0.62
+      },
+      "context": {
+        "type": "choice",
+        "choice": "ESTABLISHED_TREND",
+        "confidence": 0.5,
+        "probabilities": {
+          "ESTABLISHED_TREND": 0.6,
+          "CHOP": 0.05,
+          "POST_GAP": 0.06,
+          "RANGE_BREAK": 0.1,
+          "REVERSAL_RISK": 0.19
+        }
+      },
+      "signal_quality": {
+        "type": "score",
+        "score": 2.44,
+        "confidence": 0.7,
+        "probabilities": {
+          "0": 0,
+          "1": 0.04,
+          "2": 0.49,
+          "3": 0.46,
+          "4": 0.01,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "decision": {
+        "type": "choice",
+        "choice": "SKIP",
+        "confidence": 0.84,
+        "probabilities": {
+          "TAKE": 0.08,
+          "SKIP": 0.92
+        }
+      },
+      "stop_placement": {
+        "type": "choice",
+        "choice": "BELOW_SWING_LOW",
+        "confidence": 0.83,
+        "probabilities": {
+          "BELOW_SLOW_MA": 0.04,
+          "BELOW_SWING_LOW": 0.87,
+          "ATR_BASED": 0.08,
+          "NONE": 0.01
+        }
+      }
+    },
+    "GX-0049": {
+      "valid_signal": {
+        "type": "noul",
+        "noul": 0.39
+      },
+      "context": {
+        "type": "choice",
+        "choice": "ESTABLISHED_TREND",
+        "confidence": 0.59,
+        "probabilities": {
+          "ESTABLISHED_TREND": 0.67,
+          "CHOP": 0.06,
+          "POST_GAP": 0.16,
+          "RANGE_BREAK": 0.08,
+          "REVERSAL_RISK": 0.03
+        }
+      },
+      "signal_quality": {
+        "type": "score",
+        "score": 2.33,
+        "confidence": 0.73,
+        "probabilities": {
+          "0": 0,
+          "1": 0.07,
+          "2": 0.54,
+          "3": 0.38,
+          "4": 0.01,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "decision": {
+        "type": "choice",
+        "choice": "SKIP",
+        "confidence": 0.24,
+        "probabilities": {
+          "TAKE": 0.38,
+          "SKIP": 0.62
+        }
+      },
+      "stop_placement": {
+        "type": "choice",
+        "choice": "BELOW_SWING_LOW",
+        "confidence": 0.44,
+        "probabilities": {
+          "BELOW_SLOW_MA": 0.32,
+          "BELOW_SWING_LOW": 0.58,
+          "ATR_BASED": 0.1,
+          "NONE": 0
+        }
+      }
+    },
+    "GX-0050": {
+      "valid_signal": {
+        "type": "noul",
+        "noul": 0.19
+      },
+      "context": {
+        "type": "choice",
+        "choice": "RANGE_BREAK",
+        "confidence": 0.15,
+        "probabilities": {
+          "ESTABLISHED_TREND": 0.2,
+          "CHOP": 0.04,
+          "POST_GAP": 0.28,
+          "RANGE_BREAK": 0.32,
+          "REVERSAL_RISK": 0.16
+        }
+      },
+      "signal_quality": {
+        "type": "score",
+        "score": 1.93,
+        "confidence": 0.9,
+        "probabilities": {
+          "0": 0,
+          "1": 0.12,
+          "2": 0.83,
+          "3": 0.05,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "decision": {
+        "type": "choice",
+        "choice": "SKIP",
+        "confidence": 0.96,
+        "probabilities": {
+          "TAKE": 0.02,
+          "SKIP": 0.98
+        }
+      },
+      "stop_placement": {
+        "type": "choice",
+        "choice": "BELOW_SWING_LOW",
+        "confidence": 0.29,
+        "probabilities": {
+          "BELOW_SLOW_MA": 0.1,
+          "BELOW_SWING_LOW": 0.47,
+          "ATR_BASED": 0.22,
+          "NONE": 0.21
+        }
+      }
+    },
+    "GX-0051": {
+      "valid_signal": {
+        "type": "noul",
+        "noul": 0.11
+      },
+      "context": {
+        "type": "choice",
+        "choice": "REVERSAL_RISK",
+        "confidence": 0.25,
+        "probabilities": {
+          "ESTABLISHED_TREND": 0.14,
+          "CHOP": 0.13,
+          "POST_GAP": 0.14,
+          "RANGE_BREAK": 0.19,
+          "REVERSAL_RISK": 0.4
+        }
+      },
+      "signal_quality": {
+        "type": "score",
+        "score": 1.42,
+        "confidence": 0.74,
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.56,
+          "2": 0.43,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "decision": {
+        "type": "choice",
+        "choice": "SKIP",
+        "confidence": 1,
+        "probabilities": {
+          "TAKE": 0,
+          "SKIP": 1
+        }
+      },
+      "stop_placement": {
+        "type": "choice",
+        "choice": "BELOW_SWING_LOW",
+        "confidence": 0.85,
+        "probabilities": {
+          "BELOW_SLOW_MA": 0.05,
+          "BELOW_SWING_LOW": 0.89,
+          "ATR_BASED": 0.03,
+          "NONE": 0.03
+        }
+      }
+    },
+    "GX-0052": {
+      "valid_signal": {
+        "type": "noul",
+        "noul": 0.55
+      },
+      "context": {
+        "type": "choice",
+        "choice": "ESTABLISHED_TREND",
+        "confidence": 0.29,
+        "probabilities": {
+          "ESTABLISHED_TREND": 0.43,
+          "CHOP": 0.05,
+          "POST_GAP": 0.42,
+          "RANGE_BREAK": 0.07,
+          "REVERSAL_RISK": 0.03
+        }
+      },
+      "signal_quality": {
+        "type": "score",
+        "score": 2.48,
+        "confidence": 0.69,
+        "probabilities": {
+          "0": 0,
+          "1": 0.04,
+          "2": 0.45,
+          "3": 0.5,
+          "4": 0.01,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "decision": {
+        "type": "choice",
+        "choice": "SKIP",
+        "confidence": 0.66,
+        "probabilities": {
+          "TAKE": 0.17,
+          "SKIP": 0.83
+        }
+      },
+      "stop_placement": {
+        "type": "choice",
+        "choice": "BELOW_SWING_LOW",
+        "confidence": 0.51,
+        "probabilities": {
+          "BELOW_SLOW_MA": 0.21,
+          "BELOW_SWING_LOW": 0.63,
+          "ATR_BASED": 0.09,
+          "NONE": 0.07
+        }
+      }
+    },
+    "GX-0053": {
+      "valid_signal": {
+        "type": "noul",
+        "noul": 0.7
+      },
+      "context": {
+        "type": "choice",
+        "choice": "ESTABLISHED_TREND",
+        "confidence": 0.66,
+        "probabilities": {
+          "ESTABLISHED_TREND": 0.73,
+          "CHOP": 0.06,
+          "POST_GAP": 0.06,
+          "RANGE_BREAK": 0.06,
+          "REVERSAL_RISK": 0.09
+        }
+      },
+      "signal_quality": {
+        "type": "score",
+        "score": 2.85,
+        "confidence": 0.8,
+        "probabilities": {
+          "0": 0,
+          "1": 0.02,
+          "2": 0.21,
+          "3": 0.67,
+          "4": 0.1,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "decision": {
+        "type": "choice",
+        "choice": "SKIP",
+        "confidence": 0.2,
+        "probabilities": {
+          "TAKE": 0.4,
+          "SKIP": 0.6
+        }
+      },
+      "stop_placement": {
+        "type": "choice",
+        "choice": "BELOW_SLOW_MA",
+        "confidence": 0.44,
+        "probabilities": {
+          "BELOW_SLOW_MA": 0.58,
+          "BELOW_SWING_LOW": 0.27,
+          "ATR_BASED": 0.11,
+          "NONE": 0.04
+        }
+      }
+    },
+    "GX-0054": {
+      "valid_signal": {
+        "type": "noul",
+        "noul": 0.3
+      },
+      "context": {
+        "type": "choice",
+        "choice": "RANGE_BREAK",
+        "confidence": 0.22,
+        "probabilities": {
+          "ESTABLISHED_TREND": 0.18,
+          "CHOP": 0.14,
+          "POST_GAP": 0.21,
+          "RANGE_BREAK": 0.38,
+          "REVERSAL_RISK": 0.09
+        }
+      },
+      "signal_quality": {
+        "type": "score",
+        "score": 2.25,
+        "confidence": 0.76,
+        "probabilities": {
+          "0": 0,
+          "1": 0.08,
+          "2": 0.59,
+          "3": 0.33,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "decision": {
+        "type": "choice",
+        "choice": "SKIP",
+        "confidence": 0.94,
+        "probabilities": {
+          "TAKE": 0.03,
+          "SKIP": 0.97
+        }
+      },
+      "stop_placement": {
+        "type": "choice",
+        "choice": "BELOW_SWING_LOW",
+        "confidence": 0.53,
+        "probabilities": {
+          "BELOW_SLOW_MA": 0.22,
+          "BELOW_SWING_LOW": 0.65,
+          "ATR_BASED": 0.11,
+          "NONE": 0.02
+        }
+      }
+    },
+    "GX-0055": {
+      "valid_signal": {
+        "type": "noul",
+        "noul": 0.35
+      },
+      "context": {
+        "type": "choice",
+        "choice": "POST_GAP",
+        "confidence": 0.21,
+        "probabilities": {
+          "ESTABLISHED_TREND": 0.12,
+          "CHOP": 0.08,
+          "POST_GAP": 0.37,
+          "RANGE_BREAK": 0.33,
+          "REVERSAL_RISK": 0.1
+        }
+      },
+      "signal_quality": {
+        "type": "score",
+        "score": 2.71,
+        "confidence": 0.82,
+        "probabilities": {
+          "0": 0,
+          "1": 0.01,
+          "2": 0.28,
+          "3": 0.7,
+          "4": 0.01,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "decision": {
+        "type": "choice",
+        "choice": "SKIP",
+        "confidence": 0.8,
+        "probabilities": {
+          "TAKE": 0.1,
+          "SKIP": 0.9
+        }
+      },
+      "stop_placement": {
+        "type": "choice",
+        "choice": "BELOW_SWING_LOW",
+        "confidence": 0.59,
+        "probabilities": {
+          "BELOW_SLOW_MA": 0.21,
+          "BELOW_SWING_LOW": 0.69,
+          "ATR_BASED": 0.09,
+          "NONE": 0.01
+        }
+      }
+    },
+    "GX-0056": {
+      "valid_signal": {
+        "type": "noul",
+        "noul": 0.72
+      },
+      "context": {
+        "type": "choice",
+        "choice": "ESTABLISHED_TREND",
+        "confidence": 0.45,
+        "probabilities": {
+          "ESTABLISHED_TREND": 0.56,
+          "CHOP": 0.06,
+          "POST_GAP": 0.23,
+          "RANGE_BREAK": 0.1,
+          "REVERSAL_RISK": 0.05
+        }
+      },
+      "signal_quality": {
+        "type": "score",
+        "score": 3.21,
+        "confidence": 0.81,
+        "probabilities": {
+          "0": 0,
+          "1": 0,
+          "2": 0.06,
+          "3": 0.68,
+          "4": 0.25,
+          "5": 0.01,
+          "6": 0
+        }
+      },
+      "decision": {
+        "type": "choice",
+        "choice": "SKIP",
+        "confidence": 0.4,
+        "probabilities": {
+          "TAKE": 0.3,
+          "SKIP": 0.7
+        }
+      },
+      "stop_placement": {
+        "type": "choice",
+        "choice": "BELOW_SWING_LOW",
+        "confidence": 0.77,
+        "probabilities": {
+          "BELOW_SLOW_MA": 0.1,
+          "BELOW_SWING_LOW": 0.83,
+          "ATR_BASED": 0.06,
+          "NONE": 0.01
+        }
+      }
+    },
+    "GX-0057": {
+      "valid_signal": {
+        "type": "noul",
+        "noul": 0.71
+      },
+      "context": {
+        "type": "choice",
+        "choice": "ESTABLISHED_TREND",
+        "confidence": 0.35,
+        "probabilities": {
+          "ESTABLISHED_TREND": 0.48,
+          "CHOP": 0.04,
+          "POST_GAP": 0.43,
+          "RANGE_BREAK": 0.04,
+          "REVERSAL_RISK": 0.01
+        }
+      },
+      "signal_quality": {
+        "type": "score",
+        "score": 3.18,
+        "confidence": 0.77,
+        "probabilities": {
+          "0": 0,
+          "1": 0.01,
+          "2": 0.09,
+          "3": 0.61,
+          "4": 0.29,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "decision": {
+        "type": "choice",
+        "choice": "TAKE",
+        "confidence": 0.08,
+        "probabilities": {
+          "TAKE": 0.54,
+          "SKIP": 0.46
+        }
+      },
+      "stop_placement": {
+        "type": "choice",
+        "choice": "BELOW_SLOW_MA",
+        "confidence": 0.17,
+        "probabilities": {
+          "BELOW_SLOW_MA": 0.38,
+          "BELOW_SWING_LOW": 0.36,
+          "ATR_BASED": 0.26,
+          "NONE": 0
+        }
+      }
+    },
+    "GX-0058": {
+      "valid_signal": {
+        "type": "noul",
+        "noul": 0.73
+      },
+      "context": {
+        "type": "choice",
+        "choice": "ESTABLISHED_TREND",
+        "confidence": 0.54,
+        "probabilities": {
+          "ESTABLISHED_TREND": 0.63,
+          "CHOP": 0.06,
+          "POST_GAP": 0.16,
+          "RANGE_BREAK": 0.11,
+          "REVERSAL_RISK": 0.04
+        }
+      },
+      "signal_quality": {
+        "type": "score",
+        "score": 3.65,
+        "confidence": 0.77,
+        "probabilities": {
+          "0": 0,
+          "1": 0,
+          "2": 0.02,
+          "3": 0.33,
+          "4": 0.63,
+          "5": 0.02,
+          "6": 0
+        }
+      },
+      "decision": {
+        "type": "choice",
+        "choice": "TAKE",
+        "confidence": 0.48,
+        "probabilities": {
+          "TAKE": 0.74,
+          "SKIP": 0.26
+        }
+      },
+      "stop_placement": {
+        "type": "choice",
+        "choice": "ATR_BASED",
+        "confidence": 0.52,
+        "probabilities": {
+          "BELOW_SLOW_MA": 0.2,
+          "BELOW_SWING_LOW": 0.16,
+          "ATR_BASED": 0.64,
+          "NONE": 0
+        }
+      }
+    },
+    "GX-0059": {
+      "valid_signal": {
+        "type": "noul",
+        "noul": 0.71
+      },
+      "context": {
+        "type": "choice",
+        "choice": "ESTABLISHED_TREND",
+        "confidence": 0.69,
+        "probabilities": {
+          "ESTABLISHED_TREND": 0.75,
+          "CHOP": 0.04,
+          "POST_GAP": 0.08,
+          "RANGE_BREAK": 0.1,
+          "REVERSAL_RISK": 0.03
+        }
+      },
+      "signal_quality": {
+        "type": "score",
+        "score": 3.18,
+        "confidence": 0.78,
+        "probabilities": {
+          "0": 0,
+          "1": 0.01,
+          "2": 0.08,
+          "3": 0.63,
+          "4": 0.28,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "decision": {
+        "type": "choice",
+        "choice": "TAKE",
+        "confidence": 0.12,
+        "probabilities": {
+          "TAKE": 0.56,
+          "SKIP": 0.44
+        }
+      },
+      "stop_placement": {
+        "type": "choice",
+        "choice": "BELOW_SWING_LOW",
+        "confidence": 0.2,
+        "probabilities": {
+          "BELOW_SLOW_MA": 0.35,
+          "BELOW_SWING_LOW": 0.4,
+          "ATR_BASED": 0.22,
+          "NONE": 0.03
+        }
+      }
+    },
+    "GX-0060": {
+      "valid_signal": {
+        "type": "noul",
+        "noul": 0.71
+      },
+      "context": {
+        "type": "choice",
+        "choice": "ESTABLISHED_TREND",
+        "confidence": 0.73,
+        "probabilities": {
+          "ESTABLISHED_TREND": 0.78,
+          "CHOP": 0.04,
+          "POST_GAP": 0.08,
+          "RANGE_BREAK": 0.08,
+          "REVERSAL_RISK": 0.02
+        }
+      },
+      "signal_quality": {
+        "type": "score",
+        "score": 3.06,
+        "confidence": 0.81,
+        "probabilities": {
+          "0": 0,
+          "1": 0,
+          "2": 0.13,
+          "3": 0.68,
+          "4": 0.19,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "decision": {
+        "type": "choice",
+        "choice": "TAKE",
+        "confidence": 0.04,
+        "probabilities": {
+          "TAKE": 0.52,
+          "SKIP": 0.48
+        }
+      },
+      "stop_placement": {
+        "type": "choice",
+        "choice": "BELOW_SWING_LOW",
+        "confidence": 0.37,
+        "probabilities": {
+          "BELOW_SLOW_MA": 0.42,
+          "BELOW_SWING_LOW": 0.53,
+          "ATR_BASED": 0.04,
+          "NONE": 0.01
+        }
+      }
+    },
+    "GX-0061": {
+      "valid_signal": {
+        "type": "noul",
+        "noul": 0.35
+      },
+      "context": {
+        "type": "choice",
+        "choice": "POST_GAP",
+        "confidence": 0.54,
+        "probabilities": {
+          "ESTABLISHED_TREND": 0.06,
+          "CHOP": 0.04,
+          "POST_GAP": 0.63,
+          "RANGE_BREAK": 0.14,
+          "REVERSAL_RISK": 0.13
+        }
+      },
+      "signal_quality": {
+        "type": "score",
+        "score": 2.58,
+        "confidence": 0.74,
+        "probabilities": {
+          "0": 0,
+          "1": 0.03,
+          "2": 0.37,
+          "3": 0.59,
+          "4": 0.01,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "decision": {
+        "type": "choice",
+        "choice": "SKIP",
+        "confidence": 0.74,
+        "probabilities": {
+          "TAKE": 0.13,
+          "SKIP": 0.87
+        }
+      },
+      "stop_placement": {
+        "type": "choice",
+        "choice": "BELOW_SWING_LOW",
+        "confidence": 0.52,
+        "probabilities": {
+          "BELOW_SLOW_MA": 0.22,
+          "BELOW_SWING_LOW": 0.64,
+          "ATR_BASED": 0.11,
+          "NONE": 0.03
+        }
+      }
+    },
+    "GX-0062": {
+      "valid_signal": {
+        "type": "noul",
+        "noul": 0.58
+      },
+      "context": {
+        "type": "choice",
+        "choice": "ESTABLISHED_TREND",
+        "confidence": 0.4,
+        "probabilities": {
+          "ESTABLISHED_TREND": 0.52,
+          "CHOP": 0.1,
+          "POST_GAP": 0.17,
+          "RANGE_BREAK": 0.17,
+          "REVERSAL_RISK": 0.04
+        }
+      },
+      "signal_quality": {
+        "type": "score",
+        "score": 2.9,
+        "confidence": 0.91,
+        "probabilities": {
+          "0": 0,
+          "1": 0,
+          "2": 0.13,
+          "3": 0.84,
+          "4": 0.03,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "decision": {
+        "type": "choice",
+        "choice": "SKIP",
+        "confidence": 0.56,
+        "probabilities": {
+          "TAKE": 0.22,
+          "SKIP": 0.78
+        }
+      },
+      "stop_placement": {
+        "type": "choice",
+        "choice": "BELOW_SWING_LOW",
+        "confidence": 0.51,
+        "probabilities": {
+          "BELOW_SLOW_MA": 0.16,
+          "BELOW_SWING_LOW": 0.63,
+          "ATR_BASED": 0.2,
+          "NONE": 0.01
+        }
+      }
+    },
+    "GX-0063": {
+      "valid_signal": {
+        "type": "noul",
+        "noul": 0.32
+      },
+      "context": {
+        "type": "choice",
+        "choice": "ESTABLISHED_TREND",
+        "confidence": 0.1,
+        "probabilities": {
+          "ESTABLISHED_TREND": 0.28,
+          "CHOP": 0.18,
+          "POST_GAP": 0.25,
+          "RANGE_BREAK": 0.22,
+          "REVERSAL_RISK": 0.07
+        }
+      },
+      "signal_quality": {
+        "type": "score",
+        "score": 2.13,
+        "confidence": 0.82,
+        "probabilities": {
+          "0": 0,
+          "1": 0.09,
+          "2": 0.7,
+          "3": 0.2,
+          "4": 0.01,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "decision": {
+        "type": "choice",
+        "choice": "SKIP",
+        "confidence": 0.82,
+        "probabilities": {
+          "TAKE": 0.09,
+          "SKIP": 0.91
+        }
+      },
+      "stop_placement": {
+        "type": "choice",
+        "choice": "BELOW_SWING_LOW",
+        "confidence": 0.85,
+        "probabilities": {
+          "BELOW_SLOW_MA": 0.03,
+          "BELOW_SWING_LOW": 0.89,
+          "ATR_BASED": 0.07,
+          "NONE": 0.01
+        }
+      }
+    },
+    "GX-0064": {
+      "valid_signal": {
+        "type": "noul",
+        "noul": 0.63
+      },
+      "context": {
+        "type": "choice",
+        "choice": "POST_GAP",
+        "confidence": 0.26,
+        "probabilities": {
+          "ESTABLISHED_TREND": 0.26,
+          "CHOP": 0.07,
+          "POST_GAP": 0.41,
+          "RANGE_BREAK": 0.17,
+          "REVERSAL_RISK": 0.09
+        }
+      },
+      "signal_quality": {
+        "type": "score",
+        "score": 2.81,
+        "confidence": 0.85,
+        "probabilities": {
+          "0": 0,
+          "1": 0.01,
+          "2": 0.2,
+          "3": 0.76,
+          "4": 0.03,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "decision": {
+        "type": "choice",
+        "choice": "SKIP",
+        "confidence": 0.8,
+        "probabilities": {
+          "TAKE": 0.1,
+          "SKIP": 0.9
+        }
+      },
+      "stop_placement": {
+        "type": "choice",
+        "choice": "BELOW_SWING_LOW",
+        "confidence": 0.37,
+        "probabilities": {
+          "BELOW_SLOW_MA": 0.4,
+          "BELOW_SWING_LOW": 0.53,
+          "ATR_BASED": 0.06,
+          "NONE": 0.01
+        }
+      }
+    },
+    "GX-0065": {
+      "valid_signal": {
+        "type": "noul",
+        "noul": 0.28
+      },
+      "context": {
+        "type": "choice",
+        "choice": "CHOP",
+        "confidence": 0.27,
+        "probabilities": {
+          "ESTABLISHED_TREND": 0.2,
+          "CHOP": 0.42,
+          "POST_GAP": 0.05,
+          "RANGE_BREAK": 0.17,
+          "REVERSAL_RISK": 0.16
+        }
+      },
+      "signal_quality": {
+        "type": "score",
+        "score": 2.06,
+        "confidence": 0.81,
+        "probabilities": {
+          "0": 0,
+          "1": 0.13,
+          "2": 0.68,
+          "3": 0.19,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "decision": {
+        "type": "choice",
+        "choice": "SKIP",
+        "confidence": 0.88,
+        "probabilities": {
+          "TAKE": 0.06,
+          "SKIP": 0.94
+        }
+      },
+      "stop_placement": {
+        "type": "choice",
+        "choice": "BELOW_SWING_LOW",
+        "confidence": 0.79,
+        "probabilities": {
+          "BELOW_SLOW_MA": 0.08,
+          "BELOW_SWING_LOW": 0.84,
+          "ATR_BASED": 0.04,
+          "NONE": 0.04
+        }
+      }
+    },
+    "GX-0066": {
+      "valid_signal": {
+        "type": "noul",
+        "noul": 0.23
+      },
+      "context": {
+        "type": "choice",
+        "choice": "REVERSAL_RISK",
+        "confidence": 0.14,
+        "probabilities": {
+          "ESTABLISHED_TREND": 0.17,
+          "CHOP": 0.09,
+          "POST_GAP": 0.27,
+          "RANGE_BREAK": 0.16,
+          "REVERSAL_RISK": 0.31
+        }
+      },
+      "signal_quality": {
+        "type": "score",
+        "score": 1.73,
+        "confidence": 0.82,
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.27,
+          "2": 0.7,
+          "3": 0.02,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "decision": {
+        "type": "choice",
+        "choice": "SKIP",
+        "confidence": 1,
+        "probabilities": {
+          "TAKE": 0,
+          "SKIP": 1
+        }
+      },
+      "stop_placement": {
+        "type": "choice",
+        "choice": "BELOW_SWING_LOW",
+        "confidence": 0.6,
+        "probabilities": {
+          "BELOW_SLOW_MA": 0.03,
+          "BELOW_SWING_LOW": 0.7,
+          "ATR_BASED": 0.06,
+          "NONE": 0.21
+        }
+      }
+    },
+    "GX-0067": {
+      "valid_signal": {
+        "type": "noul",
+        "noul": 0.38
+      },
+      "context": {
+        "type": "choice",
+        "choice": "RANGE_BREAK",
+        "confidence": 0.05,
+        "probabilities": {
+          "ESTABLISHED_TREND": 0.23,
+          "CHOP": 0.21,
+          "POST_GAP": 0.23,
+          "RANGE_BREAK": 0.24,
+          "REVERSAL_RISK": 0.09
+        }
+      },
+      "signal_quality": {
+        "type": "score",
+        "score": 2.51,
+        "confidence": 0.7,
+        "probabilities": {
+          "0": 0,
+          "1": 0.02,
+          "2": 0.46,
+          "3": 0.51,
+          "4": 0.01,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "decision": {
+        "type": "choice",
+        "choice": "SKIP",
+        "confidence": 0.74,
+        "probabilities": {
+          "TAKE": 0.13,
+          "SKIP": 0.87
+        }
+      },
+      "stop_placement": {
+        "type": "choice",
+        "choice": "BELOW_SWING_LOW",
+        "confidence": 0.75,
+        "probabilities": {
+          "BELOW_SLOW_MA": 0.07,
+          "BELOW_SWING_LOW": 0.81,
+          "ATR_BASED": 0.08,
+          "NONE": 0.04
+        }
+      }
+    },
+    "GX-0068": {
+      "valid_signal": {
+        "type": "noul",
+        "noul": 0.24
+      },
+      "context": {
+        "type": "choice",
+        "choice": "REVERSAL_RISK",
+        "confidence": 0.21,
+        "probabilities": {
+          "ESTABLISHED_TREND": 0.25,
+          "CHOP": 0.11,
+          "POST_GAP": 0.09,
+          "RANGE_BREAK": 0.18,
+          "REVERSAL_RISK": 0.37
+        }
+      },
+      "signal_quality": {
+        "type": "score",
+        "score": 1.77,
+        "confidence": 0.84,
+        "probabilities": {
+          "0": 0,
+          "1": 0.25,
+          "2": 0.73,
+          "3": 0.02,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "decision": {
+        "type": "choice",
+        "choice": "SKIP",
+        "confidence": 1,
+        "probabilities": {
+          "TAKE": 0,
+          "SKIP": 1
+        }
+      },
+      "stop_placement": {
+        "type": "choice",
+        "choice": "BELOW_SWING_LOW",
+        "confidence": 0.92,
+        "probabilities": {
+          "BELOW_SLOW_MA": 0.02,
+          "BELOW_SWING_LOW": 0.94,
+          "ATR_BASED": 0.01,
+          "NONE": 0.03
+        }
+      }
+    },
+    "GX-0069": {
+      "valid_signal": {
+        "type": "noul",
+        "noul": 0.6
+      },
+      "context": {
+        "type": "choice",
+        "choice": "ESTABLISHED_TREND",
+        "confidence": 0.21,
+        "probabilities": {
+          "ESTABLISHED_TREND": 0.37,
+          "CHOP": 0.07,
+          "POST_GAP": 0.2,
+          "RANGE_BREAK": 0.32,
+          "REVERSAL_RISK": 0.04
+        }
+      },
+      "signal_quality": {
+        "type": "score",
+        "score": 2.79,
+        "confidence": 0.83,
+        "probabilities": {
+          "0": 0,
+          "1": 0.01,
+          "2": 0.23,
+          "3": 0.72,
+          "4": 0.04,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "decision": {
+        "type": "choice",
+        "choice": "TAKE",
+        "confidence": 0.36,
+        "probabilities": {
+          "TAKE": 0.68,
+          "SKIP": 0.32
+        }
+      },
+      "stop_placement": {
+        "type": "choice",
+        "choice": "BELOW_SWING_LOW",
+        "confidence": 0.67,
+        "probabilities": {
+          "BELOW_SLOW_MA": 0.21,
+          "BELOW_SWING_LOW": 0.75,
+          "ATR_BASED": 0.03,
+          "NONE": 0.01
+        }
+      }
+    },
+    "GX-0070": {
+      "valid_signal": {
+        "type": "noul",
+        "noul": 0.32
+      },
+      "context": {
+        "type": "choice",
+        "choice": "POST_GAP",
+        "confidence": 0.16,
+        "probabilities": {
+          "ESTABLISHED_TREND": 0.19,
+          "CHOP": 0.13,
+          "POST_GAP": 0.33,
+          "RANGE_BREAK": 0.3,
+          "REVERSAL_RISK": 0.05
+        }
+      },
+      "signal_quality": {
+        "type": "score",
+        "score": 2.61,
+        "confidence": 0.76,
+        "probabilities": {
+          "0": 0,
+          "1": 0.04,
+          "2": 0.32,
+          "3": 0.63,
+          "4": 0.01,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "decision": {
+        "type": "choice",
+        "choice": "SKIP",
+        "confidence": 0.5,
+        "probabilities": {
+          "TAKE": 0.25,
+          "SKIP": 0.75
+        }
+      },
+      "stop_placement": {
+        "type": "choice",
+        "choice": "BELOW_SWING_LOW",
+        "confidence": 0.31,
+        "probabilities": {
+          "BELOW_SLOW_MA": 0.41,
+          "BELOW_SWING_LOW": 0.48,
+          "ATR_BASED": 0.07,
+          "NONE": 0.04
+        }
+      }
+    },
+    "GX-0071": {
+      "valid_signal": {
+        "type": "noul",
+        "noul": 0.1
+      },
+      "context": {
+        "type": "choice",
+        "choice": "CHOP",
+        "confidence": 0.33,
+        "probabilities": {
+          "ESTABLISHED_TREND": 0.1,
+          "CHOP": 0.46,
+          "POST_GAP": 0.05,
+          "RANGE_BREAK": 0.14,
+          "REVERSAL_RISK": 0.25
+        }
+      },
+      "signal_quality": {
+        "type": "score",
+        "score": 1.63,
+        "confidence": 0.77,
+        "probabilities": {
+          "0": 0,
+          "1": 0.38,
+          "2": 0.61,
+          "3": 0.01,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "decision": {
+        "type": "choice",
+        "choice": "SKIP",
+        "confidence": 1,
+        "probabilities": {
+          "TAKE": 0,
+          "SKIP": 1
+        }
+      },
+      "stop_placement": {
+        "type": "choice",
+        "choice": "BELOW_SWING_LOW",
+        "confidence": 0.53,
+        "probabilities": {
+          "BELOW_SLOW_MA": 0.01,
+          "BELOW_SWING_LOW": 0.65,
+          "ATR_BASED": 0.07,
+          "NONE": 0.27
+        }
+      }
+    }
+  }
+}

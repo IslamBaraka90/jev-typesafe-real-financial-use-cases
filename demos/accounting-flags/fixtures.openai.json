@@ -1,0 +1,6253 @@
+{
+  "demo": "accounting-flags",
+  "provider": "openai",
+  "model": "gpt-6-luna",
+  "recordedAt": "2026-10-11",
+  "source": "scripts/record-demo.js",
+  "usage": {
+    "input_tokens": 198399,
+    "output_tokens": 0
+  },
+  "answers": {
+    "AF-0001": {
+      "flag": {
+        "type": "choice",
+        "choice": "RECEIVABLES",
+        "confidence": 0.29,
+        "probabilities": {
+          "RECEIVABLES": 0.39,
+          "INVENTORY": 0.04,
+          "REVENUE_TIMING": 0.18,
+          "CAPITALISED_COSTS": 0.1,
+          "RELATED_PARTY": 0.03,
+          "RESTATEMENT": 0.02,
+          "NONE": 0.24
+        }
+      },
+      "severity": {
+        "type": "score",
+        "score": 2.56,
+        "confidence": 0.67,
+        "probabilities": {
+          "0": 0.05,
+          "1": 0.05,
+          "2": 0.25,
+          "3": 0.59,
+          "4": 0.06,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "business_explanation_exists": {
+        "type": "noul",
+        "noul": 0
+      },
+      "second_flag": {
+        "type": "choice",
+        "choice": "RECEIVABLES",
+        "confidence": 0.24,
+        "probabilities": {
+          "RECEIVABLES": 0.35,
+          "INVENTORY": 0.1,
+          "REVENUE_TIMING": 0.25,
+          "CAPITALISED_COSTS": 0.07,
+          "RELATED_PARTY": 0.02,
+          "RESTATEMENT": 0.02,
+          "NONE": 0.19
+        }
+      },
+      "investigate": {
+        "type": "noul",
+        "noul": 0.18
+      }
+    },
+    "AF-0002": {
+      "flag": {
+        "type": "choice",
+        "choice": "INVENTORY",
+        "confidence": 0.95,
+        "probabilities": {
+          "RECEIVABLES": 0.01,
+          "INVENTORY": 0.96,
+          "REVENUE_TIMING": 0.01,
+          "CAPITALISED_COSTS": 0,
+          "RELATED_PARTY": 0.01,
+          "RESTATEMENT": 0,
+          "NONE": 0.01
+        }
+      },
+      "severity": {
+        "type": "score",
+        "score": 3,
+        "confidence": 0.85,
+        "probabilities": {
+          "0": 0,
+          "1": 0.01,
+          "2": 0.11,
+          "3": 0.76,
+          "4": 0.11,
+          "5": 0.01,
+          "6": 0
+        }
+      },
+      "business_explanation_exists": {
+        "type": "noul",
+        "noul": 0
+      },
+      "second_flag": {
+        "type": "choice",
+        "choice": "INVENTORY",
+        "confidence": 0.62,
+        "probabilities": {
+          "RECEIVABLES": 0.07,
+          "INVENTORY": 0.67,
+          "REVENUE_TIMING": 0.08,
+          "CAPITALISED_COSTS": 0.02,
+          "RELATED_PARTY": 0.02,
+          "RESTATEMENT": 0.01,
+          "NONE": 0.13
+        }
+      },
+      "investigate": {
+        "type": "noul",
+        "noul": 0.7
+      }
+    },
+    "AF-0003": {
+      "flag": {
+        "type": "choice",
+        "choice": "NONE",
+        "confidence": 0.24,
+        "probabilities": {
+          "RECEIVABLES": 0.19,
+          "INVENTORY": 0.07,
+          "REVENUE_TIMING": 0.23,
+          "CAPITALISED_COSTS": 0.1,
+          "RELATED_PARTY": 0.03,
+          "RESTATEMENT": 0.03,
+          "NONE": 0.35
+        }
+      },
+      "severity": {
+        "type": "score",
+        "score": 2.36,
+        "confidence": 0.59,
+        "probabilities": {
+          "0": 0.09,
+          "1": 0.07,
+          "2": 0.26,
+          "3": 0.55,
+          "4": 0.03,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "business_explanation_exists": {
+        "type": "noul",
+        "noul": 0
+      },
+      "second_flag": {
+        "type": "choice",
+        "choice": "REVENUE_TIMING",
+        "confidence": 0.15,
+        "probabilities": {
+          "RECEIVABLES": 0.25,
+          "INVENTORY": 0.19,
+          "REVENUE_TIMING": 0.27,
+          "CAPITALISED_COSTS": 0.07,
+          "RELATED_PARTY": 0.02,
+          "RESTATEMENT": 0.02,
+          "NONE": 0.18
+        }
+      },
+      "investigate": {
+        "type": "noul",
+        "noul": 0.17
+      }
+    },
+    "AF-0004": {
+      "flag": {
+        "type": "choice",
+        "choice": "RECEIVABLES",
+        "confidence": 0.97,
+        "probabilities": {
+          "RECEIVABLES": 0.97,
+          "INVENTORY": 0.01,
+          "REVENUE_TIMING": 0.01,
+          "CAPITALISED_COSTS": 0,
+          "RELATED_PARTY": 0.01,
+          "RESTATEMENT": 0,
+          "NONE": 0
+        }
+      },
+      "severity": {
+        "type": "score",
+        "score": 3.75,
+        "confidence": 0.81,
+        "probabilities": {
+          "0": 0,
+          "1": 0,
+          "2": 0.02,
+          "3": 0.25,
+          "4": 0.69,
+          "5": 0.04,
+          "6": 0
+        }
+      },
+      "business_explanation_exists": {
+        "type": "noul",
+        "noul": 0
+      },
+      "second_flag": {
+        "type": "choice",
+        "choice": "RECEIVABLES",
+        "confidence": 0.49,
+        "probabilities": {
+          "RECEIVABLES": 0.56,
+          "INVENTORY": 0.04,
+          "REVENUE_TIMING": 0.14,
+          "CAPITALISED_COSTS": 0.03,
+          "RELATED_PARTY": 0.02,
+          "RESTATEMENT": 0.01,
+          "NONE": 0.2
+        }
+      },
+      "investigate": {
+        "type": "noul",
+        "noul": 0.92
+      }
+    },
+    "AF-0005": {
+      "flag": {
+        "type": "choice",
+        "choice": "NONE",
+        "confidence": 0.3,
+        "probabilities": {
+          "RECEIVABLES": 0.23,
+          "INVENTORY": 0.06,
+          "REVENUE_TIMING": 0.19,
+          "CAPITALISED_COSTS": 0.07,
+          "RELATED_PARTY": 0.03,
+          "RESTATEMENT": 0.02,
+          "NONE": 0.4
+        }
+      },
+      "severity": {
+        "type": "score",
+        "score": 1.08,
+        "confidence": 0.37,
+        "probabilities": {
+          "0": 0.38,
+          "1": 0.29,
+          "2": 0.21,
+          "3": 0.11,
+          "4": 0.01,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "business_explanation_exists": {
+        "type": "noul",
+        "noul": 0
+      },
+      "second_flag": {
+        "type": "choice",
+        "choice": "NONE",
+        "confidence": 0.21,
+        "probabilities": {
+          "RECEIVABLES": 0.17,
+          "INVENTORY": 0.14,
+          "REVENUE_TIMING": 0.22,
+          "CAPITALISED_COSTS": 0.07,
+          "RELATED_PARTY": 0.03,
+          "RESTATEMENT": 0.05,
+          "NONE": 0.32
+        }
+      },
+      "investigate": {
+        "type": "noul",
+        "noul": 0.1
+      }
+    },
+    "AF-0006": {
+      "flag": {
+        "type": "choice",
+        "choice": "REVENUE_TIMING",
+        "confidence": 0.5,
+        "probabilities": {
+          "RECEIVABLES": 0.1,
+          "INVENTORY": 0.02,
+          "REVENUE_TIMING": 0.57,
+          "CAPITALISED_COSTS": 0.24,
+          "RELATED_PARTY": 0.02,
+          "RESTATEMENT": 0.01,
+          "NONE": 0.04
+        }
+      },
+      "severity": {
+        "type": "score",
+        "score": 3.93,
+        "confidence": 0.9,
+        "probabilities": {
+          "0": 0,
+          "1": 0,
+          "2": 0.01,
+          "3": 0.1,
+          "4": 0.84,
+          "5": 0.05,
+          "6": 0
+        }
+      },
+      "business_explanation_exists": {
+        "type": "noul",
+        "noul": 0
+      },
+      "second_flag": {
+        "type": "choice",
+        "choice": "REVENUE_TIMING",
+        "confidence": 0.38,
+        "probabilities": {
+          "RECEIVABLES": 0.22,
+          "INVENTORY": 0.1,
+          "REVENUE_TIMING": 0.47,
+          "CAPITALISED_COSTS": 0.05,
+          "RELATED_PARTY": 0.03,
+          "RESTATEMENT": 0.02,
+          "NONE": 0.11
+        }
+      },
+      "investigate": {
+        "type": "noul",
+        "noul": 0.91
+      }
+    },
+    "AF-0007": {
+      "flag": {
+        "type": "choice",
+        "choice": "NONE",
+        "confidence": 0.46,
+        "probabilities": {
+          "RECEIVABLES": 0.08,
+          "INVENTORY": 0.09,
+          "REVENUE_TIMING": 0.1,
+          "CAPITALISED_COSTS": 0.05,
+          "RELATED_PARTY": 0.05,
+          "RESTATEMENT": 0.09,
+          "NONE": 0.54
+        }
+      },
+      "severity": {
+        "type": "score",
+        "score": 0.56,
+        "confidence": 0.67,
+        "probabilities": {
+          "0": 0.62,
+          "1": 0.25,
+          "2": 0.09,
+          "3": 0.03,
+          "4": 0.01,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "business_explanation_exists": {
+        "type": "noul",
+        "noul": 0
+      },
+      "second_flag": {
+        "type": "choice",
+        "choice": "NONE",
+        "confidence": 0.24,
+        "probabilities": {
+          "RECEIVABLES": 0.17,
+          "INVENTORY": 0.13,
+          "REVENUE_TIMING": 0.22,
+          "CAPITALISED_COSTS": 0.06,
+          "RELATED_PARTY": 0.03,
+          "RESTATEMENT": 0.04,
+          "NONE": 0.35
+        }
+      },
+      "investigate": {
+        "type": "noul",
+        "noul": 0.06
+      }
+    },
+    "AF-0008": {
+      "flag": {
+        "type": "choice",
+        "choice": "RECEIVABLES",
+        "confidence": 0.49,
+        "probabilities": {
+          "RECEIVABLES": 0.56,
+          "INVENTORY": 0.03,
+          "REVENUE_TIMING": 0.21,
+          "CAPITALISED_COSTS": 0.13,
+          "RELATED_PARTY": 0.03,
+          "RESTATEMENT": 0.01,
+          "NONE": 0.03
+        }
+      },
+      "severity": {
+        "type": "score",
+        "score": 3.21,
+        "confidence": 0.8,
+        "probabilities": {
+          "0": 0,
+          "1": 0.01,
+          "2": 0.05,
+          "3": 0.67,
+          "4": 0.26,
+          "5": 0.01,
+          "6": 0
+        }
+      },
+      "business_explanation_exists": {
+        "type": "noul",
+        "noul": 0
+      },
+      "second_flag": {
+        "type": "choice",
+        "choice": "RECEIVABLES",
+        "confidence": 0.23,
+        "probabilities": {
+          "RECEIVABLES": 0.34,
+          "INVENTORY": 0.22,
+          "REVENUE_TIMING": 0.27,
+          "CAPITALISED_COSTS": 0.05,
+          "RELATED_PARTY": 0.02,
+          "RESTATEMENT": 0.01,
+          "NONE": 0.09
+        }
+      },
+      "investigate": {
+        "type": "noul",
+        "noul": 0.79
+      }
+    },
+    "AF-0009": {
+      "flag": {
+        "type": "choice",
+        "choice": "REVENUE_TIMING",
+        "confidence": 0.43,
+        "probabilities": {
+          "RECEIVABLES": 0.18,
+          "INVENTORY": 0.03,
+          "REVENUE_TIMING": 0.51,
+          "CAPITALISED_COSTS": 0.2,
+          "RELATED_PARTY": 0.03,
+          "RESTATEMENT": 0.02,
+          "NONE": 0.03
+        }
+      },
+      "severity": {
+        "type": "score",
+        "score": 4.02,
+        "confidence": 0.8,
+        "probabilities": {
+          "0": 0,
+          "1": 0,
+          "2": 0.02,
+          "3": 0.12,
+          "4": 0.69,
+          "5": 0.16,
+          "6": 0.01
+        }
+      },
+      "business_explanation_exists": {
+        "type": "noul",
+        "noul": 0.03
+      },
+      "second_flag": {
+        "type": "choice",
+        "choice": "REVENUE_TIMING",
+        "confidence": 0.38,
+        "probabilities": {
+          "RECEIVABLES": 0.27,
+          "INVENTORY": 0.08,
+          "REVENUE_TIMING": 0.47,
+          "CAPITALISED_COSTS": 0.05,
+          "RELATED_PARTY": 0.04,
+          "RESTATEMENT": 0.02,
+          "NONE": 0.07
+        }
+      },
+      "investigate": {
+        "type": "noul",
+        "noul": 0.96
+      }
+    },
+    "AF-0010": {
+      "flag": {
+        "type": "choice",
+        "choice": "NONE",
+        "confidence": 0.3,
+        "probabilities": {
+          "RECEIVABLES": 0.24,
+          "INVENTORY": 0.1,
+          "REVENUE_TIMING": 0.14,
+          "CAPITALISED_COSTS": 0.06,
+          "RELATED_PARTY": 0.03,
+          "RESTATEMENT": 0.03,
+          "NONE": 0.4
+        }
+      },
+      "severity": {
+        "type": "score",
+        "score": 0.97,
+        "confidence": 0.43,
+        "probabilities": {
+          "0": 0.46,
+          "1": 0.24,
+          "2": 0.18,
+          "3": 0.11,
+          "4": 0.01,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "business_explanation_exists": {
+        "type": "noul",
+        "noul": 0
+      },
+      "second_flag": {
+        "type": "choice",
+        "choice": "RECEIVABLES",
+        "confidence": 0.17,
+        "probabilities": {
+          "RECEIVABLES": 0.29,
+          "INVENTORY": 0.22,
+          "REVENUE_TIMING": 0.2,
+          "CAPITALISED_COSTS": 0.04,
+          "RELATED_PARTY": 0.02,
+          "RESTATEMENT": 0.02,
+          "NONE": 0.21
+        }
+      },
+      "investigate": {
+        "type": "noul",
+        "noul": 0.13
+      }
+    },
+    "AF-0011": {
+      "flag": {
+        "type": "choice",
+        "choice": "RECEIVABLES",
+        "confidence": 0.3,
+        "probabilities": {
+          "RECEIVABLES": 0.4,
+          "INVENTORY": 0.04,
+          "REVENUE_TIMING": 0.2,
+          "CAPITALISED_COSTS": 0.06,
+          "RELATED_PARTY": 0.03,
+          "RESTATEMENT": 0.02,
+          "NONE": 0.25
+        }
+      },
+      "severity": {
+        "type": "score",
+        "score": 2.63,
+        "confidence": 0.67,
+        "probabilities": {
+          "0": 0.03,
+          "1": 0.05,
+          "2": 0.28,
+          "3": 0.55,
+          "4": 0.08,
+          "5": 0.01,
+          "6": 0
+        }
+      },
+      "business_explanation_exists": {
+        "type": "noul",
+        "noul": 0
+      },
+      "second_flag": {
+        "type": "choice",
+        "choice": "RECEIVABLES",
+        "confidence": 0.32,
+        "probabilities": {
+          "RECEIVABLES": 0.42,
+          "INVENTORY": 0.07,
+          "REVENUE_TIMING": 0.24,
+          "CAPITALISED_COSTS": 0.05,
+          "RELATED_PARTY": 0.02,
+          "RESTATEMENT": 0.01,
+          "NONE": 0.19
+        }
+      },
+      "investigate": {
+        "type": "noul",
+        "noul": 0.37
+      }
+    },
+    "AF-0012": {
+      "flag": {
+        "type": "choice",
+        "choice": "RECEIVABLES",
+        "confidence": 0.45,
+        "probabilities": {
+          "RECEIVABLES": 0.53,
+          "INVENTORY": 0.03,
+          "REVENUE_TIMING": 0.14,
+          "CAPITALISED_COSTS": 0.07,
+          "RELATED_PARTY": 0.02,
+          "RESTATEMENT": 0.02,
+          "NONE": 0.19
+        }
+      },
+      "severity": {
+        "type": "score",
+        "score": 2.68,
+        "confidence": 0.77,
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.04,
+          "2": 0.25,
+          "3": 0.66,
+          "4": 0.04,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "business_explanation_exists": {
+        "type": "noul",
+        "noul": 0
+      },
+      "second_flag": {
+        "type": "choice",
+        "choice": "RECEIVABLES",
+        "confidence": 0.28,
+        "probabilities": {
+          "RECEIVABLES": 0.38,
+          "INVENTORY": 0.25,
+          "REVENUE_TIMING": 0.15,
+          "CAPITALISED_COSTS": 0.04,
+          "RELATED_PARTY": 0.03,
+          "RESTATEMENT": 0.01,
+          "NONE": 0.14
+        }
+      },
+      "investigate": {
+        "type": "noul",
+        "noul": 0.37
+      }
+    },
+    "AF-0013": {
+      "flag": {
+        "type": "choice",
+        "choice": "RECEIVABLES",
+        "confidence": 0.32,
+        "probabilities": {
+          "RECEIVABLES": 0.42,
+          "INVENTORY": 0.04,
+          "REVENUE_TIMING": 0.2,
+          "CAPITALISED_COSTS": 0.07,
+          "RELATED_PARTY": 0.02,
+          "RESTATEMENT": 0.02,
+          "NONE": 0.23
+        }
+      },
+      "severity": {
+        "type": "score",
+        "score": 2.52,
+        "confidence": 0.66,
+        "probabilities": {
+          "0": 0.03,
+          "1": 0.05,
+          "2": 0.34,
+          "3": 0.53,
+          "4": 0.05,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "business_explanation_exists": {
+        "type": "noul",
+        "noul": 0
+      },
+      "second_flag": {
+        "type": "choice",
+        "choice": "RECEIVABLES",
+        "confidence": 0.41,
+        "probabilities": {
+          "RECEIVABLES": 0.49,
+          "INVENTORY": 0.05,
+          "REVENUE_TIMING": 0.23,
+          "CAPITALISED_COSTS": 0.06,
+          "RELATED_PARTY": 0.02,
+          "RESTATEMENT": 0.02,
+          "NONE": 0.13
+        }
+      },
+      "investigate": {
+        "type": "noul",
+        "noul": 0.23
+      }
+    },
+    "AF-0014": {
+      "flag": {
+        "type": "choice",
+        "choice": "RECEIVABLES",
+        "confidence": 0.73,
+        "probabilities": {
+          "RECEIVABLES": 0.77,
+          "INVENTORY": 0.16,
+          "REVENUE_TIMING": 0.03,
+          "CAPITALISED_COSTS": 0.01,
+          "RELATED_PARTY": 0.01,
+          "RESTATEMENT": 0.01,
+          "NONE": 0.01
+        }
+      },
+      "severity": {
+        "type": "score",
+        "score": 3.92,
+        "confidence": 0.87,
+        "probabilities": {
+          "0": 0,
+          "1": 0,
+          "2": 0.01,
+          "3": 0.13,
+          "4": 0.79,
+          "5": 0.07,
+          "6": 0
+        }
+      },
+      "business_explanation_exists": {
+        "type": "noul",
+        "noul": 0
+      },
+      "second_flag": {
+        "type": "choice",
+        "choice": "INVENTORY",
+        "confidence": 0.31,
+        "probabilities": {
+          "RECEIVABLES": 0.37,
+          "INVENTORY": 0.41,
+          "REVENUE_TIMING": 0.07,
+          "CAPITALISED_COSTS": 0.03,
+          "RELATED_PARTY": 0.02,
+          "RESTATEMENT": 0.01,
+          "NONE": 0.09
+        }
+      },
+      "investigate": {
+        "type": "noul",
+        "noul": 0.96
+      }
+    },
+    "AF-0015": {
+      "flag": {
+        "type": "choice",
+        "choice": "NONE",
+        "confidence": 0.24,
+        "probabilities": {
+          "RECEIVABLES": 0.2,
+          "INVENTORY": 0.05,
+          "REVENUE_TIMING": 0.2,
+          "CAPITALISED_COSTS": 0.14,
+          "RELATED_PARTY": 0.04,
+          "RESTATEMENT": 0.02,
+          "NONE": 0.35
+        }
+      },
+      "severity": {
+        "type": "score",
+        "score": 2.42,
+        "confidence": 0.63,
+        "probabilities": {
+          "0": 0.05,
+          "1": 0.07,
+          "2": 0.32,
+          "3": 0.53,
+          "4": 0.03,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "business_explanation_exists": {
+        "type": "noul",
+        "noul": 0
+      },
+      "second_flag": {
+        "type": "choice",
+        "choice": "RECEIVABLES",
+        "confidence": 0.17,
+        "probabilities": {
+          "RECEIVABLES": 0.29,
+          "INVENTORY": 0.08,
+          "REVENUE_TIMING": 0.25,
+          "CAPITALISED_COSTS": 0.13,
+          "RELATED_PARTY": 0.03,
+          "RESTATEMENT": 0.03,
+          "NONE": 0.19
+        }
+      },
+      "investigate": {
+        "type": "noul",
+        "noul": 0.26
+      }
+    },
+    "AF-0016": {
+      "flag": {
+        "type": "choice",
+        "choice": "RECEIVABLES",
+        "confidence": 0.26,
+        "probabilities": {
+          "RECEIVABLES": 0.37,
+          "INVENTORY": 0.04,
+          "REVENUE_TIMING": 0.17,
+          "CAPITALISED_COSTS": 0.08,
+          "RELATED_PARTY": 0.02,
+          "RESTATEMENT": 0.02,
+          "NONE": 0.3
+        }
+      },
+      "severity": {
+        "type": "score",
+        "score": 1.64,
+        "confidence": 0.44,
+        "probabilities": {
+          "0": 0.23,
+          "1": 0.2,
+          "2": 0.29,
+          "3": 0.26,
+          "4": 0.02,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "business_explanation_exists": {
+        "type": "noul",
+        "noul": 0
+      },
+      "second_flag": {
+        "type": "choice",
+        "choice": "RECEIVABLES",
+        "confidence": 0.26,
+        "probabilities": {
+          "RECEIVABLES": 0.37,
+          "INVENTORY": 0.06,
+          "REVENUE_TIMING": 0.22,
+          "CAPITALISED_COSTS": 0.11,
+          "RELATED_PARTY": 0.04,
+          "RESTATEMENT": 0.02,
+          "NONE": 0.18
+        }
+      },
+      "investigate": {
+        "type": "noul",
+        "noul": 0.13
+      }
+    },
+    "AF-0017": {
+      "flag": {
+        "type": "choice",
+        "choice": "INVENTORY",
+        "confidence": 0.94,
+        "probabilities": {
+          "RECEIVABLES": 0.02,
+          "INVENTORY": 0.95,
+          "REVENUE_TIMING": 0.01,
+          "CAPITALISED_COSTS": 0,
+          "RELATED_PARTY": 0.01,
+          "RESTATEMENT": 0,
+          "NONE": 0.01
+        }
+      },
+      "severity": {
+        "type": "score",
+        "score": 2.31,
+        "confidence": 0.54,
+        "probabilities": {
+          "0": 0.05,
+          "1": 0.13,
+          "2": 0.33,
+          "3": 0.45,
+          "4": 0.03,
+          "5": 0.01,
+          "6": 0
+        }
+      },
+      "business_explanation_exists": {
+        "type": "noul",
+        "noul": 0.93
+      },
+      "second_flag": {
+        "type": "choice",
+        "choice": "INVENTORY",
+        "confidence": 0.54,
+        "probabilities": {
+          "RECEIVABLES": 0.08,
+          "INVENTORY": 0.61,
+          "REVENUE_TIMING": 0.1,
+          "CAPITALISED_COSTS": 0.03,
+          "RELATED_PARTY": 0.02,
+          "RESTATEMENT": 0.01,
+          "NONE": 0.15
+        }
+      },
+      "investigate": {
+        "type": "noul",
+        "noul": 0.21
+      }
+    },
+    "AF-0018": {
+      "flag": {
+        "type": "choice",
+        "choice": "RECEIVABLES",
+        "confidence": 0.65,
+        "probabilities": {
+          "RECEIVABLES": 0.7,
+          "INVENTORY": 0.04,
+          "REVENUE_TIMING": 0.13,
+          "CAPITALISED_COSTS": 0.07,
+          "RELATED_PARTY": 0.02,
+          "RESTATEMENT": 0.01,
+          "NONE": 0.03
+        }
+      },
+      "severity": {
+        "type": "score",
+        "score": 3.29,
+        "confidence": 0.64,
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.02,
+          "2": 0.09,
+          "3": 0.45,
+          "4": 0.41,
+          "5": 0.02,
+          "6": 0
+        }
+      },
+      "business_explanation_exists": {
+        "type": "noul",
+        "noul": 1
+      },
+      "second_flag": {
+        "type": "choice",
+        "choice": "RECEIVABLES",
+        "confidence": 0.26,
+        "probabilities": {
+          "RECEIVABLES": 0.37,
+          "INVENTORY": 0.06,
+          "REVENUE_TIMING": 0.35,
+          "CAPITALISED_COSTS": 0.05,
+          "RELATED_PARTY": 0.02,
+          "RESTATEMENT": 0.01,
+          "NONE": 0.14
+        }
+      },
+      "investigate": {
+        "type": "noul",
+        "noul": 0.46
+      }
+    },
+    "AF-0019": {
+      "flag": {
+        "type": "choice",
+        "choice": "NONE",
+        "confidence": 0.22,
+        "probabilities": {
+          "RECEIVABLES": 0.15,
+          "INVENTORY": 0.09,
+          "REVENUE_TIMING": 0.25,
+          "CAPITALISED_COSTS": 0.1,
+          "RELATED_PARTY": 0.04,
+          "RESTATEMENT": 0.04,
+          "NONE": 0.33
+        }
+      },
+      "severity": {
+        "type": "score",
+        "score": 1.83,
+        "confidence": 0.52,
+        "probabilities": {
+          "0": 0.17,
+          "1": 0.16,
+          "2": 0.36,
+          "3": 0.29,
+          "4": 0.02,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "business_explanation_exists": {
+        "type": "noul",
+        "noul": 0
+      },
+      "second_flag": {
+        "type": "choice",
+        "choice": "RECEIVABLES",
+        "confidence": 0.15,
+        "probabilities": {
+          "RECEIVABLES": 0.27,
+          "INVENTORY": 0.21,
+          "REVENUE_TIMING": 0.23,
+          "CAPITALISED_COSTS": 0.06,
+          "RELATED_PARTY": 0.02,
+          "RESTATEMENT": 0.02,
+          "NONE": 0.19
+        }
+      },
+      "investigate": {
+        "type": "noul",
+        "noul": 0.12
+      }
+    },
+    "AF-0020": {
+      "flag": {
+        "type": "choice",
+        "choice": "RELATED_PARTY",
+        "confidence": 0.89,
+        "probabilities": {
+          "RECEIVABLES": 0.03,
+          "INVENTORY": 0.01,
+          "REVENUE_TIMING": 0.02,
+          "CAPITALISED_COSTS": 0.02,
+          "RELATED_PARTY": 0.91,
+          "RESTATEMENT": 0.01,
+          "NONE": 0
+        }
+      },
+      "severity": {
+        "type": "score",
+        "score": 3.74,
+        "confidence": 0.64,
+        "probabilities": {
+          "0": 0.03,
+          "1": 0.02,
+          "2": 0.03,
+          "3": 0.2,
+          "4": 0.58,
+          "5": 0.1,
+          "6": 0.04
+        }
+      },
+      "business_explanation_exists": {
+        "type": "noul",
+        "noul": 0.02
+      },
+      "second_flag": {
+        "type": "choice",
+        "choice": "RELATED_PARTY",
+        "confidence": 0.35,
+        "probabilities": {
+          "RECEIVABLES": 0.21,
+          "INVENTORY": 0.09,
+          "REVENUE_TIMING": 0.08,
+          "CAPITALISED_COSTS": 0.05,
+          "RELATED_PARTY": 0.44,
+          "RESTATEMENT": 0.03,
+          "NONE": 0.1
+        }
+      },
+      "investigate": {
+        "type": "noul",
+        "noul": 0.96
+      }
+    },
+    "AF-0021": {
+      "flag": {
+        "type": "choice",
+        "choice": "RECEIVABLES",
+        "confidence": 0.64,
+        "probabilities": {
+          "RECEIVABLES": 0.69,
+          "INVENTORY": 0.02,
+          "REVENUE_TIMING": 0.02,
+          "CAPITALISED_COSTS": 0.02,
+          "RELATED_PARTY": 0.24,
+          "RESTATEMENT": 0.01,
+          "NONE": 0
+        }
+      },
+      "severity": {
+        "type": "score",
+        "score": 4.04,
+        "confidence": 0.87,
+        "probabilities": {
+          "0": 0,
+          "1": 0,
+          "2": 0.01,
+          "3": 0.07,
+          "4": 0.8,
+          "5": 0.11,
+          "6": 0.01
+        }
+      },
+      "business_explanation_exists": {
+        "type": "noul",
+        "noul": 0.03
+      },
+      "second_flag": {
+        "type": "choice",
+        "choice": "RECEIVABLES",
+        "confidence": 0.38,
+        "probabilities": {
+          "RECEIVABLES": 0.47,
+          "INVENTORY": 0.06,
+          "REVENUE_TIMING": 0.05,
+          "CAPITALISED_COSTS": 0.03,
+          "RELATED_PARTY": 0.29,
+          "RESTATEMENT": 0.02,
+          "NONE": 0.08
+        }
+      },
+      "investigate": {
+        "type": "noul",
+        "noul": 0.96
+      }
+    },
+    "AF-0022": {
+      "flag": {
+        "type": "choice",
+        "choice": "RECEIVABLES",
+        "confidence": 0.42,
+        "probabilities": {
+          "RECEIVABLES": 0.5,
+          "INVENTORY": 0.04,
+          "REVENUE_TIMING": 0.18,
+          "CAPITALISED_COSTS": 0.14,
+          "RELATED_PARTY": 0.04,
+          "RESTATEMENT": 0.02,
+          "NONE": 0.08
+        }
+      },
+      "severity": {
+        "type": "score",
+        "score": 2.81,
+        "confidence": 0.82,
+        "probabilities": {
+          "0": 0,
+          "1": 0.02,
+          "2": 0.21,
+          "3": 0.71,
+          "4": 0.06,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "business_explanation_exists": {
+        "type": "noul",
+        "noul": 0
+      },
+      "second_flag": {
+        "type": "choice",
+        "choice": "RECEIVABLES",
+        "confidence": 0.17,
+        "probabilities": {
+          "RECEIVABLES": 0.29,
+          "INVENTORY": 0.24,
+          "REVENUE_TIMING": 0.27,
+          "CAPITALISED_COSTS": 0.04,
+          "RELATED_PARTY": 0.02,
+          "RESTATEMENT": 0.02,
+          "NONE": 0.12
+        }
+      },
+      "investigate": {
+        "type": "noul",
+        "noul": 0.56
+      }
+    },
+    "AF-0023": {
+      "flag": {
+        "type": "choice",
+        "choice": "REVENUE_TIMING",
+        "confidence": 0.18,
+        "probabilities": {
+          "RECEIVABLES": 0.29,
+          "INVENTORY": 0.02,
+          "REVENUE_TIMING": 0.3,
+          "CAPITALISED_COSTS": 0.13,
+          "RELATED_PARTY": 0.03,
+          "RESTATEMENT": 0.03,
+          "NONE": 0.2
+        }
+      },
+      "severity": {
+        "type": "score",
+        "score": 2.27,
+        "confidence": 0.54,
+        "probabilities": {
+          "0": 0.07,
+          "1": 0.1,
+          "2": 0.35,
+          "3": 0.45,
+          "4": 0.03,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "business_explanation_exists": {
+        "type": "noul",
+        "noul": 0
+      },
+      "second_flag": {
+        "type": "choice",
+        "choice": "RECEIVABLES",
+        "confidence": 0.24,
+        "probabilities": {
+          "RECEIVABLES": 0.35,
+          "INVENTORY": 0.05,
+          "REVENUE_TIMING": 0.31,
+          "CAPITALISED_COSTS": 0.06,
+          "RELATED_PARTY": 0.02,
+          "RESTATEMENT": 0.02,
+          "NONE": 0.19
+        }
+      },
+      "investigate": {
+        "type": "noul",
+        "noul": 0.2
+      }
+    },
+    "AF-0024": {
+      "flag": {
+        "type": "choice",
+        "choice": "RELATED_PARTY",
+        "confidence": 0.8,
+        "probabilities": {
+          "RECEIVABLES": 0.07,
+          "INVENTORY": 0.02,
+          "REVENUE_TIMING": 0.02,
+          "CAPITALISED_COSTS": 0.03,
+          "RELATED_PARTY": 0.83,
+          "RESTATEMENT": 0.01,
+          "NONE": 0.02
+        }
+      },
+      "severity": {
+        "type": "score",
+        "score": 3.39,
+        "confidence": 0.45,
+        "probabilities": {
+          "0": 0.07,
+          "1": 0.05,
+          "2": 0.07,
+          "3": 0.21,
+          "4": 0.46,
+          "5": 0.11,
+          "6": 0.03
+        }
+      },
+      "business_explanation_exists": {
+        "type": "noul",
+        "noul": 0.09
+      },
+      "second_flag": {
+        "type": "choice",
+        "choice": "RELATED_PARTY",
+        "confidence": 0.35,
+        "probabilities": {
+          "RECEIVABLES": 0.14,
+          "INVENTORY": 0.14,
+          "REVENUE_TIMING": 0.08,
+          "CAPITALISED_COSTS": 0.04,
+          "RELATED_PARTY": 0.44,
+          "RESTATEMENT": 0.03,
+          "NONE": 0.13
+        }
+      },
+      "investigate": {
+        "type": "noul",
+        "noul": 0.88
+      }
+    },
+    "AF-0025": {
+      "flag": {
+        "type": "choice",
+        "choice": "RELATED_PARTY",
+        "confidence": 0.81,
+        "probabilities": {
+          "RECEIVABLES": 0.07,
+          "INVENTORY": 0.03,
+          "REVENUE_TIMING": 0.02,
+          "CAPITALISED_COSTS": 0.02,
+          "RELATED_PARTY": 0.84,
+          "RESTATEMENT": 0.01,
+          "NONE": 0.01
+        }
+      },
+      "severity": {
+        "type": "score",
+        "score": 3.68,
+        "confidence": 0.64,
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.02,
+          "2": 0.05,
+          "3": 0.27,
+          "4": 0.52,
+          "5": 0.11,
+          "6": 0.02
+        }
+      },
+      "business_explanation_exists": {
+        "type": "noul",
+        "noul": 0.07
+      },
+      "second_flag": {
+        "type": "choice",
+        "choice": "RELATED_PARTY",
+        "confidence": 0.24,
+        "probabilities": {
+          "RECEIVABLES": 0.27,
+          "INVENTORY": 0.09,
+          "REVENUE_TIMING": 0.08,
+          "CAPITALISED_COSTS": 0.05,
+          "RELATED_PARTY": 0.35,
+          "RESTATEMENT": 0.03,
+          "NONE": 0.13
+        }
+      },
+      "investigate": {
+        "type": "noul",
+        "noul": 0.93
+      }
+    },
+    "AF-0026": {
+      "flag": {
+        "type": "choice",
+        "choice": "RECEIVABLES",
+        "confidence": 0.97,
+        "probabilities": {
+          "RECEIVABLES": 0.97,
+          "INVENTORY": 0.01,
+          "REVENUE_TIMING": 0.01,
+          "CAPITALISED_COSTS": 0,
+          "RELATED_PARTY": 0.01,
+          "RESTATEMENT": 0,
+          "NONE": 0
+        }
+      },
+      "severity": {
+        "type": "score",
+        "score": 3.89,
+        "confidence": 0.89,
+        "probabilities": {
+          "0": 0,
+          "1": 0,
+          "2": 0.01,
+          "3": 0.13,
+          "4": 0.82,
+          "5": 0.04,
+          "6": 0
+        }
+      },
+      "business_explanation_exists": {
+        "type": "noul",
+        "noul": 0
+      },
+      "second_flag": {
+        "type": "choice",
+        "choice": "RECEIVABLES",
+        "confidence": 0.43,
+        "probabilities": {
+          "RECEIVABLES": 0.51,
+          "INVENTORY": 0.06,
+          "REVENUE_TIMING": 0.21,
+          "CAPITALISED_COSTS": 0.02,
+          "RELATED_PARTY": 0.02,
+          "RESTATEMENT": 0.01,
+          "NONE": 0.17
+        }
+      },
+      "investigate": {
+        "type": "noul",
+        "noul": 0.94
+      }
+    },
+    "AF-0027": {
+      "flag": {
+        "type": "choice",
+        "choice": "INVENTORY",
+        "confidence": 0.73,
+        "probabilities": {
+          "RECEIVABLES": 0.18,
+          "INVENTORY": 0.77,
+          "REVENUE_TIMING": 0.02,
+          "CAPITALISED_COSTS": 0.01,
+          "RELATED_PARTY": 0.01,
+          "RESTATEMENT": 0,
+          "NONE": 0.01
+        }
+      },
+      "severity": {
+        "type": "score",
+        "score": 4.02,
+        "confidence": 0.85,
+        "probabilities": {
+          "0": 0,
+          "1": 0,
+          "2": 0.01,
+          "3": 0.1,
+          "4": 0.75,
+          "5": 0.14,
+          "6": 0
+        }
+      },
+      "business_explanation_exists": {
+        "type": "noul",
+        "noul": 0
+      },
+      "second_flag": {
+        "type": "choice",
+        "choice": "INVENTORY",
+        "confidence": 0.5,
+        "probabilities": {
+          "RECEIVABLES": 0.28,
+          "INVENTORY": 0.57,
+          "REVENUE_TIMING": 0.06,
+          "CAPITALISED_COSTS": 0.02,
+          "RELATED_PARTY": 0.02,
+          "RESTATEMENT": 0.01,
+          "NONE": 0.04
+        }
+      },
+      "investigate": {
+        "type": "noul",
+        "noul": 0.95
+      }
+    },
+    "AF-0028": {
+      "flag": {
+        "type": "choice",
+        "choice": "RECEIVABLES",
+        "confidence": 0.97,
+        "probabilities": {
+          "RECEIVABLES": 0.97,
+          "INVENTORY": 0.01,
+          "REVENUE_TIMING": 0.01,
+          "CAPITALISED_COSTS": 0,
+          "RELATED_PARTY": 0.01,
+          "RESTATEMENT": 0,
+          "NONE": 0
+        }
+      },
+      "severity": {
+        "type": "score",
+        "score": 3.78,
+        "confidence": 0.79,
+        "probabilities": {
+          "0": 0,
+          "1": 0,
+          "2": 0.02,
+          "3": 0.25,
+          "4": 0.66,
+          "5": 0.07,
+          "6": 0
+        }
+      },
+      "business_explanation_exists": {
+        "type": "noul",
+        "noul": 0
+      },
+      "second_flag": {
+        "type": "choice",
+        "choice": "RECEIVABLES",
+        "confidence": 0.3,
+        "probabilities": {
+          "RECEIVABLES": 0.4,
+          "INVENTORY": 0.37,
+          "REVENUE_TIMING": 0.09,
+          "CAPITALISED_COSTS": 0.02,
+          "RELATED_PARTY": 0.02,
+          "RESTATEMENT": 0.01,
+          "NONE": 0.09
+        }
+      },
+      "investigate": {
+        "type": "noul",
+        "noul": 0.94
+      }
+    },
+    "AF-0029": {
+      "flag": {
+        "type": "choice",
+        "choice": "REVENUE_TIMING",
+        "confidence": 0.42,
+        "probabilities": {
+          "RECEIVABLES": 0.16,
+          "INVENTORY": 0.03,
+          "REVENUE_TIMING": 0.5,
+          "CAPITALISED_COSTS": 0.24,
+          "RELATED_PARTY": 0.02,
+          "RESTATEMENT": 0.01,
+          "NONE": 0.04
+        }
+      },
+      "severity": {
+        "type": "score",
+        "score": 4.25,
+        "confidence": 0.77,
+        "probabilities": {
+          "0": 0,
+          "1": 0,
+          "2": 0.01,
+          "3": 0.05,
+          "4": 0.63,
+          "5": 0.3,
+          "6": 0.01
+        }
+      },
+      "business_explanation_exists": {
+        "type": "noul",
+        "noul": 0
+      },
+      "second_flag": {
+        "type": "choice",
+        "choice": "REVENUE_TIMING",
+        "confidence": 0.31,
+        "probabilities": {
+          "RECEIVABLES": 0.27,
+          "INVENTORY": 0.09,
+          "REVENUE_TIMING": 0.41,
+          "CAPITALISED_COSTS": 0.07,
+          "RELATED_PARTY": 0.03,
+          "RESTATEMENT": 0.02,
+          "NONE": 0.11
+        }
+      },
+      "investigate": {
+        "type": "noul",
+        "noul": 0.94
+      }
+    },
+    "AF-0030": {
+      "flag": {
+        "type": "choice",
+        "choice": "CAPITALISED_COSTS",
+        "confidence": 0.41,
+        "probabilities": {
+          "RECEIVABLES": 0.41,
+          "INVENTORY": 0.03,
+          "REVENUE_TIMING": 0.05,
+          "CAPITALISED_COSTS": 0.49,
+          "RELATED_PARTY": 0.02,
+          "RESTATEMENT": 0,
+          "NONE": 0
+        }
+      },
+      "severity": {
+        "type": "score",
+        "score": 3.99,
+        "confidence": 0.83,
+        "probabilities": {
+          "0": 0,
+          "1": 0,
+          "2": 0.01,
+          "3": 0.13,
+          "4": 0.72,
+          "5": 0.14,
+          "6": 0
+        }
+      },
+      "business_explanation_exists": {
+        "type": "noul",
+        "noul": 0
+      },
+      "second_flag": {
+        "type": "choice",
+        "choice": "RECEIVABLES",
+        "confidence": 0.31,
+        "probabilities": {
+          "RECEIVABLES": 0.41,
+          "INVENTORY": 0.04,
+          "REVENUE_TIMING": 0.13,
+          "CAPITALISED_COSTS": 0.29,
+          "RELATED_PARTY": 0.03,
+          "RESTATEMENT": 0.02,
+          "NONE": 0.08
+        }
+      },
+      "investigate": {
+        "type": "noul",
+        "noul": 0.96
+      }
+    },
+    "AF-0031": {
+      "flag": {
+        "type": "choice",
+        "choice": "NONE",
+        "confidence": 0.19,
+        "probabilities": {
+          "RECEIVABLES": 0.16,
+          "INVENTORY": 0.07,
+          "REVENUE_TIMING": 0.24,
+          "CAPITALISED_COSTS": 0.14,
+          "RELATED_PARTY": 0.04,
+          "RESTATEMENT": 0.04,
+          "NONE": 0.31
+        }
+      },
+      "severity": {
+        "type": "score",
+        "score": 1.24,
+        "confidence": 0.28,
+        "probabilities": {
+          "0": 0.34,
+          "1": 0.25,
+          "2": 0.25,
+          "3": 0.15,
+          "4": 0.01,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "business_explanation_exists": {
+        "type": "noul",
+        "noul": 0
+      },
+      "second_flag": {
+        "type": "choice",
+        "choice": "REVENUE_TIMING",
+        "confidence": 0.23,
+        "probabilities": {
+          "RECEIVABLES": 0.26,
+          "INVENTORY": 0.05,
+          "REVENUE_TIMING": 0.34,
+          "CAPITALISED_COSTS": 0.11,
+          "RELATED_PARTY": 0.04,
+          "RESTATEMENT": 0.03,
+          "NONE": 0.17
+        }
+      },
+      "investigate": {
+        "type": "noul",
+        "noul": 0.23
+      }
+    },
+    "AF-0032": {
+      "flag": {
+        "type": "choice",
+        "choice": "REVENUE_TIMING",
+        "confidence": 0.18,
+        "probabilities": {
+          "RECEIVABLES": 0.25,
+          "INVENTORY": 0.03,
+          "REVENUE_TIMING": 0.3,
+          "CAPITALISED_COSTS": 0.19,
+          "RELATED_PARTY": 0.03,
+          "RESTATEMENT": 0.02,
+          "NONE": 0.18
+        }
+      },
+      "severity": {
+        "type": "score",
+        "score": 2.27,
+        "confidence": 0.52,
+        "probabilities": {
+          "0": 0.11,
+          "1": 0.07,
+          "2": 0.31,
+          "3": 0.47,
+          "4": 0.03,
+          "5": 0.01,
+          "6": 0
+        }
+      },
+      "business_explanation_exists": {
+        "type": "noul",
+        "noul": 0
+      },
+      "second_flag": {
+        "type": "choice",
+        "choice": "REVENUE_TIMING",
+        "confidence": 0.23,
+        "probabilities": {
+          "RECEIVABLES": 0.34,
+          "INVENTORY": 0.04,
+          "REVENUE_TIMING": 0.34,
+          "CAPITALISED_COSTS": 0.07,
+          "RELATED_PARTY": 0.02,
+          "RESTATEMENT": 0.02,
+          "NONE": 0.17
+        }
+      },
+      "investigate": {
+        "type": "noul",
+        "noul": 0.26
+      }
+    },
+    "AF-0033": {
+      "flag": {
+        "type": "choice",
+        "choice": "NONE",
+        "confidence": 0.64,
+        "probabilities": {
+          "RECEIVABLES": 0.09,
+          "INVENTORY": 0.1,
+          "REVENUE_TIMING": 0.07,
+          "CAPITALISED_COSTS": 0.02,
+          "RELATED_PARTY": 0.02,
+          "RESTATEMENT": 0.01,
+          "NONE": 0.69
+        }
+      },
+      "severity": {
+        "type": "score",
+        "score": 1.06,
+        "confidence": 0.38,
+        "probabilities": {
+          "0": 0.5,
+          "1": 0.15,
+          "2": 0.16,
+          "3": 0.17,
+          "4": 0.02,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "business_explanation_exists": {
+        "type": "noul",
+        "noul": 0
+      },
+      "second_flag": {
+        "type": "choice",
+        "choice": "NONE",
+        "confidence": 0.59,
+        "probabilities": {
+          "RECEIVABLES": 0.06,
+          "INVENTORY": 0.07,
+          "REVENUE_TIMING": 0.2,
+          "CAPITALISED_COSTS": 0.01,
+          "RELATED_PARTY": 0,
+          "RESTATEMENT": 0.01,
+          "NONE": 0.65
+        }
+      },
+      "investigate": {
+        "type": "noul",
+        "noul": 0.07
+      }
+    },
+    "AF-0034": {
+      "flag": {
+        "type": "choice",
+        "choice": "RECEIVABLES",
+        "confidence": 0.3,
+        "probabilities": {
+          "RECEIVABLES": 0.4,
+          "INVENTORY": 0.04,
+          "REVENUE_TIMING": 0.2,
+          "CAPITALISED_COSTS": 0.08,
+          "RELATED_PARTY": 0.02,
+          "RESTATEMENT": 0.02,
+          "NONE": 0.24
+        }
+      },
+      "severity": {
+        "type": "score",
+        "score": 2.61,
+        "confidence": 0.74,
+        "probabilities": {
+          "0": 0.03,
+          "1": 0.04,
+          "2": 0.25,
+          "3": 0.65,
+          "4": 0.03,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "business_explanation_exists": {
+        "type": "noul",
+        "noul": 0
+      },
+      "second_flag": {
+        "type": "choice",
+        "choice": "INVENTORY",
+        "confidence": 0.31,
+        "probabilities": {
+          "RECEIVABLES": 0.26,
+          "INVENTORY": 0.41,
+          "REVENUE_TIMING": 0.17,
+          "CAPITALISED_COSTS": 0.04,
+          "RELATED_PARTY": 0.02,
+          "RESTATEMENT": 0.01,
+          "NONE": 0.09
+        }
+      },
+      "investigate": {
+        "type": "noul",
+        "noul": 0.17
+      }
+    },
+    "AF-0035": {
+      "flag": {
+        "type": "choice",
+        "choice": "RECEIVABLES",
+        "confidence": 0.5,
+        "probabilities": {
+          "RECEIVABLES": 0.57,
+          "INVENTORY": 0.03,
+          "REVENUE_TIMING": 0.12,
+          "CAPITALISED_COSTS": 0.07,
+          "RELATED_PARTY": 0.02,
+          "RESTATEMENT": 0.02,
+          "NONE": 0.17
+        }
+      },
+      "severity": {
+        "type": "score",
+        "score": 1.78,
+        "confidence": 0.5,
+        "probabilities": {
+          "0": 0.17,
+          "1": 0.2,
+          "2": 0.32,
+          "3": 0.3,
+          "4": 0.01,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "business_explanation_exists": {
+        "type": "noul",
+        "noul": 0
+      },
+      "second_flag": {
+        "type": "choice",
+        "choice": "RECEIVABLES",
+        "confidence": 0.23,
+        "probabilities": {
+          "RECEIVABLES": 0.34,
+          "INVENTORY": 0.3,
+          "REVENUE_TIMING": 0.14,
+          "CAPITALISED_COSTS": 0.05,
+          "RELATED_PARTY": 0.03,
+          "RESTATEMENT": 0.02,
+          "NONE": 0.12
+        }
+      },
+      "investigate": {
+        "type": "noul",
+        "noul": 0.21
+      }
+    },
+    "AF-0036": {
+      "flag": {
+        "type": "choice",
+        "choice": "RECEIVABLES",
+        "confidence": 0.41,
+        "probabilities": {
+          "RECEIVABLES": 0.49,
+          "INVENTORY": 0.05,
+          "REVENUE_TIMING": 0.1,
+          "CAPITALISED_COSTS": 0.05,
+          "RELATED_PARTY": 0.02,
+          "RESTATEMENT": 0.02,
+          "NONE": 0.27
+        }
+      },
+      "severity": {
+        "type": "score",
+        "score": 2.41,
+        "confidence": 0.53,
+        "probabilities": {
+          "0": 0.13,
+          "1": 0.06,
+          "2": 0.19,
+          "3": 0.52,
+          "4": 0.09,
+          "5": 0.01,
+          "6": 0
+        }
+      },
+      "business_explanation_exists": {
+        "type": "noul",
+        "noul": 0
+      },
+      "second_flag": {
+        "type": "choice",
+        "choice": "RECEIVABLES",
+        "confidence": 0.16,
+        "probabilities": {
+          "RECEIVABLES": 0.28,
+          "INVENTORY": 0.24,
+          "REVENUE_TIMING": 0.2,
+          "CAPITALISED_COSTS": 0.06,
+          "RELATED_PARTY": 0.02,
+          "RESTATEMENT": 0.02,
+          "NONE": 0.18
+        }
+      },
+      "investigate": {
+        "type": "noul",
+        "noul": 0.16
+      }
+    },
+    "AF-0037": {
+      "flag": {
+        "type": "choice",
+        "choice": "RECEIVABLES",
+        "confidence": 0.59,
+        "probabilities": {
+          "RECEIVABLES": 0.65,
+          "INVENTORY": 0.03,
+          "REVENUE_TIMING": 0.05,
+          "CAPITALISED_COSTS": 0.03,
+          "RELATED_PARTY": 0.03,
+          "RESTATEMENT": 0.01,
+          "NONE": 0.2
+        }
+      },
+      "severity": {
+        "type": "score",
+        "score": 2.59,
+        "confidence": 0.68,
+        "probabilities": {
+          "0": 0.04,
+          "1": 0.05,
+          "2": 0.26,
+          "3": 0.59,
+          "4": 0.05,
+          "5": 0.01,
+          "6": 0
+        }
+      },
+      "business_explanation_exists": {
+        "type": "noul",
+        "noul": 0
+      },
+      "second_flag": {
+        "type": "choice",
+        "choice": "INVENTORY",
+        "confidence": 0.42,
+        "probabilities": {
+          "RECEIVABLES": 0.21,
+          "INVENTORY": 0.5,
+          "REVENUE_TIMING": 0.11,
+          "CAPITALISED_COSTS": 0.04,
+          "RELATED_PARTY": 0.02,
+          "RESTATEMENT": 0.01,
+          "NONE": 0.11
+        }
+      },
+      "investigate": {
+        "type": "noul",
+        "noul": 0.26
+      }
+    },
+    "AF-0038": {
+      "flag": {
+        "type": "choice",
+        "choice": "RECEIVABLES",
+        "confidence": 0.28,
+        "probabilities": {
+          "RECEIVABLES": 0.38,
+          "INVENTORY": 0.08,
+          "REVENUE_TIMING": 0.11,
+          "CAPITALISED_COSTS": 0.05,
+          "RELATED_PARTY": 0.02,
+          "RESTATEMENT": 0.02,
+          "NONE": 0.34
+        }
+      },
+      "severity": {
+        "type": "score",
+        "score": 2.52,
+        "confidence": 0.6,
+        "probabilities": {
+          "0": 0.08,
+          "1": 0.07,
+          "2": 0.2,
+          "3": 0.56,
+          "4": 0.08,
+          "5": 0.01,
+          "6": 0
+        }
+      },
+      "business_explanation_exists": {
+        "type": "noul",
+        "noul": 0
+      },
+      "second_flag": {
+        "type": "choice",
+        "choice": "INVENTORY",
+        "confidence": 0.37,
+        "probabilities": {
+          "RECEIVABLES": 0.2,
+          "INVENTORY": 0.46,
+          "REVENUE_TIMING": 0.22,
+          "CAPITALISED_COSTS": 0.02,
+          "RELATED_PARTY": 0,
+          "RESTATEMENT": 0,
+          "NONE": 0.1
+        }
+      },
+      "investigate": {
+        "type": "noul",
+        "noul": 0.15
+      }
+    },
+    "AF-0039": {
+      "flag": {
+        "type": "choice",
+        "choice": "RECEIVABLES",
+        "confidence": 0.65,
+        "probabilities": {
+          "RECEIVABLES": 0.7,
+          "INVENTORY": 0.03,
+          "REVENUE_TIMING": 0.05,
+          "CAPITALISED_COSTS": 0.02,
+          "RELATED_PARTY": 0.01,
+          "RESTATEMENT": 0.01,
+          "NONE": 0.18
+        }
+      },
+      "severity": {
+        "type": "score",
+        "score": 2.58,
+        "confidence": 0.73,
+        "probabilities": {
+          "0": 0.03,
+          "1": 0.04,
+          "2": 0.27,
+          "3": 0.64,
+          "4": 0.02,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "business_explanation_exists": {
+        "type": "noul",
+        "noul": 0
+      },
+      "second_flag": {
+        "type": "choice",
+        "choice": "RECEIVABLES",
+        "confidence": 0.24,
+        "probabilities": {
+          "RECEIVABLES": 0.35,
+          "INVENTORY": 0.28,
+          "REVENUE_TIMING": 0.2,
+          "CAPITALISED_COSTS": 0.04,
+          "RELATED_PARTY": 0.01,
+          "RESTATEMENT": 0.01,
+          "NONE": 0.11
+        }
+      },
+      "investigate": {
+        "type": "noul",
+        "noul": 0.34
+      }
+    },
+    "AF-0040": {
+      "flag": {
+        "type": "choice",
+        "choice": "CAPITALISED_COSTS",
+        "confidence": 0.64,
+        "probabilities": {
+          "RECEIVABLES": 0.07,
+          "INVENTORY": 0.02,
+          "REVENUE_TIMING": 0.08,
+          "CAPITALISED_COSTS": 0.69,
+          "RELATED_PARTY": 0.04,
+          "RESTATEMENT": 0.01,
+          "NONE": 0.09
+        }
+      },
+      "severity": {
+        "type": "score",
+        "score": 3.16,
+        "confidence": 0.83,
+        "probabilities": {
+          "0": 0,
+          "1": 0.01,
+          "2": 0.05,
+          "3": 0.72,
+          "4": 0.21,
+          "5": 0.01,
+          "6": 0
+        }
+      },
+      "business_explanation_exists": {
+        "type": "noul",
+        "noul": 0
+      },
+      "second_flag": {
+        "type": "choice",
+        "choice": "CAPITALISED_COSTS",
+        "confidence": 0.14,
+        "probabilities": {
+          "RECEIVABLES": 0.19,
+          "INVENTORY": 0.19,
+          "REVENUE_TIMING": 0.2,
+          "CAPITALISED_COSTS": 0.26,
+          "RELATED_PARTY": 0.03,
+          "RESTATEMENT": 0.01,
+          "NONE": 0.12
+        }
+      },
+      "investigate": {
+        "type": "noul",
+        "noul": 0.84
+      }
+    },
+    "AF-0041": {
+      "flag": {
+        "type": "choice",
+        "choice": "NONE",
+        "confidence": 0.36,
+        "probabilities": {
+          "RECEIVABLES": 0.23,
+          "INVENTORY": 0.04,
+          "REVENUE_TIMING": 0.16,
+          "CAPITALISED_COSTS": 0.06,
+          "RELATED_PARTY": 0.03,
+          "RESTATEMENT": 0.03,
+          "NONE": 0.45
+        }
+      },
+      "severity": {
+        "type": "score",
+        "score": 1.49,
+        "confidence": 0.47,
+        "probabilities": {
+          "0": 0.22,
+          "1": 0.27,
+          "2": 0.31,
+          "3": 0.2,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "business_explanation_exists": {
+        "type": "noul",
+        "noul": 0
+      },
+      "second_flag": {
+        "type": "choice",
+        "choice": "NONE",
+        "confidence": 0.14,
+        "probabilities": {
+          "RECEIVABLES": 0.19,
+          "INVENTORY": 0.12,
+          "REVENUE_TIMING": 0.26,
+          "CAPITALISED_COSTS": 0.08,
+          "RELATED_PARTY": 0.04,
+          "RESTATEMENT": 0.05,
+          "NONE": 0.26
+        }
+      },
+      "investigate": {
+        "type": "noul",
+        "noul": 0.08
+      }
+    },
+    "AF-0042": {
+      "flag": {
+        "type": "choice",
+        "choice": "REVENUE_TIMING",
+        "confidence": 0.17,
+        "probabilities": {
+          "RECEIVABLES": 0.23,
+          "INVENTORY": 0.03,
+          "REVENUE_TIMING": 0.29,
+          "CAPITALISED_COSTS": 0.13,
+          "RELATED_PARTY": 0.03,
+          "RESTATEMENT": 0.03,
+          "NONE": 0.26
+        }
+      },
+      "severity": {
+        "type": "score",
+        "score": 2.46,
+        "confidence": 0.56,
+        "probabilities": {
+          "0": 0.1,
+          "1": 0.06,
+          "2": 0.23,
+          "3": 0.51,
+          "4": 0.09,
+          "5": 0.01,
+          "6": 0
+        }
+      },
+      "business_explanation_exists": {
+        "type": "noul",
+        "noul": 0
+      },
+      "second_flag": {
+        "type": "choice",
+        "choice": "REVENUE_TIMING",
+        "confidence": 0.24,
+        "probabilities": {
+          "RECEIVABLES": 0.21,
+          "INVENTORY": 0.21,
+          "REVENUE_TIMING": 0.35,
+          "CAPITALISED_COSTS": 0.05,
+          "RELATED_PARTY": 0.03,
+          "RESTATEMENT": 0.02,
+          "NONE": 0.13
+        }
+      },
+      "investigate": {
+        "type": "noul",
+        "noul": 0.24
+      }
+    },
+    "AF-0043": {
+      "flag": {
+        "type": "choice",
+        "choice": "RECEIVABLES",
+        "confidence": 0.44,
+        "probabilities": {
+          "RECEIVABLES": 0.52,
+          "INVENTORY": 0.04,
+          "REVENUE_TIMING": 0.11,
+          "CAPITALISED_COSTS": 0.06,
+          "RELATED_PARTY": 0.02,
+          "RESTATEMENT": 0.01,
+          "NONE": 0.24
+        }
+      },
+      "severity": {
+        "type": "score",
+        "score": 2.79,
+        "confidence": 0.77,
+        "probabilities": {
+          "0": 0.02,
+          "1": 0.04,
+          "2": 0.16,
+          "3": 0.69,
+          "4": 0.09,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "business_explanation_exists": {
+        "type": "noul",
+        "noul": 0
+      },
+      "second_flag": {
+        "type": "choice",
+        "choice": "INVENTORY",
+        "confidence": 0.42,
+        "probabilities": {
+          "RECEIVABLES": 0.24,
+          "INVENTORY": 0.5,
+          "REVENUE_TIMING": 0.09,
+          "CAPITALISED_COSTS": 0.03,
+          "RELATED_PARTY": 0.03,
+          "RESTATEMENT": 0.01,
+          "NONE": 0.1
+        }
+      },
+      "investigate": {
+        "type": "noul",
+        "noul": 0.65
+      }
+    },
+    "AF-0044": {
+      "flag": {
+        "type": "choice",
+        "choice": "NONE",
+        "confidence": 0.19,
+        "probabilities": {
+          "RECEIVABLES": 0.24,
+          "INVENTORY": 0.08,
+          "REVENUE_TIMING": 0.19,
+          "CAPITALISED_COSTS": 0.08,
+          "RELATED_PARTY": 0.04,
+          "RESTATEMENT": 0.06,
+          "NONE": 0.31
+        }
+      },
+      "severity": {
+        "type": "score",
+        "score": 2.03,
+        "confidence": 0.36,
+        "probabilities": {
+          "0": 0.14,
+          "1": 0.16,
+          "2": 0.29,
+          "3": 0.36,
+          "4": 0.04,
+          "5": 0.01,
+          "6": 0
+        }
+      },
+      "business_explanation_exists": {
+        "type": "noul",
+        "noul": 0
+      },
+      "second_flag": {
+        "type": "choice",
+        "choice": "RECEIVABLES",
+        "confidence": 0.16,
+        "probabilities": {
+          "RECEIVABLES": 0.28,
+          "INVENTORY": 0.1,
+          "REVENUE_TIMING": 0.26,
+          "CAPITALISED_COSTS": 0.09,
+          "RELATED_PARTY": 0.02,
+          "RESTATEMENT": 0.03,
+          "NONE": 0.22
+        }
+      },
+      "investigate": {
+        "type": "noul",
+        "noul": 0.1
+      }
+    },
+    "AF-0045": {
+      "flag": {
+        "type": "choice",
+        "choice": "RECEIVABLES",
+        "confidence": 0.22,
+        "probabilities": {
+          "RECEIVABLES": 0.33,
+          "INVENTORY": 0.12,
+          "REVENUE_TIMING": 0.16,
+          "CAPITALISED_COSTS": 0.09,
+          "RELATED_PARTY": 0.04,
+          "RESTATEMENT": 0.02,
+          "NONE": 0.24
+        }
+      },
+      "severity": {
+        "type": "score",
+        "score": 3.57,
+        "confidence": 0.71,
+        "probabilities": {
+          "0": 0,
+          "1": 0.01,
+          "2": 0.02,
+          "3": 0.39,
+          "4": 0.55,
+          "5": 0.03,
+          "6": 0
+        }
+      },
+      "business_explanation_exists": {
+        "type": "noul",
+        "noul": 0
+      },
+      "second_flag": {
+        "type": "choice",
+        "choice": "INVENTORY",
+        "confidence": 0.41,
+        "probabilities": {
+          "RECEIVABLES": 0.19,
+          "INVENTORY": 0.49,
+          "REVENUE_TIMING": 0.13,
+          "CAPITALISED_COSTS": 0.04,
+          "RELATED_PARTY": 0.02,
+          "RESTATEMENT": 0.01,
+          "NONE": 0.12
+        }
+      },
+      "investigate": {
+        "type": "noul",
+        "noul": 0.91
+      }
+    },
+    "AF-0046": {
+      "flag": {
+        "type": "choice",
+        "choice": "RECEIVABLES",
+        "confidence": 0.43,
+        "probabilities": {
+          "RECEIVABLES": 0.51,
+          "INVENTORY": 0.04,
+          "REVENUE_TIMING": 0.06,
+          "CAPITALISED_COSTS": 0.36,
+          "RELATED_PARTY": 0.02,
+          "RESTATEMENT": 0,
+          "NONE": 0.01
+        }
+      },
+      "severity": {
+        "type": "score",
+        "score": 3.99,
+        "confidence": 0.88,
+        "probabilities": {
+          "0": 0,
+          "1": 0,
+          "2": 0.01,
+          "3": 0.09,
+          "4": 0.8,
+          "5": 0.1,
+          "6": 0
+        }
+      },
+      "business_explanation_exists": {
+        "type": "noul",
+        "noul": 0
+      },
+      "second_flag": {
+        "type": "choice",
+        "choice": "RECEIVABLES",
+        "confidence": 0.35,
+        "probabilities": {
+          "RECEIVABLES": 0.44,
+          "INVENTORY": 0.07,
+          "REVENUE_TIMING": 0.14,
+          "CAPITALISED_COSTS": 0.21,
+          "RELATED_PARTY": 0.04,
+          "RESTATEMENT": 0.02,
+          "NONE": 0.08
+        }
+      },
+      "investigate": {
+        "type": "noul",
+        "noul": 0.95
+      }
+    },
+    "AF-0047": {
+      "flag": {
+        "type": "choice",
+        "choice": "INVENTORY",
+        "confidence": 0.99,
+        "probabilities": {
+          "RECEIVABLES": 0.01,
+          "INVENTORY": 0.99,
+          "REVENUE_TIMING": 0,
+          "CAPITALISED_COSTS": 0,
+          "RELATED_PARTY": 0,
+          "RESTATEMENT": 0,
+          "NONE": 0
+        }
+      },
+      "severity": {
+        "type": "score",
+        "score": 3.86,
+        "confidence": 0.77,
+        "probabilities": {
+          "0": 0,
+          "1": 0,
+          "2": 0.02,
+          "3": 0.23,
+          "4": 0.63,
+          "5": 0.11,
+          "6": 0.01
+        }
+      },
+      "business_explanation_exists": {
+        "type": "noul",
+        "noul": 0
+      },
+      "second_flag": {
+        "type": "choice",
+        "choice": "INVENTORY",
+        "confidence": 0.64,
+        "probabilities": {
+          "RECEIVABLES": 0.07,
+          "INVENTORY": 0.69,
+          "REVENUE_TIMING": 0.08,
+          "CAPITALISED_COSTS": 0.02,
+          "RELATED_PARTY": 0.02,
+          "RESTATEMENT": 0.01,
+          "NONE": 0.11
+        }
+      },
+      "investigate": {
+        "type": "noul",
+        "noul": 0.89
+      }
+    },
+    "AF-0048": {
+      "flag": {
+        "type": "choice",
+        "choice": "NONE",
+        "confidence": 0.45,
+        "probabilities": {
+          "RECEIVABLES": 0.12,
+          "INVENTORY": 0.11,
+          "REVENUE_TIMING": 0.11,
+          "CAPITALISED_COSTS": 0.05,
+          "RELATED_PARTY": 0.03,
+          "RESTATEMENT": 0.05,
+          "NONE": 0.53
+        }
+      },
+      "severity": {
+        "type": "score",
+        "score": 2.24,
+        "confidence": 0.52,
+        "probabilities": {
+          "0": 0.09,
+          "1": 0.1,
+          "2": 0.32,
+          "3": 0.46,
+          "4": 0.03,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "business_explanation_exists": {
+        "type": "noul",
+        "noul": 0
+      },
+      "second_flag": {
+        "type": "choice",
+        "choice": "NONE",
+        "confidence": 0.16,
+        "probabilities": {
+          "RECEIVABLES": 0.17,
+          "INVENTORY": 0.2,
+          "REVENUE_TIMING": 0.25,
+          "CAPITALISED_COSTS": 0.06,
+          "RELATED_PARTY": 0.02,
+          "RESTATEMENT": 0.02,
+          "NONE": 0.28
+        }
+      },
+      "investigate": {
+        "type": "noul",
+        "noul": 0.14
+      }
+    },
+    "AF-0049": {
+      "flag": {
+        "type": "choice",
+        "choice": "NONE",
+        "confidence": 0.23,
+        "probabilities": {
+          "RECEIVABLES": 0.3,
+          "INVENTORY": 0.08,
+          "REVENUE_TIMING": 0.16,
+          "CAPITALISED_COSTS": 0.07,
+          "RELATED_PARTY": 0.03,
+          "RESTATEMENT": 0.02,
+          "NONE": 0.34
+        }
+      },
+      "severity": {
+        "type": "score",
+        "score": 2.76,
+        "confidence": 0.79,
+        "probabilities": {
+          "0": 0.02,
+          "1": 0.03,
+          "2": 0.18,
+          "3": 0.71,
+          "4": 0.06,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "business_explanation_exists": {
+        "type": "noul",
+        "noul": 0
+      },
+      "second_flag": {
+        "type": "choice",
+        "choice": "INVENTORY",
+        "confidence": 0.34,
+        "probabilities": {
+          "RECEIVABLES": 0.22,
+          "INVENTORY": 0.43,
+          "REVENUE_TIMING": 0.15,
+          "CAPITALISED_COSTS": 0.03,
+          "RELATED_PARTY": 0.02,
+          "RESTATEMENT": 0.01,
+          "NONE": 0.14
+        }
+      },
+      "investigate": {
+        "type": "noul",
+        "noul": 0.25
+      }
+    },
+    "AF-0050": {
+      "flag": {
+        "type": "choice",
+        "choice": "RECEIVABLES",
+        "confidence": 0.82,
+        "probabilities": {
+          "RECEIVABLES": 0.85,
+          "INVENTORY": 0.02,
+          "REVENUE_TIMING": 0.02,
+          "CAPITALISED_COSTS": 0.09,
+          "RELATED_PARTY": 0.02,
+          "RESTATEMENT": 0,
+          "NONE": 0
+        }
+      },
+      "severity": {
+        "type": "score",
+        "score": 3.69,
+        "confidence": 0.74,
+        "probabilities": {
+          "0": 0,
+          "1": 0.01,
+          "2": 0.02,
+          "3": 0.31,
+          "4": 0.59,
+          "5": 0.07,
+          "6": 0
+        }
+      },
+      "business_explanation_exists": {
+        "type": "noul",
+        "noul": 0
+      },
+      "second_flag": {
+        "type": "choice",
+        "choice": "CAPITALISED_COSTS",
+        "confidence": 0.21,
+        "probabilities": {
+          "RECEIVABLES": 0.3,
+          "INVENTORY": 0.06,
+          "REVENUE_TIMING": 0.11,
+          "CAPITALISED_COSTS": 0.32,
+          "RELATED_PARTY": 0.04,
+          "RESTATEMENT": 0.02,
+          "NONE": 0.15
+        }
+      },
+      "investigate": {
+        "type": "noul",
+        "noul": 0.92
+      }
+    },
+    "AF-0051": {
+      "flag": {
+        "type": "choice",
+        "choice": "RECEIVABLES",
+        "confidence": 0.74,
+        "probabilities": {
+          "RECEIVABLES": 0.78,
+          "INVENTORY": 0.03,
+          "REVENUE_TIMING": 0.1,
+          "CAPITALISED_COSTS": 0.06,
+          "RELATED_PARTY": 0.01,
+          "RESTATEMENT": 0.01,
+          "NONE": 0.01
+        }
+      },
+      "severity": {
+        "type": "score",
+        "score": 3.01,
+        "confidence": 0.75,
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.02,
+          "2": 0.14,
+          "3": 0.62,
+          "4": 0.2,
+          "5": 0.01,
+          "6": 0
+        }
+      },
+      "business_explanation_exists": {
+        "type": "noul",
+        "noul": 1
+      },
+      "second_flag": {
+        "type": "choice",
+        "choice": "REVENUE_TIMING",
+        "confidence": 0.19,
+        "probabilities": {
+          "RECEIVABLES": 0.28,
+          "INVENTORY": 0.14,
+          "REVENUE_TIMING": 0.31,
+          "CAPITALISED_COSTS": 0.07,
+          "RELATED_PARTY": 0.02,
+          "RESTATEMENT": 0.02,
+          "NONE": 0.16
+        }
+      },
+      "investigate": {
+        "type": "noul",
+        "noul": 0.2
+      }
+    },
+    "AF-0052": {
+      "flag": {
+        "type": "choice",
+        "choice": "RECEIVABLES",
+        "confidence": 0.63,
+        "probabilities": {
+          "RECEIVABLES": 0.68,
+          "INVENTORY": 0.03,
+          "REVENUE_TIMING": 0.09,
+          "CAPITALISED_COSTS": 0.06,
+          "RELATED_PARTY": 0.03,
+          "RESTATEMENT": 0.01,
+          "NONE": 0.1
+        }
+      },
+      "severity": {
+        "type": "score",
+        "score": 2.53,
+        "confidence": 0.7,
+        "probabilities": {
+          "0": 0.03,
+          "1": 0.05,
+          "2": 0.3,
+          "3": 0.6,
+          "4": 0.02,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "business_explanation_exists": {
+        "type": "noul",
+        "noul": 0
+      },
+      "second_flag": {
+        "type": "choice",
+        "choice": "RECEIVABLES",
+        "confidence": 0.35,
+        "probabilities": {
+          "RECEIVABLES": 0.44,
+          "INVENTORY": 0.07,
+          "REVENUE_TIMING": 0.29,
+          "CAPITALISED_COSTS": 0.04,
+          "RELATED_PARTY": 0.02,
+          "RESTATEMENT": 0.01,
+          "NONE": 0.13
+        }
+      },
+      "investigate": {
+        "type": "noul",
+        "noul": 0.23
+      }
+    },
+    "AF-0053": {
+      "flag": {
+        "type": "choice",
+        "choice": "INVENTORY",
+        "confidence": 0.88,
+        "probabilities": {
+          "RECEIVABLES": 0.03,
+          "INVENTORY": 0.9,
+          "REVENUE_TIMING": 0.01,
+          "CAPITALISED_COSTS": 0.01,
+          "RELATED_PARTY": 0.01,
+          "RESTATEMENT": 0.01,
+          "NONE": 0.03
+        }
+      },
+      "severity": {
+        "type": "score",
+        "score": 2.46,
+        "confidence": 0.65,
+        "probabilities": {
+          "0": 0.03,
+          "1": 0.08,
+          "2": 0.32,
+          "3": 0.54,
+          "4": 0.03,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "business_explanation_exists": {
+        "type": "noul",
+        "noul": 0.87
+      },
+      "second_flag": {
+        "type": "choice",
+        "choice": "INVENTORY",
+        "confidence": 0.53,
+        "probabilities": {
+          "RECEIVABLES": 0.12,
+          "INVENTORY": 0.6,
+          "REVENUE_TIMING": 0.07,
+          "CAPITALISED_COSTS": 0.03,
+          "RELATED_PARTY": 0.02,
+          "RESTATEMENT": 0.01,
+          "NONE": 0.15
+        }
+      },
+      "investigate": {
+        "type": "noul",
+        "noul": 0.16
+      }
+    },
+    "AF-0054": {
+      "flag": {
+        "type": "choice",
+        "choice": "RELATED_PARTY",
+        "confidence": 0.41,
+        "probabilities": {
+          "RECEIVABLES": 0.41,
+          "INVENTORY": 0.03,
+          "REVENUE_TIMING": 0.02,
+          "CAPITALISED_COSTS": 0.03,
+          "RELATED_PARTY": 0.49,
+          "RESTATEMENT": 0.01,
+          "NONE": 0.01
+        }
+      },
+      "severity": {
+        "type": "score",
+        "score": 3.6,
+        "confidence": 0.71,
+        "probabilities": {
+          "0": 0,
+          "1": 0.01,
+          "2": 0.02,
+          "3": 0.38,
+          "4": 0.54,
+          "5": 0.05,
+          "6": 0
+        }
+      },
+      "business_explanation_exists": {
+        "type": "noul",
+        "noul": 0
+      },
+      "second_flag": {
+        "type": "choice",
+        "choice": "RECEIVABLES",
+        "confidence": 0.24,
+        "probabilities": {
+          "RECEIVABLES": 0.35,
+          "INVENTORY": 0.07,
+          "REVENUE_TIMING": 0.09,
+          "CAPITALISED_COSTS": 0.06,
+          "RELATED_PARTY": 0.3,
+          "RESTATEMENT": 0.03,
+          "NONE": 0.1
+        }
+      },
+      "investigate": {
+        "type": "noul",
+        "noul": 0.92
+      }
+    },
+    "AF-0055": {
+      "flag": {
+        "type": "choice",
+        "choice": "RECEIVABLES",
+        "confidence": 0.31,
+        "probabilities": {
+          "RECEIVABLES": 0.41,
+          "INVENTORY": 0.04,
+          "REVENUE_TIMING": 0.13,
+          "CAPITALISED_COSTS": 0.04,
+          "RELATED_PARTY": 0.02,
+          "RESTATEMENT": 0.01,
+          "NONE": 0.35
+        }
+      },
+      "severity": {
+        "type": "score",
+        "score": 1.79,
+        "confidence": 0.28,
+        "probabilities": {
+          "0": 0.18,
+          "1": 0.19,
+          "2": 0.3,
+          "3": 0.32,
+          "4": 0.01,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "business_explanation_exists": {
+        "type": "noul",
+        "noul": 0
+      },
+      "second_flag": {
+        "type": "choice",
+        "choice": "RECEIVABLES",
+        "confidence": 0.36,
+        "probabilities": {
+          "RECEIVABLES": 0.45,
+          "INVENTORY": 0.06,
+          "REVENUE_TIMING": 0.19,
+          "CAPITALISED_COSTS": 0.07,
+          "RELATED_PARTY": 0.03,
+          "RESTATEMENT": 0.02,
+          "NONE": 0.18
+        }
+      },
+      "investigate": {
+        "type": "noul",
+        "noul": 0.14
+      }
+    },
+    "AF-0056": {
+      "flag": {
+        "type": "choice",
+        "choice": "RECEIVABLES",
+        "confidence": 0.16,
+        "probabilities": {
+          "RECEIVABLES": 0.28,
+          "INVENTORY": 0.17,
+          "REVENUE_TIMING": 0.17,
+          "CAPITALISED_COSTS": 0.08,
+          "RELATED_PARTY": 0.04,
+          "RESTATEMENT": 0.02,
+          "NONE": 0.24
+        }
+      },
+      "severity": {
+        "type": "score",
+        "score": 3.31,
+        "confidence": 0.78,
+        "probabilities": {
+          "0": 0,
+          "1": 0,
+          "2": 0.03,
+          "3": 0.64,
+          "4": 0.32,
+          "5": 0.01,
+          "6": 0
+        }
+      },
+      "business_explanation_exists": {
+        "type": "noul",
+        "noul": 0
+      },
+      "second_flag": {
+        "type": "choice",
+        "choice": "INVENTORY",
+        "confidence": 0.39,
+        "probabilities": {
+          "RECEIVABLES": 0.19,
+          "INVENTORY": 0.48,
+          "REVENUE_TIMING": 0.18,
+          "CAPITALISED_COSTS": 0.04,
+          "RELATED_PARTY": 0.02,
+          "RESTATEMENT": 0.02,
+          "NONE": 0.07
+        }
+      },
+      "investigate": {
+        "type": "noul",
+        "noul": 0.85
+      }
+    },
+    "AF-0057": {
+      "flag": {
+        "type": "choice",
+        "choice": "REVENUE_TIMING",
+        "confidence": 0.54,
+        "probabilities": {
+          "RECEIVABLES": 0.23,
+          "INVENTORY": 0.01,
+          "REVENUE_TIMING": 0.61,
+          "CAPITALISED_COSTS": 0.12,
+          "RELATED_PARTY": 0.02,
+          "RESTATEMENT": 0,
+          "NONE": 0.01
+        }
+      },
+      "severity": {
+        "type": "score",
+        "score": 4.36,
+        "confidence": 0.72,
+        "probabilities": {
+          "0": 0,
+          "1": 0,
+          "2": 0.01,
+          "3": 0.04,
+          "4": 0.55,
+          "5": 0.38,
+          "6": 0.02
+        }
+      },
+      "business_explanation_exists": {
+        "type": "noul",
+        "noul": 0.04
+      },
+      "second_flag": {
+        "type": "choice",
+        "choice": "REVENUE_TIMING",
+        "confidence": 0.26,
+        "probabilities": {
+          "RECEIVABLES": 0.25,
+          "INVENTORY": 0.16,
+          "REVENUE_TIMING": 0.37,
+          "CAPITALISED_COSTS": 0.07,
+          "RELATED_PARTY": 0.03,
+          "RESTATEMENT": 0.02,
+          "NONE": 0.1
+        }
+      },
+      "investigate": {
+        "type": "noul",
+        "noul": 0.97
+      }
+    },
+    "AF-0058": {
+      "flag": {
+        "type": "choice",
+        "choice": "NONE",
+        "confidence": 0.36,
+        "probabilities": {
+          "RECEIVABLES": 0.31,
+          "INVENTORY": 0.1,
+          "REVENUE_TIMING": 0.07,
+          "CAPITALISED_COSTS": 0.03,
+          "RELATED_PARTY": 0.02,
+          "RESTATEMENT": 0.02,
+          "NONE": 0.45
+        }
+      },
+      "severity": {
+        "type": "score",
+        "score": 1.17,
+        "confidence": 0.32,
+        "probabilities": {
+          "0": 0.43,
+          "1": 0.2,
+          "2": 0.17,
+          "3": 0.18,
+          "4": 0.01,
+          "5": 0.01,
+          "6": 0
+        }
+      },
+      "business_explanation_exists": {
+        "type": "noul",
+        "noul": 0
+      },
+      "second_flag": {
+        "type": "choice",
+        "choice": "RECEIVABLES",
+        "confidence": 0.15,
+        "probabilities": {
+          "RECEIVABLES": 0.27,
+          "INVENTORY": 0.19,
+          "REVENUE_TIMING": 0.23,
+          "CAPITALISED_COSTS": 0.07,
+          "RELATED_PARTY": 0.02,
+          "RESTATEMENT": 0.02,
+          "NONE": 0.2
+        }
+      },
+      "investigate": {
+        "type": "noul",
+        "noul": 0.06
+      }
+    },
+    "AF-0059": {
+      "flag": {
+        "type": "choice",
+        "choice": "NONE",
+        "confidence": 0.26,
+        "probabilities": {
+          "RECEIVABLES": 0.27,
+          "INVENTORY": 0.06,
+          "REVENUE_TIMING": 0.17,
+          "CAPITALISED_COSTS": 0.08,
+          "RELATED_PARTY": 0.03,
+          "RESTATEMENT": 0.02,
+          "NONE": 0.37
+        }
+      },
+      "severity": {
+        "type": "score",
+        "score": 2.97,
+        "confidence": 0.77,
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.02,
+          "2": 0.14,
+          "3": 0.66,
+          "4": 0.16,
+          "5": 0.01,
+          "6": 0
+        }
+      },
+      "business_explanation_exists": {
+        "type": "noul",
+        "noul": 0
+      },
+      "second_flag": {
+        "type": "choice",
+        "choice": "REVENUE_TIMING",
+        "confidence": 0.19,
+        "probabilities": {
+          "RECEIVABLES": 0.27,
+          "INVENTORY": 0.11,
+          "REVENUE_TIMING": 0.31,
+          "CAPITALISED_COSTS": 0.07,
+          "RELATED_PARTY": 0.04,
+          "RESTATEMENT": 0.03,
+          "NONE": 0.17
+        }
+      },
+      "investigate": {
+        "type": "noul",
+        "noul": 0.28
+      }
+    },
+    "AF-0060": {
+      "flag": {
+        "type": "choice",
+        "choice": "NONE",
+        "confidence": 0.18,
+        "probabilities": {
+          "RECEIVABLES": 0.15,
+          "INVENTORY": 0.07,
+          "REVENUE_TIMING": 0.24,
+          "CAPITALISED_COSTS": 0.14,
+          "RELATED_PARTY": 0.05,
+          "RESTATEMENT": 0.05,
+          "NONE": 0.3
+        }
+      },
+      "severity": {
+        "type": "score",
+        "score": 2.91,
+        "confidence": 0.87,
+        "probabilities": {
+          "0": 0,
+          "1": 0.01,
+          "2": 0.14,
+          "3": 0.78,
+          "4": 0.07,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "business_explanation_exists": {
+        "type": "noul",
+        "noul": 0
+      },
+      "second_flag": {
+        "type": "choice",
+        "choice": "REVENUE_TIMING",
+        "confidence": 0.25,
+        "probabilities": {
+          "RECEIVABLES": 0.29,
+          "INVENTORY": 0.04,
+          "REVENUE_TIMING": 0.36,
+          "CAPITALISED_COSTS": 0.08,
+          "RELATED_PARTY": 0.02,
+          "RESTATEMENT": 0.02,
+          "NONE": 0.19
+        }
+      },
+      "investigate": {
+        "type": "noul",
+        "noul": 0.3
+      }
+    },
+    "AF-0061": {
+      "flag": {
+        "type": "choice",
+        "choice": "NONE",
+        "confidence": 0.28,
+        "probabilities": {
+          "RECEIVABLES": 0.19,
+          "INVENTORY": 0.09,
+          "REVENUE_TIMING": 0.17,
+          "CAPITALISED_COSTS": 0.08,
+          "RELATED_PARTY": 0.04,
+          "RESTATEMENT": 0.05,
+          "NONE": 0.38
+        }
+      },
+      "severity": {
+        "type": "score",
+        "score": 0.77,
+        "confidence": 0.55,
+        "probabilities": {
+          "0": 0.56,
+          "1": 0.21,
+          "2": 0.14,
+          "3": 0.08,
+          "4": 0.01,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "business_explanation_exists": {
+        "type": "noul",
+        "noul": 0
+      },
+      "second_flag": {
+        "type": "choice",
+        "choice": "NONE",
+        "confidence": 0.16,
+        "probabilities": {
+          "RECEIVABLES": 0.25,
+          "INVENTORY": 0.15,
+          "REVENUE_TIMING": 0.22,
+          "CAPITALISED_COSTS": 0.05,
+          "RELATED_PARTY": 0.02,
+          "RESTATEMENT": 0.03,
+          "NONE": 0.28
+        }
+      },
+      "investigate": {
+        "type": "noul",
+        "noul": 0.09
+      }
+    },
+    "AF-0062": {
+      "flag": {
+        "type": "choice",
+        "choice": "CAPITALISED_COSTS",
+        "confidence": 0.78,
+        "probabilities": {
+          "RECEIVABLES": 0.03,
+          "INVENTORY": 0.01,
+          "REVENUE_TIMING": 0.08,
+          "CAPITALISED_COSTS": 0.81,
+          "RELATED_PARTY": 0.01,
+          "RESTATEMENT": 0.01,
+          "NONE": 0.05
+        }
+      },
+      "severity": {
+        "type": "score",
+        "score": 3.91,
+        "confidence": 0.71,
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.01,
+          "2": 0.02,
+          "3": 0.18,
+          "4": 0.59,
+          "5": 0.18,
+          "6": 0.01
+        }
+      },
+      "business_explanation_exists": {
+        "type": "noul",
+        "noul": 0
+      },
+      "second_flag": {
+        "type": "choice",
+        "choice": "CAPITALISED_COSTS",
+        "confidence": 0.16,
+        "probabilities": {
+          "RECEIVABLES": 0.14,
+          "INVENTORY": 0.1,
+          "REVENUE_TIMING": 0.24,
+          "CAPITALISED_COSTS": 0.28,
+          "RELATED_PARTY": 0.03,
+          "RESTATEMENT": 0.02,
+          "NONE": 0.19
+        }
+      },
+      "investigate": {
+        "type": "noul",
+        "noul": 0.96
+      }
+    },
+    "AF-0063": {
+      "flag": {
+        "type": "choice",
+        "choice": "NONE",
+        "confidence": 0.18,
+        "probabilities": {
+          "RECEIVABLES": 0.18,
+          "INVENTORY": 0.24,
+          "REVENUE_TIMING": 0.17,
+          "CAPITALISED_COSTS": 0.06,
+          "RELATED_PARTY": 0.03,
+          "RESTATEMENT": 0.02,
+          "NONE": 0.3
+        }
+      },
+      "severity": {
+        "type": "score",
+        "score": 3.01,
+        "confidence": 0.85,
+        "probabilities": {
+          "0": 0,
+          "1": 0.01,
+          "2": 0.1,
+          "3": 0.77,
+          "4": 0.11,
+          "5": 0.01,
+          "6": 0
+        }
+      },
+      "business_explanation_exists": {
+        "type": "noul",
+        "noul": 0
+      },
+      "second_flag": {
+        "type": "choice",
+        "choice": "INVENTORY",
+        "confidence": 0.39,
+        "probabilities": {
+          "RECEIVABLES": 0.17,
+          "INVENTORY": 0.48,
+          "REVENUE_TIMING": 0.13,
+          "CAPITALISED_COSTS": 0.03,
+          "RELATED_PARTY": 0.03,
+          "RESTATEMENT": 0.01,
+          "NONE": 0.15
+        }
+      },
+      "investigate": {
+        "type": "noul",
+        "noul": 0.6
+      }
+    },
+    "AF-0064": {
+      "flag": {
+        "type": "choice",
+        "choice": "NONE",
+        "confidence": 0.19,
+        "probabilities": {
+          "RECEIVABLES": 0.21,
+          "INVENTORY": 0.06,
+          "REVENUE_TIMING": 0.23,
+          "CAPITALISED_COSTS": 0.1,
+          "RELATED_PARTY": 0.04,
+          "RESTATEMENT": 0.05,
+          "NONE": 0.31
+        }
+      },
+      "severity": {
+        "type": "score",
+        "score": 1.9,
+        "confidence": 0.5,
+        "probabilities": {
+          "0": 0.15,
+          "1": 0.18,
+          "2": 0.32,
+          "3": 0.32,
+          "4": 0.03,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "business_explanation_exists": {
+        "type": "noul",
+        "noul": 0
+      },
+      "second_flag": {
+        "type": "choice",
+        "choice": "RECEIVABLES",
+        "confidence": 0.23,
+        "probabilities": {
+          "RECEIVABLES": 0.34,
+          "INVENTORY": 0.1,
+          "REVENUE_TIMING": 0.26,
+          "CAPITALISED_COSTS": 0.08,
+          "RELATED_PARTY": 0.03,
+          "RESTATEMENT": 0.02,
+          "NONE": 0.17
+        }
+      },
+      "investigate": {
+        "type": "noul",
+        "noul": 0.22
+      }
+    },
+    "AF-0065": {
+      "flag": {
+        "type": "choice",
+        "choice": "INVENTORY",
+        "confidence": 0.98,
+        "probabilities": {
+          "RECEIVABLES": 0.01,
+          "INVENTORY": 0.98,
+          "REVENUE_TIMING": 0.01,
+          "CAPITALISED_COSTS": 0,
+          "RELATED_PARTY": 0,
+          "RESTATEMENT": 0,
+          "NONE": 0
+        }
+      },
+      "severity": {
+        "type": "score",
+        "score": 3.42,
+        "confidence": 0.7,
+        "probabilities": {
+          "0": 0,
+          "1": 0.01,
+          "2": 0.03,
+          "3": 0.52,
+          "4": 0.41,
+          "5": 0.03,
+          "6": 0
+        }
+      },
+      "business_explanation_exists": {
+        "type": "noul",
+        "noul": 0
+      },
+      "second_flag": {
+        "type": "choice",
+        "choice": "INVENTORY",
+        "confidence": 0.66,
+        "probabilities": {
+          "RECEIVABLES": 0.06,
+          "INVENTORY": 0.71,
+          "REVENUE_TIMING": 0.07,
+          "CAPITALISED_COSTS": 0.02,
+          "RELATED_PARTY": 0.03,
+          "RESTATEMENT": 0.01,
+          "NONE": 0.1
+        }
+      },
+      "investigate": {
+        "type": "noul",
+        "noul": 0.81
+      }
+    },
+    "AF-0066": {
+      "flag": {
+        "type": "choice",
+        "choice": "NONE",
+        "confidence": 0.38,
+        "probabilities": {
+          "RECEIVABLES": 0.05,
+          "INVENTORY": 0.03,
+          "REVENUE_TIMING": 0.3,
+          "CAPITALISED_COSTS": 0.1,
+          "RELATED_PARTY": 0.02,
+          "RESTATEMENT": 0.03,
+          "NONE": 0.47
+        }
+      },
+      "severity": {
+        "type": "score",
+        "score": 1.8,
+        "confidence": 0.29,
+        "probabilities": {
+          "0": 0.21,
+          "1": 0.13,
+          "2": 0.32,
+          "3": 0.33,
+          "4": 0.01,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "business_explanation_exists": {
+        "type": "noul",
+        "noul": 0
+      },
+      "second_flag": {
+        "type": "choice",
+        "choice": "NONE",
+        "confidence": 0.25,
+        "probabilities": {
+          "RECEIVABLES": 0.11,
+          "INVENTORY": 0.1,
+          "REVENUE_TIMING": 0.32,
+          "CAPITALISED_COSTS": 0.06,
+          "RELATED_PARTY": 0.02,
+          "RESTATEMENT": 0.03,
+          "NONE": 0.36
+        }
+      },
+      "investigate": {
+        "type": "noul",
+        "noul": 0.09
+      }
+    },
+    "AF-0067": {
+      "flag": {
+        "type": "choice",
+        "choice": "RECEIVABLES",
+        "confidence": 0.72,
+        "probabilities": {
+          "RECEIVABLES": 0.76,
+          "INVENTORY": 0.03,
+          "REVENUE_TIMING": 0.06,
+          "CAPITALISED_COSTS": 0.04,
+          "RELATED_PARTY": 0.02,
+          "RESTATEMENT": 0.01,
+          "NONE": 0.08
+        }
+      },
+      "severity": {
+        "type": "score",
+        "score": 2.72,
+        "confidence": 0.76,
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.04,
+          "2": 0.24,
+          "3": 0.64,
+          "4": 0.07,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "business_explanation_exists": {
+        "type": "noul",
+        "noul": 0
+      },
+      "second_flag": {
+        "type": "choice",
+        "choice": "RECEIVABLES",
+        "confidence": 0.37,
+        "probabilities": {
+          "RECEIVABLES": 0.46,
+          "INVENTORY": 0.11,
+          "REVENUE_TIMING": 0.21,
+          "CAPITALISED_COSTS": 0.04,
+          "RELATED_PARTY": 0.02,
+          "RESTATEMENT": 0.02,
+          "NONE": 0.14
+        }
+      },
+      "investigate": {
+        "type": "noul",
+        "noul": 0.71
+      }
+    },
+    "AF-0068": {
+      "flag": {
+        "type": "choice",
+        "choice": "RECEIVABLES",
+        "confidence": 0.39,
+        "probabilities": {
+          "RECEIVABLES": 0.48,
+          "INVENTORY": 0.05,
+          "REVENUE_TIMING": 0.15,
+          "CAPITALISED_COSTS": 0.11,
+          "RELATED_PARTY": 0.04,
+          "RESTATEMENT": 0.02,
+          "NONE": 0.15
+        }
+      },
+      "severity": {
+        "type": "score",
+        "score": 3.39,
+        "confidence": 0.7,
+        "probabilities": {
+          "0": 0,
+          "1": 0.01,
+          "2": 0.04,
+          "3": 0.52,
+          "4": 0.41,
+          "5": 0.02,
+          "6": 0
+        }
+      },
+      "business_explanation_exists": {
+        "type": "noul",
+        "noul": 0
+      },
+      "second_flag": {
+        "type": "choice",
+        "choice": "INVENTORY",
+        "confidence": 0.22,
+        "probabilities": {
+          "RECEIVABLES": 0.19,
+          "INVENTORY": 0.33,
+          "REVENUE_TIMING": 0.27,
+          "CAPITALISED_COSTS": 0.05,
+          "RELATED_PARTY": 0.02,
+          "RESTATEMENT": 0.02,
+          "NONE": 0.12
+        }
+      },
+      "investigate": {
+        "type": "noul",
+        "noul": 0.75
+      }
+    },
+    "AF-0069": {
+      "flag": {
+        "type": "choice",
+        "choice": "RECEIVABLES",
+        "confidence": 0.99,
+        "probabilities": {
+          "RECEIVABLES": 0.99,
+          "INVENTORY": 0.01,
+          "REVENUE_TIMING": 0,
+          "CAPITALISED_COSTS": 0,
+          "RELATED_PARTY": 0,
+          "RESTATEMENT": 0,
+          "NONE": 0
+        }
+      },
+      "severity": {
+        "type": "score",
+        "score": 4.01,
+        "confidence": 0.83,
+        "probabilities": {
+          "0": 0,
+          "1": 0,
+          "2": 0.01,
+          "3": 0.12,
+          "4": 0.73,
+          "5": 0.13,
+          "6": 0.01
+        }
+      },
+      "business_explanation_exists": {
+        "type": "noul",
+        "noul": 0
+      },
+      "second_flag": {
+        "type": "choice",
+        "choice": "RECEIVABLES",
+        "confidence": 0.24,
+        "probabilities": {
+          "RECEIVABLES": 0.35,
+          "INVENTORY": 0.06,
+          "REVENUE_TIMING": 0.22,
+          "CAPITALISED_COSTS": 0.07,
+          "RELATED_PARTY": 0.02,
+          "RESTATEMENT": 0.03,
+          "NONE": 0.25
+        }
+      },
+      "investigate": {
+        "type": "noul",
+        "noul": 0.96
+      }
+    },
+    "AF-0070": {
+      "flag": {
+        "type": "choice",
+        "choice": "NONE",
+        "confidence": 0.15,
+        "probabilities": {
+          "RECEIVABLES": 0.23,
+          "INVENTORY": 0.06,
+          "REVENUE_TIMING": 0.26,
+          "CAPITALISED_COSTS": 0.12,
+          "RELATED_PARTY": 0.03,
+          "RESTATEMENT": 0.03,
+          "NONE": 0.27
+        }
+      },
+      "severity": {
+        "type": "score",
+        "score": 2.62,
+        "confidence": 0.73,
+        "probabilities": {
+          "0": 0.02,
+          "1": 0.04,
+          "2": 0.28,
+          "3": 0.62,
+          "4": 0.04,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "business_explanation_exists": {
+        "type": "noul",
+        "noul": 0
+      },
+      "second_flag": {
+        "type": "choice",
+        "choice": "RECEIVABLES",
+        "confidence": 0.22,
+        "probabilities": {
+          "RECEIVABLES": 0.33,
+          "INVENTORY": 0.26,
+          "REVENUE_TIMING": 0.17,
+          "CAPITALISED_COSTS": 0.05,
+          "RELATED_PARTY": 0.02,
+          "RESTATEMENT": 0.02,
+          "NONE": 0.15
+        }
+      },
+      "investigate": {
+        "type": "noul",
+        "noul": 0.14
+      }
+    },
+    "AF-0071": {
+      "flag": {
+        "type": "choice",
+        "choice": "RECEIVABLES",
+        "confidence": 0.74,
+        "probabilities": {
+          "RECEIVABLES": 0.78,
+          "INVENTORY": 0.03,
+          "REVENUE_TIMING": 0.03,
+          "CAPITALISED_COSTS": 0.13,
+          "RELATED_PARTY": 0.02,
+          "RESTATEMENT": 0,
+          "NONE": 0.01
+        }
+      },
+      "severity": {
+        "type": "score",
+        "score": 4.19,
+        "confidence": 0.77,
+        "probabilities": {
+          "0": 0,
+          "1": 0,
+          "2": 0.01,
+          "3": 0.08,
+          "4": 0.63,
+          "5": 0.27,
+          "6": 0.01
+        }
+      },
+      "business_explanation_exists": {
+        "type": "noul",
+        "noul": 0
+      },
+      "second_flag": {
+        "type": "choice",
+        "choice": "RECEIVABLES",
+        "confidence": 0.24,
+        "probabilities": {
+          "RECEIVABLES": 0.35,
+          "INVENTORY": 0.09,
+          "REVENUE_TIMING": 0.15,
+          "CAPITALISED_COSTS": 0.24,
+          "RELATED_PARTY": 0.03,
+          "RESTATEMENT": 0.02,
+          "NONE": 0.12
+        }
+      },
+      "investigate": {
+        "type": "noul",
+        "noul": 0.97
+      }
+    },
+    "AF-0072": {
+      "flag": {
+        "type": "choice",
+        "choice": "RECEIVABLES",
+        "confidence": 0.62,
+        "probabilities": {
+          "RECEIVABLES": 0.67,
+          "INVENTORY": 0.03,
+          "REVENUE_TIMING": 0.1,
+          "CAPITALISED_COSTS": 0.07,
+          "RELATED_PARTY": 0.02,
+          "RESTATEMENT": 0.01,
+          "NONE": 0.1
+        }
+      },
+      "severity": {
+        "type": "score",
+        "score": 2.87,
+        "confidence": 0.87,
+        "probabilities": {
+          "0": 0,
+          "1": 0.02,
+          "2": 0.14,
+          "3": 0.79,
+          "4": 0.05,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "business_explanation_exists": {
+        "type": "noul",
+        "noul": 0
+      },
+      "second_flag": {
+        "type": "choice",
+        "choice": "RECEIVABLES",
+        "confidence": 0.38,
+        "probabilities": {
+          "RECEIVABLES": 0.47,
+          "INVENTORY": 0.16,
+          "REVENUE_TIMING": 0.14,
+          "CAPITALISED_COSTS": 0.04,
+          "RELATED_PARTY": 0.02,
+          "RESTATEMENT": 0.02,
+          "NONE": 0.15
+        }
+      },
+      "investigate": {
+        "type": "noul",
+        "noul": 0.7
+      }
+    },
+    "AF-0073": {
+      "flag": {
+        "type": "choice",
+        "choice": "RECEIVABLES",
+        "confidence": 0.78,
+        "probabilities": {
+          "RECEIVABLES": 0.81,
+          "INVENTORY": 0.04,
+          "REVENUE_TIMING": 0.05,
+          "CAPITALISED_COSTS": 0.03,
+          "RELATED_PARTY": 0.02,
+          "RESTATEMENT": 0.01,
+          "NONE": 0.04
+        }
+      },
+      "severity": {
+        "type": "score",
+        "score": 2.87,
+        "confidence": 0.85,
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.02,
+          "2": 0.12,
+          "3": 0.79,
+          "4": 0.06,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "business_explanation_exists": {
+        "type": "noul",
+        "noul": 0
+      },
+      "second_flag": {
+        "type": "choice",
+        "choice": "RECEIVABLES",
+        "confidence": 0.49,
+        "probabilities": {
+          "RECEIVABLES": 0.56,
+          "INVENTORY": 0.07,
+          "REVENUE_TIMING": 0.17,
+          "CAPITALISED_COSTS": 0.03,
+          "RELATED_PARTY": 0.02,
+          "RESTATEMENT": 0.01,
+          "NONE": 0.14
+        }
+      },
+      "investigate": {
+        "type": "noul",
+        "noul": 0.75
+      }
+    },
+    "AF-0074": {
+      "flag": {
+        "type": "choice",
+        "choice": "NONE",
+        "confidence": 0.26,
+        "probabilities": {
+          "RECEIVABLES": 0.13,
+          "INVENTORY": 0.16,
+          "REVENUE_TIMING": 0.17,
+          "CAPITALISED_COSTS": 0.09,
+          "RELATED_PARTY": 0.06,
+          "RESTATEMENT": 0.02,
+          "NONE": 0.37
+        }
+      },
+      "severity": {
+        "type": "score",
+        "score": 2.61,
+        "confidence": 0.71,
+        "probabilities": {
+          "0": 0.02,
+          "1": 0.05,
+          "2": 0.28,
+          "3": 0.6,
+          "4": 0.05,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "business_explanation_exists": {
+        "type": "noul",
+        "noul": 0
+      },
+      "second_flag": {
+        "type": "choice",
+        "choice": "INVENTORY",
+        "confidence": 0.36,
+        "probabilities": {
+          "RECEIVABLES": 0.2,
+          "INVENTORY": 0.45,
+          "REVENUE_TIMING": 0.16,
+          "CAPITALISED_COSTS": 0.04,
+          "RELATED_PARTY": 0.03,
+          "RESTATEMENT": 0.01,
+          "NONE": 0.11
+        }
+      },
+      "investigate": {
+        "type": "noul",
+        "noul": 0.45
+      }
+    },
+    "AF-0075": {
+      "flag": {
+        "type": "choice",
+        "choice": "RECEIVABLES",
+        "confidence": 0.7,
+        "probabilities": {
+          "RECEIVABLES": 0.74,
+          "INVENTORY": 0.02,
+          "REVENUE_TIMING": 0.09,
+          "CAPITALISED_COSTS": 0.06,
+          "RELATED_PARTY": 0.02,
+          "RESTATEMENT": 0.01,
+          "NONE": 0.06
+        }
+      },
+      "severity": {
+        "type": "score",
+        "score": 3.01,
+        "confidence": 0.76,
+        "probabilities": {
+          "0": 0,
+          "1": 0.01,
+          "2": 0.18,
+          "3": 0.61,
+          "4": 0.19,
+          "5": 0.01,
+          "6": 0
+        }
+      },
+      "business_explanation_exists": {
+        "type": "noul",
+        "noul": 0
+      },
+      "second_flag": {
+        "type": "choice",
+        "choice": "RECEIVABLES",
+        "confidence": 0.28,
+        "probabilities": {
+          "RECEIVABLES": 0.38,
+          "INVENTORY": 0.07,
+          "REVENUE_TIMING": 0.34,
+          "CAPITALISED_COSTS": 0.04,
+          "RELATED_PARTY": 0.02,
+          "RESTATEMENT": 0.01,
+          "NONE": 0.14
+        }
+      },
+      "investigate": {
+        "type": "noul",
+        "noul": 0.56
+      }
+    },
+    "AF-0076": {
+      "flag": {
+        "type": "choice",
+        "choice": "NONE",
+        "confidence": 0.41,
+        "probabilities": {
+          "RECEIVABLES": 0.14,
+          "INVENTORY": 0.09,
+          "REVENUE_TIMING": 0.16,
+          "CAPITALISED_COSTS": 0.06,
+          "RELATED_PARTY": 0.03,
+          "RESTATEMENT": 0.03,
+          "NONE": 0.49
+        }
+      },
+      "severity": {
+        "type": "score",
+        "score": 2.07,
+        "confidence": 0.45,
+        "probabilities": {
+          "0": 0.13,
+          "1": 0.11,
+          "2": 0.33,
+          "3": 0.42,
+          "4": 0.01,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "business_explanation_exists": {
+        "type": "noul",
+        "noul": 0
+      },
+      "second_flag": {
+        "type": "choice",
+        "choice": "RECEIVABLES",
+        "confidence": 0.16,
+        "probabilities": {
+          "RECEIVABLES": 0.28,
+          "INVENTORY": 0.26,
+          "REVENUE_TIMING": 0.2,
+          "CAPITALISED_COSTS": 0.04,
+          "RELATED_PARTY": 0.02,
+          "RESTATEMENT": 0.02,
+          "NONE": 0.18
+        }
+      },
+      "investigate": {
+        "type": "noul",
+        "noul": 0.14
+      }
+    },
+    "AF-0077": {
+      "flag": {
+        "type": "choice",
+        "choice": "RECEIVABLES",
+        "confidence": 0.41,
+        "probabilities": {
+          "RECEIVABLES": 0.49,
+          "INVENTORY": 0.04,
+          "REVENUE_TIMING": 0.12,
+          "CAPITALISED_COSTS": 0.07,
+          "RELATED_PARTY": 0.02,
+          "RESTATEMENT": 0.01,
+          "NONE": 0.25
+        }
+      },
+      "severity": {
+        "type": "score",
+        "score": 2.18,
+        "confidence": 0.49,
+        "probabilities": {
+          "0": 0.11,
+          "1": 0.11,
+          "2": 0.3,
+          "3": 0.45,
+          "4": 0.03,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "business_explanation_exists": {
+        "type": "noul",
+        "noul": 0
+      },
+      "second_flag": {
+        "type": "choice",
+        "choice": "RECEIVABLES",
+        "confidence": 0.3,
+        "probabilities": {
+          "RECEIVABLES": 0.4,
+          "INVENTORY": 0.1,
+          "REVENUE_TIMING": 0.25,
+          "CAPITALISED_COSTS": 0.06,
+          "RELATED_PARTY": 0.02,
+          "RESTATEMENT": 0.02,
+          "NONE": 0.15
+        }
+      },
+      "investigate": {
+        "type": "noul",
+        "noul": 0.16
+      }
+    },
+    "AF-0078": {
+      "flag": {
+        "type": "choice",
+        "choice": "NONE",
+        "confidence": 0.49,
+        "probabilities": {
+          "RECEIVABLES": 0.16,
+          "INVENTORY": 0.08,
+          "REVENUE_TIMING": 0.11,
+          "CAPITALISED_COSTS": 0.04,
+          "RELATED_PARTY": 0.03,
+          "RESTATEMENT": 0.02,
+          "NONE": 0.56
+        }
+      },
+      "severity": {
+        "type": "score",
+        "score": 0.64,
+        "confidence": 0.63,
+        "probabilities": {
+          "0": 0.58,
+          "1": 0.26,
+          "2": 0.11,
+          "3": 0.04,
+          "4": 0.01,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "business_explanation_exists": {
+        "type": "noul",
+        "noul": 0
+      },
+      "second_flag": {
+        "type": "choice",
+        "choice": "NONE",
+        "confidence": 0.21,
+        "probabilities": {
+          "RECEIVABLES": 0.23,
+          "INVENTORY": 0.1,
+          "REVENUE_TIMING": 0.26,
+          "CAPITALISED_COSTS": 0.05,
+          "RELATED_PARTY": 0.02,
+          "RESTATEMENT": 0.02,
+          "NONE": 0.32
+        }
+      },
+      "investigate": {
+        "type": "noul",
+        "noul": 0.07
+      }
+    },
+    "AF-0079": {
+      "flag": {
+        "type": "choice",
+        "choice": "INVENTORY",
+        "confidence": 0.98,
+        "probabilities": {
+          "RECEIVABLES": 0.01,
+          "INVENTORY": 0.98,
+          "REVENUE_TIMING": 0.01,
+          "CAPITALISED_COSTS": 0,
+          "RELATED_PARTY": 0,
+          "RESTATEMENT": 0,
+          "NONE": 0
+        }
+      },
+      "severity": {
+        "type": "score",
+        "score": 4.01,
+        "confidence": 0.64,
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.01,
+          "2": 0.02,
+          "3": 0.19,
+          "4": 0.48,
+          "5": 0.27,
+          "6": 0.02
+        }
+      },
+      "business_explanation_exists": {
+        "type": "noul",
+        "noul": 0
+      },
+      "second_flag": {
+        "type": "choice",
+        "choice": "INVENTORY",
+        "confidence": 0.7,
+        "probabilities": {
+          "RECEIVABLES": 0.05,
+          "INVENTORY": 0.74,
+          "REVENUE_TIMING": 0.05,
+          "CAPITALISED_COSTS": 0.01,
+          "RELATED_PARTY": 0.02,
+          "RESTATEMENT": 0.01,
+          "NONE": 0.12
+        }
+      },
+      "investigate": {
+        "type": "noul",
+        "noul": 0.93
+      }
+    },
+    "AF-0080": {
+      "flag": {
+        "type": "choice",
+        "choice": "RECEIVABLES",
+        "confidence": 0.19,
+        "probabilities": {
+          "RECEIVABLES": 0.31,
+          "INVENTORY": 0.06,
+          "REVENUE_TIMING": 0.23,
+          "CAPITALISED_COSTS": 0.11,
+          "RELATED_PARTY": 0.04,
+          "RESTATEMENT": 0.03,
+          "NONE": 0.22
+        }
+      },
+      "severity": {
+        "type": "score",
+        "score": 2.88,
+        "confidence": 0.74,
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.03,
+          "2": 0.19,
+          "3": 0.62,
+          "4": 0.14,
+          "5": 0.01,
+          "6": 0
+        }
+      },
+      "business_explanation_exists": {
+        "type": "noul",
+        "noul": 0
+      },
+      "second_flag": {
+        "type": "choice",
+        "choice": "INVENTORY",
+        "confidence": 0.22,
+        "probabilities": {
+          "RECEIVABLES": 0.21,
+          "INVENTORY": 0.33,
+          "REVENUE_TIMING": 0.23,
+          "CAPITALISED_COSTS": 0.05,
+          "RELATED_PARTY": 0.02,
+          "RESTATEMENT": 0.01,
+          "NONE": 0.15
+        }
+      },
+      "investigate": {
+        "type": "noul",
+        "noul": 0.46
+      }
+    },
+    "AF-0081": {
+      "flag": {
+        "type": "choice",
+        "choice": "CAPITALISED_COSTS",
+        "confidence": 0.72,
+        "probabilities": {
+          "RECEIVABLES": 0.04,
+          "INVENTORY": 0.02,
+          "REVENUE_TIMING": 0.07,
+          "CAPITALISED_COSTS": 0.76,
+          "RELATED_PARTY": 0.03,
+          "RESTATEMENT": 0,
+          "NONE": 0.08
+        }
+      },
+      "severity": {
+        "type": "score",
+        "score": 3.11,
+        "confidence": 0.68,
+        "probabilities": {
+          "0": 0.02,
+          "1": 0.03,
+          "2": 0.1,
+          "3": 0.54,
+          "4": 0.29,
+          "5": 0.02,
+          "6": 0
+        }
+      },
+      "business_explanation_exists": {
+        "type": "noul",
+        "noul": 0
+      },
+      "second_flag": {
+        "type": "choice",
+        "choice": "CAPITALISED_COSTS",
+        "confidence": 0.17,
+        "probabilities": {
+          "RECEIVABLES": 0.16,
+          "INVENTORY": 0.12,
+          "REVENUE_TIMING": 0.24,
+          "CAPITALISED_COSTS": 0.29,
+          "RELATED_PARTY": 0.03,
+          "RESTATEMENT": 0.01,
+          "NONE": 0.15
+        }
+      },
+      "investigate": {
+        "type": "noul",
+        "noul": 0.7
+      }
+    },
+    "AF-0082": {
+      "flag": {
+        "type": "choice",
+        "choice": "RECEIVABLES",
+        "confidence": 0.38,
+        "probabilities": {
+          "RECEIVABLES": 0.47,
+          "INVENTORY": 0.03,
+          "REVENUE_TIMING": 0.2,
+          "CAPITALISED_COSTS": 0.12,
+          "RELATED_PARTY": 0.03,
+          "RESTATEMENT": 0.02,
+          "NONE": 0.13
+        }
+      },
+      "severity": {
+        "type": "score",
+        "score": 2.6,
+        "confidence": 0.71,
+        "probabilities": {
+          "0": 0.03,
+          "1": 0.05,
+          "2": 0.26,
+          "3": 0.61,
+          "4": 0.05,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "business_explanation_exists": {
+        "type": "noul",
+        "noul": 0
+      },
+      "second_flag": {
+        "type": "choice",
+        "choice": "RECEIVABLES",
+        "confidence": 0.19,
+        "probabilities": {
+          "RECEIVABLES": 0.31,
+          "INVENTORY": 0.28,
+          "REVENUE_TIMING": 0.17,
+          "CAPITALISED_COSTS": 0.05,
+          "RELATED_PARTY": 0.03,
+          "RESTATEMENT": 0.01,
+          "NONE": 0.15
+        }
+      },
+      "investigate": {
+        "type": "noul",
+        "noul": 0.24
+      }
+    },
+    "AF-0083": {
+      "flag": {
+        "type": "choice",
+        "choice": "RECEIVABLES",
+        "confidence": 0.29,
+        "probabilities": {
+          "RECEIVABLES": 0.39,
+          "INVENTORY": 0.04,
+          "REVENUE_TIMING": 0.1,
+          "CAPITALISED_COSTS": 0.07,
+          "RELATED_PARTY": 0.03,
+          "RESTATEMENT": 0.02,
+          "NONE": 0.35
+        }
+      },
+      "severity": {
+        "type": "score",
+        "score": 2.84,
+        "confidence": 0.78,
+        "probabilities": {
+          "0": 0.02,
+          "1": 0.03,
+          "2": 0.15,
+          "3": 0.7,
+          "4": 0.09,
+          "5": 0.01,
+          "6": 0
+        }
+      },
+      "business_explanation_exists": {
+        "type": "noul",
+        "noul": 0
+      },
+      "second_flag": {
+        "type": "choice",
+        "choice": "REVENUE_TIMING",
+        "confidence": 0.15,
+        "probabilities": {
+          "RECEIVABLES": 0.25,
+          "INVENTORY": 0.1,
+          "REVENUE_TIMING": 0.27,
+          "CAPITALISED_COSTS": 0.11,
+          "RELATED_PARTY": 0.04,
+          "RESTATEMENT": 0.04,
+          "NONE": 0.19
+        }
+      },
+      "investigate": {
+        "type": "noul",
+        "noul": 0.4
+      }
+    },
+    "AF-0084": {
+      "flag": {
+        "type": "choice",
+        "choice": "RECEIVABLES",
+        "confidence": 0.39,
+        "probabilities": {
+          "RECEIVABLES": 0.48,
+          "INVENTORY": 0.05,
+          "REVENUE_TIMING": 0.13,
+          "CAPITALISED_COSTS": 0.08,
+          "RELATED_PARTY": 0.03,
+          "RESTATEMENT": 0.02,
+          "NONE": 0.21
+        }
+      },
+      "severity": {
+        "type": "score",
+        "score": 2.68,
+        "confidence": 0.56,
+        "probabilities": {
+          "0": 0.09,
+          "1": 0.06,
+          "2": 0.15,
+          "3": 0.5,
+          "4": 0.18,
+          "5": 0.02,
+          "6": 0
+        }
+      },
+      "business_explanation_exists": {
+        "type": "noul",
+        "noul": 0
+      },
+      "second_flag": {
+        "type": "choice",
+        "choice": "RECEIVABLES",
+        "confidence": 0.46,
+        "probabilities": {
+          "RECEIVABLES": 0.54,
+          "INVENTORY": 0.04,
+          "REVENUE_TIMING": 0.27,
+          "CAPITALISED_COSTS": 0.02,
+          "RELATED_PARTY": 0.01,
+          "RESTATEMENT": 0,
+          "NONE": 0.12
+        }
+      },
+      "investigate": {
+        "type": "noul",
+        "noul": 0.15
+      }
+    },
+    "AF-0085": {
+      "flag": {
+        "type": "choice",
+        "choice": "CAPITALISED_COSTS",
+        "confidence": 0.69,
+        "probabilities": {
+          "RECEIVABLES": 0.05,
+          "INVENTORY": 0.02,
+          "REVENUE_TIMING": 0.06,
+          "CAPITALISED_COSTS": 0.73,
+          "RELATED_PARTY": 0.03,
+          "RESTATEMENT": 0.09,
+          "NONE": 0.02
+        }
+      },
+      "severity": {
+        "type": "score",
+        "score": 3.52,
+        "confidence": 0.65,
+        "probabilities": {
+          "0": 0,
+          "1": 0.01,
+          "2": 0.04,
+          "3": 0.43,
+          "4": 0.46,
+          "5": 0.06,
+          "6": 0
+        }
+      },
+      "business_explanation_exists": {
+        "type": "noul",
+        "noul": 0
+      },
+      "second_flag": {
+        "type": "choice",
+        "choice": "CAPITALISED_COSTS",
+        "confidence": 0.35,
+        "probabilities": {
+          "RECEIVABLES": 0.12,
+          "INVENTORY": 0.08,
+          "REVENUE_TIMING": 0.1,
+          "CAPITALISED_COSTS": 0.44,
+          "RELATED_PARTY": 0.04,
+          "RESTATEMENT": 0.14,
+          "NONE": 0.08
+        }
+      },
+      "investigate": {
+        "type": "noul",
+        "noul": 0.92
+      }
+    },
+    "AF-0086": {
+      "flag": {
+        "type": "choice",
+        "choice": "RECEIVABLES",
+        "confidence": 0.3,
+        "probabilities": {
+          "RECEIVABLES": 0.4,
+          "INVENTORY": 0.05,
+          "REVENUE_TIMING": 0.17,
+          "CAPITALISED_COSTS": 0.09,
+          "RELATED_PARTY": 0.02,
+          "RESTATEMENT": 0.02,
+          "NONE": 0.25
+        }
+      },
+      "severity": {
+        "type": "score",
+        "score": 2.8,
+        "confidence": 0.85,
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.01,
+          "2": 0.18,
+          "3": 0.77,
+          "4": 0.03,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "business_explanation_exists": {
+        "type": "noul",
+        "noul": 0
+      },
+      "second_flag": {
+        "type": "choice",
+        "choice": "RECEIVABLES",
+        "confidence": 0.38,
+        "probabilities": {
+          "RECEIVABLES": 0.47,
+          "INVENTORY": 0.02,
+          "REVENUE_TIMING": 0.42,
+          "CAPITALISED_COSTS": 0.01,
+          "RELATED_PARTY": 0,
+          "RESTATEMENT": 0,
+          "NONE": 0.08
+        }
+      },
+      "investigate": {
+        "type": "noul",
+        "noul": 0.19
+      }
+    },
+    "AF-0087": {
+      "flag": {
+        "type": "choice",
+        "choice": "RECEIVABLES",
+        "confidence": 0.78,
+        "probabilities": {
+          "RECEIVABLES": 0.81,
+          "INVENTORY": 0.05,
+          "REVENUE_TIMING": 0.05,
+          "CAPITALISED_COSTS": 0.03,
+          "RELATED_PARTY": 0.02,
+          "RESTATEMENT": 0.01,
+          "NONE": 0.03
+        }
+      },
+      "severity": {
+        "type": "score",
+        "score": 3.52,
+        "confidence": 0.67,
+        "probabilities": {
+          "0": 0,
+          "1": 0.01,
+          "2": 0.06,
+          "3": 0.37,
+          "4": 0.52,
+          "5": 0.04,
+          "6": 0
+        }
+      },
+      "business_explanation_exists": {
+        "type": "noul",
+        "noul": 1
+      },
+      "second_flag": {
+        "type": "choice",
+        "choice": "REVENUE_TIMING",
+        "confidence": 0.31,
+        "probabilities": {
+          "RECEIVABLES": 0.25,
+          "INVENTORY": 0.06,
+          "REVENUE_TIMING": 0.41,
+          "CAPITALISED_COSTS": 0.04,
+          "RELATED_PARTY": 0.02,
+          "RESTATEMENT": 0.01,
+          "NONE": 0.21
+        }
+      },
+      "investigate": {
+        "type": "noul",
+        "noul": 0.16
+      }
+    },
+    "AF-0088": {
+      "flag": {
+        "type": "choice",
+        "choice": "RECEIVABLES",
+        "confidence": 0.58,
+        "probabilities": {
+          "RECEIVABLES": 0.64,
+          "INVENTORY": 0.03,
+          "REVENUE_TIMING": 0.08,
+          "CAPITALISED_COSTS": 0.06,
+          "RELATED_PARTY": 0.02,
+          "RESTATEMENT": 0.01,
+          "NONE": 0.16
+        }
+      },
+      "severity": {
+        "type": "score",
+        "score": 2.65,
+        "confidence": 0.76,
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.03,
+          "2": 0.29,
+          "3": 0.64,
+          "4": 0.03,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "business_explanation_exists": {
+        "type": "noul",
+        "noul": 0
+      },
+      "second_flag": {
+        "type": "choice",
+        "choice": "RECEIVABLES",
+        "confidence": 0.37,
+        "probabilities": {
+          "RECEIVABLES": 0.46,
+          "INVENTORY": 0.1,
+          "REVENUE_TIMING": 0.17,
+          "CAPITALISED_COSTS": 0.07,
+          "RELATED_PARTY": 0.03,
+          "RESTATEMENT": 0.02,
+          "NONE": 0.15
+        }
+      },
+      "investigate": {
+        "type": "noul",
+        "noul": 0.45
+      }
+    },
+    "AF-0089": {
+      "flag": {
+        "type": "choice",
+        "choice": "RECEIVABLES",
+        "confidence": 0.54,
+        "probabilities": {
+          "RECEIVABLES": 0.61,
+          "INVENTORY": 0.03,
+          "REVENUE_TIMING": 0.06,
+          "CAPITALISED_COSTS": 0.26,
+          "RELATED_PARTY": 0.02,
+          "RESTATEMENT": 0.01,
+          "NONE": 0.01
+        }
+      },
+      "severity": {
+        "type": "score",
+        "score": 4,
+        "confidence": 0.8,
+        "probabilities": {
+          "0": 0,
+          "1": 0.01,
+          "2": 0.01,
+          "3": 0.12,
+          "4": 0.7,
+          "5": 0.15,
+          "6": 0.01
+        }
+      },
+      "business_explanation_exists": {
+        "type": "noul",
+        "noul": 0
+      },
+      "second_flag": {
+        "type": "choice",
+        "choice": "RECEIVABLES",
+        "confidence": 0.22,
+        "probabilities": {
+          "RECEIVABLES": 0.33,
+          "INVENTORY": 0.07,
+          "REVENUE_TIMING": 0.19,
+          "CAPITALISED_COSTS": 0.26,
+          "RELATED_PARTY": 0.04,
+          "RESTATEMENT": 0.02,
+          "NONE": 0.09
+        }
+      },
+      "investigate": {
+        "type": "noul",
+        "noul": 0.91
+      }
+    },
+    "AF-0090": {
+      "flag": {
+        "type": "choice",
+        "choice": "RESTATEMENT",
+        "confidence": 0.21,
+        "probabilities": {
+          "RECEIVABLES": 0.19,
+          "INVENTORY": 0.07,
+          "REVENUE_TIMING": 0.09,
+          "CAPITALISED_COSTS": 0.06,
+          "RELATED_PARTY": 0.07,
+          "RESTATEMENT": 0.32,
+          "NONE": 0.2
+        }
+      },
+      "severity": {
+        "type": "score",
+        "score": 2.33,
+        "confidence": 0.55,
+        "probabilities": {
+          "0": 0.09,
+          "1": 0.09,
+          "2": 0.27,
+          "3": 0.51,
+          "4": 0.03,
+          "5": 0.01,
+          "6": 0
+        }
+      },
+      "business_explanation_exists": {
+        "type": "noul",
+        "noul": 0
+      },
+      "second_flag": {
+        "type": "choice",
+        "choice": "RECEIVABLES",
+        "confidence": 0.25,
+        "probabilities": {
+          "RECEIVABLES": 0.36,
+          "INVENTORY": 0.05,
+          "REVENUE_TIMING": 0.15,
+          "CAPITALISED_COSTS": 0.07,
+          "RELATED_PARTY": 0.03,
+          "RESTATEMENT": 0.21,
+          "NONE": 0.13
+        }
+      },
+      "investigate": {
+        "type": "noul",
+        "noul": 0.3
+      }
+    },
+    "AF-0091": {
+      "flag": {
+        "type": "choice",
+        "choice": "REVENUE_TIMING",
+        "confidence": 0.43,
+        "probabilities": {
+          "RECEIVABLES": 0.28,
+          "INVENTORY": 0.02,
+          "REVENUE_TIMING": 0.51,
+          "CAPITALISED_COSTS": 0.14,
+          "RELATED_PARTY": 0.02,
+          "RESTATEMENT": 0.01,
+          "NONE": 0.02
+        }
+      },
+      "severity": {
+        "type": "score",
+        "score": 3.84,
+        "confidence": 0.87,
+        "probabilities": {
+          "0": 0,
+          "1": 0,
+          "2": 0.01,
+          "3": 0.17,
+          "4": 0.79,
+          "5": 0.03,
+          "6": 0
+        }
+      },
+      "business_explanation_exists": {
+        "type": "noul",
+        "noul": 0
+      },
+      "second_flag": {
+        "type": "choice",
+        "choice": "REVENUE_TIMING",
+        "confidence": 0.3,
+        "probabilities": {
+          "RECEIVABLES": 0.33,
+          "INVENTORY": 0.12,
+          "REVENUE_TIMING": 0.4,
+          "CAPITALISED_COSTS": 0.04,
+          "RELATED_PARTY": 0.02,
+          "RESTATEMENT": 0.02,
+          "NONE": 0.07
+        }
+      },
+      "investigate": {
+        "type": "noul",
+        "noul": 0.9
+      }
+    },
+    "AF-0092": {
+      "flag": {
+        "type": "choice",
+        "choice": "RECEIVABLES",
+        "confidence": 0.28,
+        "probabilities": {
+          "RECEIVABLES": 0.38,
+          "INVENTORY": 0.1,
+          "REVENUE_TIMING": 0.12,
+          "CAPITALISED_COSTS": 0.12,
+          "RELATED_PARTY": 0.03,
+          "RESTATEMENT": 0.01,
+          "NONE": 0.24
+        }
+      },
+      "severity": {
+        "type": "score",
+        "score": 2.84,
+        "confidence": 0.76,
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.03,
+          "2": 0.2,
+          "3": 0.64,
+          "4": 0.11,
+          "5": 0.01,
+          "6": 0
+        }
+      },
+      "business_explanation_exists": {
+        "type": "noul",
+        "noul": 0
+      },
+      "second_flag": {
+        "type": "choice",
+        "choice": "INVENTORY",
+        "confidence": 0.78,
+        "probabilities": {
+          "RECEIVABLES": 0.13,
+          "INVENTORY": 0.81,
+          "REVENUE_TIMING": 0.02,
+          "CAPITALISED_COSTS": 0.01,
+          "RELATED_PARTY": 0,
+          "RESTATEMENT": 0,
+          "NONE": 0.03
+        }
+      },
+      "investigate": {
+        "type": "noul",
+        "noul": 0.72
+      }
+    },
+    "AF-0093": {
+      "flag": {
+        "type": "choice",
+        "choice": "NONE",
+        "confidence": 0.73,
+        "probabilities": {
+          "RECEIVABLES": 0.11,
+          "INVENTORY": 0.06,
+          "REVENUE_TIMING": 0.02,
+          "CAPITALISED_COSTS": 0.01,
+          "RELATED_PARTY": 0.02,
+          "RESTATEMENT": 0.01,
+          "NONE": 0.77
+        }
+      },
+      "severity": {
+        "type": "score",
+        "score": 0.98,
+        "confidence": 0.43,
+        "probabilities": {
+          "0": 0.54,
+          "1": 0.16,
+          "2": 0.13,
+          "3": 0.13,
+          "4": 0.03,
+          "5": 0.01,
+          "6": 0
+        }
+      },
+      "business_explanation_exists": {
+        "type": "noul",
+        "noul": 0
+      },
+      "second_flag": {
+        "type": "choice",
+        "choice": "NONE",
+        "confidence": 0.28,
+        "probabilities": {
+          "RECEIVABLES": 0.18,
+          "INVENTORY": 0.15,
+          "REVENUE_TIMING": 0.15,
+          "CAPITALISED_COSTS": 0.06,
+          "RELATED_PARTY": 0.03,
+          "RESTATEMENT": 0.05,
+          "NONE": 0.38
+        }
+      },
+      "investigate": {
+        "type": "noul",
+        "noul": 0.07
+      }
+    },
+    "AF-0094": {
+      "flag": {
+        "type": "choice",
+        "choice": "RECEIVABLES",
+        "confidence": 0.43,
+        "probabilities": {
+          "RECEIVABLES": 0.51,
+          "INVENTORY": 0.03,
+          "REVENUE_TIMING": 0.17,
+          "CAPITALISED_COSTS": 0.12,
+          "RELATED_PARTY": 0.03,
+          "RESTATEMENT": 0.02,
+          "NONE": 0.12
+        }
+      },
+      "severity": {
+        "type": "score",
+        "score": 3.13,
+        "confidence": 0.64,
+        "probabilities": {
+          "0": 0.03,
+          "1": 0.03,
+          "2": 0.09,
+          "3": 0.5,
+          "4": 0.33,
+          "5": 0.02,
+          "6": 0
+        }
+      },
+      "business_explanation_exists": {
+        "type": "noul",
+        "noul": 0
+      },
+      "second_flag": {
+        "type": "choice",
+        "choice": "INVENTORY",
+        "confidence": 0.32,
+        "probabilities": {
+          "RECEIVABLES": 0.24,
+          "INVENTORY": 0.42,
+          "REVENUE_TIMING": 0.14,
+          "CAPITALISED_COSTS": 0.04,
+          "RELATED_PARTY": 0.03,
+          "RESTATEMENT": 0.02,
+          "NONE": 0.11
+        }
+      },
+      "investigate": {
+        "type": "noul",
+        "noul": 0.86
+      }
+    },
+    "AF-0095": {
+      "flag": {
+        "type": "choice",
+        "choice": "NONE",
+        "confidence": 0.38,
+        "probabilities": {
+          "RECEIVABLES": 0.31,
+          "INVENTORY": 0.1,
+          "REVENUE_TIMING": 0.06,
+          "CAPITALISED_COSTS": 0.02,
+          "RELATED_PARTY": 0.02,
+          "RESTATEMENT": 0.02,
+          "NONE": 0.47
+        }
+      },
+      "severity": {
+        "type": "score",
+        "score": 1.93,
+        "confidence": 0.26,
+        "probabilities": {
+          "0": 0.24,
+          "1": 0.11,
+          "2": 0.23,
+          "3": 0.33,
+          "4": 0.08,
+          "5": 0.01,
+          "6": 0
+        }
+      },
+      "business_explanation_exists": {
+        "type": "noul",
+        "noul": 0
+      },
+      "second_flag": {
+        "type": "choice",
+        "choice": "RECEIVABLES",
+        "confidence": 0.29,
+        "probabilities": {
+          "RECEIVABLES": 0.39,
+          "INVENTORY": 0.13,
+          "REVENUE_TIMING": 0.23,
+          "CAPITALISED_COSTS": 0.03,
+          "RELATED_PARTY": 0.01,
+          "RESTATEMENT": 0,
+          "NONE": 0.21
+        }
+      },
+      "investigate": {
+        "type": "noul",
+        "noul": 0.07
+      }
+    },
+    "AF-0096": {
+      "flag": {
+        "type": "choice",
+        "choice": "RECEIVABLES",
+        "confidence": 0.36,
+        "probabilities": {
+          "RECEIVABLES": 0.45,
+          "INVENTORY": 0.04,
+          "REVENUE_TIMING": 0.06,
+          "CAPITALISED_COSTS": 0.41,
+          "RELATED_PARTY": 0.02,
+          "RESTATEMENT": 0.01,
+          "NONE": 0.01
+        }
+      },
+      "severity": {
+        "type": "score",
+        "score": 4.14,
+        "confidence": 0.77,
+        "probabilities": {
+          "0": 0,
+          "1": 0,
+          "2": 0.01,
+          "3": 0.11,
+          "4": 0.62,
+          "5": 0.25,
+          "6": 0.01
+        }
+      },
+      "business_explanation_exists": {
+        "type": "noul",
+        "noul": 0
+      },
+      "second_flag": {
+        "type": "choice",
+        "choice": "RECEIVABLES",
+        "confidence": 0.36,
+        "probabilities": {
+          "RECEIVABLES": 0.45,
+          "INVENTORY": 0.05,
+          "REVENUE_TIMING": 0.12,
+          "CAPITALISED_COSTS": 0.24,
+          "RELATED_PARTY": 0.04,
+          "RESTATEMENT": 0.02,
+          "NONE": 0.08
+        }
+      },
+      "investigate": {
+        "type": "noul",
+        "noul": 0.93
+      }
+    },
+    "AF-0097": {
+      "flag": {
+        "type": "choice",
+        "choice": "RECEIVABLES",
+        "confidence": 0.29,
+        "probabilities": {
+          "RECEIVABLES": 0.39,
+          "INVENTORY": 0.11,
+          "REVENUE_TIMING": 0.14,
+          "CAPITALISED_COSTS": 0.06,
+          "RELATED_PARTY": 0.03,
+          "RESTATEMENT": 0.02,
+          "NONE": 0.25
+        }
+      },
+      "severity": {
+        "type": "score",
+        "score": 2.45,
+        "confidence": 0.66,
+        "probabilities": {
+          "0": 0.03,
+          "1": 0.07,
+          "2": 0.34,
+          "3": 0.54,
+          "4": 0.02,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "business_explanation_exists": {
+        "type": "noul",
+        "noul": 0
+      },
+      "second_flag": {
+        "type": "choice",
+        "choice": "INVENTORY",
+        "confidence": 0.32,
+        "probabilities": {
+          "RECEIVABLES": 0.24,
+          "INVENTORY": 0.42,
+          "REVENUE_TIMING": 0.15,
+          "CAPITALISED_COSTS": 0.03,
+          "RELATED_PARTY": 0.03,
+          "RESTATEMENT": 0.01,
+          "NONE": 0.12
+        }
+      },
+      "investigate": {
+        "type": "noul",
+        "noul": 0.23
+      }
+    },
+    "AF-0098": {
+      "flag": {
+        "type": "choice",
+        "choice": "RECEIVABLES",
+        "confidence": 0.98,
+        "probabilities": {
+          "RECEIVABLES": 0.98,
+          "INVENTORY": 0.01,
+          "REVENUE_TIMING": 0.01,
+          "CAPITALISED_COSTS": 0,
+          "RELATED_PARTY": 0,
+          "RESTATEMENT": 0,
+          "NONE": 0
+        }
+      },
+      "severity": {
+        "type": "score",
+        "score": 3.68,
+        "confidence": 0.78,
+        "probabilities": {
+          "0": 0,
+          "1": 0,
+          "2": 0.02,
+          "3": 0.31,
+          "4": 0.64,
+          "5": 0.03,
+          "6": 0
+        }
+      },
+      "business_explanation_exists": {
+        "type": "noul",
+        "noul": 0
+      },
+      "second_flag": {
+        "type": "choice",
+        "choice": "RECEIVABLES",
+        "confidence": 0.64,
+        "probabilities": {
+          "RECEIVABLES": 0.69,
+          "INVENTORY": 0.06,
+          "REVENUE_TIMING": 0.09,
+          "CAPITALISED_COSTS": 0.02,
+          "RELATED_PARTY": 0.02,
+          "RESTATEMENT": 0.01,
+          "NONE": 0.11
+        }
+      },
+      "investigate": {
+        "type": "noul",
+        "noul": 0.92
+      }
+    },
+    "AF-0099": {
+      "flag": {
+        "type": "choice",
+        "choice": "RECEIVABLES",
+        "confidence": 0.95,
+        "probabilities": {
+          "RECEIVABLES": 0.96,
+          "INVENTORY": 0.01,
+          "REVENUE_TIMING": 0.01,
+          "CAPITALISED_COSTS": 0.01,
+          "RELATED_PARTY": 0.01,
+          "RESTATEMENT": 0,
+          "NONE": 0
+        }
+      },
+      "severity": {
+        "type": "score",
+        "score": 3.9,
+        "confidence": 0.91,
+        "probabilities": {
+          "0": 0,
+          "1": 0,
+          "2": 0.01,
+          "3": 0.11,
+          "4": 0.85,
+          "5": 0.03,
+          "6": 0
+        }
+      },
+      "business_explanation_exists": {
+        "type": "noul",
+        "noul": 0
+      },
+      "second_flag": {
+        "type": "choice",
+        "choice": "REVENUE_TIMING",
+        "confidence": 0.42,
+        "probabilities": {
+          "RECEIVABLES": 0.27,
+          "INVENTORY": 0.02,
+          "REVENUE_TIMING": 0.5,
+          "CAPITALISED_COSTS": 0.02,
+          "RELATED_PARTY": 0.01,
+          "RESTATEMENT": 0,
+          "NONE": 0.18
+        }
+      },
+      "investigate": {
+        "type": "noul",
+        "noul": 0.95
+      }
+    },
+    "AF-0100": {
+      "flag": {
+        "type": "choice",
+        "choice": "RECEIVABLES",
+        "confidence": 0.37,
+        "probabilities": {
+          "RECEIVABLES": 0.46,
+          "INVENTORY": 0.04,
+          "REVENUE_TIMING": 0.15,
+          "CAPITALISED_COSTS": 0.07,
+          "RELATED_PARTY": 0.03,
+          "RESTATEMENT": 0.02,
+          "NONE": 0.23
+        }
+      },
+      "severity": {
+        "type": "score",
+        "score": 2.24,
+        "confidence": 0.5,
+        "probabilities": {
+          "0": 0.11,
+          "1": 0.1,
+          "2": 0.28,
+          "3": 0.46,
+          "4": 0.05,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "business_explanation_exists": {
+        "type": "noul",
+        "noul": 0
+      },
+      "second_flag": {
+        "type": "choice",
+        "choice": "RECEIVABLES",
+        "confidence": 0.29,
+        "probabilities": {
+          "RECEIVABLES": 0.39,
+          "INVENTORY": 0.12,
+          "REVENUE_TIMING": 0.24,
+          "CAPITALISED_COSTS": 0.06,
+          "RELATED_PARTY": 0.02,
+          "RESTATEMENT": 0.02,
+          "NONE": 0.15
+        }
+      },
+      "investigate": {
+        "type": "noul",
+        "noul": 0.34
+      }
+    },
+    "AF-0101": {
+      "flag": {
+        "type": "choice",
+        "choice": "REVENUE_TIMING",
+        "confidence": 0.39,
+        "probabilities": {
+          "RECEIVABLES": 0.16,
+          "INVENTORY": 0.03,
+          "REVENUE_TIMING": 0.48,
+          "CAPITALISED_COSTS": 0.27,
+          "RELATED_PARTY": 0.02,
+          "RESTATEMENT": 0.01,
+          "NONE": 0.03
+        }
+      },
+      "severity": {
+        "type": "score",
+        "score": 3.91,
+        "confidence": 0.85,
+        "probabilities": {
+          "0": 0,
+          "1": 0,
+          "2": 0.01,
+          "3": 0.15,
+          "4": 0.76,
+          "5": 0.08,
+          "6": 0
+        }
+      },
+      "business_explanation_exists": {
+        "type": "noul",
+        "noul": 0
+      },
+      "second_flag": {
+        "type": "choice",
+        "choice": "REVENUE_TIMING",
+        "confidence": 0.39,
+        "probabilities": {
+          "RECEIVABLES": 0.23,
+          "INVENTORY": 0.1,
+          "REVENUE_TIMING": 0.48,
+          "CAPITALISED_COSTS": 0.05,
+          "RELATED_PARTY": 0.03,
+          "RESTATEMENT": 0.02,
+          "NONE": 0.09
+        }
+      },
+      "investigate": {
+        "type": "noul",
+        "noul": 0.94
+      }
+    },
+    "AF-0102": {
+      "flag": {
+        "type": "choice",
+        "choice": "RECEIVABLES",
+        "confidence": 0.62,
+        "probabilities": {
+          "RECEIVABLES": 0.67,
+          "INVENTORY": 0.04,
+          "REVENUE_TIMING": 0.06,
+          "CAPITALISED_COSTS": 0.04,
+          "RELATED_PARTY": 0.03,
+          "RESTATEMENT": 0.01,
+          "NONE": 0.15
+        }
+      },
+      "severity": {
+        "type": "score",
+        "score": 3.18,
+        "confidence": 0.6,
+        "probabilities": {
+          "0": 0.03,
+          "1": 0.03,
+          "2": 0.1,
+          "3": 0.47,
+          "4": 0.32,
+          "5": 0.04,
+          "6": 0.01
+        }
+      },
+      "business_explanation_exists": {
+        "type": "noul",
+        "noul": 0
+      },
+      "second_flag": {
+        "type": "choice",
+        "choice": "RECEIVABLES",
+        "confidence": 0.69,
+        "probabilities": {
+          "RECEIVABLES": 0.73,
+          "INVENTORY": 0.12,
+          "REVENUE_TIMING": 0.06,
+          "CAPITALISED_COSTS": 0.01,
+          "RELATED_PARTY": 0.01,
+          "RESTATEMENT": 0,
+          "NONE": 0.07
+        }
+      },
+      "investigate": {
+        "type": "noul",
+        "noul": 0.85
+      }
+    },
+    "AF-0103": {
+      "flag": {
+        "type": "choice",
+        "choice": "RELATED_PARTY",
+        "confidence": 0.78,
+        "probabilities": {
+          "RECEIVABLES": 0.08,
+          "INVENTORY": 0.03,
+          "REVENUE_TIMING": 0.03,
+          "CAPITALISED_COSTS": 0.03,
+          "RELATED_PARTY": 0.81,
+          "RESTATEMENT": 0.01,
+          "NONE": 0.01
+        }
+      },
+      "severity": {
+        "type": "score",
+        "score": 3.71,
+        "confidence": 0.63,
+        "probabilities": {
+          "0": 0.02,
+          "1": 0.02,
+          "2": 0.04,
+          "3": 0.24,
+          "4": 0.54,
+          "5": 0.11,
+          "6": 0.03
+        }
+      },
+      "business_explanation_exists": {
+        "type": "noul",
+        "noul": 0.08
+      },
+      "second_flag": {
+        "type": "choice",
+        "choice": "RELATED_PARTY",
+        "confidence": 0.37,
+        "probabilities": {
+          "RECEIVABLES": 0.22,
+          "INVENTORY": 0.08,
+          "REVENUE_TIMING": 0.09,
+          "CAPITALISED_COSTS": 0.05,
+          "RELATED_PARTY": 0.46,
+          "RESTATEMENT": 0.02,
+          "NONE": 0.08
+        }
+      },
+      "investigate": {
+        "type": "noul",
+        "noul": 0.91
+      }
+    },
+    "AF-0104": {
+      "flag": {
+        "type": "choice",
+        "choice": "CAPITALISED_COSTS",
+        "confidence": 0.71,
+        "probabilities": {
+          "RECEIVABLES": 0.04,
+          "INVENTORY": 0.02,
+          "REVENUE_TIMING": 0.11,
+          "CAPITALISED_COSTS": 0.75,
+          "RELATED_PARTY": 0.03,
+          "RESTATEMENT": 0.01,
+          "NONE": 0.04
+        }
+      },
+      "severity": {
+        "type": "score",
+        "score": 3.48,
+        "confidence": 0.64,
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.01,
+          "2": 0.08,
+          "3": 0.34,
+          "4": 0.51,
+          "5": 0.05,
+          "6": 0
+        }
+      },
+      "business_explanation_exists": {
+        "type": "noul",
+        "noul": 0
+      },
+      "second_flag": {
+        "type": "choice",
+        "choice": "CAPITALISED_COSTS",
+        "confidence": 0.28,
+        "probabilities": {
+          "RECEIVABLES": 0.09,
+          "INVENTORY": 0.23,
+          "REVENUE_TIMING": 0.13,
+          "CAPITALISED_COSTS": 0.38,
+          "RELATED_PARTY": 0.03,
+          "RESTATEMENT": 0.01,
+          "NONE": 0.13
+        }
+      },
+      "investigate": {
+        "type": "noul",
+        "noul": 0.91
+      }
+    },
+    "AF-0105": {
+      "flag": {
+        "type": "choice",
+        "choice": "CAPITALISED_COSTS",
+        "confidence": 0.49,
+        "probabilities": {
+          "RECEIVABLES": 0.05,
+          "INVENTORY": 0.04,
+          "REVENUE_TIMING": 0.28,
+          "CAPITALISED_COSTS": 0.56,
+          "RELATED_PARTY": 0.05,
+          "RESTATEMENT": 0.01,
+          "NONE": 0.01
+        }
+      },
+      "severity": {
+        "type": "score",
+        "score": 3.99,
+        "confidence": 0.81,
+        "probabilities": {
+          "0": 0,
+          "1": 0,
+          "2": 0.02,
+          "3": 0.13,
+          "4": 0.7,
+          "5": 0.14,
+          "6": 0.01
+        }
+      },
+      "business_explanation_exists": {
+        "type": "noul",
+        "noul": 0
+      },
+      "second_flag": {
+        "type": "choice",
+        "choice": "CAPITALISED_COSTS",
+        "confidence": 0.17,
+        "probabilities": {
+          "RECEIVABLES": 0.13,
+          "INVENTORY": 0.16,
+          "REVENUE_TIMING": 0.26,
+          "CAPITALISED_COSTS": 0.29,
+          "RELATED_PARTY": 0.04,
+          "RESTATEMENT": 0.02,
+          "NONE": 0.1
+        }
+      },
+      "investigate": {
+        "type": "noul",
+        "noul": 0.93
+      }
+    },
+    "AF-0106": {
+      "flag": {
+        "type": "choice",
+        "choice": "CAPITALISED_COSTS",
+        "confidence": 0.66,
+        "probabilities": {
+          "RECEIVABLES": 0.05,
+          "INVENTORY": 0.02,
+          "REVENUE_TIMING": 0.08,
+          "CAPITALISED_COSTS": 0.71,
+          "RELATED_PARTY": 0.04,
+          "RESTATEMENT": 0.01,
+          "NONE": 0.09
+        }
+      },
+      "severity": {
+        "type": "score",
+        "score": 3.46,
+        "confidence": 0.67,
+        "probabilities": {
+          "0": 0,
+          "1": 0.01,
+          "2": 0.07,
+          "3": 0.38,
+          "4": 0.53,
+          "5": 0.01,
+          "6": 0
+        }
+      },
+      "business_explanation_exists": {
+        "type": "noul",
+        "noul": 0.84
+      },
+      "second_flag": {
+        "type": "choice",
+        "choice": "CAPITALISED_COSTS",
+        "confidence": 0.28,
+        "probabilities": {
+          "RECEIVABLES": 0.1,
+          "INVENTORY": 0.2,
+          "REVENUE_TIMING": 0.14,
+          "CAPITALISED_COSTS": 0.38,
+          "RELATED_PARTY": 0.03,
+          "RESTATEMENT": 0.01,
+          "NONE": 0.14
+        }
+      },
+      "investigate": {
+        "type": "noul",
+        "noul": 0.85
+      }
+    },
+    "AF-0107": {
+      "flag": {
+        "type": "choice",
+        "choice": "RESTATEMENT",
+        "confidence": 0.34,
+        "probabilities": {
+          "RECEIVABLES": 0.07,
+          "INVENTORY": 0.05,
+          "REVENUE_TIMING": 0.03,
+          "CAPITALISED_COSTS": 0.03,
+          "RELATED_PARTY": 0.08,
+          "RESTATEMENT": 0.43,
+          "NONE": 0.31
+        }
+      },
+      "severity": {
+        "type": "score",
+        "score": 1.59,
+        "confidence": 0.15,
+        "probabilities": {
+          "0": 0.24,
+          "1": 0.24,
+          "2": 0.23,
+          "3": 0.27,
+          "4": 0.02,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "business_explanation_exists": {
+        "type": "noul",
+        "noul": 0.03
+      },
+      "second_flag": {
+        "type": "choice",
+        "choice": "RESTATEMENT",
+        "confidence": 0.13,
+        "probabilities": {
+          "RECEIVABLES": 0.15,
+          "INVENTORY": 0.14,
+          "REVENUE_TIMING": 0.13,
+          "CAPITALISED_COSTS": 0.06,
+          "RELATED_PARTY": 0.04,
+          "RESTATEMENT": 0.25,
+          "NONE": 0.23
+        }
+      },
+      "investigate": {
+        "type": "noul",
+        "noul": 0.1
+      }
+    },
+    "AF-0108": {
+      "flag": {
+        "type": "choice",
+        "choice": "NONE",
+        "confidence": 0.41,
+        "probabilities": {
+          "RECEIVABLES": 0.14,
+          "INVENTORY": 0.06,
+          "REVENUE_TIMING": 0.18,
+          "CAPITALISED_COSTS": 0.06,
+          "RELATED_PARTY": 0.03,
+          "RESTATEMENT": 0.04,
+          "NONE": 0.49
+        }
+      },
+      "severity": {
+        "type": "score",
+        "score": 1.27,
+        "confidence": 0.26,
+        "probabilities": {
+          "0": 0.37,
+          "1": 0.23,
+          "2": 0.18,
+          "3": 0.2,
+          "4": 0.02,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "business_explanation_exists": {
+        "type": "noul",
+        "noul": 0
+      },
+      "second_flag": {
+        "type": "choice",
+        "choice": "INVENTORY",
+        "confidence": 0.15,
+        "probabilities": {
+          "RECEIVABLES": 0.27,
+          "INVENTORY": 0.27,
+          "REVENUE_TIMING": 0.21,
+          "CAPITALISED_COSTS": 0.05,
+          "RELATED_PARTY": 0.03,
+          "RESTATEMENT": 0.02,
+          "NONE": 0.15
+        }
+      },
+      "investigate": {
+        "type": "noul",
+        "noul": 0.09
+      }
+    },
+    "AF-0109": {
+      "flag": {
+        "type": "choice",
+        "choice": "RECEIVABLES",
+        "confidence": 0.28,
+        "probabilities": {
+          "RECEIVABLES": 0.38,
+          "INVENTORY": 0.06,
+          "REVENUE_TIMING": 0.17,
+          "CAPITALISED_COSTS": 0.05,
+          "RELATED_PARTY": 0.02,
+          "RESTATEMENT": 0.01,
+          "NONE": 0.31
+        }
+      },
+      "severity": {
+        "type": "score",
+        "score": 1.29,
+        "confidence": 0.25,
+        "probabilities": {
+          "0": 0.32,
+          "1": 0.27,
+          "2": 0.23,
+          "3": 0.16,
+          "4": 0.02,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "business_explanation_exists": {
+        "type": "noul",
+        "noul": 0
+      },
+      "second_flag": {
+        "type": "choice",
+        "choice": "RECEIVABLES",
+        "confidence": 0.28,
+        "probabilities": {
+          "RECEIVABLES": 0.38,
+          "INVENTORY": 0.08,
+          "REVENUE_TIMING": 0.28,
+          "CAPITALISED_COSTS": 0.03,
+          "RELATED_PARTY": 0.02,
+          "RESTATEMENT": 0.01,
+          "NONE": 0.2
+        }
+      },
+      "investigate": {
+        "type": "noul",
+        "noul": 0.1
+      }
+    },
+    "AF-0110": {
+      "flag": {
+        "type": "choice",
+        "choice": "CAPITALISED_COSTS",
+        "confidence": 0.8,
+        "probabilities": {
+          "RECEIVABLES": 0.02,
+          "INVENTORY": 0.02,
+          "REVENUE_TIMING": 0.05,
+          "CAPITALISED_COSTS": 0.83,
+          "RELATED_PARTY": 0.04,
+          "RESTATEMENT": 0.03,
+          "NONE": 0.01
+        }
+      },
+      "severity": {
+        "type": "score",
+        "score": 4,
+        "confidence": 0.81,
+        "probabilities": {
+          "0": 0,
+          "1": 0,
+          "2": 0.01,
+          "3": 0.14,
+          "4": 0.69,
+          "5": 0.16,
+          "6": 0
+        }
+      },
+      "business_explanation_exists": {
+        "type": "noul",
+        "noul": 0.01
+      },
+      "second_flag": {
+        "type": "choice",
+        "choice": "CAPITALISED_COSTS",
+        "confidence": 0.19,
+        "probabilities": {
+          "RECEIVABLES": 0.11,
+          "INVENTORY": 0.08,
+          "REVENUE_TIMING": 0.26,
+          "CAPITALISED_COSTS": 0.31,
+          "RELATED_PARTY": 0.05,
+          "RESTATEMENT": 0.15,
+          "NONE": 0.04
+        }
+      },
+      "investigate": {
+        "type": "noul",
+        "noul": 0.98
+      }
+    },
+    "AF-0111": {
+      "flag": {
+        "type": "choice",
+        "choice": "NONE",
+        "confidence": 0.39,
+        "probabilities": {
+          "RECEIVABLES": 0.12,
+          "INVENTORY": 0.07,
+          "REVENUE_TIMING": 0.18,
+          "CAPITALISED_COSTS": 0.07,
+          "RELATED_PARTY": 0.04,
+          "RESTATEMENT": 0.04,
+          "NONE": 0.48
+        }
+      },
+      "severity": {
+        "type": "score",
+        "score": 1.52,
+        "confidence": 0.11,
+        "probabilities": {
+          "0": 0.33,
+          "1": 0.15,
+          "2": 0.21,
+          "3": 0.29,
+          "4": 0.02,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "business_explanation_exists": {
+        "type": "noul",
+        "noul": 0
+      },
+      "second_flag": {
+        "type": "choice",
+        "choice": "NONE",
+        "confidence": 0.3,
+        "probabilities": {
+          "RECEIVABLES": 0.14,
+          "INVENTORY": 0.13,
+          "REVENUE_TIMING": 0.26,
+          "CAPITALISED_COSTS": 0.04,
+          "RELATED_PARTY": 0.01,
+          "RESTATEMENT": 0.02,
+          "NONE": 0.4
+        }
+      },
+      "investigate": {
+        "type": "noul",
+        "noul": 0.14
+      }
+    },
+    "AF-0112": {
+      "flag": {
+        "type": "choice",
+        "choice": "RECEIVABLES",
+        "confidence": 0.3,
+        "probabilities": {
+          "RECEIVABLES": 0.4,
+          "INVENTORY": 0.06,
+          "REVENUE_TIMING": 0.1,
+          "CAPITALISED_COSTS": 0.04,
+          "RELATED_PARTY": 0.02,
+          "RESTATEMENT": 0.02,
+          "NONE": 0.36
+        }
+      },
+      "severity": {
+        "type": "score",
+        "score": 1.8,
+        "confidence": 0.49,
+        "probabilities": {
+          "0": 0.17,
+          "1": 0.2,
+          "2": 0.31,
+          "3": 0.3,
+          "4": 0.02,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "business_explanation_exists": {
+        "type": "noul",
+        "noul": 0
+      },
+      "second_flag": {
+        "type": "choice",
+        "choice": "INVENTORY",
+        "confidence": 0.24,
+        "probabilities": {
+          "RECEIVABLES": 0.31,
+          "INVENTORY": 0.35,
+          "REVENUE_TIMING": 0.12,
+          "CAPITALISED_COSTS": 0.04,
+          "RELATED_PARTY": 0.02,
+          "RESTATEMENT": 0.01,
+          "NONE": 0.15
+        }
+      },
+      "investigate": {
+        "type": "noul",
+        "noul": 0.13
+      }
+    },
+    "AF-0113": {
+      "flag": {
+        "type": "choice",
+        "choice": "RECEIVABLES",
+        "confidence": 0.53,
+        "probabilities": {
+          "RECEIVABLES": 0.6,
+          "INVENTORY": 0.04,
+          "REVENUE_TIMING": 0.22,
+          "CAPITALISED_COSTS": 0.11,
+          "RELATED_PARTY": 0.01,
+          "RESTATEMENT": 0.01,
+          "NONE": 0.01
+        }
+      },
+      "severity": {
+        "type": "score",
+        "score": 4.22,
+        "confidence": 0.78,
+        "probabilities": {
+          "0": 0,
+          "1": 0,
+          "2": 0.01,
+          "3": 0.06,
+          "4": 0.64,
+          "5": 0.28,
+          "6": 0.01
+        }
+      },
+      "business_explanation_exists": {
+        "type": "noul",
+        "noul": 0
+      },
+      "second_flag": {
+        "type": "choice",
+        "choice": "REVENUE_TIMING",
+        "confidence": 0.3,
+        "probabilities": {
+          "RECEIVABLES": 0.4,
+          "INVENTORY": 0.05,
+          "REVENUE_TIMING": 0.4,
+          "CAPITALISED_COSTS": 0.04,
+          "RELATED_PARTY": 0.01,
+          "RESTATEMENT": 0.01,
+          "NONE": 0.09
+        }
+      },
+      "investigate": {
+        "type": "noul",
+        "noul": 0.97
+      }
+    },
+    "AF-0114": {
+      "flag": {
+        "type": "choice",
+        "choice": "NONE",
+        "confidence": 0.43,
+        "probabilities": {
+          "RECEIVABLES": 0.09,
+          "INVENTORY": 0.13,
+          "REVENUE_TIMING": 0.1,
+          "CAPITALISED_COSTS": 0.06,
+          "RELATED_PARTY": 0.05,
+          "RESTATEMENT": 0.06,
+          "NONE": 0.51
+        }
+      },
+      "severity": {
+        "type": "score",
+        "score": 0.61,
+        "confidence": 0.64,
+        "probabilities": {
+          "0": 0.59,
+          "1": 0.26,
+          "2": 0.11,
+          "3": 0.03,
+          "4": 0.01,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "business_explanation_exists": {
+        "type": "noul",
+        "noul": 0
+      },
+      "second_flag": {
+        "type": "choice",
+        "choice": "NONE",
+        "confidence": 0.29,
+        "probabilities": {
+          "RECEIVABLES": 0.22,
+          "INVENTORY": 0.06,
+          "REVENUE_TIMING": 0.27,
+          "CAPITALISED_COSTS": 0.04,
+          "RELATED_PARTY": 0.01,
+          "RESTATEMENT": 0.01,
+          "NONE": 0.39
+        }
+      },
+      "investigate": {
+        "type": "noul",
+        "noul": 0.08
+      }
+    },
+    "AF-0115": {
+      "flag": {
+        "type": "choice",
+        "choice": "NONE",
+        "confidence": 0.22,
+        "probabilities": {
+          "RECEIVABLES": 0.27,
+          "INVENTORY": 0.12,
+          "REVENUE_TIMING": 0.14,
+          "CAPITALISED_COSTS": 0.08,
+          "RELATED_PARTY": 0.04,
+          "RESTATEMENT": 0.02,
+          "NONE": 0.33
+        }
+      },
+      "severity": {
+        "type": "score",
+        "score": 2.87,
+        "confidence": 0.69,
+        "probabilities": {
+          "0": 0.02,
+          "1": 0.04,
+          "2": 0.19,
+          "3": 0.56,
+          "4": 0.18,
+          "5": 0.01,
+          "6": 0
+        }
+      },
+      "business_explanation_exists": {
+        "type": "noul",
+        "noul": 0
+      },
+      "second_flag": {
+        "type": "choice",
+        "choice": "INVENTORY",
+        "confidence": 0.46,
+        "probabilities": {
+          "RECEIVABLES": 0.19,
+          "INVENTORY": 0.54,
+          "REVENUE_TIMING": 0.09,
+          "CAPITALISED_COSTS": 0.03,
+          "RELATED_PARTY": 0.02,
+          "RESTATEMENT": 0.01,
+          "NONE": 0.12
+        }
+      },
+      "investigate": {
+        "type": "noul",
+        "noul": 0.22
+      }
+    },
+    "AF-0116": {
+      "flag": {
+        "type": "choice",
+        "choice": "RECEIVABLES",
+        "confidence": 0.14,
+        "probabilities": {
+          "RECEIVABLES": 0.26,
+          "INVENTORY": 0.09,
+          "REVENUE_TIMING": 0.24,
+          "CAPITALISED_COSTS": 0.13,
+          "RELATED_PARTY": 0.04,
+          "RESTATEMENT": 0.03,
+          "NONE": 0.21
+        }
+      },
+      "severity": {
+        "type": "score",
+        "score": 3,
+        "confidence": 0.86,
+        "probabilities": {
+          "0": 0,
+          "1": 0.01,
+          "2": 0.1,
+          "3": 0.77,
+          "4": 0.12,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "business_explanation_exists": {
+        "type": "noul",
+        "noul": 0
+      },
+      "second_flag": {
+        "type": "choice",
+        "choice": "INVENTORY",
+        "confidence": 0.3,
+        "probabilities": {
+          "RECEIVABLES": 0.19,
+          "INVENTORY": 0.4,
+          "REVENUE_TIMING": 0.2,
+          "CAPITALISED_COSTS": 0.05,
+          "RELATED_PARTY": 0.03,
+          "RESTATEMENT": 0.01,
+          "NONE": 0.12
+        }
+      },
+      "investigate": {
+        "type": "noul",
+        "noul": 0.62
+      }
+    },
+    "AF-0117": {
+      "flag": {
+        "type": "choice",
+        "choice": "NONE",
+        "confidence": 0.36,
+        "probabilities": {
+          "RECEIVABLES": 0.19,
+          "INVENTORY": 0.09,
+          "REVENUE_TIMING": 0.13,
+          "CAPITALISED_COSTS": 0.07,
+          "RELATED_PARTY": 0.04,
+          "RESTATEMENT": 0.03,
+          "NONE": 0.45
+        }
+      },
+      "severity": {
+        "type": "score",
+        "score": 2.01,
+        "confidence": 0.35,
+        "probabilities": {
+          "0": 0.19,
+          "1": 0.12,
+          "2": 0.24,
+          "3": 0.4,
+          "4": 0.04,
+          "5": 0.01,
+          "6": 0
+        }
+      },
+      "business_explanation_exists": {
+        "type": "noul",
+        "noul": 0
+      },
+      "second_flag": {
+        "type": "choice",
+        "choice": "NONE",
+        "confidence": 0.18,
+        "probabilities": {
+          "RECEIVABLES": 0.16,
+          "INVENTORY": 0.22,
+          "REVENUE_TIMING": 0.18,
+          "CAPITALISED_COSTS": 0.06,
+          "RELATED_PARTY": 0.04,
+          "RESTATEMENT": 0.04,
+          "NONE": 0.3
+        }
+      },
+      "investigate": {
+        "type": "noul",
+        "noul": 0.13
+      }
+    },
+    "AF-0118": {
+      "flag": {
+        "type": "choice",
+        "choice": "RECEIVABLES",
+        "confidence": 0.51,
+        "probabilities": {
+          "RECEIVABLES": 0.58,
+          "INVENTORY": 0.04,
+          "REVENUE_TIMING": 0.11,
+          "CAPITALISED_COSTS": 0.08,
+          "RELATED_PARTY": 0.03,
+          "RESTATEMENT": 0.02,
+          "NONE": 0.14
+        }
+      },
+      "severity": {
+        "type": "score",
+        "score": 2.21,
+        "confidence": 0.46,
+        "probabilities": {
+          "0": 0.13,
+          "1": 0.12,
+          "2": 0.23,
+          "3": 0.45,
+          "4": 0.07,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "business_explanation_exists": {
+        "type": "noul",
+        "noul": 0
+      },
+      "second_flag": {
+        "type": "choice",
+        "choice": "RECEIVABLES",
+        "confidence": 0.28,
+        "probabilities": {
+          "RECEIVABLES": 0.38,
+          "INVENTORY": 0.06,
+          "REVENUE_TIMING": 0.22,
+          "CAPITALISED_COSTS": 0.13,
+          "RELATED_PARTY": 0.03,
+          "RESTATEMENT": 0.02,
+          "NONE": 0.16
+        }
+      },
+      "investigate": {
+        "type": "noul",
+        "noul": 0.14
+      }
+    },
+    "AF-0119": {
+      "flag": {
+        "type": "choice",
+        "choice": "RECEIVABLES",
+        "confidence": 0.66,
+        "probabilities": {
+          "RECEIVABLES": 0.71,
+          "INVENTORY": 0.04,
+          "REVENUE_TIMING": 0.07,
+          "CAPITALISED_COSTS": 0.05,
+          "RELATED_PARTY": 0.03,
+          "RESTATEMENT": 0.02,
+          "NONE": 0.08
+        }
+      },
+      "severity": {
+        "type": "score",
+        "score": 2.89,
+        "confidence": 0.87,
+        "probabilities": {
+          "0": 0,
+          "1": 0.01,
+          "2": 0.15,
+          "3": 0.78,
+          "4": 0.06,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "business_explanation_exists": {
+        "type": "noul",
+        "noul": 0
+      },
+      "second_flag": {
+        "type": "choice",
+        "choice": "RECEIVABLES",
+        "confidence": 0.23,
+        "probabilities": {
+          "RECEIVABLES": 0.34,
+          "INVENTORY": 0.28,
+          "REVENUE_TIMING": 0.19,
+          "CAPITALISED_COSTS": 0.04,
+          "RELATED_PARTY": 0.02,
+          "RESTATEMENT": 0.02,
+          "NONE": 0.11
+        }
+      },
+      "investigate": {
+        "type": "noul",
+        "noul": 0.55
+      }
+    },
+    "AF-0120": {
+      "flag": {
+        "type": "choice",
+        "choice": "NONE",
+        "confidence": 0.35,
+        "probabilities": {
+          "RECEIVABLES": 0.18,
+          "INVENTORY": 0.09,
+          "REVENUE_TIMING": 0.17,
+          "CAPITALISED_COSTS": 0.06,
+          "RELATED_PARTY": 0.03,
+          "RESTATEMENT": 0.03,
+          "NONE": 0.44
+        }
+      },
+      "severity": {
+        "type": "score",
+        "score": 1.54,
+        "confidence": 0.1,
+        "probabilities": {
+          "0": 0.29,
+          "1": 0.21,
+          "2": 0.2,
+          "3": 0.27,
+          "4": 0.03,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "business_explanation_exists": {
+        "type": "noul",
+        "noul": 0
+      },
+      "second_flag": {
+        "type": "choice",
+        "choice": "RECEIVABLES",
+        "confidence": 0.29,
+        "probabilities": {
+          "RECEIVABLES": 0.39,
+          "INVENTORY": 0.06,
+          "REVENUE_TIMING": 0.2,
+          "CAPITALISED_COSTS": 0.1,
+          "RELATED_PARTY": 0.03,
+          "RESTATEMENT": 0.02,
+          "NONE": 0.2
+        }
+      },
+      "investigate": {
+        "type": "noul",
+        "noul": 0.09
+      }
+    }
+  }
+}

@@ -1,0 +1,993 @@
+{
+  "demo": "fundamental-read",
+  "provider": "openai",
+  "model": "gpt-6-luna",
+  "recordedAt": "2026-10-11",
+  "source": "scripts/record-demo.js",
+  "usage": {
+    "input_tokens": 29652,
+    "output_tokens": 0
+  },
+  "answers": {
+    "FR-NVDA": {
+      "quality": {
+        "type": "score",
+        "score": 5.72,
+        "confidence": 0.84,
+        "probabilities": {
+          "0": 0,
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0.01,
+          "5": 0.26,
+          "6": 0.73
+        }
+      },
+      "leverage_risk": {
+        "type": "score",
+        "score": 1.06,
+        "confidence": 0.94,
+        "probabilities": {
+          "0": 0.02,
+          "1": 0.9,
+          "2": 0.08,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "earnings_quality": {
+        "type": "choice",
+        "choice": "CASH_BACKED",
+        "confidence": 0.67,
+        "probabilities": {
+          "CASH_BACKED": 0.78,
+          "MIXED": 0.18,
+          "ACCRUAL_HEAVY": 0.04
+        }
+      },
+      "direction": {
+        "type": "choice",
+        "choice": "IMPROVING",
+        "confidence": 1,
+        "probabilities": {
+          "IMPROVING": 1,
+          "STABLE": 0,
+          "DETERIORATING": 0
+        }
+      },
+      "capex_discipline": {
+        "type": "noul",
+        "noul": 1
+      },
+      "statement_gap": {
+        "type": "choice",
+        "choice": "NONE",
+        "confidence": 0.97,
+        "probabilities": {
+          "NONE": 0.98,
+          "MISSING_CASH_FLOW": 0.01,
+          "MISSING_BALANCE_SHEET": 0,
+          "SHORT_HISTORY": 0.01
+        }
+      }
+    },
+    "FR-JPM": {
+      "quality": {
+        "type": "score",
+        "score": 3.83,
+        "confidence": 0.84,
+        "probabilities": {
+          "0": 0,
+          "1": 0,
+          "2": 0.02,
+          "3": 0.18,
+          "4": 0.75,
+          "5": 0.05,
+          "6": 0
+        }
+      },
+      "leverage_risk": {
+        "type": "score",
+        "score": 3.1,
+        "confidence": 0.7,
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.03,
+          "2": 0.12,
+          "3": 0.57,
+          "4": 0.23,
+          "5": 0.04,
+          "6": 0
+        }
+      },
+      "earnings_quality": {
+        "type": "choice",
+        "choice": "ACCRUAL_HEAVY",
+        "confidence": 0.91,
+        "probabilities": {
+          "CASH_BACKED": 0,
+          "MIXED": 0.06,
+          "ACCRUAL_HEAVY": 0.94
+        }
+      },
+      "direction": {
+        "type": "choice",
+        "choice": "DETERIORATING",
+        "confidence": 0.25,
+        "probabilities": {
+          "IMPROVING": 0.14,
+          "STABLE": 0.36,
+          "DETERIORATING": 0.5
+        }
+      },
+      "capex_discipline": {
+        "type": "noul",
+        "noul": 0.48
+      },
+      "statement_gap": {
+        "type": "choice",
+        "choice": "MISSING_CASH_FLOW",
+        "confidence": 0.61,
+        "probabilities": {
+          "NONE": 0.29,
+          "MISSING_CASH_FLOW": 0.71,
+          "MISSING_BALANCE_SHEET": 0,
+          "SHORT_HISTORY": 0
+        }
+      }
+    },
+    "FR-XOM": {
+      "quality": {
+        "type": "score",
+        "score": 3.85,
+        "confidence": 0.88,
+        "probabilities": {
+          "0": 0,
+          "1": 0,
+          "2": 0.02,
+          "3": 0.14,
+          "4": 0.81,
+          "5": 0.03,
+          "6": 0
+        }
+      },
+      "leverage_risk": {
+        "type": "score",
+        "score": 1.94,
+        "confidence": 0.67,
+        "probabilities": {
+          "0": 0.02,
+          "1": 0.27,
+          "2": 0.49,
+          "3": 0.19,
+          "4": 0.03,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "earnings_quality": {
+        "type": "choice",
+        "choice": "CASH_BACKED",
+        "confidence": 0.99,
+        "probabilities": {
+          "CASH_BACKED": 0.99,
+          "MIXED": 0.01,
+          "ACCRUAL_HEAVY": 0
+        }
+      },
+      "direction": {
+        "type": "choice",
+        "choice": "DETERIORATING",
+        "confidence": 0.99,
+        "probabilities": {
+          "IMPROVING": 0,
+          "STABLE": 0.01,
+          "DETERIORATING": 0.99
+        }
+      },
+      "capex_discipline": {
+        "type": "noul",
+        "noul": 0.78
+      },
+      "statement_gap": {
+        "type": "choice",
+        "choice": "MISSING_BALANCE_SHEET",
+        "confidence": 0.53,
+        "probabilities": {
+          "NONE": 0.28,
+          "MISSING_CASH_FLOW": 0.06,
+          "MISSING_BALANCE_SHEET": 0.65,
+          "SHORT_HISTORY": 0.01
+        }
+      }
+    },
+    "FR-BTC-USD": {
+      "quality": {
+        "type": "score",
+        "score": 1.49,
+        "confidence": 0.64,
+        "probabilities": {
+          "0": 0.19,
+          "1": 0.18,
+          "2": 0.59,
+          "3": 0.03,
+          "4": 0.01,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "leverage_risk": {
+        "type": "score",
+        "score": 0.9,
+        "confidence": 0.47,
+        "probabilities": {
+          "0": 0.54,
+          "1": 0.27,
+          "2": 0.06,
+          "3": 0.06,
+          "4": 0.03,
+          "5": 0.03,
+          "6": 0.01
+        }
+      },
+      "earnings_quality": {
+        "type": "choice",
+        "choice": "MIXED",
+        "confidence": 0.8,
+        "probabilities": {
+          "CASH_BACKED": 0.09,
+          "MIXED": 0.87,
+          "ACCRUAL_HEAVY": 0.04
+        }
+      },
+      "direction": {
+        "type": "choice",
+        "choice": "STABLE",
+        "confidence": 0.85,
+        "probabilities": {
+          "IMPROVING": 0,
+          "STABLE": 0.9,
+          "DETERIORATING": 0.1
+        }
+      },
+      "capex_discipline": {
+        "type": "noul",
+        "noul": 0.11
+      },
+      "statement_gap": {
+        "type": "choice",
+        "choice": "SHORT_HISTORY",
+        "confidence": 0.99,
+        "probabilities": {
+          "NONE": 0,
+          "MISSING_CASH_FLOW": 0,
+          "MISSING_BALANCE_SHEET": 0.01,
+          "SHORT_HISTORY": 0.99
+        }
+      }
+    },
+    "FR-AAPL": {
+      "quality": {
+        "type": "score",
+        "score": 5.26,
+        "confidence": 0.81,
+        "probabilities": {
+          "0": 0,
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0.03,
+          "5": 0.68,
+          "6": 0.29
+        }
+      },
+      "leverage_risk": {
+        "type": "score",
+        "score": 1.94,
+        "confidence": 0.83,
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.16,
+          "2": 0.72,
+          "3": 0.1,
+          "4": 0.01,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "earnings_quality": {
+        "type": "choice",
+        "choice": "CASH_BACKED",
+        "confidence": 0.97,
+        "probabilities": {
+          "CASH_BACKED": 0.98,
+          "MIXED": 0.02,
+          "ACCRUAL_HEAVY": 0
+        }
+      },
+      "direction": {
+        "type": "choice",
+        "choice": "IMPROVING",
+        "confidence": 0.58,
+        "probabilities": {
+          "IMPROVING": 0.72,
+          "STABLE": 0.24,
+          "DETERIORATING": 0.04
+        }
+      },
+      "capex_discipline": {
+        "type": "noul",
+        "noul": 1
+      },
+      "statement_gap": {
+        "type": "choice",
+        "choice": "NONE",
+        "confidence": 0.93,
+        "probabilities": {
+          "NONE": 0.95,
+          "MISSING_CASH_FLOW": 0.02,
+          "MISSING_BALANCE_SHEET": 0.01,
+          "SHORT_HISTORY": 0.02
+        }
+      }
+    },
+    "FR-MSFT": {
+      "quality": {
+        "type": "score",
+        "score": 5.35,
+        "confidence": 0.76,
+        "probabilities": {
+          "0": 0,
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0.03,
+          "5": 0.59,
+          "6": 0.38
+        }
+      },
+      "leverage_risk": {
+        "type": "score",
+        "score": 1.24,
+        "confidence": 0.85,
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.74,
+          "2": 0.25,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "earnings_quality": {
+        "type": "choice",
+        "choice": "CASH_BACKED",
+        "confidence": 0.99,
+        "probabilities": {
+          "CASH_BACKED": 0.99,
+          "MIXED": 0.01,
+          "ACCRUAL_HEAVY": 0
+        }
+      },
+      "direction": {
+        "type": "choice",
+        "choice": "IMPROVING",
+        "confidence": 0.94,
+        "probabilities": {
+          "IMPROVING": 0.96,
+          "STABLE": 0.03,
+          "DETERIORATING": 0.01
+        }
+      },
+      "capex_discipline": {
+        "type": "noul",
+        "noul": 0.26
+      },
+      "statement_gap": {
+        "type": "choice",
+        "choice": "NONE",
+        "confidence": 0.96,
+        "probabilities": {
+          "NONE": 0.97,
+          "MISSING_CASH_FLOW": 0.01,
+          "MISSING_BALANCE_SHEET": 0.01,
+          "SHORT_HISTORY": 0.01
+        }
+      }
+    },
+    "FR-KO": {
+      "quality": {
+        "type": "score",
+        "score": 4.18,
+        "confidence": 0.88,
+        "probabilities": {
+          "0": 0,
+          "1": 0,
+          "2": 0,
+          "3": 0.01,
+          "4": 0.8,
+          "5": 0.19,
+          "6": 0
+        }
+      },
+      "leverage_risk": {
+        "type": "score",
+        "score": 3.01,
+        "confidence": 0.88,
+        "probabilities": {
+          "0": 0,
+          "1": 0.01,
+          "2": 0.08,
+          "3": 0.8,
+          "4": 0.11,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "earnings_quality": {
+        "type": "choice",
+        "choice": "MIXED",
+        "confidence": 0.27,
+        "probabilities": {
+          "CASH_BACKED": 0.01,
+          "MIXED": 0.51,
+          "ACCRUAL_HEAVY": 0.48
+        }
+      },
+      "direction": {
+        "type": "choice",
+        "choice": "IMPROVING",
+        "confidence": 0.86,
+        "probabilities": {
+          "IMPROVING": 0.91,
+          "STABLE": 0.08,
+          "DETERIORATING": 0.01
+        }
+      },
+      "capex_discipline": {
+        "type": "noul",
+        "noul": 0.77
+      },
+      "statement_gap": {
+        "type": "choice",
+        "choice": "NONE",
+        "confidence": 0.97,
+        "probabilities": {
+          "NONE": 0.98,
+          "MISSING_CASH_FLOW": 0.01,
+          "MISSING_BALANCE_SHEET": 0,
+          "SHORT_HISTORY": 0.01
+        }
+      }
+    },
+    "FR-PG": {
+      "quality": {
+        "type": "score",
+        "score": 4.9,
+        "confidence": 0.91,
+        "probabilities": {
+          "0": 0,
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0.13,
+          "5": 0.84,
+          "6": 0.03
+        }
+      },
+      "leverage_risk": {
+        "type": "score",
+        "score": 1.95,
+        "confidence": 0.85,
+        "probabilities": {
+          "0": 0,
+          "1": 0.15,
+          "2": 0.75,
+          "3": 0.1,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "earnings_quality": {
+        "type": "choice",
+        "choice": "CASH_BACKED",
+        "confidence": 0.99,
+        "probabilities": {
+          "CASH_BACKED": 0.99,
+          "MIXED": 0.01,
+          "ACCRUAL_HEAVY": 0
+        }
+      },
+      "direction": {
+        "type": "choice",
+        "choice": "IMPROVING",
+        "confidence": 0.18,
+        "probabilities": {
+          "IMPROVING": 0.45,
+          "STABLE": 0.42,
+          "DETERIORATING": 0.13
+        }
+      },
+      "capex_discipline": {
+        "type": "noul",
+        "noul": 1
+      },
+      "statement_gap": {
+        "type": "choice",
+        "choice": "NONE",
+        "confidence": 0.97,
+        "probabilities": {
+          "NONE": 0.98,
+          "MISSING_CASH_FLOW": 0.01,
+          "MISSING_BALANCE_SHEET": 0,
+          "SHORT_HISTORY": 0.01
+        }
+      }
+    },
+    "FR-JNJ": {
+      "quality": {
+        "type": "score",
+        "score": 4.36,
+        "confidence": 0.78,
+        "probabilities": {
+          "0": 0,
+          "1": 0,
+          "2": 0,
+          "3": 0.01,
+          "4": 0.62,
+          "5": 0.37,
+          "6": 0
+        }
+      },
+      "leverage_risk": {
+        "type": "score",
+        "score": 2.08,
+        "confidence": 0.87,
+        "probabilities": {
+          "0": 0,
+          "1": 0.07,
+          "2": 0.78,
+          "3": 0.15,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "earnings_quality": {
+        "type": "choice",
+        "choice": "CASH_BACKED",
+        "confidence": 0.27,
+        "probabilities": {
+          "CASH_BACKED": 0.51,
+          "MIXED": 0.47,
+          "ACCRUAL_HEAVY": 0.02
+        }
+      },
+      "direction": {
+        "type": "choice",
+        "choice": "IMPROVING",
+        "confidence": 0.45,
+        "probabilities": {
+          "IMPROVING": 0.63,
+          "STABLE": 0.34,
+          "DETERIORATING": 0.03
+        }
+      },
+      "capex_discipline": {
+        "type": "noul",
+        "noul": 0.99
+      },
+      "statement_gap": {
+        "type": "choice",
+        "choice": "NONE",
+        "confidence": 0.97,
+        "probabilities": {
+          "NONE": 0.98,
+          "MISSING_CASH_FLOW": 0.01,
+          "MISSING_BALANCE_SHEET": 0,
+          "SHORT_HISTORY": 0.01
+        }
+      }
+    },
+    "FR-CVX": {
+      "quality": {
+        "type": "score",
+        "score": 3.36,
+        "confidence": 0.62,
+        "probabilities": {
+          "0": 0,
+          "1": 0,
+          "2": 0.12,
+          "3": 0.41,
+          "4": 0.46,
+          "5": 0.01,
+          "6": 0
+        }
+      },
+      "leverage_risk": {
+        "type": "score",
+        "score": 2.47,
+        "confidence": 0.67,
+        "probabilities": {
+          "0": 0,
+          "1": 0.05,
+          "2": 0.45,
+          "3": 0.48,
+          "4": 0.02,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "earnings_quality": {
+        "type": "choice",
+        "choice": "CASH_BACKED",
+        "confidence": 0.99,
+        "probabilities": {
+          "CASH_BACKED": 0.99,
+          "MIXED": 0.01,
+          "ACCRUAL_HEAVY": 0
+        }
+      },
+      "direction": {
+        "type": "choice",
+        "choice": "DETERIORATING",
+        "confidence": 0.99,
+        "probabilities": {
+          "IMPROVING": 0,
+          "STABLE": 0.01,
+          "DETERIORATING": 0.99
+        }
+      },
+      "capex_discipline": {
+        "type": "noul",
+        "noul": 0.86
+      },
+      "statement_gap": {
+        "type": "choice",
+        "choice": "NONE",
+        "confidence": 0.96,
+        "probabilities": {
+          "NONE": 0.97,
+          "MISSING_CASH_FLOW": 0.01,
+          "MISSING_BALANCE_SHEET": 0.01,
+          "SHORT_HISTORY": 0.01
+        }
+      }
+    },
+    "FR-BAC": {
+      "quality": {
+        "type": "score",
+        "score": 3.83,
+        "confidence": 0.85,
+        "probabilities": {
+          "0": 0,
+          "1": 0,
+          "2": 0.01,
+          "3": 0.19,
+          "4": 0.76,
+          "5": 0.04,
+          "6": 0
+        }
+      },
+      "leverage_risk": {
+        "type": "score",
+        "score": 2.82,
+        "confidence": 0.64,
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.07,
+          "2": 0.23,
+          "3": 0.5,
+          "4": 0.16,
+          "5": 0.03,
+          "6": 0
+        }
+      },
+      "earnings_quality": {
+        "type": "choice",
+        "choice": "MIXED",
+        "confidence": 0.99,
+        "probabilities": {
+          "CASH_BACKED": 0,
+          "MIXED": 0.99,
+          "ACCRUAL_HEAVY": 0.01
+        }
+      },
+      "direction": {
+        "type": "choice",
+        "choice": "STABLE",
+        "confidence": 0.51,
+        "probabilities": {
+          "IMPROVING": 0.2,
+          "STABLE": 0.67,
+          "DETERIORATING": 0.13
+        }
+      },
+      "capex_discipline": {
+        "type": "noul",
+        "noul": 0.5
+      },
+      "statement_gap": {
+        "type": "choice",
+        "choice": "MISSING_CASH_FLOW",
+        "confidence": 0.33,
+        "probabilities": {
+          "NONE": 0.49,
+          "MISSING_CASH_FLOW": 0.5,
+          "MISSING_BALANCE_SHEET": 0.01,
+          "SHORT_HISTORY": 0
+        }
+      }
+    },
+    "FR-WMT": {
+      "quality": {
+        "type": "score",
+        "score": 4.2,
+        "confidence": 0.87,
+        "probabilities": {
+          "0": 0,
+          "1": 0,
+          "2": 0,
+          "3": 0.01,
+          "4": 0.78,
+          "5": 0.21,
+          "6": 0
+        }
+      },
+      "leverage_risk": {
+        "type": "score",
+        "score": 2.21,
+        "confidence": 0.82,
+        "probabilities": {
+          "0": 0,
+          "1": 0.05,
+          "2": 0.69,
+          "3": 0.26,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "earnings_quality": {
+        "type": "choice",
+        "choice": "CASH_BACKED",
+        "confidence": 0.99,
+        "probabilities": {
+          "CASH_BACKED": 0.99,
+          "MIXED": 0.01,
+          "ACCRUAL_HEAVY": 0
+        }
+      },
+      "direction": {
+        "type": "choice",
+        "choice": "IMPROVING",
+        "confidence": 0.77,
+        "probabilities": {
+          "IMPROVING": 0.85,
+          "STABLE": 0.1,
+          "DETERIORATING": 0.05
+        }
+      },
+      "capex_discipline": {
+        "type": "noul",
+        "noul": 0.74
+      },
+      "statement_gap": {
+        "type": "choice",
+        "choice": "NONE",
+        "confidence": 0.99,
+        "probabilities": {
+          "NONE": 0.99,
+          "MISSING_CASH_FLOW": 0,
+          "MISSING_BALANCE_SHEET": 0,
+          "SHORT_HISTORY": 0.01
+        }
+      }
+    },
+    "FR-PEP": {
+      "quality": {
+        "type": "score",
+        "score": 4.04,
+        "confidence": 0.95,
+        "probabilities": {
+          "0": 0,
+          "1": 0,
+          "2": 0,
+          "3": 0.02,
+          "4": 0.92,
+          "5": 0.06,
+          "6": 0
+        }
+      },
+      "leverage_risk": {
+        "type": "score",
+        "score": 3.3,
+        "confidence": 0.76,
+        "probabilities": {
+          "0": 0,
+          "1": 0,
+          "2": 0.06,
+          "3": 0.6,
+          "4": 0.32,
+          "5": 0.02,
+          "6": 0
+        }
+      },
+      "earnings_quality": {
+        "type": "choice",
+        "choice": "CASH_BACKED",
+        "confidence": 0.94,
+        "probabilities": {
+          "CASH_BACKED": 0.96,
+          "MIXED": 0.03,
+          "ACCRUAL_HEAVY": 0.01
+        }
+      },
+      "direction": {
+        "type": "choice",
+        "choice": "IMPROVING",
+        "confidence": 0.37,
+        "probabilities": {
+          "IMPROVING": 0.58,
+          "STABLE": 0.26,
+          "DETERIORATING": 0.16
+        }
+      },
+      "capex_discipline": {
+        "type": "noul",
+        "noul": 0.95
+      },
+      "statement_gap": {
+        "type": "choice",
+        "choice": "NONE",
+        "confidence": 0.96,
+        "probabilities": {
+          "NONE": 0.97,
+          "MISSING_CASH_FLOW": 0.01,
+          "MISSING_BALANCE_SHEET": 0.01,
+          "SHORT_HISTORY": 0.01
+        }
+      }
+    },
+    "FR-XLE": {
+      "quality": {
+        "type": "score",
+        "score": 1.79,
+        "confidence": 0.76,
+        "probabilities": {
+          "0": 0.09,
+          "1": 0.13,
+          "2": 0.69,
+          "3": 0.08,
+          "4": 0.01,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "leverage_risk": {
+        "type": "score",
+        "score": 0.99,
+        "confidence": 0.42,
+        "probabilities": {
+          "0": 0.5,
+          "1": 0.28,
+          "2": 0.07,
+          "3": 0.08,
+          "4": 0.03,
+          "5": 0.03,
+          "6": 0.01
+        }
+      },
+      "earnings_quality": {
+        "type": "choice",
+        "choice": "MIXED",
+        "confidence": 0.66,
+        "probabilities": {
+          "CASH_BACKED": 0.18,
+          "MIXED": 0.77,
+          "ACCRUAL_HEAVY": 0.05
+        }
+      },
+      "direction": {
+        "type": "choice",
+        "choice": "STABLE",
+        "confidence": 0.85,
+        "probabilities": {
+          "IMPROVING": 0,
+          "STABLE": 0.9,
+          "DETERIORATING": 0.1
+        }
+      },
+      "capex_discipline": {
+        "type": "noul",
+        "noul": 0.5
+      },
+      "statement_gap": {
+        "type": "choice",
+        "choice": "SHORT_HISTORY",
+        "confidence": 0.99,
+        "probabilities": {
+          "NONE": 0,
+          "MISSING_CASH_FLOW": 0,
+          "MISSING_BALANCE_SHEET": 0.01,
+          "SHORT_HISTORY": 0.99
+        }
+      }
+    },
+    "FR-SPY": {
+      "quality": {
+        "type": "score",
+        "score": 1.77,
+        "confidence": 0.55,
+        "probabilities": {
+          "0": 0.18,
+          "1": 0.14,
+          "2": 0.44,
+          "3": 0.22,
+          "4": 0.01,
+          "5": 0.01,
+          "6": 0
+        }
+      },
+      "leverage_risk": {
+        "type": "score",
+        "score": 1.15,
+        "confidence": 0.33,
+        "probabilities": {
+          "0": 0.42,
+          "1": 0.32,
+          "2": 0.08,
+          "3": 0.1,
+          "4": 0.04,
+          "5": 0.03,
+          "6": 0.01
+        }
+      },
+      "earnings_quality": {
+        "type": "choice",
+        "choice": "MIXED",
+        "confidence": 0.82,
+        "probabilities": {
+          "CASH_BACKED": 0.07,
+          "MIXED": 0.88,
+          "ACCRUAL_HEAVY": 0.05
+        }
+      },
+      "direction": {
+        "type": "choice",
+        "choice": "STABLE",
+        "confidence": 0.86,
+        "probabilities": {
+          "IMPROVING": 0.01,
+          "STABLE": 0.91,
+          "DETERIORATING": 0.08
+        }
+      },
+      "capex_discipline": {
+        "type": "noul",
+        "noul": 0.5
+      },
+      "statement_gap": {
+        "type": "choice",
+        "choice": "SHORT_HISTORY",
+        "confidence": 0.92,
+        "probabilities": {
+          "NONE": 0,
+          "MISSING_CASH_FLOW": 0,
+          "MISSING_BALANCE_SHEET": 0.06,
+          "SHORT_HISTORY": 0.94
+        }
+      }
+    }
+  },
+  "refusals": {
+    "FR-GLD": [
+      "capex_discipline"
+    ]
+  }
+}
