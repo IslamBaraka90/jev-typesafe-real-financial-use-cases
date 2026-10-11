@@ -20,4 +20,10 @@ export const config = {
   host: process.env.HOST || '127.0.0.1',
   // Passed to the TypeSafeClient constructor.
   typesafe: { apiKey },
+  // OpenAI's decisions API. Optional: without a key the site still replays its recorded answers, and
+  // only recording or running live against OpenAI is refused.
+  openai: {
+    apiKey: process.env.OPENAI_API_KEY?.trim() || null,
+    model: process.env.OPENAI_DECISIONS_MODEL?.trim() || 'gpt-6-luna',
+  },
 };

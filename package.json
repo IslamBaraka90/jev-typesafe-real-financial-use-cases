@@ -41,6 +41,7 @@
     "@typesafe-ai/sdk": "^0.6.0",
     "express": "^5.2.1",
     "fintech-algorithms": "^0.13.1",
+    "openai": "^7.32.0",
     "react": "^19.3.0",
     "react-dom": "^19.3.0",
     "yahoo-finance2": "^4.0.2"
