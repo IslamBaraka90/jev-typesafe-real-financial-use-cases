@@ -9,7 +9,7 @@ export function AboutPage() {
       <div className="page-heading">
         <span className="eyebrow">About</span>
         <h1>How this works</h1>
-        <p>Fifty demos, one shape: a dataset, typed questions, recorded answers, and a report that grades them.</p>
+        <p>Every demo has one shape: a dataset, typed questions, answers recorded from Jev and OpenAI, and a report that grades them.</p>
       </div>
 
       <section className="panel stack" aria-labelledby="modes-title">
@@ -18,8 +18,8 @@ export function AboutPage() {
           <div>
             <dt>Recorded</dt>
             <dd>
-              What you are looking at{liveAvailable ? ' on the deployed site' : ' now'}. Every answer was captured once from the
-              TypeSafe API and committed to the repository, so the site needs no key, no server and no network. The banner on
+              What you are looking at{liveAvailable ? ' on the deployed site' : ' now'}. Every answer was captured once from
+              TypeSafe’s API or OpenAI’s decisions API and committed to the repository, so the site needs no key, no server and no network. The banner on
               each demo names the model version and the day it was captured.
             </dd>
           </div>

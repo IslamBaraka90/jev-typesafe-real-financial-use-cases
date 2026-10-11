@@ -28,7 +28,7 @@ export function RunChip({ demo, run, live, items, graded }) {
       {run?.model && <span className="run-chip-part mono">{run.model}</span>}
       {run?.recordedAt && <span className="run-chip-part">{formatDate(run.recordedAt)}</span>}
       <span className="run-chip-part num">{items.toLocaleString('en-US')} items</span>
-      <span className="run-chip-part">{demo.dataClass === 'synthetic' ? 'synthetic data' : demo.dataClass === 'mixed' ? 'real prices, synthetic records' : 'real market data'}</span>
+      <span className="run-chip-part">{demo.dataLabel ?? (demo.dataClass === 'synthetic' ? 'synthetic data' : demo.dataClass === 'mixed' ? 'real prices, synthetic records' : 'real market data')}</span>
       {graded?.graded > 0 && (
         <span className="run-chip-part run-chip-grade num">
           {percent(graded.share)} match ground truth · {graded.right} of {graded.graded}

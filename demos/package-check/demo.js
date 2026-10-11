@@ -58,6 +58,7 @@ export default {
   value: 'Looks at the delivery photo behind a damage claim and says whether the parcel is crushed, opened or just worn.',
   tags: ['image', 'photos', 'claims', 'logistics'],
   dataClass: 'cached-real',
+  dataLabel: 'real photographs',
   readMinutes: 1,
   view: 'image',
   providers: ['openai'],

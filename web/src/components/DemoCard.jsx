@@ -36,7 +36,7 @@ export function DemoCard({ card, score, feature = false }) {
       <ul className="demo-card-facts">
         <li>
           <Icon name={card.dataClass === 'synthetic' ? 'seed' : 'database'} size={14} />
-          {DATA_LABEL[card.dataClass] ?? card.dataClass}
+          {card.dataLabel ? card.dataLabel.replace(/^./, (letter) => letter.toUpperCase()) : (DATA_LABEL[card.dataClass] ?? card.dataClass)}
         </li>
         <li>
           <Icon name="decisions" size={14} />

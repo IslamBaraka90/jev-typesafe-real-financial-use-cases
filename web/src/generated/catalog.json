@@ -13,9 +13,14 @@
     "month end"
    ],
    "dataClass": "synthetic",
+   "dataLabel": null,
    "readMinutes": 4,
    "questionCount": 5,
-   "status": "ready"
+   "status": "ready",
+   "providers": [
+    "jev",
+    "openai"
+   ]
   },
   {
    "id": "bank-reconciliation",
@@ -30,9 +35,14 @@
     "month end"
    ],
    "dataClass": "synthetic",
+   "dataLabel": null,
    "readMinutes": 4,
    "questionCount": 4,
-   "status": "ready"
+   "status": "ready",
+   "providers": [
+    "jev",
+    "openai"
+   ]
   },
   {
    "id": "expense-posting",
@@ -47,9 +57,14 @@
     "accounts payable"
    ],
    "dataClass": "synthetic",
+   "dataLabel": null,
    "readMinutes": 4,
    "questionCount": 4,
-   "status": "ready"
+   "status": "ready",
+   "providers": [
+    "jev",
+    "openai"
+   ]
   },
   {
    "id": "three-way-match",
@@ -64,9 +79,14 @@
     "controls"
    ],
    "dataClass": "synthetic",
+   "dataLabel": null,
    "readMinutes": 4,
    "questionCount": 4,
-   "status": "ready"
+   "status": "ready",
+   "providers": [
+    "jev",
+    "openai"
+   ]
   },
   {
    "id": "close-blockers",
@@ -81,9 +101,14 @@
     "controls"
    ],
    "dataClass": "synthetic",
+   "dataLabel": null,
    "readMinutes": 4,
    "questionCount": 4,
-   "status": "ready"
+   "status": "ready",
+   "providers": [
+    "jev",
+    "openai"
+   ]
   },
   {
    "id": "order-risk",
@@ -98,9 +123,14 @@
     "payments"
    ],
    "dataClass": "synthetic",
+   "dataLabel": null,
    "readMinutes": 5,
    "questionCount": 5,
-   "status": "ready"
+   "status": "ready",
+   "providers": [
+    "jev",
+    "openai"
+   ]
   },
   {
    "id": "cod-abuse",
@@ -115,9 +145,14 @@
     "customer risk"
    ],
    "dataClass": "synthetic",
+   "dataLabel": null,
    "readMinutes": 4,
    "questionCount": 5,
-   "status": "ready"
+   "status": "ready",
+   "providers": [
+    "jev",
+    "openai"
+   ]
   },
   {
    "id": "dispute-routing",
@@ -132,9 +167,14 @@
     "ecommerce"
    ],
    "dataClass": "synthetic",
+   "dataLabel": null,
    "readMinutes": 5,
    "questionCount": 5,
-   "status": "ready"
+   "status": "ready",
+   "providers": [
+    "jev",
+    "openai"
+   ]
   },
   {
    "id": "chargeback-evidence",
@@ -149,9 +189,14 @@
     "evidence"
    ],
    "dataClass": "synthetic",
+   "dataLabel": null,
    "readMinutes": 4,
    "questionCount": 4,
-   "status": "ready"
+   "status": "ready",
+   "providers": [
+    "jev",
+    "openai"
+   ]
   },
   {
    "id": "merchant-onboarding",
@@ -166,9 +211,14 @@
     "payments"
    ],
    "dataClass": "synthetic",
+   "dataLabel": null,
    "readMinutes": 5,
    "questionCount": 5,
-   "status": "ready"
+   "status": "ready",
+   "providers": [
+    "jev",
+    "openai"
+   ]
   },
   {
    "id": "delivery-exceptions",
@@ -183,9 +233,14 @@
     "addresses"
    ],
    "dataClass": "synthetic",
+   "dataLabel": null,
    "readMinutes": 5,
    "questionCount": 4,
-   "status": "ready"
+   "status": "ready",
+   "providers": [
+    "jev",
+    "openai"
+   ]
   },
   {
    "id": "card-fraud-triage",
@@ -200,9 +255,14 @@
     "cards"
    ],
    "dataClass": "synthetic",
+   "dataLabel": null,
    "readMinutes": 5,
    "questionCount": 5,
-   "status": "ready"
+   "status": "ready",
+   "providers": [
+    "jev",
+    "openai"
+   ]
   },
   {
    "id": "aml-alert-triage",
@@ -217,9 +277,14 @@
     "triage"
    ],
    "dataClass": "synthetic",
+   "dataLabel": null,
    "readMinutes": 5,
    "questionCount": 5,
-   "status": "ready"
+   "status": "ready",
+   "providers": [
+    "jev",
+    "openai"
+   ]
   },
   {
    "id": "account-takeover",
@@ -234,9 +299,14 @@
     "authentication"
    ],
    "dataClass": "synthetic",
+   "dataLabel": null,
    "readMinutes": 5,
    "questionCount": 5,
-   "status": "ready"
+   "status": "ready",
+   "providers": [
+    "jev",
+    "openai"
+   ]
   },
   {
    "id": "sanctions-name-match",
@@ -252,9 +322,14 @@
     "compliance"
    ],
    "dataClass": "synthetic",
+   "dataLabel": null,
    "readMinutes": 5,
    "questionCount": 5,
-   "status": "ready"
+   "status": "ready",
+   "providers": [
+    "jev",
+    "openai"
+   ]
   },
   {
    "id": "insider-surveillance",
@@ -270,9 +345,14 @@
     "compliance"
    ],
    "dataClass": "mixed",
+   "dataLabel": null,
    "readMinutes": 6,
    "questionCount": 5,
-   "status": "ready"
+   "status": "ready",
+   "providers": [
+    "jev",
+    "openai"
+   ]
   },
   {
    "id": "mule-network",
@@ -287,9 +367,14 @@
     "financial crime"
    ],
    "dataClass": "synthetic",
+   "dataLabel": null,
    "readMinutes": 5,
    "questionCount": 5,
-   "status": "ready"
+   "status": "ready",
+   "providers": [
+    "jev",
+    "openai"
+   ]
   },
   {
    "id": "wallet-risk",
@@ -304,9 +389,14 @@
     "deposits"
    ],
    "dataClass": "synthetic",
+   "dataLabel": null,
    "readMinutes": 4,
    "questionCount": 5,
-   "status": "ready"
+   "status": "ready",
+   "providers": [
+    "jev",
+    "openai"
+   ]
   },
   {
    "id": "wallet-profiling",
@@ -321,9 +411,14 @@
     "classification"
    ],
    "dataClass": "synthetic",
+   "dataLabel": null,
    "readMinutes": 4,
    "questionCount": 4,
-   "status": "ready"
+   "status": "ready",
+   "providers": [
+    "jev",
+    "openai"
+   ]
   },
   {
    "id": "mixer-tracing",
@@ -338,9 +433,14 @@
     "exposure"
    ],
    "dataClass": "synthetic",
+   "dataLabel": null,
    "readMinutes": 4,
    "questionCount": 5,
-   "status": "ready"
+   "status": "ready",
+   "providers": [
+    "jev",
+    "openai"
+   ]
   },
   {
    "id": "token-screening",
@@ -355,9 +455,14 @@
     "honeypots"
    ],
    "dataClass": "synthetic",
+   "dataLabel": null,
    "readMinutes": 4,
    "questionCount": 5,
-   "status": "ready"
+   "status": "ready",
+   "providers": [
+    "jev",
+    "openai"
+   ]
   },
   {
    "id": "sybil-clusters",
@@ -372,9 +477,14 @@
     "clusters"
    ],
    "dataClass": "synthetic",
+   "dataLabel": null,
    "readMinutes": 4,
    "questionCount": 4,
-   "status": "ready"
+   "status": "ready",
+   "providers": [
+    "jev",
+    "openai"
+   ]
   },
   {
    "id": "portfolio-health",
@@ -389,9 +499,14 @@
     "real prices"
    ],
    "dataClass": "mixed",
+   "dataLabel": null,
    "readMinutes": 4,
    "questionCount": 5,
-   "status": "ready"
+   "status": "ready",
+   "providers": [
+    "jev",
+    "openai"
+   ]
   },
   {
    "id": "rebalance-review",
@@ -406,9 +521,14 @@
     "real prices"
    ],
    "dataClass": "mixed",
+   "dataLabel": null,
    "readMinutes": 4,
    "questionCount": 5,
-   "status": "ready"
+   "status": "ready",
+   "providers": [
+    "jev",
+    "openai"
+   ]
   },
   {
    "id": "mandate-compliance",
@@ -423,9 +543,14 @@
     "rules"
    ],
    "dataClass": "synthetic",
+   "dataLabel": null,
    "readMinutes": 4,
    "questionCount": 4,
-   "status": "ready"
+   "status": "ready",
+   "providers": [
+    "jev",
+    "openai"
+   ]
   },
   {
    "id": "portfolio-compare",
@@ -440,9 +565,14 @@
     "real prices"
    ],
    "dataClass": "mixed",
+   "dataLabel": null,
    "readMinutes": 4,
    "questionCount": 5,
-   "status": "ready"
+   "status": "ready",
+   "providers": [
+    "jev",
+    "openai"
+   ]
   },
   {
    "id": "factor-exposure",
@@ -457,9 +587,14 @@
     "real prices"
    ],
    "dataClass": "mixed",
+   "dataLabel": null,
    "readMinutes": 4,
    "questionCount": 5,
-   "status": "ready"
+   "status": "ready",
+   "providers": [
+    "jev",
+    "openai"
+   ]
   },
   {
    "id": "income-planning",
@@ -474,9 +609,14 @@
     "calendar"
    ],
    "dataClass": "synthetic",
+   "dataLabel": null,
    "readMinutes": 4,
    "questionCount": 4,
-   "status": "ready"
+   "status": "ready",
+   "providers": [
+    "jev",
+    "openai"
+   ]
   },
   {
    "id": "post-trade-review",
@@ -491,9 +631,14 @@
     "real prices"
    ],
    "dataClass": "mixed",
+   "dataLabel": null,
    "readMinutes": 5,
    "questionCount": 6,
-   "status": "ready"
+   "status": "ready",
+   "providers": [
+    "jev",
+    "openai"
+   ]
   },
   {
    "id": "trade-feature-analysis",
@@ -508,9 +653,14 @@
     "real prices"
    ],
    "dataClass": "mixed",
+   "dataLabel": null,
    "readMinutes": 5,
    "questionCount": 5,
-   "status": "ready"
+   "status": "ready",
+   "providers": [
+    "jev",
+    "openai"
+   ]
   },
   {
    "id": "trader-behaviour",
@@ -525,9 +675,14 @@
     "sessions"
    ],
    "dataClass": "synthetic",
+   "dataLabel": null,
    "readMinutes": 4,
    "questionCount": 5,
-   "status": "ready"
+   "status": "ready",
+   "providers": [
+    "jev",
+    "openai"
+   ]
   },
   {
    "id": "missed-trades",
@@ -542,9 +697,14 @@
     "real prices"
    ],
    "dataClass": "mixed",
+   "dataLabel": null,
    "readMinutes": 5,
    "questionCount": 5,
-   "status": "ready"
+   "status": "ready",
+   "providers": [
+    "jev",
+    "openai"
+   ]
   },
   {
    "id": "execution-quality",
@@ -559,9 +719,14 @@
     "real prices"
    ],
    "dataClass": "mixed",
+   "dataLabel": null,
    "readMinutes": 4,
    "questionCount": 5,
-   "status": "ready"
+   "status": "ready",
+   "providers": [
+    "jev",
+    "openai"
+   ]
   },
   {
    "id": "journal-vs-reality",
@@ -576,9 +741,14 @@
     "text"
    ],
    "dataClass": "synthetic",
+   "dataLabel": null,
    "readMinutes": 4,
    "questionCount": 5,
-   "status": "ready"
+   "status": "ready",
+   "providers": [
+    "jev",
+    "openai"
+   ]
   },
   {
    "id": "goal-screening",
@@ -593,9 +763,14 @@
     "goals"
    ],
    "dataClass": "cached-real",
+   "dataLabel": null,
    "readMinutes": 4,
    "questionCount": 5,
-   "status": "ready"
+   "status": "ready",
+   "providers": [
+    "jev",
+    "openai"
+   ]
   },
   {
    "id": "sharia-screen",
@@ -610,9 +785,14 @@
     "rules"
    ],
    "dataClass": "cached-real",
+   "dataLabel": null,
    "readMinutes": 4,
    "questionCount": 6,
-   "status": "ready"
+   "status": "ready",
+   "providers": [
+    "jev",
+    "openai"
+   ]
   },
   {
    "id": "accounting-flags",
@@ -627,9 +807,14 @@
     "text"
    ],
    "dataClass": "synthetic",
+   "dataLabel": null,
    "readMinutes": 4,
    "questionCount": 5,
-   "status": "ready"
+   "status": "ready",
+   "providers": [
+    "jev",
+    "openai"
+   ]
   },
   {
    "id": "fundamental-read",
@@ -644,9 +829,14 @@
     "ratios"
    ],
    "dataClass": "cached-real",
+   "dataLabel": null,
    "readMinutes": 5,
    "questionCount": 6,
-   "status": "ready"
+   "status": "ready",
+   "providers": [
+    "jev",
+    "openai"
+   ]
   },
   {
    "id": "dividend-safety",
@@ -661,9 +851,14 @@
     "yield"
    ],
    "dataClass": "cached-real",
+   "dataLabel": null,
    "readMinutes": 5,
    "questionCount": 5,
-   "status": "ready"
+   "status": "ready",
+   "providers": [
+    "jev",
+    "openai"
+   ]
   },
   {
    "id": "peer-valuation",
@@ -678,9 +873,14 @@
     "fundamentals"
    ],
    "dataClass": "cached-real",
+   "dataLabel": null,
    "readMinutes": 5,
    "questionCount": 5,
-   "status": "ready"
+   "status": "ready",
+   "providers": [
+    "jev",
+    "openai"
+   ]
   },
   {
    "id": "news-impact",
@@ -695,9 +895,14 @@
     "calibration"
    ],
    "dataClass": "mixed",
+   "dataLabel": null,
    "readMinutes": 4,
    "questionCount": 5,
-   "status": "ready"
+   "status": "ready",
+   "providers": [
+    "jev",
+    "openai"
+   ]
   },
   {
    "id": "filings-read",
@@ -712,9 +917,14 @@
     "reading"
    ],
    "dataClass": "synthetic",
+   "dataLabel": null,
    "readMinutes": 4,
    "questionCount": 5,
-   "status": "ready"
+   "status": "ready",
+   "providers": [
+    "jev",
+    "openai"
+   ]
   },
   {
    "id": "rumour-grading",
@@ -729,9 +939,14 @@
     "text"
    ],
    "dataClass": "synthetic",
+   "dataLabel": null,
    "readMinutes": 4,
    "questionCount": 5,
-   "status": "ready"
+   "status": "ready",
+   "providers": [
+    "jev",
+    "openai"
+   ]
   },
   {
    "id": "event-clustering",
@@ -746,9 +961,14 @@
     "deduplication"
    ],
    "dataClass": "synthetic",
+   "dataLabel": null,
    "readMinutes": 6,
    "questionCount": 4,
-   "status": "ready"
+   "status": "ready",
+   "providers": [
+    "jev",
+    "openai"
+   ]
   },
   {
    "id": "entity-links",
@@ -763,9 +983,14 @@
     "contagion"
    ],
    "dataClass": "synthetic",
+   "dataLabel": null,
    "readMinutes": 6,
    "questionCount": 5,
-   "status": "ready"
+   "status": "ready",
+   "providers": [
+    "jev",
+    "openai"
+   ]
   },
   {
    "id": "golden-cross-review",
@@ -780,9 +1005,14 @@
     "signals"
    ],
    "dataClass": "cached-real",
+   "dataLabel": null,
    "readMinutes": 4,
    "questionCount": 5,
-   "status": "ready"
+   "status": "ready",
+   "providers": [
+    "jev",
+    "openai"
+   ]
   },
   {
    "id": "setup-timing",
@@ -797,9 +1027,14 @@
     "outcomes"
    ],
    "dataClass": "cached-real",
+   "dataLabel": null,
    "readMinutes": 6,
    "questionCount": 5,
-   "status": "ready"
+   "status": "ready",
+   "providers": [
+    "jev",
+    "openai"
+   ]
   },
   {
    "id": "regime-classification",
@@ -814,9 +1049,14 @@
     "regime"
    ],
    "dataClass": "cached-real",
+   "dataLabel": null,
    "readMinutes": 5,
    "questionCount": 5,
-   "status": "ready"
+   "status": "ready",
+   "providers": [
+    "jev",
+    "openai"
+   ]
   },
   {
    "id": "strategy-correlation",
@@ -831,9 +1071,14 @@
     "risk"
    ],
    "dataClass": "synthetic",
+   "dataLabel": null,
    "readMinutes": 4,
    "questionCount": 4,
-   "status": "ready"
+   "status": "ready",
+   "providers": [
+    "jev",
+    "openai"
+   ]
   },
   {
    "id": "overfit-review",
@@ -848,9 +1093,14 @@
     "research"
    ],
    "dataClass": "synthetic",
+   "dataLabel": null,
    "readMinutes": 5,
    "questionCount": 5,
-   "status": "ready"
+   "status": "ready",
+   "providers": [
+    "jev",
+    "openai"
+   ]
   },
   {
    "id": "receipt-check",
@@ -865,9 +1115,13 @@
     "ocr"
    ],
    "dataClass": "synthetic",
+   "dataLabel": null,
    "readMinutes": 2,
    "questionCount": 3,
-   "status": "ready"
+   "status": "ready",
+   "providers": [
+    "openai"
+   ]
   },
   {
    "id": "expense-claim",
@@ -882,9 +1136,13 @@
     "receipts"
    ],
    "dataClass": "synthetic",
+   "dataLabel": null,
    "readMinutes": 2,
    "questionCount": 3,
-   "status": "ready"
+   "status": "ready",
+   "providers": [
+    "openai"
+   ]
   },
   {
    "id": "cheque-check",
@@ -899,9 +1157,13 @@
     "deposits"
    ],
    "dataClass": "synthetic",
+   "dataLabel": null,
    "readMinutes": 2,
    "questionCount": 3,
-   "status": "ready"
+   "status": "ready",
+   "providers": [
+    "openai"
+   ]
   },
   {
    "id": "invoice-bank-change",
@@ -916,9 +1178,13 @@
     "accounts payable"
    ],
    "dataClass": "synthetic",
+   "dataLabel": null,
    "readMinutes": 2,
    "questionCount": 3,
-   "status": "ready"
+   "status": "ready",
+   "providers": [
+    "openai"
+   ]
   },
   {
    "id": "chart-trend",
@@ -933,9 +1199,13 @@
     "real prices"
    ],
    "dataClass": "cached-real",
+   "dataLabel": null,
    "readMinutes": 2,
    "questionCount": 3,
-   "status": "ready"
+   "status": "ready",
+   "providers": [
+    "openai"
+   ]
   },
   {
    "id": "buy-timing",
@@ -950,9 +1220,13 @@
     "real prices"
    ],
    "dataClass": "cached-real",
+   "dataLabel": null,
    "readMinutes": 3,
    "questionCount": 3,
-   "status": "ready"
+   "status": "ready",
+   "providers": [
+    "openai"
+   ]
   },
   {
    "id": "misleading-chart",
@@ -967,9 +1241,13 @@
     "investor relations"
    ],
    "dataClass": "synthetic",
+   "dataLabel": null,
    "readMinutes": 2,
    "questionCount": 3,
-   "status": "ready"
+   "status": "ready",
+   "providers": [
+    "openai"
+   ]
   },
   {
    "id": "produce-check",
@@ -984,9 +1262,13 @@
     "inventory"
    ],
    "dataClass": "cached-real",
+   "dataLabel": "real photographs",
    "readMinutes": 1,
    "questionCount": 3,
-   "status": "ready"
+   "status": "ready",
+   "providers": [
+    "openai"
+   ]
   },
   {
    "id": "package-check",
@@ -1001,9 +1283,13 @@
     "logistics"
    ],
    "dataClass": "cached-real",
+   "dataLabel": "real photographs",
    "readMinutes": 1,
    "questionCount": 3,
-   "status": "ready"
+   "status": "ready",
+   "providers": [
+    "openai"
+   ]
   },
   {
    "id": "leaf-check",
@@ -1018,9 +1304,13 @@
     "insurance"
    ],
    "dataClass": "cached-real",
+   "dataLabel": "real photographs",
    "readMinutes": 1,
    "questionCount": 3,
-   "status": "ready"
+   "status": "ready",
+   "providers": [
+    "openai"
+   ]
   }
  ]
 }

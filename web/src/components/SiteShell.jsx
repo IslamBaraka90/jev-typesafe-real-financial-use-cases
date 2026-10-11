@@ -84,7 +84,7 @@ export function SiteShell({ section, title, children }) {
         <Link to="/" className="site-brand">
           <Logo size={34} />
           <span>
-            <strong>Jev Lab</strong>
+            <strong>Decision Lab</strong>
             <span className="meta">The Fintech Builder</span>
           </span>
         </Link>
@@ -118,7 +118,7 @@ export function SiteShell({ section, title, children }) {
       </main>
 
       <footer className="site-footer">
-        <span>Decisions by TypeSafe Jev. Market data cached from Yahoo Finance; everything else is generated in this repository.</span>
+        <span>Decisions by TypeSafe Jev and OpenAI’s decisions API. Market data cached from Yahoo Finance; photos from Wikimedia Commons, credited where shown; everything else is generated in this repository.</span>
         <a href={REPO_URL} target="_blank" rel="noreferrer">
           Source and instructions
         </a>

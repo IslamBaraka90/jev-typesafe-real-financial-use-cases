@@ -57,6 +57,7 @@ export default {
   value: 'Looks at a real photo of a leaf and says whether it is healthy or shows mildew or leaf spot.',
   tags: ['image', 'photos', 'agriculture', 'insurance'],
   dataClass: 'cached-real',
+  dataLabel: 'real photographs',
   readMinutes: 1,
   view: 'image',
   providers: ['openai'],

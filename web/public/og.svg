@@ -17,24 +17,24 @@
       <path d="M31.1,6.4 A19.8,19.8 0 0 1 31.1,45.6"/>
       <path d="M22.9,45.6 A19.8,19.8 0 0 1 22.9,6.4"/>
     </g>
-    <text x="70" y="34" fill="#C9D2F0" font-size="25" font-weight="600" letter-spacing="1.2">THE FINTECH BUILDER</text>
+    <text x="70" y="34" fill="#C9D2F0" font-size="25" font-weight="600" letter-spacing="1.2">DECISION LAB · THE FINTECH BUILDER</text>
   </g>
 
   <g fill="#FAF7F3" font-size="76" font-weight="800" letter-spacing="-1.8">
-    <text x="76" y="288">Fifty finance jobs.</text>
-    <text x="76" y="372">One model.</text>
+    <text x="76" y="288">Sixty finance jobs.</text>
+    <text x="76" y="372">Jev and OpenAI.</text>
     <text x="76" y="456" fill="#8FB0FF">Every answer graded.</text>
   </g>
 
-  <text x="76" y="512" fill="#C9D2F0" font-size="27">Typed, structured LLM answers on ledgers, fraud, portfolios and trades.</text>
+  <text x="76" y="512" fill="#C9D2F0" font-size="27">Typed decisions on ledgers, fraud, trades, receipts and charts.</text>
 
   <g transform="translate(76,556)">
-    <text x="0" y="34" fill="#FAF7F3" font-size="40" font-weight="800">50</text>
+    <text x="0" y="34" fill="#FAF7F3" font-size="40" font-weight="800">60</text>
     <text x="62" y="34" fill="#9BA8CE" font-size="18" letter-spacing="1.4">DEMOS</text>
-    <text x="172" y="34" fill="#FAF7F3" font-size="40" font-weight="800">9</text>
-    <text x="206" y="34" fill="#9BA8CE" font-size="18" letter-spacing="1.4">DOMAINS</text>
-    <text x="340" y="34" fill="#FAF7F3" font-size="40" font-weight="800">241</text>
-    <text x="426" y="34" fill="#9BA8CE" font-size="18" letter-spacing="1.4">QUESTIONS</text>
+    <text x="172" y="34" fill="#FAF7F3" font-size="40" font-weight="800">10</text>
+    <text x="228" y="34" fill="#9BA8CE" font-size="18" letter-spacing="1.4">DOMAINS</text>
+    <text x="362" y="34" fill="#FAF7F3" font-size="40" font-weight="800">271</text>
+    <text x="448" y="34" fill="#9BA8CE" font-size="18" letter-spacing="1.4">QUESTIONS</text>
   </g>
   <text x="1124" y="596" fill="#9BA8CE" font-size="22" text-anchor="end">jev.thefintechbuilder.com</text>
 </svg>

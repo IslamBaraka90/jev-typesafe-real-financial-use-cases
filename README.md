@@ -1,16 +1,20 @@
-# Jev Lab
+# Decision Lab
 
-A demo site and a backtest lab for TypeSafe's Jev model, built on the official JavaScript SDK,
-[`@typesafe-ai/sdk`](https://docs.typesafe.ai/sdk/javascript).
+Typed decisions from two decision models on real financial work: TypeSafe's Jev, through the official JavaScript SDK
+[`@typesafe-ai/sdk`](https://docs.typesafe.ai/sdk/javascript), and OpenAI's
+[decisions API](https://developers.openai.com/api/docs/guides/decisions), through the `openai` SDK. Both take a state and
+a set of typed questions — a choice, a score on a rubric, a yes or no — and answer each with probabilities that code can
+act on. The site asks both the same questions and grades both.
 
-- **Demos** — fifty of them, across nine domains — put typed questions to Jev over real financial work: ledgers, orders,
-  fraud, wallets, portfolios, trades, filings and strategies. Each one shows the state that was sent, the answers that
-  came back, and a report that grades them against data where the right answer is known. Every demo folder carries a
-  `notes.md` saying what the recorded run actually found, including where it did badly. Specifications live in
+- **Demos** — sixty of them, across ten domains. Fifty put the same typed questions to Jev and to OpenAI over ledgers,
+  orders, fraud, wallets, portfolios, trades, filings and strategies; a switch on each page shows either model's run. Ten
+  more send a picture — a receipt, a cheque, an invoice, a price chart, a photograph of fruit, a parcel or a leaf — and run
+  on OpenAI only, since it is the one that reads images. Each demo shows the state that was sent, the answers that came
+  back, and a report that grades them against data where the right answer is known. Specifications live in
   [`prps/`](prps/README.md).
-- **The benchmark** at `/benchmark` puts all fifty recorded runs on one page: the headline, how many items matched
-  ground truth with its interval, the lift over a simple rule, the calibration error, and what moved since the last
-  run. `npm run score` produces it, offline and free. See [Running the suite again](#running-the-suite-again).
+- **The benchmark** at `/benchmark` puts every recorded run on one page, Jev and OpenAI side by side: how many items
+  matched ground truth with its interval, the lift over a simple rule, the calibration error, and what moved since the
+  last run. `npm run score` produces it, offline and free. See [Running the suite again](#running-the-suite-again).
 - **The lab** backtests Jev's trade decisions on historical daily candles, replays every decision on a chart, and reports
   what the trades earned. It also keeps the support ticket example from the
   [quickstart](https://docs.typesafe.ai/introduction/quickstart).
@@ -18,15 +22,17 @@ A demo site and a backtest lab for TypeSafe's Jev model, built on the official J
 ## Two modes
 
 The deployed site is **recorded**: every answer was captured once with `npm run record`, committed to this repository, and
-replayed from there. It needs no API key, no server and no network, and each demo page names the model version and the day
+replayed from there. Jev's answers are in `demos/<demo>/fixtures.json`, OpenAI's beside them in `fixtures.openai.json`. It needs no API key, no server and no network, and each demo page names the model version and the day
 its answers were captured.
 
-**Live** mode is local and opt-in. Run the Express server with `TYPESAFE_API_KEY` set and each demo gains a "Run live"
+**Live** mode is local, opt-in and Jev only. Run the Express server with `TYPESAFE_API_KEY` set and each demo gains a "Run live"
 switch; it stays off until you turn it on and confirm a dialog that says how many requests a full run would send. Nothing
 calls the API before that.
 
-Data comes in two kinds, and every page says which it is: **cached real** market data in `data/market`, fetched once from
-Yahoo Finance with a manifest recording what and when, and **synthetic** data generated here from a fixed seed, with the
+Data comes in three kinds, and every page says which it is: **cached real** market data in `data/market`, fetched once from
+Yahoo Finance with a manifest recording what and when; **real photographs**, eighteen openly licensed files from Wikimedia
+Commons listed with their authors and licences in [`scripts/generate/lib/photos.js`](scripts/generate/lib/photos.js) and
+credited under each picture; and **synthetic** data generated here from a fixed seed, with the
 planted problems kept in `data/synthetic/*.labels.json`, outside the demo folders, so they can never reach a state.
 
 ## A demo page
@@ -45,9 +51,10 @@ follow is in [docs/ui-ux-review](docs/ui-ux-review/README.md).
 
 The point of the suite is to run the same test on the next model version and see what moved.
 
-1. `npm run record <demo>` asks the model every item and replaces the pinned run in `demos/<demo>/fixtures.json`. The
-   run it replaces is kept under `benchmarks/runs/` (not committed). This is the only paid step.
-2. `npm run score` re-scores all fifty runs with the same evaluate, grade and report code the pages use, writes
+1. `npm run record <demo>` asks Jev every item and replaces the pinned run in `demos/<demo>/fixtures.json`;
+   `npm run record <demo> -- --provider openai` does the same on OpenAI into `fixtures.openai.json`. Recording resumes
+   where it stopped, `--items a,b` records only those, and `--force` asks again. This is the only paid step.
+2. `npm run score` re-scores every demo on each model it was recorded on, with the same evaluate, grade and report code the pages use, writes
    `web/src/generated/scoreboard.json` for the site, and appends each run to `benchmarks/history.json`. A run is keyed
    by model, date, dataset hash and questions hash, and two runs are compared only when both hashes match: a changed
    dataset or a reworded question is a different test.
@@ -70,8 +77,9 @@ npm run build
 npm start
 ```
 
-Then open http://localhost:3000. The demos work as they are. To run anything live, put your API key from the
-[TypeSafe console](https://console.typesafe.ai/settings/keys) in `.env` first; `.env.example` lists every setting, and
+Then open http://localhost:3000. The demos work as they are. To record or run anything live, put your keys in `.env`
+first — `TYPESAFE_API_KEY` from the [TypeSafe console](https://console.typesafe.ai/settings/keys) for Jev, and
+`OPENAI_API_KEY` for OpenAI's decisions API; `.env.example` lists every setting, and
 variables already set in your shell take precedence over `.env`.
 
 ### Deploying
@@ -109,9 +117,9 @@ For development, run `npm run dev` and `npm run dev:web`, then open http://local
 | `npm run quickstart` | Sends the quickstart request once and prints the answers. Evaluate your own text with `npm run quickstart -- "text"`. |
 | `npm test` | Runs the tests offline, with TypeSafe stubbed and no market data calls. |
 | `npm run check` | Checks the built site against its size budgets, scores the suite against its gates, then runs the tests. |
-| `npm run generate` | Rebuilds every synthetic dataset from its seed. Running it twice changes nothing. |
+| `npm run generate` | Rebuilds every synthetic dataset from its seed, and draws the image demos' receipts, cheques, invoices and charts as PNGs. Running it twice changes nothing. |
 | `npm run fetch:market` | Refetches the cached market data in `data/market`. Run by hand, rarely. |
-| `npm run record <slug>` | Records a demo's answers from the live API into `demos/<slug>/fixtures.json`. The only paid step. |
+| `npm run record <slug>` | Records a demo's answers from the live API into `demos/<slug>/fixtures.json`, or with `-- --provider openai` into `fixtures.openai.json`. The only paid step. |
 | `npm run score` | Scores every recorded run offline, rewrites the scoreboard and appends to the run history. Add `-- --check` to fail on a missed gate or a regression, or a slug to print one row. |
 | `npm run shot-list <slug>` | Prints a demo's five presenter beats with the address of each. Takes a domain or `--all`, and `--base <url>`. |
 

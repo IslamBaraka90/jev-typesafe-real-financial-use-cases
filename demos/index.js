@@ -146,8 +146,10 @@ export function demoCard(demo) {
     value: demo.value,
     tags: demo.tags ?? [],
     dataClass: demo.dataClass,
+    dataLabel: demo.dataLabel ?? null,
     readMinutes: demo.readMinutes ?? 3,
     questionCount: Object.keys(demo.questions).length,
     status: demo.status ?? 'ready',
+    providers: demo.providers ?? ['jev', 'openai'],
   };
 }

@@ -59,6 +59,7 @@ export default {
   value: 'Looks at a real photo of fruit or bread and decides whether the stock is fresh, rotten or mouldy.',
   tags: ['image', 'photos', 'quality control', 'inventory'],
   dataClass: 'cached-real',
+  dataLabel: 'real photographs',
   readMinutes: 1,
   view: 'image',
   providers: ['openai'],
