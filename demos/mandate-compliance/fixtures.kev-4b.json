@@ -1,0 +1,1 @@
+{"demo":"mandate-compliance","provider":"kev-4b","model":null,"format":"packed-1","questions":["breach","breach_kind","severity","interpretation_dependent"],"recordedAt":"2026-10-12","source":"scripts/record-demo.js","usage":{"input_tokens":0,"output_tokens":0,"cost":0},"answers":{}}

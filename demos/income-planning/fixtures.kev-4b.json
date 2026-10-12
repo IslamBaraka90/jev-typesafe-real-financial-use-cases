@@ -1,0 +1,1 @@
+{"demo":"income-planning","provider":"kev-4b","model":null,"format":"packed-1","questions":["coverage","problem","worst_month","sell_needed"],"recordedAt":"2026-10-12","source":"scripts/record-demo.js","usage":{"input_tokens":0,"output_tokens":0,"cost":0},"answers":{}}

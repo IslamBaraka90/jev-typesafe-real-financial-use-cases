@@ -1,0 +1,1 @@
+{"demo":"journal-vs-reality","provider":"kev-4b","model":null,"format":"packed-1","questions":["note_matches_trade","drift_type","note_honesty","written_after_the_fact","rule_followed"],"recordedAt":"2026-10-12","source":"scripts/record-demo.js","usage":{"input_tokens":0,"output_tokens":0,"cost":0},"answers":{}}

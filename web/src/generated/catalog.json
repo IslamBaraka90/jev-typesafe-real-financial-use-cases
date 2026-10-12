@@ -1723,8 +1723,10 @@
     "openai",
     "clef-omni",
     "pplx-decider",
+    "liquid-d1",
     "clef-flash",
-    "clef"
+    "clef",
+    "mercury-decide"
    ]
   },
   {
@@ -1748,8 +1750,10 @@
     "openai",
     "clef-omni",
     "pplx-decider",
+    "liquid-d1",
     "clef-flash",
-    "clef"
+    "clef",
+    "mercury-decide"
    ]
   },
   {
@@ -1773,8 +1777,10 @@
     "openai",
     "clef-omni",
     "pplx-decider",
+    "liquid-d1",
     "clef-flash",
-    "clef"
+    "clef",
+    "mercury-decide"
    ]
   },
   {
@@ -1798,8 +1804,10 @@
     "openai",
     "clef-omni",
     "pplx-decider",
+    "liquid-d1",
     "clef-flash",
-    "clef"
+    "clef",
+    "mercury-decide"
    ]
   },
   {
@@ -1823,8 +1831,10 @@
     "openai",
     "clef-omni",
     "pplx-decider",
+    "liquid-d1",
     "clef-flash",
-    "clef"
+    "clef",
+    "mercury-decide"
    ]
   },
   {
@@ -1848,8 +1858,10 @@
     "openai",
     "clef-omni",
     "pplx-decider",
+    "liquid-d1",
     "clef-flash",
-    "clef"
+    "clef",
+    "mercury-decide"
    ]
   },
   {
@@ -1873,8 +1885,10 @@
     "openai",
     "clef-omni",
     "pplx-decider",
+    "liquid-d1",
     "clef-flash",
-    "clef"
+    "clef",
+    "mercury-decide"
    ]
   },
   {
@@ -1898,8 +1912,10 @@
     "openai",
     "clef-omni",
     "pplx-decider",
+    "liquid-d1",
     "clef-flash",
-    "clef"
+    "clef",
+    "mercury-decide"
    ]
   },
   {
@@ -1923,8 +1939,10 @@
     "openai",
     "clef-omni",
     "pplx-decider",
+    "liquid-d1",
     "clef-flash",
-    "clef"
+    "clef",
+    "mercury-decide"
    ]
   },
   {
@@ -1948,8 +1966,10 @@
     "openai",
     "clef-omni",
     "pplx-decider",
+    "liquid-d1",
     "clef-flash",
-    "clef"
+    "clef",
+    "mercury-decide"
    ]
   }
  ]

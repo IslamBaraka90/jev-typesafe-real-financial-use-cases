@@ -1,0 +1,1 @@
+{"demo":"rumour-grading","provider":"solar-decide","model":null,"format":"packed-1","questions":["source_reliability","corroborated","coordinated_push","checkable","disposition"],"recordedAt":"2026-10-12","source":"scripts/record-demo.js","usage":{"input_tokens":0,"output_tokens":0,"cost":0},"answers":{}}

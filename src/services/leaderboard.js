@@ -12,10 +12,10 @@ import { evaluateRun } from './scoreboard.js';
 
 const percentile = (sorted, share) => (sorted.length ? sorted[Math.min(sorted.length - 1, Math.floor(share * sorted.length))] : null);
 
-async function sample(modelId) {
+async function sample(modelId, demoIds) {
   try {
     const file = JSON.parse(await readFile(path.join(repoRoot, 'benchmarks', 'speed', `${modelId}.json`), 'utf8'));
-    return Object.values(file.latencyMs ?? {}).flatMap((timings) => Object.values(timings));
+    return Object.entries(file.latencyMs ?? {}).filter(([demoId]) => demoIds.includes(demoId)).flatMap(([, timings]) => Object.values(timings));
   } catch {
     return [];
   }
@@ -72,7 +72,7 @@ export async function leaderboard(demos, { label }) {
     let latencies = stat.latencies;
     let sampled = false;
     if (!latencies.length) {
-      latencies = await sample(model.id);
+      latencies = await sample(model.id, demos.map((demo) => demo.id));
       sampled = latencies.length > 0;
     }
     const sorted = [...latencies].sort((a, b) => a - b);

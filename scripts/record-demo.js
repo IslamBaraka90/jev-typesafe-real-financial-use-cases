@@ -111,14 +111,20 @@ async function save() {
   await writeFile(file, `${JSON.stringify(record, null, packed ? 0 : 2)}\n`);
 }
 
+// Out of credits is not an item failing: every request after it would fail the same way, so the
+// run stops, saves what it has, and exits with a code the batch loop can stop on.
+const outOfCredits = new AbortController();
+
 await runDemo(demo, {
   dataset,
   items: todo,
   concurrency,
+  signal: outOfCredits.signal,
   ask: async (request) => {
     try {
       return await ask(request);
     } catch (error) {
+      if (error.status === 402) outOfCredits.abort();
       // One item failing for good is recorded as an error and the run goes on; it is retried next time.
       errors[request.item.id] = error.message;
       return { answers: null, refusals: [], error: error.message };
@@ -148,6 +154,10 @@ await save();
 
 console.log(`\n${path.relative(repoRoot, file)}: ${Object.keys(answers).length} items, ${Object.keys(refusals).length} refused, ${Object.keys(errors).length} failed, model ${servedBy}`);
 console.log(`tokens: ${usage.input_tokens.toLocaleString('en-US')} in, cost so far $${usage.cost.toFixed(4)}`);
+if (outOfCredits.signal.aborted) {
+  console.log('Stopped: the account is out of credits. Add credits and run this again; it resumes here.');
+  process.exit(3);
+}
 if (Object.keys(errors).length) {
   console.log('failures (re-run to retry):');
   for (const [id, message] of Object.entries(errors).slice(0, 5)) console.log(`  ${id}: ${message}`);
