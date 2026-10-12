@@ -38,14 +38,14 @@
     "right": 5714
    },
    "solar-decide-flash": {
-    "demos": 47,
-    "graded": 8214,
-    "right": 4378
+    "demos": 49,
+    "graded": 8904,
+    "right": 4707
    },
    "pplx-decider": {
-    "demos": 47,
-    "graded": 8358,
-    "right": 7284
+    "demos": 59,
+    "graded": 9176,
+    "right": 7836
    },
    "liquid-d1": {
     "demos": 59,
@@ -53,19 +53,19 @@
     "right": 7709
    },
    "clef-flash": {
-    "demos": 45,
-    "graded": 7680,
-    "right": 5508
+    "demos": 59,
+    "graded": 9185,
+    "right": 6452
    },
    "clef": {
-    "demos": 49,
-    "graded": 8701,
-    "right": 6736
+    "demos": 59,
+    "graded": 9188,
+    "right": 7064
    },
    "tev1-4b": {
-    "demos": 46,
-    "graded": 8488,
-    "right": 6201
+    "demos": 49,
+    "graded": 8861,
+    "right": 6414
    },
    "mercury-decide": {
     "demos": 59,
@@ -73,9 +73,9 @@
     "right": 7761
    },
    "solar-decide": {
-    "demos": 6,
-    "graded": 1126,
-    "right": 836
+    "demos": 49,
+    "graded": 8907,
+    "right": 6027
    },
    "span-01": {
     "demos": 0,
@@ -83,9 +83,9 @@
     "right": 0
    },
    "kev-4b": {
-    "demos": 16,
-    "graded": 3691,
-    "right": 2922
+    "demos": 49,
+    "graded": 8865,
+    "right": 6761
    }
   },
   "gates": {
@@ -96,20 +96,43 @@
    {
     "label": "Text demos",
     "demos": 50,
-    "commonItems": 8869,
+    "commonItems": 8852,
     "models": [
+     {
+      "id": "pplx-decider",
+      "label": "PPLX Decider 1.1 27B",
+      "maker": "Perplexity",
+      "accuracy": 0.859692724807953,
+      "interval": {
+       "low": 0.8523014369908152,
+       "high": 0.8667719484229437
+      },
+      "right": 7610,
+      "graded": 8852,
+      "wins": 22,
+      "coverage": 1,
+      "refused": 0,
+      "speed": {
+       "p50": 419,
+       "p95": 1293,
+       "n": 9347,
+       "sampled": false
+      },
+      "costPer1k": 0.12860682571948218,
+      "tokensPerItem": 6430
+     },
      {
       "id": "mercury-decide",
       "label": "Mercury Decide",
       "maker": "Inception",
-      "accuracy": 0.8519562521141053,
+      "accuracy": 0.8522367826479892,
       "interval": {
-       "low": 0.8444125706542572,
-       "high": 0.8591951664657201
+       "low": 0.8446913842520686,
+       "high": 0.8594765855092695
       },
-      "right": 7556,
-      "graded": 8869,
-      "wins": 21,
+      "right": 7544,
+      "graded": 8852,
+      "wins": 14,
       "coverage": 1,
       "refused": 0,
       "speed": {
@@ -125,14 +148,14 @@
       "id": "liquid-d1",
       "label": "D1",
       "maker": "Liquid",
-      "accuracy": 0.8455293719697824,
+      "accuracy": 0.8455716222322639,
       "interval": {
-       "low": 0.8378583839872227,
-       "high": 0.8529011580291703
+       "low": 0.8378939510792057,
+       "high": 0.8529494804473925
       },
-      "right": 7499,
-      "graded": 8869,
-      "wins": 14,
+      "right": 7485,
+      "graded": 8852,
+      "wins": 8,
       "coverage": 1,
       "refused": 0,
       "speed": {
@@ -148,14 +171,14 @@
       "id": "jev",
       "label": "Jev",
       "maker": "TypeSafe",
-      "accuracy": 0.8363964370278498,
+      "accuracy": 0.8367600542250339,
       "interval": {
-       "low": 0.8285523116347995,
-       "high": 0.8439492689186051
+       "low": 0.8289149929099899,
+       "high": 0.8443129473910198
       },
-      "right": 7418,
-      "graded": 8869,
-      "wins": 17,
+      "right": 7407,
+      "graded": 8852,
+      "wins": 13,
       "coverage": 1,
       "refused": 0,
       "speed": {
@@ -171,14 +194,14 @@
       "id": "microsoft-decision-1",
       "label": "Decision 1",
       "maker": "Microsoft",
-      "accuracy": 0.8106889164505581,
+      "accuracy": 0.8107772254857659,
       "interval": {
-       "low": 0.8024017468470671,
-       "high": 0.8187070532919998
+       "low": 0.8024833940797755,
+       "high": 0.8188014310688585
       },
-      "right": 7190,
-      "graded": 8869,
-      "wins": 12,
+      "right": 7177,
+      "graded": 8852,
+      "wins": 9,
       "coverage": 1,
       "refused": 0,
       "speed": {
@@ -194,14 +217,14 @@
       "id": "openai",
       "label": "GPT-6 Luna",
       "maker": "OpenAI",
-      "accuracy": 0.7855451572894351,
+      "accuracy": 0.785698147311342,
       "interval": {
-       "low": 0.776880232371234,
-       "high": 0.7939628220117044
+       "low": 0.7770269393031721,
+       "high": 0.7941214877418643
       },
-      "right": 6967,
-      "graded": 8869,
-      "wins": 9,
+      "right": 6955,
+      "graded": 8852,
+      "wins": 5,
       "coverage": 0.9990371242109768,
       "refused": 9,
       "speed": {
@@ -214,17 +237,40 @@
       "tokensPerItem": 1888
      },
      {
+      "id": "clef",
+      "label": "Clef",
+      "maker": "Cloudflare",
+      "accuracy": 0.7714640759150474,
+      "interval": {
+       "low": 0.7626001931200094,
+       "high": 0.7800924404067691
+      },
+      "right": 6829,
+      "graded": 8852,
+      "wins": 7,
+      "coverage": 1,
+      "refused": 0,
+      "speed": {
+       "p50": 466,
+       "p95": 1045,
+       "n": 9347,
+       "sampled": false
+      },
+      "costPer1k": 0.4211677543596876,
+      "tokensPerItem": 1755
+     },
+     {
       "id": "drex-v1-5",
       "label": "Drex 1.5",
       "maker": "Nace AI",
-      "accuracy": 0.764234975758259,
+      "accuracy": 0.7643470402169001,
       "interval": {
-       "low": 0.7552874491219184,
-       "high": 0.7729536951807139
+       "low": 0.7553922224114726,
+       "high": 0.7730725143561769
       },
-      "right": 6778,
-      "graded": 8869,
-      "wins": 9,
+      "right": 6766,
+      "graded": 8852,
+      "wins": 6,
       "coverage": 1,
       "refused": 0,
       "speed": {
@@ -237,17 +283,109 @@
       "tokensPerItem": 1485
      },
      {
+      "id": "kev-4b",
+      "label": "Kev 4B",
+      "maker": "Jared Palmer",
+      "accuracy": 0.7626525079078175,
+      "interval": {
+       "low": 0.7536765512109747,
+       "high": 0.7714005910902156
+      },
+      "right": 6751,
+      "graded": 8852,
+      "wins": 9,
+      "coverage": 1,
+      "refused": 0,
+      "speed": {
+       "p50": 1457,
+       "p95": 12629,
+       "n": 9347,
+       "sampled": false
+      },
+      "costPer1k": 0.06235401733176422,
+      "tokensPerItem": 1485
+     },
+     {
+      "id": "tev1-4b",
+      "label": "TEV1 4B (experimental)",
+      "maker": "Together",
+      "accuracy": 0.7236782647989155,
+      "interval": {
+       "low": 0.7142670466400509,
+       "high": 0.7328954229325756
+      },
+      "right": 6406,
+      "graded": 8852,
+      "wins": 6,
+      "coverage": 1,
+      "refused": 0,
+      "speed": {
+       "p50": 497,
+       "p95": 1160,
+       "n": 9347,
+       "sampled": false
+      },
+      "costPer1k": 0.24626960522092645,
+      "tokensPerItem": 5864
+     },
+     {
+      "id": "clef-flash",
+      "label": "Clef Flash",
+      "maker": "Cloudflare",
+      "accuracy": 0.7060551287844555,
+      "interval": {
+       "low": 0.696476913454547,
+       "high": 0.715454573666903
+      },
+      "right": 6250,
+      "graded": 8852,
+      "wins": 3,
+      "coverage": 1,
+      "refused": 0,
+      "speed": {
+       "p50": 510,
+       "p95": 1271,
+       "n": 9347,
+       "sampled": false
+      },
+      "costPer1k": 0.06668481865839303,
+      "tokensPerItem": 1755
+     },
+     {
+      "id": "solar-decide",
+      "label": "Solar Decide",
+      "maker": "Upstage",
+      "accuracy": 0.6779258924536827,
+      "interval": {
+       "low": 0.668116222643008,
+       "high": 0.6875811963352175
+      },
+      "right": 6001,
+      "graded": 8852,
+      "wins": 6,
+      "coverage": 1,
+      "refused": 0,
+      "speed": {
+       "p50": 17155,
+       "p95": 22696,
+       "n": 9347,
+       "sampled": false
+      },
+      "costPer1k": 0.35589151599443675,
+      "tokensPerItem": 7118
+     },
+     {
       "id": "clef-omni",
       "label": "Clef Omni",
       "maker": "Cloudflare",
-      "accuracy": 0.6244221445484271,
+      "accuracy": 0.6242657026660642,
       "interval": {
-       "low": 0.6142915345965764,
-       "high": 0.6344450144701849
+       "low": 0.6141245534733644,
+       "high": 0.6342990407336504
       },
-      "right": 5538,
-      "graded": 8869,
-      "wins": 3,
+      "right": 5526,
+      "graded": 8852,
+      "wins": 2,
       "coverage": 1,
       "refused": 0,
       "speed": {
@@ -258,48 +396,36 @@
       },
       "costPer1k": 0.2622958168396277,
       "tokensPerItem": 1749
+     },
+     {
+      "id": "solar-decide-flash",
+      "label": "Solar Decide Flash",
+      "maker": "Upstage",
+      "accuracy": 0.5293718933574334,
+      "interval": {
+       "low": 0.5189632818695984,
+       "high": 0.539755022215696
+      },
+      "right": 4686,
+      "graded": 8852,
+      "wins": 4,
+      "coverage": 1,
+      "refused": 0,
+      "speed": {
+       "p50": 981,
+       "p95": 1536,
+       "n": 9347,
+       "sampled": false
+      },
+      "costPer1k": 0.3558918369530331,
+      "tokensPerItem": 7118
      }
     ],
     "excluded": [
      {
-      "id": "solar-decide-flash",
-      "label": "Solar Decide Flash",
-      "reason": "Not fully recorded yet."
-     },
-     {
-      "id": "pplx-decider",
-      "label": "PPLX Decider 1.1 27B",
-      "reason": "Not fully recorded yet."
-     },
-     {
-      "id": "clef-flash",
-      "label": "Clef Flash",
-      "reason": "Not fully recorded yet."
-     },
-     {
-      "id": "clef",
-      "label": "Clef",
-      "reason": "Not fully recorded yet."
-     },
-     {
-      "id": "tev1-4b",
-      "label": "TEV1 4B (experimental)",
-      "reason": "Not fully recorded yet."
-     },
-     {
-      "id": "solar-decide",
-      "label": "Solar Decide",
-      "reason": "Not fully recorded yet."
-     },
-     {
       "id": "span-01",
       "label": "Span 01",
       "reason": "Answers yes-or-no questions only, with the state as plain text; every demo also asks choice and score questions."
-     },
-     {
-      "id": "kev-4b",
-      "label": "Kev 4B",
-      "reason": "Not fully recorded yet."
      }
     ]
    },
@@ -308,6 +434,29 @@
     "demos": 10,
     "commonItems": 282,
     "models": [
+     {
+      "id": "clef",
+      "label": "Clef",
+      "maker": "Cloudflare",
+      "accuracy": 0.723404255319149,
+      "interval": {
+       "low": 0.668458032157342,
+       "high": 0.7723455457683344
+      },
+      "right": 204,
+      "graded": 282,
+      "wins": 5,
+      "coverage": 1,
+      "refused": 0,
+      "speed": {
+       "p50": 522,
+       "p95": 1348,
+       "n": 282,
+       "sampled": false
+      },
+      "costPer1k": 0.19654964539007094,
+      "tokensPerItem": 819
+     },
      {
       "id": "liquid-d1",
       "label": "D1",
@@ -319,7 +468,7 @@
       },
       "right": 199,
       "graded": 282,
-      "wins": 6,
+      "wins": 4,
       "coverage": 1,
       "refused": 0,
       "speed": {
@@ -330,6 +479,29 @@
       },
       "costPer1k": 0.07861702127659574,
       "tokensPerItem": 1965
+     },
+     {
+      "id": "pplx-decider",
+      "label": "PPLX Decider 1.1 27B",
+      "maker": "Perplexity",
+      "accuracy": 0.6879432624113475,
+      "interval": {
+       "low": 0.6316441507967778,
+       "high": 0.739190605235934
+      },
+      "right": 194,
+      "graded": 282,
+      "wins": 3,
+      "coverage": 1,
+      "refused": 0,
+      "speed": {
+       "p50": 483,
+       "p95": 1288,
+       "n": 282,
+       "sampled": false
+      },
+      "costPer1k": 0.03245390070921985,
+      "tokensPerItem": 1623
      },
      {
       "id": "openai",
@@ -365,7 +537,7 @@
       },
       "right": 188,
       "graded": 282,
-      "wins": 5,
+      "wins": 4,
       "coverage": 1,
       "refused": 0,
       "speed": {
@@ -376,6 +548,29 @@
       },
       "costPer1k": null,
       "tokensPerItem": 520
+     },
+     {
+      "id": "clef-flash",
+      "label": "Clef Flash",
+      "maker": "Cloudflare",
+      "accuracy": 0.6170212765957447,
+      "interval": {
+       "low": 0.5590718364637547,
+       "high": 0.6718252757830282
+      },
+      "right": 174,
+      "graded": 282,
+      "wins": 4,
+      "coverage": 1,
+      "refused": 0,
+      "speed": {
+       "p50": 690,
+       "p95": 1772,
+       "n": 282,
+       "sampled": false
+      },
+      "costPer1k": 0.03112056737588653,
+      "tokensPerItem": 819
      },
      {
       "id": "clef-omni",
@@ -421,21 +616,6 @@
       "id": "solar-decide-flash",
       "label": "Solar Decide Flash",
       "reason": "Does not take images."
-     },
-     {
-      "id": "pplx-decider",
-      "label": "PPLX Decider 1.1 27B",
-      "reason": "Not fully recorded yet."
-     },
-     {
-      "id": "clef-flash",
-      "label": "Clef Flash",
-      "reason": "Not fully recorded yet."
-     },
-     {
-      "id": "clef",
-      "label": "Clef",
-      "reason": "Not fully recorded yet."
      },
      {
       "id": "tev1-4b",
@@ -2732,27 +2912,27 @@
     "solar-decide": {
      "model": "upstage/solar-decide-20260928",
      "recordedAt": "2026-10-12",
-     "answered": 13,
-     "graded": 13,
-     "right": 2,
+     "answered": 60,
+     "graded": 60,
+     "right": 13,
      "refused": 0,
      "interval": {
-      "low": 0.0433,
-      "high": 0.4224
+      "low": 0.1312,
+      "high": 0.3362
      },
      "speed": {
-      "n": 13,
-      "p50": 14247,
-      "p95": 20504,
-      "mean": 15080
+      "n": 60,
+      "p50": 17467,
+      "p95": 21227,
+      "mean": 16995
      },
      "cost": {
-      "total": 0.001665,
-      "tokens": 33305
+      "total": 0.007747,
+      "tokens": 154948
      },
      "headline": {
-      "value": 0.1538,
-      "display": "2 of 13"
+      "value": 1,
+      "display": "13 of 13"
      }
     },
     "kev-4b": {
@@ -3202,27 +3382,27 @@
     "solar-decide": {
      "model": "upstage/solar-decide-20260928",
      "recordedAt": "2026-10-12",
-     "answered": 1,
-     "graded": 1,
-     "right": 0,
+     "answered": 300,
+     "graded": 300,
+     "right": 65,
      "refused": 0,
      "interval": {
-      "low": 0,
-      "high": 0.7935
+      "low": 0.1738,
+      "high": 0.2667
      },
      "speed": {
-      "n": 1,
-      "p50": 26585,
-      "p95": 26585,
-      "mean": 26585
+      "n": 300,
+      "p50": 17938,
+      "p95": 23967,
+      "mean": 18158
      },
      "cost": {
-      "total": 0.000213,
-      "tokens": 4265
+      "total": 0.061348,
+      "tokens": 1226975
      },
      "headline": {
-      "value": null,
-      "display": "0 of 0"
+      "value": 1,
+      "display": "9 of 9"
      }
     },
     "kev-4b": {
@@ -3669,6 +3849,32 @@
       "display": "96.1%"
      }
     },
+    "solar-decide": {
+     "model": "upstage/solar-decide-20260928",
+     "recordedAt": "2026-10-12",
+     "answered": 180,
+     "graded": 180,
+     "right": 164,
+     "refused": 0,
+     "interval": {
+      "low": 0.8605,
+      "high": 0.9445
+     },
+     "speed": {
+      "n": 180,
+      "p50": 18199,
+      "p95": 23561,
+      "mean": 18182
+     },
+     "cost": {
+      "total": 0.073639,
+      "tokens": 1472785
+     },
+     "headline": {
+      "value": 0.9111,
+      "display": "91.1%"
+     }
+    },
     "kev-4b": {
      "model": "jaredpalmer/kev-4b-20260924",
      "recordedAt": "2026-10-12",
@@ -4111,6 +4317,32 @@
      "headline": {
       "value": 0.9545,
       "display": "95.5%"
+     }
+    },
+    "solar-decide": {
+     "model": "upstage/solar-decide-20260928",
+     "recordedAt": "2026-10-12",
+     "answered": 220,
+     "graded": 220,
+     "right": 147,
+     "refused": 0,
+     "interval": {
+      "low": 0.6035,
+      "high": 0.727
+     },
+     "speed": {
+      "n": 220,
+      "p50": 17062,
+      "p95": 21219,
+      "mean": 17087
+     },
+     "cost": {
+      "total": 0.047799,
+      "tokens": 955975
+     },
+     "headline": {
+      "value": 0.6682,
+      "display": "66.8%"
      }
     },
     "kev-4b": {
@@ -4558,6 +4790,32 @@
       "display": "100%"
      }
     },
+    "solar-decide": {
+     "model": "upstage/solar-decide-20260928",
+     "recordedAt": "2026-10-12",
+     "answered": 120,
+     "graded": 120,
+     "right": 102,
+     "refused": 0,
+     "interval": {
+      "low": 0.7753,
+      "high": 0.903
+     },
+     "speed": {
+      "n": 120,
+      "p50": 16763,
+      "p95": 21703,
+      "mean": 16994
+     },
+     "cost": {
+      "total": 0.024472,
+      "tokens": 489448
+     },
+     "headline": {
+      "value": 0.85,
+      "display": "85%"
+     }
+    },
     "kev-4b": {
      "model": "jaredpalmer/kev-4b-20260924",
      "recordedAt": "2026-10-12",
@@ -5003,6 +5261,32 @@
       "display": "0 of 11"
      }
     },
+    "solar-decide": {
+     "model": "upstage/solar-decide-20260928",
+     "recordedAt": "2026-10-12",
+     "answered": 140,
+     "graded": 140,
+     "right": 130,
+     "refused": 0,
+     "interval": {
+      "low": 0.8735,
+      "high": 0.9607
+     },
+     "speed": {
+      "n": 140,
+      "p50": 18157,
+      "p95": 24974,
+      "mean": 18957
+     },
+     "cost": {
+      "total": 0.033461,
+      "tokens": 669225
+     },
+     "headline": {
+      "value": 0,
+      "display": "0 of 11"
+     }
+    },
     "kev-4b": {
      "model": "jaredpalmer/kev-4b-20260924",
      "recordedAt": "2026-10-12",
@@ -5440,6 +5724,32 @@
      "cost": {
       "total": 0,
       "tokens": 208964
+     },
+     "headline": {
+      "value": 0.996,
+      "display": "99.6%"
+     }
+    },
+    "solar-decide": {
+     "model": "upstage/solar-decide-20260928",
+     "recordedAt": "2026-10-12",
+     "answered": 250,
+     "graded": 250,
+     "right": 249,
+     "refused": 0,
+     "interval": {
+      "low": 0.9777,
+      "high": 0.9993
+     },
+     "speed": {
+      "n": 250,
+      "p50": 16943,
+      "p95": 21983,
+      "mean": 17177
+     },
+     "cost": {
+      "total": 0.05101,
+      "tokens": 1020202
      },
      "headline": {
       "value": 0.996,
@@ -5893,6 +6203,32 @@
       "display": "12 of 16"
      }
     },
+    "solar-decide": {
+     "model": "upstage/solar-decide-20260928",
+     "recordedAt": "2026-10-12",
+     "answered": 400,
+     "graded": 400,
+     "right": 368,
+     "refused": 0,
+     "interval": {
+      "low": 0.8892,
+      "high": 0.9428
+     },
+     "speed": {
+      "n": 400,
+      "p50": 18133,
+      "p95": 23973,
+      "mean": 18169
+     },
+     "cost": {
+      "total": 0.081228,
+      "tokens": 1624560
+     },
+     "headline": {
+      "value": 0.6875,
+      "display": "11 of 16"
+     }
+    },
     "kev-4b": {
      "model": "jaredpalmer/kev-4b-20260924",
      "recordedAt": "2026-10-12",
@@ -6341,6 +6677,32 @@
       "display": "91.7%"
      }
     },
+    "solar-decide": {
+     "model": "upstage/solar-decide-20260928",
+     "recordedAt": "2026-10-12",
+     "answered": 300,
+     "graded": 300,
+     "right": 291,
+     "refused": 0,
+     "interval": {
+      "low": 0.944,
+      "high": 0.9841
+     },
+     "speed": {
+      "n": 300,
+      "p50": 17668,
+      "p95": 21932,
+      "mean": 17690
+     },
+     "cost": {
+      "total": 0.059568,
+      "tokens": 1191350
+     },
+     "headline": {
+      "value": 1,
+      "display": "100%"
+     }
+    },
     "kev-4b": {
      "model": "jaredpalmer/kev-4b-20260924",
      "recordedAt": "2026-10-12",
@@ -6776,6 +7138,32 @@
      "headline": {
       "value": 0.9346,
       "display": "93.5%"
+     }
+    },
+    "solar-decide": {
+     "model": "upstage/solar-decide-20260928",
+     "recordedAt": "2026-10-12",
+     "answered": 260,
+     "graded": 260,
+     "right": 222,
+     "refused": 0,
+     "interval": {
+      "low": 0.8058,
+      "high": 0.8916
+     },
+     "speed": {
+      "n": 260,
+      "p50": 17218,
+      "p95": 22969,
+      "mean": 17373
+     },
+     "cost": {
+      "total": 0.07054,
+      "tokens": 1410790
+     },
+     "headline": {
+      "value": 0.8538,
+      "display": "85.4%"
      }
     },
     "kev-4b": {
@@ -7215,6 +7603,32 @@
      "headline": {
       "value": 0.45,
       "display": "45%"
+     }
+    },
+    "solar-decide": {
+     "model": "upstage/solar-decide-20260928",
+     "recordedAt": "2026-10-12",
+     "answered": 200,
+     "graded": 200,
+     "right": 12,
+     "refused": 0,
+     "interval": {
+      "low": 0.0347,
+      "high": 0.1019
+     },
+     "speed": {
+      "n": 200,
+      "p50": 16000,
+      "p95": 19838,
+      "mean": 15273
+     },
+     "cost": {
+      "total": 0.036283,
+      "tokens": 725665
+     },
+     "headline": {
+      "value": 0.06,
+      "display": "6%"
      }
     },
     "kev-4b": {
@@ -7659,30 +8073,56 @@
       "display": "5 of 9"
      }
     },
+    "solar-decide": {
+     "model": "upstage/solar-decide-20260928",
+     "recordedAt": "2026-10-12",
+     "answered": 180,
+     "graded": 180,
+     "right": 120,
+     "refused": 0,
+     "interval": {
+      "low": 0.595,
+      "high": 0.7314
+     },
+     "speed": {
+      "n": 180,
+      "p50": 17328,
+      "p95": 22230,
+      "mean": 17461
+     },
+     "cost": {
+      "total": 0.217929,
+      "tokens": 4358570
+     },
+     "headline": {
+      "value": 1,
+      "display": "9 of 9"
+     }
+    },
     "kev-4b": {
      "model": "jaredpalmer/kev-4b-20260924",
      "recordedAt": "2026-10-12",
-     "answered": 149,
-     "graded": 149,
-     "right": 144,
+     "answered": 180,
+     "graded": 180,
+     "right": 174,
      "refused": 0,
      "interval": {
-      "low": 0.9239,
-      "high": 0.9856
+      "low": 0.9292,
+      "high": 0.9846
      },
      "speed": {
-      "n": 149,
-      "p50": 19181,
-      "p95": 23399,
-      "mean": 14619
+      "n": 180,
+      "p50": 12925,
+      "p95": 23393,
+      "mean": 13842
      },
      "cost": {
-      "total": 0.034934,
-      "tokens": 831752
+      "total": 0.042193,
+      "tokens": 1004576
      },
      "headline": {
-      "value": 0.5714,
-      "display": "4 of 7"
+      "value": 0.5556,
+      "display": "5 of 9"
      }
     }
    },
@@ -8102,6 +8542,58 @@
       "value": 0,
       "display": "0 of 3"
      }
+    },
+    "solar-decide": {
+     "model": "upstage/solar-decide-20260928",
+     "recordedAt": "2026-10-12",
+     "answered": 120,
+     "graded": 120,
+     "right": 29,
+     "refused": 0,
+     "interval": {
+      "low": 0.1739,
+      "high": 0.3255
+     },
+     "speed": {
+      "n": 120,
+      "p50": 16897,
+      "p95": 23856,
+      "mean": 17380
+     },
+     "cost": {
+      "total": 0.031374,
+      "tokens": 627475
+     },
+     "headline": {
+      "value": 0,
+      "display": "0 of 3"
+     }
+    },
+    "kev-4b": {
+     "model": "jaredpalmer/kev-4b-20260924",
+     "recordedAt": "2026-10-12",
+     "answered": 120,
+     "graded": 120,
+     "right": 107,
+     "refused": 0,
+     "interval": {
+      "low": 0.8234,
+      "high": 0.9356
+     },
+     "speed": {
+      "n": 120,
+      "p50": 1590,
+      "p95": 2340,
+      "mean": 1592
+     },
+     "cost": {
+      "total": 0.005146,
+      "tokens": 122514
+     },
+     "headline": {
+      "value": 0,
+      "display": "0 of 3"
+     }
     }
    },
    "previous": null,
@@ -8512,6 +9004,58 @@
       "value": 0.8417,
       "display": "202 of 240"
      }
+    },
+    "solar-decide": {
+     "model": "upstage/solar-decide-20260928",
+     "recordedAt": "2026-10-12",
+     "answered": 240,
+     "graded": 240,
+     "right": 40,
+     "refused": 0,
+     "interval": {
+      "low": 0.1248,
+      "high": 0.219
+     },
+     "speed": {
+      "n": 240,
+      "p50": 17422,
+      "p95": 22818,
+      "mean": 17660
+     },
+     "cost": {
+      "total": 0.053289,
+      "tokens": 1065775
+     },
+     "headline": {
+      "value": 0.1667,
+      "display": "40 of 240"
+     }
+    },
+    "kev-4b": {
+     "model": "jaredpalmer/kev-4b-20260924",
+     "recordedAt": "2026-10-12",
+     "answered": 240,
+     "graded": 240,
+     "right": 61,
+     "refused": 0,
+     "interval": {
+      "low": 0.2033,
+      "high": 0.3128
+     },
+     "speed": {
+      "n": 240,
+      "p50": 973,
+      "p95": 1364,
+      "mean": 1027
+     },
+     "cost": {
+      "total": 0.008372,
+      "tokens": 199344
+     },
+     "headline": {
+      "value": 0.2542,
+      "display": "61 of 240"
+     }
     }
    },
    "previous": null,
@@ -8920,6 +9464,58 @@
      "headline": {
       "value": 0.9579,
       "display": "95.8%"
+     }
+    },
+    "solar-decide": {
+     "model": "upstage/solar-decide-20260928",
+     "recordedAt": "2026-10-12",
+     "answered": 200,
+     "graded": 190,
+     "right": 153,
+     "refused": 0,
+     "interval": {
+      "low": 0.7431,
+      "high": 0.8553
+     },
+     "speed": {
+      "n": 200,
+      "p50": 16838,
+      "p95": 23503,
+      "mean": 17088
+     },
+     "cost": {
+      "total": 0.043696,
+      "tokens": 873912
+     },
+     "headline": {
+      "value": 0.8053,
+      "display": "80.5%"
+     }
+    },
+    "kev-4b": {
+     "model": "jaredpalmer/kev-4b-20260924",
+     "recordedAt": "2026-10-12",
+     "answered": 200,
+     "graded": 190,
+     "right": 139,
+     "refused": 0,
+     "interval": {
+      "low": 0.6644,
+      "high": 0.7895
+     },
+     "speed": {
+      "n": 200,
+      "p50": 1161,
+      "p95": 1675,
+      "mean": 1213
+     },
+     "cost": {
+      "total": 0.009504,
+      "tokens": 226295
+     },
+     "headline": {
+      "value": 0.7316,
+      "display": "73.2%"
      }
     }
    },
@@ -9345,6 +9941,58 @@
       "value": 0.9111,
       "display": "82 of 90"
      }
+    },
+    "solar-decide": {
+     "model": "upstage/solar-decide-20260928",
+     "recordedAt": "2026-10-12",
+     "answered": 90,
+     "graded": 90,
+     "right": 34,
+     "refused": 0,
+     "interval": {
+      "low": 0.2846,
+      "high": 0.481
+     },
+     "speed": {
+      "n": 90,
+      "p50": 18150,
+      "p95": 22795,
+      "mean": 18042
+     },
+     "cost": {
+      "total": 0.025101,
+      "tokens": 502025
+     },
+     "headline": {
+      "value": 0.3778,
+      "display": "34 of 90"
+     }
+    },
+    "kev-4b": {
+     "model": "jaredpalmer/kev-4b-20260924",
+     "recordedAt": "2026-10-12",
+     "answered": 90,
+     "graded": 90,
+     "right": 81,
+     "refused": 0,
+     "interval": {
+      "low": 0.8208,
+      "high": 0.9465
+     },
+     "speed": {
+      "n": 90,
+      "p50": 1325,
+      "p95": 2067,
+      "mean": 1358
+     },
+     "cost": {
+      "total": 0.004106,
+      "tokens": 97762
+     },
+     "headline": {
+      "value": 0.9,
+      "display": "81 of 90"
+     }
     }
    },
    "previous": null,
@@ -9762,6 +10410,58 @@
       "value": 0.9875,
       "display": "98.8%"
      }
+    },
+    "solar-decide": {
+     "model": "upstage/solar-decide-20260928",
+     "recordedAt": "2026-10-12",
+     "answered": 160,
+     "graded": 160,
+     "right": 92,
+     "refused": 0,
+     "interval": {
+      "low": 0.4975,
+      "high": 0.649
+     },
+     "speed": {
+      "n": 160,
+      "p50": 16915,
+      "p95": 20183,
+      "mean": 16461
+     },
+     "cost": {
+      "total": 0.035036,
+      "tokens": 700720
+     },
+     "headline": {
+      "value": 0.575,
+      "display": "57.5%"
+     }
+    },
+    "kev-4b": {
+     "model": "jaredpalmer/kev-4b-20260924",
+     "recordedAt": "2026-10-12",
+     "answered": 160,
+     "graded": 160,
+     "right": 159,
+     "refused": 0,
+     "interval": {
+      "low": 0.9655,
+      "high": 0.9989
+     },
+     "speed": {
+      "n": 160,
+      "p50": 1270,
+      "p95": 1598,
+      "mean": 1246
+     },
+     "cost": {
+      "total": 0.005578,
+      "tokens": 132805
+     },
+     "headline": {
+      "value": 0.9938,
+      "display": "99.4%"
+     }
     }
    },
    "previous": null,
@@ -10174,6 +10874,58 @@
       "value": 0.5867,
       "display": "88 of 150"
      }
+    },
+    "solar-decide": {
+     "model": "upstage/solar-decide-20260928",
+     "recordedAt": "2026-10-12",
+     "answered": 150,
+     "graded": 150,
+     "right": 90,
+     "refused": 0,
+     "interval": {
+      "low": 0.52,
+      "high": 0.675
+     },
+     "speed": {
+      "n": 150,
+      "p50": 17375,
+      "p95": 24630,
+      "mean": 17809
+     },
+     "cost": {
+      "total": 0.022487,
+      "tokens": 449736
+     },
+     "headline": {
+      "value": 0.6,
+      "display": "90 of 150"
+     }
+    },
+    "kev-4b": {
+     "model": "jaredpalmer/kev-4b-20260924",
+     "recordedAt": "2026-10-12",
+     "answered": 150,
+     "graded": 150,
+     "right": 76,
+     "refused": 0,
+     "interval": {
+      "low": 0.4275,
+      "high": 0.5855
+     },
+     "speed": {
+      "n": 150,
+      "p50": 1131,
+      "p95": 1669,
+      "mean": 1148
+     },
+     "cost": {
+      "total": 0.004117,
+      "tokens": 98033
+     },
+     "headline": {
+      "value": 0.5067,
+      "display": "76 of 150"
+     }
     }
    },
    "previous": null,
@@ -10579,6 +11331,58 @@
      "cost": {
       "total": 0,
       "tokens": 28803
+     },
+     "headline": {
+      "value": 0.875,
+      "display": "21 of 24"
+     }
+    },
+    "solar-decide": {
+     "model": "upstage/solar-decide-20260928",
+     "recordedAt": "2026-10-12",
+     "answered": 24,
+     "graded": 24,
+     "right": 16,
+     "refused": 0,
+     "interval": {
+      "low": 0.4671,
+      "high": 0.8203
+     },
+     "speed": {
+      "n": 24,
+      "p50": 19937,
+      "p95": 23701,
+      "mean": 19166
+     },
+     "cost": {
+      "total": 0.007916,
+      "tokens": 158325
+     },
+     "headline": {
+      "value": 0.6667,
+      "display": "16 of 24"
+     }
+    },
+    "kev-4b": {
+     "model": "jaredpalmer/kev-4b-20260924",
+     "recordedAt": "2026-10-12",
+     "answered": 24,
+     "graded": 24,
+     "right": 21,
+     "refused": 0,
+     "interval": {
+      "low": 0.69,
+      "high": 0.9566
+     },
+     "speed": {
+      "n": 24,
+      "p50": 1275,
+      "p95": 2579,
+      "mean": 1429
+     },
+     "cost": {
+      "total": 0.00135,
+      "tokens": 32144
      },
      "headline": {
       "value": 0.875,
@@ -10994,6 +11798,58 @@
       "value": 0.455,
       "display": "45.5%"
      }
+    },
+    "solar-decide": {
+     "model": "upstage/solar-decide-20260928",
+     "recordedAt": "2026-10-12",
+     "answered": 200,
+     "graded": 200,
+     "right": 72,
+     "refused": 0,
+     "interval": {
+      "low": 0.2967,
+      "high": 0.4286
+     },
+     "speed": {
+      "n": 200,
+      "p50": 17640,
+      "p95": 22986,
+      "mean": 17808
+     },
+     "cost": {
+      "total": 0.039822,
+      "tokens": 796430
+     },
+     "headline": {
+      "value": 0.36,
+      "display": "36%"
+     }
+    },
+    "kev-4b": {
+     "model": "jaredpalmer/kev-4b-20260924",
+     "recordedAt": "2026-10-12",
+     "answered": 200,
+     "graded": 200,
+     "right": 113,
+     "refused": 0,
+     "interval": {
+      "low": 0.4957,
+      "high": 0.6318
+     },
+     "speed": {
+      "n": 200,
+      "p50": 1216,
+      "p95": 2060,
+      "mean": 1274
+     },
+     "cost": {
+      "total": 0.006558,
+      "tokens": 156132
+     },
+     "headline": {
+      "value": 0.565,
+      "display": "56.5%"
+     }
     }
    },
    "previous": null,
@@ -11404,6 +12260,58 @@
      "headline": {
       "value": 1,
       "display": "232 of 232"
+     }
+    },
+    "solar-decide": {
+     "model": "upstage/solar-decide-20260928",
+     "recordedAt": "2026-10-12",
+     "answered": 240,
+     "graded": 232,
+     "right": 208,
+     "refused": 0,
+     "interval": {
+      "low": 0.8507,
+      "high": 0.9295
+     },
+     "speed": {
+      "n": 240,
+      "p50": 16167,
+      "p95": 20365,
+      "mean": 16042
+     },
+     "cost": {
+      "total": 0.033158,
+      "tokens": 663160
+     },
+     "headline": {
+      "value": 0.8966,
+      "display": "208 of 232"
+     }
+    },
+    "kev-4b": {
+     "model": "jaredpalmer/kev-4b-20260924",
+     "recordedAt": "2026-10-12",
+     "answered": 240,
+     "graded": 232,
+     "right": 225,
+     "refused": 0,
+     "interval": {
+      "low": 0.939,
+      "high": 0.9853
+     },
+     "speed": {
+      "n": 240,
+      "p50": 988,
+      "p95": 2015,
+      "mean": 1113
+     },
+     "cost": {
+      "total": 0.005825,
+      "tokens": 138692
+     },
+     "headline": {
+      "value": 0.9698,
+      "display": "225 of 232"
      }
     }
    },
@@ -11818,6 +12726,58 @@
       "value": 0.7222,
       "display": "13 of 18"
      }
+    },
+    "solar-decide": {
+     "model": "upstage/solar-decide-20260928",
+     "recordedAt": "2026-10-12",
+     "answered": 18,
+     "graded": 18,
+     "right": 15,
+     "refused": 0,
+     "interval": {
+      "low": 0.6078,
+      "high": 0.9416
+     },
+     "speed": {
+      "n": 18,
+      "p50": 18269,
+      "p95": 24701,
+      "mean": 17625
+     },
+     "cost": {
+      "total": 0.006792,
+      "tokens": 135843
+     },
+     "headline": {
+      "value": 0.8333,
+      "display": "15 of 18"
+     }
+    },
+    "kev-4b": {
+     "model": "jaredpalmer/kev-4b-20260924",
+     "recordedAt": "2026-10-12",
+     "answered": 18,
+     "graded": 18,
+     "right": 17,
+     "refused": 0,
+     "interval": {
+      "low": 0.7424,
+      "high": 0.9901
+     },
+     "speed": {
+      "n": 18,
+      "p50": 1525,
+      "p95": 1987,
+      "mean": 1335
+     },
+     "cost": {
+      "total": 0.001175,
+      "tokens": 27985
+     },
+     "headline": {
+      "value": 0.9444,
+      "display": "17 of 18"
+     }
     }
    },
    "previous": null,
@@ -12226,6 +13186,58 @@
       "value": 0.7333,
       "display": "22 of 30"
      }
+    },
+    "solar-decide": {
+     "model": "upstage/solar-decide-20260928",
+     "recordedAt": "2026-10-12",
+     "answered": 30,
+     "graded": 30,
+     "right": 26,
+     "refused": 0,
+     "interval": {
+      "low": 0.7032,
+      "high": 0.9469
+     },
+     "speed": {
+      "n": 30,
+      "p50": 17784,
+      "p95": 20158,
+      "mean": 17105
+     },
+     "cost": {
+      "total": 0.010821,
+      "tokens": 216415
+     },
+     "headline": {
+      "value": 0.8667,
+      "display": "26 of 30"
+     }
+    },
+    "kev-4b": {
+     "model": "jaredpalmer/kev-4b-20260924",
+     "recordedAt": "2026-10-12",
+     "answered": 30,
+     "graded": 30,
+     "right": 20,
+     "refused": 0,
+     "interval": {
+      "low": 0.4878,
+      "high": 0.8077
+     },
+     "speed": {
+      "n": 30,
+      "p50": 1772,
+      "p95": 3299,
+      "mean": 1986
+     },
+     "cost": {
+      "total": 0.001895,
+      "tokens": 45111
+     },
+     "headline": {
+      "value": 0.6667,
+      "display": "20 of 30"
+     }
     }
    },
    "previous": null,
@@ -12633,6 +13645,58 @@
      "headline": {
       "value": 1,
       "display": "40 of 40"
+     }
+    },
+    "solar-decide": {
+     "model": "upstage/solar-decide-20260928",
+     "recordedAt": "2026-10-12",
+     "answered": 40,
+     "graded": 40,
+     "right": 17,
+     "refused": 0,
+     "interval": {
+      "low": 0.2851,
+      "high": 0.5781
+     },
+     "speed": {
+      "n": 40,
+      "p50": 16496,
+      "p95": 22018,
+      "mean": 16114
+     },
+     "cost": {
+      "total": 0.012106,
+      "tokens": 242116
+     },
+     "headline": {
+      "value": 0.425,
+      "display": "17 of 40"
+     }
+    },
+    "kev-4b": {
+     "model": "jaredpalmer/kev-4b-20260924",
+     "recordedAt": "2026-10-12",
+     "answered": 40,
+     "graded": 40,
+     "right": 35,
+     "refused": 0,
+     "interval": {
+      "low": 0.7389,
+      "high": 0.9454
+     },
+     "speed": {
+      "n": 40,
+      "p50": 1430,
+      "p95": 2159,
+      "mean": 1493
+     },
+     "cost": {
+      "total": 0.002816,
+      "tokens": 67040
+     },
+     "headline": {
+      "value": 0.875,
+      "display": "35 of 40"
      }
     }
    },
@@ -13050,6 +14114,58 @@
       "value": 0.8,
       "display": "176 of 220"
      }
+    },
+    "solar-decide": {
+     "model": "upstage/solar-decide-20260928",
+     "recordedAt": "2026-10-12",
+     "answered": 220,
+     "graded": 220,
+     "right": 177,
+     "refused": 0,
+     "interval": {
+      "low": 0.7471,
+      "high": 0.8515
+     },
+     "speed": {
+      "n": 220,
+      "p50": 17011,
+      "p95": 20956,
+      "mean": 17002
+     },
+     "cost": {
+      "total": 0.126792,
+      "tokens": 2535838
+     },
+     "headline": {
+      "value": 0.8045,
+      "display": "177 of 220"
+     }
+    },
+    "kev-4b": {
+     "model": "jaredpalmer/kev-4b-20260924",
+     "recordedAt": "2026-10-12",
+     "answered": 220,
+     "graded": 220,
+     "right": 159,
+     "refused": 0,
+     "interval": {
+      "low": 0.6601,
+      "high": 0.7777
+     },
+     "speed": {
+      "n": 220,
+      "p50": 1941,
+      "p95": 3230,
+      "mean": 2091
+     },
+     "cost": {
+      "total": 0.01825,
+      "tokens": 434523
+     },
+     "headline": {
+      "value": 0.7227,
+      "display": "159 of 220"
+     }
     }
    },
    "previous": null,
@@ -13459,6 +14575,58 @@
      "headline": {
       "value": 0.5385,
       "display": "53.8%"
+     }
+    },
+    "solar-decide": {
+     "model": "upstage/solar-decide-20260928",
+     "recordedAt": "2026-10-12",
+     "answered": 300,
+     "graded": 300,
+     "right": 168,
+     "refused": 0,
+     "interval": {
+      "low": 0.5034,
+      "high": 0.6151
+     },
+     "speed": {
+      "n": 300,
+      "p50": 16927,
+      "p95": 21339,
+      "mean": 16931
+     },
+     "cost": {
+      "total": 0.164361,
+      "tokens": 3287215
+     },
+     "headline": {
+      "value": 0.5085,
+      "display": "50.8%"
+     }
+    },
+    "kev-4b": {
+     "model": "jaredpalmer/kev-4b-20260924",
+     "recordedAt": "2026-10-12",
+     "answered": 300,
+     "graded": 300,
+     "right": 172,
+     "refused": 0,
+     "interval": {
+      "low": 0.5168,
+      "high": 0.628
+     },
+     "speed": {
+      "n": 300,
+      "p50": 1651,
+      "p95": 2769,
+      "mean": 1730
+     },
+     "cost": {
+      "total": 0.026873,
+      "tokens": 639838
+     },
+     "headline": {
+      "value": 0.5155,
+      "display": "51.6%"
      }
     }
    },
@@ -13876,6 +15044,58 @@
       "value": 0.9417,
       "display": "113 of 120"
      }
+    },
+    "solar-decide": {
+     "model": "upstage/solar-decide-20260928",
+     "recordedAt": "2026-10-12",
+     "answered": 120,
+     "graded": 120,
+     "right": 105,
+     "refused": 0,
+     "interval": {
+      "low": 0.804,
+      "high": 0.9228
+     },
+     "speed": {
+      "n": 120,
+      "p50": 17338,
+      "p95": 23531,
+      "mean": 17176
+     },
+     "cost": {
+      "total": 0.038072,
+      "tokens": 761435
+     },
+     "headline": {
+      "value": 0.875,
+      "display": "105 of 120"
+     }
+    },
+    "kev-4b": {
+     "model": "jaredpalmer/kev-4b-20260924",
+     "recordedAt": "2026-10-12",
+     "answered": 120,
+     "graded": 120,
+     "right": 78,
+     "refused": 0,
+     "interval": {
+      "low": 0.5612,
+      "high": 0.7295
+     },
+     "speed": {
+      "n": 120,
+      "p50": 1579,
+      "p95": 1934,
+      "mean": 1639
+     },
+     "cost": {
+      "total": 0.00626,
+      "tokens": 149040
+     },
+     "headline": {
+      "value": 0.65,
+      "display": "78 of 120"
+     }
     }
    },
    "previous": null,
@@ -14280,6 +15500,58 @@
      "cost": {
       "total": 0,
       "tokens": 527429
+     },
+     "headline": {
+      "value": 1,
+      "display": "130 of 130"
+     }
+    },
+    "solar-decide": {
+     "model": "upstage/solar-decide-20260928",
+     "recordedAt": "2026-10-12",
+     "answered": 240,
+     "graded": 130,
+     "right": 76,
+     "refused": 0,
+     "interval": {
+      "low": 0.4987,
+      "high": 0.6657
+     },
+     "speed": {
+      "n": 240,
+      "p50": 17587,
+      "p95": 22917,
+      "mean": 17533
+     },
+     "cost": {
+      "total": 0.14702,
+      "tokens": 2940395
+     },
+     "headline": {
+      "value": 0.5846,
+      "display": "76 of 130"
+     }
+    },
+    "kev-4b": {
+     "model": "jaredpalmer/kev-4b-20260924",
+     "recordedAt": "2026-10-12",
+     "answered": 240,
+     "graded": 130,
+     "right": 130,
+     "refused": 0,
+     "interval": {
+      "low": 0.9713,
+      "high": 1
+     },
+     "speed": {
+      "n": 240,
+      "p50": 2102,
+      "p95": 2430,
+      "mean": 2088
+     },
+     "cost": {
+      "total": 0.025039,
+      "tokens": 596160
      },
      "headline": {
       "value": 1,
@@ -14693,6 +15965,58 @@
      "headline": {
       "value": 0.9385,
       "display": "244 of 260"
+     }
+    },
+    "solar-decide": {
+     "model": "upstage/solar-decide-20260928",
+     "recordedAt": "2026-10-12",
+     "answered": 260,
+     "graded": 260,
+     "right": 37,
+     "refused": 0,
+     "interval": {
+      "low": 0.105,
+      "high": 0.19
+     },
+     "speed": {
+      "n": 260,
+      "p50": 16867,
+      "p95": 22179,
+      "mean": 16761
+     },
+     "cost": {
+      "total": 0.104255,
+      "tokens": 2085105
+     },
+     "headline": {
+      "value": 0.1423,
+      "display": "37 of 260"
+     }
+    },
+    "kev-4b": {
+     "model": "jaredpalmer/kev-4b-20260924",
+     "recordedAt": "2026-10-12",
+     "answered": 260,
+     "graded": 260,
+     "right": 168,
+     "refused": 0,
+     "interval": {
+      "low": 0.5863,
+      "high": 0.7018
+     },
+     "speed": {
+      "n": 260,
+      "p50": 1927,
+      "p95": 2253,
+      "mean": 1907
+     },
+     "cost": {
+      "total": 0.017683,
+      "tokens": 421013
+     },
+     "headline": {
+      "value": 0.6462,
+      "display": "168 of 260"
      }
     }
    },
@@ -15111,6 +16435,58 @@
       "value": 0.835,
       "display": "167 of 200"
      }
+    },
+    "solar-decide": {
+     "model": "upstage/solar-decide-20260928",
+     "recordedAt": "2026-10-12",
+     "answered": 200,
+     "graded": 200,
+     "right": 149,
+     "refused": 0,
+     "interval": {
+      "low": 0.6804,
+      "high": 0.8004
+     },
+     "speed": {
+      "n": 200,
+      "p50": 16522,
+      "p95": 20736,
+      "mean": 16157
+     },
+     "cost": {
+      "total": 0.035337,
+      "tokens": 706750
+     },
+     "headline": {
+      "value": 0.745,
+      "display": "149 of 200"
+     }
+    },
+    "kev-4b": {
+     "model": "jaredpalmer/kev-4b-20260924",
+     "recordedAt": "2026-10-12",
+     "answered": 200,
+     "graded": 200,
+     "right": 189,
+     "refused": 0,
+     "interval": {
+      "low": 0.9042,
+      "high": 0.969
+     },
+     "speed": {
+      "n": 200,
+      "p50": 998,
+      "p95": 1470,
+      "mean": 1051
+     },
+     "cost": {
+      "total": 0.005443,
+      "tokens": 129600
+     },
+     "headline": {
+      "value": 0.945,
+      "display": "189 of 200"
+     }
     }
    },
    "previous": null,
@@ -15520,6 +16896,58 @@
      "headline": {
       "value": 0.5652,
       "display": "26 of 46"
+     }
+    },
+    "solar-decide": {
+     "model": "upstage/solar-decide-20260928",
+     "recordedAt": "2026-10-12",
+     "answered": 96,
+     "graded": 52,
+     "right": 27,
+     "refused": 0,
+     "interval": {
+      "low": 0.3869,
+      "high": 0.649
+     },
+     "speed": {
+      "n": 96,
+      "p50": 16884,
+      "p95": 21555,
+      "mean": 16553
+     },
+     "cost": {
+      "total": 0.029177,
+      "tokens": 583544
+     },
+     "headline": {
+      "value": 0.5192,
+      "display": "27 of 52"
+     }
+    },
+    "kev-4b": {
+     "model": "jaredpalmer/kev-4b-20260924",
+     "recordedAt": "2026-10-12",
+     "answered": 96,
+     "graded": 10,
+     "right": 8,
+     "refused": 0,
+     "interval": {
+      "low": 0.4902,
+      "high": 0.9433
+     },
+     "speed": {
+      "n": 96,
+      "p50": 1334,
+      "p95": 1773,
+      "mean": 1272
+     },
+     "cost": {
+      "total": 0.004718,
+      "tokens": 112336
+     },
+     "headline": {
+      "value": 0.8,
+      "display": "8 of 10"
      }
     }
    },
@@ -15938,6 +17366,58 @@
       "value": 0.6667,
       "display": "24 of 36"
      }
+    },
+    "solar-decide": {
+     "model": "upstage/solar-decide-20260928",
+     "recordedAt": "2026-10-12",
+     "answered": 48,
+     "graded": 36,
+     "right": 29,
+     "refused": 0,
+     "interval": {
+      "low": 0.6497,
+      "high": 0.9025
+     },
+     "speed": {
+      "n": 48,
+      "p50": 14372,
+      "p95": 19591,
+      "mean": 13997
+     },
+     "cost": {
+      "total": 0.010729,
+      "tokens": 214590
+     },
+     "headline": {
+      "value": 0.8056,
+      "display": "29 of 36"
+     }
+    },
+    "kev-4b": {
+     "model": "jaredpalmer/kev-4b-20260924",
+     "recordedAt": "2026-10-12",
+     "answered": 48,
+     "graded": 36,
+     "right": 27,
+     "refused": 0,
+     "interval": {
+      "low": 0.5893,
+      "high": 0.8625
+     },
+     "speed": {
+      "n": 48,
+      "p50": 946,
+      "p95": 1455,
+      "mean": 1010
+     },
+     "cost": {
+      "total": 0.001422,
+      "tokens": 33860
+     },
+     "headline": {
+      "value": 0.75,
+      "display": "27 of 36"
+     }
     }
    },
    "previous": null,
@@ -16355,6 +17835,58 @@
       "value": 0.9083,
       "display": "109 of 120"
      }
+    },
+    "solar-decide": {
+     "model": "upstage/solar-decide-20260928",
+     "recordedAt": "2026-10-12",
+     "answered": 120,
+     "graded": 120,
+     "right": 69,
+     "refused": 0,
+     "interval": {
+      "low": 0.4856,
+      "high": 0.6598
+     },
+     "speed": {
+      "n": 120,
+      "p50": 16823,
+      "p95": 19788,
+      "mean": 16575
+     },
+     "cost": {
+      "total": 0.030746,
+      "tokens": 614925
+     },
+     "headline": {
+      "value": 0.575,
+      "display": "69 of 120"
+     }
+    },
+    "kev-4b": {
+     "model": "jaredpalmer/kev-4b-20260924",
+     "recordedAt": "2026-10-12",
+     "answered": 120,
+     "graded": 120,
+     "right": 94,
+     "refused": 0,
+     "interval": {
+      "low": 0.7015,
+      "high": 0.8476
+     },
+     "speed": {
+      "n": 120,
+      "p50": 1414,
+      "p95": 1608,
+      "mean": 1377
+     },
+     "cost": {
+      "total": 0.005639,
+      "tokens": 134256
+     },
+     "headline": {
+      "value": 0.7833,
+      "display": "94 of 120"
+     }
     }
    },
    "previous": null,
@@ -16764,6 +18296,58 @@
      "headline": {
       "value": 0.6667,
       "display": "6 of 9"
+     }
+    },
+    "solar-decide": {
+     "model": "upstage/solar-decide-20260928",
+     "recordedAt": "2026-10-12",
+     "answered": 16,
+     "graded": 9,
+     "right": 6,
+     "refused": 0,
+     "interval": {
+      "low": 0.3542,
+      "high": 0.8794
+     },
+     "speed": {
+      "n": 16,
+      "p50": 17454,
+      "p95": 20796,
+      "mean": 17251
+     },
+     "cost": {
+      "total": 0.006768,
+      "tokens": 135364
+     },
+     "headline": {
+      "value": 0.6667,
+      "display": "6 of 9"
+     }
+    },
+    "kev-4b": {
+     "model": "jaredpalmer/kev-4b-20260924",
+     "recordedAt": "2026-10-12",
+     "answered": 16,
+     "graded": 9,
+     "right": 5,
+     "refused": 0,
+     "interval": {
+      "low": 0.2666,
+      "high": 0.8112
+     },
+     "speed": {
+      "n": 16,
+      "p50": 1591,
+      "p95": 3095,
+      "mean": 1810
+     },
+     "cost": {
+      "total": 0.000993,
+      "tokens": 23648
+     },
+     "headline": {
+      "value": 0.5556,
+      "display": "5 of 9"
      }
     }
    },
@@ -17180,6 +18764,58 @@
       "value": 0.7,
       "display": "7 of 10"
      }
+    },
+    "solar-decide": {
+     "model": "upstage/solar-decide-20260928",
+     "recordedAt": "2026-10-12",
+     "answered": 16,
+     "graded": 10,
+     "right": 9,
+     "refused": 0,
+     "interval": {
+      "low": 0.5958,
+      "high": 0.9821
+     },
+     "speed": {
+      "n": 16,
+      "p50": 18194,
+      "p95": 23227,
+      "mean": 18714
+     },
+     "cost": {
+      "total": 0.003767,
+      "tokens": 75338
+     },
+     "headline": {
+      "value": 0.9,
+      "display": "9 of 10"
+     }
+    },
+    "kev-4b": {
+     "model": "jaredpalmer/kev-4b-20260924",
+     "recordedAt": "2026-10-12",
+     "answered": 16,
+     "graded": 10,
+     "right": 7,
+     "refused": 0,
+     "interval": {
+      "low": 0.3968,
+      "high": 0.8922
+     },
+     "speed": {
+      "n": 16,
+      "p50": 1114,
+      "p95": 1503,
+      "mean": 1113
+     },
+     "cost": {
+      "total": 0.000573,
+      "tokens": 13648
+     },
+     "headline": {
+      "value": 0.7,
+      "display": "7 of 10"
+     }
     }
    },
    "previous": null,
@@ -17546,6 +19182,52 @@
      "cost": {
       "total": 0,
       "tokens": 13360
+     },
+     "headline": {
+      "value": 0,
+      "display": "0 of 2"
+     }
+    },
+    "solar-decide": {
+     "model": "upstage/solar-decide-20260928",
+     "recordedAt": "2026-10-12",
+     "answered": 4,
+     "graded": 0,
+     "right": 0,
+     "refused": 0,
+     "interval": null,
+     "speed": {
+      "n": 4,
+      "p50": 17769,
+      "p95": 18115,
+      "mean": 16853
+     },
+     "cost": {
+      "total": 0.003149,
+      "tokens": 62977
+     },
+     "headline": {
+      "value": 0.5,
+      "display": "1 of 2"
+     }
+    },
+    "kev-4b": {
+     "model": "jaredpalmer/kev-4b-20260924",
+     "recordedAt": "2026-10-12",
+     "answered": 4,
+     "graded": 0,
+     "right": 0,
+     "refused": 0,
+     "interval": null,
+     "speed": {
+      "n": 4,
+      "p50": 1694,
+      "p95": 1699,
+      "mean": 1501
+     },
+     "cost": {
+      "total": 0.000578,
+      "tokens": 13771
      },
      "headline": {
       "value": 0,
@@ -17970,6 +19652,58 @@
       "value": 0.95,
       "display": "285 of 300"
      }
+    },
+    "solar-decide": {
+     "model": "upstage/solar-decide-20260928",
+     "recordedAt": "2026-10-12",
+     "answered": 300,
+     "graded": 300,
+     "right": 254,
+     "refused": 0,
+     "interval": {
+      "low": 0.8015,
+      "high": 0.883
+     },
+     "speed": {
+      "n": 300,
+      "p50": 16383,
+      "p95": 20083,
+      "mean": 16095
+     },
+     "cost": {
+      "total": 0.108509,
+      "tokens": 2170180
+     },
+     "headline": {
+      "value": 0.8467,
+      "display": "254 of 300"
+     }
+    },
+    "kev-4b": {
+     "model": "jaredpalmer/kev-4b-20260924",
+     "recordedAt": "2026-10-12",
+     "answered": 300,
+     "graded": 300,
+     "right": 247,
+     "refused": 0,
+     "interval": {
+      "low": 0.7762,
+      "high": 0.8623
+     },
+     "speed": {
+      "n": 300,
+      "p50": 1234,
+      "p95": 1460,
+      "mean": 1268
+     },
+     "cost": {
+      "total": 0.017248,
+      "tokens": 410675
+     },
+     "headline": {
+      "value": 0.8233,
+      "display": "247 of 300"
+     }
     }
    },
    "previous": null,
@@ -18384,6 +20118,58 @@
      "cost": {
       "total": 0,
       "tokens": 47255
+     },
+     "headline": {
+      "value": 1,
+      "display": "90 of 90"
+     }
+    },
+    "solar-decide": {
+     "model": "upstage/solar-decide-20260928",
+     "recordedAt": "2026-10-12",
+     "answered": 90,
+     "graded": 90,
+     "right": 90,
+     "refused": 0,
+     "interval": {
+      "low": 0.9591,
+      "high": 1
+     },
+     "speed": {
+      "n": 90,
+      "p50": 16232,
+      "p95": 20615,
+      "mean": 15855
+     },
+     "cost": {
+      "total": 0.017994,
+      "tokens": 359875
+     },
+     "headline": {
+      "value": 1,
+      "display": "90 of 90"
+     }
+    },
+    "kev-4b": {
+     "model": "jaredpalmer/kev-4b-20260924",
+     "recordedAt": "2026-10-12",
+     "answered": 90,
+     "graded": 90,
+     "right": 90,
+     "refused": 0,
+     "interval": {
+      "low": 0.9591,
+      "high": 1
+     },
+     "speed": {
+      "n": 90,
+      "p50": 1176,
+      "p95": 2706,
+      "mean": 1480
+     },
+     "cost": {
+      "total": 0.002522,
+      "tokens": 60039
      },
      "headline": {
       "value": 1,
@@ -18809,6 +20595,58 @@
       "value": 1,
       "display": "240 of 240"
      }
+    },
+    "solar-decide": {
+     "model": "upstage/solar-decide-20260928",
+     "recordedAt": "2026-10-12",
+     "answered": 240,
+     "graded": 240,
+     "right": 240,
+     "refused": 0,
+     "interval": {
+      "low": 0.9842,
+      "high": 1
+     },
+     "speed": {
+      "n": 240,
+      "p50": 17311,
+      "p95": 23185,
+      "mean": 17446
+     },
+     "cost": {
+      "total": 0.040447,
+      "tokens": 808945
+     },
+     "headline": {
+      "value": 1,
+      "display": "240 of 240"
+     }
+    },
+    "kev-4b": {
+     "model": "jaredpalmer/kev-4b-20260924",
+     "recordedAt": "2026-10-12",
+     "answered": 240,
+     "graded": 240,
+     "right": 239,
+     "refused": 0,
+     "interval": {
+      "low": 0.9768,
+      "high": 0.9993
+     },
+     "speed": {
+      "n": 240,
+      "p50": 905,
+      "p95": 1839,
+      "mean": 973
+     },
+     "cost": {
+      "total": 0.005412,
+      "tokens": 128853
+     },
+     "headline": {
+      "value": 0.9958,
+      "display": "239 of 240"
+     }
     }
    },
    "previous": null,
@@ -19123,27 +20961,27 @@
     "clef-flash": {
      "model": "cloudflare/clef-flash",
      "recordedAt": "2026-10-12",
-     "answered": 372,
-     "graded": 372,
-     "right": 361,
+     "answered": 380,
+     "graded": 380,
+     "right": 369,
      "refused": 0,
      "interval": {
-      "low": 0.9478,
-      "high": 0.9834
+      "low": 0.9489,
+      "high": 0.9838
      },
      "speed": {
-      "n": 372,
-      "p50": 432,
-      "p95": 928,
-      "mean": 507
+      "n": 380,
+      "p50": 433,
+      "p95": 947,
+      "mean": 514
      },
      "cost": {
-      "total": 0.011776,
-      "tokens": 309903
+      "total": 0.012044,
+      "tokens": 316951
      },
      "headline": {
-      "value": 0.9704,
-      "display": "361 of 372"
+      "value": 0.9711,
+      "display": "369 of 380"
      }
     },
     "clef": {
@@ -19222,6 +21060,58 @@
      "headline": {
       "value": 0.9974,
       "display": "379 of 380"
+     }
+    },
+    "solar-decide": {
+     "model": "upstage/solar-decide-20260928",
+     "recordedAt": "2026-10-12",
+     "answered": 380,
+     "graded": 380,
+     "right": 338,
+     "refused": 0,
+     "interval": {
+      "low": 0.854,
+      "high": 0.9172
+     },
+     "speed": {
+      "n": 380,
+      "p50": 15858,
+      "p95": 20861,
+      "mean": 16030
+     },
+     "cost": {
+      "total": 0.053437,
+      "tokens": 1068744
+     },
+     "headline": {
+      "value": 0.8895,
+      "display": "338 of 380"
+     }
+    },
+    "kev-4b": {
+     "model": "jaredpalmer/kev-4b-20260924",
+     "recordedAt": "2026-10-12",
+     "answered": 380,
+     "graded": 380,
+     "right": 362,
+     "refused": 0,
+     "interval": {
+      "low": 0.9264,
+      "high": 0.9698
+     },
+     "speed": {
+      "n": 380,
+      "p50": 823,
+      "p95": 1219,
+      "mean": 869
+     },
+     "cost": {
+      "total": 0.008296,
+      "tokens": 197531
+     },
+     "headline": {
+      "value": 0.9526,
+      "display": "362 of 380"
      }
     }
    },
@@ -19538,6 +21428,32 @@
       "display": "99.3%"
      }
     },
+    "clef-flash": {
+     "model": "cloudflare/clef-flash",
+     "recordedAt": "2026-10-12",
+     "answered": 400,
+     "graded": 400,
+     "right": 388,
+     "refused": 0,
+     "interval": {
+      "low": 0.9483,
+      "high": 0.9828
+     },
+     "speed": {
+      "n": 400,
+      "p50": 442,
+      "p95": 922,
+      "mean": 512
+     },
+     "cost": {
+      "total": 0.013196,
+      "tokens": 347265
+     },
+     "headline": {
+      "value": 0.97,
+      "display": "97.0%"
+     }
+    },
     "clef": {
      "model": "cloudflare/clef",
      "recordedAt": "2026-10-12",
@@ -19614,6 +21530,58 @@
      "headline": {
       "value": 0.995,
       "display": "99.5%"
+     }
+    },
+    "solar-decide": {
+     "model": "upstage/solar-decide-20260928",
+     "recordedAt": "2026-10-12",
+     "answered": 400,
+     "graded": 400,
+     "right": 362,
+     "refused": 0,
+     "interval": {
+      "low": 0.8723,
+      "high": 0.93
+     },
+     "speed": {
+      "n": 400,
+      "p50": 15148,
+      "p95": 21678,
+      "mean": 12741
+     },
+     "cost": {
+      "total": 0.060897,
+      "tokens": 1217950
+     },
+     "headline": {
+      "value": 0.905,
+      "display": "90.5%"
+     }
+    },
+    "kev-4b": {
+     "model": "jaredpalmer/kev-4b-20260924",
+     "recordedAt": "2026-10-12",
+     "answered": 400,
+     "graded": 400,
+     "right": 306,
+     "refused": 0,
+     "interval": {
+      "low": 0.721,
+      "high": 0.8039
+     },
+     "speed": {
+      "n": 400,
+      "p50": 893,
+      "p95": 1211,
+      "mean": 899
+     },
+     "cost": {
+      "total": 0.007813,
+      "tokens": 186028
+     },
+     "headline": {
+      "value": 0.765,
+      "display": "76.5%"
      }
     }
    },
@@ -19931,27 +21899,27 @@
     "clef-flash": {
      "model": "cloudflare/clef-flash",
      "recordedAt": "2026-10-12",
-     "answered": 4,
-     "graded": 4,
-     "right": 0,
+     "answered": 71,
+     "graded": 71,
+     "right": 35,
      "refused": 0,
      "interval": {
-      "low": 0,
-      "high": 0.4899
+      "low": 0.38,
+      "high": 0.6066
      },
      "speed": {
-      "n": 4,
-      "p50": 1356,
-      "p95": 1594,
-      "mean": 963
+      "n": 71,
+      "p50": 1139,
+      "p95": 1823,
+      "mean": 1053
      },
      "cost": {
-      "total": 0.000727,
-      "tokens": 19139
+      "total": 0.013335,
+      "tokens": 350922
      },
      "headline": {
-      "value": 0,
-      "display": "0 of 4"
+      "value": 0.493,
+      "display": "35 of 71"
      }
     },
     "clef": {
@@ -20030,6 +21998,58 @@
      "headline": {
       "value": 0.507,
       "display": "36 of 71"
+     }
+    },
+    "solar-decide": {
+     "model": "upstage/solar-decide-20260928",
+     "recordedAt": "2026-10-12",
+     "answered": 71,
+     "graded": 71,
+     "right": 37,
+     "refused": 0,
+     "interval": {
+      "low": 0.4069,
+      "high": 0.6332
+     },
+     "speed": {
+      "n": 71,
+      "p50": 19059,
+      "p95": 25000,
+      "mean": 19413
+     },
+     "cost": {
+      "total": 0.08231,
+      "tokens": 1646201
+     },
+     "headline": {
+      "value": 0.5211,
+      "display": "37 of 71"
+     }
+    },
+    "kev-4b": {
+     "model": "jaredpalmer/kev-4b-20260924",
+     "recordedAt": "2026-10-12",
+     "answered": 71,
+     "graded": 71,
+     "right": 37,
+     "refused": 0,
+     "interval": {
+      "low": 0.4069,
+      "high": 0.6332
+     },
+     "speed": {
+      "n": 71,
+      "p50": 11485,
+      "p95": 12604,
+      "mean": 10853
+     },
+     "cost": {
+      "total": 0.014421,
+      "tokens": 343360
+     },
+     "headline": {
+      "value": 0.5211,
+      "display": "37 of 71"
      }
     }
    },
@@ -20269,53 +22289,53 @@
     "solar-decide-flash": {
      "model": "upstage/solar-decide-flash-20261008",
      "recordedAt": "2026-10-12",
-     "answered": 61,
-     "graded": 61,
-     "right": 38,
+     "answered": 480,
+     "graded": 480,
+     "right": 265,
      "refused": 0,
      "interval": {
-      "low": 0.4975,
-      "high": 0.7339
+      "low": 0.5074,
+      "high": 0.596
      },
      "speed": {
-      "n": 61,
-      "p50": 1183,
-      "p95": 1486,
-      "mean": 1129
+      "n": 480,
+      "p50": 1185,
+      "p95": 1776,
+      "mean": 1136
      },
      "cost": {
-      "total": 0.065406,
-      "tokens": 1308114
+      "total": 0.520675,
+      "tokens": 10413485
      },
      "headline": {
-      "value": 0.623,
-      "display": "62.3%"
+      "value": 0.5521,
+      "display": "55.2%"
      }
     },
     "pplx-decider": {
      "model": "perplexity/pplx-decider-v1.1-27b-20261006",
      "recordedAt": "2026-10-12",
-     "answered": 215,
-     "graded": 215,
-     "right": 110,
+     "answered": 480,
+     "graded": 480,
+     "right": 240,
      "refused": 0,
      "interval": {
-      "low": 0.4452,
-      "high": 0.5777
+      "low": 0.4554,
+      "high": 0.5446
      },
      "speed": {
-      "n": 215,
-      "p50": 626,
-      "p95": 1221,
-      "mean": 742
+      "n": 480,
+      "p50": 603,
+      "p95": 1283,
+      "mean": 726
      },
      "cost": {
-      "total": 0.101317,
-      "tokens": 5065870
+      "total": 0.228472,
+      "tokens": 11423630
      },
      "headline": {
-      "value": 0.5116,
-      "display": "51.2%"
+      "value": 0.5,
+      "display": "50.0%"
      }
     },
     "liquid-d1": {
@@ -20347,27 +22367,27 @@
     "clef-flash": {
      "model": "cloudflare/clef-flash",
      "recordedAt": "2026-10-12",
-     "answered": 5,
-     "graded": 5,
-     "right": 2,
+     "answered": 480,
+     "graded": 480,
+     "right": 246,
      "refused": 0,
      "interval": {
-      "low": 0.1176,
-      "high": 0.7693
+      "low": 0.4679,
+      "high": 0.5569
      },
      "speed": {
-      "n": 5,
-      "p50": 1361,
-      "p95": 1695,
-      "mean": 1213
+      "n": 480,
+      "p50": 661,
+      "p95": 1606,
+      "mean": 896
      },
      "cost": {
-      "total": 0.000829,
-      "tokens": 21803
+      "total": 0.08338,
+      "tokens": 2194190
      },
      "headline": {
-      "value": 0.4,
-      "display": "40.0%"
+      "value": 0.5125,
+      "display": "51.2%"
      }
     },
     "clef": {
@@ -20399,27 +22419,27 @@
     "tev1-4b": {
      "model": "togethercomputer/tev1-4b-experimental-20260923",
      "recordedAt": "2026-10-12",
-     "answered": 380,
-     "graded": 380,
-     "right": 192,
+     "answered": 480,
+     "graded": 480,
+     "right": 251,
      "refused": 0,
      "interval": {
-      "low": 0.4552,
-      "high": 0.5552
+      "low": 0.4782,
+      "high": 0.5672
      },
      "speed": {
-      "n": 380,
-      "p50": 1184,
-      "p95": 1611,
-      "mean": 1190
+      "n": 480,
+      "p50": 1177,
+      "p95": 1610,
+      "mean": 1189
      },
      "cost": {
-      "total": 0.322999,
-      "tokens": 7690455
+      "total": 0.406771,
+      "tokens": 9685030
      },
      "headline": {
-      "value": 0.5053,
-      "display": "50.5%"
+      "value": 0.5229,
+      "display": "52.3%"
      }
     },
     "mercury-decide": {
@@ -20446,6 +22466,58 @@
      "headline": {
       "value": 0.4917,
       "display": "49.2%"
+     }
+    },
+    "solar-decide": {
+     "model": "upstage/solar-decide-20260928",
+     "recordedAt": "2026-10-12",
+     "answered": 480,
+     "graded": 480,
+     "right": 236,
+     "refused": 0,
+     "interval": {
+      "low": 0.4472,
+      "high": 0.5363
+     },
+     "speed": {
+      "n": 480,
+      "p50": 17611,
+      "p95": 22389,
+      "mean": 17632
+     },
+     "cost": {
+      "total": 0.520674,
+      "tokens": 10413485
+     },
+     "headline": {
+      "value": 0.4917,
+      "display": "49.2%"
+     }
+    },
+    "kev-4b": {
+     "model": "jaredpalmer/kev-4b-20260924",
+     "recordedAt": "2026-10-12",
+     "answered": 480,
+     "graded": 480,
+     "right": 262,
+     "refused": 0,
+     "interval": {
+      "low": 0.5011,
+      "high": 0.5898
+     },
+     "speed": {
+      "n": 480,
+      "p50": 14795,
+      "p95": 17952,
+      "mean": 13793
+     },
+     "cost": {
+      "total": 0.09902,
+      "tokens": 2357614
+     },
+     "headline": {
+      "value": 0.5458,
+      "display": "54.6%"
      }
     }
    },
@@ -20688,53 +22760,53 @@
     "solar-decide-flash": {
      "model": "upstage/solar-decide-flash-20261008",
      "recordedAt": "2026-10-12",
-     "answered": 8,
-     "graded": 2,
-     "right": 2,
+     "answered": 312,
+     "graded": 73,
+     "right": 32,
      "refused": 0,
      "interval": {
-      "low": 0.3424,
-      "high": 1
+      "low": 0.3305,
+      "high": 0.5524
      },
      "speed": {
-      "n": 8,
-      "p50": 1310,
-      "p95": 1973,
-      "mean": 1256
+      "n": 312,
+      "p50": 1035,
+      "p95": 1646,
+      "mean": 1037
      },
      "cost": {
-      "total": 0.006323,
-      "tokens": 126469
+      "total": 0.246187,
+      "tokens": 4923746
      },
      "headline": {
-      "value": 1,
-      "display": "2 of 2"
+      "value": 0.4384,
+      "display": "32 of 73"
      }
     },
     "pplx-decider": {
      "model": "perplexity/pplx-decider-v1.1-27b-20261006",
      "recordedAt": "2026-10-12",
-     "answered": 16,
-     "graded": 2,
-     "right": 1,
+     "answered": 312,
+     "graded": 73,
+     "right": 35,
      "refused": 0,
      "interval": {
-      "low": 0.0945,
-      "high": 0.9055
+      "low": 0.3688,
+      "high": 0.5922
      },
      "speed": {
-      "n": 16,
-      "p50": 733,
-      "p95": 1556,
-      "mean": 754
+      "n": 312,
+      "p50": 467,
+      "p95": 929,
+      "mean": 714
      },
      "cost": {
-      "total": 0.004792,
-      "tokens": 239615
+      "total": 0.093464,
+      "tokens": 4673210
      },
      "headline": {
-      "value": 0.5,
-      "display": "1 of 2"
+      "value": 0.4795,
+      "display": "35 of 73"
      }
     },
     "liquid-d1": {
@@ -20763,30 +22835,82 @@
       "display": "33 of 73"
      }
     },
+    "clef-flash": {
+     "model": "cloudflare/clef-flash",
+     "recordedAt": "2026-10-12",
+     "answered": 312,
+     "graded": 73,
+     "right": 32,
+     "refused": 0,
+     "interval": {
+      "low": 0.3305,
+      "high": 0.5524
+     },
+     "speed": {
+      "n": 312,
+      "p50": 909,
+      "p95": 1376,
+      "mean": 820
+     },
+     "cost": {
+      "total": 0.04148,
+      "tokens": 1091578
+     },
+     "headline": {
+      "value": 0.4384,
+      "display": "32 of 73"
+     }
+    },
     "clef": {
      "model": "cloudflare/clef",
      "recordedAt": "2026-10-12",
-     "answered": 236,
-     "graded": 63,
-     "right": 29,
+     "answered": 312,
+     "graded": 73,
+     "right": 33,
      "refused": 0,
      "interval": {
       "low": 0.3431,
-      "high": 0.5821
+      "high": 0.5658
      },
      "speed": {
-      "n": 236,
-      "p50": 611,
-      "p95": 1288,
-      "mean": 719
+      "n": 312,
+      "p50": 609,
+      "p95": 1240,
+      "mean": 718
      },
      "cost": {
-      "total": 0.198204,
-      "tokens": 825848
+      "total": 0.261979,
+      "tokens": 1091578
      },
      "headline": {
-      "value": 0.4603,
-      "display": "29 of 63"
+      "value": 0.4521,
+      "display": "33 of 73"
+     }
+    },
+    "tev1-4b": {
+     "model": "togethercomputer/tev1-4b-experimental-20260923",
+     "recordedAt": "2026-10-12",
+     "answered": 312,
+     "graded": 73,
+     "right": 37,
+     "refused": 0,
+     "interval": {
+      "low": 0.3947,
+      "high": 0.6183
+     },
+     "speed": {
+      "n": 312,
+      "p50": 1022,
+      "p95": 1282,
+      "mean": 1026
+     },
+     "cost": {
+      "total": 0.190797,
+      "tokens": 4542794
+     },
+     "headline": {
+      "value": 0.5068,
+      "display": "37 of 73"
      }
     },
     "mercury-decide": {
@@ -20813,6 +22937,58 @@
      "headline": {
       "value": 0.4658,
       "display": "34 of 73"
+     }
+    },
+    "solar-decide": {
+     "model": "upstage/solar-decide-20260928",
+     "recordedAt": "2026-10-12",
+     "answered": 312,
+     "graded": 73,
+     "right": 33,
+     "refused": 0,
+     "interval": {
+      "low": 0.3431,
+      "high": 0.5658
+     },
+     "speed": {
+      "n": 312,
+      "p50": 17749,
+      "p95": 23662,
+      "mean": 17870
+     },
+     "cost": {
+      "total": 0.246187,
+      "tokens": 4923746
+     },
+     "headline": {
+      "value": 0.4521,
+      "display": "33 of 73"
+     }
+    },
+    "kev-4b": {
+     "model": "jaredpalmer/kev-4b-20260924",
+     "recordedAt": "2026-10-12",
+     "answered": 312,
+     "graded": 73,
+     "right": 33,
+     "refused": 0,
+     "interval": {
+      "low": 0.3431,
+      "high": 0.5658
+     },
+     "speed": {
+      "n": 312,
+      "p50": 3419,
+      "p95": 3957,
+      "mean": 3250
+     },
+     "cost": {
+      "total": 0.043671,
+      "tokens": 1039786
+     },
+     "headline": {
+      "value": 0.4521,
+      "display": "33 of 73"
      }
     }
    },
@@ -21050,6 +23226,58 @@
       "display": "12 of 60"
      }
     },
+    "solar-decide-flash": {
+     "model": "upstage/solar-decide-flash-20261008",
+     "recordedAt": "2026-10-12",
+     "answered": 60,
+     "graded": 60,
+     "right": 18,
+     "refused": 0,
+     "interval": {
+      "low": 0.199,
+      "high": 0.4251
+     },
+     "speed": {
+      "n": 60,
+      "p50": 1150,
+      "p95": 1941,
+      "mean": 1210
+     },
+     "cost": {
+      "total": 0.085148,
+      "tokens": 1702968
+     },
+     "headline": {
+      "value": 0.3,
+      "display": "18 of 60"
+     }
+    },
+    "pplx-decider": {
+     "model": "perplexity/pplx-decider-v1.1-27b-20261006",
+     "recordedAt": "2026-10-12",
+     "answered": 60,
+     "graded": 60,
+     "right": 54,
+     "refused": 0,
+     "interval": {
+      "low": 0.7985,
+      "high": 0.9534
+     },
+     "speed": {
+      "n": 60,
+      "p50": 725,
+      "p95": 1256,
+      "mean": 777
+     },
+     "cost": {
+      "total": 0.032947,
+      "tokens": 1647368
+     },
+     "headline": {
+      "value": 0.9,
+      "display": "54 of 60"
+     }
+    },
     "liquid-d1": {
      "model": "liquid/d1-20260930",
      "recordedAt": "2026-10-12",
@@ -21076,6 +23304,84 @@
       "display": "52 of 60"
      }
     },
+    "clef-flash": {
+     "model": "cloudflare/clef-flash",
+     "recordedAt": "2026-10-12",
+     "answered": 60,
+     "graded": 60,
+     "right": 34,
+     "refused": 0,
+     "interval": {
+      "low": 0.441,
+      "high": 0.6843
+     },
+     "speed": {
+      "n": 60,
+      "p50": 635,
+      "p95": 2572,
+      "mean": 1078
+     },
+     "cost": {
+      "total": 0.016593,
+      "tokens": 436661
+     },
+     "headline": {
+      "value": 0.5667,
+      "display": "34 of 60"
+     }
+    },
+    "clef": {
+     "model": "cloudflare/clef",
+     "recordedAt": "2026-10-12",
+     "answered": 60,
+     "graded": 60,
+     "right": 53,
+     "refused": 0,
+     "interval": {
+      "low": 0.7782,
+      "high": 0.9423
+     },
+     "speed": {
+      "n": 60,
+      "p50": 901,
+      "p95": 1368,
+      "mean": 949
+     },
+     "cost": {
+      "total": 0.104799,
+      "tokens": 436661
+     },
+     "headline": {
+      "value": 0.8833,
+      "display": "53 of 60"
+     }
+    },
+    "tev1-4b": {
+     "model": "togethercomputer/tev1-4b-experimental-20260923",
+     "recordedAt": "2026-10-12",
+     "answered": 60,
+     "graded": 60,
+     "right": 50,
+     "refused": 0,
+     "interval": {
+      "low": 0.7197,
+      "high": 0.9069
+     },
+     "speed": {
+      "n": 60,
+      "p50": 1317,
+      "p95": 2029,
+      "mean": 1395
+     },
+     "cost": {
+      "total": 0.069042,
+      "tokens": 1643864
+     },
+     "headline": {
+      "value": 0.8333,
+      "display": "50 of 60"
+     }
+    },
     "mercury-decide": {
      "model": "inception/mercury-decide-20260930",
      "recordedAt": "2026-10-12",
@@ -21100,6 +23406,58 @@
      "headline": {
       "value": 0.8833,
       "display": "53 of 60"
+     }
+    },
+    "solar-decide": {
+     "model": "upstage/solar-decide-20260928",
+     "recordedAt": "2026-10-12",
+     "answered": 60,
+     "graded": 60,
+     "right": 24,
+     "refused": 0,
+     "interval": {
+      "low": 0.2857,
+      "high": 0.5263
+     },
+     "speed": {
+      "n": 60,
+      "p50": 18556,
+      "p95": 23460,
+      "mean": 18202
+     },
+     "cost": {
+      "total": 0.085148,
+      "tokens": 1702968
+     },
+     "headline": {
+      "value": 0.4,
+      "display": "24 of 60"
+     }
+    },
+    "kev-4b": {
+     "model": "jaredpalmer/kev-4b-20260924",
+     "recordedAt": "2026-10-12",
+     "answered": 60,
+     "graded": 60,
+     "right": 50,
+     "refused": 0,
+     "interval": {
+      "low": 0.7197,
+      "high": 0.9069
+     },
+     "speed": {
+      "n": 60,
+      "p50": 14646,
+      "p95": 17509,
+      "mean": 13338
+     },
+     "cost": {
+      "total": 0.017515,
+      "tokens": 417026
+     },
+     "headline": {
+      "value": 0.8333,
+      "display": "50 of 60"
      }
     }
    },
@@ -21335,6 +23693,58 @@
       "display": "30.0%"
      }
     },
+    "solar-decide-flash": {
+     "model": "upstage/solar-decide-flash-20261008",
+     "recordedAt": "2026-10-12",
+     "answered": 140,
+     "graded": 140,
+     "right": 54,
+     "refused": 0,
+     "interval": {
+      "low": 0.3092,
+      "high": 0.4684
+     },
+     "speed": {
+      "n": 140,
+      "p50": 1190,
+      "p95": 1771,
+      "mean": 1119
+     },
+     "cost": {
+      "total": 0.091279,
+      "tokens": 1825580
+     },
+     "headline": {
+      "value": 0.3857,
+      "display": "38.6%"
+     }
+    },
+    "pplx-decider": {
+     "model": "perplexity/pplx-decider-v1.1-27b-20261006",
+     "recordedAt": "2026-10-12",
+     "answered": 140,
+     "graded": 140,
+     "right": 140,
+     "refused": 0,
+     "interval": {
+      "low": 0.9733,
+      "high": 1
+     },
+     "speed": {
+      "n": 140,
+      "p50": 455,
+      "p95": 940,
+      "mean": 618
+     },
+     "cost": {
+      "total": 0.0387,
+      "tokens": 1934975
+     },
+     "headline": {
+      "value": 1,
+      "display": "100.0%"
+     }
+    },
     "liquid-d1": {
      "model": "liquid/d1-20260930",
      "recordedAt": "2026-10-12",
@@ -21361,6 +23771,84 @@
       "display": "91.4%"
      }
     },
+    "clef-flash": {
+     "model": "cloudflare/clef-flash",
+     "recordedAt": "2026-10-12",
+     "answered": 140,
+     "graded": 140,
+     "right": 29,
+     "refused": 0,
+     "interval": {
+      "low": 0.1483,
+      "high": 0.2817
+     },
+     "speed": {
+      "n": 140,
+      "p50": 648,
+      "p95": 1181,
+      "mean": 783
+     },
+     "cost": {
+      "total": 0.015346,
+      "tokens": 403837
+     },
+     "headline": {
+      "value": 0.2071,
+      "display": "20.7%"
+     }
+    },
+    "clef": {
+     "model": "cloudflare/clef",
+     "recordedAt": "2026-10-12",
+     "answered": 140,
+     "graded": 140,
+     "right": 70,
+     "refused": 0,
+     "interval": {
+      "low": 0.4183,
+      "high": 0.5817
+     },
+     "speed": {
+      "n": 140,
+      "p50": 565,
+      "p95": 903,
+      "mean": 617
+     },
+     "cost": {
+      "total": 0.096921,
+      "tokens": 403837
+     },
+     "headline": {
+      "value": 0.5,
+      "display": "50.0%"
+     }
+    },
+    "tev1-4b": {
+     "model": "togethercomputer/tev1-4b-experimental-20260923",
+     "recordedAt": "2026-10-12",
+     "answered": 140,
+     "graded": 140,
+     "right": 67,
+     "refused": 0,
+     "interval": {
+      "low": 0.3975,
+      "high": 0.5608
+     },
+     "speed": {
+      "n": 140,
+      "p50": 844,
+      "p95": 1065,
+      "mean": 824
+     },
+     "cost": {
+      "total": 0.068393,
+      "tokens": 1628395
+     },
+     "headline": {
+      "value": 0.4786,
+      "display": "47.9%"
+     }
+    },
     "mercury-decide": {
      "model": "inception/mercury-decide-20260930",
      "recordedAt": "2026-10-12",
@@ -21385,6 +23873,58 @@
      "headline": {
       "value": 0.9857,
       "display": "98.6%"
+     }
+    },
+    "solar-decide": {
+     "model": "upstage/solar-decide-20260928",
+     "recordedAt": "2026-10-12",
+     "answered": 140,
+     "graded": 140,
+     "right": 52,
+     "refused": 0,
+     "interval": {
+      "low": 0.2958,
+      "high": 0.4539
+     },
+     "speed": {
+      "n": 140,
+      "p50": 19661,
+      "p95": 25760,
+      "mean": 19863
+     },
+     "cost": {
+      "total": 0.091279,
+      "tokens": 1825580
+     },
+     "headline": {
+      "value": 0.3714,
+      "display": "37.1%"
+     }
+    },
+    "kev-4b": {
+     "model": "jaredpalmer/kev-4b-20260924",
+     "recordedAt": "2026-10-12",
+     "answered": 140,
+     "graded": 140,
+     "right": 92,
+     "refused": 0,
+     "interval": {
+      "low": 0.5753,
+      "high": 0.7306
+     },
+     "speed": {
+      "n": 140,
+      "p50": 3219,
+      "p95": 4252,
+      "mean": 3288
+     },
+     "cost": {
+      "total": 0.016862,
+      "tokens": 401471
+     },
+     "headline": {
+      "value": 0.6571,
+      "display": "65.7%"
      }
     }
    },
@@ -21530,6 +24070,32 @@
       "display": "22.2%"
      }
     },
+    "pplx-decider": {
+     "model": "perplexity/pplx-decider-v1.1-27b-20261006",
+     "recordedAt": "2026-10-12",
+     "answered": 36,
+     "graded": 36,
+     "right": 8,
+     "refused": 0,
+     "interval": {
+      "low": 0.1172,
+      "high": 0.3809
+     },
+     "speed": {
+      "n": 36,
+      "p50": 469,
+      "p95": 829,
+      "mean": 527
+     },
+     "cost": {
+      "total": 0.000793,
+      "tokens": 39672
+     },
+     "headline": {
+      "value": 0.2222,
+      "display": "22.2%"
+     }
+    },
     "liquid-d1": {
      "model": "liquid/d1-20260930",
      "recordedAt": "2026-10-12",
@@ -21556,30 +24122,56 @@
       "display": "27.8%"
      }
     },
+    "clef-flash": {
+     "model": "cloudflare/clef-flash",
+     "recordedAt": "2026-10-12",
+     "answered": 36,
+     "graded": 36,
+     "right": 10,
+     "refused": 0,
+     "interval": {
+      "low": 0.1585,
+      "high": 0.4399
+     },
+     "speed": {
+      "n": 36,
+      "p50": 623,
+      "p95": 1940,
+      "mean": 845
+     },
+     "cost": {
+      "total": 0.000909,
+      "tokens": 23916
+     },
+     "headline": {
+      "value": 0.2778,
+      "display": "27.8%"
+     }
+    },
     "clef": {
      "model": "cloudflare/clef",
      "recordedAt": "2026-10-12",
-     "answered": 2,
-     "graded": 2,
-     "right": 0,
+     "answered": 36,
+     "graded": 36,
+     "right": 12,
      "refused": 0,
      "interval": {
-      "low": 0,
-      "high": 0.6576
+      "low": 0.2021,
+      "high": 0.4967
      },
      "speed": {
-      "n": 2,
-      "p50": 1305,
-      "p95": 1305,
-      "mean": 1140
+      "n": 36,
+      "p50": 450,
+      "p95": 1116,
+      "mean": 542
      },
      "cost": {
-      "total": 0.000314,
-      "tokens": 1310
+      "total": 0.005739,
+      "tokens": 23916
      },
      "headline": {
-      "value": 0,
-      "display": "0%"
+      "value": 0.3333,
+      "display": "33.3%"
      }
     },
     "mercury-decide": {
@@ -21751,6 +24343,32 @@
       "display": "100%"
      }
     },
+    "pplx-decider": {
+     "model": "perplexity/pplx-decider-v1.1-27b-20261006",
+     "recordedAt": "2026-10-12",
+     "answered": 40,
+     "graded": 40,
+     "right": 40,
+     "refused": 0,
+     "interval": {
+      "low": 0.9124,
+      "high": 1
+     },
+     "speed": {
+      "n": 40,
+      "p50": 460,
+      "p95": 807,
+      "mean": 493
+     },
+     "cost": {
+      "total": 0.001295,
+      "tokens": 64763
+     },
+     "headline": {
+      "value": 1,
+      "display": "100%"
+     }
+    },
     "liquid-d1": {
      "model": "liquid/d1-20260930",
      "recordedAt": "2026-10-12",
@@ -21777,30 +24395,56 @@
       "display": "100%"
      }
     },
+    "clef-flash": {
+     "model": "cloudflare/clef-flash",
+     "recordedAt": "2026-10-12",
+     "answered": 40,
+     "graded": 40,
+     "right": 38,
+     "refused": 0,
+     "interval": {
+      "low": 0.835,
+      "high": 0.9862
+     },
+     "speed": {
+      "n": 40,
+      "p50": 631,
+      "p95": 1738,
+      "mean": 815
+     },
+     "cost": {
+      "total": 0.001292,
+      "tokens": 34001
+     },
+     "headline": {
+      "value": 0.95,
+      "display": "95.0%"
+     }
+    },
     "clef": {
      "model": "cloudflare/clef",
      "recordedAt": "2026-10-12",
-     "answered": 3,
-     "graded": 3,
-     "right": 3,
+     "answered": 40,
+     "graded": 40,
+     "right": 39,
      "refused": 0,
      "interval": {
-      "low": 0.4385,
-      "high": 1
+      "low": 0.8712,
+      "high": 0.9956
      },
      "speed": {
-      "n": 3,
-      "p50": 762,
-      "p95": 795,
-      "mean": 691
+      "n": 40,
+      "p50": 481,
+      "p95": 917,
+      "mean": 550
      },
      "cost": {
-      "total": 0.000611,
-      "tokens": 2546
+      "total": 0.00816,
+      "tokens": 34001
      },
      "headline": {
-      "value": 1,
-      "display": "100%"
+      "value": 0.975,
+      "display": "97.5%"
      }
     },
     "mercury-decide": {
@@ -21972,6 +24616,32 @@
       "display": "33.3%"
      }
     },
+    "pplx-decider": {
+     "model": "perplexity/pplx-decider-v1.1-27b-20261006",
+     "recordedAt": "2026-10-12",
+     "answered": 30,
+     "graded": 30,
+     "right": 27,
+     "refused": 0,
+     "interval": {
+      "low": 0.7438,
+      "high": 0.9654
+     },
+     "speed": {
+      "n": 30,
+      "p50": 469,
+      "p95": 721,
+      "mean": 504
+     },
+     "cost": {
+      "total": 0.000961,
+      "tokens": 48030
+     },
+     "headline": {
+      "value": 0.9,
+      "display": "90.0%"
+     }
+    },
     "liquid-d1": {
      "model": "liquid/d1-20260930",
      "recordedAt": "2026-10-12",
@@ -21996,6 +24666,58 @@
      "headline": {
       "value": 0.9667,
       "display": "96.7%"
+     }
+    },
+    "clef-flash": {
+     "model": "cloudflare/clef-flash",
+     "recordedAt": "2026-10-12",
+     "answered": 30,
+     "graded": 30,
+     "right": 10,
+     "refused": 0,
+     "interval": {
+      "low": 0.1923,
+      "high": 0.5122
+     },
+     "speed": {
+      "n": 30,
+      "p50": 629,
+      "p95": 1099,
+      "mean": 709
+     },
+     "cost": {
+      "total": 0.000951,
+      "tokens": 25020
+     },
+     "headline": {
+      "value": 0.3333,
+      "display": "33.3%"
+     }
+    },
+    "clef": {
+     "model": "cloudflare/clef",
+     "recordedAt": "2026-10-12",
+     "answered": 30,
+     "graded": 30,
+     "right": 27,
+     "refused": 0,
+     "interval": {
+      "low": 0.7438,
+      "high": 0.9654
+     },
+     "speed": {
+      "n": 30,
+      "p50": 458,
+      "p95": 1060,
+      "mean": 845
+     },
+     "cost": {
+      "total": 0.006005,
+      "tokens": 25020
+     },
+     "headline": {
+      "value": 0.9,
+      "display": "90.0%"
      }
     },
     "mercury-decide": {
@@ -22167,6 +24889,32 @@
       "display": "56.3%"
      }
     },
+    "pplx-decider": {
+     "model": "perplexity/pplx-decider-v1.1-27b-20261006",
+     "recordedAt": "2026-10-12",
+     "answered": 32,
+     "graded": 32,
+     "right": 24,
+     "refused": 0,
+     "interval": {
+      "low": 0.5789,
+      "high": 0.8675
+     },
+     "speed": {
+      "n": 32,
+      "p50": 570,
+      "p95": 1288,
+      "mean": 645
+     },
+     "cost": {
+      "total": 0.001413,
+      "tokens": 70638
+     },
+     "headline": {
+      "value": 0.75,
+      "display": "75.0%"
+     }
+    },
     "liquid-d1": {
      "model": "liquid/d1-20260930",
      "recordedAt": "2026-10-12",
@@ -22191,6 +24939,58 @@
      "headline": {
       "value": 0.75,
       "display": "75.0%"
+     }
+    },
+    "clef-flash": {
+     "model": "cloudflare/clef-flash",
+     "recordedAt": "2026-10-12",
+     "answered": 32,
+     "graded": 32,
+     "right": 23,
+     "refused": 0,
+     "interval": {
+      "low": 0.5463,
+      "high": 0.8444
+     },
+     "speed": {
+      "n": 32,
+      "p50": 732,
+      "p95": 1313,
+      "mean": 858
+     },
+     "cost": {
+      "total": 0.001251,
+      "tokens": 32922
+     },
+     "headline": {
+      "value": 0.7188,
+      "display": "71.9%"
+     }
+    },
+    "clef": {
+     "model": "cloudflare/clef",
+     "recordedAt": "2026-10-12",
+     "answered": 32,
+     "graded": 32,
+     "right": 25,
+     "refused": 0,
+     "interval": {
+      "low": 0.6124,
+      "high": 0.8898
+     },
+     "speed": {
+      "n": 32,
+      "p50": 638,
+      "p95": 1348,
+      "mean": 677
+     },
+     "cost": {
+      "total": 0.007901,
+      "tokens": 32922
+     },
+     "headline": {
+      "value": 0.7813,
+      "display": "78.1%"
      }
     },
     "mercury-decide": {
@@ -22362,6 +25162,32 @@
       "display": "77.1%"
      }
     },
+    "pplx-decider": {
+     "model": "perplexity/pplx-decider-v1.1-27b-20261006",
+     "recordedAt": "2026-10-12",
+     "answered": 48,
+     "graded": 48,
+     "right": 39,
+     "refused": 0,
+     "interval": {
+      "low": 0.6806,
+      "high": 0.8981
+     },
+     "speed": {
+      "n": 48,
+      "p50": 481,
+      "p95": 879,
+      "mean": 789
+     },
+     "cost": {
+      "total": 0.001492,
+      "tokens": 74592
+     },
+     "headline": {
+      "value": 0.8125,
+      "display": "81.3%"
+     }
+    },
     "liquid-d1": {
      "model": "liquid/d1-20260930",
      "recordedAt": "2026-10-12",
@@ -22386,6 +25212,58 @@
      "headline": {
       "value": 0.7917,
       "display": "79.2%"
+     }
+    },
+    "clef-flash": {
+     "model": "cloudflare/clef-flash",
+     "recordedAt": "2026-10-12",
+     "answered": 48,
+     "graded": 48,
+     "right": 43,
+     "refused": 0,
+     "interval": {
+      "low": 0.7783,
+      "high": 0.9547
+     },
+     "speed": {
+      "n": 48,
+      "p50": 675,
+      "p95": 1094,
+      "mean": 840
+     },
+     "cost": {
+      "total": 0.001434,
+      "tokens": 37728
+     },
+     "headline": {
+      "value": 0.8958,
+      "display": "89.6%"
+     }
+    },
+    "clef": {
+     "model": "cloudflare/clef",
+     "recordedAt": "2026-10-12",
+     "answered": 48,
+     "graded": 48,
+     "right": 39,
+     "refused": 0,
+     "interval": {
+      "low": 0.6806,
+      "high": 0.8981
+     },
+     "speed": {
+      "n": 48,
+      "p50": 543,
+      "p95": 857,
+      "mean": 570
+     },
+     "cost": {
+      "total": 0.009055,
+      "tokens": 37728
+     },
+     "headline": {
+      "value": 0.8125,
+      "display": "81.3%"
      }
     },
     "mercury-decide": {
@@ -22557,6 +25435,32 @@
       "display": "47.9%"
      }
     },
+    "pplx-decider": {
+     "model": "perplexity/pplx-decider-v1.1-27b-20261006",
+     "recordedAt": "2026-10-12",
+     "answered": 48,
+     "graded": 48,
+     "right": 22,
+     "refused": 0,
+     "interval": {
+      "low": 0.3258,
+      "high": 0.5971
+     },
+     "speed": {
+      "n": 48,
+      "p50": 472,
+      "p95": 787,
+      "mean": 509
+     },
+     "cost": {
+      "total": 0.00148,
+      "tokens": 74016
+     },
+     "headline": {
+      "value": 0.4583,
+      "display": "45.8%"
+     }
+    },
     "liquid-d1": {
      "model": "liquid/d1-20260930",
      "recordedAt": "2026-10-12",
@@ -22581,6 +25485,58 @@
      "headline": {
       "value": 0.4375,
       "display": "43.8%"
+     }
+    },
+    "clef-flash": {
+     "model": "cloudflare/clef-flash",
+     "recordedAt": "2026-10-12",
+     "answered": 48,
+     "graded": 48,
+     "right": 18,
+     "refused": 0,
+     "interval": {
+      "low": 0.2522,
+      "high": 0.5164
+     },
+     "speed": {
+      "n": 48,
+      "p50": 685,
+      "p95": 1098,
+      "mean": 823
+     },
+     "cost": {
+      "total": 0.001377,
+      "tokens": 36240
+     },
+     "headline": {
+      "value": 0.375,
+      "display": "37.5%"
+     }
+    },
+    "clef": {
+     "model": "cloudflare/clef",
+     "recordedAt": "2026-10-12",
+     "answered": 48,
+     "graded": 48,
+     "right": 24,
+     "refused": 0,
+     "interval": {
+      "low": 0.3639,
+      "high": 0.6361
+     },
+     "speed": {
+      "n": 48,
+      "p50": 516,
+      "p95": 1041,
+      "mean": 572
+     },
+     "cost": {
+      "total": 0.008698,
+      "tokens": 36240
+     },
+     "headline": {
+      "value": 0.5,
+      "display": "50.0%"
      }
     },
     "mercury-decide": {
@@ -22752,6 +25708,32 @@
       "display": "46.7%"
      }
     },
+    "pplx-decider": {
+     "model": "perplexity/pplx-decider-v1.1-27b-20261006",
+     "recordedAt": "2026-10-12",
+     "answered": 30,
+     "graded": 30,
+     "right": 17,
+     "refused": 0,
+     "interval": {
+      "low": 0.392,
+      "high": 0.7262
+     },
+     "speed": {
+      "n": 30,
+      "p50": 471,
+      "p95": 1636,
+      "mean": 566
+     },
+     "cost": {
+      "total": 0.000841,
+      "tokens": 42060
+     },
+     "headline": {
+      "value": 0.5667,
+      "display": "56.7%"
+     }
+    },
     "liquid-d1": {
      "model": "liquid/d1-20260930",
      "recordedAt": "2026-10-12",
@@ -22776,6 +25758,58 @@
      "headline": {
       "value": 0.6667,
       "display": "66.7%"
+     }
+    },
+    "clef-flash": {
+     "model": "cloudflare/clef-flash",
+     "recordedAt": "2026-10-12",
+     "answered": 30,
+     "graded": 30,
+     "right": 14,
+     "refused": 0,
+     "interval": {
+      "low": 0.3023,
+      "high": 0.6386
+     },
+     "speed": {
+      "n": 30,
+      "p50": 584,
+      "p95": 2385,
+      "mean": 878
+     },
+     "cost": {
+      "total": 0.000842,
+      "tokens": 22170
+     },
+     "headline": {
+      "value": 0.4667,
+      "display": "46.7%"
+     }
+    },
+    "clef": {
+     "model": "cloudflare/clef",
+     "recordedAt": "2026-10-12",
+     "answered": 30,
+     "graded": 30,
+     "right": 21,
+     "refused": 0,
+     "interval": {
+      "low": 0.5212,
+      "high": 0.8334
+     },
+     "speed": {
+      "n": 30,
+      "p50": 511,
+      "p95": 1132,
+      "mean": 576
+     },
+     "cost": {
+      "total": 0.005321,
+      "tokens": 22170
+     },
+     "headline": {
+      "value": 0.7,
+      "display": "70.0%"
      }
     },
     "mercury-decide": {
@@ -22947,6 +25981,32 @@
       "display": "100%"
      }
     },
+    "pplx-decider": {
+     "model": "perplexity/pplx-decider-v1.1-27b-20261006",
+     "recordedAt": "2026-10-12",
+     "answered": 11,
+     "graded": 11,
+     "right": 11,
+     "refused": 0,
+     "interval": {
+      "low": 0.7412,
+      "high": 1
+     },
+     "speed": {
+      "n": 11,
+      "p50": 1222,
+      "p95": 1905,
+      "mean": 1246
+     },
+     "cost": {
+      "total": 0.000597,
+      "tokens": 29859
+     },
+     "headline": {
+      "value": 1,
+      "display": "100%"
+     }
+    },
     "liquid-d1": {
      "model": "liquid/d1-20260930",
      "recordedAt": "2026-10-12",
@@ -22971,6 +26031,58 @@
      "headline": {
       "value": 0.9091,
       "display": "90.9%"
+     }
+    },
+    "clef-flash": {
+     "model": "cloudflare/clef-flash",
+     "recordedAt": "2026-10-12",
+     "answered": 11,
+     "graded": 11,
+     "right": 11,
+     "refused": 0,
+     "interval": {
+      "low": 0.7412,
+      "high": 1
+     },
+     "speed": {
+      "n": 11,
+      "p50": 1466,
+      "p95": 1978,
+      "mean": 1483
+     },
+     "cost": {
+      "total": 0.00047,
+      "tokens": 12378
+     },
+     "headline": {
+      "value": 1,
+      "display": "100%"
+     }
+    },
+    "clef": {
+     "model": "cloudflare/clef",
+     "recordedAt": "2026-10-12",
+     "answered": 11,
+     "graded": 11,
+     "right": 11,
+     "refused": 0,
+     "interval": {
+      "low": 0.7412,
+      "high": 1
+     },
+     "speed": {
+      "n": 11,
+      "p50": 1502,
+      "p95": 2718,
+      "mean": 1482
+     },
+     "cost": {
+      "total": 0.002971,
+      "tokens": 12378
+     },
+     "headline": {
+      "value": 1,
+      "display": "100%"
      }
     },
     "mercury-decide": {
@@ -23142,6 +26254,32 @@
       "display": "100%"
      }
     },
+    "pplx-decider": {
+     "model": "perplexity/pplx-decider-v1.1-27b-20261006",
+     "recordedAt": "2026-10-12",
+     "answered": 3,
+     "graded": 3,
+     "right": 3,
+     "refused": 0,
+     "interval": {
+      "low": 0.4385,
+      "high": 1
+     },
+     "speed": {
+      "n": 3,
+      "p50": 1565,
+      "p95": 1618,
+      "mean": 1501
+     },
+     "cost": {
+      "total": 0.000152,
+      "tokens": 7620
+     },
+     "headline": {
+      "value": 1,
+      "display": "100%"
+     }
+    },
     "liquid-d1": {
      "model": "liquid/d1-20260930",
      "recordedAt": "2026-10-12",
@@ -23162,6 +26300,58 @@
      "cost": {
       "total": 0.000409,
       "tokens": 10227
+     },
+     "headline": {
+      "value": 1,
+      "display": "100%"
+     }
+    },
+    "clef-flash": {
+     "model": "cloudflare/clef-flash",
+     "recordedAt": "2026-10-12",
+     "answered": 3,
+     "graded": 3,
+     "right": 3,
+     "refused": 0,
+     "interval": {
+      "low": 0.4385,
+      "high": 1
+     },
+     "speed": {
+      "n": 3,
+      "p50": 2311,
+      "p95": 2670,
+      "mean": 2251
+     },
+     "cost": {
+      "total": 0.000128,
+      "tokens": 3357
+     },
+     "headline": {
+      "value": 1,
+      "display": "100%"
+     }
+    },
+    "clef": {
+     "model": "cloudflare/clef",
+     "recordedAt": "2026-10-12",
+     "answered": 3,
+     "graded": 3,
+     "right": 3,
+     "refused": 0,
+     "interval": {
+      "low": 0.4385,
+      "high": 1
+     },
+     "speed": {
+      "n": 3,
+      "p50": 1603,
+      "p95": 1621,
+      "mean": 1568
+     },
+     "cost": {
+      "total": 0.000806,
+      "tokens": 3357
      },
      "headline": {
       "value": 1,
@@ -23337,6 +26527,32 @@
       "display": "75.0%"
      }
     },
+    "pplx-decider": {
+     "model": "perplexity/pplx-decider-v1.1-27b-20261006",
+     "recordedAt": "2026-10-12",
+     "answered": 4,
+     "graded": 4,
+     "right": 3,
+     "refused": 0,
+     "interval": {
+      "low": 0.3006,
+      "high": 0.9544
+     },
+     "speed": {
+      "n": 4,
+      "p50": 1598,
+      "p95": 2600,
+      "mean": 1677
+     },
+     "cost": {
+      "total": 0.000128,
+      "tokens": 6396
+     },
+     "headline": {
+      "value": 0.75,
+      "display": "75.0%"
+     }
+    },
     "liquid-d1": {
      "model": "liquid/d1-20260930",
      "recordedAt": "2026-10-12",
@@ -23361,6 +26577,58 @@
      "headline": {
       "value": 1,
       "display": "100%"
+     }
+    },
+    "clef-flash": {
+     "model": "cloudflare/clef-flash",
+     "recordedAt": "2026-10-12",
+     "answered": 4,
+     "graded": 4,
+     "right": 4,
+     "refused": 0,
+     "interval": {
+      "low": 0.5101,
+      "high": 1
+     },
+     "speed": {
+      "n": 4,
+      "p50": 1738,
+      "p95": 2187,
+      "mean": 1551
+     },
+     "cost": {
+      "total": 0.000122,
+      "tokens": 3212
+     },
+     "headline": {
+      "value": 1,
+      "display": "100%"
+     }
+    },
+    "clef": {
+     "model": "cloudflare/clef",
+     "recordedAt": "2026-10-12",
+     "answered": 4,
+     "graded": 4,
+     "right": 3,
+     "refused": 0,
+     "interval": {
+      "low": 0.3006,
+      "high": 0.9544
+     },
+     "speed": {
+      "n": 4,
+      "p50": 1516,
+      "p95": 2048,
+      "mean": 1428
+     },
+     "cost": {
+      "total": 0.000771,
+      "tokens": 3212
+     },
+     "headline": {
+      "value": 0.75,
+      "display": "75.0%"
      }
     },
     "mercury-decide": {
