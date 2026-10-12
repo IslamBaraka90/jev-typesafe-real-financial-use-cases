@@ -26,4 +26,6 @@ export const config = {
     apiKey: process.env.OPENAI_API_KEY?.trim() || null,
     model: process.env.OPENAI_DECISIONS_MODEL?.trim() || 'gpt-6-luna',
   },
+  // OpenRouter, which reaches the other decision models in demos/lib/models.js. Optional, like OpenAI.
+  openrouter: { apiKey: process.env.OPENROUTER_API_KEY?.trim() || null },
 };

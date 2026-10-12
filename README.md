@@ -4,7 +4,10 @@ Typed decisions from two decision models on real financial work: TypeSafe's Jev,
 [`@typesafe-ai/sdk`](https://docs.typesafe.ai/sdk/javascript), and OpenAI's
 [decisions API](https://developers.openai.com/api/docs/guides/decisions), through the `openai` SDK. Both take a state and
 a set of typed questions — a choice, a score on a rubric, a yes or no — and answer each with probabilities that code can
-act on. The site asks both the same questions and grades both.
+act on. The site asks both the same questions and grades both — and, through
+[OpenRouter's decisions endpoint](https://openrouter.ai/models?output_modalities=decisions), twelve more decision models
+from Microsoft, Nace AI, Cloudflare, Upstage, Perplexity, Liquid, Together, Inception and Jared Palmer. The full list,
+and which of them read images, is in [`demos/lib/models.js`](demos/lib/models.js).
 
 - **Demos** — sixty of them, across ten domains. Fifty put the same typed questions to Jev and to OpenAI over ledgers,
   orders, fraud, wallets, portfolios, trades, filings and strategies; a switch on each page shows either model's run. Ten
@@ -12,7 +15,9 @@ act on. The site asks both the same questions and grades both.
   on OpenAI only, since it is the one that reads images. Each demo shows the state that was sent, the answers that came
   back, and a report that grades them against data where the right answer is known. Specifications live in
   [`prps/`](prps/README.md).
-- **The benchmark** at `/benchmark` puts every recorded run on one page, Jev and OpenAI side by side: how many items
+- **The benchmark** at `/benchmark` puts every model head to head: a leaderboard counted only on the items every model
+  answered, with demos won, median and 95th-percentile latency and cost per thousand items, then a matrix of every demo
+  on every model. Below that, every recorded run on one page: how many items
   matched ground truth with its interval, the lift over a simple rule, the calibration error, and what moved since the
   last run. `npm run score` produces it, offline and free. See [Running the suite again](#running-the-suite-again).
 - **The lab** backtests Jev's trade decisions on historical daily candles, replays every decision on a chart, and reports
@@ -52,8 +57,11 @@ follow is in [docs/ui-ux-review](docs/ui-ux-review/README.md).
 The point of the suite is to run the same test on the next model version and see what moved.
 
 1. `npm run record <demo>` asks Jev every item and replaces the pinned run in `demos/<demo>/fixtures.json`;
-   `npm run record <demo> -- --provider openai` does the same on OpenAI into `fixtures.openai.json`. Recording resumes
-   where it stopped, `--items a,b` records only those, and `--force` asks again. This is the only paid step.
+   `npm run record <demo> -- --provider <model>` does the same on any model in `demos/lib/models.js` into
+   `fixtures.<model>.json` (stored packed, see [`demos/lib/packed.js`](demos/lib/packed.js)). Recording resumes where it
+   stopped, saves as it goes, and keeps each item's latency and cost; `--concurrency n` sends n at a time, `--items a,b`
+   records only those, and `--force` asks again. This is the only paid step. `node scripts/speed-sample.js <model>`
+   times a model on three items per demo without touching its recording.
 2. `npm run score` re-scores every demo on each model it was recorded on, with the same evaluate, grade and report code the pages use, writes
    `web/src/generated/scoreboard.json` for the site, and appends each run to `benchmarks/history.json`. A run is keyed
    by model, date, dataset hash and questions hash, and two runs are compared only when both hashes match: a changed
@@ -79,7 +87,7 @@ npm start
 
 Then open http://localhost:3000. The demos work as they are. To record or run anything live, put your keys in `.env`
 first — `TYPESAFE_API_KEY` from the [TypeSafe console](https://console.typesafe.ai/settings/keys) for Jev, and
-`OPENAI_API_KEY` for OpenAI's decisions API; `.env.example` lists every setting, and
+`OPENAI_API_KEY` for OpenAI's decisions API, and `OPENROUTER_API_KEY` for the models reached through OpenRouter; `.env.example` lists every setting, and
 variables already set in your shell take precedence over `.env`.
 
 ### Deploying

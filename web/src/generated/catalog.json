@@ -19,7 +19,19 @@
    "status": "ready",
    "providers": [
     "jev",
-    "openai"
+    "openai",
+    "microsoft-decision-1",
+    "drex-v1-5",
+    "clef-omni",
+    "solar-decide-flash",
+    "pplx-decider",
+    "liquid-d1",
+    "clef-flash",
+    "clef",
+    "tev1-4b",
+    "mercury-decide",
+    "solar-decide",
+    "kev-4b"
    ]
   },
   {
@@ -41,7 +53,19 @@
    "status": "ready",
    "providers": [
     "jev",
-    "openai"
+    "openai",
+    "microsoft-decision-1",
+    "drex-v1-5",
+    "clef-omni",
+    "solar-decide-flash",
+    "pplx-decider",
+    "liquid-d1",
+    "clef-flash",
+    "clef",
+    "tev1-4b",
+    "mercury-decide",
+    "solar-decide",
+    "kev-4b"
    ]
   },
   {
@@ -63,7 +87,19 @@
    "status": "ready",
    "providers": [
     "jev",
-    "openai"
+    "openai",
+    "microsoft-decision-1",
+    "drex-v1-5",
+    "clef-omni",
+    "solar-decide-flash",
+    "pplx-decider",
+    "liquid-d1",
+    "clef-flash",
+    "clef",
+    "tev1-4b",
+    "mercury-decide",
+    "solar-decide",
+    "kev-4b"
    ]
   },
   {
@@ -85,7 +121,19 @@
    "status": "ready",
    "providers": [
     "jev",
-    "openai"
+    "openai",
+    "microsoft-decision-1",
+    "drex-v1-5",
+    "clef-omni",
+    "solar-decide-flash",
+    "pplx-decider",
+    "liquid-d1",
+    "clef-flash",
+    "clef",
+    "tev1-4b",
+    "mercury-decide",
+    "solar-decide",
+    "kev-4b"
    ]
   },
   {
@@ -107,7 +155,19 @@
    "status": "ready",
    "providers": [
     "jev",
-    "openai"
+    "openai",
+    "microsoft-decision-1",
+    "drex-v1-5",
+    "clef-omni",
+    "solar-decide-flash",
+    "pplx-decider",
+    "liquid-d1",
+    "clef-flash",
+    "clef",
+    "tev1-4b",
+    "mercury-decide",
+    "solar-decide",
+    "kev-4b"
    ]
   },
   {
@@ -129,7 +189,19 @@
    "status": "ready",
    "providers": [
     "jev",
-    "openai"
+    "openai",
+    "microsoft-decision-1",
+    "drex-v1-5",
+    "clef-omni",
+    "solar-decide-flash",
+    "pplx-decider",
+    "liquid-d1",
+    "clef-flash",
+    "clef",
+    "tev1-4b",
+    "mercury-decide",
+    "solar-decide",
+    "kev-4b"
    ]
   },
   {
@@ -151,7 +223,19 @@
    "status": "ready",
    "providers": [
     "jev",
-    "openai"
+    "openai",
+    "microsoft-decision-1",
+    "drex-v1-5",
+    "clef-omni",
+    "solar-decide-flash",
+    "pplx-decider",
+    "liquid-d1",
+    "clef-flash",
+    "clef",
+    "tev1-4b",
+    "mercury-decide",
+    "solar-decide",
+    "kev-4b"
    ]
   },
   {
@@ -173,7 +257,19 @@
    "status": "ready",
    "providers": [
     "jev",
-    "openai"
+    "openai",
+    "microsoft-decision-1",
+    "drex-v1-5",
+    "clef-omni",
+    "solar-decide-flash",
+    "pplx-decider",
+    "liquid-d1",
+    "clef-flash",
+    "clef",
+    "tev1-4b",
+    "mercury-decide",
+    "solar-decide",
+    "kev-4b"
    ]
   },
   {
@@ -195,7 +291,19 @@
    "status": "ready",
    "providers": [
     "jev",
-    "openai"
+    "openai",
+    "microsoft-decision-1",
+    "drex-v1-5",
+    "clef-omni",
+    "solar-decide-flash",
+    "pplx-decider",
+    "liquid-d1",
+    "clef-flash",
+    "clef",
+    "tev1-4b",
+    "mercury-decide",
+    "solar-decide",
+    "kev-4b"
    ]
   },
   {
@@ -217,7 +325,19 @@
    "status": "ready",
    "providers": [
     "jev",
-    "openai"
+    "openai",
+    "microsoft-decision-1",
+    "drex-v1-5",
+    "clef-omni",
+    "solar-decide-flash",
+    "pplx-decider",
+    "liquid-d1",
+    "clef-flash",
+    "clef",
+    "tev1-4b",
+    "mercury-decide",
+    "solar-decide",
+    "kev-4b"
    ]
   },
   {
@@ -239,7 +359,19 @@
    "status": "ready",
    "providers": [
     "jev",
-    "openai"
+    "openai",
+    "microsoft-decision-1",
+    "drex-v1-5",
+    "clef-omni",
+    "solar-decide-flash",
+    "pplx-decider",
+    "liquid-d1",
+    "clef-flash",
+    "clef",
+    "tev1-4b",
+    "mercury-decide",
+    "solar-decide",
+    "kev-4b"
    ]
   },
   {
@@ -261,7 +393,19 @@
    "status": "ready",
    "providers": [
     "jev",
-    "openai"
+    "openai",
+    "microsoft-decision-1",
+    "drex-v1-5",
+    "clef-omni",
+    "solar-decide-flash",
+    "pplx-decider",
+    "liquid-d1",
+    "clef-flash",
+    "clef",
+    "tev1-4b",
+    "mercury-decide",
+    "solar-decide",
+    "kev-4b"
    ]
   },
   {
@@ -283,7 +427,19 @@
    "status": "ready",
    "providers": [
     "jev",
-    "openai"
+    "openai",
+    "microsoft-decision-1",
+    "drex-v1-5",
+    "clef-omni",
+    "solar-decide-flash",
+    "pplx-decider",
+    "liquid-d1",
+    "clef-flash",
+    "clef",
+    "tev1-4b",
+    "mercury-decide",
+    "solar-decide",
+    "kev-4b"
    ]
   },
   {
@@ -305,7 +461,19 @@
    "status": "ready",
    "providers": [
     "jev",
-    "openai"
+    "openai",
+    "microsoft-decision-1",
+    "drex-v1-5",
+    "clef-omni",
+    "solar-decide-flash",
+    "pplx-decider",
+    "liquid-d1",
+    "clef-flash",
+    "clef",
+    "tev1-4b",
+    "mercury-decide",
+    "solar-decide",
+    "kev-4b"
    ]
   },
   {
@@ -328,7 +496,19 @@
    "status": "ready",
    "providers": [
     "jev",
-    "openai"
+    "openai",
+    "microsoft-decision-1",
+    "drex-v1-5",
+    "clef-omni",
+    "solar-decide-flash",
+    "pplx-decider",
+    "liquid-d1",
+    "clef-flash",
+    "clef",
+    "tev1-4b",
+    "mercury-decide",
+    "solar-decide",
+    "kev-4b"
    ]
   },
   {
@@ -351,7 +531,19 @@
    "status": "ready",
    "providers": [
     "jev",
-    "openai"
+    "openai",
+    "microsoft-decision-1",
+    "drex-v1-5",
+    "clef-omni",
+    "solar-decide-flash",
+    "pplx-decider",
+    "liquid-d1",
+    "clef-flash",
+    "clef",
+    "tev1-4b",
+    "mercury-decide",
+    "solar-decide",
+    "kev-4b"
    ]
   },
   {
@@ -373,7 +565,19 @@
    "status": "ready",
    "providers": [
     "jev",
-    "openai"
+    "openai",
+    "microsoft-decision-1",
+    "drex-v1-5",
+    "clef-omni",
+    "solar-decide-flash",
+    "pplx-decider",
+    "liquid-d1",
+    "clef-flash",
+    "clef",
+    "tev1-4b",
+    "mercury-decide",
+    "solar-decide",
+    "kev-4b"
    ]
   },
   {
@@ -395,7 +599,19 @@
    "status": "ready",
    "providers": [
     "jev",
-    "openai"
+    "openai",
+    "microsoft-decision-1",
+    "drex-v1-5",
+    "clef-omni",
+    "solar-decide-flash",
+    "pplx-decider",
+    "liquid-d1",
+    "clef-flash",
+    "clef",
+    "tev1-4b",
+    "mercury-decide",
+    "solar-decide",
+    "kev-4b"
    ]
   },
   {
@@ -417,7 +633,19 @@
    "status": "ready",
    "providers": [
     "jev",
-    "openai"
+    "openai",
+    "microsoft-decision-1",
+    "drex-v1-5",
+    "clef-omni",
+    "solar-decide-flash",
+    "pplx-decider",
+    "liquid-d1",
+    "clef-flash",
+    "clef",
+    "tev1-4b",
+    "mercury-decide",
+    "solar-decide",
+    "kev-4b"
    ]
   },
   {
@@ -439,7 +667,19 @@
    "status": "ready",
    "providers": [
     "jev",
-    "openai"
+    "openai",
+    "microsoft-decision-1",
+    "drex-v1-5",
+    "clef-omni",
+    "solar-decide-flash",
+    "pplx-decider",
+    "liquid-d1",
+    "clef-flash",
+    "clef",
+    "tev1-4b",
+    "mercury-decide",
+    "solar-decide",
+    "kev-4b"
    ]
   },
   {
@@ -461,7 +701,19 @@
    "status": "ready",
    "providers": [
     "jev",
-    "openai"
+    "openai",
+    "microsoft-decision-1",
+    "drex-v1-5",
+    "clef-omni",
+    "solar-decide-flash",
+    "pplx-decider",
+    "liquid-d1",
+    "clef-flash",
+    "clef",
+    "tev1-4b",
+    "mercury-decide",
+    "solar-decide",
+    "kev-4b"
    ]
   },
   {
@@ -483,7 +735,19 @@
    "status": "ready",
    "providers": [
     "jev",
-    "openai"
+    "openai",
+    "microsoft-decision-1",
+    "drex-v1-5",
+    "clef-omni",
+    "solar-decide-flash",
+    "pplx-decider",
+    "liquid-d1",
+    "clef-flash",
+    "clef",
+    "tev1-4b",
+    "mercury-decide",
+    "solar-decide",
+    "kev-4b"
    ]
   },
   {
@@ -505,7 +769,19 @@
    "status": "ready",
    "providers": [
     "jev",
-    "openai"
+    "openai",
+    "microsoft-decision-1",
+    "drex-v1-5",
+    "clef-omni",
+    "solar-decide-flash",
+    "pplx-decider",
+    "liquid-d1",
+    "clef-flash",
+    "clef",
+    "tev1-4b",
+    "mercury-decide",
+    "solar-decide",
+    "kev-4b"
    ]
   },
   {
@@ -527,7 +803,19 @@
    "status": "ready",
    "providers": [
     "jev",
-    "openai"
+    "openai",
+    "microsoft-decision-1",
+    "drex-v1-5",
+    "clef-omni",
+    "solar-decide-flash",
+    "pplx-decider",
+    "liquid-d1",
+    "clef-flash",
+    "clef",
+    "tev1-4b",
+    "mercury-decide",
+    "solar-decide",
+    "kev-4b"
    ]
   },
   {
@@ -549,7 +837,19 @@
    "status": "ready",
    "providers": [
     "jev",
-    "openai"
+    "openai",
+    "microsoft-decision-1",
+    "drex-v1-5",
+    "clef-omni",
+    "solar-decide-flash",
+    "pplx-decider",
+    "liquid-d1",
+    "clef-flash",
+    "clef",
+    "tev1-4b",
+    "mercury-decide",
+    "solar-decide",
+    "kev-4b"
    ]
   },
   {
@@ -571,7 +871,19 @@
    "status": "ready",
    "providers": [
     "jev",
-    "openai"
+    "openai",
+    "microsoft-decision-1",
+    "drex-v1-5",
+    "clef-omni",
+    "solar-decide-flash",
+    "pplx-decider",
+    "liquid-d1",
+    "clef-flash",
+    "clef",
+    "tev1-4b",
+    "mercury-decide",
+    "solar-decide",
+    "kev-4b"
    ]
   },
   {
@@ -593,7 +905,19 @@
    "status": "ready",
    "providers": [
     "jev",
-    "openai"
+    "openai",
+    "microsoft-decision-1",
+    "drex-v1-5",
+    "clef-omni",
+    "solar-decide-flash",
+    "pplx-decider",
+    "liquid-d1",
+    "clef-flash",
+    "clef",
+    "tev1-4b",
+    "mercury-decide",
+    "solar-decide",
+    "kev-4b"
    ]
   },
   {
@@ -615,7 +939,19 @@
    "status": "ready",
    "providers": [
     "jev",
-    "openai"
+    "openai",
+    "microsoft-decision-1",
+    "drex-v1-5",
+    "clef-omni",
+    "solar-decide-flash",
+    "pplx-decider",
+    "liquid-d1",
+    "clef-flash",
+    "clef",
+    "tev1-4b",
+    "mercury-decide",
+    "solar-decide",
+    "kev-4b"
    ]
   },
   {
@@ -637,7 +973,19 @@
    "status": "ready",
    "providers": [
     "jev",
-    "openai"
+    "openai",
+    "microsoft-decision-1",
+    "drex-v1-5",
+    "clef-omni",
+    "solar-decide-flash",
+    "pplx-decider",
+    "liquid-d1",
+    "clef-flash",
+    "clef",
+    "tev1-4b",
+    "mercury-decide",
+    "solar-decide",
+    "kev-4b"
    ]
   },
   {
@@ -659,7 +1007,19 @@
    "status": "ready",
    "providers": [
     "jev",
-    "openai"
+    "openai",
+    "microsoft-decision-1",
+    "drex-v1-5",
+    "clef-omni",
+    "solar-decide-flash",
+    "pplx-decider",
+    "liquid-d1",
+    "clef-flash",
+    "clef",
+    "tev1-4b",
+    "mercury-decide",
+    "solar-decide",
+    "kev-4b"
    ]
   },
   {
@@ -681,7 +1041,19 @@
    "status": "ready",
    "providers": [
     "jev",
-    "openai"
+    "openai",
+    "microsoft-decision-1",
+    "drex-v1-5",
+    "clef-omni",
+    "solar-decide-flash",
+    "pplx-decider",
+    "liquid-d1",
+    "clef-flash",
+    "clef",
+    "tev1-4b",
+    "mercury-decide",
+    "solar-decide",
+    "kev-4b"
    ]
   },
   {
@@ -703,7 +1075,19 @@
    "status": "ready",
    "providers": [
     "jev",
-    "openai"
+    "openai",
+    "microsoft-decision-1",
+    "drex-v1-5",
+    "clef-omni",
+    "solar-decide-flash",
+    "pplx-decider",
+    "liquid-d1",
+    "clef-flash",
+    "clef",
+    "tev1-4b",
+    "mercury-decide",
+    "solar-decide",
+    "kev-4b"
    ]
   },
   {
@@ -725,7 +1109,19 @@
    "status": "ready",
    "providers": [
     "jev",
-    "openai"
+    "openai",
+    "microsoft-decision-1",
+    "drex-v1-5",
+    "clef-omni",
+    "solar-decide-flash",
+    "pplx-decider",
+    "liquid-d1",
+    "clef-flash",
+    "clef",
+    "tev1-4b",
+    "mercury-decide",
+    "solar-decide",
+    "kev-4b"
    ]
   },
   {
@@ -747,7 +1143,19 @@
    "status": "ready",
    "providers": [
     "jev",
-    "openai"
+    "openai",
+    "microsoft-decision-1",
+    "drex-v1-5",
+    "clef-omni",
+    "solar-decide-flash",
+    "pplx-decider",
+    "liquid-d1",
+    "clef-flash",
+    "clef",
+    "tev1-4b",
+    "mercury-decide",
+    "solar-decide",
+    "kev-4b"
    ]
   },
   {
@@ -769,7 +1177,19 @@
    "status": "ready",
    "providers": [
     "jev",
-    "openai"
+    "openai",
+    "microsoft-decision-1",
+    "drex-v1-5",
+    "clef-omni",
+    "solar-decide-flash",
+    "pplx-decider",
+    "liquid-d1",
+    "clef-flash",
+    "clef",
+    "tev1-4b",
+    "mercury-decide",
+    "solar-decide",
+    "kev-4b"
    ]
   },
   {
@@ -791,7 +1211,19 @@
    "status": "ready",
    "providers": [
     "jev",
-    "openai"
+    "openai",
+    "microsoft-decision-1",
+    "drex-v1-5",
+    "clef-omni",
+    "solar-decide-flash",
+    "pplx-decider",
+    "liquid-d1",
+    "clef-flash",
+    "clef",
+    "tev1-4b",
+    "mercury-decide",
+    "solar-decide",
+    "kev-4b"
    ]
   },
   {
@@ -813,7 +1245,19 @@
    "status": "ready",
    "providers": [
     "jev",
-    "openai"
+    "openai",
+    "microsoft-decision-1",
+    "drex-v1-5",
+    "clef-omni",
+    "solar-decide-flash",
+    "pplx-decider",
+    "liquid-d1",
+    "clef-flash",
+    "clef",
+    "tev1-4b",
+    "mercury-decide",
+    "solar-decide",
+    "kev-4b"
    ]
   },
   {
@@ -835,7 +1279,19 @@
    "status": "ready",
    "providers": [
     "jev",
-    "openai"
+    "openai",
+    "microsoft-decision-1",
+    "drex-v1-5",
+    "clef-omni",
+    "solar-decide-flash",
+    "pplx-decider",
+    "liquid-d1",
+    "clef-flash",
+    "clef",
+    "tev1-4b",
+    "mercury-decide",
+    "solar-decide",
+    "kev-4b"
    ]
   },
   {
@@ -857,7 +1313,19 @@
    "status": "ready",
    "providers": [
     "jev",
-    "openai"
+    "openai",
+    "microsoft-decision-1",
+    "drex-v1-5",
+    "clef-omni",
+    "solar-decide-flash",
+    "pplx-decider",
+    "liquid-d1",
+    "clef-flash",
+    "clef",
+    "tev1-4b",
+    "mercury-decide",
+    "solar-decide",
+    "kev-4b"
    ]
   },
   {
@@ -879,7 +1347,19 @@
    "status": "ready",
    "providers": [
     "jev",
-    "openai"
+    "openai",
+    "microsoft-decision-1",
+    "drex-v1-5",
+    "clef-omni",
+    "solar-decide-flash",
+    "pplx-decider",
+    "liquid-d1",
+    "clef-flash",
+    "clef",
+    "tev1-4b",
+    "mercury-decide",
+    "solar-decide",
+    "kev-4b"
    ]
   },
   {
@@ -901,7 +1381,19 @@
    "status": "ready",
    "providers": [
     "jev",
-    "openai"
+    "openai",
+    "microsoft-decision-1",
+    "drex-v1-5",
+    "clef-omni",
+    "solar-decide-flash",
+    "pplx-decider",
+    "liquid-d1",
+    "clef-flash",
+    "clef",
+    "tev1-4b",
+    "mercury-decide",
+    "solar-decide",
+    "kev-4b"
    ]
   },
   {
@@ -923,7 +1415,19 @@
    "status": "ready",
    "providers": [
     "jev",
-    "openai"
+    "openai",
+    "microsoft-decision-1",
+    "drex-v1-5",
+    "clef-omni",
+    "solar-decide-flash",
+    "pplx-decider",
+    "liquid-d1",
+    "clef-flash",
+    "clef",
+    "tev1-4b",
+    "mercury-decide",
+    "solar-decide",
+    "kev-4b"
    ]
   },
   {
@@ -945,7 +1449,19 @@
    "status": "ready",
    "providers": [
     "jev",
-    "openai"
+    "openai",
+    "microsoft-decision-1",
+    "drex-v1-5",
+    "clef-omni",
+    "solar-decide-flash",
+    "pplx-decider",
+    "liquid-d1",
+    "clef-flash",
+    "clef",
+    "tev1-4b",
+    "mercury-decide",
+    "solar-decide",
+    "kev-4b"
    ]
   },
   {
@@ -967,7 +1483,19 @@
    "status": "ready",
    "providers": [
     "jev",
-    "openai"
+    "openai",
+    "microsoft-decision-1",
+    "drex-v1-5",
+    "clef-omni",
+    "solar-decide-flash",
+    "pplx-decider",
+    "liquid-d1",
+    "clef-flash",
+    "clef",
+    "tev1-4b",
+    "mercury-decide",
+    "solar-decide",
+    "kev-4b"
    ]
   },
   {
@@ -989,7 +1517,19 @@
    "status": "ready",
    "providers": [
     "jev",
-    "openai"
+    "openai",
+    "microsoft-decision-1",
+    "drex-v1-5",
+    "clef-omni",
+    "solar-decide-flash",
+    "pplx-decider",
+    "liquid-d1",
+    "clef-flash",
+    "clef",
+    "tev1-4b",
+    "mercury-decide",
+    "solar-decide",
+    "kev-4b"
    ]
   },
   {
@@ -1011,7 +1551,19 @@
    "status": "ready",
    "providers": [
     "jev",
-    "openai"
+    "openai",
+    "microsoft-decision-1",
+    "drex-v1-5",
+    "clef-omni",
+    "solar-decide-flash",
+    "pplx-decider",
+    "liquid-d1",
+    "clef-flash",
+    "clef",
+    "tev1-4b",
+    "mercury-decide",
+    "solar-decide",
+    "kev-4b"
    ]
   },
   {
@@ -1033,7 +1585,19 @@
    "status": "ready",
    "providers": [
     "jev",
-    "openai"
+    "openai",
+    "microsoft-decision-1",
+    "drex-v1-5",
+    "clef-omni",
+    "solar-decide-flash",
+    "pplx-decider",
+    "liquid-d1",
+    "clef-flash",
+    "clef",
+    "tev1-4b",
+    "mercury-decide",
+    "solar-decide",
+    "kev-4b"
    ]
   },
   {
@@ -1055,7 +1619,19 @@
    "status": "ready",
    "providers": [
     "jev",
-    "openai"
+    "openai",
+    "microsoft-decision-1",
+    "drex-v1-5",
+    "clef-omni",
+    "solar-decide-flash",
+    "pplx-decider",
+    "liquid-d1",
+    "clef-flash",
+    "clef",
+    "tev1-4b",
+    "mercury-decide",
+    "solar-decide",
+    "kev-4b"
    ]
   },
   {
@@ -1077,7 +1653,19 @@
    "status": "ready",
    "providers": [
     "jev",
-    "openai"
+    "openai",
+    "microsoft-decision-1",
+    "drex-v1-5",
+    "clef-omni",
+    "solar-decide-flash",
+    "pplx-decider",
+    "liquid-d1",
+    "clef-flash",
+    "clef",
+    "tev1-4b",
+    "mercury-decide",
+    "solar-decide",
+    "kev-4b"
    ]
   },
   {
@@ -1099,7 +1687,19 @@
    "status": "ready",
    "providers": [
     "jev",
-    "openai"
+    "openai",
+    "microsoft-decision-1",
+    "drex-v1-5",
+    "clef-omni",
+    "solar-decide-flash",
+    "pplx-decider",
+    "liquid-d1",
+    "clef-flash",
+    "clef",
+    "tev1-4b",
+    "mercury-decide",
+    "solar-decide",
+    "kev-4b"
    ]
   },
   {
@@ -1120,7 +1720,11 @@
    "questionCount": 3,
    "status": "ready",
    "providers": [
-    "openai"
+    "openai",
+    "clef-omni",
+    "pplx-decider",
+    "clef-flash",
+    "clef"
    ]
   },
   {
@@ -1141,7 +1745,11 @@
    "questionCount": 3,
    "status": "ready",
    "providers": [
-    "openai"
+    "openai",
+    "clef-omni",
+    "pplx-decider",
+    "clef-flash",
+    "clef"
    ]
   },
   {
@@ -1162,7 +1770,11 @@
    "questionCount": 3,
    "status": "ready",
    "providers": [
-    "openai"
+    "openai",
+    "clef-omni",
+    "pplx-decider",
+    "clef-flash",
+    "clef"
    ]
   },
   {
@@ -1183,7 +1795,11 @@
    "questionCount": 3,
    "status": "ready",
    "providers": [
-    "openai"
+    "openai",
+    "clef-omni",
+    "pplx-decider",
+    "clef-flash",
+    "clef"
    ]
   },
   {
@@ -1204,7 +1820,11 @@
    "questionCount": 3,
    "status": "ready",
    "providers": [
-    "openai"
+    "openai",
+    "clef-omni",
+    "pplx-decider",
+    "clef-flash",
+    "clef"
    ]
   },
   {
@@ -1225,7 +1845,11 @@
    "questionCount": 3,
    "status": "ready",
    "providers": [
-    "openai"
+    "openai",
+    "clef-omni",
+    "pplx-decider",
+    "clef-flash",
+    "clef"
    ]
   },
   {
@@ -1246,7 +1870,11 @@
    "questionCount": 3,
    "status": "ready",
    "providers": [
-    "openai"
+    "openai",
+    "clef-omni",
+    "pplx-decider",
+    "clef-flash",
+    "clef"
    ]
   },
   {
@@ -1267,7 +1895,11 @@
    "questionCount": 3,
    "status": "ready",
    "providers": [
-    "openai"
+    "openai",
+    "clef-omni",
+    "pplx-decider",
+    "clef-flash",
+    "clef"
    ]
   },
   {
@@ -1288,7 +1920,11 @@
    "questionCount": 3,
    "status": "ready",
    "providers": [
-    "openai"
+    "openai",
+    "clef-omni",
+    "pplx-decider",
+    "clef-flash",
+    "clef"
    ]
   },
   {
@@ -1309,7 +1945,11 @@
    "questionCount": 3,
    "status": "ready",
    "providers": [
-    "openai"
+    "openai",
+    "clef-omni",
+    "pplx-decider",
+    "clef-flash",
+    "clef"
    ]
   }
  ]

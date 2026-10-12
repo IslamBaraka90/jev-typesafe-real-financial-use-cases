@@ -60,7 +60,6 @@ export default {
   dataClass: 'cached-real',
   readMinutes: 2,
   view: 'image',
-  providers: ['openai'],
   itemLabel: (item) => `${item.id} · ${item.symbol}`,
   data: () => import('./data.json'),
   fixtures: () => import('./fixtures.openai.json'),

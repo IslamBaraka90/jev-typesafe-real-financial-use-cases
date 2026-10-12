@@ -63,6 +63,7 @@ import produceCheck from './produce-check/demo.js';
 import packageCheck from './package-check/demo.js';
 import leafCheck from './leaf-check/demo.js';
 import { DOMAIN_BY_ID } from './domains.js';
+import { modelsFor } from './lib/models.js';
 
 export { DOMAINS, DOMAIN_BY_ID } from './domains.js';
 
@@ -150,6 +151,6 @@ export function demoCard(demo) {
     readMinutes: demo.readMinutes ?? 3,
     questionCount: Object.keys(demo.questions).length,
     status: demo.status ?? 'ready',
-    providers: demo.providers ?? ['jev', 'openai'],
+    providers: modelsFor(demo).map((model) => model.id),
   };
 }

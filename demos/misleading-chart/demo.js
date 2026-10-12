@@ -60,7 +60,6 @@ export default {
   dataClass: 'synthetic',
   readMinutes: 2,
   view: 'image',
-  providers: ['openai'],
   itemLabel: (item) => `${item.id} · ${item.company}`,
   data: () => import('./data.json'),
   fixtures: () => import('./fixtures.openai.json'),

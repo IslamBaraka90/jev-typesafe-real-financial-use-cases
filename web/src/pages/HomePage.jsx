@@ -104,12 +104,13 @@ export function HomePage() {
     <div className="stack home">
       <section className="home-hero">
         <div className="home-hero-copy">
-          <span className="eyebrow">Decision Lab · Jev and OpenAI on financial work</span>
-          <h1>{summary.demos} finance jobs. Two decision models. Every answer typed, and every answer graded.</h1>
+          <span className="eyebrow">Decision Lab · decision models on financial work</span>
+          <h1>{summary.demos} finance jobs. Every decision model, head to head. Every answer graded.</h1>
           <p className="reading">
             A decision model does not write a paragraph about a disputed refund. It returns a probability for every action, a position on a rubric and a probability of yes, which
-            code can act on. This site asks TypeSafe’s Jev and OpenAI’s decisions API the same questions on ledgers, orders, fraud queues, wallets, portfolios, trades, filings and
-            strategies — and OpenAI alone on receipts, cheques, charts and photos, since it reads images — then grades both against data where the right answer is known.
+            code can act on. This site asks TypeSafe’s Jev, OpenAI’s GPT-6 Luna and a dozen more decision models the same questions on ledgers, orders, fraud queues, wallets,
+            portfolios, trades, filings and strategies — and the ones that read images on receipts, cheques, charts and photos — then grades every one against data where the right
+            answer is known, and times it.
           </p>
           <div className="row">
             <Link to="/demos" className="button primary">

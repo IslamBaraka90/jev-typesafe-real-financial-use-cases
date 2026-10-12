@@ -62,7 +62,6 @@ export default {
   dataClass: 'cached-real',
   readMinutes: 3,
   view: 'image',
-  providers: ['openai'],
   caveat: 'Not investment advice. Half the charts rose afterwards, so 50% is what guessing scores.',
   itemLabel: (item) => `${item.id} · ${item.symbol}`,
   data: () => import('./data.json'),

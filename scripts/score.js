@@ -14,6 +14,8 @@ import path from 'node:path';
 import { DEMOS, demoCard, findDemo } from '../demos/index.js';
 import { repoRoot } from '../src/services/dataset.js';
 import { runKey, scoreDemo, scoreModels } from '../src/services/scoreboard.js';
+import { leaderboard } from '../src/services/leaderboard.js';
+import { MODEL_IDS } from '../demos/lib/models.js';
 
 const args = process.argv.slice(2);
 const check = args.includes('--check');
@@ -73,7 +75,7 @@ const summary = {
   models: [...new Set(rows.map((row) => row.run.model).filter(Boolean))],
   latest: rows.map((row) => row.run.recordedAt).filter(Boolean).sort().at(-1) ?? null,
   byModel: Object.fromEntries(
-    ['jev', 'openai'].map((provider) => {
+    MODEL_IDS.map((provider) => {
       const entries = rows.map((row) => row.models[provider]).filter((entry) => entry?.graded);
       return [provider, { demos: entries.length, graded: entries.reduce((sum, entry) => sum + entry.graded, 0), right: entries.reduce((sum, entry) => sum + entry.right, 0) }];
     }),
@@ -83,6 +85,12 @@ const summary = {
 
 await mkdir(path.dirname(scoreboardFile), { recursive: true });
 await mkdir(path.dirname(historyFile), { recursive: true });
+// Every model head to head: the text demos, and the image demos for the models that take pictures.
+summary.leaderboards = [
+  await leaderboard(DEMOS.filter((demo) => !demo.images), { label: 'Text demos' }),
+  await leaderboard(DEMOS.filter((demo) => demo.images), { label: 'Image demos' }),
+];
+
 await writeFile(scoreboardFile, `${JSON.stringify({ summary, rows }, null, 1)}\n`);
 await writeFile(catalogFile, `${JSON.stringify({ cards: DEMOS.map(demoCard) }, null, 1)}
 `);
@@ -94,6 +102,11 @@ for (const row of rows) {
   console.log(`${mark}  ${row.id.padEnd(24)} ${String(row.headline?.display ?? '').padEnd(14)} ${agree.padEnd(18)} ${row.delta === null ? '' : `${row.delta >= 0 ? '+' : ''}${(row.delta * 100).toFixed(1)} pts`}`);
 }
 console.log(`\n${summary.items.toLocaleString('en-US')} items, ${summary.gradedItems.toLocaleString('en-US')} graded, ${summary.rightItems.toLocaleString('en-US')} matching ground truth (${percent(summary.rightItems / Math.max(summary.gradedItems, 1))}).`);
+for (const board of summary.leaderboards) {
+  console.log(`\n${board.label}: ${board.commonItems.toLocaleString('en-US')} items every model answered`);
+  for (const model of board.models) console.log(`  ${model.label.padEnd(24)} ${percent(model.accuracy).padStart(6)}  won ${String(model.wins).padStart(2)}  p50 ${String(model.speed?.p50 ?? '–').padStart(6)} ms  p95 ${String(model.speed?.p95 ?? '–').padStart(6)} ms`);
+  for (const model of board.excluded) console.log(`  ${model.label.padEnd(24)} left out: ${model.reason}`);
+}
 console.log(`${path.relative(repoRoot, scoreboardFile)} and ${path.relative(repoRoot, historyFile)} written.`);
 
 if (check) {

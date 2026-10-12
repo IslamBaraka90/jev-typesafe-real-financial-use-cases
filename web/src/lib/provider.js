@@ -1,13 +1,16 @@
 import { useCallback, useSyncExternalStore } from 'react';
+import { MODEL_BY_ID, MODELS, modelsFor } from '../../../demos/lib/models.js';
 
-// Which decision model's recorded answers a demo page shows. Every text demo is recorded on both Jev
-// and OpenAI's decisions API; the image demos only on OpenAI, because only it accepts pictures. The
-// choice is remembered across demos in this browser and can be set in the address with ?model=.
+// Which decision model's recorded answers a demo page shows. Text demos are recorded on every model
+// that takes them; image demos only on the models that read pictures. The choice is remembered across
+// demos in this browser and can be set in the address with ?model=.
 
-export const PROVIDERS = [
-  { id: 'jev', label: 'Jev', vendor: 'TypeSafe', note: 'TypeSafe’s Jev model, via its typed-answer API.' },
-  { id: 'openai', label: 'OpenAI', vendor: 'OpenAI', note: 'OpenAI’s decisions API, which also reads images.' },
-];
+export const PROVIDERS = MODELS.filter((model) => !model.unsupported).map((model) => ({
+  id: model.id,
+  label: model.label,
+  vendor: model.maker,
+  note: `${model.maker}${model.via === 'openrouter' ? ', through OpenRouter' : model.via === 'openai' ? ', through OpenAI’s decisions API' : ', through TypeSafe’s API'}${model.images ? '; reads images' : ''}.`,
+}));
 
 export const PROVIDER_BY_ID = Object.fromEntries(PROVIDERS.map((provider) => [provider.id, provider]));
 
@@ -33,8 +36,8 @@ function subscribe(listener) {
   return () => listeners.delete(listener);
 }
 
-/** The models a demo has recordings for, in the order the switch shows them. */
-export const providersFor = (demo) => PROVIDERS.filter((provider) => (demo.providers ?? ['jev', 'openai']).includes(provider.id));
+/** The models a demo has recordings for, in the order the picker shows them. */
+export const providersFor = (demo) => modelsFor(demo).map((model) => PROVIDER_BY_ID[model.id]).filter(Boolean);
 
 /**
  * The model this page shows for `demo`, and a setter. A demo with no recording on the chosen model
@@ -62,3 +65,5 @@ export function useProvider(demo) {
 
   return { provider, available, setProvider };
 }
+
+export { MODEL_BY_ID };

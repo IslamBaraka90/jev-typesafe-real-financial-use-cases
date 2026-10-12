@@ -21,12 +21,301 @@
     "demos": 59,
     "graded": 9189,
     "right": 7168
+   },
+   "microsoft-decision-1": {
+    "demos": 23,
+    "graded": 4310,
+    "right": 3441
+   },
+   "drex-v1-5": {
+    "demos": 26,
+    "graded": 4579,
+    "right": 3741
+   },
+   "clef-omni": {
+    "demos": 33,
+    "graded": 5819,
+    "right": 3487
+   },
+   "solar-decide-flash": {
+    "demos": 15,
+    "graded": 2973,
+    "right": 1863
+   },
+   "pplx-decider": {
+    "demos": 20,
+    "graded": 3776,
+    "right": 3374
+   },
+   "liquid-d1": {
+    "demos": 18,
+    "graded": 3605,
+    "right": 3179
+   },
+   "clef-flash": {
+    "demos": 14,
+    "graded": 3089,
+    "right": 2449
+   },
+   "clef": {
+    "demos": 19,
+    "graded": 3592,
+    "right": 2838
+   },
+   "tev1-4b": {
+    "demos": 18,
+    "graded": 3762,
+    "right": 2771
+   },
+   "mercury-decide": {
+    "demos": 2,
+    "graded": 512,
+    "right": 431
+   },
+   "solar-decide": {
+    "demos": 2,
+    "graded": 356,
+    "right": 264
+   },
+   "span-01": {
+    "demos": 0,
+    "graded": 0,
+    "right": 0
+   },
+   "kev-4b": {
+    "demos": 6,
+    "graded": 1436,
+    "right": 1153
    }
   },
   "gates": {
    "total": 0,
    "failed": 0
-  }
+  },
+  "leaderboards": [
+   {
+    "label": "Text demos",
+    "demos": 50,
+    "commonItems": 8895,
+    "models": [
+     {
+      "id": "jev",
+      "label": "Jev",
+      "maker": "TypeSafe",
+      "accuracy": 0.8349634626194491,
+      "interval": {
+       "low": 0.8271046859491711,
+       "high": 0.8425330340884571
+      },
+      "right": 7427,
+      "graded": 8895,
+      "wins": 39,
+      "coverage": 1,
+      "refused": 0,
+      "speed": {
+       "p50": 270,
+       "p95": 333,
+       "n": 150,
+       "sampled": true
+      },
+      "costPer1k": null,
+      "tokensPerItem": 0
+     },
+     {
+      "id": "openai",
+      "label": "GPT-6 Luna",
+      "maker": "OpenAI",
+      "accuracy": 0.7842608206857785,
+      "interval": {
+       "low": 0.7755908077993735,
+       "high": 0.7926854046910252
+      },
+      "right": 6976,
+      "graded": 8895,
+      "wins": 18,
+      "coverage": 0.9990371242109768,
+      "refused": 9,
+      "speed": {
+       "p50": 294,
+       "p95": 560,
+       "n": 180,
+       "sampled": true
+      },
+      "costPer1k": null,
+      "tokensPerItem": 1888
+     }
+    ],
+    "excluded": [
+     {
+      "id": "microsoft-decision-1",
+      "label": "Decision 1",
+      "reason": "Not fully recorded yet."
+     },
+     {
+      "id": "drex-v1-5",
+      "label": "Drex 1.5",
+      "reason": "Not fully recorded yet."
+     },
+     {
+      "id": "clef-omni",
+      "label": "Clef Omni",
+      "reason": "Not fully recorded yet."
+     },
+     {
+      "id": "solar-decide-flash",
+      "label": "Solar Decide Flash",
+      "reason": "Not fully recorded yet."
+     },
+     {
+      "id": "pplx-decider",
+      "label": "PPLX Decider 1.1 27B",
+      "reason": "Not fully recorded yet."
+     },
+     {
+      "id": "liquid-d1",
+      "label": "D1",
+      "reason": "Not fully recorded yet."
+     },
+     {
+      "id": "clef-flash",
+      "label": "Clef Flash",
+      "reason": "Not fully recorded yet."
+     },
+     {
+      "id": "clef",
+      "label": "Clef",
+      "reason": "Not fully recorded yet."
+     },
+     {
+      "id": "tev1-4b",
+      "label": "TEV1 4B (experimental)",
+      "reason": "Not fully recorded yet."
+     },
+     {
+      "id": "mercury-decide",
+      "label": "Mercury Decide",
+      "reason": "Not fully recorded yet."
+     },
+     {
+      "id": "solar-decide",
+      "label": "Solar Decide",
+      "reason": "Not fully recorded yet."
+     },
+     {
+      "id": "span-01",
+      "label": "Span 01",
+      "reason": "Answers yes-or-no questions only; every demo also asks choice and score questions."
+     },
+     {
+      "id": "kev-4b",
+      "label": "Kev 4B",
+      "reason": "Not fully recorded yet."
+     }
+    ]
+   },
+   {
+    "label": "Image demos",
+    "demos": 10,
+    "commonItems": 282,
+    "models": [
+     {
+      "id": "openai",
+      "label": "GPT-6 Luna",
+      "maker": "OpenAI",
+      "accuracy": 0.6737588652482269,
+      "interval": {
+       "low": 0.6170215405386519,
+       "high": 0.7258256867368741
+      },
+      "right": 190,
+      "graded": 282,
+      "wins": 10,
+      "coverage": 1,
+      "refused": 0,
+      "speed": {
+       "p50": 294,
+       "p95": 560,
+       "n": 180,
+       "sampled": true
+      },
+      "costPer1k": null,
+      "tokensPerItem": 882
+     }
+    ],
+    "excluded": [
+     {
+      "id": "jev",
+      "label": "Jev",
+      "reason": "Does not take images."
+     },
+     {
+      "id": "microsoft-decision-1",
+      "label": "Decision 1",
+      "reason": "Does not take images."
+     },
+     {
+      "id": "drex-v1-5",
+      "label": "Drex 1.5",
+      "reason": "Does not take images."
+     },
+     {
+      "id": "clef-omni",
+      "label": "Clef Omni",
+      "reason": "Not fully recorded yet."
+     },
+     {
+      "id": "solar-decide-flash",
+      "label": "Solar Decide Flash",
+      "reason": "Does not take images."
+     },
+     {
+      "id": "pplx-decider",
+      "label": "PPLX Decider 1.1 27B",
+      "reason": "Not fully recorded yet."
+     },
+     {
+      "id": "liquid-d1",
+      "label": "D1",
+      "reason": "Does not take images."
+     },
+     {
+      "id": "clef-flash",
+      "label": "Clef Flash",
+      "reason": "Not fully recorded yet."
+     },
+     {
+      "id": "clef",
+      "label": "Clef",
+      "reason": "Not fully recorded yet."
+     },
+     {
+      "id": "tev1-4b",
+      "label": "TEV1 4B (experimental)",
+      "reason": "Does not take images."
+     },
+     {
+      "id": "mercury-decide",
+      "label": "Mercury Decide",
+      "reason": "Does not take images."
+     },
+     {
+      "id": "solar-decide",
+      "label": "Solar Decide",
+      "reason": "Does not take images."
+     },
+     {
+      "id": "span-01",
+      "label": "Span 01",
+      "reason": "Answers yes-or-no questions only; every demo also asks choice and score questions."
+     },
+     {
+      "id": "kev-4b",
+      "label": "Kev 4B",
+      "reason": "Does not take images."
+     }
+    ]
+   }
+  ]
  },
  "rows": [
   {
@@ -46,6 +335,12 @@
    "answered": 502,
    "graded": 502,
    "right": 424,
+   "refused": 0,
+   "speed": null,
+   "cost": {
+    "total": null,
+    "tokens": null
+   },
    "interval": {
     "low": 0.8103,
     "high": 0.8737
@@ -120,9 +415,21 @@
      "answered": 502,
      "graded": 502,
      "right": 424,
+     "refused": 0,
      "interval": {
       "low": 0.8103,
       "high": 0.8737
+     },
+     "speed": {
+      "n": 3,
+      "p50": 291,
+      "p95": 565,
+      "mean": 373,
+      "sampled": true
+     },
+     "cost": {
+      "total": null,
+      "tokens": null
      },
      "headline": {
       "value": 0.8182,
@@ -135,13 +442,337 @@
      "answered": 502,
      "graded": 502,
      "right": 377,
+     "refused": 0,
      "interval": {
       "low": 0.7114,
       "high": 0.7868
      },
+     "speed": {
+      "n": 3,
+      "p50": 560,
+      "p95": 1796,
+      "mean": 892,
+      "sampled": true
+     },
+     "cost": {
+      "total": null,
+      "tokens": 745339
+     },
      "headline": {
       "value": 1,
       "display": "11 of 11"
+     }
+    },
+    "microsoft-decision-1": {
+     "model": "microsoft/microsoft-decision-1-20261009",
+     "recordedAt": "2026-10-12",
+     "answered": 502,
+     "graded": 502,
+     "right": 426,
+     "refused": 0,
+     "interval": {
+      "low": 0.8146,
+      "high": 0.8773
+     },
+     "speed": {
+      "n": 502,
+      "p50": 393,
+      "p95": 468,
+      "mean": 401
+     },
+     "cost": {
+      "total": 0.016804,
+      "tokens": 400104
+     },
+     "headline": {
+      "value": 0.7273,
+      "display": "8 of 11"
+     }
+    },
+    "drex-v1-5": {
+     "model": "nace-ai/drex-v1.5-20261009",
+     "recordedAt": "2026-10-12",
+     "answered": 502,
+     "graded": 502,
+     "right": 341,
+     "refused": 0,
+     "interval": {
+      "low": 0.6372,
+      "high": 0.7186
+     },
+     "speed": {
+      "n": 502,
+      "p50": 302,
+      "p95": 811,
+      "mean": 407
+     },
+     "cost": {
+      "total": 0.01803,
+      "tokens": 450744
+     },
+     "headline": {
+      "value": 0.5455,
+      "display": "6 of 11"
+     }
+    },
+    "clef-omni": {
+     "model": "cloudflare/clef-omni-20261009",
+     "recordedAt": "2026-10-12",
+     "answered": 502,
+     "graded": 502,
+     "right": 80,
+     "refused": 0,
+     "interval": {
+      "low": 0.1299,
+      "high": 0.194
+     },
+     "speed": {
+      "n": 502,
+      "p50": 219,
+      "p95": 310,
+      "mean": 244
+     },
+     "cost": {
+      "total": 0.093314,
+      "tokens": 622096
+     },
+     "headline": {
+      "value": 0.4545,
+      "display": "5 of 11"
+     }
+    },
+    "solar-decide-flash": {
+     "model": "upstage/solar-decide-flash-20261008",
+     "recordedAt": "2026-10-12",
+     "answered": 502,
+     "graded": 502,
+     "right": 327,
+     "refused": 0,
+     "interval": {
+      "low": 0.6087,
+      "high": 0.6918
+     },
+     "speed": {
+      "n": 502,
+      "p50": 988,
+      "p95": 1500,
+      "mean": 972
+     },
+     "cost": {
+      "total": 0.118174,
+      "tokens": 2363494
+     },
+     "headline": {
+      "value": 0.4545,
+      "display": "5 of 11"
+     }
+    },
+    "pplx-decider": {
+     "model": "perplexity/pplx-decider-v1.1-27b-20261006",
+     "recordedAt": "2026-10-12",
+     "answered": 502,
+     "graded": 502,
+     "right": 425,
+     "refused": 0,
+     "interval": {
+      "low": 0.8125,
+      "high": 0.8755
+     },
+     "speed": {
+      "n": 502,
+      "p50": 391,
+      "p95": 580,
+      "mean": 450
+     },
+     "cost": {
+      "total": 0.038187,
+      "tokens": 1909337
+     },
+     "headline": {
+      "value": 0.9091,
+      "display": "10 of 11"
+     }
+    },
+    "liquid-d1": {
+     "model": "liquid/d1-20260930",
+     "recordedAt": "2026-10-12",
+     "answered": 502,
+     "graded": 502,
+     "right": 419,
+     "refused": 0,
+     "interval": {
+      "low": 0.7996,
+      "high": 0.8646
+     },
+     "speed": {
+      "n": 502,
+      "p50": 425,
+      "p95": 699,
+      "mean": 447
+     },
+     "cost": {
+      "total": 0.075309,
+      "tokens": 1882722
+     },
+     "headline": {
+      "value": 0.9091,
+      "display": "10 of 11"
+     }
+    },
+    "clef-flash": {
+     "model": "cloudflare/clef-flash",
+     "recordedAt": "2026-10-12",
+     "answered": 502,
+     "graded": 502,
+     "right": 229,
+     "refused": 0,
+     "interval": {
+      "low": 0.4131,
+      "high": 0.4999
+     },
+     "speed": {
+      "n": 502,
+      "p50": 498,
+      "p95": 1139,
+      "mean": 589
+     },
+     "cost": {
+      "total": 0.023769,
+      "tokens": 625502
+     },
+     "headline": {
+      "value": 0.3636,
+      "display": "4 of 11"
+     }
+    },
+    "clef": {
+     "model": "cloudflare/clef",
+     "recordedAt": "2026-10-12",
+     "answered": 502,
+     "graded": 502,
+     "right": 320,
+     "refused": 0,
+     "interval": {
+      "low": 0.5945,
+      "high": 0.6783
+     },
+     "speed": {
+      "n": 502,
+      "p50": 413,
+      "p95": 1208,
+      "mean": 520
+     },
+     "cost": {
+      "total": 0.15012,
+      "tokens": 625502
+     },
+     "headline": {
+      "value": 0.8182,
+      "display": "9 of 11"
+     }
+    },
+    "tev1-4b": {
+     "model": "togethercomputer/tev1-4b-experimental-20260923",
+     "recordedAt": "2026-10-12",
+     "answered": 502,
+     "graded": 502,
+     "right": 313,
+     "refused": 0,
+     "interval": {
+      "low": 0.5803,
+      "high": 0.6648
+     },
+     "speed": {
+      "n": 502,
+      "p50": 412,
+      "p95": 480,
+      "mean": 418
+     },
+     "cost": {
+      "total": 0.071877,
+      "tokens": 1711368
+     },
+     "headline": {
+      "value": 0.4545,
+      "display": "5 of 11"
+     }
+    },
+    "mercury-decide": {
+     "model": "inception/mercury-decide-20260930",
+     "recordedAt": "2026-10-12",
+     "answered": 502,
+     "graded": 502,
+     "right": 423,
+     "refused": 0,
+     "interval": {
+      "low": 0.8082,
+      "high": 0.8719
+     },
+     "speed": {
+      "n": 502,
+      "p50": 643,
+      "p95": 2189,
+      "mean": 961
+     },
+     "cost": {
+      "total": 0,
+      "tokens": 369945
+     },
+     "headline": {
+      "value": 1,
+      "display": "11 of 11"
+     }
+    },
+    "solar-decide": {
+     "model": "upstage/solar-decide-20260928",
+     "recordedAt": "2026-10-12",
+     "answered": 346,
+     "graded": 346,
+     "right": 257,
+     "refused": 0,
+     "interval": {
+      "low": 0.6942,
+      "high": 0.786
+     },
+     "speed": {
+      "n": 346,
+      "p50": 18858,
+      "p95": 25468,
+      "mean": 18954
+     },
+     "cost": {
+      "total": 0.081555,
+      "tokens": 1631097
+     },
+     "headline": {
+      "value": 0.7273,
+      "display": "8 of 11"
+     }
+    },
+    "kev-4b": {
+     "model": "jaredpalmer/kev-4b-20260924",
+     "recordedAt": "2026-10-12",
+     "answered": 502,
+     "graded": 502,
+     "right": 291,
+     "refused": 0,
+     "interval": {
+      "low": 0.5361,
+      "high": 0.6221
+     },
+     "speed": {
+      "n": 502,
+      "p50": 2082,
+      "p95": 5743,
+      "mean": 2818
+     },
+     "cost": {
+      "total": 0.018931,
+      "tokens": 450744
+     },
+     "headline": {
+      "value": 0.5455,
+      "display": "6 of 11"
      }
     }
    },
@@ -166,6 +797,12 @@
    "answered": 60,
    "graded": 60,
    "right": 60,
+   "refused": 0,
+   "speed": null,
+   "cost": {
+    "total": null,
+    "tokens": null
+   },
    "interval": {
     "low": 0.9398,
     "high": 1
@@ -246,9 +883,21 @@
      "answered": 60,
      "graded": 60,
      "right": 60,
+     "refused": 0,
      "interval": {
       "low": 0.9398,
       "high": 1
+     },
+     "speed": {
+      "n": 3,
+      "p50": 298,
+      "p95": 310,
+      "mean": 290,
+      "sampled": true
+     },
+     "cost": {
+      "total": null,
+      "tokens": null
      },
      "headline": {
       "value": 1,
@@ -261,13 +910,337 @@
      "answered": 60,
      "graded": 60,
      "right": 52,
+     "refused": 0,
      "interval": {
       "low": 0.7583,
       "high": 0.9309
      },
+     "speed": {
+      "n": 3,
+      "p50": 309,
+      "p95": 2120,
+      "mean": 911,
+      "sampled": true
+     },
+     "cost": {
+      "total": null,
+      "tokens": 95125
+     },
      "headline": {
       "value": 0.8667,
       "display": "52 of 60"
+     }
+    },
+    "microsoft-decision-1": {
+     "model": "microsoft/microsoft-decision-1-20261009",
+     "recordedAt": "2026-10-12",
+     "answered": 60,
+     "graded": 60,
+     "right": 43,
+     "refused": 0,
+     "interval": {
+      "low": 0.5923,
+      "high": 0.8149
+     },
+     "speed": {
+      "n": 60,
+      "p50": 406,
+      "p95": 2340,
+      "mean": 564
+     },
+     "cost": {
+      "total": 0.002611,
+      "tokens": 62168
+     },
+     "headline": {
+      "value": 0.7167,
+      "display": "43 of 60"
+     }
+    },
+    "drex-v1-5": {
+     "model": "nace-ai/drex-v1.5-20261009",
+     "recordedAt": "2026-10-12",
+     "answered": 60,
+     "graded": 60,
+     "right": 30,
+     "refused": 0,
+     "interval": {
+      "low": 0.3773,
+      "high": 0.6227
+     },
+     "speed": {
+      "n": 60,
+      "p50": 414,
+      "p95": 1523,
+      "mean": 601
+     },
+     "cost": {
+      "total": 0.002654,
+      "tokens": 66347
+     },
+     "headline": {
+      "value": 0.5,
+      "display": "30 of 60"
+     }
+    },
+    "clef-omni": {
+     "model": "cloudflare/clef-omni-20261009",
+     "recordedAt": "2026-10-12",
+     "answered": 60,
+     "graded": 60,
+     "right": 54,
+     "refused": 0,
+     "interval": {
+      "low": 0.7985,
+      "high": 0.9534
+     },
+     "speed": {
+      "n": 60,
+      "p50": 250,
+      "p95": 808,
+      "mean": 325
+     },
+     "cost": {
+      "total": 0.01277,
+      "tokens": 85134
+     },
+     "headline": {
+      "value": 0.9,
+      "display": "54 of 60"
+     }
+    },
+    "solar-decide-flash": {
+     "model": "upstage/solar-decide-flash-20261008",
+     "recordedAt": "2026-10-12",
+     "answered": 60,
+     "graded": 60,
+     "right": 11,
+     "refused": 0,
+     "interval": {
+      "low": 0.1056,
+      "high": 0.2992
+     },
+     "speed": {
+      "n": 60,
+      "p50": 1127,
+      "p95": 2224,
+      "mean": 1247
+     },
+     "cost": {
+      "total": 0.013301,
+      "tokens": 266020
+     },
+     "headline": {
+      "value": 0.1833,
+      "display": "11 of 60"
+     }
+    },
+    "pplx-decider": {
+     "model": "perplexity/pplx-decider-v1.1-27b-20261006",
+     "recordedAt": "2026-10-12",
+     "answered": 60,
+     "graded": 60,
+     "right": 60,
+     "refused": 0,
+     "interval": {
+      "low": 0.9398,
+      "high": 1
+     },
+     "speed": {
+      "n": 60,
+      "p50": 406,
+      "p95": 898,
+      "mean": 456
+     },
+     "cost": {
+      "total": 0.004688,
+      "tokens": 234392
+     },
+     "headline": {
+      "value": 1,
+      "display": "60 of 60"
+     }
+    },
+    "liquid-d1": {
+     "model": "liquid/d1-20260930",
+     "recordedAt": "2026-10-12",
+     "answered": 60,
+     "graded": 60,
+     "right": 49,
+     "refused": 0,
+     "interval": {
+      "low": 0.7008,
+      "high": 0.8944
+     },
+     "speed": {
+      "n": 60,
+      "p50": 518,
+      "p95": 963,
+      "mean": 552
+     },
+     "cost": {
+      "total": 0.00902,
+      "tokens": 225492
+     },
+     "headline": {
+      "value": 0.8167,
+      "display": "49 of 60"
+     }
+    },
+    "clef-flash": {
+     "model": "cloudflare/clef-flash",
+     "recordedAt": "2026-10-12",
+     "answered": 60,
+     "graded": 60,
+     "right": 47,
+     "refused": 0,
+     "interval": {
+      "low": 0.6638,
+      "high": 0.8688
+     },
+     "speed": {
+      "n": 60,
+      "p50": 542,
+      "p95": 1313,
+      "mean": 576
+     },
+     "cost": {
+      "total": 0.003247,
+      "tokens": 85448
+     },
+     "headline": {
+      "value": 0.7833,
+      "display": "47 of 60"
+     }
+    },
+    "clef": {
+     "model": "cloudflare/clef",
+     "recordedAt": "2026-10-12",
+     "answered": 60,
+     "graded": 60,
+     "right": 49,
+     "refused": 0,
+     "interval": {
+      "low": 0.7008,
+      "high": 0.8944
+     },
+     "speed": {
+      "n": 60,
+      "p50": 434,
+      "p95": 975,
+      "mean": 489
+     },
+     "cost": {
+      "total": 0.020508,
+      "tokens": 85448
+     },
+     "headline": {
+      "value": 0.8167,
+      "display": "49 of 60"
+     }
+    },
+    "tev1-4b": {
+     "model": "togethercomputer/tev1-4b-experimental-20260923",
+     "recordedAt": "2026-10-12",
+     "answered": 60,
+     "graded": 60,
+     "right": 31,
+     "refused": 0,
+     "interval": {
+      "low": 0.3931,
+      "high": 0.6383
+     },
+     "speed": {
+      "n": 60,
+      "p50": 418,
+      "p95": 758,
+      "mean": 459
+     },
+     "cost": {
+      "total": 0.008738,
+      "tokens": 208052
+     },
+     "headline": {
+      "value": 0.5167,
+      "display": "31 of 60"
+     }
+    },
+    "mercury-decide": {
+     "model": "inception/mercury-decide-20260930",
+     "recordedAt": "2026-10-12",
+     "answered": 10,
+     "graded": 10,
+     "right": 8,
+     "refused": 0,
+     "interval": {
+      "low": 0.4902,
+      "high": 0.9433
+     },
+     "speed": {
+      "n": 10,
+      "p50": 986,
+      "p95": 1668,
+      "mean": 980
+     },
+     "cost": {
+      "total": 0,
+      "tokens": 9864
+     },
+     "headline": {
+      "value": 0.8,
+      "display": "8 of 10"
+     }
+    },
+    "solar-decide": {
+     "model": "upstage/solar-decide-20260928",
+     "recordedAt": "2026-10-12",
+     "answered": 10,
+     "graded": 10,
+     "right": 7,
+     "refused": 0,
+     "interval": {
+      "low": 0.3968,
+      "high": 0.8922
+     },
+     "speed": {
+      "n": 10,
+      "p50": 17913,
+      "p95": 33697,
+      "mean": 17758
+     },
+     "cost": {
+      "total": 0.002244,
+      "tokens": 44888
+     },
+     "headline": {
+      "value": 0.7,
+      "display": "7 of 10"
+     }
+    },
+    "kev-4b": {
+     "model": "jaredpalmer/kev-4b-20260924",
+     "recordedAt": "2026-10-12",
+     "answered": 60,
+     "graded": 60,
+     "right": 25,
+     "refused": 0,
+     "interval": {
+      "low": 0.3006,
+      "high": 0.5427
+     },
+     "speed": {
+      "n": 60,
+      "p50": 2078,
+      "p95": 3208,
+      "mean": 1967
+     },
+     "cost": {
+      "total": 0.002786,
+      "tokens": 66347
+     },
+     "headline": {
+      "value": 0.4167,
+      "display": "25 of 60"
      }
     }
    },
@@ -292,6 +1265,12 @@
    "answered": 400,
    "graded": 400,
    "right": 399,
+   "refused": 0,
+   "speed": null,
+   "cost": {
+    "total": null,
+    "tokens": null
+   },
    "interval": {
     "low": 0.986,
     "high": 0.9996
@@ -366,9 +1345,21 @@
      "answered": 400,
      "graded": 400,
      "right": 399,
+     "refused": 0,
      "interval": {
       "low": 0.986,
       "high": 0.9996
+     },
+     "speed": {
+      "n": 3,
+      "p50": 263,
+      "p95": 279,
+      "mean": 263,
+      "sampled": true
+     },
+     "cost": {
+      "total": null,
+      "tokens": null
      },
      "headline": {
       "value": 0.9975,
@@ -381,13 +1372,285 @@
      "answered": 400,
      "graded": 400,
      "right": 399,
+     "refused": 0,
      "interval": {
       "low": 0.986,
       "high": 0.9996
      },
+     "speed": {
+      "n": 3,
+      "p50": 224,
+      "p95": 299,
+      "mean": 236,
+      "sampled": true
+     },
+     "cost": {
+      "total": null,
+      "tokens": 505942
+     },
      "headline": {
       "value": 0.9975,
       "display": "99.8%"
+     }
+    },
+    "microsoft-decision-1": {
+     "model": "microsoft/microsoft-decision-1-20261009",
+     "recordedAt": "2026-10-12",
+     "answered": 400,
+     "graded": 400,
+     "right": 397,
+     "refused": 0,
+     "interval": {
+      "low": 0.9782,
+      "high": 0.9974
+     },
+     "speed": {
+      "n": 400,
+      "p50": 391,
+      "p95": 454,
+      "mean": 394
+     },
+     "cost": {
+      "total": 0.013967,
+      "tokens": 332558
+     },
+     "headline": {
+      "value": 0.9925,
+      "display": "99.3%"
+     }
+    },
+    "drex-v1-5": {
+     "model": "nace-ai/drex-v1.5-20261009",
+     "recordedAt": "2026-10-12",
+     "answered": 400,
+     "graded": 400,
+     "right": 394,
+     "refused": 0,
+     "interval": {
+      "low": 0.9677,
+      "high": 0.9931
+     },
+     "speed": {
+      "n": 400,
+      "p50": 298,
+      "p95": 728,
+      "mean": 364
+     },
+     "cost": {
+      "total": 0.01443,
+      "tokens": 360743
+     },
+     "headline": {
+      "value": 0.985,
+      "display": "98.5%"
+     }
+    },
+    "clef-omni": {
+     "model": "cloudflare/clef-omni-20261009",
+     "recordedAt": "2026-10-12",
+     "answered": 400,
+     "graded": 400,
+     "right": 393,
+     "refused": 0,
+     "interval": {
+      "low": 0.9643,
+      "high": 0.9915
+     },
+     "speed": {
+      "n": 400,
+      "p50": 220,
+      "p95": 298,
+      "mean": 244
+     },
+     "cost": {
+      "total": 0.076778,
+      "tokens": 511851
+     },
+     "headline": {
+      "value": 0.9825,
+      "display": "98.3%"
+     }
+    },
+    "solar-decide-flash": {
+     "model": "upstage/solar-decide-flash-20261008",
+     "recordedAt": "2026-10-12",
+     "answered": 400,
+     "graded": 400,
+     "right": 391,
+     "refused": 0,
+     "interval": {
+      "low": 0.9578,
+      "high": 0.9881
+     },
+     "speed": {
+      "n": 400,
+      "p50": 993,
+      "p95": 1552,
+      "mean": 949
+     },
+     "cost": {
+      "total": 0.068841,
+      "tokens": 1376816
+     },
+     "headline": {
+      "value": 0.9775,
+      "display": "97.8%"
+     }
+    },
+    "pplx-decider": {
+     "model": "perplexity/pplx-decider-v1.1-27b-20261006",
+     "recordedAt": "2026-10-12",
+     "answered": 400,
+     "graded": 400,
+     "right": 400,
+     "refused": 0,
+     "interval": {
+      "low": 0.9905,
+      "high": 1
+     },
+     "speed": {
+      "n": 400,
+      "p50": 405,
+      "p95": 827,
+      "mean": 459
+     },
+     "cost": {
+      "total": 0.020646,
+      "tokens": 1032296
+     },
+     "headline": {
+      "value": 1,
+      "display": "100%"
+     }
+    },
+    "liquid-d1": {
+     "model": "liquid/d1-20260930",
+     "recordedAt": "2026-10-12",
+     "answered": 400,
+     "graded": 400,
+     "right": 397,
+     "refused": 0,
+     "interval": {
+      "low": 0.9782,
+      "high": 0.9974
+     },
+     "speed": {
+      "n": 400,
+      "p50": 472,
+      "p95": 918,
+      "mean": 521
+     },
+     "cost": {
+      "total": 0.037458,
+      "tokens": 936472
+     },
+     "headline": {
+      "value": 0.9925,
+      "display": "99.3%"
+     }
+    },
+    "clef-flash": {
+     "model": "cloudflare/clef-flash",
+     "recordedAt": "2026-10-12",
+     "answered": 400,
+     "graded": 400,
+     "right": 398,
+     "refused": 0,
+     "interval": {
+      "low": 0.982,
+      "high": 0.9986
+     },
+     "speed": {
+      "n": 400,
+      "p50": 541,
+      "p95": 1049,
+      "mean": 607
+     },
+     "cost": {
+      "total": 0.01954,
+      "tokens": 514213
+     },
+     "headline": {
+      "value": 0.995,
+      "display": "99.5%"
+     }
+    },
+    "clef": {
+     "model": "cloudflare/clef",
+     "recordedAt": "2026-10-12",
+     "answered": 400,
+     "graded": 400,
+     "right": 400,
+     "refused": 0,
+     "interval": {
+      "low": 0.9905,
+      "high": 1
+     },
+     "speed": {
+      "n": 400,
+      "p50": 452,
+      "p95": 2075,
+      "mean": 713
+     },
+     "cost": {
+      "total": 0.123411,
+      "tokens": 514213
+     },
+     "headline": {
+      "value": 1,
+      "display": "100%"
+     }
+    },
+    "tev1-4b": {
+     "model": "togethercomputer/tev1-4b-experimental-20260923",
+     "recordedAt": "2026-10-12",
+     "answered": 400,
+     "graded": 400,
+     "right": 397,
+     "refused": 0,
+     "interval": {
+      "low": 0.9782,
+      "high": 0.9974
+     },
+     "speed": {
+      "n": 400,
+      "p50": 381,
+      "p95": 578,
+      "mean": 404
+     },
+     "cost": {
+      "total": 0.042212,
+      "tokens": 1005032
+     },
+     "headline": {
+      "value": 0.9925,
+      "display": "99.3%"
+     }
+    },
+    "kev-4b": {
+     "model": "jaredpalmer/kev-4b-20260924",
+     "recordedAt": "2026-10-12",
+     "answered": 400,
+     "graded": 400,
+     "right": 398,
+     "refused": 0,
+     "interval": {
+      "low": 0.982,
+      "high": 0.9986
+     },
+     "speed": {
+      "n": 400,
+      "p50": 1911,
+      "p95": 2508,
+      "mean": 1913
+     },
+     "cost": {
+      "total": 0.015151,
+      "tokens": 360743
+     },
+     "headline": {
+      "value": 0.995,
+      "display": "99.5%"
      }
     }
    },
@@ -412,6 +1675,12 @@
    "answered": 150,
    "graded": 150,
    "right": 134,
+   "refused": 0,
+   "speed": null,
+   "cost": {
+    "total": null,
+    "tokens": null
+   },
    "interval": {
     "low": 0.8338,
     "high": 0.9333
@@ -487,9 +1756,21 @@
      "answered": 150,
      "graded": 150,
      "right": 134,
+     "refused": 0,
      "interval": {
       "low": 0.8338,
       "high": 0.9333
+     },
+     "speed": {
+      "n": 3,
+      "p50": 287,
+      "p95": 294,
+      "mean": 273,
+      "sampled": true
+     },
+     "cost": {
+      "total": null,
+      "tokens": null
      },
      "headline": {
       "value": 0.8933,
@@ -502,13 +1783,285 @@
      "answered": 150,
      "graded": 150,
      "right": 114,
+     "refused": 0,
      "interval": {
       "low": 0.6857,
       "high": 0.8213
      },
+     "speed": {
+      "n": 3,
+      "p50": 200,
+      "p95": 335,
+      "mean": 233,
+      "sampled": true
+     },
+     "cost": {
+      "total": null,
+      "tokens": 242503
+     },
      "headline": {
       "value": 0.76,
       "display": "76%"
+     }
+    },
+    "microsoft-decision-1": {
+     "model": "microsoft/microsoft-decision-1-20261009",
+     "recordedAt": "2026-10-12",
+     "answered": 150,
+     "graded": 150,
+     "right": 88,
+     "refused": 0,
+     "interval": {
+      "low": 0.5067,
+      "high": 0.6623
+     },
+     "speed": {
+      "n": 150,
+      "p50": 409,
+      "p95": 902,
+      "mean": 460
+     },
+     "cost": {
+      "total": 0.005986,
+      "tokens": 142534
+     },
+     "headline": {
+      "value": 0.5867,
+      "display": "58.7%"
+     }
+    },
+    "drex-v1-5": {
+     "model": "nace-ai/drex-v1.5-20261009",
+     "recordedAt": "2026-10-12",
+     "answered": 150,
+     "graded": 150,
+     "right": 134,
+     "refused": 0,
+     "interval": {
+      "low": 0.8338,
+      "high": 0.9333
+     },
+     "speed": {
+      "n": 150,
+      "p50": 345,
+      "p95": 1136,
+      "mean": 503
+     },
+     "cost": {
+      "total": 0.006224,
+      "tokens": 155607
+     },
+     "headline": {
+      "value": 0.8933,
+      "display": "89.3%"
+     }
+    },
+    "clef-omni": {
+     "model": "cloudflare/clef-omni-20261009",
+     "recordedAt": "2026-10-12",
+     "answered": 150,
+     "graded": 150,
+     "right": 84,
+     "refused": 0,
+     "interval": {
+      "low": 0.48,
+      "high": 0.637
+     },
+     "speed": {
+      "n": 150,
+      "p50": 220,
+      "p95": 424,
+      "mean": 239
+     },
+     "cost": {
+      "total": 0.028775,
+      "tokens": 191833
+     },
+     "headline": {
+      "value": 0.56,
+      "display": "56.0%"
+     }
+    },
+    "solar-decide-flash": {
+     "model": "upstage/solar-decide-flash-20261008",
+     "recordedAt": "2026-10-12",
+     "answered": 150,
+     "graded": 150,
+     "right": 3,
+     "refused": 0,
+     "interval": {
+      "low": 0.0068,
+      "high": 0.0571
+     },
+     "speed": {
+      "n": 150,
+      "p50": 1041,
+      "p95": 1562,
+      "mean": 991
+     },
+     "cost": {
+      "total": 0.032524,
+      "tokens": 650484
+     },
+     "headline": {
+      "value": 0.02,
+      "display": "2%"
+     }
+    },
+    "pplx-decider": {
+     "model": "perplexity/pplx-decider-v1.1-27b-20261006",
+     "recordedAt": "2026-10-12",
+     "answered": 150,
+     "graded": 150,
+     "right": 134,
+     "refused": 0,
+     "interval": {
+      "low": 0.8338,
+      "high": 0.9333
+     },
+     "speed": {
+      "n": 150,
+      "p50": 403,
+      "p95": 690,
+      "mean": 434
+     },
+     "cost": {
+      "total": 0.011247,
+      "tokens": 562346
+     },
+     "headline": {
+      "value": 0.8933,
+      "display": "89.3%"
+     }
+    },
+    "liquid-d1": {
+     "model": "liquid/d1-20260930",
+     "recordedAt": "2026-10-12",
+     "answered": 150,
+     "graded": 150,
+     "right": 134,
+     "refused": 0,
+     "interval": {
+      "low": 0.8338,
+      "high": 0.9333
+     },
+     "speed": {
+      "n": 150,
+      "p50": 661,
+      "p95": 1127,
+      "mean": 677
+     },
+     "cost": {
+      "total": 0.023593,
+      "tokens": 589830
+     },
+     "headline": {
+      "value": 0.8933,
+      "display": "89.3%"
+     }
+    },
+    "clef-flash": {
+     "model": "cloudflare/clef-flash",
+     "recordedAt": "2026-10-12",
+     "answered": 150,
+     "graded": 150,
+     "right": 92,
+     "refused": 0,
+     "interval": {
+      "low": 0.5335,
+      "high": 0.6875
+     },
+     "speed": {
+      "n": 150,
+      "p50": 460,
+      "p95": 876,
+      "mean": 553
+     },
+     "cost": {
+      "total": 0.007318,
+      "tokens": 192574
+     },
+     "headline": {
+      "value": 0.6133,
+      "display": "61.3%"
+     }
+    },
+    "clef": {
+     "model": "cloudflare/clef",
+     "recordedAt": "2026-10-12",
+     "answered": 150,
+     "graded": 150,
+     "right": 80,
+     "refused": 0,
+     "interval": {
+      "low": 0.4537,
+      "high": 0.6113
+     },
+     "speed": {
+      "n": 150,
+      "p50": 420,
+      "p95": 750,
+      "mean": 458
+     },
+     "cost": {
+      "total": 0.046218,
+      "tokens": 192574
+     },
+     "headline": {
+      "value": 0.5333,
+      "display": "53.3%"
+     }
+    },
+    "tev1-4b": {
+     "model": "togethercomputer/tev1-4b-experimental-20260923",
+     "recordedAt": "2026-10-12",
+     "answered": 150,
+     "graded": 150,
+     "right": 130,
+     "refused": 0,
+     "interval": {
+      "low": 0.803,
+      "high": 0.912
+     },
+     "speed": {
+      "n": 150,
+      "p50": 494,
+      "p95": 588,
+      "mean": 504
+     },
+     "cost": {
+      "total": 0.020437,
+      "tokens": 486586
+     },
+     "headline": {
+      "value": 0.8667,
+      "display": "86.7%"
+     }
+    },
+    "kev-4b": {
+     "model": "jaredpalmer/kev-4b-20260924",
+     "recordedAt": "2026-10-12",
+     "answered": 150,
+     "graded": 150,
+     "right": 134,
+     "refused": 0,
+     "interval": {
+      "low": 0.8338,
+      "high": 0.9333
+     },
+     "speed": {
+      "n": 150,
+      "p50": 1402,
+      "p95": 2072,
+      "mean": 1467
+     },
+     "cost": {
+      "total": 0.006535,
+      "tokens": 155607
+     },
+     "headline": {
+      "value": 0.8933,
+      "display": "89.3%"
      }
     }
    },
@@ -533,6 +2086,12 @@
    "answered": 60,
    "graded": 60,
    "right": 57,
+   "refused": 0,
+   "speed": null,
+   "cost": {
+    "total": null,
+    "tokens": null
+   },
    "interval": {
     "low": 0.863,
     "high": 0.9829
@@ -614,9 +2173,21 @@
      "answered": 60,
      "graded": 60,
      "right": 57,
+     "refused": 0,
      "interval": {
       "low": 0.863,
       "high": 0.9829
+     },
+     "speed": {
+      "n": 3,
+      "p50": 270,
+      "p95": 291,
+      "mean": 270,
+      "sampled": true
+     },
+     "cost": {
+      "total": null,
+      "tokens": null
      },
      "headline": {
       "value": 1,
@@ -629,13 +2200,285 @@
      "answered": 60,
      "graded": 60,
      "right": 57,
+     "refused": 0,
      "interval": {
       "low": 0.863,
       "high": 0.9829
      },
+     "speed": {
+      "n": 3,
+      "p50": 239,
+      "p95": 292,
+      "mean": 243,
+      "sampled": true
+     },
+     "cost": {
+      "total": null,
+      "tokens": 63226
+     },
      "headline": {
       "value": 1,
       "display": "13 of 13"
+     }
+    },
+    "microsoft-decision-1": {
+     "model": "microsoft/microsoft-decision-1-20261009",
+     "recordedAt": "2026-10-12",
+     "answered": 60,
+     "graded": 60,
+     "right": 25,
+     "refused": 0,
+     "interval": {
+      "low": 0.3006,
+      "high": 0.5427
+     },
+     "speed": {
+      "n": 60,
+      "p50": 406,
+      "p95": 881,
+      "mean": 451
+     },
+     "cost": {
+      "total": 0.001485,
+      "tokens": 35353
+     },
+     "headline": {
+      "value": 1,
+      "display": "13 of 13"
+     }
+    },
+    "drex-v1-5": {
+     "model": "nace-ai/drex-v1.5-20261009",
+     "recordedAt": "2026-10-12",
+     "answered": 60,
+     "graded": 60,
+     "right": 40,
+     "refused": 0,
+     "interval": {
+      "low": 0.5406,
+      "high": 0.7727
+     },
+     "speed": {
+      "n": 60,
+      "p50": 339,
+      "p95": 1341,
+      "mean": 492
+     },
+     "cost": {
+      "total": 0.001444,
+      "tokens": 36088
+     },
+     "headline": {
+      "value": 0.9231,
+      "display": "12 of 13"
+     }
+    },
+    "clef-omni": {
+     "model": "cloudflare/clef-omni-20261009",
+     "recordedAt": "2026-10-12",
+     "answered": 60,
+     "graded": 60,
+     "right": 52,
+     "refused": 0,
+     "interval": {
+      "low": 0.7583,
+      "high": 0.9309
+     },
+     "speed": {
+      "n": 60,
+      "p50": 234,
+      "p95": 626,
+      "mean": 292
+     },
+     "cost": {
+      "total": 0.008507,
+      "tokens": 56714
+     },
+     "headline": {
+      "value": 0.6923,
+      "display": "9 of 13"
+     }
+    },
+    "solar-decide-flash": {
+     "model": "upstage/solar-decide-flash-20261008",
+     "recordedAt": "2026-10-12",
+     "answered": 60,
+     "graded": 60,
+     "right": 10,
+     "refused": 0,
+     "interval": {
+      "low": 0.0931,
+      "high": 0.2803
+     },
+     "speed": {
+      "n": 60,
+      "p50": 825,
+      "p95": 1452,
+      "mean": 844
+     },
+     "cost": {
+      "total": 0.007747,
+      "tokens": 154948
+     },
+     "headline": {
+      "value": 0.7692,
+      "display": "10 of 13"
+     }
+    },
+    "pplx-decider": {
+     "model": "perplexity/pplx-decider-v1.1-27b-20261006",
+     "recordedAt": "2026-10-12",
+     "answered": 60,
+     "graded": 60,
+     "right": 58,
+     "refused": 0,
+     "interval": {
+      "low": 0.8864,
+      "high": 0.9908
+     },
+     "speed": {
+      "n": 60,
+      "p50": 403,
+      "p95": 903,
+      "mean": 448
+     },
+     "cost": {
+      "total": 0.002024,
+      "tokens": 101196
+     },
+     "headline": {
+      "value": 1,
+      "display": "13 of 13"
+     }
+    },
+    "liquid-d1": {
+     "model": "liquid/d1-20260930",
+     "recordedAt": "2026-10-12",
+     "answered": 60,
+     "graded": 60,
+     "right": 55,
+     "refused": 0,
+     "interval": {
+      "low": 0.8193,
+      "high": 0.9639
+     },
+     "speed": {
+      "n": 60,
+      "p50": 750,
+      "p95": 1013,
+      "mean": 693
+     },
+     "cost": {
+      "total": 0.00373,
+      "tokens": 93248
+     },
+     "headline": {
+      "value": 0.9231,
+      "display": "12 of 13"
+     }
+    },
+    "clef-flash": {
+     "model": "cloudflare/clef-flash",
+     "recordedAt": "2026-10-12",
+     "answered": 60,
+     "graded": 60,
+     "right": 54,
+     "refused": 0,
+     "interval": {
+      "low": 0.7985,
+      "high": 0.9534
+     },
+     "speed": {
+      "n": 60,
+      "p50": 458,
+      "p95": 869,
+      "mean": 481
+     },
+     "cost": {
+      "total": 0.002166,
+      "tokens": 57013
+     },
+     "headline": {
+      "value": 0.8462,
+      "display": "11 of 13"
+     }
+    },
+    "clef": {
+     "model": "cloudflare/clef",
+     "recordedAt": "2026-10-12",
+     "answered": 60,
+     "graded": 60,
+     "right": 56,
+     "refused": 0,
+     "interval": {
+      "low": 0.8407,
+      "high": 0.9738
+     },
+     "speed": {
+      "n": 60,
+      "p50": 401,
+      "p95": 974,
+      "mean": 477
+     },
+     "cost": {
+      "total": 0.013683,
+      "tokens": 57013
+     },
+     "headline": {
+      "value": 1,
+      "display": "13 of 13"
+     }
+    },
+    "tev1-4b": {
+     "model": "togethercomputer/tev1-4b-experimental-20260923",
+     "recordedAt": "2026-10-12",
+     "answered": 60,
+     "graded": 60,
+     "right": 37,
+     "refused": 0,
+     "interval": {
+      "low": 0.4902,
+      "high": 0.7291
+     },
+     "speed": {
+      "n": 60,
+      "p50": 404,
+      "p95": 786,
+      "mean": 438
+     },
+     "cost": {
+      "total": 0.004077,
+      "tokens": 97072
+     },
+     "headline": {
+      "value": 0.8462,
+      "display": "11 of 13"
+     }
+    },
+    "kev-4b": {
+     "model": "jaredpalmer/kev-4b-20260924",
+     "recordedAt": "2026-10-12",
+     "answered": 60,
+     "graded": 60,
+     "right": 54,
+     "refused": 0,
+     "interval": {
+      "low": 0.7985,
+      "high": 0.9534
+     },
+     "speed": {
+      "n": 60,
+      "p50": 1514,
+      "p95": 2389,
+      "mean": 1518
+     },
+     "cost": {
+      "total": 0.001516,
+      "tokens": 36088
+     },
+     "headline": {
+      "value": 0.8462,
+      "display": "11 of 13"
      }
     }
    },
@@ -660,6 +2503,12 @@
    "answered": 300,
    "graded": 300,
    "right": 221,
+   "refused": 0,
+   "speed": null,
+   "cost": {
+    "total": null,
+    "tokens": null
+   },
    "interval": {
     "low": 0.6841,
     "high": 0.7833
@@ -742,9 +2591,21 @@
      "answered": 300,
      "graded": 300,
      "right": 221,
+     "refused": 0,
      "interval": {
       "low": 0.6841,
       "high": 0.7833
+     },
+     "speed": {
+      "n": 3,
+      "p50": 270,
+      "p95": 279,
+      "mean": 266,
+      "sampled": true
+     },
+     "cost": {
+      "total": null,
+      "tokens": null
      },
      "headline": {
       "value": 1,
@@ -757,13 +2618,285 @@
      "answered": 300,
      "graded": 300,
      "right": 222,
+     "refused": 0,
      "interval": {
       "low": 0.6876,
       "high": 0.7864
      },
+     "speed": {
+      "n": 3,
+      "p50": 204,
+      "p95": 266,
+      "mean": 208,
+      "sampled": true
+     },
+     "cost": {
+      "total": null,
+      "tokens": 433837
+     },
      "headline": {
       "value": 1,
       "display": "9 of 9"
+     }
+    },
+    "microsoft-decision-1": {
+     "model": "microsoft/microsoft-decision-1-20261009",
+     "recordedAt": "2026-10-12",
+     "answered": 300,
+     "graded": 300,
+     "right": 284,
+     "refused": 0,
+     "interval": {
+      "low": 0.9151,
+      "high": 0.9669
+     },
+     "speed": {
+      "n": 300,
+      "p50": 403,
+      "p95": 499,
+      "mean": 420
+     },
+     "cost": {
+      "total": 0.009767,
+      "tokens": 232556
+     },
+     "headline": {
+      "value": 0.5556,
+      "display": "5 of 9"
+     }
+    },
+    "drex-v1-5": {
+     "model": "nace-ai/drex-v1.5-20261009",
+     "recordedAt": "2026-10-12",
+     "answered": 300,
+     "graded": 300,
+     "right": 245,
+     "refused": 0,
+     "interval": {
+      "low": 0.769,
+      "high": 0.8564
+     },
+     "speed": {
+      "n": 300,
+      "p50": 299,
+      "p95": 702,
+      "mean": 380
+     },
+     "cost": {
+      "total": 0.009659,
+      "tokens": 241473
+     },
+     "headline": {
+      "value": 0.7778,
+      "display": "7 of 9"
+     }
+    },
+    "clef-omni": {
+     "model": "cloudflare/clef-omni-20261009",
+     "recordedAt": "2026-10-12",
+     "answered": 300,
+     "graded": 300,
+     "right": 273,
+     "refused": 0,
+     "interval": {
+      "low": 0.8722,
+      "high": 0.9374
+     },
+     "speed": {
+      "n": 300,
+      "p50": 219,
+      "p95": 332,
+      "mean": 249
+     },
+     "cost": {
+      "total": 0.050913,
+      "tokens": 339421
+     },
+     "headline": {
+      "value": 0.4444,
+      "display": "4 of 9"
+     }
+    },
+    "solar-decide-flash": {
+     "model": "upstage/solar-decide-flash-20261008",
+     "recordedAt": "2026-10-12",
+     "answered": 300,
+     "graded": 300,
+     "right": 9,
+     "refused": 0,
+     "interval": {
+      "low": 0.0159,
+      "high": 0.056
+     },
+     "speed": {
+      "n": 300,
+      "p50": 977,
+      "p95": 1457,
+      "mean": 958
+     },
+     "cost": {
+      "total": 0.061349,
+      "tokens": 1226975
+     },
+     "headline": {
+      "value": 1,
+      "display": "9 of 9"
+     }
+    },
+    "pplx-decider": {
+     "model": "perplexity/pplx-decider-v1.1-27b-20261006",
+     "recordedAt": "2026-10-12",
+     "answered": 300,
+     "graded": 300,
+     "right": 241,
+     "refused": 0,
+     "interval": {
+      "low": 0.7546,
+      "high": 0.8444
+     },
+     "speed": {
+      "n": 300,
+      "p50": 405,
+      "p95": 873,
+      "mean": 473
+     },
+     "cost": {
+      "total": 0.018651,
+      "tokens": 932530
+     },
+     "headline": {
+      "value": 1,
+      "display": "9 of 9"
+     }
+    },
+    "liquid-d1": {
+     "model": "liquid/d1-20260930",
+     "recordedAt": "2026-10-12",
+     "answered": 300,
+     "graded": 300,
+     "right": 195,
+     "refused": 0,
+     "interval": {
+      "low": 0.5944,
+      "high": 0.7018
+     },
+     "speed": {
+      "n": 300,
+      "p50": 564,
+      "p95": 975,
+      "mean": 594
+     },
+     "cost": {
+      "total": 0.039214,
+      "tokens": 980360
+     },
+     "headline": {
+      "value": 0.6667,
+      "display": "6 of 9"
+     }
+    },
+    "clef-flash": {
+     "model": "cloudflare/clef-flash",
+     "recordedAt": "2026-10-12",
+     "answered": 300,
+     "graded": 300,
+     "right": 282,
+     "refused": 0,
+     "interval": {
+      "low": 0.9072,
+      "high": 0.9617
+     },
+     "speed": {
+      "n": 300,
+      "p50": 416,
+      "p95": 851,
+      "mean": 531
+     },
+     "cost": {
+      "total": 0.012975,
+      "tokens": 341456
+     },
+     "headline": {
+      "value": 1,
+      "display": "9 of 9"
+     }
+    },
+    "clef": {
+     "model": "cloudflare/clef",
+     "recordedAt": "2026-10-12",
+     "answered": 300,
+     "graded": 300,
+     "right": 178,
+     "refused": 0,
+     "interval": {
+      "low": 0.5369,
+      "high": 0.6474
+     },
+     "speed": {
+      "n": 300,
+      "p50": 408,
+      "p95": 722,
+      "mean": 451
+     },
+     "cost": {
+      "total": 0.081949,
+      "tokens": 341456
+     },
+     "headline": {
+      "value": 1,
+      "display": "9 of 9"
+     }
+    },
+    "tev1-4b": {
+     "model": "togethercomputer/tev1-4b-experimental-20260923",
+     "recordedAt": "2026-10-12",
+     "answered": 300,
+     "graded": 300,
+     "right": 249,
+     "refused": 0,
+     "interval": {
+      "low": 0.7834,
+      "high": 0.8683
+     },
+     "speed": {
+      "n": 300,
+      "p50": 466,
+      "p95": 521,
+      "mean": 474
+     },
+     "cost": {
+      "total": 0.034586,
+      "tokens": 823480
+     },
+     "headline": {
+      "value": 0.4444,
+      "display": "4 of 9"
+     }
+    },
+    "kev-4b": {
+     "model": "jaredpalmer/kev-4b-20260924",
+     "recordedAt": "2026-10-12",
+     "answered": 264,
+     "graded": 264,
+     "right": 251,
+     "refused": 0,
+     "interval": {
+      "low": 0.9176,
+      "high": 0.971
+     },
+     "speed": {
+      "n": 264,
+      "p50": 1391,
+      "p95": 1855,
+      "mean": 1399
+     },
+     "cost": {
+      "total": 0.008929,
+      "tokens": 212599
+     },
+     "headline": {
+      "value": 0.2222,
+      "display": "2 of 9"
      }
     }
    },
@@ -788,6 +2921,12 @@
    "answered": 180,
    "graded": 180,
    "right": 173,
+   "refused": 0,
+   "speed": null,
+   "cost": {
+    "total": null,
+    "tokens": null
+   },
    "interval": {
     "low": 0.9219,
     "high": 0.981
@@ -870,9 +3009,21 @@
      "answered": 180,
      "graded": 180,
      "right": 173,
+     "refused": 0,
      "interval": {
       "low": 0.9219,
       "high": 0.981
+     },
+     "speed": {
+      "n": 3,
+      "p50": 273,
+      "p95": 283,
+      "mean": 269,
+      "sampled": true
+     },
+     "cost": {
+      "total": null,
+      "tokens": null
      },
      "headline": {
       "value": 0.9611,
@@ -885,13 +3036,259 @@
      "answered": 180,
      "graded": 180,
      "right": 168,
+     "refused": 0,
      "interval": {
       "low": 0.8871,
       "high": 0.9615
      },
+     "speed": {
+      "n": 3,
+      "p50": 304,
+      "p95": 465,
+      "mean": 332,
+      "sampled": true
+     },
+     "cost": {
+      "total": null,
+      "tokens": 415018
+     },
      "headline": {
       "value": 0.9333,
       "display": "93.3%"
+     }
+    },
+    "microsoft-decision-1": {
+     "model": "microsoft/microsoft-decision-1-20261009",
+     "recordedAt": "2026-10-12",
+     "answered": 180,
+     "graded": 180,
+     "right": 169,
+     "refused": 0,
+     "interval": {
+      "low": 0.8939,
+      "high": 0.9655
+     },
+     "speed": {
+      "n": 180,
+      "p50": 429,
+      "p95": 522,
+      "mean": 446
+     },
+     "cost": {
+      "total": 0.011809,
+      "tokens": 281161
+     },
+     "headline": {
+      "value": 0.9389,
+      "display": "93.9%"
+     }
+    },
+    "drex-v1-5": {
+     "model": "nace-ai/drex-v1.5-20261009",
+     "recordedAt": "2026-10-12",
+     "answered": 180,
+     "graded": 180,
+     "right": 162,
+     "refused": 0,
+     "interval": {
+      "low": 0.8475,
+      "high": 0.9358
+     },
+     "speed": {
+      "n": 180,
+      "p50": 331,
+      "p95": 961,
+      "mean": 401
+     },
+     "cost": {
+      "total": 0.012313,
+      "tokens": 307827
+     },
+     "headline": {
+      "value": 0.9,
+      "display": "90%"
+     }
+    },
+    "clef-omni": {
+     "model": "cloudflare/clef-omni-20261009",
+     "recordedAt": "2026-10-12",
+     "answered": 180,
+     "graded": 180,
+     "right": 167,
+     "refused": 0,
+     "interval": {
+      "low": 0.8804,
+      "high": 0.9573
+     },
+     "speed": {
+      "n": 180,
+      "p50": 269,
+      "p95": 859,
+      "mean": 366
+     },
+     "cost": {
+      "total": 0.052118,
+      "tokens": 347453
+     },
+     "headline": {
+      "value": 0.9278,
+      "display": "92.8%"
+     }
+    },
+    "solar-decide-flash": {
+     "model": "upstage/solar-decide-flash-20261008",
+     "recordedAt": "2026-10-12",
+     "answered": 180,
+     "graded": 180,
+     "right": 160,
+     "refused": 0,
+     "interval": {
+      "low": 0.8346,
+      "high": 0.9269
+     },
+     "speed": {
+      "n": 180,
+      "p50": 1079,
+      "p95": 1696,
+      "mean": 1040
+     },
+     "cost": {
+      "total": 0.073639,
+      "tokens": 1472785
+     },
+     "headline": {
+      "value": 0.8889,
+      "display": "88.9%"
+     }
+    },
+    "pplx-decider": {
+     "model": "perplexity/pplx-decider-v1.1-27b-20261006",
+     "recordedAt": "2026-10-12",
+     "answered": 180,
+     "graded": 180,
+     "right": 173,
+     "refused": 0,
+     "interval": {
+      "low": 0.9219,
+      "high": 0.981
+     },
+     "speed": {
+      "n": 180,
+      "p50": 417,
+      "p95": 652,
+      "mean": 494
+     },
+     "cost": {
+      "total": 0.028401,
+      "tokens": 1420045
+     },
+     "headline": {
+      "value": 0.9611,
+      "display": "96.1%"
+     }
+    },
+    "liquid-d1": {
+     "model": "liquid/d1-20260930",
+     "recordedAt": "2026-10-12",
+     "answered": 180,
+     "graded": 180,
+     "right": 173,
+     "refused": 0,
+     "interval": {
+      "low": 0.9219,
+      "high": 0.981
+     },
+     "speed": {
+      "n": 180,
+      "p50": 873,
+      "p95": 1265,
+      "mean": 878
+     },
+     "cost": {
+      "total": 0.0598,
+      "tokens": 1495005
+     },
+     "headline": {
+      "value": 0.9611,
+      "display": "96.1%"
+     }
+    },
+    "clef-flash": {
+     "model": "cloudflare/clef-flash",
+     "recordedAt": "2026-10-12",
+     "answered": 180,
+     "graded": 180,
+     "right": 167,
+     "refused": 0,
+     "interval": {
+      "low": 0.8804,
+      "high": 0.9573
+     },
+     "speed": {
+      "n": 180,
+      "p50": 549,
+      "p95": 1363,
+      "mean": 682
+     },
+     "cost": {
+      "total": 0.013249,
+      "tokens": 348661
+     },
+     "headline": {
+      "value": 0.9278,
+      "display": "92.8%"
+     }
+    },
+    "clef": {
+     "model": "cloudflare/clef",
+     "recordedAt": "2026-10-12",
+     "answered": 180,
+     "graded": 180,
+     "right": 174,
+     "refused": 0,
+     "interval": {
+      "low": 0.9292,
+      "high": 0.9846
+     },
+     "speed": {
+      "n": 180,
+      "p50": 491,
+      "p95": 947,
+      "mean": 535
+     },
+     "cost": {
+      "total": 0.083679,
+      "tokens": 348661
+     },
+     "headline": {
+      "value": 0.9667,
+      "display": "96.7%"
+     }
+    },
+    "tev1-4b": {
+     "model": "togethercomputer/tev1-4b-experimental-20260923",
+     "recordedAt": "2026-10-12",
+     "answered": 180,
+     "graded": 180,
+     "right": 167,
+     "refused": 0,
+     "interval": {
+      "low": 0.8804,
+      "high": 0.9573
+     },
+     "speed": {
+      "n": 180,
+      "p50": 655,
+      "p95": 794,
+      "mean": 645
+     },
+     "cost": {
+      "total": 0.051423,
+      "tokens": 1224365
+     },
+     "headline": {
+      "value": 0.9278,
+      "display": "92.8%"
      }
     }
    },
@@ -916,6 +3313,12 @@
    "answered": 220,
    "graded": 220,
    "right": 198,
+   "refused": 0,
+   "speed": null,
+   "cost": {
+    "total": null,
+    "tokens": null
+   },
    "interval": {
     "low": 0.8532,
     "high": 0.933
@@ -998,9 +3401,21 @@
      "answered": 220,
      "graded": 220,
      "right": 198,
+     "refused": 0,
      "interval": {
       "low": 0.8532,
       "high": 0.933
+     },
+     "speed": {
+      "n": 3,
+      "p50": 261,
+      "p95": 339,
+      "mean": 280,
+      "sampled": true
+     },
+     "cost": {
+      "total": null,
+      "tokens": null
      },
      "headline": {
       "value": 0.9,
@@ -1013,13 +3428,259 @@
      "answered": 220,
      "graded": 220,
      "right": 173,
+     "refused": 0,
      "interval": {
       "low": 0.7275,
       "high": 0.8354
      },
+     "speed": {
+      "n": 3,
+      "p50": 291,
+      "p95": 321,
+      "mean": 266,
+      "sampled": true
+     },
+     "cost": {
+      "total": null,
+      "tokens": 319375
+     },
      "headline": {
       "value": 0.7864,
       "display": "78.6%"
+     }
+    },
+    "microsoft-decision-1": {
+     "model": "microsoft/microsoft-decision-1-20261009",
+     "recordedAt": "2026-10-12",
+     "answered": 220,
+     "graded": 220,
+     "right": 190,
+     "refused": 0,
+     "interval": {
+      "low": 0.812,
+      "high": 0.9028
+     },
+     "speed": {
+      "n": 220,
+      "p50": 398,
+      "p95": 470,
+      "mean": 418
+     },
+     "cost": {
+      "total": 0.007883,
+      "tokens": 187700
+     },
+     "headline": {
+      "value": 0.8636,
+      "display": "86.4%"
+     }
+    },
+    "drex-v1-5": {
+     "model": "nace-ai/drex-v1.5-20261009",
+     "recordedAt": "2026-10-12",
+     "answered": 220,
+     "graded": 220,
+     "right": 185,
+     "refused": 0,
+     "interval": {
+      "low": 0.7868,
+      "high": 0.8833
+     },
+     "speed": {
+      "n": 220,
+      "p50": 292,
+      "p95": 670,
+      "mean": 349
+     },
+     "cost": {
+      "total": 0.007858,
+      "tokens": 196438
+     },
+     "headline": {
+      "value": 0.8409,
+      "display": "84.1%"
+     }
+    },
+    "clef-omni": {
+     "model": "cloudflare/clef-omni-20261009",
+     "recordedAt": "2026-10-12",
+     "answered": 220,
+     "graded": 220,
+     "right": 110,
+     "refused": 0,
+     "interval": {
+      "low": 0.4345,
+      "high": 0.5655
+     },
+     "speed": {
+      "n": 220,
+      "p50": 246,
+      "p95": 574,
+      "mean": 314
+     },
+     "cost": {
+      "total": 0.041949,
+      "tokens": 279660
+     },
+     "headline": {
+      "value": 0.5,
+      "display": "50%"
+     }
+    },
+    "solar-decide-flash": {
+     "model": "upstage/solar-decide-flash-20261008",
+     "recordedAt": "2026-10-12",
+     "answered": 220,
+     "graded": 220,
+     "right": 35,
+     "refused": 0,
+     "interval": {
+      "low": 0.1167,
+      "high": 0.2132
+     },
+     "speed": {
+      "n": 220,
+      "p50": 1050,
+      "p95": 2111,
+      "mean": 1069
+     },
+     "cost": {
+      "total": 0.047799,
+      "tokens": 955975
+     },
+     "headline": {
+      "value": 0.1591,
+      "display": "15.9%"
+     }
+    },
+    "pplx-decider": {
+     "model": "perplexity/pplx-decider-v1.1-27b-20261006",
+     "recordedAt": "2026-10-12",
+     "answered": 220,
+     "graded": 220,
+     "right": 170,
+     "refused": 0,
+     "interval": {
+      "low": 0.7129,
+      "high": 0.8231
+     },
+     "speed": {
+      "n": 220,
+      "p50": 407,
+      "p95": 682,
+      "mean": 436
+     },
+     "cost": {
+      "total": 0.014504,
+      "tokens": 725205
+     },
+     "headline": {
+      "value": 0.7727,
+      "display": "77.3%"
+     }
+    },
+    "liquid-d1": {
+     "model": "liquid/d1-20260930",
+     "recordedAt": "2026-10-12",
+     "answered": 220,
+     "graded": 220,
+     "right": 182,
+     "refused": 0,
+     "interval": {
+      "low": 0.7718,
+      "high": 0.8715
+     },
+     "speed": {
+      "n": 220,
+      "p50": 603,
+      "p95": 1049,
+      "mean": 628
+     },
+     "cost": {
+      "total": 0.029902,
+      "tokens": 747560
+     },
+     "headline": {
+      "value": 0.8273,
+      "display": "82.7%"
+     }
+    },
+    "clef-flash": {
+     "model": "cloudflare/clef-flash",
+     "recordedAt": "2026-10-12",
+     "answered": 220,
+     "graded": 220,
+     "right": 141,
+     "refused": 0,
+     "interval": {
+      "low": 0.5756,
+      "high": 0.7014
+     },
+     "speed": {
+      "n": 220,
+      "p50": 494,
+      "p95": 934,
+      "mean": 503
+     },
+     "cost": {
+      "total": 0.010686,
+      "tokens": 281200
+     },
+     "headline": {
+      "value": 0.6409,
+      "display": "64.1%"
+     }
+    },
+    "clef": {
+     "model": "cloudflare/clef",
+     "recordedAt": "2026-10-12",
+     "answered": 220,
+     "graded": 220,
+     "right": 180,
+     "refused": 0,
+     "interval": {
+      "low": 0.7619,
+      "high": 0.8635
+     },
+     "speed": {
+      "n": 220,
+      "p50": 421,
+      "p95": 769,
+      "mean": 469
+     },
+     "cost": {
+      "total": 0.067488,
+      "tokens": 281200
+     },
+     "headline": {
+      "value": 0.8182,
+      "display": "81.8%"
+     }
+    },
+    "tev1-4b": {
+     "model": "togethercomputer/tev1-4b-experimental-20260923",
+     "recordedAt": "2026-10-12",
+     "answered": 220,
+     "graded": 220,
+     "right": 170,
+     "refused": 0,
+     "interval": {
+      "low": 0.7129,
+      "high": 0.8231
+     },
+     "speed": {
+      "n": 220,
+      "p50": 458,
+      "p95": 544,
+      "mean": 468
+     },
+     "cost": {
+      "total": 0.028468,
+      "tokens": 677800
+     },
+     "headline": {
+      "value": 0.7727,
+      "display": "77.3%"
      }
     }
    },
@@ -1044,6 +3705,12 @@
    "answered": 120,
    "graded": 120,
    "right": 99,
+   "refused": 0,
+   "speed": null,
+   "cost": {
+    "total": null,
+    "tokens": null
+   },
    "interval": {
     "low": 0.7472,
     "high": 0.8826
@@ -1127,9 +3794,21 @@
      "answered": 120,
      "graded": 120,
      "right": 99,
+     "refused": 0,
      "interval": {
       "low": 0.7472,
       "high": 0.8826
+     },
+     "speed": {
+      "n": 3,
+      "p50": 278,
+      "p95": 308,
+      "mean": 286,
+      "sampled": true
+     },
+     "cost": {
+      "total": null,
+      "tokens": null
      },
      "headline": {
       "value": 0.825,
@@ -1142,13 +3821,259 @@
      "answered": 120,
      "graded": 120,
      "right": 76,
+     "refused": 0,
      "interval": {
       "low": 0.5442,
       "high": 0.7142
      },
+     "speed": {
+      "n": 3,
+      "p50": 272,
+      "p95": 321,
+      "mean": 255,
+      "sampled": true
+     },
+     "cost": {
+      "total": null,
+      "tokens": 173975
+     },
      "headline": {
       "value": 0.6333,
       "display": "63.3%"
+     }
+    },
+    "microsoft-decision-1": {
+     "model": "microsoft/microsoft-decision-1-20261009",
+     "recordedAt": "2026-10-12",
+     "answered": 120,
+     "graded": 120,
+     "right": 114,
+     "refused": 0,
+     "interval": {
+      "low": 0.8952,
+      "high": 0.9769
+     },
+     "speed": {
+      "n": 120,
+      "p50": 397,
+      "p95": 816,
+      "mean": 420
+     },
+     "cost": {
+      "total": 0.004583,
+      "tokens": 109122
+     },
+     "headline": {
+      "value": 0.95,
+      "display": "95%"
+     }
+    },
+    "drex-v1-5": {
+     "model": "nace-ai/drex-v1.5-20261009",
+     "recordedAt": "2026-10-12",
+     "answered": 120,
+     "graded": 120,
+     "right": 107,
+     "refused": 0,
+     "interval": {
+      "low": 0.8234,
+      "high": 0.9356
+     },
+     "speed": {
+      "n": 120,
+      "p50": 297,
+      "p95": 787,
+      "mean": 372
+     },
+     "cost": {
+      "total": 0.004648,
+      "tokens": 116202
+     },
+     "headline": {
+      "value": 0.8917,
+      "display": "89.2%"
+     }
+    },
+    "clef-omni": {
+     "model": "cloudflare/clef-omni-20261009",
+     "recordedAt": "2026-10-12",
+     "answered": 120,
+     "graded": 120,
+     "right": 74,
+     "refused": 0,
+     "interval": {
+      "low": 0.5273,
+      "high": 0.6988
+     },
+     "speed": {
+      "n": 120,
+      "p50": 261,
+      "p95": 811,
+      "mean": 365
+     },
+     "cost": {
+      "total": 0.022353,
+      "tokens": 149023
+     },
+     "headline": {
+      "value": 0.6167,
+      "display": "61.7%"
+     }
+    },
+    "solar-decide-flash": {
+     "model": "upstage/solar-decide-flash-20261008",
+     "recordedAt": "2026-10-12",
+     "answered": 120,
+     "graded": 120,
+     "right": 82,
+     "refused": 0,
+     "interval": {
+      "low": 0.5955,
+      "high": 0.7598
+     },
+     "speed": {
+      "n": 120,
+      "p50": 1048,
+      "p95": 1464,
+      "mean": 1000
+     },
+     "cost": {
+      "total": 0.024472,
+      "tokens": 489448
+     },
+     "headline": {
+      "value": 0.6833,
+      "display": "68.3%"
+     }
+    },
+    "pplx-decider": {
+     "model": "perplexity/pplx-decider-v1.1-27b-20261006",
+     "recordedAt": "2026-10-12",
+     "answered": 120,
+     "graded": 120,
+     "right": 120,
+     "refused": 0,
+     "interval": {
+      "low": 0.969,
+      "high": 1
+     },
+     "speed": {
+      "n": 120,
+      "p50": 396,
+      "p95": 909,
+      "mean": 469
+     },
+     "cost": {
+      "total": 0.008138,
+      "tokens": 406880
+     },
+     "headline": {
+      "value": 1,
+      "display": "100%"
+     }
+    },
+    "liquid-d1": {
+     "model": "liquid/d1-20260930",
+     "recordedAt": "2026-10-12",
+     "answered": 120,
+     "graded": 120,
+     "right": 117,
+     "refused": 0,
+     "interval": {
+      "low": 0.9291,
+      "high": 0.9915
+     },
+     "speed": {
+      "n": 120,
+      "p50": 500,
+      "p95": 999,
+      "mean": 560
+     },
+     "cost": {
+      "total": 0.016596,
+      "tokens": 414888
+     },
+     "headline": {
+      "value": 0.975,
+      "display": "97.5%"
+     }
+    },
+    "clef-flash": {
+     "model": "cloudflare/clef-flash",
+     "recordedAt": "2026-10-12",
+     "answered": 120,
+     "graded": 120,
+     "right": 83,
+     "refused": 0,
+     "interval": {
+      "low": 0.6042,
+      "high": 0.7673
+     },
+     "speed": {
+      "n": 120,
+      "p50": 406,
+      "p95": 825,
+      "mean": 522
+     },
+     "cost": {
+      "total": 0.005688,
+      "tokens": 149682
+     },
+     "headline": {
+      "value": 0.6917,
+      "display": "69.2%"
+     }
+    },
+    "clef": {
+     "model": "cloudflare/clef",
+     "recordedAt": "2026-10-12",
+     "answered": 120,
+     "graded": 120,
+     "right": 96,
+     "refused": 0,
+     "interval": {
+      "low": 0.7196,
+      "high": 0.8618
+     },
+     "speed": {
+      "n": 120,
+      "p50": 432,
+      "p95": 1092,
+      "mean": 536
+     },
+     "cost": {
+      "total": 0.035924,
+      "tokens": 149682
+     },
+     "headline": {
+      "value": 0.8,
+      "display": "80%"
+     }
+    },
+    "tev1-4b": {
+     "model": "togethercomputer/tev1-4b-experimental-20260923",
+     "recordedAt": "2026-10-12",
+     "answered": 120,
+     "graded": 120,
+     "right": 92,
+     "refused": 0,
+     "interval": {
+      "low": 0.6834,
+      "high": 0.8333
+     },
+     "speed": {
+      "n": 120,
+      "p50": 467,
+      "p95": 694,
+      "mean": 477
+     },
+     "cost": {
+      "total": 0.015399,
+      "tokens": 366648
+     },
+     "headline": {
+      "value": 0.7667,
+      "display": "76.7%"
      }
     }
    },
@@ -1173,6 +4098,12 @@
    "answered": 140,
    "graded": 140,
    "right": 132,
+   "refused": 0,
+   "speed": null,
+   "cost": {
+    "total": null,
+    "tokens": null
+   },
    "interval": {
     "low": 0.8913,
     "high": 0.9708
@@ -1256,9 +4187,21 @@
      "answered": 140,
      "graded": 140,
      "right": 132,
+     "refused": 0,
      "interval": {
       "low": 0.8913,
       "high": 0.9708
+     },
+     "speed": {
+      "n": 3,
+      "p50": 272,
+      "p95": 284,
+      "mean": 266,
+      "sampled": true
+     },
+     "cost": {
+      "total": null,
+      "tokens": null
      },
      "headline": {
       "value": 0,
@@ -1271,13 +4214,259 @@
      "answered": 138,
      "graded": 138,
      "right": 131,
+     "refused": 2,
      "interval": {
       "low": 0.899,
       "high": 0.9752
      },
+     "speed": {
+      "n": 3,
+      "p50": 302,
+      "p95": 327,
+      "mean": 270,
+      "sampled": true
+     },
+     "cost": {
+      "total": null,
+      "tokens": 217359
+     },
      "headline": {
       "value": 0,
       "display": "0 of 9"
+     }
+    },
+    "microsoft-decision-1": {
+     "model": "microsoft/microsoft-decision-1-20261009",
+     "recordedAt": "2026-10-12",
+     "answered": 140,
+     "graded": 140,
+     "right": 132,
+     "refused": 0,
+     "interval": {
+      "low": 0.8913,
+      "high": 0.9708
+     },
+     "speed": {
+      "n": 140,
+      "p50": 405,
+      "p95": 685,
+      "mean": 418
+     },
+     "cost": {
+      "total": 0.005501,
+      "tokens": 130987
+     },
+     "headline": {
+      "value": 0,
+      "display": "0 of 11"
+     }
+    },
+    "drex-v1-5": {
+     "model": "nace-ai/drex-v1.5-20261009",
+     "recordedAt": "2026-10-12",
+     "answered": 140,
+     "graded": 140,
+     "right": 131,
+     "refused": 0,
+     "interval": {
+      "low": 0.8823,
+      "high": 0.9658
+     },
+     "speed": {
+      "n": 140,
+      "p50": 303,
+      "p95": 815,
+      "mean": 375
+     },
+     "cost": {
+      "total": 0.005512,
+      "tokens": 137790
+     },
+     "headline": {
+      "value": 0,
+      "display": "0 of 11"
+     }
+    },
+    "clef-omni": {
+     "model": "cloudflare/clef-omni-20261009",
+     "recordedAt": "2026-10-12",
+     "answered": 140,
+     "graded": 140,
+     "right": 127,
+     "refused": 0,
+     "interval": {
+      "low": 0.8476,
+      "high": 0.9449
+     },
+     "speed": {
+      "n": 140,
+      "p50": 226,
+      "p95": 538,
+      "mean": 278
+     },
+     "cost": {
+      "total": 0.027672,
+      "tokens": 184478
+     },
+     "headline": {
+      "value": 0,
+      "display": "0 of 11"
+     }
+    },
+    "solar-decide-flash": {
+     "model": "upstage/solar-decide-flash-20261008",
+     "recordedAt": "2026-10-12",
+     "answered": 140,
+     "graded": 140,
+     "right": 138,
+     "refused": 0,
+     "interval": {
+      "low": 0.9494,
+      "high": 0.9961
+     },
+     "speed": {
+      "n": 140,
+      "p50": 994,
+      "p95": 1363,
+      "mean": 925
+     },
+     "cost": {
+      "total": 0.033461,
+      "tokens": 669225
+     },
+     "headline": {
+      "value": 0,
+      "display": "0 of 11"
+     }
+    },
+    "pplx-decider": {
+     "model": "perplexity/pplx-decider-v1.1-27b-20261006",
+     "recordedAt": "2026-10-12",
+     "answered": 140,
+     "graded": 140,
+     "right": 132,
+     "refused": 0,
+     "interval": {
+      "low": 0.8913,
+      "high": 0.9708
+     },
+     "speed": {
+      "n": 140,
+      "p50": 412,
+      "p95": 817,
+      "mean": 446
+     },
+     "cost": {
+      "total": 0.010867,
+      "tokens": 543355
+     },
+     "headline": {
+      "value": 0,
+      "display": "0 of 11"
+     }
+    },
+    "liquid-d1": {
+     "model": "liquid/d1-20260930",
+     "recordedAt": "2026-10-12",
+     "answered": 140,
+     "graded": 140,
+     "right": 131,
+     "refused": 0,
+     "interval": {
+      "low": 0.8823,
+      "high": 0.9658
+     },
+     "speed": {
+      "n": 140,
+      "p50": 423,
+      "p95": 781,
+      "mean": 448
+     },
+     "cost": {
+      "total": 0.022745,
+      "tokens": 568625
+     },
+     "headline": {
+      "value": 0,
+      "display": "0 of 11"
+     }
+    },
+    "clef-flash": {
+     "model": "cloudflare/clef-flash",
+     "recordedAt": "2026-10-12",
+     "answered": 140,
+     "graded": 140,
+     "right": 130,
+     "refused": 0,
+     "interval": {
+      "low": 0.8735,
+      "high": 0.9607
+     },
+     "speed": {
+      "n": 140,
+      "p50": 549,
+      "p95": 3235,
+      "mean": 881
+     },
+     "cost": {
+      "total": 0.007042,
+      "tokens": 185307
+     },
+     "headline": {
+      "value": 0.0909,
+      "display": "1 of 11"
+     }
+    },
+    "clef": {
+     "model": "cloudflare/clef",
+     "recordedAt": "2026-10-12",
+     "answered": 140,
+     "graded": 140,
+     "right": 133,
+     "refused": 0,
+     "interval": {
+      "low": 0.9004,
+      "high": 0.9756
+     },
+     "speed": {
+      "n": 140,
+      "p50": 434,
+      "p95": 1004,
+      "mean": 523
+     },
+     "cost": {
+      "total": 0.044474,
+      "tokens": 185307
+     },
+     "headline": {
+      "value": 0,
+      "display": "0 of 11"
+     }
+    },
+    "tev1-4b": {
+     "model": "togethercomputer/tev1-4b-experimental-20260923",
+     "recordedAt": "2026-10-12",
+     "answered": 140,
+     "graded": 140,
+     "right": 133,
+     "refused": 0,
+     "interval": {
+      "low": 0.9004,
+      "high": 0.9756
+     },
+     "speed": {
+      "n": 140,
+      "p50": 491,
+      "p95": 1004,
+      "mean": 557
+     },
+     "cost": {
+      "total": 0.020951,
+      "tokens": 498835
+     },
+     "headline": {
+      "value": 0,
+      "display": "0 of 11"
      }
     }
    },
@@ -1302,6 +4491,12 @@
    "answered": 250,
    "graded": 250,
    "right": 250,
+   "refused": 0,
+   "speed": null,
+   "cost": {
+    "total": null,
+    "tokens": null
+   },
    "interval": {
     "low": 0.9849,
     "high": 1
@@ -1383,9 +4578,21 @@
      "answered": 250,
      "graded": 250,
      "right": 250,
+     "refused": 0,
      "interval": {
       "low": 0.9849,
       "high": 1
+     },
+     "speed": {
+      "n": 3,
+      "p50": 251,
+      "p95": 267,
+      "mean": 252,
+      "sampled": true
+     },
+     "cost": {
+      "total": null,
+      "tokens": null
      },
      "headline": {
       "value": 1,
@@ -1398,13 +4605,259 @@
      "answered": 250,
      "graded": 250,
      "right": 236,
+     "refused": 0,
      "interval": {
       "low": 0.9082,
       "high": 0.9664
      },
+     "speed": {
+      "n": 3,
+      "p50": 277,
+      "p95": 343,
+      "mean": 266,
+      "sampled": true
+     },
+     "cost": {
+      "total": null,
+      "tokens": 363069
+     },
      "headline": {
       "value": 0.944,
       "display": "94.4%"
+     }
+    },
+    "microsoft-decision-1": {
+     "model": "microsoft/microsoft-decision-1-20261009",
+     "recordedAt": "2026-10-12",
+     "answered": 250,
+     "graded": 250,
+     "right": 250,
+     "refused": 0,
+     "interval": {
+      "low": 0.9849,
+      "high": 1
+     },
+     "speed": {
+      "n": 250,
+      "p50": 394,
+      "p95": 472,
+      "mean": 403
+     },
+     "cost": {
+      "total": 0.009534,
+      "tokens": 227011
+     },
+     "headline": {
+      "value": 1,
+      "display": "100%"
+     }
+    },
+    "drex-v1-5": {
+     "model": "nace-ai/drex-v1.5-20261009",
+     "recordedAt": "2026-10-12",
+     "answered": 250,
+     "graded": 250,
+     "right": 250,
+     "refused": 0,
+     "interval": {
+      "low": 0.9849,
+      "high": 1
+     },
+     "speed": {
+      "n": 250,
+      "p50": 300,
+      "p95": 853,
+      "mean": 374
+     },
+     "cost": {
+      "total": 0.00955,
+      "tokens": 238742
+     },
+     "headline": {
+      "value": 1,
+      "display": "100%"
+     }
+    },
+    "clef-omni": {
+     "model": "cloudflare/clef-omni-20261009",
+     "recordedAt": "2026-10-12",
+     "answered": 250,
+     "graded": 250,
+     "right": 229,
+     "refused": 0,
+     "interval": {
+      "low": 0.875,
+      "high": 0.9444
+     },
+     "speed": {
+      "n": 250,
+      "p50": 221,
+      "p95": 597,
+      "mean": 280
+     },
+     "cost": {
+      "total": 0.046597,
+      "tokens": 310649
+     },
+     "headline": {
+      "value": 0.916,
+      "display": "91.6%"
+     }
+    },
+    "solar-decide-flash": {
+     "model": "upstage/solar-decide-flash-20261008",
+     "recordedAt": "2026-10-12",
+     "answered": 250,
+     "graded": 250,
+     "right": 240,
+     "refused": 0,
+     "interval": {
+      "low": 0.9279,
+      "high": 0.9781
+     },
+     "speed": {
+      "n": 250,
+      "p50": 1011,
+      "p95": 1456,
+      "mean": 952
+     },
+     "cost": {
+      "total": 0.05101,
+      "tokens": 1020202
+     },
+     "headline": {
+      "value": 0.96,
+      "display": "96%"
+     }
+    },
+    "pplx-decider": {
+     "model": "perplexity/pplx-decider-v1.1-27b-20261006",
+     "recordedAt": "2026-10-12",
+     "answered": 250,
+     "graded": 250,
+     "right": 246,
+     "refused": 0,
+     "interval": {
+      "low": 0.9596,
+      "high": 0.9938
+     },
+     "speed": {
+      "n": 250,
+      "p50": 395,
+      "p95": 625,
+      "mean": 473
+     },
+     "cost": {
+      "total": 0.017081,
+      "tokens": 854060
+     },
+     "headline": {
+      "value": 0.984,
+      "display": "98.4%"
+     }
+    },
+    "liquid-d1": {
+     "model": "liquid/d1-20260930",
+     "recordedAt": "2026-10-12",
+     "answered": 250,
+     "graded": 250,
+     "right": 249,
+     "refused": 0,
+     "interval": {
+      "low": 0.9777,
+      "high": 0.9993
+     },
+     "speed": {
+      "n": 250,
+      "p50": 433,
+      "p95": 583,
+      "mean": 447
+     },
+     "cost": {
+      "total": 0.034634,
+      "tokens": 865842
+     },
+     "headline": {
+      "value": 0.996,
+      "display": "99.6%"
+     }
+    },
+    "clef-flash": {
+     "model": "cloudflare/clef-flash",
+     "recordedAt": "2026-10-12",
+     "answered": 250,
+     "graded": 250,
+     "right": 239,
+     "refused": 0,
+     "interval": {
+      "low": 0.9229,
+      "high": 0.9753
+     },
+     "speed": {
+      "n": 250,
+      "p50": 443,
+      "p95": 998,
+      "mean": 558
+     },
+     "cost": {
+      "total": 0.011847,
+      "tokens": 311761
+     },
+     "headline": {
+      "value": 0.956,
+      "display": "95.6%"
+     }
+    },
+    "clef": {
+     "model": "cloudflare/clef",
+     "recordedAt": "2026-10-12",
+     "answered": 250,
+     "graded": 250,
+     "right": 236,
+     "refused": 0,
+     "interval": {
+      "low": 0.9082,
+      "high": 0.9664
+     },
+     "speed": {
+      "n": 250,
+      "p50": 434,
+      "p95": 1238,
+      "mean": 577
+     },
+     "cost": {
+      "total": 0.074823,
+      "tokens": 311761
+     },
+     "headline": {
+      "value": 0.944,
+      "display": "94.4%"
+     }
+    },
+    "tev1-4b": {
+     "model": "togethercomputer/tev1-4b-experimental-20260923",
+     "recordedAt": "2026-10-12",
+     "answered": 250,
+     "graded": 250,
+     "right": 247,
+     "refused": 0,
+     "interval": {
+      "low": 0.9653,
+      "high": 0.9959
+     },
+     "speed": {
+      "n": 250,
+      "p50": 472,
+      "p95": 539,
+      "mean": 470
+     },
+     "cost": {
+      "total": 0.031985,
+      "tokens": 761544
+     },
+     "headline": {
+      "value": 0.988,
+      "display": "98.8%"
      }
     }
    },
@@ -1429,6 +4882,12 @@
    "answered": 400,
    "graded": 400,
    "right": 295,
+   "refused": 0,
+   "speed": null,
+   "cost": {
+    "total": null,
+    "tokens": null
+   },
    "interval": {
     "low": 0.6923,
     "high": 0.7782
@@ -1514,9 +4973,21 @@
      "answered": 400,
      "graded": 400,
      "right": 295,
+     "refused": 0,
      "interval": {
       "low": 0.6923,
       "high": 0.7782
+     },
+     "speed": {
+      "n": 3,
+      "p50": 249,
+      "p95": 257,
+      "mean": 252,
+      "sampled": true
+     },
+     "cost": {
+      "total": null,
+      "tokens": null
      },
      "headline": {
       "value": 0.8125,
@@ -1529,13 +5000,259 @@
      "answered": 400,
      "graded": 400,
      "right": 292,
+     "refused": 0,
      "interval": {
       "low": 0.6845,
       "high": 0.7712
      },
+     "speed": {
+      "n": 3,
+      "p50": 277,
+      "p95": 288,
+      "mean": 274,
+      "sampled": true
+     },
+     "cost": {
+      "total": null,
+      "tokens": 536740
+     },
      "headline": {
       "value": 0.875,
       "display": "14 of 16"
+     }
+    },
+    "microsoft-decision-1": {
+     "model": "microsoft/microsoft-decision-1-20261009",
+     "recordedAt": "2026-10-12",
+     "answered": 400,
+     "graded": 400,
+     "right": 301,
+     "refused": 0,
+     "interval": {
+      "low": 0.7079,
+      "high": 0.7923
+     },
+     "speed": {
+      "n": 400,
+      "p50": 392,
+      "p95": 466,
+      "mean": 403
+     },
+     "cost": {
+      "total": 0.012832,
+      "tokens": 305525
+     },
+     "headline": {
+      "value": 0.75,
+      "display": "12 of 16"
+     }
+    },
+    "drex-v1-5": {
+     "model": "nace-ai/drex-v1.5-20261009",
+     "recordedAt": "2026-10-12",
+     "answered": 400,
+     "graded": 400,
+     "right": 315,
+     "refused": 0,
+     "interval": {
+      "low": 0.7448,
+      "high": 0.8248
+     },
+     "speed": {
+      "n": 400,
+      "p50": 296,
+      "p95": 578,
+      "mean": 346
+     },
+     "cost": {
+      "total": 0.012608,
+      "tokens": 315207
+     },
+     "headline": {
+      "value": 0.75,
+      "display": "12 of 16"
+     }
+    },
+    "clef-omni": {
+     "model": "cloudflare/clef-omni-20261009",
+     "recordedAt": "2026-10-12",
+     "answered": 400,
+     "graded": 400,
+     "right": 326,
+     "refused": 0,
+     "interval": {
+      "low": 0.774,
+      "high": 0.85
+     },
+     "speed": {
+      "n": 400,
+      "p50": 219,
+      "p95": 472,
+      "mean": 264
+     },
+     "cost": {
+      "total": 0.068511,
+      "tokens": 456738
+     },
+     "headline": {
+      "value": 0.75,
+      "display": "12 of 16"
+     }
+    },
+    "solar-decide-flash": {
+     "model": "upstage/solar-decide-flash-20261008",
+     "recordedAt": "2026-10-12",
+     "answered": 400,
+     "graded": 400,
+     "right": 287,
+     "refused": 0,
+     "interval": {
+      "low": 0.6715,
+      "high": 0.7594
+     },
+     "speed": {
+      "n": 400,
+      "p50": 1120,
+      "p95": 1529,
+      "mean": 1074
+     },
+     "cost": {
+      "total": 0.081228,
+      "tokens": 1624560
+     },
+     "headline": {
+      "value": 0.8125,
+      "display": "13 of 16"
+     }
+    },
+    "pplx-decider": {
+     "model": "perplexity/pplx-decider-v1.1-27b-20261006",
+     "recordedAt": "2026-10-12",
+     "answered": 400,
+     "graded": 400,
+     "right": 353,
+     "refused": 0,
+     "interval": {
+      "low": 0.8472,
+      "high": 0.9105
+     },
+     "speed": {
+      "n": 400,
+      "p50": 399,
+      "p95": 605,
+      "mean": 503
+     },
+     "cost": {
+      "total": 0.02343,
+      "tokens": 1171505
+     },
+     "headline": {
+      "value": 0.75,
+      "display": "12 of 16"
+     }
+    },
+    "liquid-d1": {
+     "model": "liquid/d1-20260930",
+     "recordedAt": "2026-10-12",
+     "answered": 400,
+     "graded": 400,
+     "right": 337,
+     "refused": 0,
+     "interval": {
+      "low": 0.8036,
+      "high": 0.8749
+     },
+     "speed": {
+      "n": 400,
+      "p50": 429,
+      "p95": 554,
+      "mean": 436
+     },
+     "cost": {
+      "total": 0.043894,
+      "tokens": 1097350
+     },
+     "headline": {
+      "value": 0.875,
+      "display": "14 of 16"
+     }
+    },
+    "clef-flash": {
+     "model": "cloudflare/clef-flash",
+     "recordedAt": "2026-10-12",
+     "answered": 400,
+     "graded": 400,
+     "right": 296,
+     "refused": 0,
+     "interval": {
+      "low": 0.6949,
+      "high": 0.7806
+     },
+     "speed": {
+      "n": 400,
+      "p50": 498,
+      "p95": 930,
+      "mean": 557
+     },
+     "cost": {
+      "total": 0.017462,
+      "tokens": 459525
+     },
+     "headline": {
+      "value": 0.75,
+      "display": "12 of 16"
+     }
+    },
+    "clef": {
+     "model": "cloudflare/clef",
+     "recordedAt": "2026-10-12",
+     "answered": 400,
+     "graded": 400,
+     "right": 326,
+     "refused": 0,
+     "interval": {
+      "low": 0.774,
+      "high": 0.85
+     },
+     "speed": {
+      "n": 400,
+      "p50": 408,
+      "p95": 669,
+      "mean": 447
+     },
+     "cost": {
+      "total": 0.110286,
+      "tokens": 459525
+     },
+     "headline": {
+      "value": 0.75,
+      "display": "12 of 16"
+     }
+    },
+    "tev1-4b": {
+     "model": "togethercomputer/tev1-4b-experimental-20260923",
+     "recordedAt": "2026-10-12",
+     "answered": 400,
+     "graded": 400,
+     "right": 41,
+     "refused": 0,
+     "interval": {
+      "low": 0.0765,
+      "high": 0.1361
+     },
+     "speed": {
+      "n": 400,
+      "p50": 458,
+      "p95": 525,
+      "mean": 467
+     },
+     "cost": {
+      "total": 0.046671,
+      "tokens": 1111225
+     },
+     "headline": {
+      "value": 0.75,
+      "display": "12 of 16"
      }
     }
    },
@@ -1560,6 +5277,12 @@
    "answered": 300,
    "graded": 300,
    "right": 293,
+   "refused": 0,
+   "speed": null,
+   "cost": {
+    "total": null,
+    "tokens": null
+   },
    "interval": {
     "low": 0.9526,
     "high": 0.9887
@@ -1646,9 +5369,21 @@
      "answered": 300,
      "graded": 300,
      "right": 293,
+     "refused": 0,
      "interval": {
       "low": 0.9526,
       "high": 0.9887
+     },
+     "speed": {
+      "n": 3,
+      "p50": 264,
+      "p95": 299,
+      "mean": 273,
+      "sampled": true
+     },
+     "cost": {
+      "total": null,
+      "tokens": null
      },
      "headline": {
       "value": 0.6316,
@@ -1661,13 +5396,259 @@
      "answered": 300,
      "graded": 300,
      "right": 292,
+     "refused": 0,
      "interval": {
       "low": 0.9483,
       "high": 0.9864
      },
+     "speed": {
+      "n": 3,
+      "p50": 272,
+      "p95": 311,
+      "mean": 248,
+      "sampled": true
+     },
+     "cost": {
+      "total": null,
+      "tokens": 407731
+     },
      "headline": {
       "value": 0.6,
       "display": "60%"
+     }
+    },
+    "microsoft-decision-1": {
+     "model": "microsoft/microsoft-decision-1-20261009",
+     "recordedAt": "2026-10-12",
+     "answered": 300,
+     "graded": 300,
+     "right": 282,
+     "refused": 0,
+     "interval": {
+      "low": 0.9072,
+      "high": 0.9617
+     },
+     "speed": {
+      "n": 300,
+      "p50": 401,
+      "p95": 471,
+      "mean": 411
+     },
+     "cost": {
+      "total": 0.00962,
+      "tokens": 229039
+     },
+     "headline": {
+      "value": 0.35,
+      "display": "35%"
+     }
+    },
+    "drex-v1-5": {
+     "model": "nace-ai/drex-v1.5-20261009",
+     "recordedAt": "2026-10-12",
+     "answered": 300,
+     "graded": 300,
+     "right": 288,
+     "refused": 0,
+     "interval": {
+      "low": 0.9314,
+      "high": 0.977
+     },
+     "speed": {
+      "n": 300,
+      "p50": 301,
+      "p95": 599,
+      "mean": 360
+     },
+     "cost": {
+      "total": 0.00945,
+      "tokens": 236238
+     },
+     "headline": {
+      "value": 0,
+      "display": "–"
+     }
+    },
+    "clef-omni": {
+     "model": "cloudflare/clef-omni-20261009",
+     "recordedAt": "2026-10-12",
+     "answered": 300,
+     "graded": 300,
+     "right": 292,
+     "refused": 0,
+     "interval": {
+      "low": 0.9483,
+      "high": 0.9864
+     },
+     "speed": {
+      "n": 300,
+      "p50": 221,
+      "p95": 374,
+      "mean": 270
+     },
+     "cost": {
+      "total": 0.051966,
+      "tokens": 346443
+     },
+     "headline": {
+      "value": 0.6,
+      "display": "60%"
+     }
+    },
+    "solar-decide-flash": {
+     "model": "upstage/solar-decide-flash-20261008",
+     "recordedAt": "2026-10-12",
+     "answered": 177,
+     "graded": 177,
+     "right": 169,
+     "refused": 0,
+     "interval": {
+      "low": 0.9134,
+      "high": 0.9769
+     },
+     "speed": {
+      "n": 177,
+      "p50": 978,
+      "p95": 1544,
+      "mean": 967
+     },
+     "cost": {
+      "total": 0.035162,
+      "tokens": 703238
+     },
+     "headline": {
+      "value": 0,
+      "display": "–"
+     }
+    },
+    "pplx-decider": {
+     "model": "perplexity/pplx-decider-v1.1-27b-20261006",
+     "recordedAt": "2026-10-12",
+     "answered": 300,
+     "graded": 300,
+     "right": 296,
+     "refused": 0,
+     "interval": {
+      "low": 0.9662,
+      "high": 0.9948
+     },
+     "speed": {
+      "n": 300,
+      "p50": 405,
+      "p95": 528,
+      "mean": 420
+     },
+     "cost": {
+      "total": 0.018092,
+      "tokens": 904575
+     },
+     "headline": {
+      "value": 1,
+      "display": "100%"
+     }
+    },
+    "liquid-d1": {
+     "model": "liquid/d1-20260930",
+     "recordedAt": "2026-10-12",
+     "answered": 300,
+     "graded": 300,
+     "right": 295,
+     "refused": 0,
+     "interval": {
+      "low": 0.9616,
+      "high": 0.9929
+     },
+     "speed": {
+      "n": 300,
+      "p50": 423,
+      "p95": 687,
+      "mean": 447
+     },
+     "cost": {
+      "total": 0.036205,
+      "tokens": 905130
+     },
+     "headline": {
+      "value": 1,
+      "display": "100%"
+     }
+    },
+    "clef-flash": {
+     "model": "cloudflare/clef-flash",
+     "recordedAt": "2026-10-12",
+     "answered": 300,
+     "graded": 300,
+     "right": 288,
+     "refused": 0,
+     "interval": {
+      "low": 0.9314,
+      "high": 0.977
+     },
+     "speed": {
+      "n": 300,
+      "p50": 544,
+      "p95": 1377,
+      "mean": 793
+     },
+     "cost": {
+      "total": 0.013241,
+      "tokens": 348439
+     },
+     "headline": {
+      "value": 0.5,
+      "display": "50%"
+     }
+    },
+    "clef": {
+     "model": "cloudflare/clef",
+     "recordedAt": "2026-10-12",
+     "answered": 300,
+     "graded": 300,
+     "right": 292,
+     "refused": 0,
+     "interval": {
+      "low": 0.9483,
+      "high": 0.9864
+     },
+     "speed": {
+      "n": 300,
+      "p50": 436,
+      "p95": 826,
+      "mean": 490
+     },
+     "cost": {
+      "total": 0.083625,
+      "tokens": 348439
+     },
+     "headline": {
+      "value": 1,
+      "display": "100%"
+     }
+    },
+    "tev1-4b": {
+     "model": "togethercomputer/tev1-4b-experimental-20260923",
+     "recordedAt": "2026-10-12",
+     "answered": 300,
+     "graded": 300,
+     "right": 288,
+     "refused": 0,
+     "interval": {
+      "low": 0.9314,
+      "high": 0.977
+     },
+     "speed": {
+      "n": 300,
+      "p50": 453,
+      "p95": 570,
+      "mean": 465
+     },
+     "cost": {
+      "total": 0.034452,
+      "tokens": 820295
+     },
+     "headline": {
+      "value": 0,
+      "display": "–"
      }
     }
    },
@@ -1692,6 +5673,12 @@
    "answered": 260,
    "graded": 260,
    "right": 238,
+   "refused": 0,
+   "speed": null,
+   "cost": {
+    "total": null,
+    "tokens": null
+   },
    "interval": {
     "low": 0.8752,
     "high": 0.9435
@@ -1767,9 +5754,21 @@
      "answered": 260,
      "graded": 260,
      "right": 238,
+     "refused": 0,
      "interval": {
       "low": 0.8752,
       "high": 0.9435
+     },
+     "speed": {
+      "n": 3,
+      "p50": 301,
+      "p95": 334,
+      "mean": 294,
+      "sampled": true
+     },
+     "cost": {
+      "total": null,
+      "tokens": null
      },
      "headline": {
       "value": 0.9154,
@@ -1782,13 +5781,259 @@
      "answered": 260,
      "graded": 260,
      "right": 238,
+     "refused": 0,
      "interval": {
       "low": 0.8752,
       "high": 0.9435
      },
+     "speed": {
+      "n": 3,
+      "p50": 232,
+      "p95": 307,
+      "mean": 242,
+      "sampled": true
+     },
+     "cost": {
+      "total": null,
+      "tokens": 454286
+     },
      "headline": {
       "value": 0.9154,
       "display": "91.5%"
+     }
+    },
+    "microsoft-decision-1": {
+     "model": "microsoft/microsoft-decision-1-20261009",
+     "recordedAt": "2026-10-12",
+     "answered": 260,
+     "graded": 260,
+     "right": 245,
+     "refused": 0,
+     "interval": {
+      "low": 0.907,
+      "high": 0.9647
+     },
+     "speed": {
+      "n": 260,
+      "p50": 407,
+      "p95": 493,
+      "mean": 421
+     },
+     "cost": {
+      "total": 0.011459,
+      "tokens": 272836
+     },
+     "headline": {
+      "value": 0.9423,
+      "display": "94.2%"
+     }
+    },
+    "drex-v1-5": {
+     "model": "nace-ai/drex-v1.5-20261009",
+     "recordedAt": "2026-10-12",
+     "answered": 260,
+     "graded": 260,
+     "right": 245,
+     "refused": 0,
+     "interval": {
+      "low": 0.907,
+      "high": 0.9647
+     },
+     "speed": {
+      "n": 260,
+      "p50": 304,
+      "p95": 961,
+      "mean": 400
+     },
+     "cost": {
+      "total": 0.011964,
+      "tokens": 299102
+     },
+     "headline": {
+      "value": 0.9423,
+      "display": "94.2%"
+     }
+    },
+    "clef-omni": {
+     "model": "cloudflare/clef-omni-20261009",
+     "recordedAt": "2026-10-12",
+     "answered": 260,
+     "graded": 260,
+     "right": 22,
+     "refused": 0,
+     "interval": {
+      "low": 0.0565,
+      "high": 0.1248
+     },
+     "speed": {
+      "n": 260,
+      "p50": 239,
+      "p95": 642,
+      "mean": 318
+     },
+     "cost": {
+      "total": 0.056886,
+      "tokens": 379242
+     },
+     "headline": {
+      "value": 0.0846,
+      "display": "8.5%"
+     }
+    },
+    "solar-decide-flash": {
+     "model": "upstage/solar-decide-flash-20261008",
+     "recordedAt": "2026-10-12",
+     "answered": 6,
+     "graded": 6,
+     "right": 0,
+     "refused": 0,
+     "interval": {
+      "low": 0,
+      "high": 0.3903
+     },
+     "speed": {
+      "n": 6,
+      "p50": 1048,
+      "p95": 1187,
+      "mean": 1027
+     },
+     "cost": {
+      "total": 0.001639,
+      "tokens": 32772
+     },
+     "headline": {
+      "value": 0,
+      "display": "0%"
+     }
+    },
+    "pplx-decider": {
+     "model": "perplexity/pplx-decider-v1.1-27b-20261006",
+     "recordedAt": "2026-10-12",
+     "answered": 260,
+     "graded": 260,
+     "right": 242,
+     "refused": 0,
+     "interval": {
+      "low": 0.8932,
+      "high": 0.9558
+     },
+     "speed": {
+      "n": 260,
+      "p50": 395,
+      "p95": 578,
+      "mean": 572
+     },
+     "cost": {
+      "total": 0.024173,
+      "tokens": 1208670
+     },
+     "headline": {
+      "value": 0.9308,
+      "display": "93.1%"
+     }
+    },
+    "liquid-d1": {
+     "model": "liquid/d1-20260930",
+     "recordedAt": "2026-10-12",
+     "answered": 260,
+     "graded": 260,
+     "right": 243,
+     "refused": 0,
+     "interval": {
+      "low": 0.8978,
+      "high": 0.9588
+     },
+     "speed": {
+      "n": 260,
+      "p50": 567,
+      "p95": 767,
+      "mean": 591
+     },
+     "cost": {
+      "total": 0.05246,
+      "tokens": 1311510
+     },
+     "headline": {
+      "value": 0.9346,
+      "display": "93.5%"
+     }
+    },
+    "clef-flash": {
+     "model": "cloudflare/clef-flash",
+     "recordedAt": "2026-10-12",
+     "answered": 7,
+     "graded": 7,
+     "right": 3,
+     "refused": 0,
+     "interval": {
+      "low": 0.1582,
+      "high": 0.7495
+     },
+     "speed": {
+      "n": 7,
+      "p50": 639,
+      "p95": 762,
+      "mean": 605
+     },
+     "cost": {
+      "total": 0.000386,
+      "tokens": 10168
+     },
+     "headline": {
+      "value": 0.4286,
+      "display": "42.9%"
+     }
+    },
+    "clef": {
+     "model": "cloudflare/clef",
+     "recordedAt": "2026-10-12",
+     "answered": 260,
+     "graded": 260,
+     "right": 243,
+     "refused": 0,
+     "interval": {
+      "low": 0.8978,
+      "high": 0.9588
+     },
+     "speed": {
+      "n": 260,
+      "p50": 567,
+      "p95": 826,
+      "mean": 592
+     },
+     "cost": {
+      "total": 0.091127,
+      "tokens": 379696
+     },
+     "headline": {
+      "value": 0.9346,
+      "display": "93.5%"
+     }
+    },
+    "tev1-4b": {
+     "model": "togethercomputer/tev1-4b-experimental-20260923",
+     "recordedAt": "2026-10-12",
+     "answered": 260,
+     "graded": 260,
+     "right": 247,
+     "refused": 0,
+     "interval": {
+      "low": 0.9163,
+      "high": 0.9706
+     },
+     "speed": {
+      "n": 260,
+      "p50": 516,
+      "p95": 638,
+      "mean": 518
+     },
+     "cost": {
+      "total": 0.044617,
+      "tokens": 1062320
+     },
+     "headline": {
+      "value": 0.95,
+      "display": "95%"
      }
     }
    },
@@ -1813,6 +6058,12 @@
    "answered": 200,
    "graded": 200,
    "right": 59,
+   "refused": 0,
+   "speed": null,
+   "cost": {
+    "total": null,
+    "tokens": null
+   },
    "interval": {
     "low": 0.2361,
     "high": 0.3616
@@ -1890,9 +6141,21 @@
      "answered": 200,
      "graded": 200,
      "right": 59,
+     "refused": 0,
      "interval": {
       "low": 0.2361,
       "high": 0.3616
+     },
+     "speed": {
+      "n": 3,
+      "p50": 281,
+      "p95": 382,
+      "mean": 301,
+      "sampled": true
+     },
+     "cost": {
+      "total": null,
+      "tokens": null
      },
      "headline": {
       "value": 0.295,
@@ -1905,13 +6168,233 @@
      "answered": 200,
      "graded": 200,
      "right": 54,
+     "refused": 0,
      "interval": {
       "low": 0.2132,
       "high": 0.3354
      },
+     "speed": {
+      "n": 3,
+      "p50": 294,
+      "p95": 313,
+      "mean": 291,
+      "sampled": true
+     },
+     "cost": {
+      "total": null,
+      "tokens": 250674
+     },
      "headline": {
       "value": 0.27,
       "display": "27%"
+     }
+    },
+    "microsoft-decision-1": {
+     "model": "microsoft/microsoft-decision-1-20261009",
+     "recordedAt": "2026-10-12",
+     "answered": 200,
+     "graded": 200,
+     "right": 36,
+     "refused": 0,
+     "interval": {
+      "low": 0.1329,
+      "high": 0.2391
+     },
+     "speed": {
+      "n": 200,
+      "p50": 397,
+      "p95": 456,
+      "mean": 404
+     },
+     "cost": {
+      "total": 0.005084,
+      "tokens": 121055
+     },
+     "headline": {
+      "value": 0.18,
+      "display": "18%"
+     }
+    },
+    "drex-v1-5": {
+     "model": "nace-ai/drex-v1.5-20261009",
+     "recordedAt": "2026-10-12",
+     "answered": 200,
+     "graded": 200,
+     "right": 71,
+     "refused": 0,
+     "interval": {
+      "low": 0.292,
+      "high": 0.4235
+     },
+     "speed": {
+      "n": 200,
+      "p50": 298,
+      "p95": 850,
+      "mean": 386
+     },
+     "cost": {
+      "total": 0.005029,
+      "tokens": 125715
+     },
+     "headline": {
+      "value": 0.355,
+      "display": "35.5%"
+     }
+    },
+    "clef-omni": {
+     "model": "cloudflare/clef-omni-20261009",
+     "recordedAt": "2026-10-12",
+     "answered": 200,
+     "graded": 200,
+     "right": 82,
+     "refused": 0,
+     "interval": {
+      "low": 0.3442,
+      "high": 0.4792
+     },
+     "speed": {
+      "n": 200,
+      "p50": 223,
+      "p95": 819,
+      "mean": 297
+     },
+     "cost": {
+      "total": 0.029272,
+      "tokens": 195145
+     },
+     "headline": {
+      "value": 0.41,
+      "display": "41%"
+     }
+    },
+    "solar-decide-flash": {
+     "model": "upstage/solar-decide-flash-20261008",
+     "recordedAt": "2026-10-12",
+     "answered": 8,
+     "graded": 8,
+     "right": 1,
+     "refused": 0,
+     "interval": {
+      "low": 0.0224,
+      "high": 0.4709
+     },
+     "speed": {
+      "n": 8,
+      "p50": 1171,
+      "p95": 2109,
+      "mean": 1262
+     },
+     "cost": {
+      "total": 0.001438,
+      "tokens": 28764
+     },
+     "headline": {
+      "value": 0.125,
+      "display": "12.5%"
+     }
+    },
+    "pplx-decider": {
+     "model": "perplexity/pplx-decider-v1.1-27b-20261006",
+     "recordedAt": "2026-10-12",
+     "answered": 200,
+     "graded": 200,
+     "right": 102,
+     "refused": 0,
+     "interval": {
+      "low": 0.4412,
+      "high": 0.5784
+     },
+     "speed": {
+      "n": 200,
+      "p50": 529,
+      "p95": 733,
+      "mean": 552
+     },
+     "cost": {
+      "total": 0.010002,
+      "tokens": 500115
+     },
+     "headline": {
+      "value": 0.51,
+      "display": "51%"
+     }
+    },
+    "liquid-d1": {
+     "model": "liquid/d1-20260930",
+     "recordedAt": "2026-10-12",
+     "answered": 200,
+     "graded": 200,
+     "right": 150,
+     "refused": 0,
+     "interval": {
+      "low": 0.6857,
+      "high": 0.8049
+     },
+     "speed": {
+      "n": 200,
+      "p50": 507,
+      "p95": 707,
+      "mean": 523
+     },
+     "cost": {
+      "total": 0.020937,
+      "tokens": 523420
+     },
+     "headline": {
+      "value": 0.75,
+      "display": "75%"
+     }
+    },
+    "clef": {
+     "model": "cloudflare/clef",
+     "recordedAt": "2026-10-12",
+     "answered": 200,
+     "graded": 200,
+     "right": 43,
+     "refused": 0,
+     "interval": {
+      "low": 0.1637,
+      "high": 0.277
+     },
+     "speed": {
+      "n": 200,
+      "p50": 495,
+      "p95": 738,
+      "mean": 502
+     },
+     "cost": {
+      "total": 0.047101,
+      "tokens": 196255
+     },
+     "headline": {
+      "value": 0.215,
+      "display": "21.5%"
+     }
+    },
+    "tev1-4b": {
+     "model": "togethercomputer/tev1-4b-experimental-20260923",
+     "recordedAt": "2026-10-12",
+     "answered": 200,
+     "graded": 200,
+     "right": 52,
+     "refused": 0,
+     "interval": {
+      "low": 0.2041,
+      "high": 0.3249
+     },
+     "speed": {
+      "n": 200,
+      "p50": 559,
+      "p95": 773,
+      "mean": 572
+     },
+     "cost": {
+      "total": 0.019323,
+      "tokens": 460075
+     },
+     "headline": {
+      "value": 0.26,
+      "display": "26%"
      }
     }
    },
@@ -1936,6 +6419,12 @@
    "answered": 180,
    "graded": 180,
    "right": 180,
+   "refused": 0,
+   "speed": null,
+   "cost": {
+    "total": null,
+    "tokens": null
+   },
    "interval": {
     "low": 0.9791,
     "high": 1
@@ -2016,9 +6505,21 @@
      "answered": 180,
      "graded": 180,
      "right": 180,
+     "refused": 0,
      "interval": {
       "low": 0.9791,
       "high": 1
+     },
+     "speed": {
+      "n": 3,
+      "p50": 282,
+      "p95": 299,
+      "mean": 284,
+      "sampled": true
+     },
+     "cost": {
+      "total": null,
+      "tokens": null
      },
      "headline": {
       "value": 1,
@@ -2031,13 +6532,207 @@
      "answered": 180,
      "graded": 180,
      "right": 158,
+     "refused": 0,
      "interval": {
       "low": 0.8219,
       "high": 0.9179
      },
+     "speed": {
+      "n": 3,
+      "p50": 332,
+      "p95": 343,
+      "mean": 328,
+      "sampled": true
+     },
+     "cost": {
+      "total": null,
+      "tokens": 1016008
+     },
      "headline": {
       "value": 1,
       "display": "9 of 9"
+     }
+    },
+    "microsoft-decision-1": {
+     "model": "microsoft/microsoft-decision-1-20261009",
+     "recordedAt": "2026-10-12",
+     "answered": 180,
+     "graded": 180,
+     "right": 163,
+     "refused": 0,
+     "interval": {
+      "low": 0.854,
+      "high": 0.9402
+     },
+     "speed": {
+      "n": 180,
+      "p50": 656,
+      "p95": 804,
+      "mean": 675
+     },
+     "cost": {
+      "total": 0.035643,
+      "tokens": 848644
+     },
+     "headline": {
+      "value": 0.7778,
+      "display": "7 of 9"
+     }
+    },
+    "drex-v1-5": {
+     "model": "nace-ai/drex-v1.5-20261009",
+     "recordedAt": "2026-10-12",
+     "answered": 180,
+     "graded": 180,
+     "right": 155,
+     "refused": 0,
+     "interval": {
+      "low": 0.803,
+      "high": 0.9041
+     },
+     "speed": {
+      "n": 180,
+      "p50": 370,
+      "p95": 1050,
+      "mean": 467
+     },
+     "cost": {
+      "total": 0.040183,
+      "tokens": 1004576
+     },
+     "headline": {
+      "value": 1,
+      "display": "9 of 9"
+     }
+    },
+    "clef-omni": {
+     "model": "cloudflare/clef-omni-20261009",
+     "recordedAt": "2026-10-12",
+     "answered": 180,
+     "graded": 180,
+     "right": 35,
+     "refused": 0,
+     "interval": {
+      "low": 0.1433,
+      "high": 0.2584
+     },
+     "speed": {
+      "n": 180,
+      "p50": 412,
+      "p95": 901,
+      "mean": 479
+     },
+     "cost": {
+      "total": 0.136831,
+      "tokens": 912208
+     },
+     "headline": {
+      "value": 1,
+      "display": "9 of 9"
+     }
+    },
+    "pplx-decider": {
+     "model": "perplexity/pplx-decider-v1.1-27b-20261006",
+     "recordedAt": "2026-10-12",
+     "answered": 180,
+     "graded": 180,
+     "right": 180,
+     "refused": 0,
+     "interval": {
+      "low": 0.9791,
+      "high": 1
+     },
+     "speed": {
+      "n": 180,
+      "p50": 692,
+      "p95": 1050,
+      "mean": 721
+     },
+     "cost": {
+      "total": 0.097031,
+      "tokens": 4851530
+     },
+     "headline": {
+      "value": 1,
+      "display": "9 of 9"
+     }
+    },
+    "liquid-d1": {
+     "model": "liquid/d1-20260930",
+     "recordedAt": "2026-10-12",
+     "answered": 23,
+     "graded": 23,
+     "right": 23,
+     "refused": 0,
+     "interval": {
+      "low": 0.8569,
+      "high": 1
+     },
+     "speed": {
+      "n": 23,
+      "p50": 612,
+      "p95": 1333,
+      "mean": 674
+     },
+     "cost": {
+      "total": 0.022445,
+      "tokens": 561132
+     },
+     "headline": {
+      "value": 1,
+      "display": "3 of 3"
+     }
+    },
+    "clef": {
+     "model": "cloudflare/clef",
+     "recordedAt": "2026-10-12",
+     "answered": 5,
+     "graded": 5,
+     "right": 4,
+     "refused": 0,
+     "interval": {
+      "low": 0.3755,
+      "high": 0.9638
+     },
+     "speed": {
+      "n": 5,
+      "p50": 834,
+      "p95": 1129,
+      "mean": 895
+     },
+     "cost": {
+      "total": 0.006093,
+      "tokens": 25387
+     },
+     "headline": {
+      "value": 0,
+      "display": "0 of 0"
+     }
+    },
+    "tev1-4b": {
+     "model": "togethercomputer/tev1-4b-experimental-20260923",
+     "recordedAt": "2026-10-12",
+     "answered": 180,
+     "graded": 180,
+     "right": 155,
+     "refused": 0,
+     "interval": {
+      "low": 0.803,
+      "high": 0.9041
+     },
+     "speed": {
+      "n": 180,
+      "p50": 1118,
+      "p95": 1567,
+      "mean": 1123
+     },
+     "cost": {
+      "total": 0.170451,
+      "tokens": 4058360
+     },
+     "headline": {
+      "value": 0.8889,
+      "display": "8 of 9"
      }
     }
    },
@@ -2062,6 +6757,12 @@
    "answered": 120,
    "graded": 120,
    "right": 75,
+   "refused": 0,
+   "speed": null,
+   "cost": {
+    "total": null,
+    "tokens": null
+   },
    "interval": {
     "low": 0.5358,
     "high": 0.7065
@@ -2144,9 +6845,21 @@
      "answered": 120,
      "graded": 120,
      "right": 75,
+     "refused": 0,
      "interval": {
       "low": 0.5358,
       "high": 0.7065
+     },
+     "speed": {
+      "n": 3,
+      "p50": 269,
+      "p95": 304,
+      "mean": 274,
+      "sampled": true
+     },
+     "cost": {
+      "total": null,
+      "tokens": null
      },
      "headline": {
       "value": 0.3333,
@@ -2159,13 +6872,207 @@
      "answered": 120,
      "graded": 120,
      "right": 103,
+     "refused": 0,
      "interval": {
       "low": 0.7848,
       "high": 0.9096
      },
+     "speed": {
+      "n": 3,
+      "p50": 305,
+      "p95": 327,
+      "mean": 310,
+      "sampled": true
+     },
+     "cost": {
+      "total": null,
+      "tokens": 179724
+     },
      "headline": {
       "value": 0,
       "display": "0 of 3"
+     }
+    },
+    "microsoft-decision-1": {
+     "model": "microsoft/microsoft-decision-1-20261009",
+     "recordedAt": "2026-10-12",
+     "answered": 120,
+     "graded": 120,
+     "right": 51,
+     "refused": 0,
+     "interval": {
+      "low": 0.3402,
+      "high": 0.5144
+     },
+     "speed": {
+      "n": 120,
+      "p50": 511,
+      "p95": 854,
+      "mean": 510
+     },
+     "cost": {
+      "total": 0.004942,
+      "tokens": 117661
+     },
+     "headline": {
+      "value": 0.3333,
+      "display": "1 of 3"
+     }
+    },
+    "drex-v1-5": {
+     "model": "nace-ai/drex-v1.5-20261009",
+     "recordedAt": "2026-10-12",
+     "answered": 120,
+     "graded": 120,
+     "right": 60,
+     "refused": 0,
+     "interval": {
+      "low": 0.4119,
+      "high": 0.5881
+     },
+     "speed": {
+      "n": 120,
+      "p50": 340,
+      "p95": 982,
+      "mean": 431
+     },
+     "cost": {
+      "total": 0.004901,
+      "tokens": 122514
+     },
+     "headline": {
+      "value": 0,
+      "display": "0 of 3"
+     }
+    },
+    "clef-omni": {
+     "model": "cloudflare/clef-omni-20261009",
+     "recordedAt": "2026-10-12",
+     "answered": 120,
+     "graded": 120,
+     "right": 22,
+     "refused": 0,
+     "interval": {
+      "low": 0.1243,
+      "high": 0.262
+     },
+     "speed": {
+      "n": 120,
+      "p50": 244,
+      "p95": 792,
+      "mean": 334
+     },
+     "cost": {
+      "total": 0.024075,
+      "tokens": 160501
+     },
+     "headline": {
+      "value": 0.3333,
+      "display": "1 of 3"
+     }
+    },
+    "pplx-decider": {
+     "model": "perplexity/pplx-decider-v1.1-27b-20261006",
+     "recordedAt": "2026-10-12",
+     "answered": 14,
+     "graded": 14,
+     "right": 12,
+     "refused": 0,
+     "interval": {
+      "low": 0.6006,
+      "high": 0.9599
+     },
+     "speed": {
+      "n": 14,
+      "p50": 419,
+      "p95": 751,
+      "mean": 449
+     },
+     "cost": {
+      "total": 0.001199,
+      "tokens": 59930
+     },
+     "headline": {
+      "value": 0,
+      "display": "0 of 1"
+     }
+    },
+    "liquid-d1": {
+     "model": "liquid/d1-20260930",
+     "recordedAt": "2026-10-12",
+     "answered": 8,
+     "graded": 8,
+     "right": 6,
+     "refused": 0,
+     "interval": {
+      "low": 0.4093,
+      "high": 0.9285
+     },
+     "speed": {
+      "n": 8,
+      "p50": 342,
+      "p95": 596,
+      "mean": 378
+     },
+     "cost": {
+      "total": 0.001104,
+      "tokens": 27597
+     },
+     "headline": {
+      "value": 1,
+      "display": "1 of 1"
+     }
+    },
+    "clef": {
+     "model": "cloudflare/clef",
+     "recordedAt": "2026-10-12",
+     "answered": 14,
+     "graded": 14,
+     "right": 8,
+     "refused": 0,
+     "interval": {
+      "low": 0.3259,
+      "high": 0.7862
+     },
+     "speed": {
+      "n": 14,
+      "p50": 588,
+      "p95": 1514,
+      "mean": 631
+     },
+     "cost": {
+      "total": 0.004427,
+      "tokens": 18445
+     },
+     "headline": {
+      "value": 0.3333,
+      "display": "1 of 3"
+     }
+    },
+    "tev1-4b": {
+     "model": "togethercomputer/tev1-4b-experimental-20260923",
+     "recordedAt": "2026-10-12",
+     "answered": 9,
+     "graded": 9,
+     "right": 4,
+     "refused": 0,
+     "interval": {
+      "low": 0.1888,
+      "high": 0.7334
+     },
+     "speed": {
+      "n": 9,
+      "p50": 370,
+      "p95": 760,
+      "mean": 461
+     },
+     "cost": {
+      "total": 0.001336,
+      "tokens": 31813
+     },
+     "headline": {
+      "value": 1,
+      "display": "3 of 3"
      }
     }
    },
@@ -2190,6 +7097,12 @@
    "answered": 240,
    "graded": 240,
    "right": 169,
+   "refused": 0,
+   "speed": null,
+   "cost": {
+    "total": null,
+    "tokens": null
+   },
    "interval": {
     "low": 0.6436,
     "high": 0.7583
@@ -2264,9 +7177,21 @@
      "answered": 240,
      "graded": 240,
      "right": 169,
+     "refused": 0,
      "interval": {
       "low": 0.6436,
       "high": 0.7583
+     },
+     "speed": {
+      "n": 3,
+      "p50": 283,
+      "p95": 285,
+      "mean": 277,
+      "sampled": true
+     },
+     "cost": {
+      "total": null,
+      "tokens": null
      },
      "headline": {
       "value": 0.7042,
@@ -2279,13 +7204,207 @@
      "answered": 240,
      "graded": 240,
      "right": 90,
+     "refused": 0,
      "interval": {
       "low": 0.3162,
       "high": 0.4378
      },
+     "speed": {
+      "n": 3,
+      "p50": 287,
+      "p95": 292,
+      "mean": 255,
+      "sampled": true
+     },
+     "cost": {
+      "total": null,
+      "tokens": 360465
+     },
      "headline": {
       "value": 0.375,
       "display": "90 of 240"
+     }
+    },
+    "microsoft-decision-1": {
+     "model": "microsoft/microsoft-decision-1-20261009",
+     "recordedAt": "2026-10-12",
+     "answered": 240,
+     "graded": 240,
+     "right": 69,
+     "refused": 0,
+     "interval": {
+      "low": 0.2339,
+      "high": 0.3478
+     },
+     "speed": {
+      "n": 240,
+      "p50": 519,
+      "p95": 613,
+      "mean": 528
+     },
+     "cost": {
+      "total": 0.008017,
+      "tokens": 190877
+     },
+     "headline": {
+      "value": 0.2875,
+      "display": "69 of 240"
+     }
+    },
+    "drex-v1-5": {
+     "model": "nace-ai/drex-v1.5-20261009",
+     "recordedAt": "2026-10-12",
+     "answered": 240,
+     "graded": 240,
+     "right": 211,
+     "refused": 0,
+     "interval": {
+      "low": 0.8318,
+      "high": 0.9145
+     },
+     "speed": {
+      "n": 240,
+      "p50": 412,
+      "p95": 957,
+      "mean": 455
+     },
+     "cost": {
+      "total": 0.007974,
+      "tokens": 199344
+     },
+     "headline": {
+      "value": 0.8792,
+      "display": "211 of 240"
+     }
+    },
+    "clef-omni": {
+     "model": "cloudflare/clef-omni-20261009",
+     "recordedAt": "2026-10-12",
+     "answered": 240,
+     "graded": 240,
+     "right": 41,
+     "refused": 0,
+     "interval": {
+      "low": 0.1285,
+      "high": 0.2235
+     },
+     "speed": {
+      "n": 240,
+      "p50": 236,
+      "p95": 753,
+      "mean": 309
+     },
+     "cost": {
+      "total": 0.04188,
+      "tokens": 279198
+     },
+     "headline": {
+      "value": 0.1708,
+      "display": "41 of 240"
+     }
+    },
+    "pplx-decider": {
+     "model": "perplexity/pplx-decider-v1.1-27b-20261006",
+     "recordedAt": "2026-10-12",
+     "answered": 29,
+     "graded": 29,
+     "right": 19,
+     "refused": 0,
+     "interval": {
+      "low": 0.4734,
+      "high": 0.8006
+     },
+     "speed": {
+      "n": 29,
+      "p50": 406,
+      "p95": 949,
+      "mean": 463
+     },
+     "cost": {
+      "total": 0.002056,
+      "tokens": 102789
+     },
+     "headline": {
+      "value": 0.6552,
+      "display": "19 of 29"
+     }
+    },
+    "liquid-d1": {
+     "model": "liquid/d1-20260930",
+     "recordedAt": "2026-10-12",
+     "answered": 32,
+     "graded": 32,
+     "right": 24,
+     "refused": 0,
+     "interval": {
+      "low": 0.5789,
+      "high": 0.8675
+     },
+     "speed": {
+      "n": 32,
+      "p50": 399,
+      "p95": 708,
+      "mean": 441
+     },
+     "cost": {
+      "total": 0.004929,
+      "tokens": 123236
+     },
+     "headline": {
+      "value": 0.75,
+      "display": "24 of 32"
+     }
+    },
+    "clef": {
+     "model": "cloudflare/clef",
+     "recordedAt": "2026-10-12",
+     "answered": 11,
+     "graded": 11,
+     "right": 6,
+     "refused": 0,
+     "interval": {
+      "low": 0.2801,
+      "high": 0.7873
+     },
+     "speed": {
+      "n": 11,
+      "p50": 479,
+      "p95": 942,
+      "mean": 525
+     },
+     "cost": {
+      "total": 0.003091,
+      "tokens": 12878
+     },
+     "headline": {
+      "value": 0.5455,
+      "display": "6 of 11"
+     }
+    },
+    "tev1-4b": {
+     "model": "togethercomputer/tev1-4b-experimental-20260923",
+     "recordedAt": "2026-10-12",
+     "answered": 31,
+     "graded": 31,
+     "right": 18,
+     "refused": 0,
+     "interval": {
+      "low": 0.4077,
+      "high": 0.7358
+     },
+     "speed": {
+      "n": 31,
+      "p50": 413,
+      "p95": 750,
+      "mean": 456
+     },
+     "cost": {
+      "total": 0.004102,
+      "tokens": 97663
+     },
+     "headline": {
+      "value": 0.5806,
+      "display": "18 of 31"
      }
     }
    },
@@ -2310,6 +7429,12 @@
    "answered": 200,
    "graded": 190,
    "right": 173,
+   "refused": 0,
+   "speed": null,
+   "cost": {
+    "total": null,
+    "tokens": null
+   },
    "interval": {
     "low": 0.8614,
     "high": 0.9434
@@ -2383,9 +7508,21 @@
      "answered": 200,
      "graded": 190,
      "right": 173,
+     "refused": 0,
      "interval": {
       "low": 0.8614,
       "high": 0.9434
+     },
+     "speed": {
+      "n": 3,
+      "p50": 266,
+      "p95": 274,
+      "mean": 269,
+      "sampled": true
+     },
+     "cost": {
+      "total": null,
+      "tokens": null
      },
      "headline": {
       "value": 0.9105,
@@ -2398,13 +7535,155 @@
      "answered": 200,
      "graded": 190,
      "right": 168,
+     "refused": 0,
      "interval": {
       "low": 0.8309,
       "high": 0.9223
      },
+     "speed": {
+      "n": 3,
+      "p50": 319,
+      "p95": 462,
+      "mean": 365,
+      "sampled": true
+     },
+     "cost": {
+      "total": null,
+      "tokens": 332116
+     },
      "headline": {
       "value": 0.8842,
       "display": "88.4%"
+     }
+    },
+    "microsoft-decision-1": {
+     "model": "microsoft/microsoft-decision-1-20261009",
+     "recordedAt": "2026-10-12",
+     "answered": 200,
+     "graded": 190,
+     "right": 148,
+     "refused": 0,
+     "interval": {
+      "low": 0.7147,
+      "high": 0.8321
+     },
+     "speed": {
+      "n": 200,
+      "p50": 443,
+      "p95": 740,
+      "mean": 469
+     },
+     "cost": {
+      "total": 0.008169,
+      "tokens": 194495
+     },
+     "headline": {
+      "value": 0.7789,
+      "display": "77.9%"
+     }
+    },
+    "drex-v1-5": {
+     "model": "nace-ai/drex-v1.5-20261009",
+     "recordedAt": "2026-10-12",
+     "answered": 200,
+     "graded": 190,
+     "right": 119,
+     "refused": 0,
+     "interval": {
+      "low": 0.5557,
+      "high": 0.692
+     },
+     "speed": {
+      "n": 200,
+      "p50": 435,
+      "p95": 1001,
+      "mean": 511
+     },
+     "cost": {
+      "total": 0.009052,
+      "tokens": 226295
+     },
+     "headline": {
+      "value": 0.6263,
+      "display": "62.6%"
+     }
+    },
+    "clef-omni": {
+     "model": "cloudflare/clef-omni-20261009",
+     "recordedAt": "2026-10-12",
+     "answered": 200,
+     "graded": 190,
+     "right": 87,
+     "refused": 0,
+     "interval": {
+      "low": 0.3886,
+      "high": 0.5289
+     },
+     "speed": {
+      "n": 200,
+      "p50": 228,
+      "p95": 612,
+      "mean": 281
+     },
+     "cost": {
+      "total": 0.039134,
+      "tokens": 260896
+     },
+     "headline": {
+      "value": 0.4579,
+      "display": "45.8%"
+     }
+    },
+    "pplx-decider": {
+     "model": "perplexity/pplx-decider-v1.1-27b-20261006",
+     "recordedAt": "2026-10-12",
+     "answered": 5,
+     "graded": 5,
+     "right": 5,
+     "refused": 0,
+     "interval": {
+      "low": 0.5655,
+      "high": 1
+     },
+     "speed": {
+      "n": 5,
+      "p50": 550,
+      "p95": 769,
+      "mean": 544
+     },
+     "cost": {
+      "total": 0.000385,
+      "tokens": 19263
+     },
+     "headline": {
+      "value": 1,
+      "display": "100%"
+     }
+    },
+    "clef": {
+     "model": "cloudflare/clef",
+     "recordedAt": "2026-10-12",
+     "answered": 21,
+     "graded": 20,
+     "right": 14,
+     "refused": 0,
+     "interval": {
+      "low": 0.481,
+      "high": 0.8545
+     },
+     "speed": {
+      "n": 21,
+      "p50": 504,
+      "p95": 1199,
+      "mean": 617
+     },
+     "cost": {
+      "total": 0.006667,
+      "tokens": 27780
+     },
+     "headline": {
+      "value": 0.7,
+      "display": "70%"
      }
     }
    },
@@ -2429,6 +7708,12 @@
    "answered": 90,
    "graded": 90,
    "right": 66,
+   "refused": 0,
+   "speed": null,
+   "cost": {
+    "total": null,
+    "tokens": null
+   },
    "interval": {
     "low": 0.6338,
     "high": 0.8138
@@ -2517,9 +7802,21 @@
      "answered": 90,
      "graded": 90,
      "right": 66,
+     "refused": 0,
      "interval": {
       "low": 0.6338,
       "high": 0.8138
+     },
+     "speed": {
+      "n": 3,
+      "p50": 261,
+      "p95": 263,
+      "mean": 258,
+      "sampled": true
+     },
+     "cost": {
+      "total": null,
+      "tokens": null
      },
      "headline": {
       "value": 0.7333,
@@ -2532,13 +7829,103 @@
      "answered": 90,
      "graded": 90,
      "right": 84,
+     "refused": 0,
      "interval": {
       "low": 0.8621,
       "high": 0.9691
      },
+     "speed": {
+      "n": 3,
+      "p50": 293,
+      "p95": 311,
+      "mean": 260,
+      "sampled": true
+     },
+     "cost": {
+      "total": null,
+      "tokens": 152511
+     },
      "headline": {
       "value": 0.9333,
       "display": "84 of 90"
+     }
+    },
+    "drex-v1-5": {
+     "model": "nace-ai/drex-v1.5-20261009",
+     "recordedAt": "2026-10-12",
+     "answered": 90,
+     "graded": 90,
+     "right": 64,
+     "refused": 0,
+     "interval": {
+      "low": 0.6104,
+      "high": 0.7946
+     },
+     "speed": {
+      "n": 90,
+      "p50": 461,
+      "p95": 1455,
+      "mean": 595
+     },
+     "cost": {
+      "total": 0.00391,
+      "tokens": 97762
+     },
+     "headline": {
+      "value": 0.7111,
+      "display": "64 of 90"
+     }
+    },
+    "clef-omni": {
+     "model": "cloudflare/clef-omni-20261009",
+     "recordedAt": "2026-10-12",
+     "answered": 90,
+     "graded": 90,
+     "right": 77,
+     "refused": 0,
+     "interval": {
+      "low": 0.7684,
+      "high": 0.9136
+     },
+     "speed": {
+      "n": 90,
+      "p50": 227,
+      "p95": 570,
+      "mean": 272
+     },
+     "cost": {
+      "total": 0.018728,
+      "tokens": 124851
+     },
+     "headline": {
+      "value": 0.8556,
+      "display": "77 of 90"
+     }
+    },
+    "pplx-decider": {
+     "model": "perplexity/pplx-decider-v1.1-27b-20261006",
+     "recordedAt": "2026-10-12",
+     "answered": 6,
+     "graded": 6,
+     "right": 6,
+     "refused": 0,
+     "interval": {
+      "low": 0.6097,
+      "high": 1
+     },
+     "speed": {
+      "n": 6,
+      "p50": 447,
+      "p95": 960,
+      "mean": 527
+     },
+     "cost": {
+      "total": 0.000535,
+      "tokens": 26752
+     },
+     "headline": {
+      "value": 1,
+      "display": "6 of 6"
      }
     }
    },
@@ -2563,6 +7950,12 @@
    "answered": 160,
    "graded": 160,
    "right": 151,
+   "refused": 0,
+   "speed": null,
+   "cost": {
+    "total": null,
+    "tokens": null
+   },
    "interval": {
     "low": 0.8966,
     "high": 0.9701
@@ -2644,9 +8037,21 @@
      "answered": 160,
      "graded": 160,
      "right": 151,
+     "refused": 0,
      "interval": {
       "low": 0.8966,
       "high": 0.9701
+     },
+     "speed": {
+      "n": 3,
+      "p50": 249,
+      "p95": 263,
+      "mean": 252,
+      "sampled": true
+     },
+     "cost": {
+      "total": null,
+      "tokens": null
      },
      "headline": {
       "value": 0.9437,
@@ -2659,13 +8064,103 @@
      "answered": 160,
      "graded": 160,
      "right": 142,
+     "refused": 0,
      "interval": {
       "low": 0.8292,
       "high": 0.9276
      },
+     "speed": {
+      "n": 3,
+      "p50": 221,
+      "p95": 308,
+      "mean": 249,
+      "sampled": true
+     },
+     "cost": {
+      "total": null,
+      "tokens": 224997
+     },
      "headline": {
       "value": 0.8875,
       "display": "88.8%"
+     }
+    },
+    "microsoft-decision-1": {
+     "model": "microsoft/microsoft-decision-1-20261009",
+     "recordedAt": "2026-10-12",
+     "answered": 18,
+     "graded": 18,
+     "right": 18,
+     "refused": 0,
+     "interval": {
+      "low": 0.8241,
+      "high": 1
+     },
+     "speed": {
+      "n": 18,
+      "p50": 476,
+      "p95": 1048,
+      "mean": 564
+     },
+     "cost": {
+      "total": 0.000616,
+      "tokens": 14657
+     },
+     "headline": {
+      "value": 1,
+      "display": "100%"
+     }
+    },
+    "drex-v1-5": {
+     "model": "nace-ai/drex-v1.5-20261009",
+     "recordedAt": "2026-10-12",
+     "answered": 160,
+     "graded": 160,
+     "right": 146,
+     "refused": 0,
+     "interval": {
+      "low": 0.8585,
+      "high": 0.9472
+     },
+     "speed": {
+      "n": 160,
+      "p50": 318,
+      "p95": 768,
+      "mean": 396
+     },
+     "cost": {
+      "total": 0.005312,
+      "tokens": 132805
+     },
+     "headline": {
+      "value": 0.9125,
+      "display": "91.3%"
+     }
+    },
+    "clef-omni": {
+     "model": "cloudflare/clef-omni-20261009",
+     "recordedAt": "2026-10-12",
+     "answered": 160,
+     "graded": 160,
+     "right": 121,
+     "refused": 0,
+     "interval": {
+      "low": 0.6842,
+      "high": 0.8163
+     },
+     "speed": {
+      "n": 160,
+      "p50": 219,
+      "p95": 725,
+      "mean": 274
+     },
+     "cost": {
+      "total": 0.028387,
+      "tokens": 189249
+     },
+     "headline": {
+      "value": 0.7562,
+      "display": "75.6%"
      }
     }
    },
@@ -2690,6 +8185,12 @@
    "answered": 150,
    "graded": 150,
    "right": 88,
+   "refused": 0,
+   "speed": null,
+   "cost": {
+    "total": null,
+    "tokens": null
+   },
    "interval": {
     "low": 0.5067,
     "high": 0.6623
@@ -2766,9 +8267,21 @@
      "answered": 150,
      "graded": 150,
      "right": 88,
+     "refused": 0,
      "interval": {
       "low": 0.5067,
       "high": 0.6623
+     },
+     "speed": {
+      "n": 3,
+      "p50": 271,
+      "p95": 286,
+      "mean": 269,
+      "sampled": true
+     },
+     "cost": {
+      "total": null,
+      "tokens": null
      },
      "headline": {
       "value": 0.5867,
@@ -2781,13 +8294,103 @@
      "answered": 150,
      "graded": 150,
      "right": 88,
+     "refused": 0,
      "interval": {
       "low": 0.5067,
       "high": 0.6623
      },
+     "speed": {
+      "n": 3,
+      "p50": 281,
+      "p95": 304,
+      "mean": 280,
+      "sampled": true
+     },
+     "cost": {
+      "total": null,
+      "tokens": 173651
+     },
      "headline": {
       "value": 0.5867,
       "display": "88 of 150"
+     }
+    },
+    "microsoft-decision-1": {
+     "model": "microsoft/microsoft-decision-1-20261009",
+     "recordedAt": "2026-10-12",
+     "answered": 8,
+     "graded": 8,
+     "right": 2,
+     "refused": 0,
+     "interval": {
+      "low": 0.0715,
+      "high": 0.5907
+     },
+     "speed": {
+      "n": 8,
+      "p50": 420,
+      "p95": 1048,
+      "mean": 482
+     },
+     "cost": {
+      "total": 0.000215,
+      "tokens": 5114
+     },
+     "headline": {
+      "value": 0.25,
+      "display": "2 of 8"
+     }
+    },
+    "drex-v1-5": {
+     "model": "nace-ai/drex-v1.5-20261009",
+     "recordedAt": "2026-10-12",
+     "answered": 9,
+     "graded": 9,
+     "right": 8,
+     "refused": 0,
+     "interval": {
+      "low": 0.565,
+      "high": 0.9801
+     },
+     "speed": {
+      "n": 9,
+      "p50": 307,
+      "p95": 595,
+      "mean": 362
+     },
+     "cost": {
+      "total": 0.000232,
+      "tokens": 5799
+     },
+     "headline": {
+      "value": 0.8889,
+      "display": "8 of 9"
+     }
+    },
+    "clef-omni": {
+     "model": "cloudflare/clef-omni-20261009",
+     "recordedAt": "2026-10-12",
+     "answered": 150,
+     "graded": 150,
+     "right": 87,
+     "refused": 0,
+     "interval": {
+      "low": 0.5,
+      "high": 0.656
+     },
+     "speed": {
+      "n": 150,
+      "p50": 224,
+      "p95": 546,
+      "mean": 285
+     },
+     "cost": {
+      "total": 0.021592,
+      "tokens": 143946
+     },
+     "headline": {
+      "value": 0.58,
+      "display": "87 of 150"
      }
     }
    },
@@ -2812,6 +8415,12 @@
    "answered": 24,
    "graded": 24,
    "right": 16,
+   "refused": 0,
+   "speed": null,
+   "cost": {
+    "total": null,
+    "tokens": null
+   },
    "interval": {
     "low": 0.4671,
     "high": 0.8203
@@ -2886,9 +8495,21 @@
      "answered": 24,
      "graded": 24,
      "right": 16,
+     "refused": 0,
      "interval": {
       "low": 0.4671,
       "high": 0.8203
+     },
+     "speed": {
+      "n": 3,
+      "p50": 290,
+      "p95": 330,
+      "mean": 291,
+      "sampled": true
+     },
+     "cost": {
+      "total": null,
+      "tokens": null
      },
      "headline": {
       "value": 0.6667,
@@ -2901,13 +8522,103 @@
      "answered": 24,
      "graded": 24,
      "right": 15,
+     "refused": 0,
      "interval": {
       "low": 0.4271,
       "high": 0.7884
      },
+     "speed": {
+      "n": 3,
+      "p50": 289,
+      "p95": 291,
+      "mean": 289,
+      "sampled": true
+     },
+     "cost": {
+      "total": null,
+      "tokens": 48615
+     },
      "headline": {
       "value": 0.625,
       "display": "15 of 24"
+     }
+    },
+    "microsoft-decision-1": {
+     "model": "microsoft/microsoft-decision-1-20261009",
+     "recordedAt": "2026-10-12",
+     "answered": 4,
+     "graded": 4,
+     "right": 3,
+     "refused": 0,
+     "interval": {
+      "low": 0.3006,
+      "high": 0.9544
+     },
+     "speed": {
+      "n": 4,
+      "p50": 672,
+      "p95": 821,
+      "mean": 605
+     },
+     "cost": {
+      "total": 0.000212,
+      "tokens": 5042
+     },
+     "headline": {
+      "value": 0.75,
+      "display": "3 of 4"
+     }
+    },
+    "drex-v1-5": {
+     "model": "nace-ai/drex-v1.5-20261009",
+     "recordedAt": "2026-10-12",
+     "answered": 6,
+     "graded": 6,
+     "right": 4,
+     "refused": 0,
+     "interval": {
+      "low": 0.3,
+      "high": 0.9032
+     },
+     "speed": {
+      "n": 6,
+      "p50": 724,
+      "p95": 1580,
+      "mean": 751
+     },
+     "cost": {
+      "total": 0.000321,
+      "tokens": 8037
+     },
+     "headline": {
+      "value": 0.6667,
+      "display": "4 of 6"
+     }
+    },
+    "clef-omni": {
+     "model": "cloudflare/clef-omni-20261009",
+     "recordedAt": "2026-10-12",
+     "answered": 24,
+     "graded": 24,
+     "right": 14,
+     "refused": 0,
+     "interval": {
+      "low": 0.3883,
+      "high": 0.7553
+     },
+     "speed": {
+      "n": 24,
+      "p50": 300,
+      "p95": 1442,
+      "mean": 514
+     },
+     "cost": {
+      "total": 0.005877,
+      "tokens": 39182
+     },
+     "headline": {
+      "value": 0.5833,
+      "display": "14 of 24"
      }
     }
    },
@@ -2932,6 +8643,12 @@
    "answered": 200,
    "graded": 200,
    "right": 138,
+   "refused": 0,
+   "speed": null,
+   "cost": {
+    "total": null,
+    "tokens": null
+   },
    "interval": {
     "low": 0.6228,
     "high": 0.75
@@ -3006,9 +8723,21 @@
      "answered": 200,
      "graded": 200,
      "right": 138,
+     "refused": 0,
      "interval": {
       "low": 0.6228,
       "high": 0.75
+     },
+     "speed": {
+      "n": 3,
+      "p50": 267,
+      "p95": 284,
+      "mean": 272,
+      "sampled": true
+     },
+     "cost": {
+      "total": null,
+      "tokens": null
      },
      "headline": {
       "value": 0.69,
@@ -3021,13 +8750,103 @@
      "answered": 200,
      "graded": 200,
      "right": 41,
+     "refused": 0,
      "interval": {
       "low": 0.1549,
       "high": 0.2663
      },
+     "speed": {
+      "n": 3,
+      "p50": 288,
+      "p95": 290,
+      "mean": 259,
+      "sampled": true
+     },
+     "cost": {
+      "total": null,
+      "tokens": 263624
+     },
      "headline": {
       "value": 0.205,
       "display": "20.5%"
+     }
+    },
+    "microsoft-decision-1": {
+     "model": "microsoft/microsoft-decision-1-20261009",
+     "recordedAt": "2026-10-12",
+     "answered": 8,
+     "graded": 8,
+     "right": 5,
+     "refused": 0,
+     "interval": {
+      "low": 0.3057,
+      "high": 0.8632
+     },
+     "speed": {
+      "n": 8,
+      "p50": 537,
+      "p95": 843,
+      "mean": 582
+     },
+     "cost": {
+      "total": 0.000263,
+      "tokens": 6255
+     },
+     "headline": {
+      "value": 0.625,
+      "display": "62.5%"
+     }
+    },
+    "drex-v1-5": {
+     "model": "nace-ai/drex-v1.5-20261009",
+     "recordedAt": "2026-10-12",
+     "answered": 15,
+     "graded": 15,
+     "right": 10,
+     "refused": 0,
+     "interval": {
+      "low": 0.4171,
+      "high": 0.8482
+     },
+     "speed": {
+      "n": 15,
+      "p50": 311,
+      "p95": 868,
+      "mean": 385
+     },
+     "cost": {
+      "total": 0.000466,
+      "tokens": 11653
+     },
+     "headline": {
+      "value": 0.6667,
+      "display": "66.7%"
+     }
+    },
+    "clef-omni": {
+     "model": "cloudflare/clef-omni-20261009",
+     "recordedAt": "2026-10-12",
+     "answered": 200,
+     "graded": 200,
+     "right": 22,
+     "refused": 0,
+     "interval": {
+      "low": 0.0738,
+      "high": 0.1609
+     },
+     "speed": {
+      "n": 200,
+      "p50": 233,
+      "p95": 705,
+      "mean": 316
+     },
+     "cost": {
+      "total": 0.034978,
+      "tokens": 233189
+     },
+     "headline": {
+      "value": 0.11,
+      "display": "11%"
      }
     }
    },
@@ -3052,6 +8871,12 @@
    "answered": 240,
    "graded": 232,
    "right": 230,
+   "refused": 0,
+   "speed": null,
+   "cost": {
+    "total": null,
+    "tokens": null
+   },
    "interval": {
     "low": 0.9691,
     "high": 0.9976
@@ -3127,9 +8952,21 @@
      "answered": 240,
      "graded": 232,
      "right": 230,
+     "refused": 0,
      "interval": {
       "low": 0.9691,
       "high": 0.9976
+     },
+     "speed": {
+      "n": 3,
+      "p50": 262,
+      "p95": 283,
+      "mean": 265,
+      "sampled": true
+     },
+     "cost": {
+      "total": null,
+      "tokens": null
      },
      "headline": {
       "value": 0.9914,
@@ -3142,13 +8979,77 @@
      "answered": 240,
      "graded": 232,
      "right": 227,
+     "refused": 0,
      "interval": {
       "low": 0.9505,
       "high": 0.9908
      },
+     "speed": {
+      "n": 3,
+      "p50": 237,
+      "p95": 280,
+      "mean": 250,
+      "sampled": true
+     },
+     "cost": {
+      "total": null,
+      "tokens": 264062
+     },
      "headline": {
       "value": 0.9784,
       "display": "227 of 232"
+     }
+    },
+    "drex-v1-5": {
+     "model": "nace-ai/drex-v1.5-20261009",
+     "recordedAt": "2026-10-12",
+     "answered": 26,
+     "graded": 26,
+     "right": 25,
+     "refused": 0,
+     "interval": {
+      "low": 0.8111,
+      "high": 0.9932
+     },
+     "speed": {
+      "n": 26,
+      "p50": 371,
+      "p95": 1196,
+      "mean": 502
+     },
+     "cost": {
+      "total": 0.000597,
+      "tokens": 14932
+     },
+     "headline": {
+      "value": 0.9615,
+      "display": "25 of 26"
+     }
+    },
+    "clef-omni": {
+     "model": "cloudflare/clef-omni-20261009",
+     "recordedAt": "2026-10-12",
+     "answered": 240,
+     "graded": 232,
+     "right": 201,
+     "refused": 0,
+     "interval": {
+      "low": 0.8166,
+      "high": 0.9042
+     },
+     "speed": {
+      "n": 240,
+      "p50": 332,
+      "p95": 692,
+      "mean": 362
+     },
+     "cost": {
+      "total": 0.032694,
+      "tokens": 217958
+     },
+     "headline": {
+      "value": 0.8664,
+      "display": "201 of 232"
      }
     }
    },
@@ -3173,6 +9074,12 @@
    "answered": 18,
    "graded": 18,
    "right": 18,
+   "refused": 0,
+   "speed": null,
+   "cost": {
+    "total": null,
+    "tokens": null
+   },
    "interval": {
     "low": 0.8241,
     "high": 1
@@ -3250,9 +9157,21 @@
      "answered": 18,
      "graded": 18,
      "right": 18,
+     "refused": 0,
      "interval": {
       "low": 0.8241,
       "high": 1
+     },
+     "speed": {
+      "n": 3,
+      "p50": 286,
+      "p95": 289,
+      "mean": 279,
+      "sampled": true
+     },
+     "cost": {
+      "total": null,
+      "tokens": null
      },
      "headline": {
       "value": 1,
@@ -3265,13 +9184,77 @@
      "answered": 18,
      "graded": 18,
      "right": 16,
+     "refused": 0,
      "interval": {
       "low": 0.672,
       "high": 0.969
      },
+     "speed": {
+      "n": 3,
+      "p50": 295,
+      "p95": 295,
+      "mean": 288,
+      "sampled": true
+     },
+     "cost": {
+      "total": null,
+      "tokens": 41786
+     },
      "headline": {
       "value": 0.8889,
       "display": "16 of 18"
+     }
+    },
+    "drex-v1-5": {
+     "model": "nace-ai/drex-v1.5-20261009",
+     "recordedAt": "2026-10-12",
+     "answered": 1,
+     "graded": 1,
+     "right": 1,
+     "refused": 0,
+     "interval": {
+      "low": 0.2065,
+      "high": 1
+     },
+     "speed": {
+      "n": 1,
+      "p50": 809,
+      "p95": 809,
+      "mean": 809
+     },
+     "cost": {
+      "total": 0.000062,
+      "tokens": 1561
+     },
+     "headline": {
+      "value": 1,
+      "display": "1 of 1"
+     }
+    },
+    "clef-omni": {
+     "model": "cloudflare/clef-omni-20261009",
+     "recordedAt": "2026-10-12",
+     "answered": 18,
+     "graded": 18,
+     "right": 15,
+     "refused": 0,
+     "interval": {
+      "low": 0.6078,
+      "high": 0.9416
+     },
+     "speed": {
+      "n": 18,
+      "p50": 457,
+      "p95": 1262,
+      "mean": 525
+     },
+     "cost": {
+      "total": 0.004753,
+      "tokens": 31684
+     },
+     "headline": {
+      "value": 0.8333,
+      "display": "15 of 18"
      }
     }
    },
@@ -3296,6 +9279,12 @@
    "answered": 30,
    "graded": 30,
    "right": 24,
+   "refused": 0,
+   "speed": null,
+   "cost": {
+    "total": null,
+    "tokens": null
+   },
    "interval": {
     "low": 0.6269,
     "high": 0.905
@@ -3368,9 +9357,21 @@
      "answered": 30,
      "graded": 30,
      "right": 24,
+     "refused": 0,
      "interval": {
       "low": 0.6269,
       "high": 0.905
+     },
+     "speed": {
+      "n": 3,
+      "p50": 302,
+      "p95": 369,
+      "mean": 311,
+      "sampled": true
+     },
+     "cost": {
+      "total": null,
+      "tokens": null
      },
      "headline": {
       "value": 0.8,
@@ -3383,13 +9384,51 @@
      "answered": 30,
      "graded": 30,
      "right": 20,
+     "refused": 0,
      "interval": {
       "low": 0.4878,
       "high": 0.8077
      },
+     "speed": {
+      "n": 3,
+      "p50": 341,
+      "p95": 477,
+      "mean": 372,
+      "sampled": true
+     },
+     "cost": {
+      "total": null,
+      "tokens": 65479
+     },
      "headline": {
       "value": 0.6667,
       "display": "20 of 30"
+     }
+    },
+    "clef-omni": {
+     "model": "cloudflare/clef-omni-20261009",
+     "recordedAt": "2026-10-12",
+     "answered": 30,
+     "graded": 30,
+     "right": 22,
+     "refused": 0,
+     "interval": {
+      "low": 0.5555,
+      "high": 0.8582
+     },
+     "speed": {
+      "n": 30,
+      "p50": 366,
+      "p95": 987,
+      "mean": 471
+     },
+     "cost": {
+      "total": 0.008012,
+      "tokens": 53416
+     },
+     "headline": {
+      "value": 0.7333,
+      "display": "22 of 30"
      }
     }
    },
@@ -3414,6 +9453,12 @@
    "answered": 40,
    "graded": 40,
    "right": 40,
+   "refused": 0,
+   "speed": null,
+   "cost": {
+    "total": null,
+    "tokens": null
+   },
    "interval": {
     "low": 0.9124,
     "high": 1
@@ -3486,9 +9531,21 @@
      "answered": 40,
      "graded": 40,
      "right": 40,
+     "refused": 0,
      "interval": {
       "low": 0.9124,
       "high": 1
+     },
+     "speed": {
+      "n": 3,
+      "p50": 284,
+      "p95": 333,
+      "mean": 298,
+      "sampled": true
+     },
+     "cost": {
+      "total": null,
+      "tokens": null
      },
      "headline": {
       "value": 1,
@@ -3501,13 +9558,51 @@
      "answered": 40,
      "graded": 40,
      "right": 39,
+     "refused": 0,
      "interval": {
       "low": 0.8712,
       "high": 0.9956
      },
+     "speed": {
+      "n": 3,
+      "p50": 291,
+      "p95": 301,
+      "mean": 250,
+      "sampled": true
+     },
+     "cost": {
+      "total": null,
+      "tokens": 88452
+     },
      "headline": {
       "value": 0.975,
       "display": "39 of 40"
+     }
+    },
+    "clef-omni": {
+     "model": "cloudflare/clef-omni-20261009",
+     "recordedAt": "2026-10-12",
+     "answered": 40,
+     "graded": 40,
+     "right": 22,
+     "refused": 0,
+     "interval": {
+      "low": 0.3983,
+      "high": 0.6929
+     },
+     "speed": {
+      "n": 40,
+      "p50": 439,
+      "p95": 777,
+      "mean": 482
+     },
+     "cost": {
+      "total": 0.011864,
+      "tokens": 79092
+     },
+     "headline": {
+      "value": 0.55,
+      "display": "22 of 40"
      }
     }
    },
@@ -3532,6 +9627,12 @@
    "answered": 220,
    "graded": 220,
    "right": 198,
+   "refused": 0,
+   "speed": null,
+   "cost": {
+    "total": null,
+    "tokens": null
+   },
    "interval": {
     "low": 0.8532,
     "high": 0.933
@@ -3612,9 +9713,21 @@
      "answered": 220,
      "graded": 220,
      "right": 198,
+     "refused": 0,
      "interval": {
       "low": 0.8532,
       "high": 0.933
+     },
+     "speed": {
+      "n": 3,
+      "p50": 260,
+      "p95": 309,
+      "mean": 276,
+      "sampled": true
+     },
+     "cost": {
+      "total": null,
+      "tokens": null
      },
      "headline": {
       "value": 0.9,
@@ -3627,13 +9740,51 @@
      "answered": 220,
      "graded": 220,
      "right": 192,
+     "refused": 0,
      "interval": {
       "low": 0.8222,
       "high": 0.9105
      },
+     "speed": {
+      "n": 3,
+      "p50": 294,
+      "p95": 299,
+      "mean": 259,
+      "sampled": true
+     },
+     "cost": {
+      "total": null,
+      "tokens": 497272
+     },
      "headline": {
       "value": 0.8727,
       "display": "192 of 220"
+     }
+    },
+    "clef-omni": {
+     "model": "cloudflare/clef-omni-20261009",
+     "recordedAt": "2026-10-12",
+     "answered": 220,
+     "graded": 220,
+     "right": 137,
+     "refused": 0,
+     "interval": {
+      "low": 0.5571,
+      "high": 0.6842
+     },
+     "speed": {
+      "n": 220,
+      "p50": 393,
+      "p95": 695,
+      "mean": 444
+     },
+     "cost": {
+      "total": 0.07561,
+      "tokens": 504066
+     },
+     "headline": {
+      "value": 0.6227,
+      "display": "137 of 220"
      }
     }
    },
@@ -3658,6 +9809,12 @@
    "answered": 300,
    "graded": 300,
    "right": 173,
+   "refused": 0,
+   "speed": null,
+   "cost": {
+    "total": null,
+    "tokens": null
+   },
    "interval": {
     "low": 0.5201,
     "high": 0.6313
@@ -3732,9 +9889,21 @@
      "answered": 300,
      "graded": 300,
      "right": 173,
+     "refused": 0,
      "interval": {
       "low": 0.5201,
       "high": 0.6313
+     },
+     "speed": {
+      "n": 3,
+      "p50": 262,
+      "p95": 283,
+      "mean": 267,
+      "sampled": true
+     },
+     "cost": {
+      "total": null,
+      "tokens": null
      },
      "headline": {
       "value": 0.5556,
@@ -3747,13 +9916,51 @@
      "answered": 300,
      "graded": 300,
      "right": 172,
+     "refused": 0,
      "interval": {
       "low": 0.5168,
       "high": 0.628
      },
+     "speed": {
+      "n": 3,
+      "p50": 294,
+      "p95": 315,
+      "mean": 259,
+      "sampled": true
+     },
+     "cost": {
+      "total": null,
+      "tokens": 606911
+     },
      "headline": {
       "value": 0.7273,
       "display": "72.7%"
+     }
+    },
+    "clef-omni": {
+     "model": "cloudflare/clef-omni-20261009",
+     "recordedAt": "2026-10-12",
+     "answered": 300,
+     "graded": 300,
+     "right": 170,
+     "refused": 0,
+     "interval": {
+      "low": 0.5101,
+      "high": 0.6215
+     },
+     "speed": {
+      "n": 300,
+      "p50": 344,
+      "p95": 680,
+      "mean": 364
+     },
+     "cost": {
+      "total": 0.108362,
+      "tokens": 722413
+     },
+     "headline": {
+      "value": 0.5172,
+      "display": "51.7%"
      }
     }
    },
@@ -3778,6 +9985,12 @@
    "answered": 120,
    "graded": 120,
    "right": 116,
+   "refused": 0,
+   "speed": null,
+   "cost": {
+    "total": null,
+    "tokens": null
+   },
    "interval": {
     "low": 0.9174,
     "high": 0.987
@@ -3858,9 +10071,21 @@
      "answered": 120,
      "graded": 120,
      "right": 116,
+     "refused": 0,
      "interval": {
       "low": 0.9174,
       "high": 0.987
+     },
+     "speed": {
+      "n": 3,
+      "p50": 269,
+      "p95": 293,
+      "mean": 272,
+      "sampled": true
+     },
+     "cost": {
+      "total": null,
+      "tokens": null
      },
      "headline": {
       "value": 0.9667,
@@ -3873,13 +10098,51 @@
      "answered": 120,
      "graded": 120,
      "right": 115,
+     "refused": 0,
      "interval": {
       "low": 0.9062,
       "high": 0.9821
      },
+     "speed": {
+      "n": 3,
+      "p50": 177,
+      "p95": 304,
+      "mean": 217,
+      "sampled": true
+     },
+     "cost": {
+      "total": null,
+      "tokens": 216430
+     },
      "headline": {
       "value": 0.9583,
       "display": "115 of 120"
+     }
+    },
+    "clef-omni": {
+     "model": "cloudflare/clef-omni-20261009",
+     "recordedAt": "2026-10-12",
+     "answered": 22,
+     "graded": 22,
+     "right": 11,
+     "refused": 0,
+     "interval": {
+      "low": 0.3072,
+      "high": 0.6928
+     },
+     "speed": {
+      "n": 22,
+      "p50": 254,
+      "p95": 551,
+      "mean": 312
+     },
+     "cost": {
+      "total": 0.004647,
+      "tokens": 30980
+     },
+     "headline": {
+      "value": 0.5,
+      "display": "11 of 22"
      }
     }
    },
@@ -3904,6 +10167,12 @@
    "answered": 240,
    "graded": 130,
    "right": 130,
+   "refused": 0,
+   "speed": null,
+   "cost": {
+    "total": null,
+    "tokens": null
+   },
    "interval": {
     "low": 0.9713,
     "high": 1
@@ -3977,9 +10246,21 @@
      "answered": 240,
      "graded": 130,
      "right": 130,
+     "refused": 0,
      "interval": {
       "low": 0.9713,
       "high": 1
+     },
+     "speed": {
+      "n": 3,
+      "p50": 287,
+      "p95": 333,
+      "mean": 296,
+      "sampled": true
+     },
+     "cost": {
+      "total": null,
+      "tokens": null
      },
      "headline": {
       "value": 1,
@@ -3992,13 +10273,51 @@
      "answered": 240,
      "graded": 130,
      "right": 125,
+     "refused": 0,
      "interval": {
       "low": 0.9131,
       "high": 0.9835
      },
+     "speed": {
+      "n": 3,
+      "p50": 275,
+      "p95": 290,
+      "mean": 251,
+      "sampled": true
+     },
+     "cost": {
+      "total": null,
+      "tokens": 583664
+     },
      "headline": {
       "value": 0.9615,
       "display": "125 of 130"
+     }
+    },
+    "clef-omni": {
+     "model": "cloudflare/clef-omni-20261009",
+     "recordedAt": "2026-10-12",
+     "answered": 57,
+     "graded": 36,
+     "right": 29,
+     "refused": 0,
+     "interval": {
+      "low": 0.6497,
+      "high": 0.9025
+     },
+     "speed": {
+      "n": 57,
+      "p50": 261,
+      "p95": 880,
+      "mean": 342
+     },
+     "cost": {
+      "total": 0.023394,
+      "tokens": 155960
+     },
+     "headline": {
+      "value": 0.8056,
+      "display": "29 of 36"
      }
     }
    },
@@ -4023,6 +10342,12 @@
    "answered": 260,
    "graded": 260,
    "right": 217,
+   "refused": 0,
+   "speed": null,
+   "cost": {
+    "total": null,
+    "tokens": null
+   },
    "interval": {
     "low": 0.7846,
     "high": 0.8748
@@ -4096,9 +10421,21 @@
      "answered": 260,
      "graded": 260,
      "right": 217,
+     "refused": 0,
      "interval": {
       "low": 0.7846,
       "high": 0.8748
+     },
+     "speed": {
+      "n": 3,
+      "p50": 278,
+      "p95": 315,
+      "mean": 288,
+      "sampled": true
+     },
+     "cost": {
+      "total": null,
+      "tokens": null
      },
      "headline": {
       "value": 0.8346,
@@ -4111,13 +10448,51 @@
      "answered": 259,
      "graded": 259,
      "right": 206,
+     "refused": 1,
      "interval": {
       "low": 0.7421,
       "high": 0.84
      },
+     "speed": {
+      "n": 3,
+      "p50": 288,
+      "p95": 315,
+      "mean": 254,
+      "sampled": true
+     },
+     "cost": {
+      "total": null,
+      "tokens": 468727
+     },
      "headline": {
       "value": 0.7954,
       "display": "206 of 259"
+     }
+    },
+    "clef-omni": {
+     "model": "cloudflare/clef-omni-20261009",
+     "recordedAt": "2026-10-12",
+     "answered": 25,
+     "graded": 25,
+     "right": 9,
+     "refused": 0,
+     "interval": {
+      "low": 0.2025,
+      "high": 0.5548
+     },
+     "speed": {
+      "n": 25,
+      "p50": 317,
+      "p95": 708,
+      "mean": 394
+     },
+     "cost": {
+      "total": 0.007257,
+      "tokens": 48381
+     },
+     "headline": {
+      "value": 0.36,
+      "display": "9 of 25"
      }
     }
    },
@@ -4142,6 +10517,12 @@
    "answered": 200,
    "graded": 200,
    "right": 187,
+   "refused": 0,
+   "speed": null,
+   "cost": {
+    "total": null,
+    "tokens": null
+   },
    "interval": {
     "low": 0.892,
     "high": 0.9616
@@ -4223,9 +10604,21 @@
      "answered": 200,
      "graded": 200,
      "right": 187,
+     "refused": 0,
      "interval": {
       "low": 0.892,
       "high": 0.9616
+     },
+     "speed": {
+      "n": 3,
+      "p50": 247,
+      "p95": 253,
+      "mean": 247,
+      "sampled": true
+     },
+     "cost": {
+      "total": null,
+      "tokens": null
      },
      "headline": {
       "value": 0.935,
@@ -4238,9 +10631,21 @@
      "answered": 200,
      "graded": 200,
      "right": 128,
+     "refused": 0,
      "interval": {
       "low": 0.5714,
       "high": 0.7033
+     },
+     "speed": {
+      "n": 3,
+      "p50": 321,
+      "p95": 328,
+      "mean": 297,
+      "sampled": true
+     },
+     "cost": {
+      "total": null,
+      "tokens": 256143
      },
      "headline": {
       "value": 0.64,
@@ -4269,6 +10674,12 @@
    "answered": 96,
    "graded": 56,
    "right": 26,
+   "refused": 0,
+   "speed": null,
+   "cost": {
+    "total": null,
+    "tokens": null
+   },
    "interval": {
     "low": 0.3402,
     "high": 0.593
@@ -4343,9 +10754,21 @@
      "answered": 96,
      "graded": 56,
      "right": 26,
+     "refused": 0,
      "interval": {
       "low": 0.3402,
       "high": 0.593
+     },
+     "speed": {
+      "n": 3,
+      "p50": 255,
+      "p95": 276,
+      "mean": 258,
+      "sampled": true
+     },
+     "cost": {
+      "total": null,
+      "tokens": null
      },
      "headline": {
       "value": 0.4643,
@@ -4358,9 +10781,21 @@
      "answered": 96,
      "graded": 60,
      "right": 28,
+     "refused": 0,
      "interval": {
       "low": 0.3463,
       "high": 0.5911
+     },
+     "speed": {
+      "n": 3,
+      "p50": 319,
+      "p95": 336,
+      "mean": 277,
+      "sampled": true
+     },
+     "cost": {
+      "total": null,
+      "tokens": 155494
      },
      "headline": {
       "value": 0.4667,
@@ -4389,6 +10824,12 @@
    "answered": 48,
    "graded": 36,
    "right": 29,
+   "refused": 0,
+   "speed": null,
+   "cost": {
+    "total": null,
+    "tokens": null
+   },
    "interval": {
     "low": 0.6497,
     "high": 0.9025
@@ -4470,9 +10911,21 @@
      "answered": 48,
      "graded": 36,
      "right": 29,
+     "refused": 0,
      "interval": {
       "low": 0.6497,
       "high": 0.9025
+     },
+     "speed": {
+      "n": 3,
+      "p50": 277,
+      "p95": 280,
+      "mean": 278,
+      "sampled": true
+     },
+     "cost": {
+      "total": null,
+      "tokens": null
      },
      "headline": {
       "value": 0.8056,
@@ -4485,9 +10938,21 @@
      "answered": 48,
      "graded": 36,
      "right": 13,
+     "refused": 0,
      "interval": {
       "low": 0.2248,
       "high": 0.5243
+     },
+     "speed": {
+      "n": 3,
+      "p50": 181,
+      "p95": 294,
+      "mean": 215,
+      "sampled": true
+     },
+     "cost": {
+      "total": null,
+      "tokens": 69207
      },
      "headline": {
       "value": 0.3611,
@@ -4516,6 +10981,12 @@
    "answered": 120,
    "graded": 120,
    "right": 48,
+   "refused": 0,
+   "speed": null,
+   "cost": {
+    "total": null,
+    "tokens": null
+   },
    "interval": {
     "low": 0.3168,
     "high": 0.4894
@@ -4597,9 +11068,21 @@
      "answered": 120,
      "graded": 120,
      "right": 48,
+     "refused": 0,
      "interval": {
       "low": 0.3168,
       "high": 0.4894
+     },
+     "speed": {
+      "n": 3,
+      "p50": 253,
+      "p95": 261,
+      "mean": 254,
+      "sampled": true
+     },
+     "cost": {
+      "total": null,
+      "tokens": null
      },
      "headline": {
       "value": 0.4,
@@ -4612,9 +11095,21 @@
      "answered": 120,
      "graded": 120,
      "right": 66,
+     "refused": 0,
      "interval": {
       "low": 0.4608,
       "high": 0.6361
+     },
+     "speed": {
+      "n": 3,
+      "p50": 298,
+      "p95": 306,
+      "mean": 299,
+      "sampled": true
+     },
+     "cost": {
+      "total": null,
+      "tokens": 198399
      },
      "headline": {
       "value": 0.55,
@@ -4643,6 +11138,12 @@
    "answered": 16,
    "graded": 9,
    "right": 6,
+   "refused": 0,
+   "speed": null,
+   "cost": {
+    "total": null,
+    "tokens": null
+   },
    "interval": {
     "low": 0.3542,
     "high": 0.8794
@@ -4717,9 +11218,21 @@
      "answered": 16,
      "graded": 9,
      "right": 6,
+     "refused": 0,
      "interval": {
       "low": 0.3542,
       "high": 0.8794
+     },
+     "speed": {
+      "n": 3,
+      "p50": 288,
+      "p95": 290,
+      "mean": 286,
+      "sampled": true
+     },
+     "cost": {
+      "total": null,
+      "tokens": null
      },
      "headline": {
       "value": 0.6667,
@@ -4732,9 +11245,21 @@
      "answered": 15,
      "graded": 9,
      "right": 8,
+     "refused": 1,
      "interval": {
       "low": 0.565,
       "high": 0.9801
+     },
+     "speed": {
+      "n": 3,
+      "p50": 306,
+      "p95": 311,
+      "mean": 299,
+      "sampled": true
+     },
+     "cost": {
+      "total": null,
+      "tokens": 29652
      },
      "headline": {
       "value": 0.8889,
@@ -4763,6 +11288,12 @@
    "answered": 16,
    "graded": 10,
    "right": 10,
+   "refused": 0,
+   "speed": null,
+   "cost": {
+    "total": null,
+    "tokens": null
+   },
    "interval": {
     "low": 0.7225,
     "high": 1
@@ -4842,9 +11373,21 @@
      "answered": 16,
      "graded": 10,
      "right": 10,
+     "refused": 0,
      "interval": {
       "low": 0.7225,
       "high": 1
+     },
+     "speed": {
+      "n": 3,
+      "p50": 247,
+      "p95": 276,
+      "mean": 254,
+      "sampled": true
+     },
+     "cost": {
+      "total": null,
+      "tokens": null
      },
      "headline": {
       "value": 1,
@@ -4857,9 +11400,21 @@
      "answered": 16,
      "graded": 10,
      "right": 10,
+     "refused": 0,
      "interval": {
       "low": 0.7225,
       "high": 1
+     },
+     "speed": {
+      "n": 3,
+      "p50": 286,
+      "p95": 341,
+      "mean": 295,
+      "sampled": true
+     },
+     "cost": {
+      "total": null,
+      "tokens": 21967
      },
      "headline": {
       "value": 1,
@@ -4888,6 +11443,12 @@
    "answered": 4,
    "graded": 0,
    "right": 0,
+   "refused": 0,
+   "speed": null,
+   "cost": {
+    "total": null,
+    "tokens": null
+   },
    "interval": null,
    "headline": {
     "label": "Cheapest-peer agreement",
@@ -4959,7 +11520,19 @@
      "answered": 4,
      "graded": 0,
      "right": 0,
+     "refused": 0,
      "interval": null,
+     "speed": {
+      "n": 3,
+      "p50": 270,
+      "p95": 291,
+      "mean": 272,
+      "sampled": true
+     },
+     "cost": {
+      "total": null,
+      "tokens": null
+     },
      "headline": {
       "value": 0.5,
       "display": "1 of 2"
@@ -4971,7 +11544,19 @@
      "answered": 4,
      "graded": 0,
      "right": 0,
+     "refused": 0,
      "interval": null,
+     "speed": {
+      "n": 3,
+      "p50": 412,
+      "p95": 455,
+      "mean": 380,
+      "sampled": true
+     },
+     "cost": {
+      "total": null,
+      "tokens": 13383
+     },
      "headline": {
       "value": 0.5,
       "display": "1 of 2"
@@ -4999,6 +11584,12 @@
    "answered": 300,
    "graded": 300,
    "right": 294,
+   "refused": 0,
+   "speed": null,
+   "cost": {
+    "total": null,
+    "tokens": null
+   },
    "interval": {
     "low": 0.9571,
     "high": 0.9908
@@ -5082,9 +11673,21 @@
      "answered": 300,
      "graded": 300,
      "right": 294,
+     "refused": 0,
      "interval": {
       "low": 0.9571,
       "high": 0.9908
+     },
+     "speed": {
+      "n": 3,
+      "p50": 268,
+      "p95": 305,
+      "mean": 271,
+      "sampled": true
+     },
+     "cost": {
+      "total": null,
+      "tokens": null
      },
      "headline": {
       "value": 0.98,
@@ -5097,9 +11700,21 @@
      "answered": 300,
      "graded": 300,
      "right": 268,
+     "refused": 0,
      "interval": {
       "low": 0.8533,
       "high": 0.9234
+     },
+     "speed": {
+      "n": 3,
+      "p50": 171,
+      "p95": 263,
+      "mean": 202,
+      "sampled": true
+     },
+     "cost": {
+      "total": null,
+      "tokens": 492702
      },
      "headline": {
       "value": 0.8933,
@@ -5128,6 +11743,12 @@
    "answered": 90,
    "graded": 90,
    "right": 90,
+   "refused": 0,
+   "speed": null,
+   "cost": {
+    "total": null,
+    "tokens": null
+   },
    "interval": {
     "low": 0.9591,
     "high": 1
@@ -5211,9 +11832,21 @@
      "answered": 90,
      "graded": 90,
      "right": 90,
+     "refused": 0,
      "interval": {
       "low": 0.9591,
       "high": 1
+     },
+     "speed": {
+      "n": 3,
+      "p50": 283,
+      "p95": 290,
+      "mean": 272,
+      "sampled": true
+     },
+     "cost": {
+      "total": null,
+      "tokens": null
      },
      "headline": {
       "value": 1,
@@ -5226,9 +11859,21 @@
      "answered": 89,
      "graded": 89,
      "right": 89,
+     "refused": 1,
      "interval": {
       "low": 0.9586,
       "high": 1
+     },
+     "speed": {
+      "n": 3,
+      "p50": 291,
+      "p95": 293,
+      "mean": 288,
+      "sampled": true
+     },
+     "cost": {
+      "total": null,
+      "tokens": 117684
      },
      "headline": {
       "value": 1,
@@ -5257,6 +11902,12 @@
    "answered": 240,
    "graded": 240,
    "right": 239,
+   "refused": 0,
+   "speed": null,
+   "cost": {
+    "total": null,
+    "tokens": null
+   },
    "interval": {
     "low": 0.9768,
     "high": 0.9993
@@ -5341,9 +11992,21 @@
      "answered": 240,
      "graded": 240,
      "right": 239,
+     "refused": 0,
      "interval": {
       "low": 0.9768,
       "high": 0.9993
+     },
+     "speed": {
+      "n": 3,
+      "p50": 262,
+      "p95": 277,
+      "mean": 261,
+      "sampled": true
+     },
+     "cost": {
+      "total": null,
+      "tokens": null
      },
      "headline": {
       "value": 0.9958,
@@ -5356,9 +12019,21 @@
      "answered": 240,
      "graded": 240,
      "right": 237,
+     "refused": 0,
      "interval": {
       "low": 0.9639,
       "high": 0.9957
+     },
+     "speed": {
+      "n": 3,
+      "p50": 277,
+      "p95": 280,
+      "mean": 266,
+      "sampled": true
+     },
+     "cost": {
+      "total": null,
+      "tokens": 286017
      },
      "headline": {
       "value": 0.9875,
@@ -5387,6 +12062,12 @@
    "answered": 380,
    "graded": 380,
    "right": 375,
+   "refused": 0,
+   "speed": null,
+   "cost": {
+    "total": null,
+    "tokens": null
+   },
    "interval": {
     "low": 0.9696,
     "high": 0.9944
@@ -5465,9 +12146,21 @@
      "answered": 380,
      "graded": 380,
      "right": 375,
+     "refused": 0,
      "interval": {
       "low": 0.9696,
       "high": 0.9944
+     },
+     "speed": {
+      "n": 3,
+      "p50": 288,
+      "p95": 328,
+      "mean": 289,
+      "sampled": true
+     },
+     "cost": {
+      "total": null,
+      "tokens": null
      },
      "headline": {
       "value": 0.9868,
@@ -5480,9 +12173,21 @@
      "answered": 380,
      "graded": 380,
      "right": 368,
+     "refused": 0,
      "interval": {
       "low": 0.9456,
       "high": 0.9818
+     },
+     "speed": {
+      "n": 3,
+      "p50": 290,
+      "p95": 365,
+      "mean": 281,
+      "sampled": true
+     },
+     "cost": {
+      "total": null,
+      "tokens": 386463
      },
      "headline": {
       "value": 0.9684,
@@ -5511,6 +12216,12 @@
    "answered": 400,
    "graded": 400,
    "right": 400,
+   "refused": 0,
+   "speed": null,
+   "cost": {
+    "total": null,
+    "tokens": null
+   },
    "interval": {
     "low": 0.9905,
     "high": 1
@@ -5593,9 +12304,21 @@
      "answered": 400,
      "graded": 400,
      "right": 400,
+     "refused": 0,
      "interval": {
       "low": 0.9905,
       "high": 1
+     },
+     "speed": {
+      "n": 3,
+      "p50": 269,
+      "p95": 276,
+      "mean": 267,
+      "sampled": true
+     },
+     "cost": {
+      "total": null,
+      "tokens": null
      },
      "headline": {
       "value": 1,
@@ -5608,9 +12331,21 @@
      "answered": 400,
      "graded": 400,
      "right": 400,
+     "refused": 0,
      "interval": {
       "low": 0.9905,
       "high": 1
+     },
+     "speed": {
+      "n": 3,
+      "p50": 297,
+      "p95": 299,
+      "mean": 251,
+      "sampled": true
+     },
+     "cost": {
+      "total": null,
+      "tokens": 451284
      },
      "headline": {
       "value": 1,
@@ -5639,6 +12374,12 @@
    "answered": 71,
    "graded": 71,
    "right": 30,
+   "refused": 0,
+   "speed": null,
+   "cost": {
+    "total": null,
+    "tokens": null
+   },
    "interval": {
     "low": 0.3145,
     "high": 0.5385
@@ -5719,9 +12460,21 @@
      "answered": 71,
      "graded": 71,
      "right": 30,
+     "refused": 0,
      "interval": {
       "low": 0.3145,
       "high": 0.5385
+     },
+     "speed": {
+      "n": 3,
+      "p50": 280,
+      "p95": 421,
+      "mean": 327,
+      "sampled": true
+     },
+     "cost": {
+      "total": null,
+      "tokens": null
      },
      "headline": {
       "value": 0.4225,
@@ -5734,9 +12487,21 @@
      "answered": 71,
      "graded": 71,
      "right": 36,
+     "refused": 0,
      "interval": {
       "low": 0.3934,
       "high": 0.62
+     },
+     "speed": {
+      "n": 3,
+      "p50": 318,
+      "p95": 323,
+      "mean": 305,
+      "sampled": true
+     },
+     "cost": {
+      "total": null,
+      "tokens": 262694
      },
      "headline": {
       "value": 0.507,
@@ -5765,6 +12530,12 @@
    "answered": 480,
    "graded": 480,
    "right": 250,
+   "refused": 0,
+   "speed": null,
+   "cost": {
+    "total": null,
+    "tokens": null
+   },
    "interval": {
     "low": 0.4762,
     "high": 0.5652
@@ -5845,9 +12616,21 @@
      "answered": 480,
      "graded": 480,
      "right": 250,
+     "refused": 0,
      "interval": {
       "low": 0.4762,
       "high": 0.5652
+     },
+     "speed": {
+      "n": 3,
+      "p50": 252,
+      "p95": 257,
+      "mean": 252,
+      "sampled": true
+     },
+     "cost": {
+      "total": null,
+      "tokens": null
      },
      "headline": {
       "value": 0.5208,
@@ -5860,9 +12643,21 @@
      "answered": 480,
      "graded": 480,
      "right": 253,
+     "refused": 0,
      "interval": {
       "low": 0.4824,
       "high": 0.5714
+     },
+     "speed": {
+      "n": 3,
+      "p50": 319,
+      "p95": 346,
+      "mean": 319,
+      "sampled": true
+     },
+     "cost": {
+      "total": null,
+      "tokens": 2267333
      },
      "headline": {
       "value": 0.5271,
@@ -5891,6 +12686,12 @@
    "answered": 312,
    "graded": 73,
    "right": 33,
+   "refused": 0,
+   "speed": null,
+   "cost": {
+    "total": null,
+    "tokens": null
+   },
    "interval": {
     "low": 0.3431,
     "high": 0.5658
@@ -5974,9 +12775,21 @@
      "answered": 312,
      "graded": 73,
      "right": 33,
+     "refused": 0,
      "interval": {
       "low": 0.3431,
       "high": 0.5658
+     },
+     "speed": {
+      "n": 3,
+      "p50": 274,
+      "p95": 279,
+      "mean": 274,
+      "sampled": true
+     },
+     "cost": {
+      "total": null,
+      "tokens": null
      },
      "headline": {
       "value": 0.4521,
@@ -5989,9 +12802,21 @@
      "answered": 312,
      "graded": 73,
      "right": 33,
+     "refused": 0,
      "interval": {
       "low": 0.3431,
       "high": 0.5658
+     },
+     "speed": {
+      "n": 3,
+      "p50": 320,
+      "p95": 490,
+      "mean": 371,
+      "sampled": true
+     },
+     "cost": {
+      "total": null,
+      "tokens": 892594
      },
      "headline": {
       "value": 0.4521,
@@ -6020,6 +12845,12 @@
    "answered": 60,
    "graded": 60,
    "right": 47,
+   "refused": 0,
+   "speed": null,
+   "cost": {
+    "total": null,
+    "tokens": null
+   },
    "interval": {
     "low": 0.6638,
     "high": 0.8688
@@ -6101,9 +12932,21 @@
      "answered": 60,
      "graded": 60,
      "right": 47,
+     "refused": 0,
      "interval": {
       "low": 0.6638,
       "high": 0.8688
+     },
+     "speed": {
+      "n": 3,
+      "p50": 284,
+      "p95": 313,
+      "mean": 289,
+      "sampled": true
+     },
+     "cost": {
+      "total": null,
+      "tokens": null
      },
      "headline": {
       "value": 0.7833,
@@ -6116,9 +12959,21 @@
      "answered": 56,
      "graded": 56,
      "right": 44,
+     "refused": 4,
      "interval": {
       "low": 0.6618,
       "high": 0.8729
+     },
+     "speed": {
+      "n": 3,
+      "p50": 233,
+      "p95": 331,
+      "mean": 244,
+      "sampled": true
+     },
+     "cost": {
+      "total": null,
+      "tokens": 400258
      },
      "headline": {
       "value": 0.7857,
@@ -6147,6 +13002,12 @@
    "answered": 140,
    "graded": 140,
    "right": 138,
+   "refused": 0,
+   "speed": null,
+   "cost": {
+    "total": null,
+    "tokens": null
+   },
    "interval": {
     "low": 0.9494,
     "high": 0.9961
@@ -6226,9 +13087,21 @@
      "answered": 140,
      "graded": 140,
      "right": 138,
+     "refused": 0,
      "interval": {
       "low": 0.9494,
       "high": 0.9961
+     },
+     "speed": {
+      "n": 3,
+      "p50": 267,
+      "p95": 267,
+      "mean": 264,
+      "sampled": true
+     },
+     "cost": {
+      "total": null,
+      "tokens": null
      },
      "headline": {
       "value": 0.9857,
@@ -6241,9 +13114,21 @@
      "answered": 140,
      "graded": 140,
      "right": 115,
+     "refused": 0,
      "interval": {
       "low": 0.7497,
       "high": 0.876
+     },
+     "speed": {
+      "n": 3,
+      "p50": 304,
+      "p95": 328,
+      "mean": 303,
+      "sampled": true
+     },
+     "cost": {
+      "total": null,
+      "tokens": 520447
      },
      "headline": {
       "value": 0.8214,
@@ -6272,6 +13157,12 @@
    "answered": 36,
    "graded": 36,
    "right": 12,
+   "refused": 0,
+   "speed": null,
+   "cost": {
+    "total": null,
+    "tokens": 26124
+   },
    "interval": {
     "low": 0.2021,
     "high": 0.4967
@@ -6340,9 +13231,21 @@
      "answered": 36,
      "graded": 36,
      "right": 12,
+     "refused": 0,
      "interval": {
       "low": 0.2021,
       "high": 0.4967
+     },
+     "speed": {
+      "n": 3,
+      "p50": 304,
+      "p95": 323,
+      "mean": 298,
+      "sampled": true
+     },
+     "cost": {
+      "total": null,
+      "tokens": 26124
      },
      "headline": {
       "value": 0.3333,
@@ -6371,6 +13274,12 @@
    "answered": 40,
    "graded": 40,
    "right": 40,
+   "refused": 0,
+   "speed": null,
+   "cost": {
+    "total": null,
+    "tokens": 34750
+   },
    "interval": {
     "low": 0.9124,
     "high": 1
@@ -6439,9 +13348,21 @@
      "answered": 40,
      "graded": 40,
      "right": 40,
+     "refused": 0,
      "interval": {
       "low": 0.9124,
       "high": 1
+     },
+     "speed": {
+      "n": 3,
+      "p50": 309,
+      "p95": 320,
+      "mean": 276,
+      "sampled": true
+     },
+     "cost": {
+      "total": null,
+      "tokens": 34750
      },
      "headline": {
       "value": 1,
@@ -6470,6 +13391,12 @@
    "answered": 30,
    "graded": 30,
    "right": 28,
+   "refused": 0,
+   "speed": null,
+   "cost": {
+    "total": null,
+    "tokens": 25830
+   },
    "interval": {
     "low": 0.7868,
     "high": 0.9815
@@ -6538,9 +13465,21 @@
      "answered": 30,
      "graded": 30,
      "right": 28,
+     "refused": 0,
      "interval": {
       "low": 0.7868,
       "high": 0.9815
+     },
+     "speed": {
+      "n": 3,
+      "p50": 310,
+      "p95": 333,
+      "mean": 285,
+      "sampled": true
+     },
+     "cost": {
+      "total": null,
+      "tokens": 25830
      },
      "headline": {
       "value": 0.9333,
@@ -6569,6 +13508,12 @@
    "answered": 32,
    "graded": 32,
    "right": 16,
+   "refused": 0,
+   "speed": null,
+   "cost": {
+    "total": null,
+    "tokens": 34453
+   },
    "interval": {
     "low": 0.3363,
     "high": 0.6637
@@ -6637,9 +13582,21 @@
      "answered": 32,
      "graded": 32,
      "right": 16,
+     "refused": 0,
      "interval": {
       "low": 0.3363,
       "high": 0.6637
+     },
+     "speed": {
+      "n": 3,
+      "p50": 373,
+      "p95": 386,
+      "mean": 361,
+      "sampled": true
+     },
+     "cost": {
+      "total": null,
+      "tokens": 34453
      },
      "headline": {
       "value": 0.5,
@@ -6668,6 +13625,12 @@
    "answered": 48,
    "graded": 48,
    "right": 37,
+   "refused": 0,
+   "speed": null,
+   "cost": {
+    "total": null,
+    "tokens": 42048
+   },
    "interval": {
     "low": 0.6346,
     "high": 0.8669
@@ -6736,9 +13699,21 @@
      "answered": 48,
      "graded": 48,
      "right": 37,
+     "refused": 0,
      "interval": {
       "low": 0.6346,
       "high": 0.8669
+     },
+     "speed": {
+      "n": 3,
+      "p50": 206,
+      "p95": 319,
+      "mean": 243,
+      "sampled": true
+     },
+     "cost": {
+      "total": null,
+      "tokens": 42048
      },
      "headline": {
       "value": 0.7708,
@@ -6767,6 +13742,12 @@
    "answered": 48,
    "graded": 48,
    "right": 24,
+   "refused": 0,
+   "speed": null,
+   "cost": {
+    "total": null,
+    "tokens": 40656
+   },
    "interval": {
     "low": 0.3639,
     "high": 0.6361
@@ -6835,9 +13816,21 @@
      "answered": 48,
      "graded": 48,
      "right": 24,
+     "refused": 0,
      "interval": {
       "low": 0.3639,
       "high": 0.6361
+     },
+     "speed": {
+      "n": 3,
+      "p50": 368,
+      "p95": 379,
+      "mean": 324,
+      "sampled": true
+     },
+     "cost": {
+      "total": null,
+      "tokens": 40656
      },
      "headline": {
       "value": 0.5,
@@ -6866,6 +13859,12 @@
    "answered": 30,
    "graded": 30,
    "right": 16,
+   "refused": 0,
+   "speed": null,
+   "cost": {
+    "total": null,
+    "tokens": 24180
+   },
    "interval": {
     "low": 0.3614,
     "high": 0.6977
@@ -6934,9 +13933,21 @@
      "answered": 30,
      "graded": 30,
      "right": 16,
+     "refused": 0,
      "interval": {
       "low": 0.3614,
       "high": 0.6977
+     },
+     "speed": {
+      "n": 3,
+      "p50": 323,
+      "p95": 340,
+      "mean": 289,
+      "sampled": true
+     },
+     "cost": {
+      "total": null,
+      "tokens": 24180
      },
      "headline": {
       "value": 0.5333,
@@ -6965,6 +13976,12 @@
    "answered": 11,
    "graded": 11,
    "right": 11,
+   "refused": 0,
+   "speed": null,
+   "cost": {
+    "total": null,
+    "tokens": 13619
+   },
    "interval": {
     "low": 0.7412,
     "high": 1
@@ -7033,9 +14050,21 @@
      "answered": 11,
      "graded": 11,
      "right": 11,
+     "refused": 0,
      "interval": {
       "low": 0.7412,
       "high": 1
+     },
+     "speed": {
+      "n": 3,
+      "p50": 650,
+      "p95": 736,
+      "mean": 658,
+      "sampled": true
+     },
+     "cost": {
+      "total": null,
+      "tokens": 13619
      },
      "headline": {
       "value": 1,
@@ -7064,6 +14093,12 @@
    "answered": 3,
    "graded": 3,
    "right": 2,
+   "refused": 0,
+   "speed": null,
+   "cost": {
+    "total": null,
+    "tokens": 3540
+   },
    "interval": {
     "low": 0.2077,
     "high": 0.9385
@@ -7132,9 +14167,21 @@
      "answered": 3,
      "graded": 3,
      "right": 2,
+     "refused": 0,
      "interval": {
       "low": 0.2077,
       "high": 0.9385
+     },
+     "speed": {
+      "n": 3,
+      "p50": 547,
+      "p95": 616,
+      "mean": 547,
+      "sampled": true
+     },
+     "cost": {
+      "total": null,
+      "tokens": 3540
      },
      "headline": {
       "value": 0.6667,
@@ -7163,6 +14210,12 @@
    "answered": 4,
    "graded": 4,
    "right": 4,
+   "refused": 0,
+   "speed": null,
+   "cost": {
+    "total": null,
+    "tokens": 3462
+   },
    "interval": {
     "low": 0.5101,
     "high": 1
@@ -7231,9 +14284,21 @@
      "answered": 4,
      "graded": 4,
      "right": 4,
+     "refused": 0,
      "interval": {
       "low": 0.5101,
       "high": 1
+     },
+     "speed": {
+      "n": 3,
+      "p50": 638,
+      "p95": 1005,
+      "mean": 654,
+      "sampled": true
+     },
+     "cost": {
+      "total": null,
+      "tokens": 3462
      },
      "headline": {
       "value": 1,

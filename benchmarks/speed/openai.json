@@ -1,0 +1,308 @@
+{
+ "model": "openai",
+ "served": "gpt-6-luna",
+ "sampledAt": "2026-10-12",
+ "method": "first 3 items of each demo, one request at a time",
+ "latencyMs": {
+  "ledger-integrity": {
+   "L-0001": 1796,
+   "L-0002": 560,
+   "L-0003": 320
+  },
+  "bank-reconciliation": {
+   "S-0011": 305,
+   "S-0024": 2120,
+   "S-0032": 309
+  },
+  "expense-posting": {
+   "E-0001": 224,
+   "E-0002": 299,
+   "E-0003": 185
+  },
+  "three-way-match": {
+   "P-0001": 335,
+   "P-0002": 164,
+   "P-0003": 200
+  },
+  "close-blockers": {
+   "TB-1000": 292,
+   "TB-1010": 239,
+   "TB-1020": 198
+  },
+  "order-risk": {
+   "ORD-0001": 204,
+   "ORD-0002": 154,
+   "ORD-0003": 266
+  },
+  "cod-abuse": {
+   "C-0001": 465,
+   "C-0002": 228,
+   "C-0003": 304
+  },
+  "dispute-routing": {
+   "DSP-0001": 321,
+   "DSP-0002": 187,
+   "DSP-0003": 291
+  },
+  "chargeback-evidence": {
+   "CB-0001": 321,
+   "CB-0002": 173,
+   "CB-0003": 272
+  },
+  "merchant-onboarding": {
+   "APP-001": 302,
+   "APP-002": 327,
+   "APP-003": 182
+  },
+  "delivery-exceptions": {
+   "SHP-0001": 277,
+   "SHP-0002": 177,
+   "SHP-0003": 343
+  },
+  "card-fraud-triage": {
+   "ALT-0001": 256,
+   "ALT-0002": 288,
+   "ALT-0003": 277
+  },
+  "aml-alert-triage": {
+   "AML-0001": 311,
+   "AML-0002": 160,
+   "AML-0003": 272
+  },
+  "account-takeover": {
+   "SES-0001": 186,
+   "SES-0002": 232,
+   "SES-0003": 307
+  },
+  "sanctions-name-match": {
+   "SNC-0001": 267,
+   "SNC-0002": 294,
+   "SNC-0003": 313
+  },
+  "insider-surveillance": {
+   "TRD-0001": 343,
+   "TRD-0002": 310,
+   "TRD-0003": 332
+  },
+  "mule-network": {
+   "ACC-0001": 327,
+   "ACC-0002": 298,
+   "ACC-0003": 305
+  },
+  "wallet-risk": {
+   "W-0001": 187,
+   "W-0002": 292,
+   "W-0003": 287
+  },
+  "wallet-profiling": {
+   "WPF-0001": 462,
+   "WPF-0002": 319,
+   "WPF-0003": 313
+  },
+  "mixer-tracing": {
+   "TRC-001": 177,
+   "TRC-002": 311,
+   "TRC-003": 293
+  },
+  "token-screening": {
+   "TOK-0001": 308,
+   "TOK-0002": 221,
+   "TOK-0003": 219
+  },
+  "sybil-clusters": {
+   "SW-001": 255,
+   "SW-002": 281,
+   "SW-003": 304
+  },
+  "portfolio-health": {
+   "PF-01": 288,
+   "PF-02": 289,
+   "PF-03": 291
+  },
+  "rebalance-review": {
+   "TR-0001": 200,
+   "TR-0002": 288,
+   "TR-0003": 290
+  },
+  "mandate-compliance": {
+   "P-ALPHA-R01": 234,
+   "P-ALPHA-R02": 280,
+   "P-ALPHA-R03": 237
+  },
+  "portfolio-compare": {
+   "PC-01": 274,
+   "PC-02": 295,
+   "PC-03": 295
+  },
+  "factor-exposure": {
+   "FE-01": 297,
+   "FE-02": 341,
+   "FE-03": 477
+  },
+  "income-planning": {
+   "IP-01": 291,
+   "IP-02": 157,
+   "IP-03": 301
+  },
+  "post-trade-review": {
+   "TD-0001": 299,
+   "TD-0002": 185,
+   "TD-0003": 294
+  },
+  "trade-feature-analysis": {
+   "TF-001": 167,
+   "TF-002": 294,
+   "TF-003": 315
+  },
+  "trader-behaviour": {
+   "TB-001": 171,
+   "TB-002": 304,
+   "TB-003": 177
+  },
+  "missed-trades": {
+   "MT-001": 290,
+   "MT-002": 187,
+   "MT-003": 275
+  },
+  "execution-quality": {
+   "FL-0001": 288,
+   "FL-0002": 315,
+   "FL-0003": 159
+  },
+  "journal-vs-reality": {
+   "JR-0001": 241,
+   "JR-0002": 321,
+   "JR-0003": 328
+  },
+  "goal-screening": {
+   "NVDA-income-now": 177,
+   "NVDA-ten-years": 336,
+   "NVDA-preserve": 319
+  },
+  "sharia-screen": {
+   "NVDA-market-cap": 294,
+   "NVDA-total-assets": 181,
+   "NVDA-house": 170
+  },
+  "accounting-flags": {
+   "AF-0001": 293,
+   "AF-0002": 306,
+   "AF-0003": 298
+  },
+  "fundamental-read": {
+   "FR-NVDA": 280,
+   "FR-JPM": 311,
+   "FR-XOM": 306
+  },
+  "dividend-safety": {
+   "DS-NVDA": 286,
+   "DS-JPM": 258,
+   "DS-XOM": 341
+  },
+  "peer-valuation": {
+   "PV-TECH": 412,
+   "PV-BANKS": 274,
+   "PV-ENERGY": 455
+  },
+  "news-impact": {
+   "NW-0001": 263,
+   "NW-0002": 171,
+   "NW-0003": 171
+  },
+  "filings-read": {
+   "FD-0001": 280,
+   "FD-0002": 291,
+   "FD-0003": 293
+  },
+  "rumour-grading": {
+   "RM-0001": 277,
+   "RM-0002": 242,
+   "RM-0003": 280
+  },
+  "event-clustering": {
+   "EC-0001": 290,
+   "EC-0002": 187,
+   "EC-0003": 365
+  },
+  "entity-links": {
+   "EL-0001": 299,
+   "EL-0002": 158,
+   "EL-0003": 297
+  },
+  "golden-cross-review": {
+   "GX-0001": 273,
+   "GX-0002": 323,
+   "GX-0003": 318
+  },
+  "setup-timing": {
+   "ST-0001": 346,
+   "ST-0002": 319,
+   "ST-0003": 291
+  },
+  "regime-classification": {
+   "RG-0001": 490,
+   "RG-0002": 302,
+   "RG-0003": 320
+  },
+  "strategy-correlation": {
+   "SC-0001": 331,
+   "SC-0002": 233,
+   "SC-0003": 167
+  },
+  "overfit-review": {
+   "OR-0001": 328,
+   "OR-0002": 278,
+   "OR-0003": 304
+  },
+  "receipt-check": {
+   "RC-001": 304,
+   "RC-002": 323,
+   "RC-003": 268
+  },
+  "expense-claim": {
+   "EC-001": 199,
+   "EC-002": 309,
+   "EC-003": 320
+  },
+  "cheque-check": {
+   "CQ-001": 310,
+   "CQ-002": 211,
+   "CQ-003": 333
+  },
+  "invoice-bank-change": {
+   "IV-001": 386,
+   "IV-002": 324,
+   "IV-003": 373
+  },
+  "chart-trend": {
+   "CT-001": 203,
+   "CT-002": 319,
+   "CT-003": 206
+  },
+  "buy-timing": {
+   "BT-001": 368,
+   "BT-002": 224,
+   "BT-003": 379
+  },
+  "misleading-chart": {
+   "MC-001": 340,
+   "MC-002": 323,
+   "MC-003": 203
+  },
+  "produce-check": {
+   "PR-01": 650,
+   "PR-02": 587,
+   "PR-03": 736
+  },
+  "package-check": {
+   "PK-01": 479,
+   "PK-02": 547,
+   "PK-03": 616
+  },
+  "leaf-check": {
+   "LF-01": 638,
+   "LF-02": 1005,
+   "LF-03": 319
+  }
+ }
+}

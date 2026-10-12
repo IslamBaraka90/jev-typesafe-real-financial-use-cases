@@ -213,3 +213,11 @@
 .bench-how h2 {
   font-size: var(--h3);
 }
+
+/* Every model head to head. The matrix cell's tint is one hue, stronger for a higher share. */
+.h2h-model { display: grid; gap: 2px; }
+.h2h-tag { margin-left: 6px; font-size: 0.72rem; padding: 1px 6px; border-radius: 999px; border: 1px solid var(--border); color: var(--muted); }
+.h2h-matrix th, .h2h-matrix td { white-space: nowrap; }
+.h2h-col span { display: inline-block; max-width: 7.5em; white-space: normal; line-height: 1.15; font-size: 0.78rem; }
+.h2h-cell { background: color-mix(in srgb, #4f8cff calc(var(--heat, 0) * 55%), transparent); font-variant-numeric: tabular-nums; }
+.h2h-cell.best { outline: 2px solid #9fc0ff; outline-offset: -2px; font-weight: 700; }

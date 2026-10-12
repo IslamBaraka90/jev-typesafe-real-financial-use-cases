@@ -840,3 +840,5 @@
 
 /* The decision-model switch above a demo's run. */
 .provider-bar { gap: 12px; flex-wrap: wrap; margin-bottom: 8px; }
+.provider-pick { display: inline-flex; align-items: center; gap: 8px; }
+.provider-pick select { font: inherit; background: var(--surface2); border: 1px solid var(--border); border-radius: 8px; padding: 6px 10px; }

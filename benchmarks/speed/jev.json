@@ -1,0 +1,258 @@
+{
+ "model": "jev",
+ "served": "jev-1.13.0",
+ "sampledAt": "2026-10-12",
+ "method": "first 3 items of each demo, one request at a time",
+ "latencyMs": {
+  "ledger-integrity": {
+   "L-0001": 565,
+   "L-0002": 264,
+   "L-0003": 291
+  },
+  "bank-reconciliation": {
+   "S-0011": 298,
+   "S-0024": 262,
+   "S-0032": 310
+  },
+  "expense-posting": {
+   "E-0001": 263,
+   "E-0002": 279,
+   "E-0003": 248
+  },
+  "three-way-match": {
+   "P-0001": 238,
+   "P-0002": 294,
+   "P-0003": 287
+  },
+  "close-blockers": {
+   "TB-1000": 291,
+   "TB-1010": 249,
+   "TB-1020": 270
+  },
+  "order-risk": {
+   "ORD-0001": 270,
+   "ORD-0002": 249,
+   "ORD-0003": 279
+  },
+  "cod-abuse": {
+   "C-0001": 283,
+   "C-0002": 273,
+   "C-0003": 251
+  },
+  "dispute-routing": {
+   "DSP-0001": 339,
+   "DSP-0002": 240,
+   "DSP-0003": 261
+  },
+  "chargeback-evidence": {
+   "CB-0001": 308,
+   "CB-0002": 278,
+   "CB-0003": 271
+  },
+  "merchant-onboarding": {
+   "APP-001": 272,
+   "APP-002": 284,
+   "APP-003": 243
+  },
+  "delivery-exceptions": {
+   "SHP-0001": 237,
+   "SHP-0002": 267,
+   "SHP-0003": 251
+  },
+  "card-fraud-triage": {
+   "ALT-0001": 257,
+   "ALT-0002": 249,
+   "ALT-0003": 249
+  },
+  "aml-alert-triage": {
+   "AML-0001": 299,
+   "AML-0002": 257,
+   "AML-0003": 264
+  },
+  "account-takeover": {
+   "SES-0001": 301,
+   "SES-0002": 247,
+   "SES-0003": 334
+  },
+  "sanctions-name-match": {
+   "SNC-0001": 382,
+   "SNC-0002": 240,
+   "SNC-0003": 281
+  },
+  "insider-surveillance": {
+   "TRD-0001": 282,
+   "TRD-0002": 272,
+   "TRD-0003": 299
+  },
+  "mule-network": {
+   "ACC-0001": 250,
+   "ACC-0002": 269,
+   "ACC-0003": 304
+  },
+  "wallet-risk": {
+   "W-0001": 285,
+   "W-0002": 263,
+   "W-0003": 283
+  },
+  "wallet-profiling": {
+   "WPF-0001": 266,
+   "WPF-0002": 266,
+   "WPF-0003": 274
+  },
+  "mixer-tracing": {
+   "TRC-001": 250,
+   "TRC-002": 263,
+   "TRC-003": 261
+  },
+  "token-screening": {
+   "TOK-0001": 244,
+   "TOK-0002": 263,
+   "TOK-0003": 249
+  },
+  "sybil-clusters": {
+   "SW-001": 286,
+   "SW-002": 250,
+   "SW-003": 271
+  },
+  "portfolio-health": {
+   "PF-01": 330,
+   "PF-02": 290,
+   "PF-03": 254
+  },
+  "rebalance-review": {
+   "TR-0001": 284,
+   "TR-0002": 267,
+   "TR-0003": 266
+  },
+  "mandate-compliance": {
+   "P-ALPHA-R01": 262,
+   "P-ALPHA-R02": 251,
+   "P-ALPHA-R03": 283
+  },
+  "portfolio-compare": {
+   "PC-01": 263,
+   "PC-02": 289,
+   "PC-03": 286
+  },
+  "factor-exposure": {
+   "FE-01": 262,
+   "FE-02": 369,
+   "FE-03": 302
+  },
+  "income-planning": {
+   "IP-01": 278,
+   "IP-02": 284,
+   "IP-03": 333
+  },
+  "post-trade-review": {
+   "TD-0001": 258,
+   "TD-0002": 260,
+   "TD-0003": 309
+  },
+  "trade-feature-analysis": {
+   "TF-001": 262,
+   "TF-002": 283,
+   "TF-003": 257
+  },
+  "trader-behaviour": {
+   "TB-001": 293,
+   "TB-002": 269,
+   "TB-003": 253
+  },
+  "missed-trades": {
+   "MT-001": 287,
+   "MT-002": 333,
+   "MT-003": 268
+  },
+  "execution-quality": {
+   "FL-0001": 315,
+   "FL-0002": 271,
+   "FL-0003": 278
+  },
+  "journal-vs-reality": {
+   "JR-0001": 247,
+   "JR-0002": 241,
+   "JR-0003": 253
+  },
+  "goal-screening": {
+   "NVDA-income-now": 276,
+   "NVDA-ten-years": 255,
+   "NVDA-preserve": 242
+  },
+  "sharia-screen": {
+   "NVDA-market-cap": 280,
+   "NVDA-total-assets": 277,
+   "NVDA-house": 277
+  },
+  "accounting-flags": {
+   "AF-0001": 253,
+   "AF-0002": 248,
+   "AF-0003": 261
+  },
+  "fundamental-read": {
+   "FR-NVDA": 280,
+   "FR-JPM": 290,
+   "FR-XOM": 288
+  },
+  "dividend-safety": {
+   "DS-NVDA": 247,
+   "DS-JPM": 240,
+   "DS-XOM": 276
+  },
+  "peer-valuation": {
+   "PV-TECH": 291,
+   "PV-BANKS": 270,
+   "PV-ENERGY": 255
+  },
+  "news-impact": {
+   "NW-0001": 268,
+   "NW-0002": 239,
+   "NW-0003": 305
+  },
+  "filings-read": {
+   "FD-0001": 290,
+   "FD-0002": 244,
+   "FD-0003": 283
+  },
+  "rumour-grading": {
+   "RM-0001": 262,
+   "RM-0002": 277,
+   "RM-0003": 243
+  },
+  "event-clustering": {
+   "EC-0001": 288,
+   "EC-0002": 250,
+   "EC-0003": 328
+  },
+  "entity-links": {
+   "EL-0001": 276,
+   "EL-0002": 256,
+   "EL-0003": 269
+  },
+  "golden-cross-review": {
+   "GX-0001": 421,
+   "GX-0002": 280,
+   "GX-0003": 279
+  },
+  "setup-timing": {
+   "ST-0001": 252,
+   "ST-0002": 257,
+   "ST-0003": 248
+  },
+  "regime-classification": {
+   "RG-0001": 274,
+   "RG-0002": 268,
+   "RG-0003": 279
+  },
+  "strategy-correlation": {
+   "SC-0001": 313,
+   "SC-0002": 284,
+   "SC-0003": 271
+  },
+  "overfit-review": {
+   "OR-0001": 267,
+   "OR-0002": 267,
+   "OR-0003": 259
+  }
+ }
+}

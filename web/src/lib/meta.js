@@ -19,7 +19,7 @@ const clamp = (text, limit) => {
 };
 
 /** Which decision models a demo was recorded on, in words. */
-const modelWords = (card) => ((card.providers ?? ['jev', 'openai']).includes('jev') ? 'Jev and OpenAI' : 'OpenAI');
+const modelWords = (card) => `${(card.providers ?? []).length} decision models`;
 
 const DATA_WORDS = {
   synthetic: 'generated data with the answers planted in it',
@@ -53,8 +53,8 @@ function describe(pathname) {
   if (clean === '/') {
     return {
       ...base,
-      title: `${SITE_NAME} — Jev and OpenAI decisions on real financial work`,
-      description: `${CARDS.length} worked examples of typed decision models on real financial work — ledgers, fraud, wallets, portfolios, trades, filings, receipts and charts. Jev and OpenAI, every answer recorded and graded.`,
+      title: `${SITE_NAME} — decision models head to head on real financial work`,
+      description: `${CARDS.length} worked examples of typed decision models on real financial work — ledgers, fraud, wallets, portfolios, trades, filings, receipts and charts. Jev, GPT-6 Luna and a dozen more, every answer recorded and graded.`,
       jsonLd: websiteJsonLd(),
     };
   }
@@ -71,8 +71,8 @@ function describe(pathname) {
   if (clean === '/benchmark') {
     return {
       ...base,
-      title: `Benchmark — Jev and OpenAI on all ${CARDS.length} — ${SITE_NAME}`,
-      description: 'The scoreboard across every demo, Jev and OpenAI side by side: what each asked, what each recorded run got right, and where it did badly. Every number comes from a committed run.',
+      title: `Benchmark — decision models head to head — ${SITE_NAME}`,
+      description: 'Every decision model on the same items: accuracy, demos won, latency and cost, then what each asked, each demo on each model. Every number comes from a committed run.',
     };
   }
 

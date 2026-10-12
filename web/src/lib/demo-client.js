@@ -3,10 +3,11 @@
 // return the same shape, so the runtime, the report and the page never know which one they have.
 
 import { expandAnswers } from '../../../demos/lib/answers.js';
+import { unpackFixtures } from '../../../demos/lib/packed.js';
 
-// OpenAI's recordings sit beside Jev's as fixtures.openai.json. Each is its own lazy chunk, fetched
-// only when a page switches to that model.
-const OPENAI_FIXTURES = import.meta.glob('../../../demos/*/fixtures.openai.json');
+// Every other model's recording sits beside Jev's as fixtures.<model>.json. Each is its own lazy
+// chunk, fetched only when a page switches to that model.
+const MODEL_FIXTURES = import.meta.glob('../../../demos/*/fixtures.*.json');
 
 const datasets = new Map();
 const fixtures = new Map();
@@ -22,8 +23,8 @@ export function loadDemoData(demo) {
 
 /** The loader for one model's recording of a demo, or null when that model has none. */
 function fixturesLoader(demo, provider) {
-  if (provider === 'openai') return OPENAI_FIXTURES[`../../../demos/${demo.id}/fixtures.openai.json`] ?? null;
-  return demo.providers && !demo.providers.includes('jev') ? null : demo.fixtures;
+  if (provider !== 'jev') return MODEL_FIXTURES[`../../../demos/${demo.id}/fixtures.${provider}.json`] ?? null;
+  return demo.images ? null : demo.fixtures;
 }
 
 /** The demo's recorded answers on one model, fetched once per session. */
@@ -31,7 +32,8 @@ export function loadFixtures(demo, provider = 'jev') {
   const key = `${demo.id}:${provider}`;
   if (!fixtures.has(key)) {
     const load = fixturesLoader(demo, provider);
-    fixtures.set(key, load ? load().then(unwrap).catch(() => ({ answers: {} })) : Promise.resolve({ answers: {} }));
+    const loaded = load ? load().then(unwrap).then((file) => unpackFixtures(file, demo.questions)) : Promise.resolve({ answers: {} });
+    fixtures.set(key, loaded.catch(() => ({ answers: {} })));
   }
   return fixtures.get(key);
 }

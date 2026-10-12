@@ -177,16 +177,22 @@ export function DemoRuntime({ demo }) {
     <div className="demo-runtime">
       <div className="row between provider-bar">
         {available.length > 1 ? (
-          <Segmented
-            label="Decision model"
-            size="small"
-            options={available.map((entry) => ({ value: entry.id, label: entry.label }))}
-            value={provider}
-            onChange={(id) => {
-              setLive(false);
-              setProvider(id);
-            }}
-          />
+          <label className="provider-pick">
+            <span className="meta">Decision model</span>
+            <select
+              value={provider}
+              onChange={(event) => {
+                setLive(false);
+                setProvider(event.target.value);
+              }}
+            >
+              {available.map((entry) => (
+                <option key={entry.id} value={entry.id}>
+                  {entry.label} · {entry.vendor}
+                </option>
+              ))}
+            </select>
+          </label>
         ) : (
           <span className="meta">
             Recorded on <strong>{PROVIDER_BY_ID[provider].label}</strong> only

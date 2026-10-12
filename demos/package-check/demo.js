@@ -61,7 +61,6 @@ export default {
   dataLabel: 'real photographs',
   readMinutes: 1,
   view: 'image',
-  providers: ['openai'],
   itemLabel: (item) => `${item.id} · ${item.subject}`,
   data: () => import('./data.json'),
   fixtures: () => import('./fixtures.openai.json'),

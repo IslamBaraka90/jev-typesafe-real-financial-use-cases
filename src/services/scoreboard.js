@@ -3,12 +3,23 @@
 // `npm run check` all read what this produces, so a number on the site is a number CI has seen.
 
 import { createHash } from 'node:crypto';
+import { readFile } from 'node:fs/promises';
+import path from 'node:path';
 import { agreement, matrixStats, reliability } from '../../demos/lib/metrics.js';
-import { loadDataset, loadLabels } from './dataset.js';
-import { defaultProvider, demoContext, fixtureAnswers, loadFixtures, PROVIDERS } from './demo-runner.js';
+import { loadDataset, loadLabels, repoRoot } from './dataset.js';
+import { defaultProvider, demoContext, fixtureAnswers, loadFixtures } from './demo-runner.js';
+import { modelsFor } from '../../demos/lib/models.js';
 import { humaniseKey, humaniseValue } from '../../web/src/lib/humanise.js';
 
 const hash = (value) => createHash('sha256').update(typeof value === 'string' ? value : JSON.stringify(value)).digest('hex').slice(0, 12);
+/** Median, 95th percentile and mean of a run's per-item latencies, where the recording kept them. */
+export function latencyStats(latencyMs) {
+  const values = Object.values(latencyMs ?? {}).filter(Number.isFinite).sort((a, b) => a - b);
+  if (!values.length) return null;
+  const at = (share) => values[Math.min(values.length - 1, Math.floor(share * values.length))];
+  return { n: values.length, p50: at(0.5), p95: at(0.95), mean: Math.round(values.reduce((sum, value) => sum + value, 0) / values.length) };
+}
+
 const round = (value, digits = 4) => (Number.isFinite(value) ? Number(value.toFixed(digits)) : null);
 
 /** Everything a demo's recorded run evaluates to: results, grades and the report. */
@@ -77,6 +88,9 @@ export async function scoreDemo(demo, provider = defaultProvider(demo)) {
     answered: results.length,
     graded: graded.graded,
     right: graded.right,
+    refused: Object.keys(fixtures.refusals ?? {}).length,
+    speed: latencyStats(fixtures.latencyMs),
+    cost: Number.isFinite(fixtures.usage?.cost) ? { total: round(fixtures.usage.cost, 6), tokens: fixtures.usage.input_tokens ?? null } : { total: null, tokens: fixtures.usage?.input_tokens ?? null },
     interval: graded.graded ? { low: round(graded.interval.low), high: round(graded.interval.high) } : null,
     headline: report?.metrics?.headline
       ? { label: report.metrics.headline.label, value: round(report.metrics.headline.value), display: headlineKpi?.value ?? null, context: headlineKpi?.context ?? null }
@@ -129,10 +143,25 @@ function showcaseOf(demo, { context, results, grades }) {
   };
 }
 
+const samples = new Map();
+
+/**
+ * A model's timings on one demo from benchmarks/speed, for a model whose recording kept none (Jev's
+ * and GPT-6 Luna's predate the measurement). Null when there is no sample either.
+ */
+async function sampledSpeed(modelId, demoId) {
+  if (!samples.has(modelId)) {
+    samples.set(modelId, readFile(path.join(repoRoot, 'benchmarks', 'speed', `${modelId}.json`), 'utf8').then(JSON.parse).catch(() => null));
+  }
+  const sample = await samples.get(modelId);
+  const timings = sample?.latencyMs?.[demoId];
+  return timings ? { ...latencyStats(timings), sampled: true } : null;
+}
+
 /** The few numbers the benchmark puts side by side for each model a demo was recorded on. */
 export async function scoreModels(demo) {
   const models = {};
-  for (const provider of demo.providers ?? PROVIDERS) {
+  for (const { id: provider } of modelsFor(demo)) {
     const row = await scoreDemo(demo, provider);
     if (!row.answered) continue;
     models[provider] = {
@@ -141,7 +170,10 @@ export async function scoreModels(demo) {
       answered: row.answered,
       graded: row.graded,
       right: row.right,
+      refused: row.refused,
       interval: row.interval,
+      speed: row.speed ?? (await sampledSpeed(provider, demo.id)),
+      cost: row.cost,
       headline: row.headline ? { value: row.headline.value, display: row.headline.display } : null,
     };
   }

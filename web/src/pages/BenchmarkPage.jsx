@@ -5,6 +5,7 @@ import scoreboard from '../generated/scoreboard.json';
 import { DOMAINS } from '../../../demos/domains.js';
 import { formatDate } from '../lib/format.js';
 import { Link } from '../lib/router.jsx';
+import { HeadToHead } from './HeadToHead.jsx';
 
 // The whole suite on one page: every demo's recorded run, scored by `npm run score` with the same code
 // the demo pages run. This is the page to open after recording a new model version.
@@ -76,20 +77,15 @@ export function BenchmarkPage() {
   }, [rows, sort]);
 
   const caveats = rows.filter((row) => row.caveat).length;
-  // The two models compared only where both answered the same graded items.
-  const shared = rows.filter((row) => row.models?.jev?.graded && row.models?.openai?.graded);
-  const total = (provider) => shared.reduce((sum, row) => ({ right: sum.right + row.models[provider].right, graded: sum.graded + row.models[provider].graded }), { right: 0, graded: 0 });
-  const head = { jev: total('jev'), openai: total('openai') };
-  const better = (provider, other) => shared.filter((row) => row.models[provider].right / row.models[provider].graded > row.models[other].right / row.models[other].graded + 0.005).length;
 
   return (
     <div className="stack benchmark">
       <div className="page-heading">
         <span className="eyebrow">Benchmark</span>
-        <h1>Two decision models, {summary.demos} jobs, every answer graded</h1>
+        <h1>{(summary.leaderboards?.[0]?.models.length ?? 2)} decision models, {summary.demos} jobs, head to head</h1>
         <p>
-          Every text demo is recorded on Jev and on OpenAI’s decisions API with the same questions; the image demos only on OpenAI, the one that reads pictures. Each run is scored by{' '}
-          <code>npm run score</code>: the same evaluate, grade and report code the demo pages run, over the committed answers.
+          Every text demo is put to every decision model with the same questions, and the image demos to the models that read pictures. Each run is scored by <code>npm run score</code>: the same
+          evaluate, grade and report code the demo pages run, over the committed answers, with each request’s latency kept beside it.
         </p>
       </div>
 
@@ -114,27 +110,12 @@ export function BenchmarkPage() {
         </article>
       </section>
 
-      {shared.length > 0 && (
-        <section className="bench-summary bench-versus" aria-label="Jev and OpenAI on the same items">
-          <article>
-            <strong className="num">{percent(head.jev.right / head.jev.graded)}</strong>
-            <span className="meta">
-              Jev: {head.jev.right.toLocaleString('en-US')} of {head.jev.graded.toLocaleString('en-US')} graded items, ahead on {better('jev', 'openai')} of {shared.length} demos
-            </span>
-          </article>
-          <article>
-            <strong className="num">{percent(head.openai.right / head.openai.graded)}</strong>
-            <span className="meta">
-              OpenAI: {head.openai.right.toLocaleString('en-US')} of {head.openai.graded.toLocaleString('en-US')} on the same demos, ahead on {better('openai', 'jev')}
-            </span>
-          </article>
-        </section>
-      )}
+      <HeadToHead summary={summary} rows={rows} />
 
       <div className="row between bench-tools">
         <p className="meta">
-          The shaded band on each bar is the 95% interval: with a few dozen items it is wide, and the bar should be read that way. The headline, alternative and calibration columns
-          are for Jev, or for OpenAI on the image demos.
+          The shaded band on each bar is the 95% interval: with a few dozen items it is wide, and the bar should be read that way. The tables below are for Jev, or for GPT-6 Luna
+          on the image demos; every model's score on every demo is in the matrix above.
           {caveats > 0 && ` ${caveats} demos carry a caveat about their dataset; it is on the demo page.`}
         </p>
         <Segmented label="Order" size="small" options={SORTS} value={sort} onChange={setSort} />
@@ -154,8 +135,7 @@ export function BenchmarkPage() {
                 <tr>
                   <th scope="col">Demo</th>
                   <th scope="col">Headline</th>
-                  <th scope="col">Jev: matches ground truth</th>
-                  <th scope="col">OpenAI: matches ground truth</th>
+                  <th scope="col">Matches ground truth</th>
                   <th scope="col">Against the best alternative</th>
                   <th scope="col" className="num">Calibration error</th>
                   <th scope="col">Since last run</th>
@@ -186,10 +166,7 @@ export function BenchmarkPage() {
                       <span className="meta bench-meta">{row.headline?.label}</span>
                     </td>
                     <td>
-                      <AgreementBar row={row.models?.jev} />
-                    </td>
-                    <td>
-                      <AgreementBar row={row.models?.openai} />
+                      <AgreementBar row={row} />
                     </td>
                     <td>
                       <Lift row={row} />

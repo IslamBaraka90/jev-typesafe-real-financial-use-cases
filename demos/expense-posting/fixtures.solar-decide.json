@@ -1,0 +1,1 @@
+{"demo":"expense-posting","provider":"solar-decide","model":null,"format":"packed-1","questions":["account","receipt_required","vat_treatment","posting_clarity"],"recordedAt":"2026-10-12","source":"scripts/record-demo.js","usage":{"input_tokens":0,"output_tokens":0,"cost":0},"answers":{}}
