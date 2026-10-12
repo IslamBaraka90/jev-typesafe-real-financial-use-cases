@@ -1,0 +1,703 @@
+{
+ "probedAt": "2026-10-12",
+ "probes": [
+  {
+   "id": "noul",
+   "label": "yes/no with criteria"
+  },
+  {
+   "id": "noul-bare",
+   "label": "yes/no, no criteria"
+  },
+  {
+   "id": "choice",
+   "label": "choice"
+  },
+  {
+   "id": "score",
+   "label": "score"
+  },
+  {
+   "id": "mixed",
+   "label": "all three in one request"
+  },
+  {
+   "id": "state-object",
+   "label": "state as a JSON object"
+  },
+  {
+   "id": "image",
+   "label": "image (content parts)"
+  }
+ ],
+ "results": {
+  "microsoft-decision-1": {
+   "noul": {
+    "ok": true,
+    "status": 200,
+    "latencyMs": 1139,
+    "tokens": 123,
+    "host": "Azure"
+   },
+   "noul-bare": {
+    "ok": true,
+    "status": 200,
+    "latencyMs": 320,
+    "tokens": 91,
+    "host": "Azure"
+   },
+   "choice": {
+    "ok": true,
+    "status": 200,
+    "latencyMs": 318,
+    "tokens": 114,
+    "host": "Azure"
+   },
+   "score": {
+    "ok": true,
+    "status": 200,
+    "latencyMs": 316,
+    "tokens": 101,
+    "host": "Azure"
+   },
+   "mixed": {
+    "ok": true,
+    "status": 200,
+    "latencyMs": 342,
+    "tokens": 202,
+    "host": "Azure"
+   },
+   "state-object": {
+    "ok": true,
+    "status": 200,
+    "latencyMs": 318,
+    "tokens": 122,
+    "host": "Azure"
+   },
+   "image": {
+    "ok": true,
+    "status": 200,
+    "latencyMs": 602,
+    "tokens": 21442,
+    "host": "Azure",
+    "readImage": false
+   }
+  },
+  "drex-v1-5": {
+   "noul": {
+    "ok": true,
+    "status": 200,
+    "latencyMs": 953,
+    "tokens": 110,
+    "host": "DeepInfra"
+   },
+   "noul-bare": {
+    "ok": true,
+    "status": 200,
+    "latencyMs": 524,
+    "tokens": 84,
+    "host": "DeepInfra"
+   },
+   "choice": {
+    "ok": true,
+    "status": 200,
+    "latencyMs": 277,
+    "tokens": 104,
+    "host": "DeepInfra"
+   },
+   "score": {
+    "ok": true,
+    "status": 200,
+    "latencyMs": 793,
+    "tokens": 91,
+    "host": "DeepInfra"
+   },
+   "mixed": {
+    "ok": true,
+    "status": 200,
+    "latencyMs": 415,
+    "tokens": 179,
+    "host": "DeepInfra"
+   },
+   "state-object": {
+    "ok": true,
+    "status": 200,
+    "latencyMs": 545,
+    "tokens": 110,
+    "host": "DeepInfra"
+   },
+   "image": {
+    "ok": true,
+    "status": 200,
+    "latencyMs": 838,
+    "tokens": 21436,
+    "host": "DeepInfra",
+    "readImage": false
+   }
+  },
+  "clef-omni": {
+   "noul": {
+    "ok": true,
+    "status": 200,
+    "latencyMs": 631,
+    "tokens": 210,
+    "host": "Cloudflare"
+   },
+   "noul-bare": {
+    "ok": true,
+    "status": 200,
+    "latencyMs": 234,
+    "tokens": 206,
+    "host": "Cloudflare"
+   },
+   "choice": {
+    "ok": true,
+    "status": 200,
+    "latencyMs": 232,
+    "tokens": 213,
+    "host": "Cloudflare"
+   },
+   "score": {
+    "ok": true,
+    "status": 200,
+    "latencyMs": 247,
+    "tokens": 235,
+    "host": "Cloudflare"
+   },
+   "mixed": {
+    "ok": true,
+    "status": 200,
+    "latencyMs": 222,
+    "tokens": 420,
+    "host": "Cloudflare"
+   },
+   "state-object": {
+    "ok": true,
+    "status": 200,
+    "latencyMs": 199,
+    "tokens": 213,
+    "host": "Cloudflare"
+   },
+   "image": {
+    "ok": true,
+    "status": 200,
+    "latencyMs": 688,
+    "tokens": 452,
+    "host": "Cloudflare",
+    "readImage": true
+   }
+  },
+  "solar-decide-flash": {
+   "noul": {
+    "ok": true,
+    "status": 200,
+    "latencyMs": 1375,
+    "tokens": 472,
+    "host": "Upstage"
+   },
+   "noul-bare": {
+    "ok": true,
+    "status": 200,
+    "latencyMs": 722,
+    "tokens": 444,
+    "host": "Upstage"
+   },
+   "choice": {
+    "ok": true,
+    "status": 200,
+    "latencyMs": 716,
+    "tokens": 425,
+    "host": "Upstage"
+   },
+   "score": {
+    "ok": true,
+    "status": 200,
+    "latencyMs": 687,
+    "tokens": 421,
+    "host": "Upstage"
+   },
+   "mixed": {
+    "ok": true,
+    "status": 200,
+    "latencyMs": 561,
+    "tokens": 1318,
+    "host": "Upstage"
+   },
+   "state-object": {
+    "ok": true,
+    "status": 200,
+    "latencyMs": 517,
+    "tokens": 472,
+    "host": "Upstage"
+   },
+   "image": {
+    "ok": true,
+    "status": 200,
+    "latencyMs": 1075,
+    "tokens": 20375,
+    "host": "Upstage",
+    "readImage": false
+   }
+  },
+  "pplx-decider": {
+   "noul": {
+    "ok": true,
+    "status": 200,
+    "latencyMs": 754,
+    "tokens": 172,
+    "host": "Perplexity"
+   },
+   "noul-bare": {
+    "ok": true,
+    "status": 200,
+    "latencyMs": 336,
+    "tokens": 154,
+    "host": "Perplexity"
+   },
+   "choice": {
+    "ok": true,
+    "status": 200,
+    "latencyMs": 351,
+    "tokens": 172,
+    "host": "Perplexity"
+   },
+   "score": {
+    "ok": true,
+    "status": 200,
+    "latencyMs": 333,
+    "tokens": 158,
+    "host": "Perplexity"
+   },
+   "mixed": {
+    "ok": true,
+    "status": 200,
+    "latencyMs": 1053,
+    "tokens": 502,
+    "host": "Perplexity"
+   },
+   "state-object": {
+    "ok": true,
+    "status": 200,
+    "latencyMs": 357,
+    "tokens": 178,
+    "host": "Perplexity"
+   },
+   "image": {
+    "ok": true,
+    "status": 200,
+    "latencyMs": 428,
+    "tokens": 401,
+    "host": "Perplexity",
+    "readImage": true
+   }
+  },
+  "liquid-d1": {
+   "noul": {
+    "ok": true,
+    "status": 200,
+    "latencyMs": 890,
+    "tokens": 118,
+    "host": "Liquid"
+   },
+   "noul-bare": {
+    "ok": true,
+    "status": 200,
+    "latencyMs": 320,
+    "tokens": 90,
+    "host": "Liquid"
+   },
+   "choice": {
+    "ok": true,
+    "status": 200,
+    "latencyMs": 323,
+    "tokens": 106,
+    "host": "Liquid"
+   },
+   "score": {
+    "ok": true,
+    "status": 200,
+    "latencyMs": 334,
+    "tokens": 104,
+    "host": "Liquid"
+   },
+   "mixed": {
+    "ok": true,
+    "status": 200,
+    "latencyMs": 425,
+    "tokens": 328,
+    "host": "Liquid"
+   },
+   "state-object": {
+    "ok": true,
+    "status": 200,
+    "latencyMs": 486,
+    "tokens": 132,
+    "host": "Liquid"
+   },
+   "image": {
+    "ok": true,
+    "status": 200,
+    "latencyMs": 565,
+    "tokens": 452,
+    "host": "Liquid",
+    "readImage": true
+   }
+  },
+  "clef-flash": {
+   "noul": {
+    "ok": true,
+    "status": 200,
+    "latencyMs": 2414,
+    "tokens": 215,
+    "host": "Cloudflare"
+   },
+   "noul-bare": {
+    "ok": true,
+    "status": 200,
+    "latencyMs": 459,
+    "tokens": 211,
+    "host": "Cloudflare"
+   },
+   "choice": {
+    "ok": true,
+    "status": 200,
+    "latencyMs": 604,
+    "tokens": 218,
+    "host": "Cloudflare"
+   },
+   "score": {
+    "ok": true,
+    "status": 200,
+    "latencyMs": 238,
+    "tokens": 240,
+    "host": "Cloudflare"
+   },
+   "mixed": {
+    "ok": true,
+    "status": 200,
+    "latencyMs": 450,
+    "tokens": 427,
+    "host": "PrimeIntellect"
+   },
+   "state-object": {
+    "ok": true,
+    "status": 200,
+    "latencyMs": 305,
+    "tokens": 216,
+    "host": "PrimeIntellect"
+   },
+   "image": {
+    "ok": true,
+    "status": 200,
+    "latencyMs": 738,
+    "tokens": 455,
+    "host": "Cloudflare",
+    "readImage": true
+   }
+  },
+  "clef": {
+   "noul": {
+    "ok": true,
+    "status": 200,
+    "latencyMs": 2049,
+    "tokens": 215,
+    "host": "Cloudflare"
+   },
+   "noul-bare": {
+    "ok": true,
+    "status": 200,
+    "latencyMs": 316,
+    "tokens": 211,
+    "host": "Cloudflare"
+   },
+   "choice": {
+    "ok": true,
+    "status": 200,
+    "latencyMs": 488,
+    "tokens": 218,
+    "host": "PrimeIntellect"
+   },
+   "score": {
+    "ok": true,
+    "status": 200,
+    "latencyMs": 404,
+    "tokens": 240,
+    "host": "PrimeIntellect"
+   },
+   "mixed": {
+    "ok": true,
+    "status": 200,
+    "latencyMs": 292,
+    "tokens": 427,
+    "host": "Cloudflare"
+   },
+   "state-object": {
+    "ok": true,
+    "status": 200,
+    "latencyMs": 472,
+    "tokens": 216,
+    "host": "Cloudflare"
+   },
+   "image": {
+    "ok": true,
+    "status": 200,
+    "latencyMs": 436,
+    "tokens": 455,
+    "host": "Cloudflare",
+    "readImage": true
+   }
+  },
+  "tev1-4b": {
+   "noul": {
+    "ok": true,
+    "status": 200,
+    "latencyMs": 971,
+    "tokens": 180,
+    "host": "Together"
+   },
+   "noul-bare": {
+    "ok": true,
+    "status": 200,
+    "latencyMs": 319,
+    "tokens": 160,
+    "host": "Together"
+   },
+   "choice": {
+    "ok": true,
+    "status": 200,
+    "latencyMs": 359,
+    "tokens": 181,
+    "host": "Together"
+   },
+   "score": {
+    "ok": true,
+    "status": 200,
+    "latencyMs": 358,
+    "tokens": 192,
+    "host": "Together"
+   },
+   "mixed": {
+    "ok": true,
+    "status": 200,
+    "latencyMs": 424,
+    "tokens": 553,
+    "host": "Together"
+   },
+   "state-object": {
+    "ok": true,
+    "status": 200,
+    "latencyMs": 362,
+    "tokens": 179,
+    "host": "Together"
+   },
+   "image": {
+    "ok": true,
+    "status": 200,
+    "latencyMs": 999,
+    "tokens": 21515,
+    "host": "Together",
+    "readImage": false
+   }
+  },
+  "mercury-decide": {
+   "noul": {
+    "ok": true,
+    "status": 200,
+    "latencyMs": 1120,
+    "tokens": 146,
+    "host": "Inception"
+   },
+   "noul-bare": {
+    "ok": true,
+    "status": 200,
+    "latencyMs": 327,
+    "tokens": 128,
+    "host": "Inception"
+   },
+   "choice": {
+    "ok": true,
+    "status": 200,
+    "latencyMs": 1051,
+    "tokens": 153,
+    "host": "Inception"
+   },
+   "score": {
+    "ok": true,
+    "status": 200,
+    "latencyMs": 452,
+    "tokens": 170,
+    "host": "Inception"
+   },
+   "mixed": {
+    "ok": true,
+    "status": 200,
+    "latencyMs": 360,
+    "tokens": 160,
+    "host": "Inception"
+   },
+   "state-object": {
+    "ok": true,
+    "status": 200,
+    "latencyMs": 349,
+    "tokens": 154,
+    "host": "Inception"
+   },
+   "image": {
+    "ok": true,
+    "status": 200,
+    "latencyMs": 662,
+    "tokens": 384,
+    "host": "Inception",
+    "readImage": true
+   }
+  },
+  "solar-decide": {
+   "noul": {
+    "ok": true,
+    "status": 200,
+    "latencyMs": 1996,
+    "tokens": 472,
+    "host": "Upstage"
+   },
+   "noul-bare": {
+    "ok": true,
+    "status": 200,
+    "latencyMs": 704,
+    "tokens": 444,
+    "host": "Upstage"
+   },
+   "choice": {
+    "ok": true,
+    "status": 200,
+    "latencyMs": 648,
+    "tokens": 425,
+    "host": "Upstage"
+   },
+   "score": {
+    "ok": true,
+    "status": 200,
+    "latencyMs": 16163,
+    "tokens": 421,
+    "host": "Upstage"
+   },
+   "mixed": {
+    "ok": true,
+    "status": 200,
+    "latencyMs": 10347,
+    "tokens": 1318,
+    "host": "Upstage"
+   },
+   "state-object": {
+    "ok": true,
+    "status": 200,
+    "latencyMs": 696,
+    "tokens": 472,
+    "host": "Upstage"
+   },
+   "image": {
+    "ok": true,
+    "status": 200,
+    "latencyMs": 16614,
+    "tokens": 20375,
+    "host": "Upstage",
+    "readImage": false
+   }
+  },
+  "span-01": {
+   "noul": {
+    "ok": true,
+    "status": 200,
+    "latencyMs": 1087,
+    "tokens": 154,
+    "host": "Respan"
+   },
+   "noul-bare": {
+    "ok": true,
+    "status": 200,
+    "latencyMs": 469,
+    "tokens": 90,
+    "host": "Respan"
+   },
+   "choice": {
+    "ok": false,
+    "status": 400,
+    "latencyMs": 87,
+    "error": "Respan only accepts noul questions whose instructions and criteria are plain strings (question \"q\")"
+   },
+   "score": {
+    "ok": false,
+    "status": 400,
+    "latencyMs": 191,
+    "error": "Respan only accepts noul questions whose instructions and criteria are plain strings (question \"q\")"
+   },
+   "mixed": {
+    "ok": false,
+    "status": 400,
+    "latencyMs": 90,
+    "error": "Respan only accepts noul questions whose instructions and criteria are plain strings (question \"action\")"
+   },
+   "state-object": {
+    "ok": false,
+    "status": 400,
+    "latencyMs": 87,
+    "error": "Respan state must be a string or an object with only input (a message array) and output (a message), where each message has a string content and a role of system, user, assistant or tool, and the outp"
+   },
+   "image": {
+    "ok": false,
+    "status": 400,
+    "latencyMs": 143,
+    "error": "Respan state must be a string or an object with only input (a message array) and output (a message), where each message has a string content and a role of system, user, assistant or tool, and the outp"
+   }
+  },
+  "kev-4b": {
+   "noul": {
+    "ok": true,
+    "status": 200,
+    "latencyMs": 3207,
+    "tokens": 110,
+    "host": "SiliconFlow"
+   },
+   "noul-bare": {
+    "ok": true,
+    "status": 200,
+    "latencyMs": 1878,
+    "tokens": 84,
+    "host": "SiliconFlow"
+   },
+   "choice": {
+    "ok": true,
+    "status": 200,
+    "latencyMs": 1863,
+    "tokens": 104,
+    "host": "SiliconFlow"
+   },
+   "score": {
+    "ok": true,
+    "status": 200,
+    "latencyMs": 1718,
+    "tokens": 91,
+    "host": "SiliconFlow"
+   },
+   "mixed": {
+    "ok": true,
+    "status": 200,
+    "latencyMs": 1880,
+    "tokens": 179,
+    "host": "SiliconFlow"
+   },
+   "state-object": {
+    "ok": true,
+    "status": 200,
+    "latencyMs": 2566,
+    "tokens": 110,
+    "host": "SiliconFlow"
+   },
+   "image": {
+    "ok": false,
+    "status": 400,
+    "latencyMs": 614,
+    "error": "HTTP 400: {\"code\":20015,\"message\":\"The parameter is invalid. Please check again.\",\"data\":null}"
+   }
+  }
+ }
+}

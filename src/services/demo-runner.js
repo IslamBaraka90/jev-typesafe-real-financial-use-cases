@@ -103,9 +103,11 @@ export function toOpenRouterState(state, images = []) {
  * Asks one model on OpenRouter one item's questions. Rate limits and server errors are retried with a
  * growing pause; the latency reported is that of the call that succeeded.
  */
-export async function askOpenRouter({ apiKey, route, state, questions, images = [], stateAsText = false, timeout = 120_000, attempts = 7 }) {
+export async function askOpenRouter({ apiKey, route, state, questions, images = [], stateAsText = false, imageHost = null, timeout = 120_000, attempts = 7 }) {
   const sent = stateAsText && !images.length && typeof state !== 'string' ? JSON.stringify(state, null, 2) : state;
-  const body = JSON.stringify({ model: route, state: toOpenRouterState(sent, images), questions: toOpenRouterQuestions(questions) });
+  // A model served by several hosts may have only one that reads pictures; images go to that one.
+  const provider = images.length && imageHost ? { provider: { only: [imageHost], allow_fallbacks: false } } : {};
+  const body = JSON.stringify({ model: route, ...provider, state: toOpenRouterState(sent, images), questions: toOpenRouterQuestions(questions) });
   let lastError = null;
   for (let attempt = 0; attempt < attempts; attempt++) {
     if (attempt) await new Promise((resolve) => setTimeout(resolve, Math.min(60_000, 2000 * 2 ** attempt)));

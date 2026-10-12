@@ -31,7 +31,7 @@ if (model.via === 'typesafe') {
   const client = openai();
   ask = (request) => askOpenAI(client, { ...request, model: openaiModel() });
 } else {
-  ask = (request) => askOpenRouter({ ...request, apiKey: config.openrouter.apiKey, route: model.route, stateAsText: model.stateAsText });
+  ask = (request) => askOpenRouter({ ...request, apiKey: config.openrouter.apiKey, route: model.route, stateAsText: model.stateAsText, imageHost: model.imageHost });
 }
 
 const latencyMs = {};
