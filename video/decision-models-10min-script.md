@@ -1,7 +1,7 @@
 # Fourteen Decision Models, One Benchmark
 ## A 10-minute film — voice-over and scene-by-scene recording plan
 
-**Runtime:** about 10 minutes (≈1,350 words of voice-over at a calm 135 words a minute).
+**Runtime:** about 10 minutes: ≈1,120 words of voice-over (about 8½ minutes at a calm 135 words a minute), plus the on-screen holds.
 **Focus:** what a decision model is, five use cases that show it, and the head-to-head benchmark.
 Not every demo. Not every model detail.
 **Every number below** comes from the recorded runs committed in this repository and shown on the
