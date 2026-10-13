@@ -16,3 +16,8 @@ benchmarks/runs
 test
 prps
 handovers
+
+# Keys. The deployed site replays recordings and never needs them, so they are never uploaded.
+.env
+.env.*
+!.env.example
